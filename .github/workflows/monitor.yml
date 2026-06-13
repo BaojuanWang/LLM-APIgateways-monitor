@@ -2,7 +2,7 @@ name: LLM Relay Monitor
 
 on:
   schedule:
-    - cron: '0 */4 * * *'  # 每2小时运行一次（UTC时间）
+    - cron: '0 */4 * * *'  # 每4小时运行一次（UTC时间）
   workflow_dispatch:         # 允许手动触发
 
 jobs:
@@ -26,6 +26,9 @@ jobs:
 
       - name: Step 2 - Check platform status
         run: python scripts/pipeline.py
+
+      - name: Step 3 - Generate summary
+        run: python scripts/summarize.py
 
       - name: Commit and push results
         run: |
