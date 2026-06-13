@@ -112,5 +112,4 @@ GitHub repo → Actions → LLM Relay Monitor → Run workflow
 ## 待办
 - [ ] 验证DNS_FAIL的平台是否真的挂了（openclaudecode.cn、code.b886.top、zaimaai.cn、daidaibird.top等）
 - [ ] 数据积累1-2周后分析存活率趋势
-- [ ] G008 favicon cluster深挖（44个平台共享同一favicon）
-- [ ] platform_inventory.xlsx的空列补全
+
