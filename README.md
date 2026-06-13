@@ -3,7 +3,7 @@
 # LLM中转站监测项目 — 快速上手文档
 
 ## 项目目标
-系统性测量中国LLM中转站（API relay）生态，目标投USENIX Security论文。
+系统性测量中国LLM中转站（API relay）生态
 
 ## GitHub Repo
 `BaojuanWang/LLM-APIgateways-monitor`（私有）
