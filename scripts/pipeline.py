@@ -8,11 +8,14 @@ import hashlib
 import re
 import time
 import random
+import warnings
 from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import requests
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+warnings.filterwarnings("ignore", category=InsecureRequestWarning)
 
 BASE_DIR    = Path(__file__).parent.parent
 DATA_DIR    = BASE_DIR / "data"
@@ -122,21 +125,37 @@ def check_one(p):
         "platform_name": p.get("platform_name", ""),
         "source":        p.get("source", ""),
     })
-    try:
-        time.sleep(random.uniform(0.3, 1.0))
-        resp = requests.get(f"https://{domain}", headers=HEADERS,
-                            timeout=TIMEOUT, allow_redirects=True)
-        result["http_status"]    = resp.status_code
-        result["final_url"]      = str(resp.url)
-        result["redirect_chain"] = " -> ".join(
-            [str(r.url) for r in resp.history] + [str(resp.url)]
-        ) if resp.history else str(resp.url)
-        result["online_status"]  = classify_status(resp=resp)
-        result["page_title"]     = extract_title(resp.text)
-        result["html_hash"]      = html_hash(resp.text)
-    except Exception as e:
-        result["online_status"]  = classify_status(error=e)
-        result["error"]          = str(e)[:200]
+
+    # 依次尝试：https://域名、https://www.域名、http://域名
+    if domain.startswith("www."):
+        urls_to_try = [f"https://{domain}", f"http://{domain}"]
+    else:
+        urls_to_try = [f"https://{domain}", f"https://www.{domain}", f"http://{domain}"]
+
+    time.sleep(random.uniform(0.3, 1.0))
+    last_error = None
+
+    for url in urls_to_try:
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT,
+                                allow_redirects=True, verify=False)
+            result["http_status"]    = resp.status_code
+            result["final_url"]      = str(resp.url)
+            result["redirect_chain"] = " -> ".join(
+                [str(r.url) for r in resp.history] + [str(resp.url)]
+            ) if resp.history else str(resp.url)
+            result["online_status"]  = classify_status(resp=resp)
+            result["page_title"]     = extract_title(resp.text)
+            result["html_hash"]      = html_hash(resp.text)
+            if result["online_status"] != "HTTP_ERROR":
+                return result
+        except Exception as e:
+            last_error = e
+            continue
+
+    if last_error:
+        result["online_status"] = classify_status(error=last_error)
+        result["error"]         = str(last_error)[:200]
     return result
 
 
