@@ -1,0 +1,26 @@
+{
+  "date": "2026-06-14",
+  "added": [],
+  "removed": [
+    {
+      "relaySiteId": 39812,
+      "siteDomain": "duckcoding.ai",
+      "siteName": "DuckCoding",
+      "detailSlug": "duckcodingai",
+      "rankPosition": 56,
+      "overallScore": 0,
+      "avgOnlineRate": 63,
+      "avgLatencyS": 5.59,
+      "latencySuspicious": false,
+      "modelCount": 116,
+      "rankedModelCount": 2,
+      "verificationType": "enterprise",
+      "siteDescription": "DuckCoding 按量计费，专为 Claude Code 、 CodeX 、 Gemini CLI 用户提供的高质量 API 服务",
+      "siteDescriptionHasMore": false,
+      "reviewCount": 0,
+      "averageRating": null,
+      "voteUpCount": 26,
+      "voteDownCount": 17
+    }
+  ]
+}
