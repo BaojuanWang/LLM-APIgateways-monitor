@@ -1,39 +1,29 @@
 name: Domain Enrichment
-
 on:
   schedule:
-    - cron: '0 6 * * *'  # 每天UTC 6:00
+    - cron: '0 6 * * *'
   workflow_dispatch:
-
 jobs:
   enrich:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
       - name: Install dependencies
         run: pip install requests openpyxl python-whois dnspython
-
       - name: Step 1 - Domain enrichment (WHOIS/IP/SSL/favicon)
         run: python scripts/enrich.py
-
       - name: Step 2 - Privacy policy analysis
         run: python scripts/privacy.py
-
       - name: Step 3 - Contact & affiliate detection
         run: python scripts/contacts.py
-
       - name: Commit and push results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-          git diff --staged --quiet || git commit -m "enrich: $(date -u '+%Y-%m-%d') UTC"
-          git push
+          git diff --staged --quiet || (git commit -m "enrich: $(date -u '+%Y-%m-%d') UTC" && git pull --rebase origin main && git push)
