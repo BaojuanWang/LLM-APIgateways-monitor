@@ -1,0 +1,26 @@
+{
+  "date": "2026-06-15",
+  "added": [
+    {
+      "relaySiteId": 40285,
+      "siteDomain": "ergouapi.com",
+      "siteName": "二狗 API",
+      "detailSlug": "ergouapicom",
+      "rankPosition": 59,
+      "overallScore": 0,
+      "avgOnlineRate": 95.7,
+      "avgLatencyS": 4.37,
+      "latencySuspicious": false,
+      "modelCount": 7,
+      "rankedModelCount": 0,
+      "verificationType": "",
+      "siteDescription": "1. 全站均使用 纯血模型，绝不掺水降级。如若发现模型降级或注水，无条件退款。 2. 顶级 CN2 GIA 线路 + 住宅双 ISP 冗余，确保全国范围稳定低延",
+      "siteDescriptionHasMore": true,
+      "reviewCount": 1,
+      "averageRating": 5,
+      "voteUpCount": 0,
+      "voteDownCount": 0
+    }
+  ],
+  "removed": []
+}
