@@ -14,7 +14,9 @@ jobs:
         with:
           python-version: '3.11'
       - name: Install dependencies
-        run: pip install requests openpyxl
+        run: |
+          pip install requests openpyxl playwright
+          playwright install chromium
       - name: Step 1 - Fetch hvoy platform list
         run: python scripts/hvoy_tracker.py
       - name: Step 2 - Check platform status
