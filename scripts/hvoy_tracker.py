@@ -15,6 +15,7 @@ from openpyxl.styles import Font, PatternFill, Alignment
 BASE_DIR    = Path(__file__).parent.parent
 DATA_DIR    = BASE_DIR / "data"
 HVOY_DIR    = DATA_DIR / "hvoy_raw"
+MANUAL_CSV  = DATA_DIR / "manual_sites.csv"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
@@ -160,6 +161,44 @@ def save_excel(items, added, removed, path, updated_at, date_str):
     wb.save(path)
 
 
+def save_removed_to_manual(removed):
+    """把 hvoy 删掉的站写入 manual_sites.csv，确保后续脚本继续监测它们。"""
+    if not removed:
+        return
+
+    # 读取已有 manual 条目，避免重复写入
+    existing_domains = set()
+    manual_exists = MANUAL_CSV.exists()
+    if manual_exists:
+        with open(MANUAL_CSV, encoding="utf-8-sig") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                existing_domains.add(row.get("domain", "").strip().lower())
+
+    to_add = [
+        p for p in removed
+        if p.get("siteDomain", "").strip().lower() not in existing_domains
+    ]
+
+    if not to_add:
+        print("  (已在 manual_sites.csv 中，无需重复写入)")
+        return
+
+    with open(MANUAL_CSV, "a", newline="", encoding="utf-8-sig") as f:
+        writer = csv.DictWriter(f, fieldnames=["domain", "platform_name", "source"])
+        # 文件是新建的话要写表头
+        if not manual_exists or MANUAL_CSV.stat().st_size == 0:
+            writer.writeheader()
+        for p in to_add:
+            writer.writerow({
+                "domain":        p.get("siteDomain", ""),
+                "platform_name": p.get("siteName", ""),
+                "source":        "hvoy_removed",
+            })
+
+    print(f"  已将 {len(to_add)} 个消失平台写入 manual_sites.csv（source=hvoy_removed）")
+
+
 def make_path(directory, stem, suffix):
     p = directory / f"{stem}.{suffix}"
     if not p.exists():
@@ -199,6 +238,11 @@ def main():
     added, removed = compare(old_data, items)
 
     print_diff(added, removed)
+
+    # 把 hvoy 删掉的站落入 manual_sites.csv，让其他脚本继续监测
+    if removed:
+        print(f"\n📌 将消失平台写入 manual_sites.csv ...")
+        save_removed_to_manual(removed)
 
     today_json = make_path(HVOY_DIR, f"hvoy_{date_str}", "json")
     today_xlsx = make_path(HVOY_DIR, f"hvoy_{date_str}", "xlsx")
