@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 jobs:
   enrich:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
