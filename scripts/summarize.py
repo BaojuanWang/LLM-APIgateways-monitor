@@ -14,6 +14,7 @@ from openpyxl.styles import Font, PatternFill, Alignment
 BASE_DIR    = Path(__file__).parent.parent
 RESULTS_CSV = BASE_DIR / "results" / "monitor_results.csv"
 OUTPUT_DIR  = BASE_DIR / "results"
+REVIEW_CSV  = OUTPUT_DIR / "needs_review.csv"
 
 # 状态分层
 ALIVE_STATUSES       = {"ONLINE", "CLOUDFLARE_OR_BLOCKED", "ONLINE_LOGIN_REQUIRED",
@@ -94,6 +95,48 @@ def make_date_path(stem, suffix):
         if not p.exists():
             return p
         n += 1
+
+
+def save_needs_review(platforms):
+    """
+    输出需要手动确认的站点到 results/needs_review.csv
+    条件：综合判定为 UNCERTAIN（全程 TIMEOUT 或 HTTP_ERROR，从未确认存活）
+    每次覆盖写入，只保留最新状态。
+    """
+    fields = [
+        "domain", "platform_name", "综合判定", "检测次数",
+        "各状态明细", "最近状态", "最近检测时间", "最终URL", "备注"
+    ]
+
+    rows = []
+    for domain, p in platforms.items():
+        sc = p["status_counts"]
+        overall = classify_overall(sc)
+        if overall != "UNCERTAIN":
+            continue
+        total = sum(sc.values())
+        detail = ", ".join(f"{k}×{v}" for k, v in sorted(sc.items()))
+        rows.append({
+            "domain":        domain,
+            "platform_name": p["platform_name"],
+            "综合判定":      overall,
+            "检测次数":      total,
+            "各状态明细":    detail,
+            "最近状态":      p["last_status"],
+            "最近检测时间":  p["last_timestamp"],
+            "最终URL":       p["last_final_url"],
+            "备注":          "请用国内网络手动验证",
+        })
+
+    # 按域名排序
+    rows.sort(key=lambda x: x["domain"])
+
+    with open(REVIEW_CSV, "w", newline="", encoding="utf-8-sig") as f:
+        writer = csv.DictWriter(f, fieldnames=fields)
+        writer.writeheader()
+        writer.writerows(rows)
+
+    return len(rows)
 
 
 def save_excel(platforms):
@@ -251,12 +294,14 @@ def main():
     print(f"共 {len(platforms)} 个平台")
 
     path, alive, uncertain, dead = save_excel(platforms)
+    review_count = save_needs_review(platforms)
 
     print(f"\n── 综合判定 ──")
     print(f"  ALIVE     {alive}")
     print(f"  UNCERTAIN {uncertain}")
     print(f"  DEAD      {dead}")
     print(f"\n✅ 已保存: {path}")
+    print(f"📋 需手动确认: {review_count} 个 → {REVIEW_CSV}")
 
 
 if __name__ == "__main__":
