@@ -170,7 +170,7 @@ def take_screenshot(domain, final_url, date_str):
             page = browser.new_page(viewport={"width": 1280, "height": 800})
             page.goto(url, timeout=20000, wait_until="domcontentloaded")
             page.wait_for_timeout(1500)
-            page.screenshot(path=str(path), full_page=False)
+            page.screenshot(path=str(path), full_page=True)
             browser.close()
         print(f"    📸 截图已保存: {path.name}")
     except Exception as e:
