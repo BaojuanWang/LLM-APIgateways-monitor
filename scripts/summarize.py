@@ -5,35 +5,53 @@
 """
 
 import csv
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import datetime
+from html import escape
 from pathlib import Path
-from openpyxl import Workbook
-from openpyxl.styles import Font, PatternFill, Alignment
 
-BASE_DIR    = Path(__file__).parent.parent
+from openpyxl import Workbook
+from openpyxl.styles import Alignment, Font, PatternFill
+
+BASE_DIR = Path(__file__).parent.parent
 RESULTS_CSV = BASE_DIR / "results" / "monitor_results.csv"
-OUTPUT_DIR  = BASE_DIR / "results"
-REVIEW_CSV  = OUTPUT_DIR / "needs_review.csv"
+OUTPUT_DIR = BASE_DIR / "results"
+REVIEW_CSV = OUTPUT_DIR / "needs_review.csv"
+STATUS_SVG = OUTPUT_DIR / "status_summary.svg"
 
 # 状态分层
-ALIVE_STATUSES       = {"ONLINE", "CLOUDFLARE_OR_BLOCKED", "ONLINE_LOGIN_REQUIRED",
-                        "HTTP_444", "ALIVE_BLOCKED", "REDIRECTED"}
-UNCERTAIN_STATUSES   = {"TIMEOUT", "HTTP_ERROR"}
-DEAD_STATUSES        = {"DNS_FAIL", "PARKED_OR_FOR_SALE"}
+ALIVE_STATUSES = {
+    "ONLINE",
+    "CLOUDFLARE_OR_BLOCKED",
+    "ONLINE_LOGIN_REQUIRED",
+    "HTTP_444",
+    "ALIVE_BLOCKED",
+    "REDIRECTED",
+}
+UNCERTAIN_STATUSES = {"TIMEOUT", "HTTP_ERROR"}
+DEAD_STATUSES = {"DNS_FAIL", "PARKED_OR_FOR_SALE"}
+
 
 def classify_overall(status_counts):
-    """根据历史状态判定综合存活状态"""
+    """根据历史状态判断综合存活状态"""
     statuses = set(status_counts.keys())
 
-    # 有任何一次确认存活 → ALIVE
+    # 有任何一次确认存活 -> ALIVE
     if statuses & ALIVE_STATUSES:
         return "ALIVE"
-    # 全是不确定 → UNCERTAIN
+    # 全是不确定 -> UNCERTAIN
     if statuses <= UNCERTAIN_STATUSES:
         return "UNCERTAIN"
-    # 全是DNS_FAIL → DEAD
+    # 全是 DNS_FAIL / 停放出售 -> DEAD
     if statuses <= DEAD_STATUSES:
+        return "DEAD"
+    return "UNCERTAIN"
+
+
+def status_bucket(status):
+    if status in ALIVE_STATUSES:
+        return "ALIVE"
+    if status in DEAD_STATUSES:
         return "DEAD"
     return "UNCERTAIN"
 
@@ -70,15 +88,15 @@ def load_results():
             p["status_counts"][status] += 1
             p["checks"].append({
                 "timestamp": row.get("timestamp", ""),
-                "status":    status,
+                "status": status,
             })
 
             # 保留最新一次
             ts = row.get("timestamp", "")
             if ts > p["last_timestamp"]:
-                p["last_timestamp"]  = ts
-                p["last_status"]     = status
-                p["last_final_url"]  = row.get("final_url", "")
+                p["last_timestamp"] = ts
+                p["last_status"] = status
+                p["last_final_url"] = row.get("final_url", "")
                 p["last_page_title"] = row.get("page_title", "")
 
     return platforms
@@ -97,38 +115,60 @@ def make_date_path(stem, suffix):
         n += 1
 
 
-def save_needs_review(platforms):
-    """
-    输出需要手动确认的站点到 results/needs_review.csv
-    条件：综合判定为 UNCERTAIN（全程 TIMEOUT 或 HTTP_ERROR，从未确认存活）
-    每次覆盖写入，只保留最新状态。
-    """
-    fields = [
-        "domain", "platform_name", "综合判定", "检测次数",
-        "各状态明细", "最近状态", "最近检测时间", "最终URL", "备注"
-    ]
-
+def build_summary_rows(platforms):
     rows = []
     for domain, p in platforms.items():
         sc = p["status_counts"]
         overall = classify_overall(sc)
-        if overall != "UNCERTAIN":
-            continue
         total = sum(sc.values())
+        alive_n = sum(v for k, v in sc.items() if k in ALIVE_STATUSES)
+        uncertain_n = sum(v for k, v in sc.items() if k in UNCERTAIN_STATUSES or k not in ALIVE_STATUSES | DEAD_STATUSES)
+        dead_n = sum(v for k, v in sc.items() if k in DEAD_STATUSES)
         detail = ", ".join(f"{k}×{v}" for k, v in sorted(sc.items()))
         rows.append({
-            "domain":        domain,
-            "platform_name": p["platform_name"],
-            "综合判定":      overall,
-            "检测次数":      total,
-            "各状态明细":    detail,
-            "最近状态":      p["last_status"],
-            "最近检测时间":  p["last_timestamp"],
-            "最终URL":       p["last_final_url"],
-            "备注":          "请用国内网络手动验证",
+            "overall": overall,
+            "domain": domain,
+            "platform": p,
+            "total": total,
+            "alive_n": alive_n,
+            "uncertain_n": uncertain_n,
+            "dead_n": dead_n,
+            "detail": detail,
         })
 
-    # 按域名排序
+    order = {"DEAD": 0, "UNCERTAIN": 1, "ALIVE": 2}
+    rows.sort(key=lambda x: (order.get(x["overall"], 9), x["domain"]))
+    return rows
+
+
+def save_needs_review(platforms):
+    """
+    输出需要手动确认的站点到 results/needs_review.csv
+    条件：综合判断为 UNCERTAIN（从未确认存活）
+    每次覆盖写入，只保留最新状态。
+    """
+    fields = [
+        "domain", "platform_name", "综合判断", "检测次数",
+        "各状态明细", "最近状态", "最近检测时间", "最终URL", "备注"
+    ]
+
+    rows = []
+    for item in build_summary_rows(platforms):
+        if item["overall"] != "UNCERTAIN":
+            continue
+        p = item["platform"]
+        rows.append({
+            "domain": item["domain"],
+            "platform_name": p["platform_name"],
+            "综合判断": item["overall"],
+            "检测次数": item["total"],
+            "各状态明细": item["detail"],
+            "最近状态": p["last_status"],
+            "最近检测时间": p["last_timestamp"],
+            "最终URL": p["last_final_url"],
+            "备注": "请用国内网络手动验证",
+        })
+
     rows.sort(key=lambda x: x["domain"])
 
     with open(REVIEW_CSV, "w", newline="", encoding="utf-8-sig") as f:
@@ -142,70 +182,44 @@ def save_needs_review(platforms):
 def save_excel(platforms):
     wb = Workbook()
 
-    # 颜色
-    header_fill   = PatternFill("solid", start_color="2D5EA2")
-    header_font   = Font(bold=True, color="FFFFFF", name="Arial", size=10)
-    alive_fill    = PatternFill("solid", start_color="D4EFDF")
-    uncertain_fill= PatternFill("solid", start_color="FEF9E7")
-    dead_fill     = PatternFill("solid", start_color="FADBD8")
-    alt_fill      = PatternFill("solid", start_color="F0F4FA")
+    header_fill = PatternFill("solid", start_color="2D5EA2")
+    header_font = Font(bold=True, color="FFFFFF", name="Arial", size=10)
+    alive_fill = PatternFill("solid", start_color="D4EFDF")
+    uncertain_fill = PatternFill("solid", start_color="FEF9E7")
+    dead_fill = PatternFill("solid", start_color="FADBD8")
+    alt_fill = PatternFill("solid", start_color="F0F4FA")
 
     status_fill = {
-        "ALIVE":     alive_fill,
+        "ALIVE": alive_fill,
         "UNCERTAIN": uncertain_fill,
-        "DEAD":      dead_fill,
+        "DEAD": dead_fill,
     }
-
-    # ── Sheet 1: 综合汇总 ─────────────────────────────────────
-    ws = wb.active
-    ws.title = "综合汇总"
 
     headers = [
         "域名", "平台名称", "来源", "来源分类",
-        "综合判定", "检测次数", "最近状态", "最近检测时间",
+        "综合判断", "检测次数", "最近状态", "最近检测时间",
         "ALIVE次数", "UNCERTAIN次数", "DEAD次数",
         "各状态明细", "最终URL", "页面标题"
     ]
+    rows = build_summary_rows(platforms)
 
+    ws = wb.active
+    ws.title = "综合汇总"
     for col, h in enumerate(headers, 1):
         cell = ws.cell(row=1, column=col, value=h)
         cell.fill = header_fill
         cell.font = header_font
         cell.alignment = Alignment(horizontal="center", vertical="center")
 
-    rows = []
-    for domain, p in platforms.items():
-        sc = p["status_counts"]
-        overall = classify_overall(sc)
-        total = sum(sc.values())
-        alive_n     = sum(v for k, v in sc.items() if k in ALIVE_STATUSES)
-        uncertain_n = sum(v for k, v in sc.items() if k in UNCERTAIN_STATUSES)
-        dead_n      = sum(v for k, v in sc.items() if k in DEAD_STATUSES)
-        detail = ", ".join(f"{k}×{v}" for k, v in sorted(sc.items()))
-        rows.append((overall, domain, p, total, alive_n, uncertain_n, dead_n, detail))
-
-    # 排序：DEAD在前，UNCERTAIN其次，ALIVE最后（方便review）
-    order = {"DEAD": 0, "UNCERTAIN": 1, "ALIVE": 2}
-    rows.sort(key=lambda x: order.get(x[0], 9))
-
-    for row_idx, (overall, domain, p, total, alive_n, uncertain_n, dead_n, detail) in enumerate(rows, 2):
-        fill = status_fill.get(overall, alt_fill)
+    for row_idx, item in enumerate(rows, 2):
+        p = item["platform"]
         vals = [
-            domain,
-            p["platform_name"],
-            p["source"],
-            p["source_category"],
-            overall,
-            total,
-            p["last_status"],
-            p["last_timestamp"],
-            alive_n,
-            uncertain_n,
-            dead_n,
-            detail,
-            p["last_final_url"],
-            p["last_page_title"],
+            item["domain"], p["platform_name"], p["source"], p["source_category"],
+            item["overall"], item["total"], p["last_status"], p["last_timestamp"],
+            item["alive_n"], item["uncertain_n"], item["dead_n"], item["detail"],
+            p["last_final_url"], p["last_page_title"],
         ]
+        fill = status_fill.get(item["overall"], alt_fill)
         for col, val in enumerate(vals, 1):
             cell = ws.cell(row=row_idx, column=col, value=val)
             cell.font = Font(name="Arial", size=10)
@@ -218,74 +232,216 @@ def save_excel(platforms):
     ws.row_dimensions[1].height = 20
     ws.freeze_panes = "A2"
 
-    # ── Sheet 2: 仅DEAD ───────────────────────────────────────
-    ws2 = wb.create_sheet("疑似关闭")
-    for col, h in enumerate(headers, 1):
-        cell = ws2.cell(row=1, column=col, value=h)
-        cell.fill = header_fill
-        cell.font = header_font
-        cell.alignment = Alignment(horizontal="center")
-    dead_rows = [r for r in rows if r[0] == "DEAD"]
-    for row_idx, (overall, domain, p, total, alive_n, uncertain_n, dead_n, detail) in enumerate(dead_rows, 2):
-        vals = [domain, p["platform_name"], p["source"], p["source_category"],
-                overall, total, p["last_status"], p["last_timestamp"],
-                alive_n, uncertain_n, dead_n, detail, p["last_final_url"], p["last_page_title"]]
-        for col, val in enumerate(vals, 1):
-            cell = ws2.cell(row=row_idx, column=col, value=val)
-            cell.font = Font(name="Arial", size=10)
-            cell.fill = dead_fill
-    for col, width in enumerate(col_widths, 1):
-        ws2.column_dimensions[ws2.cell(row=1, column=col).column_letter].width = width
-    ws2.freeze_panes = "A2"
+    for sheet_name, status, fill in [
+        ("疑似关闭", "DEAD", dead_fill),
+        ("待确认", "UNCERTAIN", uncertain_fill),
+    ]:
+        ws_status = wb.create_sheet(sheet_name)
+        for col, h in enumerate(headers, 1):
+            cell = ws_status.cell(row=1, column=col, value=h)
+            cell.fill = header_fill
+            cell.font = header_font
+            cell.alignment = Alignment(horizontal="center")
+        status_rows = [r for r in rows if r["overall"] == status]
+        for row_idx, item in enumerate(status_rows, 2):
+            p = item["platform"]
+            vals = [
+                item["domain"], p["platform_name"], p["source"], p["source_category"],
+                item["overall"], item["total"], p["last_status"], p["last_timestamp"],
+                item["alive_n"], item["uncertain_n"], item["dead_n"], item["detail"],
+                p["last_final_url"], p["last_page_title"],
+            ]
+            for col, val in enumerate(vals, 1):
+                cell = ws_status.cell(row=row_idx, column=col, value=val)
+                cell.font = Font(name="Arial", size=10)
+                cell.fill = fill
+        for col, width in enumerate(col_widths, 1):
+            ws_status.column_dimensions[ws_status.cell(row=1, column=col).column_letter].width = width
+        ws_status.freeze_panes = "A2"
 
-    # ── Sheet 3: 仅UNCERTAIN ──────────────────────────────────
-    ws3 = wb.create_sheet("待确认")
-    for col, h in enumerate(headers, 1):
-        cell = ws3.cell(row=1, column=col, value=h)
-        cell.fill = header_fill
-        cell.font = header_font
-        cell.alignment = Alignment(horizontal="center")
-    uncertain_rows = [r for r in rows if r[0] == "UNCERTAIN"]
-    for row_idx, (overall, domain, p, total, alive_n, uncertain_n, dead_n, detail) in enumerate(uncertain_rows, 2):
-        vals = [domain, p["platform_name"], p["source"], p["source_category"],
-                overall, total, p["last_status"], p["last_timestamp"],
-                alive_n, uncertain_n, dead_n, detail, p["last_final_url"], p["last_page_title"]]
-        for col, val in enumerate(vals, 1):
-            cell = ws3.cell(row=row_idx, column=col, value=val)
-            cell.font = Font(name="Arial", size=10)
-            cell.fill = uncertain_fill
-    for col, width in enumerate(col_widths, 1):
-        ws3.column_dimensions[ws3.cell(row=1, column=col).column_letter].width = width
-    ws3.freeze_panes = "A2"
-
-    # ── Sheet 4: 说明 ─────────────────────────────────────────
     ws4 = wb.create_sheet("说明")
     total_platforms = len(platforms)
-    alive_count     = sum(1 for r in rows if r[0] == "ALIVE")
-    uncertain_count = sum(1 for r in rows if r[0] == "UNCERTAIN")
-    dead_count      = sum(1 for r in rows if r[0] == "DEAD")
+    alive_count = sum(1 for r in rows if r["overall"] == "ALIVE")
+    uncertain_count = sum(1 for r in rows if r["overall"] == "UNCERTAIN")
+    dead_count = sum(1 for r in rows if r["overall"] == "DEAD")
     meta = [
-        ("生成时间",    datetime.now().strftime("%Y-%m-%d %H:%M")),
-        ("数据来源",    str(RESULTS_CSV)),
-        ("平台总数",    total_platforms),
-        ("ALIVE",      f"{alive_count} 个（入口确认存活）"),
-        ("UNCERTAIN",  f"{uncertain_count} 个（需进一步确认）"),
-        ("DEAD",       f"{dead_count} 个（DNS解析失败，疑似关闭）"),
+        ("生成时间", datetime.now().strftime("%Y-%m-%d %H:%M")),
+        ("数据来源", str(RESULTS_CSV)),
+        ("平台总数", total_platforms),
+        ("ALIVE", f"{alive_count} 个（入口确认存活）"),
+        ("UNCERTAIN", f"{uncertain_count} 个（需进一步确认）"),
+        ("DEAD", f"{dead_count} 个（DNS失败/域名停放，疑似关闭）"),
         ("", ""),
-        ("判定规则",   ""),
-        ("ALIVE",      "至少一次检测返回 ONLINE / Cloudflare / 444 / 登录页"),
-        ("UNCERTAIN",  "所有检测均为 TIMEOUT 或 HTTP_ERROR"),
-        ("DEAD",       "所有检测均为 DNS_FAIL"),
+        ("判断规则", ""),
+        ("ALIVE", "至少一次检测返回 ONLINE / Cloudflare / 444 / 登录页"),
+        ("UNCERTAIN", "从未确认存活，且最近/历史结果仍需人工判断"),
+        ("DEAD", "所有检测均为 DNS_FAIL 或 PARKED_OR_FOR_SALE"),
+        ("概览图", str(STATUS_SVG)),
     ]
     for r, (k, v) in enumerate(meta, 1):
         ws4.cell(row=r, column=1, value=k).font = Font(bold=True, name="Arial")
         ws4.cell(row=r, column=2, value=str(v)).font = Font(name="Arial")
     ws4.column_dimensions["A"].width = 14
-    ws4.column_dimensions["B"].width = 45
+    ws4.column_dimensions["B"].width = 60
 
     path = make_date_path("summary", "xlsx")
     wb.save(path)
     return path, alive_count, uncertain_count, dead_count
+
+
+def latest_status_counts(platforms):
+    return Counter(p["last_status"] or "UNKNOWN" for p in platforms.values())
+
+
+def changed_since_previous_check(platforms):
+    changes = []
+    for domain, p in platforms.items():
+        checks = sorted(
+            [c for c in p["checks"] if c.get("timestamp")],
+            key=lambda c: c["timestamp"],
+        )
+        if len(checks) < 2:
+            continue
+        previous = checks[-2]
+        current = checks[-1]
+        if previous["status"] == current["status"]:
+            continue
+        changes.append({
+            "domain": domain,
+            "platform_name": p["platform_name"],
+            "previous": previous["status"],
+            "current": current["status"],
+            "timestamp": current["timestamp"],
+        })
+    changes.sort(key=lambda x: (status_bucket(x["current"]), x["domain"]))
+    return changes
+
+
+def svg_text(x, y, text, size=16, weight="400", fill="#111827"):
+    return (
+        f'<text x="{x}" y="{y}" font-family="Arial, sans-serif" '
+        f'font-size="{size}" font-weight="{weight}" fill="{fill}">{escape(str(text))}</text>'
+    )
+
+
+def svg_rect(x, y, width, height, fill, radius=8, stroke="none"):
+    return (
+        f'<rect x="{x}" y="{y}" width="{width}" height="{height}" '
+        f'rx="{radius}" fill="{fill}" stroke="{stroke}" />'
+    )
+
+
+def save_summary_plot(platforms, alive, uncertain, dead, review_count):
+    """Write one overwritten SVG overview for quick inspection in GitHub."""
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    total = max(alive + uncertain + dead, 1)
+    rows = build_summary_rows(platforms)
+    latest_counts = latest_status_counts(platforms)
+    changes = changed_since_previous_check(platforms)
+    latest_timestamp = max((p["last_timestamp"] for p in platforms.values()), default="")
+
+    width = 1100
+    height = 760
+    chart_x = 70
+    chart_w = 680
+    y = 32
+    parts = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
+        svg_rect(0, 0, width, height, "#F8FAFC", radius=0),
+        svg_text(60, y, "LLM Relay Monitor - Status Overview", 28, "700"),
+        svg_text(60, y + 30, f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M')} | Latest data: {latest_timestamp or 'n/a'}", 14, "400", "#475569"),
+    ]
+
+    cards = [
+        ("ALIVE", alive, "#16A34A", "Confirmed reachable at least once"),
+        ("UNCERTAIN", uncertain, "#D97706", "Needs manual confirmation"),
+        ("DEAD", dead, "#DC2626", "DNS failed or parked only"),
+    ]
+    for i, (label, value, color, note) in enumerate(cards):
+        x = 60 + i * 330
+        parts.extend([
+            svg_rect(x, 92, 300, 110, "#FFFFFF", stroke="#E2E8F0"),
+            svg_text(x + 22, 125, label, 16, "700", color),
+            svg_text(x + 22, 165, value, 36, "700", "#0F172A"),
+            svg_text(x + 94, 163, f"/ {total}", 15, "400", "#64748B"),
+            svg_text(x + 22, 188, note, 13, "400", "#64748B"),
+        ])
+
+    parts.append(svg_text(60, 248, "Overall classification", 18, "700"))
+    bar_y = 272
+    x = chart_x
+    for label, value, color, _ in cards:
+        segment_w = int(chart_w * value / total)
+        if segment_w <= 0 and value > 0:
+            segment_w = 2
+        parts.append(svg_rect(x, bar_y, segment_w, 34, color, radius=4))
+        if segment_w > 60:
+            parts.append(svg_text(x + 10, bar_y + 23, f"{label} {value}", 13, "700", "#FFFFFF"))
+        x += segment_w
+    parts.append(svg_rect(chart_x, bar_y, chart_w, 34, "none", radius=4, stroke="#CBD5E1"))
+
+    parts.append(svg_text(60, 352, "Latest check status distribution", 18, "700"))
+    latest_total = max(sum(latest_counts.values()), 1)
+    status_colors = {
+        "ONLINE": "#16A34A",
+        "CLOUDFLARE_OR_BLOCKED": "#22C55E",
+        "ONLINE_LOGIN_REQUIRED": "#65A30D",
+        "HTTP_404": "#D97706",
+        "HTTP_ERROR": "#F59E0B",
+        "TIMEOUT": "#FBBF24",
+        "DNS_FAIL": "#DC2626",
+        "PARKED_OR_FOR_SALE": "#B91C1C",
+    }
+    for idx, (status, count) in enumerate(latest_counts.most_common(8)):
+        row_y = 382 + idx * 30
+        bar_w = int(430 * count / latest_total)
+        color = status_colors.get(status, "#64748B")
+        parts.extend([
+            svg_text(70, row_y + 18, status, 13, "700", "#334155"),
+            svg_rect(275, row_y, max(bar_w, 2), 18, color, radius=4),
+            svg_text(285 + max(bar_w, 2), row_y + 15, count, 13, "700", "#334155"),
+        ])
+
+    notes_x = 790
+    parts.extend([
+        svg_rect(notes_x, 238, 250, 416, "#FFFFFF", stroke="#E2E8F0"),
+        svg_text(notes_x + 22, 272, "Notes", 18, "700"),
+        svg_text(notes_x + 22, 306, f"Needs review: {review_count}", 14, "700", "#D97706"),
+        svg_text(notes_x + 22, 330, f"Changed since previous check: {len(changes)}", 14, "700", "#334155"),
+        svg_text(notes_x + 22, 364, "Review first", 14, "700", "#0F172A"),
+    ])
+
+    review_rows = [r for r in rows if r["overall"] in {"DEAD", "UNCERTAIN"}][:8]
+    if not review_rows:
+        parts.append(svg_text(notes_x + 22, 390, "No dead or uncertain platforms.", 13, "400", "#16A34A"))
+    else:
+        for idx, item in enumerate(review_rows):
+            p = item["platform"]
+            row_y = 390 + idx * 24
+            label = f"{item['overall']}: {item['domain']} ({p['last_status']})"
+            parts.append(svg_text(notes_x + 22, row_y, label[:38], 12, "400", "#475569"))
+
+    parts.append(svg_text(notes_x + 22, 596, "Rules", 14, "700", "#0F172A"))
+    rule_lines = [
+        "ALIVE: any historical confirmed response.",
+        "UNCERTAIN: no confirmed good response yet.",
+        "DEAD: only DNS fail / parked results.",
+    ]
+    for idx, line in enumerate(rule_lines):
+        parts.append(svg_text(notes_x + 22, 620 + idx * 20, line, 12, "400", "#64748B"))
+
+    parts.append(svg_text(60, 676, "Recent status changes", 18, "700"))
+    if not changes:
+        parts.append(svg_text(70, 706, "No platform changed status compared with its previous check.", 13, "400", "#475569"))
+    else:
+        for idx, change in enumerate(changes[:6]):
+            label = f"{change['domain']}: {change['previous']} -> {change['current']}"
+            parts.append(svg_text(70, 706 + idx * 22, label, 13, "400", "#475569"))
+
+    parts.append("</svg>")
+    STATUS_SVG.write_text("\n".join(parts), encoding="utf-8")
+    return STATUS_SVG
 
 
 def main():
@@ -295,12 +451,14 @@ def main():
 
     path, alive, uncertain, dead = save_excel(platforms)
     review_count = save_needs_review(platforms)
+    plot_path = save_summary_plot(platforms, alive, uncertain, dead, review_count)
 
-    print(f"\n── 综合判定 ──")
+    print(f"\n── 综合判断 ──")
     print(f"  ALIVE     {alive}")
     print(f"  UNCERTAIN {uncertain}")
     print(f"  DEAD      {dead}")
     print(f"\n✅ 已保存: {path}")
+    print(f"📊 概览图已覆盖: {plot_path}")
     print(f"📋 需手动确认: {review_count} 个 → {REVIEW_CSV}")
 
 
