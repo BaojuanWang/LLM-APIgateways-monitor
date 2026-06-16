@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="760" viewBox="0 0 1100 760">
 <rect x="0" y="0" width="1100" height="760" rx="0" fill="#F8FAFC" stroke="none" />
 <text x="60" y="32" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">LLM Relay Monitor - Status Overview</text>
-<text x="60" y="62" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#475569">Generated: 2026-06-16 19:31 | Latest data: 2026-06-16T19:31:20Z</text>
+<text x="60" y="62" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#475569">Generated: 2026-06-16 22:07 | Latest data: 2026-06-16T22:07:54Z</text>
 <rect x="60" y="92" width="300" height="110" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
 <text x="82" y="125" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#16A34A">ALIVE</text>
 <text x="82" y="165" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#0F172A">245</text>
@@ -45,7 +45,7 @@
 <rect x="790" y="238" width="250" height="416" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
 <text x="812" y="272" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">Notes</text>
 <text x="812" y="306" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#D97706">Needs review: 2</text>
-<text x="812" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#334155">Changed since previous check: 1</text>
+<text x="812" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#334155">Changed since previous check: 0</text>
 <text x="812" y="364" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0F172A">Review first</text>
 <text x="812" y="390" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#475569">DEAD: code.b886.top (DNS_FAIL)</text>
 <text x="812" y="414" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#475569">DEAD: daidaibird.top (DNS_FAIL)</text>
@@ -60,5 +60,5 @@
 <text x="812" y="640" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#64748B">UNCERTAIN: no confirmed good response yet.</text>
 <text x="812" y="660" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#64748B">DEAD: only DNS fail / parked results.</text>
 <text x="60" y="676" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">Recent status changes</text>
-<text x="70" y="706" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">api.dzzi.ai: TIMEOUT -&gt; ONLINE</text>
+<text x="70" y="706" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">No platform changed status compared with its previous check.</text>
 </svg>
