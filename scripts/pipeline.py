@@ -17,15 +17,14 @@ import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 warnings.filterwarnings("ignore", category=InsecureRequestWarning)
 
-BASE_DIR       = Path(__file__).parent.parent
-DATA_DIR       = BASE_DIR / "data"
-RESULTS_DIR    = BASE_DIR / "results"
-SCREENSHOT_DIR = DATA_DIR / "screenshots"
+BASE_DIR    = Path(__file__).parent.parent
+DATA_DIR    = BASE_DIR / "data"
+RESULTS_DIR = BASE_DIR / "results"
 
-HVOY_CSV       = DATA_DIR / "hvoy_latest.csv"
-MANUAL_CSV     = DATA_DIR / "manual_sites.csv"
-RESULTS_CSV    = RESULTS_DIR / "monitor_results.csv"
-REVIEW_CSV     = RESULTS_DIR / "needs_review.csv"
+HVOY_CSV    = DATA_DIR / "hvoy_latest.csv"
+MANUAL_CSV  = DATA_DIR / "manual_sites.csv"
+RESULTS_CSV = RESULTS_DIR / "monitor_results.csv"
+REVIEW_CSV  = RESULTS_DIR / "needs_review.csv"
 
 TIMEOUT     = 15
 MAX_WORKERS = 10
@@ -122,61 +121,6 @@ def load_platforms():
     return list(platforms.values())
 
 
-def load_last_hashes():
-    """读取每个域名上一轮的 html_hash，用于判断内容是否变化。"""
-    if not RESULTS_CSV.exists():
-        return {}
-    last = {}
-    with open(RESULTS_CSV, encoding="utf-8-sig") as f:
-        for row in csv.DictReader(f):
-            domain = row.get("domain", "").strip()
-            ts     = row.get("timestamp", "")
-            h      = row.get("html_hash", "")
-            if domain and h:
-                if domain not in last or ts > last[domain]["ts"]:
-                    last[domain] = {"ts": ts, "hash": h}
-    return {d: v["hash"] for d, v in last.items()}
-
-
-def has_any_screenshot(domain):
-    """判断这个域名是否已有任何历史截图。"""
-    SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
-    safe = domain.replace(".", "_").replace("/", "_")
-    return any(SCREENSHOT_DIR.glob(f"{safe}_*.png"))
-
-
-def take_screenshot(domain, final_url, date_str):
-    """用 playwright 截图，保存到 data/screenshots/域名_日期.png。"""
-    try:
-        from playwright.sync_api import sync_playwright
-    except ImportError:
-        print(f"    ⚠️  playwright 未安装，跳过截图")
-        return
-
-    SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
-    safe = domain.replace(".", "_").replace("/", "_")
-
-    path = SCREENSHOT_DIR / f"{safe}_{date_str}.png"
-    if path.exists():
-        n = 2
-        while (SCREENSHOT_DIR / f"{safe}_{date_str}_{n}.png").exists():
-            n += 1
-        path = SCREENSHOT_DIR / f"{safe}_{date_str}_{n}.png"
-
-    url = final_url or f"https://{domain}"
-    try:
-        with sync_playwright() as p:
-            browser = p.chromium.launch(args=["--no-sandbox", "--disable-dev-shm-usage"])
-            page = browser.new_page(viewport={"width": 1280, "height": 800})
-            page.goto(url, timeout=20000, wait_until="domcontentloaded")
-            page.wait_for_timeout(1500)
-            page.screenshot(path=str(path), full_page=True)
-            browser.close()
-        print(f"    📸 截图已保存: {path.name}")
-    except Exception as e:
-        print(f"    ⚠️  截图失败 {domain}: {e}")
-
-
 def check_one(p):
     domain = p["domain"]
     ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -258,37 +202,6 @@ def append_needs_review(results):
     return len(timeout_results)
 
 
-def process_screenshots(results, last_hashes, date_str):
-    """
-    截图触发条件：
-    - 新站点（screenshots/ 里没有任何历史截图）→ 截
-    - html_hash 和上一轮不同 → 截
-    - DNS_FAIL / TIMEOUT / HTTP_ERROR 的站跳过（没有可截的页面）
-    """
-    skip_statuses = {"DNS_FAIL", "TIMEOUT", "HTTP_ERROR", "PARKED_OR_FOR_SALE"}
-    screenshot_count = 0
-
-    for r in results:
-        domain = r["domain"]
-        status = r.get("online_status", "")
-
-        if status in skip_statuses:
-            continue
-
-        new_hash = r.get("html_hash", "")
-        old_hash = last_hashes.get(domain, "")
-        is_new   = not has_any_screenshot(domain)
-        changed  = (old_hash != "" and new_hash != "" and old_hash != new_hash)
-
-        if is_new or changed:
-            reason = "新站点" if is_new else "内容变化"
-            print(f"  📸 {domain} ({reason})")
-            take_screenshot(domain, r.get("final_url", ""), date_str)
-            screenshot_count += 1
-
-    return screenshot_count
-
-
 def print_summary(results):
     from collections import Counter
     counts = Counter(r["online_status"] for r in results)
@@ -307,9 +220,6 @@ def main():
         print("没有平台可检测，退出")
         return
 
-    last_hashes = load_last_hashes()
-    date_str    = datetime.now().strftime("%Y-%m-%d")
-
     print(f"\n正在检测 {len(platforms)} 个平台...\n")
     results = []
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
@@ -322,18 +232,14 @@ def main():
             print(f"  [{done:3d}/{len(platforms)}] {r['domain']:<35} {r['online_status']}")
 
     append_results(results)
-    review_count     = append_needs_review(results)
+    review_count = append_needs_review(results)
     print_summary(results)
-
-    print(f"\n── 截图处理 ──")
-    screenshot_count = process_screenshots(results, last_hashes, date_str)
 
     print(f"\n✅ 结果已追加到 {RESULTS_CSV}")
     if review_count:
         print(f"⚠️  {review_count} 个超时站点已追加到 {REVIEW_CSV}，请手动确认")
     else:
         print(f"✅ 本轮无超时站点")
-    print(f"📸 本轮截图: {screenshot_count} 张")
 
 
 if __name__ == "__main__":
