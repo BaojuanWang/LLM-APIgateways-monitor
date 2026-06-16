@@ -1,0 +1,46 @@
+{
+  "date": "2026-06-16",
+  "added": [
+    {
+      "relaySiteId": 40299,
+      "siteDomain": "ccmax20.cc",
+      "siteName": "baby",
+      "detailSlug": "ccmax20cc",
+      "rankPosition": 58,
+      "overallScore": 0,
+      "avgOnlineRate": 100,
+      "avgLatencyS": 4.15,
+      "latencySuspicious": false,
+      "modelCount": 6,
+      "rankedModelCount": 0,
+      "verificationType": "enterprise",
+      "siteDescription": "baby是一家纯自研max号池的团队 我们拥有稳定的订阅账号运行方式 专业做cc 域名好记 ccmax20.cc 未来baby在AI的道路与你们同行",
+      "siteDescriptionHasMore": false,
+      "reviewCount": 0,
+      "averageRating": null,
+      "voteUpCount": 0,
+      "voteDownCount": 0
+    },
+    {
+      "relaySiteId": 40274,
+      "siteDomain": "tieapi.com",
+      "siteName": "TieAPI",
+      "detailSlug": "tieapicom",
+      "rankPosition": 185,
+      "overallScore": 0,
+      "avgOnlineRate": null,
+      "avgLatencyS": null,
+      "latencySuspicious": false,
+      "modelCount": 5,
+      "rankedModelCount": 0,
+      "verificationType": "enterprise",
+      "siteDescription": "原版品质，不掺水，不套路。 低延迟，TTFT 快。 价格公道，童叟无欺。 各大模型实时同步最新官方模型，追求最新模型，最高品质，放心无忧。 尽在 tieapi.",
+      "siteDescriptionHasMore": true,
+      "reviewCount": 0,
+      "averageRating": null,
+      "voteUpCount": 0,
+      "voteDownCount": 0
+    }
+  ],
+  "removed": []
+}
