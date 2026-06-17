@@ -46,6 +46,7 @@ ALIVE_STATUSES = {
 }
 
 BLOCKED_STATUSES = {"CLOUDFLARE_OR_BLOCKED"}
+STOPPED_STATUSES = {"SERVICE_STOPPED"}
 
 MODEL_PAGE_PATHS = [
     "",
@@ -210,6 +211,18 @@ def is_login_required(text, status_code):
     return any(marker in lower for marker in markers)
 
 
+def is_api_error_response(text):
+    lower = text[:5000].lower()
+    markers = [
+        "invalid_request_error",
+        "invalid url (get /api",
+        "invalid url (get /v1",
+        "you may need [get /v1/models]",
+        "unsupported endpoint",
+    ]
+    return any(marker in lower for marker in markers)
+
+
 def has_price_signal(text):
     lower = text.lower()
     return bool(
@@ -236,6 +249,38 @@ def has_model_signal(text):
             "model",
         ]
     ) or any(marker in text for marker in ["模型", "供应商"])
+
+
+def has_numeric_price(text):
+    return bool(
+        re.search(r"(?:¥|￥|\$)\s*\d+(?:\.\d+)?", text)
+        or re.search(
+            r"(?:输入|输出|补全|模型价格|计费|input|output|prompt|completion|price)"
+            r"[^\d¥￥$]{0,40}[¥￥$]?\s*\d+(?:\.\d+)?",
+            text,
+            re.IGNORECASE,
+        )
+    )
+
+
+def is_noise_text_block(text):
+    lower = text[:1000].lower()
+    noisy_markers = [
+        "<!doctype",
+        "<html",
+        "<head",
+        "<meta",
+        "<title",
+        "<script",
+        "<link",
+        "application/ld+json",
+        "schema.org",
+        "open graph",
+        "twitter:",
+        "invalid_request_error",
+        "invalid url",
+    ]
+    return any(marker in lower for marker in noisy_markers)
 
 
 def clean_text(value, limit=300):
@@ -349,6 +394,8 @@ def extract_price(patterns, block):
 def extract_from_text(text, site, url, checked_at, http_status):
     if not has_price_signal(text) or not has_model_signal(text):
         return []
+    if is_api_error_response(text):
+        return []
 
     blocks = re.split(r"\n\s*\n", text)
     if len(blocks) < 5:
@@ -369,16 +416,24 @@ def extract_from_text(text, site, url, checked_at, http_status):
         block = block.strip()
         if len(block) < 20 or len(block) > 1500:
             continue
+        if is_noise_text_block(block):
+            continue
         if not has_price_signal(block) or not has_model_signal(block):
+            continue
+        if not has_numeric_price(block):
             continue
 
         model_name = extract_model_name_from_block(block)
+        if is_noise_text_block(model_name) or model_name.startswith(("{", "[", "<")):
+            continue
         input_price = extract_price(input_patterns, block)
         output_price = extract_price(output_patterns, block)
         if not input_price and not output_price:
             m = re.search(generic_price_pattern, block)
             input_price = clean_text(m.group(1), 80) if m else ""
         if not (model_name or input_price or output_price):
+            continue
+        if not (input_price or output_price):
             continue
 
         key = (model_name, input_price, output_price)
@@ -405,6 +460,18 @@ def fetch(session, url):
 
 def probe_site(site, checked_at):
     online_status = site.get("online_status", "")
+    if online_status in STOPPED_STATUSES:
+        return [
+            base_row(
+                site,
+                checked_at,
+                site.get("final_url", ""),
+                "SERVICE_STOPPED",
+                "",
+                "最新监测状态为 SERVICE_STOPPED，确认停止维护，跳过价格抓取",
+            )
+        ]
+
     if online_status in BLOCKED_STATUSES:
         return [
             base_row(
@@ -434,6 +501,7 @@ def probe_site(site, checked_at):
     best_http_status = ""
     login_url = ""
     blocked_url = ""
+    api_error_url = ""
 
     for url in candidate_urls(site):
         try:
@@ -451,6 +519,11 @@ def probe_site(site, checked_at):
             if is_login_required(text, resp.status_code):
                 best_status = "LOGIN_REQUIRED"
                 login_url = str(resp.url)
+                continue
+
+            if is_api_error_response(text):
+                best_status = "API_ERROR"
+                api_error_url = str(resp.url)
                 continue
 
             json_rows = []
@@ -480,12 +553,14 @@ def probe_site(site, checked_at):
 
         time.sleep(0.2)
 
-    matched_url = login_url or blocked_url or site.get("final_url", "")
+    matched_url = login_url or blocked_url or api_error_url or site.get("final_url", "")
     note = "没有找到公开模型价格页"
     if best_status == "LOGIN_REQUIRED":
         note = "模型广场/价格页可能需要登录"
     elif best_status == "CLOUDFLARE_OR_BLOCKED":
         note = "价格页请求被 Cloudflare/人机验证拦截"
+    elif best_status == "API_ERROR":
+        note = "OpenAI-compatible API 返回错误信息，不是公开价格数据"
     elif best_status == "PARSE_FAILED":
         note = "页面似乎包含模型/价格文本，但自动解析失败"
     elif best_status == "FETCH_FAILED":
