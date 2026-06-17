@@ -4,6 +4,7 @@
 - 读取 monitor_results.csv 最新一轮的在线站点
 - 新站点或 html_hash 变化才截图
 - 截图保存到 data/screenshots/
+- Cloudflare/被拦截站点不自动截图，写入 data/screenshots/needs_manual_confirmation.csv
 - 失败记录到 data/screenshot_failures.csv
 """
 
@@ -19,21 +20,27 @@ RESULTS_DIR    = BASE_DIR / "results"
 SCREENSHOT_DIR = DATA_DIR / "screenshots"
 RESULTS_CSV    = RESULTS_DIR / "monitor_results.csv"
 FAILURES_CSV   = DATA_DIR / "screenshot_failures.csv"
+MANUAL_CONFIRM_CSV = SCREENSHOT_DIR / "needs_manual_confirmation.csv"
 
-SKIP_STATUSES = {"DNS_FAIL", "TIMEOUT", "HTTP_ERROR", "PARKED_OR_FOR_SALE"}
+SKIP_STATUSES = {"DNS_FAIL", "TIMEOUT", "HTTP_ERROR", "PARKED_OR_FOR_SALE", "SERVICE_STOPPED"}
+MANUAL_CONFIRM_STATUSES = {"CLOUDFLARE_OR_BLOCKED"}
 
 FAILURE_FIELDS = [
     "checked_at", "domain", "platform_name", "final_url", "error"
 ]
 
+MANUAL_CONFIRM_FIELDS = [
+    "checked_at", "domain", "platform_name", "final_url", "online_status", "page_title", "note"
+]
+
 
 def load_latest_round(results_csv):
     """
-    读取 monitor_results.csv，取最新一轮（timestamp 最大的那批）的在线站点。
-    返回 {domain: {"hash": ..., "final_url": ..., "platform_name": ..., "status": ...}}
+    读取 monitor_results.csv，取最新一轮（timestamp 最大的那批）。
+    返回可自动截图站点、最新 timestamp、需要手动确认截图的站点。
     """
     if not results_csv.exists():
-        return {}, ""
+        return {}, "", []
 
     # 先找最新 timestamp
     latest_ts = ""
@@ -44,13 +51,14 @@ def load_latest_round(results_csv):
                 latest_ts = ts
 
     if not latest_ts:
-        return {}, ""
+        return {}, "", []
 
     # 读取最新一轮数据（同一轮的 timestamp 精确到秒可能有细微差异，取最近1分钟内的）
     from datetime import datetime
     latest_dt = datetime.fromisoformat(latest_ts.replace("Z", "+00:00"))
 
     sites = {}
+    manual_confirmation = []
     with open(results_csv, encoding="utf-8-sig") as f:
         for row in csv.DictReader(f):
             ts = row.get("timestamp", "")
@@ -61,7 +69,20 @@ def load_latest_round(results_csv):
             if abs((latest_dt - dt).total_seconds()) <= 300:
                 domain = row.get("domain", "").strip()
                 status = row.get("online_status", "")
-                if domain and status not in SKIP_STATUSES:
+                if not domain:
+                    continue
+                if status in MANUAL_CONFIRM_STATUSES:
+                    manual_confirmation.append({
+                        "checked_at": latest_ts,
+                        "domain": domain,
+                        "platform_name": row.get("platform_name", ""),
+                        "final_url": row.get("final_url", ""),
+                        "online_status": status,
+                        "page_title": row.get("page_title", ""),
+                        "note": "GitHub Actions 可能只能看到 Cloudflare/人机验证页；请本地手动打开并按需保存截图。",
+                    })
+                    continue
+                if status not in SKIP_STATUSES:
                     sites[domain] = {
                         "hash":          row.get("html_hash", ""),
                         "final_url":     row.get("final_url", ""),
@@ -69,7 +90,20 @@ def load_latest_round(results_csv):
                         "status":        status,
                     }
 
-    return sites, latest_ts
+    return sites, latest_ts, manual_confirmation
+
+
+def write_manual_confirmation(rows, latest_ts):
+    SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
+    rows = sorted(rows, key=lambda x: x["domain"])
+    with open(MANUAL_CONFIRM_CSV, "w", newline="", encoding="utf-8-sig") as f:
+        writer = csv.DictWriter(f, fieldnames=MANUAL_CONFIRM_FIELDS)
+        writer.writeheader()
+        writer.writerows(rows)
+    print(f"待手动确认截图: {len(rows)} 个 → {MANUAL_CONFIRM_CSV}")
+    if latest_ts and rows:
+        print(f"待确认清单对应监测轮次: {latest_ts}")
+    return len(rows)
 
 
 def load_last_hashes():
@@ -191,13 +225,15 @@ def main():
     print(f"开始截图  {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"{'='*50}")
 
-    sites, latest_ts = load_latest_round(RESULTS_CSV)
+    sites, latest_ts, manual_confirmation = load_latest_round(RESULTS_CSV)
+    write_manual_confirmation(manual_confirmation, latest_ts)
+
     if not sites:
-        print("⚠️  没有找到在线站点，退出")
+        print("⚠️  没有找到可自动截图的站点，退出")
         return
 
     print(f"最新一轮: {latest_ts}")
-    print(f"在线站点: {len(sites)} 个\n")
+    print(f"可自动截图站点: {len(sites)} 个\n")
 
     last_hashes = load_last_hashes()
     date_str    = datetime.now().strftime("%Y-%m-%d")
@@ -263,6 +299,7 @@ def main():
     print(f"  失败: {fail_count}")
     if fail_count:
         print(f"  失败记录: {FAILURES_CSV}")
+    print(f"  待手动确认: {MANUAL_CONFIRM_CSV}")
     print(f"  截图目录: {SCREENSHOT_DIR}")
 
 
