@@ -19,8 +19,9 @@ import requests
 
 BASE_DIR = Path(__file__).parent.parent
 RESULTS_CSV = BASE_DIR / "results" / "monitor_results.csv"
-OUTPUT_CSV = BASE_DIR / "results" / "model_prices.csv"
-SUMMARY_CSV = BASE_DIR / "results" / "model_prices_summary.csv"
+OUTPUT_DIR = BASE_DIR / "results" / "model_prices"
+OUTPUT_CSV = OUTPUT_DIR / "model_prices.csv"
+SUMMARY_CSV = OUTPUT_DIR / "model_prices_summary.csv"
 
 TIMEOUT = int(os.getenv("MODEL_PRICE_TIMEOUT", "20"))
 MAX_WORKERS = int(os.getenv("MODEL_PRICE_MAX_WORKERS", "6"))
@@ -701,7 +702,7 @@ def probe_site(site, checked_at):
 
 
 def save_rows(rows):
-    OUTPUT_CSV.parent.mkdir(parents=True, exist_ok=True)
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     rows.sort(
         key=lambda row: (
             row.get("domain", ""),
