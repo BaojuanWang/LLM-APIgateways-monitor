@@ -1,0 +1,46 @@
+name: Model Price Probe
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 5 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  probe-model-prices:
+    runs-on: ubuntu-latest
+    env:
+      MODEL_PRICE_MAX_WORKERS: '6'
+      MODEL_PRICE_TIMEOUT: '20'
+      MODEL_PRICE_MAX_ROWS_PER_SITE: '200'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install requests
+
+      - name: Probe model prices
+        run: python scripts/model_price_probe.py
+
+      - name: Commit model price CSV
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add results/model_prices.csv
+          if git diff --staged --quiet; then
+            echo "No model price changes to commit."
+            exit 0
+          fi
+          git commit -m "Update model price probe results"
+          git pull --rebase origin main
+          git push
