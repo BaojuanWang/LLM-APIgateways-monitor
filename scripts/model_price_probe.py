@@ -9,6 +9,7 @@ import csv
 import json
 import os
 import re
+import shutil
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
@@ -20,6 +21,7 @@ import requests
 BASE_DIR = Path(__file__).parent.parent
 RESULTS_CSV = BASE_DIR / "results" / "monitor_results.csv"
 OUTPUT_DIR = BASE_DIR / "results" / "model_prices"
+ARCHIVE_DIR = OUTPUT_DIR / "archive"
 OUTPUT_CSV = OUTPUT_DIR / "model_prices.csv"
 SUMMARY_CSV = OUTPUT_DIR / "model_prices_summary.csv"
 
@@ -765,6 +767,16 @@ def save_summary(rows, monitor_checked_at):
         writer.writerows(summary_rows)
 
 
+def archive_outputs(checked_at):
+    ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+    stamp = checked_at.replace(":", "-")
+    price_archive = ARCHIVE_DIR / f"model_prices_{stamp}.csv"
+    summary_archive = ARCHIVE_DIR / f"model_prices_summary_{stamp}.csv"
+    shutil.copy2(OUTPUT_CSV, price_archive)
+    shutil.copy2(SUMMARY_CSV, summary_archive)
+    return price_archive, summary_archive
+
+
 def main():
     import urllib3
 
@@ -801,8 +813,11 @@ def main():
 
     save_rows(rows)
     save_summary(rows, latest_ts)
+    price_archive, summary_archive = archive_outputs(checked_at)
     print(f"\n已保存: {OUTPUT_CSV}")
     print(f"站点汇总: {SUMMARY_CSV}")
+    print(f"历史明细: {price_archive}")
+    print(f"历史汇总: {summary_archive}")
     print(f"总行数: {len(rows)}")
 
 
