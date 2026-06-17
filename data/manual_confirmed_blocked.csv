@@ -1,0 +1,9 @@
+domain,platform_name,first_confirmed_at,final_url,status,note
+ai.17nas.com,镜核 AI,2026-06-17,https://ai.17nas.com/,CLOUDFLARE_OR_BLOCKED,已手动检查并保存截图；之后同站点 Cloudflare 状态不再进入待手动确认清单
+api.tryallai.com,TryAllAI,2026-06-17,https://api.tryallai.com/,CLOUDFLARE_OR_BLOCKED,已手动检查并保存截图；之后同站点 Cloudflare 状态不再进入待手动确认清单
+api.uglycat.cc,uglycat,2026-06-17,https://api.uglycat.cc/,CLOUDFLARE_OR_BLOCKED,已手动检查并保存截图；另在 monitor 中标记为 SERVICE_STOPPED
+api.xpluse.plus,数智AI,2026-06-17,https://api.xpluse.plus/,CLOUDFLARE_OR_BLOCKED,已手动检查并保存截图；之后同站点 Cloudflare 状态不再进入待手动确认清单
+code.newcli.com,FoxCode,2026-06-17,https://code.newcli.com/,CLOUDFLARE_OR_BLOCKED,已手动检查并保存截图；之后同站点 Cloudflare 状态不再进入待手动确认清单
+duckcode.cn,duckcode,2026-06-17,https://duckcode.cn/,CLOUDFLARE_OR_BLOCKED,已手动检查并保存截图；之后同站点 Cloudflare 状态不再进入待手动确认清单
+mnapi.com,MNAPI,2026-06-17,https://mnapi.com/,CLOUDFLARE_OR_BLOCKED,已手动检查并保存截图；之后同站点 Cloudflare 状态不再进入待手动确认清单
+zhangyuapi.com,章鱼中枢AI服务平台,2026-06-17,https://zhangyuapi.com/,CLOUDFLARE_OR_BLOCKED,已手动检查并保存截图；之后同站点 Cloudflare 状态不再进入待手动确认清单
