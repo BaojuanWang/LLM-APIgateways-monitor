@@ -1,0 +1,46 @@
+{
+  "date": "2026-06-17",
+  "added": [
+    {
+      "relaySiteId": 40298,
+      "siteDomain": "sudobug.top",
+      "siteName": "SudoBug",
+      "detailSlug": "sudobugtop",
+      "rankPosition": 61,
+      "overallScore": 0,
+      "avgOnlineRate": 100,
+      "avgLatencyS": 5.08,
+      "latencySuspicious": false,
+      "modelCount": 6,
+      "rankedModelCount": 0,
+      "verificationType": "personal",
+      "siteDescription": "2026 全新上线，专注提供 GPT（Codex）与 Claude 两类 API 服务，接口稳定!稳定!还是TM稳定！ 价格如下： GPT-5.5 Codex-",
+      "siteDescriptionHasMore": true,
+      "reviewCount": 0,
+      "averageRating": null,
+      "voteUpCount": 0,
+      "voteDownCount": 0
+    },
+    {
+      "relaySiteId": 40300,
+      "siteDomain": "nexaxis.ai",
+      "siteName": "Nexaxis",
+      "detailSlug": "nexaxisai",
+      "rankPosition": 64,
+      "overallScore": 0,
+      "avgOnlineRate": 100,
+      "avgLatencyS": 5.71,
+      "latencySuspicious": false,
+      "modelCount": 8,
+      "rankedModelCount": 0,
+      "verificationType": "enterprise",
+      "siteDescription": "Gemini、Claude、GPT 自建号池服务，企业级稳定接入，源头价格优惠，支持高并发与长期使用，提供 24 小时售后技术支持。",
+      "siteDescriptionHasMore": false,
+      "reviewCount": 0,
+      "averageRating": null,
+      "voteUpCount": 0,
+      "voteDownCount": 0
+    }
+  ],
+  "removed": []
+}
