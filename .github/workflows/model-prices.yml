@@ -32,11 +32,11 @@ jobs:
       - name: Probe model prices
         run: python scripts/model_price_probe.py
 
-      - name: Commit model price CSV
+      - name: Commit model price CSVs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add results/model_prices.csv
+          git add results/model_prices.csv results/model_prices_summary.csv
           if git diff --staged --quiet; then
             echo "No model price changes to commit."
             exit 0
