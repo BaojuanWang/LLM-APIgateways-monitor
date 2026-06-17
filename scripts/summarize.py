@@ -29,11 +29,14 @@ ALIVE_STATUSES = {
     "REDIRECTED",
 }
 UNCERTAIN_STATUSES = {"TIMEOUT", "HTTP_ERROR"}
-DEAD_STATUSES = {"DNS_FAIL", "PARKED_OR_FOR_SALE"}
+SERVICE_STOPPED_STATUSES = {"SERVICE_STOPPED"}
+DEAD_STATUSES = {"DNS_FAIL", "PARKED_OR_FOR_SALE"} | SERVICE_STOPPED_STATUSES
 
 
 def classify_overall(status_counts):
     statuses = set(status_counts.keys())
+    if statuses & SERVICE_STOPPED_STATUSES:
+        return "DEAD"
     if statuses & ALIVE_STATUSES:
         return "ALIVE"
     if statuses <= UNCERTAIN_STATUSES:
@@ -77,7 +80,7 @@ def load_results():
             p["platform_name"] = row.get("platform_name", "") or p["platform_name"]
             source = row.get("source", "")
             p["source"] = source
-            p["source_category"] = "manual" if source in ("Taobao", "Xiaohongshu") else "hvoy"
+            p["source_category"] = "manual" if source in ("Taobao", "Xiaohongshu", "manual_stopped") else "hvoy"
 
             status = row.get("online_status", "")
             timestamp = row.get("timestamp", "")
@@ -229,12 +232,12 @@ def save_excel(platforms):
         ("平台总数", total_platforms),
         ("ALIVE", f"{alive_count} 个（入口确认存活）"),
         ("UNCERTAIN", f"{uncertain_count} 个（需进一步确认）"),
-        ("DEAD", f"{dead_count} 个（DNS失败/域名停放，疑似关闭）"),
+        ("DEAD", f"{dead_count} 个（DNS失败/域名停放/人工确认停止维护）"),
         ("", ""),
         ("判断规则", ""),
         ("ALIVE", "至少一次检测返回 ONLINE / Cloudflare / 444 / 登录页"),
         ("UNCERTAIN", "从未确认存活，且最近/历史结果仍需人工判断"),
-        ("DEAD", "所有检测均为 DNS_FAIL 或 PARKED_OR_FOR_SALE"),
+        ("DEAD", "所有检测均为 DNS_FAIL / PARKED_OR_FOR_SALE，或人工确认 SERVICE_STOPPED"),
         ("最新概览图", str(STATUS_SVG)),
         ("每日概览图目录", str(DAILY_STATUS_DIR)),
     ]
@@ -319,7 +322,7 @@ def save_summary_plot(platforms, alive, uncertain, dead, review_count):
     cards = [
         ("ALIVE", alive, "#16A34A", "Confirmed reachable at least once"),
         ("UNCERTAIN", uncertain, "#D97706", "Needs manual confirmation"),
-        ("DEAD", dead, "#DC2626", "DNS failed or parked only"),
+        ("DEAD", dead, "#DC2626", "DNS failed, parked, or service stopped"),
     ]
     for i, (label, value, color, note) in enumerate(cards):
         x = 60 + i * 330
@@ -355,6 +358,7 @@ def save_summary_plot(platforms, alive, uncertain, dead, review_count):
         "TIMEOUT": "#FBBF24",
         "DNS_FAIL": "#DC2626",
         "PARKED_OR_FOR_SALE": "#B91C1C",
+        "SERVICE_STOPPED": "#991B1B",
     }
     for idx, (status, count) in enumerate(latest_counts.most_common(8)):
         row_y = 382 + idx * 30
@@ -389,7 +393,7 @@ def save_summary_plot(platforms, alive, uncertain, dead, review_count):
     rule_lines = [
         "ALIVE: any historical confirmed response.",
         "UNCERTAIN: no confirmed good response yet.",
-        "DEAD: only DNS fail / parked results.",
+        "DEAD: DNS fail, parked, or service stopped.",
     ]
     for idx, line in enumerate(rule_lines):
         parts.append(svg_text(notes_x + 22, 620 + idx * 20, line, 12, "400", "#64748B"))
