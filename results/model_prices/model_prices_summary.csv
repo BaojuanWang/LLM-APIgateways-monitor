@@ -1,0 +1,272 @@
+﻿checked_at,monitor_checked_at,domain,platform_name,monitor_status,access_status,model_rows,usable_price_rows,quality_flags,matched_url,http_status,note
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,1xm.ai,1XM,ONLINE,PUBLIC_JSON,31,31,GENERIC_PRICE_ONLY:31|ZERO_PRICE_CHECK:28,https://1xm.ai/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,5cookie.cc,5Cookie Code,ONLINE,PUBLIC_JSON,14,14,GENERIC_PRICE_ONLY:14|ZERO_PRICE_CHECK:13,https://www.5cookie.cc/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,724codes.com,724codes,ONLINE,PARSE_FAILED,0,0,,https://724codes.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,9527code.com,9527code,ONLINE,PUBLIC_JSON,140,140,GENERIC_PRICE_ONLY:140|ZERO_PRICE_CHECK:82,https://9527code.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,aaatoken.cn,3AToken,ONLINE,PUBLIC_JSON,29,29,GENERIC_PRICE_ONLY:29|ZERO_PRICE_CHECK:29,https://aaatoken.cn/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ai-szzx.online,数智AI,ONLINE,PARSE_FAILED,0,0,,https://ai-szzx.online/,200,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ai.17nas.com,镜核 AI,CLOUDFLARE_OR_BLOCKED,CLOUDFLARE_OR_BLOCKED,0,0,,https://ai.17nas.com/,,监测已显示 Cloudflare/被拦截，跳过价格抓取
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ai.anxidc.com,安讯AI,DNS_FAIL,SITE_NOT_REACHABLE,0,0,,,,最新监测状态为 DNS_FAIL，跳过价格抓取
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ai.cdn.ad,Lightning AI,ONLINE,PARSE_FAILED,0,0,,https://ai.cdn.ad/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ai.centos.hk,星辰,ONLINE,PUBLIC_JSON,59,59,GENERIC_PRICE_ONLY:59|ZERO_PRICE_CHECK:54,https://ai.centos.hk/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ai.chaozhi.chat,云枢,ONLINE,PARSE_FAILED,0,0,,https://ai.chaozhi.chat/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ai.flashapi.top,闪电API,ONLINE,PUBLIC_JSON,30,30,GENERIC_PRICE_ONLY:30|ZERO_PRICE_CHECK:28,https://ai.flashapi.top/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ai.kividas.com,KyberRouter,ONLINE,PARSE_FAILED,0,0,,https://ai.kividas.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ai.luminai.cc,Lumin AI,ONLINE,PUBLIC_JSON,14,14,GENERIC_PRICE_ONLY:14|ZERO_PRICE_CHECK:13,https://ai.luminai.cc/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ai.ssgoo.net,TokenGo,ONLINE,PARSE_FAILED,0,0,,https://ai.ssgoo.net/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ai.xem8k5.top,xem中转站,ONLINE,PUBLIC_JSON,20,20,GENERIC_PRICE_ONLY:20|ZERO_PRICE_CHECK:20,https://ai.xem8k5.top/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ai.xlyun.pro,小流云,ONLINE,PUBLIC_JSON,49,49,GENERIC_PRICE_ONLY:49|MODEL_TAGS_NORMALIZED:21|ZERO_PRICE_CHECK:24,https://ai.xlyun.pro/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,aiapi.world,AiApi.World,ONLINE,PUBLIC_JSON,113,113,GENERIC_PRICE_ONLY:113|ZERO_PRICE_CHECK:109,https://aiapi.world/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,aiapify.com,AIApify,ONLINE,PUBLIC_JSON,11,11,GENERIC_PRICE_ONLY:11|ZERO_PRICE_CHECK:11,https://aiapify.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,aiapis.io,AI APIS,ONLINE,NO_MODEL_PAGE_FOUND,0,0,,https://aiapis.io/,404,没有找到公开模型价格页
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,aiberm.com,Aiberm,ONLINE,PUBLIC_JSON,113,113,GENERIC_PRICE_ONLY:113|ZERO_PRICE_CHECK:108,https://aiberm.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,airouter.mxyhi.com,deepproxy,ONLINE,PUBLIC_JSON,153,153,GENERIC_PRICE_ONLY:153|ZERO_PRICE_CHECK:115,https://airouter.mxyhi.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,allinai7.cloud,Allin-AI,ONLINE,NO_MODEL_PAGE_FOUND,0,0,,https://allinai7.cloud/,404,没有找到公开模型价格页
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,anpin.ai,AnPin AI,ONLINE,PARSE_FAILED,0,0,,https://anpin.ai/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,aokapi.com,AOK,ONLINE,LOGIN_REQUIRED,0,0,,https://aokapi.com/api/channel/models,401,模型广场/价格页可能需要登录
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.aibinghe.xyz,BingHeAPI,ONLINE,PARSE_FAILED,0,0,,https://api.aibinghe.xyz/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.aicodemirror.com,AICodeMirror,ONLINE,PARSE_FAILED,0,0,,https://www.aicodemirror.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.aigocode.com,AlGoCode,ONLINE,PARSE_FAILED,0,0,,https://www.aigocode.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.aircode.xin,AirCode,ONLINE,PARSE_FAILED,0,0,,https://api.aircode.xin/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.aisz.mom,Token Nexus,ONLINE,PUBLIC_JSON,15,15,GENERIC_PRICE_ONLY:15|ZERO_PRICE_CHECK:15,https://api.aisz.mom/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.api2cn.com,智惠API,ONLINE,PARSE_FAILED,0,0,,https://api.api2cn.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.b.ai,B.AI,ONLINE_LOGIN_REQUIRED,LOGIN_REQUIRED,0,0,,https://api.b.ai/api/channel/models,403,模型广场/价格页可能需要登录
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.baobu.xyz,BAO-API,ONLINE,PARSE_FAILED,0,0,,https://api.baobu.xyz/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.clawopen.top,Sum API,ONLINE,PUBLIC_JSON,26,26,GENERIC_PRICE_ONLY:26|ZERO_PRICE_CHECK:21,https://api.clawopen.top/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.discordtool.vip,巨硬AI,ONLINE,LOGIN_REQUIRED,0,0,,https://api.discordtool.vip/api/channel/models,401,模型广场/价格页可能需要登录
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.dongli.work,冻梨API,ONLINE,LOGIN_REQUIRED,0,0,,https://api.dongli.work/api/channel/models,401,模型广场/价格页可能需要登录
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.dzzi.ai,大肘子API,ONLINE,PUBLIC_JSON,176,176,GENERIC_PRICE_ONLY:176|MODEL_TAGS_NORMALIZED:117|ZERO_PRICE_CHECK:94,https://api.dzzi.ai/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.ebutterfly.cc,电子蝴蝶,ONLINE,PUBLIC_JSON,64,64,GENERIC_PRICE_ONLY:64|ZERO_PRICE_CHECK:43,https://api.ebutterfly.cc/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.ejkoy.com,整点token,ONLINE,PARSE_FAILED,0,0,,https://api.ejkoy.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.ekan8.com,Ekan8,ONLINE,PUBLIC_JSON,42,42,GENERIC_PRICE_ONLY:42|MODEL_TAGS_NORMALIZED:10|ZERO_PRICE_CHECK:15,https://api.ekan8.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.euzhi.com,Euzhi,ONLINE,LOGIN_REQUIRED,0,0,,https://api.euzhi.com/api/channel/models,401,模型广场/价格页可能需要登录
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.feng.cx,Feng AI,ONLINE,PUBLIC_JSON,11,11,GENERIC_PRICE_ONLY:11|ZERO_PRICE_CHECK:10,https://api.feng.cx/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.frontier-intelligence.tech,Frontier Intelligence,ONLINE,LOGIN_REQUIRED,0,0,,https://api.frontier-intelligence.tech/api/channel/models,401,模型广场/价格页可能需要登录
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.gemai.cc,哈基米,ONLINE,PUBLIC_JSON,153,153,GENERIC_PRICE_ONLY:153|MODEL_TAGS_NORMALIZED:111|ZERO_PRICE_CHECK:37,https://api.gemai.cc/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.getezclaw.com,API GetEzClaw,ONLINE,PUBLIC_JSON,18,18,GENERIC_PRICE_ONLY:18|ZERO_PRICE_CHECK:17,https://api.getezclaw.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.gpt.ge,V-API,ONLINE,PUBLIC_JSON,200,200,GENERIC_PRICE_ONLY:200|ZERO_PRICE_CHECK:111|ROW_LIMIT_REACHED:200,https://api.gpt.ge/api/pricing,200,已达到单站点行数上限，结果可能被截断
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.hack3rx.cn,Hack3rX-API,ONLINE,PARSE_FAILED,0,0,,https://api.hack3rx.cn/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.hangzhale.com,夯炸了AI,ONLINE,PARSE_FAILED,0,0,,https://api.hangzhale.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.hepingan.top,Guiwuli-Api,ONLINE,PARSE_FAILED,0,0,,https://api.hepingan.top/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.ikuncode.cc,IKunCode,ONLINE,PUBLIC_JSON,22,22,GENERIC_PRICE_ONLY:22|ZERO_PRICE_CHECK:21,https://api.ikuncode.cc/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.laozhang.ai,BestAIAPI/老张,ONLINE,PUBLIC_JSON,200,200,GENERIC_PRICE_ONLY:200|ZERO_PRICE_CHECK:180|ROW_LIMIT_REACHED:200,https://api.laozhang.ai/api/pricing,200,已达到单站点行数上限，结果可能被截断
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.leleweb.cn,Ai乐,ONLINE,NO_MODEL_PAGE_FOUND,0,0,,https://api.leleweb.cn/,404,没有找到公开模型价格页
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.lingshuai.cc,灵枢AI,ONLINE,PARSE_FAILED,0,0,,https://api.lingshuai.cc/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.luccc.uk,Luccc,ONLINE,PUBLIC_JSON,5,5,GENERIC_PRICE_ONLY:5|ZERO_PRICE_CHECK:4,https://api.luccc.uk/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.muskapi.cc,MuskAI,ONLINE,PUBLIC_JSON,99,99,GENERIC_PRICE_ONLY:99|ZERO_PRICE_CHECK:98,https://api.muskapi.cc/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.openaeon.ai,openaeonAPI,ONLINE,PUBLIC_JSON,64,64,GENERIC_PRICE_ONLY:64|ZERO_PRICE_CHECK:64,https://api.openaeon.ai/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.owlai.tech,Owl AI,ONLINE,PARSE_FAILED,0,0,,https://api.owlai.tech/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.qiyiguo.uk,奇异果 API,ONLINE,PUBLIC_JSON,55,55,GENERIC_PRICE_ONLY:55|MODEL_TAGS_NORMALIZED:17|ZERO_PRICE_CHECK:33,https://api.qiyiguo.uk/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.rkai6.com,RK API,ONLINE,LOGIN_REQUIRED,0,0,,https://api.rkai6.com/api/channel/models,401,模型广场/价格页可能需要登录
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.rootflowai.com,RootFlow,ONLINE,PARSE_FAILED,0,0,,https://rootflowai.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.rpg8.cn,RPG8,ONLINE,PUBLIC_JSON,28,28,GENERIC_PRICE_ONLY:28|ZERO_PRICE_CHECK:28,https://api.rpg8.cn/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.satuo66.online,SaTuoAPI,ONLINE,PUBLIC_JSON,8,8,GENERIC_PRICE_ONLY:8|ZERO_PRICE_CHECK:8,https://api.satuo66.online/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.sbbbbbbbbb.xyz,Neco Api,ONLINE,PUBLIC_JSON,13,13,GENERIC_PRICE_ONLY:13|ZERO_PRICE_CHECK:9,https://api.sbbbbbbbbb.xyz/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.schyler.top,SchylerAI小栈,ONLINE,PARSE_FAILED,0,0,,https://api.schyler.top/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.shiyutv.cn,像素群岛,ONLINE,PARSE_FAILED,0,0,,https://api.shiyutv.cn/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.squarefaceicon.org,Square API,ONLINE,PUBLIC_JSON,29,29,GENERIC_PRICE_ONLY:29|ZERO_PRICE_CHECK:25,https://api.squarefaceicon.org/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.sunskii.com,Sunskii,ONLINE,PARSE_FAILED,0,0,,https://api.sunskii.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.tallius.ai,tallius.ai,ONLINE,PUBLIC_JSON,9,9,GENERIC_PRICE_ONLY:9|ZERO_PRICE_CHECK:9,https://api.tallius.ai/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.timebackward.com,FastCode,ONLINE,PUBLIC_JSON,1,0,MISSING_PRICE:1,https://api.timebackward.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.tryallai.com,TryAllAI,CLOUDFLARE_OR_BLOCKED,CLOUDFLARE_OR_BLOCKED,0,0,,https://api.tryallai.com/,,监测已显示 Cloudflare/被拦截，跳过价格抓取
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.tu-zi.com,兔子,ONLINE,PUBLIC_JSON,200,200,GENERIC_PRICE_ONLY:200|ZERO_PRICE_CHECK:138|ROW_LIMIT_REACHED:200,https://api.tu-zi.com/api/pricing,200,已达到单站点行数上限，结果可能被截断
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.uglycat.cc,uglycat,SERVICE_STOPPED,SERVICE_STOPPED,0,0,,https://api.uglycat.cc/,,最新监测状态为 SERVICE_STOPPED，确认停止维护，跳过价格抓取
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.uniprep.world,Apex,ONLINE,PUBLIC_JSON,76,76,GENERIC_PRICE_ONLY:76|ZERO_PRICE_CHECK:62,https://api.uniprep.world/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.vectorengine.ai,VectorEngine,ONLINE,PUBLIC_JSON,1,0,MISSING_PRICE:1,https://api.vectorengine.ai/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.vip.crond.dev,PRY,ONLINE,PUBLIC_JSON,142,142,GENERIC_PRICE_ONLY:142|MODEL_TAGS_NORMALIZED:1|ZERO_PRICE_CHECK:63,https://api.vip.crond.dev/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.whatai.cc,神马中转API,ONLINE,PUBLIC_JSON,200,200,GENERIC_PRICE_ONLY:200|ZERO_PRICE_CHECK:119|ROW_LIMIT_REACHED:200,https://api.whatai.cc/api/pricing,200,已达到单站点行数上限，结果可能被截断
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.whlemon.cn,橙芯算力,ONLINE,PARSE_FAILED,0,0,,https://api.whlemon.cn/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.xaix.me,xAIx,ONLINE,PUBLIC_JSON,75,75,GENERIC_PRICE_ONLY:75|ZERO_PRICE_CHECK:73,https://api.xaix.me/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.xpluse.plus,数智AI,CLOUDFLARE_OR_BLOCKED,CLOUDFLARE_OR_BLOCKED,0,0,,https://api.xpluse.plus/,,监测已显示 Cloudflare/被拦截，跳过价格抓取
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.ykh.ai,YKH.AI,ONLINE,LOGIN_REQUIRED,0,0,,https://api.ykh.ai/api/channel/models,401,模型广场/价格页可能需要登录
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,api.yunserver.cn,YunServer API,ONLINE,PUBLIC_JSON,24,24,GENERIC_PRICE_ONLY:24|ZERO_PRICE_CHECK:16,https://api.yunserver.cn/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,apiclaude.cc,APIClaude,ONLINE,NO_MODEL_PAGE_FOUND,0,0,,https://apiclaude.cc/,404,没有找到公开模型价格页
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,apinova.cc,Nova AI,ONLINE,LOGIN_REQUIRED,0,0,,https://apinova.cc/api/channel/models,401,模型广场/价格页可能需要登录
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,arpanet.icu,ARPANET API,ONLINE,PUBLIC_JSON,49,49,GENERIC_PRICE_ONLY:49|ZERO_PRICE_CHECK:2,https://arpanet.icu/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,autorouter.io,AutoRouter,ONLINE,PUBLIC_JSON,43,43,GENERIC_PRICE_ONLY:43|ZERO_PRICE_CHECK:36,https://autorouter.io/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,az.zlapi.vip,宅恋,ONLINE,PUBLIC_JSON,129,129,GENERIC_PRICE_ONLY:129|MODEL_TAGS_NORMALIZED:125|ZERO_PRICE_CHECK:40,https://az.zlapi.vip/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,beecode.cc,BeeCode,ONLINE,PARSE_FAILED,0,0,,https://beecode.cc/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,beefapi.com,BeefAPI,ONLINE,PUBLIC_JSON,11,11,GENERIC_PRICE_ONLY:11|ZERO_PRICE_CHECK:10,https://beefapi.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,bmai.kun8.vip,北妈AI,ONLINE,PARSE_FAILED,0,0,,https://bmai.kun8.vip/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,bobdong.cn,Bob API,ONLINE,PUBLIC_JSON,32,32,GENERIC_PRICE_ONLY:32|ZERO_PRICE_CHECK:29,https://bobdong.cn/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,bossclaw.org,BossClaw,ONLINE,NO_MODEL_PAGE_FOUND,0,0,,https://www.bossclaw.org/,404,没有找到公开模型价格页
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,boya.one,伯牙中转,HTTP_ERROR,SITE_NOT_REACHABLE,0,0,,,,最新监测状态为 HTTP_ERROR，跳过价格抓取
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,buzzai.cc,BUZZ,ONLINE,PUBLIC_JSON,17,17,GENERIC_PRICE_ONLY:17|ZERO_PRICE_CHECK:17,https://buzzai.cc/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,callxyq.xyz,Ls.API,ONLINE,PUBLIC_JSON,4,4,GENERIC_PRICE_ONLY:4|ZERO_PRICE_CHECK:4,https://callxyq.xyz/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,cc-vibe.com,CCVibe,ONLINE,PARSE_FAILED,0,0,,https://cc-vibe.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,cc.anyroute.io,AnyRoute,ONLINE,PARSE_FAILED,0,0,,https://cc.anyroute.io/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,cca.maya.today,BMCCA,ONLINE,PARSE_FAILED,0,0,,https://cca.maya.today/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ccfly.codes,CCFly,ONLINE,PARSE_FAILED,0,0,,https://ccfly.codes/,200,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ccgoai.com,ccgo,ONLINE,PARSE_FAILED,0,0,,https://ccgoai.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,cckeys.top,Claude密钥,ONLINE,NO_MODEL_PAGE_FOUND,0,0,,https://www.cckeys.top/,404,没有找到公开模型价格页
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ccmax20.cc,baby,ONLINE,PUBLIC_JSON,6,6,GENERIC_PRICE_ONLY:6|ZERO_PRICE_CHECK:6,https://ccmax20.cc/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ccode.dev,Ccode,ONLINE,NO_MODEL_PAGE_FOUND,0,0,,https://www.ccode.dev/,404,没有找到公开模型价格页
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ccrouter.ai,CCRouter,ONLINE,PARSE_FAILED,0,0,,https://ccrouter.ai/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,cdn.sta1n.cn,STA1N API,ONLINE,PUBLIC_JSON,121,121,GENERIC_PRICE_ONLY:121|MODEL_TAGS_NORMALIZED:115|ZERO_PRICE_CHECK:50,https://cdn.sta1n.cn/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,chat.chesspnt.com,棋点AI,ONLINE,PARSE_FAILED,0,0,,https://chat.chesspnt.com/list/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,chat.ekti.cc,AI Chat,ONLINE,PUBLIC_JSON,14,14,GENERIC_PRICE_ONLY:14|ZERO_PRICE_CHECK:14,https://chat.ekti.cc/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,chintao.cn,Chintao AI,ONLINE,PUBLIC_JSON,41,41,GENERIC_PRICE_ONLY:41|ZERO_PRICE_CHECK:40,https://chintao.cn/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,chiyicn.com,词易,ONLINE,PARSE_FAILED,0,0,,https://chiyicn.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,chunxueapi.com,ChunXue API,ONLINE,PUBLIC_JSON,11,11,GENERIC_PRICE_ONLY:11|ZERO_PRICE_CHECK:9,https://chunxueapi.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,cialloapi.cn,Ciallo API,ONLINE,PUBLIC_JSON,6,6,GENERIC_PRICE_ONLY:6|ZERO_PRICE_CHECK:5,https://cialloapi.cn/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,claude-api.org,Claude-API,ONLINE,PARSE_FAILED,0,0,,https://claude-api.org/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,claude.hk.cn,VAMN,ONLINE,NO_MODEL_PAGE_FOUND,0,0,,https://claude.hk.cn/pastel/,200,没有找到公开模型价格页
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,claudeagent.com.cn,ClaudeAgent,ONLINE,PUBLIC_JSON,28,28,GENERIC_PRICE_ONLY:28|ZERO_PRICE_CHECK:28,https://claudeagent.com.cn/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,claudeapi.com,Claude API,ONLINE_LOGIN_REQUIRED,LOGIN_REQUIRED,0,0,,https://claudeapi.com/api/channel/models,403,模型广场/价格页可能需要登录
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,claudecn.top,ClaudeCN,ONLINE,PUBLIC_JSON,88,88,GENERIC_PRICE_ONLY:88|ZERO_PRICE_CHECK:83,https://claudecn.top/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,clauqe.ai,ClauqeAI,ONLINE,PARSE_FAILED,0,0,,https://clauqe.ai/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,co.yes.vg,YesCode,ONLINE,NO_MODEL_PAGE_FOUND,0,0,,https://co.yes.vg/,404,没有找到公开模型价格页
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,code.b886.top,CCTQ,DNS_FAIL,SITE_NOT_REACHABLE,0,0,,,,最新监测状态为 DNS_FAIL，跳过价格抓取
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,code.deepask.chat,deepask,ONLINE,PARSE_FAILED,0,0,,https://code.deepask.chat/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,code.newcli.com,FoxCode,CLOUDFLARE_OR_BLOCKED,CLOUDFLARE_OR_BLOCKED,0,0,,https://code.newcli.com/,,监测已显示 Cloudflare/被拦截，跳过价格抓取
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,code.silkapi.com,丝绸API,ONLINE,PARSE_FAILED,0,0,,https://code.silkapi.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,codefwd.top,CodeFwd,ONLINE,PUBLIC_JSON,33,33,GENERIC_PRICE_ONLY:33|ZERO_PRICE_CHECK:33,https://codefwd.top/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,coderelay.cn,CodeRelay,ONLINE,PUBLIC_JSON,42,42,GENERIC_PRICE_ONLY:42|ZERO_PRICE_CHECK:41,https://coderelay.cn/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,codesome.ai,CodeSome,ONLINE,PARSE_FAILED,0,0,,https://codesome.ai/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,codex.dakeai.cc,DKAI/大可,ONLINE,PARSE_FAILED,0,0,,https://codex.dakeai.cc/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,codexone.aieania.tech,CodexOne,ONLINE,PARSE_FAILED,0,0,,https://codexone.aieania.tech/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,codexopenai.cloud,Deer Codex,ONLINE,PUBLIC_JSON,37,37,GENERIC_PRICE_ONLY:37|ZERO_PRICE_CHECK:36,https://codexopenai.cloud/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,cooper-api.com,Cooper-API,ONLINE,PUBLIC_JSON,26,26,GENERIC_PRICE_ONLY:26|ZERO_PRICE_CHECK:23,https://cooper-api.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,cubence.com,Cubence,ONLINE,PARSE_FAILED,0,0,,https://cubence.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,daidaibird.top,呆呆鸟,DNS_FAIL,SITE_NOT_REACHABLE,0,0,,,,最新监测状态为 DNS_FAIL，跳过价格抓取
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,daodunapi.com,我的刀盾,ONLINE,PUBLIC_JSON,62,62,GENERIC_PRICE_ONLY:62|ZERO_PRICE_CHECK:60,https://daodunapi.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,dasuapi.com,DasuApi,ONLINE,PARSE_FAILED,0,0,,https://dasuapi.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,dataeyes.ai,DataEyes AI,ONLINE,PARSE_FAILED,0,0,,https://www.dataeyes.ai/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,dawclaudecode.com,DawCode,ONLINE,PUBLIC_JSON,37,37,GENERIC_PRICE_ONLY:37|ZERO_PRICE_CHECK:29,https://dawclaudecode.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ddshub.cc,DDShub,ONLINE,PARSE_FAILED,0,0,,https://www.ddshub.cc/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,derouter.ai,DeRouter,ONLINE,PARSE_FAILED,0,0,,https://derouter.ai/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,dragoncode.codes,Dragoncode,ONLINE,PARSE_FAILED,0,0,,https://dragoncode.codes/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,duckcode.cn,duckcode,CLOUDFLARE_OR_BLOCKED,CLOUDFLARE_OR_BLOCKED,0,0,,https://duckcode.cn/,,监测已显示 Cloudflare/被拦截，跳过价格抓取
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,easy-token.com,EasyToken,ONLINE,PARSE_FAILED,0,0,,https://easy-token.com/zh,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,enjoyapi.cc,安九API,ONLINE,PARSE_FAILED,0,0,,https://enjoyapi.cc/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ephone.ai,ePhone AI,ONLINE,PUBLIC_JSON,200,200,GENERIC_PRICE_ONLY:162|ZERO_PRICE_CHECK:5|ROW_LIMIT_REACHED:200,https://platform.ephone.ai/api/pricing,200,已达到单站点行数上限，结果可能被截断
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ergouapi.com,二狗 API,ONLINE,PUBLIC_JSON,15,15,GENERIC_PRICE_ONLY:15|ZERO_PRICE_CHECK:15,https://ergouapi.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,findcg.com,发现AI,ONLINE,NO_MODEL_PAGE_FOUND,0,0,,https://www.findcg.com/,404,没有找到公开模型价格页
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,fishxcode.com,fishxcode,ONLINE,PUBLIC_JSON,83,83,GENERIC_PRICE_ONLY:83|ZERO_PRICE_CHECK:54,https://fishxcode.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,free.learn-ai.top,learn-ai,ONLINE,PUBLIC_JSON,20,20,GENERIC_PRICE_ONLY:20|ZERO_PRICE_CHECK:1,https://free.learn-ai.top/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,freemodel.dev,FreeModel,ONLINE,LOGIN_REQUIRED,0,0,,https://freemodel.dev/api/channel/models,401,模型广场/价格页可能需要登录
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,fucheers.top,Fucheers,ONLINE,PUBLIC_JSON,16,16,GENERIC_PRICE_ONLY:16|ZERO_PRICE_CHECK:15,https://www.fucheers.top/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,funnyskill.com,范尼API,ONLINE,PUBLIC_JSON,1,0,MISSING_PRICE:1,https://funnyskill.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,gpt.hslife.fun,H&SのToken食堂,ONLINE,PARSE_FAILED,0,0,,https://gpt.hslife.fun/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,growupapi.ltd,GrowUpAPI,ONLINE,PARSE_FAILED,0,0,,https://growupapi.ltd/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,gua.guagua.uk,SunnyPumpkinAPI,ONLINE,PUBLIC_JSON,31,31,GENERIC_PRICE_ONLY:31|ZERO_PRICE_CHECK:31,https://gua.guagua.uk/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,hao.ai,hao.ai,ONLINE,LOGIN_REQUIRED,0,0,,https://hao.ai/api/v1/pricing,404,模型广场/价格页可能需要登录
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,hemaapi.cc,河马中转站,ONLINE,PUBLIC_JSON,13,13,GENERIC_PRICE_ONLY:13|ZERO_PRICE_CHECK:12,https://hemaapi.cc/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,hiapi.store,hiapi,ONLINE,PUBLIC_JSON,6,6,GENERIC_PRICE_ONLY:6|ZERO_PRICE_CHECK:6,https://hiapi.store/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,hk.ccplus.site,ccfly,ONLINE,PARSE_FAILED,0,0,,https://hk.ccplus.site/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,hk.hhnto.top,hhnto的API中转,ONLINE,PUBLIC_JSON,13,13,GENERIC_PRICE_ONLY:13|ZERO_PRICE_CHECK:12,https://hk.hhnto.top/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,hohoapi.com,HoHoApi,ONLINE,PUBLIC_JSON,200,200,GENERIC_PRICE_ONLY:200|ZERO_PRICE_CHECK:122|ROW_LIMIT_REACHED:200,https://hohoapi.com/api/pricing,200,已达到单站点行数上限，结果可能被截断
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,hos.chatopens.vip,CHATOPENS/b站小光,ONLINE,PARSE_FAILED,0,0,,https://hos.chatopens.vip/Web/List.html,200,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,huanapi.com,换API,ONLINE,PUBLIC_JSON,25,25,GENERIC_PRICE_ONLY:25|ZERO_PRICE_CHECK:23,https://www.huanapi.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,huiliuapi.com,huiliuapi,ONLINE,PUBLIC_JSON,24,24,GENERIC_PRICE_ONLY:24|ZERO_PRICE_CHECK:20,https://www.huiliuapi.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,huiyun.asia,汇云AI,ONLINE,PUBLIC_JSON,18,18,GENERIC_PRICE_ONLY:18|ZERO_PRICE_CHECK:16,https://huiyun.asia/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,hvoy_removed,旺旺中转站,DNS_FAIL,SITE_NOT_REACHABLE,0,0,,,,最新监测状态为 DNS_FAIL，跳过价格抓取
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,iacc.cc,IACC,ONLINE,LOGIN_REQUIRED,0,0,,https://iacc.cc/api/v1/models,404,模型广场/价格页可能需要登录
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,infai.cc,无限API,ONLINE,PUBLIC_JSON,1,0,MISSING_PRICE:1,https://infai.cc/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,infistar.ai,无限星河Ai,ONLINE,PUBLIC_JSON,142,142,GENERIC_PRICE_ONLY:142|ZERO_PRICE_CHECK:123,https://infistar.ai/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,jiekou.ai,接口AI,ONLINE,PARSE_FAILED,0,0,,https://jiekou.ai/zh,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,jmyr.net,JMYR,ONLINE,PUBLIC_JSON,19,19,GENERIC_PRICE_ONLY:19|ZERO_PRICE_CHECK:19,https://www.jmyr.net/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,juxingai.top,聚星AI,ONLINE,PUBLIC_JSON,31,31,GENERIC_PRICE_ONLY:31|ZERO_PRICE_CHECK:26,https://juxingai.top/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,kelaiapi.cc,kelai,ONLINE,PUBLIC_JSON,100,100,GENERIC_PRICE_ONLY:100|ZERO_PRICE_CHECK:83,https://kelaiapi.cc/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,langziapi.online,langziApi,ONLINE,PARSE_FAILED,0,0,,https://langziapi.online/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,limiao.net,哩喵中转栈,CLOUDFLARE_OR_BLOCKED,CLOUDFLARE_OR_BLOCKED,0,0,,https://limiao.net/,,监测已显示 Cloudflare/被拦截，跳过价格抓取
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,lingsuan.top,灵算,ONLINE,PARSE_FAILED,0,0,,https://lingsuan.top/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,linkai.shop,LinkAi,ONLINE,PARSE_FAILED,0,0,,https://linkai.shop/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,linkapi.ai,LinkAPI,ONLINE,PUBLIC_JSON,83,83,GENERIC_PRICE_ONLY:83|MODEL_TAGS_NORMALIZED:19|ZERO_PRICE_CHECK:60,https://linkapi.ai/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,llmapi.pro,LLMAPI,ONLINE,PARSE_FAILED,0,0,,https://llmapi.pro/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,llmgw.cn,Token API,ONLINE,PUBLIC_JSON,13,13,GENERIC_PRICE_ONLY:13|ZERO_PRICE_CHECK:12,https://llmgw.cn/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,loptu.net,垂耳兔,ONLINE,LOGIN_REQUIRED,0,0,,https://loptu.net/api/channel/models,401,模型广场/价格页可能需要登录
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,lucen.cc,lucen,ONLINE,NO_MODEL_PAGE_FOUND,0,0,,https://lucen.cc/,404,没有找到公开模型价格页
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,main-new.codesuc.top,CodeSuc Hub,ONLINE,PUBLIC_JSON,24,24,GENERIC_PRICE_ONLY:24|ZERO_PRICE_CHECK:15,https://main-new.codesuc.top/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,manbouapi.com,曼波API,ONLINE,PUBLIC_JSON,13,13,GENERIC_PRICE_ONLY:13|ZERO_PRICE_CHECK:12,https://manbouapi.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,meeyo.org,悠米API,ONLINE,PARSE_FAILED,0,0,,https://meeyo.org/,200,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,mentoe.com,Mentoe,ONLINE,NO_MODEL_PAGE_FOUND,0,0,,https://www.mentoe.com/,404,没有找到公开模型价格页
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,minitoken.top,云算API,ONLINE,PUBLIC_JSON,1,0,MISSING_PRICE:1,https://minitoken.top/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,mnapi.com,MNAPI,CLOUDFLARE_OR_BLOCKED,CLOUDFLARE_OR_BLOCKED,0,0,,https://mnapi.com/,,监测已显示 Cloudflare/被拦截，跳过价格抓取
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,modcon.top,ModCon,ONLINE,CLOUDFLARE_OR_BLOCKED,0,0,,https://modcon.top/dashboard/models,404,价格页请求被 Cloudflare/人机验证拦截
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,mx.free.codesonline.dev,codesonline,TIMEOUT,SITE_NOT_REACHABLE,0,0,,,,最新监测状态为 TIMEOUT，跳过价格抓取
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,mytokenpi.com,mytokenpi,ONLINE,PUBLIC_JSON,15,15,GENERIC_PRICE_ONLY:15|ZERO_PRICE_CHECK:14,https://mytokenpi.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,mzlone.top,AIMZ,ONLINE,PUBLIC_JSON,19,19,GENERIC_PRICE_ONLY:19|ZERO_PRICE_CHECK:18,https://mzlone.top/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,nbapi.cc,NBAPI,ONLINE,PUBLIC_JSON,35,35,GENERIC_PRICE_ONLY:35|ZERO_PRICE_CHECK:31,https://nbapi.cc/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,nbility.dev,Nbility,ONLINE,PUBLIC_JSON,92,92,GENERIC_PRICE_ONLY:92|ZERO_PRICE_CHECK:84,https://nbility.dev/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,nekocode.ai,NekoCode,ONLINE,LOGIN_REQUIRED,0,0,,https://nekocode.ai/api/channel/models,200,模型广场/价格页可能需要登录
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,new.050602.xyz,LingxiCode,ONLINE,PUBLIC_JSON,25,25,GENERIC_PRICE_ONLY:25|ZERO_PRICE_CHECK:24,https://new.050602.xyz/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,newapi.junjun.site,junjuncc,DNS_FAIL,SITE_NOT_REACHABLE,0,0,,,,最新监测状态为 DNS_FAIL，跳过价格抓取
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,newapi.qwqtao.one,Tao API,ONLINE,PUBLIC_JSON,101,101,GENERIC_PRICE_ONLY:101|ZERO_PRICE_CHECK:87,https://newapi.qwqtao.one/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,newapi.youkies.space,Youkies API,ONLINE,PUBLIC_JSON,97,97,GENERIC_PRICE_ONLY:97|ZERO_PRICE_CHECK:47,https://newapi.youkies.space/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,nexaxis.ai,Nexaxis,ONLINE,PUBLIC_JSON,128,128,GENERIC_PRICE_ONLY:128|ZERO_PRICE_CHECK:122,https://nexaxis.ai/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,nextoken.online,NexToken,ONLINE,PARSE_FAILED,0,0,,https://www.nextoken.online/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ogog.ai,OGOG.AI,ONLINE,PUBLIC_JSON,58,58,GENERIC_PRICE_ONLY:58|ZERO_PRICE_CHECK:56,https://ogog.ai/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,open.xiaojingai.com,小鲸Ai开放平台,ONLINE,PUBLIC_JSON,200,200,GENERIC_PRICE_ONLY:200|ZERO_PRICE_CHECK:171|ROW_LIMIT_REACHED:200,https://open.xiaojingai.com/api/pricing,200,已达到单站点行数上限，结果可能被截断
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,openclaudecode.cn,米醋AI,DNS_FAIL,SITE_NOT_REACHABLE,0,0,,,,最新监测状态为 DNS_FAIL，跳过价格抓取
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,opentk.ai,OpenToken,ONLINE,PARSE_FAILED,0,0,,https://opentk.ai/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,oxycode.net,OxyCode氧化代码,ONLINE,NO_MODEL_PAGE_FOUND,0,0,,http://oxycode.net/,404,没有找到公开模型价格页
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,packyapi.com,PackyCode,ONLINE,PUBLIC_JSON,51,51,GENERIC_PRICE_ONLY:51|ZERO_PRICE_CHECK:46,https://www.packyapi.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,pixelmuse.shop,PixelMuse,ONLINE,NO_MODEL_PAGE_FOUND,0,0,,https://pixelmuse.shop/,404,没有找到公开模型价格页
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,platform.ope.ai,OPE AI,ONLINE,PARSE_FAILED,0,0,,https://platform.ope.ai/,200,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,poixe.com,Poixe AI,ONLINE,PARSE_FAILED,0,0,,https://poixe.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,portal.gpteamservices.com,GPTEAM,ONLINE,PARSE_FAILED,0,0,,https://portal.gpteamservices.com/models,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,ppword.cn,ppword,ONLINE,PARSE_FAILED,0,0,,https://ppword.cn/,200,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,prismapi.site,Prism API,ONLINE,PARSE_FAILED,0,0,,https://prismapi.site/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,proxy2it.com,ProxyAI,ONLINE,PARSE_FAILED,0,0,,https://proxy2it.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,qiuqiutoken.com,球球Token,ONLINE,PUBLIC_JSON,38,38,GENERIC_PRICE_ONLY:38|ZERO_PRICE_CHECK:37,https://qiuqiutoken.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,right.codes,RightCode,ONLINE,PARSE_FAILED,0,0,,https://right.codes/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,runapi.co,RunAPI,ONLINE,PUBLIC_JSON,200,200,GENERIC_PRICE_ONLY:200|ZERO_PRICE_CHECK:161|ROW_LIMIT_REACHED:200,https://runapi.co/api/pricing,200,已达到单站点行数上限，结果可能被截断
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,safeapi.vip,SafeAPI,ONLINE,PARSE_FAILED,0,0,,https://safeapi.vip/models,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,sevnx.one,SevnX,ONLINE,PARSE_FAILED,0,0,,https://www.sevnx.one/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,shitang359.space,元气食堂API,HTTP_ERROR,SITE_NOT_REACHABLE,0,0,,,,最新监测状态为 HTTP_ERROR，跳过价格抓取
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,sparkcode.top,SparkCode,ONLINE,PUBLIC_JSON,34,34,GENERIC_PRICE_ONLY:34|ZERO_PRICE_CHECK:29,https://sparkcode.top/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,spritnest.com,Spritnest,ONLINE,PUBLIC_JSON,11,11,GENERIC_PRICE_ONLY:11|ZERO_PRICE_CHECK:6,https://spritnest.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,sssaicode.com,SSSAICode,ONLINE,NO_MODEL_PAGE_FOUND,0,0,,https://sssaicode.com/,200,没有找到公开模型价格页
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,sub2.congmingai.com,聪明AI,ONLINE,PARSE_FAILED,0,0,,https://sub2.congmingai.com/models,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,sub2api.luchikey.com,luchikey,ONLINE,PARSE_FAILED,0,0,,https://sub2api.luchikey.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,subrouter.ai,SubRouter,ONLINE,PUBLIC_JSON,200,200,GENERIC_PRICE_ONLY:20|ZERO_PRICE_CHECK:194|ROW_LIMIT_REACHED:200,https://subrouter.ai/api/pricing,200,已达到单站点行数上限，结果可能被截断
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,sudobug.top,SudoBug,ONLINE,PUBLIC_JSON,10,10,GENERIC_PRICE_ONLY:10|ZERO_PRICE_CHECK:9,https://sudobug.top/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,sudocode.chat,SudoCode,ONLINE,PUBLIC_JSON,9,9,GENERIC_PRICE_ONLY:9|ZERO_PRICE_CHECK:9,https://sudocode.chat/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,sudocode.us,sudocode.us,ONLINE,PUBLIC_JSON,24,24,GENERIC_PRICE_ONLY:24|ZERO_PRICE_CHECK:22,https://sudocode.us/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,superapi.buzz,SuperAPI,ONLINE,PUBLIC_JSON,41,41,GENERIC_PRICE_ONLY:41|ZERO_PRICE_CHECK:38,https://superapi.buzz/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,switchbase.vip,SwitchBase,ONLINE,PUBLIC_JSON,14,14,GENERIC_PRICE_ONLY:14|ZERO_PRICE_CHECK:13,https://switchbase.vip/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,tcdmx.com,TCDMX,ONLINE,PARSE_FAILED,0,0,,https://tcdmx.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,terminal.pub,Terminal.Pub,ONLINE,PUBLIC_JSON,9,9,,https://terminal.pub/api/models,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,thestocklist.site,Flux API,ONLINE,LOGIN_REQUIRED,0,0,,https://thestocklist.site/api/channel/models,401,模型广场/价格页可能需要登录
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,tieapi.com,TieAPI,ONLINE_LOGIN_REQUIRED,LOGIN_REQUIRED,0,0,,http://tieapi.com/api/channel/models,403,模型广场/价格页可能需要登录
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,timesniper.club,一元模型,ONLINE,PUBLIC_JSON,26,26,GENERIC_PRICE_ONLY:26|ZERO_PRICE_CHECK:23,https://timesniper.club/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,timicc.com,TimiCC,ONLINE,PARSE_FAILED,0,0,,https://timicc.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,timyai.com,Timy AI,DNS_FAIL,SITE_NOT_REACHABLE,0,0,,,,最新监测状态为 DNS_FAIL，跳过价格抓取
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,tokaify.com,Tokaify,ONLINE,PARSE_FAILED,0,0,,https://www.tokaify.com/,200,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,token.baogutang.top,N1KO-API,ONLINE,PARSE_FAILED,0,0,,https://token.baogutang.top/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,tokeness.cn,Tokeness,ONLINE,PUBLIC_JSON,25,25,GENERIC_PRICE_ONLY:25|ZERO_PRICE_CHECK:23,https://tokeness.cn/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,tokenflux.dev,词元流动,ONLINE,PARSE_FAILED,0,0,,https://tokenflux.dev/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,tokenmix.ai,TokenMix,ONLINE,PARSE_FAILED,0,0,,https://tokenmix.ai/,200,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,tokenonly.ai,tokenonly,ONLINE,PARSE_FAILED,0,0,,https://tokenonly.ai/,200,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,toknex.ai,Toknex,ONLINE,PUBLIC_JSON,21,21,ZERO_PRICE_CHECK:7,https://toknex.ai/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,tongapi.com,通API,ONLINE,LOGIN_REQUIRED,0,0,,https://tongapi.com/api/channel/models,401,模型广场/价格页可能需要登录
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,toolcode.top,ToolCode,ONLINE,PARSE_FAILED,0,0,,https://toolcode.top/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,traxnode.com,Traxnode,ONLINE,PUBLIC_JSON,101,101,GENERIC_PRICE_ONLY:101|ZERO_PRICE_CHECK:89,https://traxnode.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,unity2.ai,unity2,ONLINE,PARSE_FAILED,0,0,,https://unity2.ai/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,uocode.com,UoCode,ONLINE,PUBLIC_JSON,30,30,GENERIC_PRICE_ONLY:30|ZERO_PRICE_CHECK:29,https://uocode.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,us.usclaude.us,Flux AI,ONLINE,PARSE_FAILED,0,0,,https://us.usclaude.us/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,user.tocodex.com,ToCodex,ONLINE,PUBLIC_JSON,17,17,GENERIC_PRICE_ONLY:17|ZERO_PRICE_CHECK:16,https://user.tocodex.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,uuapi.net,UU API,ONLINE,PUBLIC_JSON,21,21,GENERIC_PRICE_ONLY:21|ZERO_PRICE_CHECK:17,https://uuapi.net/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,wangxiangai.org,万象,ONLINE,PUBLIC_JSON,12,12,GENERIC_PRICE_ONLY:12|ZERO_PRICE_CHECK:12,https://wangxiangai.org/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,web.mmw.ink,妙妙屋APIMMW,ONLINE,LOGIN_REQUIRED,0,0,,https://web.mmw.ink/api/v1/models,200,模型广场/价格页可能需要登录
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,worldbase.ai,WorldBase.ai,ONLINE,NO_MODEL_PAGE_FOUND,0,0,,https://worldbase.ai/,200,没有找到公开模型价格页
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,www.aladingapi.cc,阿拉丁API,ONLINE,PUBLIC_JSON,102,102,GENERIC_PRICE_ONLY:102|MODEL_TAGS_NORMALIZED:1|ZERO_PRICE_CHECK:75,https://www.aladingapi.cc/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,www.freezapi.eu.cc,freez API,ONLINE,PUBLIC_JSON,14,14,GENERIC_PRICE_ONLY:14|MODEL_TAGS_NORMALIZED:9|ZERO_PRICE_CHECK:10,https://www.freezapi.eu.cc/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,www.gogoapi.cloud,GOGOAPI,ONLINE,PUBLIC_JSON,1,0,MISSING_PRICE:1,https://www.gogoapi.cloud/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,www.metachat.work,MetaChat元语,ONLINE,PARSE_FAILED,0,0,,https://www.metachat.work/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,x.dogenet.win,OhMyGPT,ONLINE,PARSE_FAILED,0,0,,https://x.dogenet.win/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,xb1520.com,小白中转站,ONLINE,PARSE_FAILED,0,0,,https://xb1520.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,xbhuiz.com,XMAPI,ONLINE,PARSE_FAILED,0,0,,https://xbhuiz.com/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,xcode.best,Xcode,ONLINE,PUBLIC_JSON,29,29,GENERIC_PRICE_ONLY:29|ZERO_PRICE_CHECK:28,https://xcode.best/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,xiaoruiapi.cc,小瑞API,ONLINE,NO_MODEL_PAGE_FOUND,0,0,,https://xiaoruiapi.cc/,200,没有找到公开模型价格页
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,xinggangai.com,星港AI,ONLINE,PUBLIC_JSON,10,10,GENERIC_PRICE_ONLY:10|ZERO_PRICE_CHECK:10,https://xinggangai.com/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,xyc.ai,XycAi(星道智能),ONLINE,PUBLIC_JSON,8,8,GENERIC_PRICE_ONLY:8|ZERO_PRICE_CHECK:8,https://xyc.ai/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,yundu.lat,云渡,ONLINE,PARSE_FAILED,0,0,,https://yundu.lat/,404,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,yxaiapp.com,方舟,ONLINE,LOGIN_REQUIRED,0,0,,https://www.yxaiapp.com/api/channel/models,401,模型广场/价格页可能需要登录
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,zaimaai.cn,在吗 AI,DNS_FAIL,SITE_NOT_REACHABLE,0,0,,,,最新监测状态为 DNS_FAIL，跳过价格抓取
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,zerocode.sbs,ZeroCode,ONLINE,PUBLIC_JSON,7,7,GENERIC_PRICE_ONLY:7|ZERO_PRICE_CHECK:7,https://zerocode.sbs/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,zhangyuapi.com,章鱼中枢AI服务平台,CLOUDFLARE_OR_BLOCKED,CLOUDFLARE_OR_BLOCKED,0,0,,https://zhangyuapi.com/,,监测已显示 Cloudflare/被拦截，跳过价格抓取
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,zivv.pro,ZIVV API,ONLINE,PARSE_FAILED,0,0,,https://zivv.pro/,405,页面似乎包含模型/价格文本，但自动解析失败
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,zxai.work,ZX API,ONLINE,PUBLIC_JSON,120,120,GENERIC_PRICE_ONLY:120|ZERO_PRICE_CHECK:108,https://zxai.work/api/pricing,200,
+2026-06-17T23:33:13Z,2026-06-17T23:20:00Z,zz.aigm99.cn,Green Mountain青山,ONLINE,PUBLIC_JSON,7,7,GENERIC_PRICE_ONLY:7|ZERO_PRICE_CHECK:7,https://zz.aigm99.cn/api/pricing,200,
