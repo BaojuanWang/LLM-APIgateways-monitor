@@ -30,7 +30,7 @@ jobs:
           python -m pip install requests
 
       - name: Probe model prices
-        run: python scripts/run_model_price_probe.py
+        run: python scripts/model_price_probe.py
 
       - name: Commit model price CSVs
         run: |
