@@ -4,7 +4,8 @@
 - 读取 monitor_results.csv 最新一轮的在线站点
 - 新站点或 html_hash 变化才截图
 - 截图保存到 data/screenshots/
-- Cloudflare/被拦截站点不自动截图，写入 data/screenshots/needs_manual_confirmation.csv
+- Cloudflare/被拦截站点不自动截图
+- 未手动截图过的被拦截站点写入 data/screenshots/needs_manual_confirmation.csv
 - 自动清理这些被拦截站点过去误截的图片
 - 失败记录到 data/screenshot_failures.csv
 """
@@ -19,6 +20,7 @@ BASE_DIR       = Path(__file__).parent.parent
 DATA_DIR       = BASE_DIR / "data"
 RESULTS_DIR    = BASE_DIR / "results"
 SCREENSHOT_DIR = DATA_DIR / "screenshots"
+MANUAL_SCREENSHOT_DIR = DATA_DIR / "manual_screenshots"
 RESULTS_CSV    = RESULTS_DIR / "monitor_results.csv"
 FAILURES_CSV   = DATA_DIR / "screenshot_failures.csv"
 MANUAL_CONFIRM_CSV = SCREENSHOT_DIR / "needs_manual_confirmation.csv"
@@ -44,13 +46,32 @@ def safe_domain(domain):
     return domain.replace(".", "_").replace("/", "_")
 
 
+def has_manual_screenshot(domain):
+    """如果已经有人手动保存过这个域名的截图，就不再要求重复确认。"""
+    if not MANUAL_SCREENSHOT_DIR.exists():
+        return False
+    return any(MANUAL_SCREENSHOT_DIR.rglob(f"{safe_domain(domain)}_*.png"))
+
+
+def manual_confirmation_row(row, latest_ts):
+    return {
+        "checked_at": latest_ts,
+        "domain": row.get("domain", "").strip(),
+        "platform_name": row.get("platform_name", ""),
+        "final_url": row.get("final_url", ""),
+        "online_status": row.get("online_status", ""),
+        "page_title": row.get("page_title", ""),
+        "note": "GitHub Actions 可能只能看到 Cloudflare/人机验证页；请本地手动打开并按需保存截图。",
+    }
+
+
 def load_latest_round(results_csv):
     """
     读取 monitor_results.csv，取最新一轮（timestamp 最大的那批）。
-    返回可自动截图站点、最新 timestamp、需要手动确认截图的站点。
+    返回可自动截图站点、最新 timestamp、需要手动确认截图的站点、全部被拦截站点。
     """
     if not results_csv.exists():
-        return {}, "", []
+        return {}, "", [], []
 
     # 先找最新 timestamp
     latest_ts = ""
@@ -61,7 +82,7 @@ def load_latest_round(results_csv):
                 latest_ts = ts
 
     if not latest_ts:
-        return {}, "", []
+        return {}, "", [], []
 
     # 读取最新一轮数据（同一轮的 timestamp 精确到秒可能有细微差异，取最近1分钟内的）
     from datetime import datetime
@@ -69,6 +90,7 @@ def load_latest_round(results_csv):
 
     sites = {}
     manual_confirmation = []
+    blocked_sites = []
     with open(results_csv, encoding="utf-8-sig") as f:
         for row in csv.DictReader(f):
             ts = row.get("timestamp", "")
@@ -82,15 +104,10 @@ def load_latest_round(results_csv):
                 if not domain:
                     continue
                 if status in MANUAL_CONFIRM_STATUSES:
-                    manual_confirmation.append({
-                        "checked_at": latest_ts,
-                        "domain": domain,
-                        "platform_name": row.get("platform_name", ""),
-                        "final_url": row.get("final_url", ""),
-                        "online_status": status,
-                        "page_title": row.get("page_title", ""),
-                        "note": "GitHub Actions 可能只能看到 Cloudflare/人机验证页；请本地手动打开并按需保存截图。",
-                    })
+                    blocked_row = manual_confirmation_row(row, latest_ts)
+                    blocked_sites.append(blocked_row)
+                    if not has_manual_screenshot(domain):
+                        manual_confirmation.append(blocked_row)
                     continue
                 if status not in SKIP_STATUSES:
                     sites[domain] = {
@@ -100,16 +117,17 @@ def load_latest_round(results_csv):
                         "status":        status,
                     }
 
-    return sites, latest_ts, manual_confirmation
+    return sites, latest_ts, manual_confirmation, blocked_sites
 
 
-def write_manual_confirmation(rows, latest_ts):
+def write_manual_confirmation(rows, latest_ts, blocked_count):
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
     rows = sorted(rows, key=lambda x: x["domain"])
     with open(MANUAL_CONFIRM_CSV, "w", newline="", encoding="utf-8-sig") as f:
         writer = csv.DictWriter(f, fieldnames=MANUAL_CONFIRM_FIELDS)
         writer.writeheader()
         writer.writerows(rows)
+    print(f"Cloudflare/被拦截站点: {blocked_count} 个")
     print(f"待手动确认截图: {len(rows)} 个 → {MANUAL_CONFIRM_CSV}")
     if latest_ts and rows:
         print(f"待确认清单对应监测轮次: {latest_ts}")
@@ -134,10 +152,10 @@ def save_hashes(hashes):
             writer.writerow({"domain": domain, "html_hash": h})
 
 
-def cleanup_manual_confirmation_screenshots(manual_confirmation, hashes):
+def cleanup_manual_confirmation_screenshots(blocked_sites, hashes):
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
     cleaned_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    domains = sorted({row["domain"] for row in manual_confirmation if row.get("domain")})
+    domains = sorted({row["domain"] for row in blocked_sites if row.get("domain")})
     removed_rows = []
 
     for domain in domains:
@@ -261,11 +279,11 @@ def main():
     print(f"开始截图  {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"{'='*50}")
 
-    sites, latest_ts, manual_confirmation = load_latest_round(RESULTS_CSV)
-    write_manual_confirmation(manual_confirmation, latest_ts)
+    sites, latest_ts, manual_confirmation, blocked_sites = load_latest_round(RESULTS_CSV)
+    write_manual_confirmation(manual_confirmation, latest_ts, len(blocked_sites))
 
     last_hashes = load_last_hashes()
-    cleaned_count = cleanup_manual_confirmation_screenshots(manual_confirmation, last_hashes)
+    cleaned_count = cleanup_manual_confirmation_screenshots(blocked_sites, last_hashes)
 
     if not sites:
         save_hashes(last_hashes)
