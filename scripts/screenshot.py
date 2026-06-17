@@ -5,6 +5,7 @@
 - 新站点或 html_hash 变化才截图
 - 截图保存到 data/screenshots/
 - Cloudflare/被拦截站点不自动截图，写入 data/screenshots/needs_manual_confirmation.csv
+- 自动清理这些被拦截站点过去误截的图片
 - 失败记录到 data/screenshot_failures.csv
 """
 
@@ -21,6 +22,7 @@ SCREENSHOT_DIR = DATA_DIR / "screenshots"
 RESULTS_CSV    = RESULTS_DIR / "monitor_results.csv"
 FAILURES_CSV   = DATA_DIR / "screenshot_failures.csv"
 MANUAL_CONFIRM_CSV = SCREENSHOT_DIR / "needs_manual_confirmation.csv"
+CLEANUP_REPORT_CSV = SCREENSHOT_DIR / "cleanup_report.csv"
 
 SKIP_STATUSES = {"DNS_FAIL", "TIMEOUT", "HTTP_ERROR", "PARKED_OR_FOR_SALE", "SERVICE_STOPPED"}
 MANUAL_CONFIRM_STATUSES = {"CLOUDFLARE_OR_BLOCKED"}
@@ -32,6 +34,14 @@ FAILURE_FIELDS = [
 MANUAL_CONFIRM_FIELDS = [
     "checked_at", "domain", "platform_name", "final_url", "online_status", "page_title", "note"
 ]
+
+CLEANUP_REPORT_FIELDS = [
+    "cleaned_at", "domain", "file", "reason"
+]
+
+
+def safe_domain(domain):
+    return domain.replace(".", "_").replace("/", "_")
 
 
 def load_latest_round(results_csv):
@@ -124,10 +134,36 @@ def save_hashes(hashes):
             writer.writerow({"domain": domain, "html_hash": h})
 
 
+def cleanup_manual_confirmation_screenshots(manual_confirmation, hashes):
+    SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
+    cleaned_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    domains = sorted({row["domain"] for row in manual_confirmation if row.get("domain")})
+    removed_rows = []
+
+    for domain in domains:
+        safe = safe_domain(domain)
+        for path in sorted(SCREENSHOT_DIR.glob(f"{safe}_*.png")):
+            removed_rows.append({
+                "cleaned_at": cleaned_at,
+                "domain": domain,
+                "file": path.name,
+                "reason": "自动清理：该站点最新状态为 CLOUDFLARE_OR_BLOCKED，旧截图很可能只是拦截/人机验证页面。",
+            })
+            path.unlink()
+        hashes.pop(domain, None)
+
+    with open(CLEANUP_REPORT_CSV, "w", newline="", encoding="utf-8-sig") as f:
+        writer = csv.DictWriter(f, fieldnames=CLEANUP_REPORT_FIELDS)
+        writer.writeheader()
+        writer.writerows(removed_rows)
+
+    print(f"已清理 Cloudflare 旧截图: {len(removed_rows)} 张 → {CLEANUP_REPORT_CSV}")
+    return len(removed_rows)
+
+
 def has_any_screenshot(domain):
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
-    safe = domain.replace(".", "_").replace("/", "_")
-    return any(SCREENSHOT_DIR.glob(f"{safe}_*.png"))
+    return any(SCREENSHOT_DIR.glob(f"{safe_domain(domain)}_*.png"))
 
 
 def close_popups(page):
@@ -158,7 +194,7 @@ def close_popups(page):
 
 def take_screenshot(page, domain, final_url, date_str):
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
-    safe = domain.replace(".", "_").replace("/", "_")
+    safe = safe_domain(domain)
 
     path = SCREENSHOT_DIR / f"{safe}_{date_str}.png"
     if path.exists():
@@ -228,14 +264,17 @@ def main():
     sites, latest_ts, manual_confirmation = load_latest_round(RESULTS_CSV)
     write_manual_confirmation(manual_confirmation, latest_ts)
 
+    last_hashes = load_last_hashes()
+    cleaned_count = cleanup_manual_confirmation_screenshots(manual_confirmation, last_hashes)
+
     if not sites:
+        save_hashes(last_hashes)
         print("⚠️  没有找到可自动截图的站点，退出")
         return
 
     print(f"最新一轮: {latest_ts}")
     print(f"可自动截图站点: {len(sites)} 个\n")
 
-    last_hashes = load_last_hashes()
     date_str    = datetime.now().strftime("%Y-%m-%d")
     ts_now      = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
@@ -254,7 +293,10 @@ def main():
     print(f"需要截图: {len(to_screenshot)} 个\n")
 
     if not to_screenshot:
+        save_hashes(last_hashes)
         print("✅ 本轮无需截图")
+        if cleaned_count:
+            print(f"✅ 已清理旧拦截图: {cleaned_count} 张")
         return
 
     success_count = 0
@@ -297,9 +339,11 @@ def main():
     print(f"\n── 截图完成 ──")
     print(f"  成功: {success_count}")
     print(f"  失败: {fail_count}")
+    print(f"  清理旧拦截图: {cleaned_count}")
     if fail_count:
         print(f"  失败记录: {FAILURES_CSV}")
     print(f"  待手动确认: {MANUAL_CONFIRM_CSV}")
+    print(f"  清理报告: {CLEANUP_REPORT_CSV}")
     print(f"  截图目录: {SCREENSHOT_DIR}")
 
 
