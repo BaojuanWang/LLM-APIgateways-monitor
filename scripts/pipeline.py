@@ -44,6 +44,14 @@ REVIEW_FIELDS = [
     "online_status", "final_url", "error", "note"
 ]
 
+STOPPED_SERVICES = {
+    "api.uglycat.cc": {
+        "platform_name": "uglycat",
+        "final_url": "https://api.uglycat.cc/",
+        "note": "人工确认：网站公告显示服务已停止维护，不是 DNS/服务器挂掉。",
+    },
+}
+
 
 def extract_domain(url):
     if not url:
@@ -116,13 +124,47 @@ def load_platforms():
     else:
         print(f"⚠️  找不到 {MANUAL_CSV}")
 
+    stopped_count = 0
+    for domain, info in STOPPED_SERVICES.items():
+        if domain not in platforms:
+            platforms[domain] = {
+                "domain":        domain,
+                "platform_name": info.get("platform_name", ""),
+                "source":        "manual_stopped",
+            }
+            stopped_count += 1
+        elif info.get("platform_name") and not platforms[domain].get("platform_name"):
+            platforms[domain]["platform_name"] = info["platform_name"]
+
     print(f"manual来源新增: {manual_count} 个")
+    print(f"人工停止维护标记: {len(STOPPED_SERVICES)} 个（新增 {stopped_count} 个）")
     print(f"合并去重后共: {len(platforms)} 个平台")
     return list(platforms.values())
 
 
+def stopped_service_result(p):
+    domain = p["domain"]
+    info = STOPPED_SERVICES[domain]
+    ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    result = {f: "" for f in RESULT_FIELDS}
+    result.update({
+        "timestamp":     ts,
+        "domain":        domain,
+        "platform_name": p.get("platform_name") or info.get("platform_name", ""),
+        "source":        "manual_stopped",
+        "online_status": "SERVICE_STOPPED",
+        "final_url":     info.get("final_url", f"https://{domain}/"),
+        "page_title":    "Manual: service stopped",
+        "error":         info.get("note", "人工确认：服务已停止维护。"),
+    })
+    return result
+
+
 def check_one(p):
     domain = p["domain"]
+    if domain in STOPPED_SERVICES:
+        return stopped_service_result(p)
+
     ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     result = {f: "" for f in RESULT_FIELDS}
     result.update({
