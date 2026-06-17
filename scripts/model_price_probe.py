@@ -2,7 +2,7 @@
 Probe model/pricing pages for LLM relay sites.
 
 Reads the latest round from results/monitor_results.csv and writes a best-effort
-snapshot to results/model_prices.csv.
+price snapshot plus a one-row-per-site summary under results/.
 """
 
 import csv
@@ -20,6 +20,7 @@ import requests
 BASE_DIR = Path(__file__).parent.parent
 RESULTS_CSV = BASE_DIR / "results" / "monitor_results.csv"
 OUTPUT_CSV = BASE_DIR / "results" / "model_prices.csv"
+SUMMARY_CSV = BASE_DIR / "results" / "model_prices_summary.csv"
 
 TIMEOUT = int(os.getenv("MODEL_PRICE_TIMEOUT", "20"))
 MAX_WORKERS = int(os.getenv("MODEL_PRICE_MAX_WORKERS", "6"))
@@ -78,22 +79,54 @@ OUTPUT_FIELDS = [
     "checked_at",
     "domain",
     "platform_name",
+    "monitor_status",
     "source_url",
     "matched_url",
     "access_status",
     "http_status",
+    "raw_model_name",
     "model_name",
+    "model_tags",
     "provider",
     "model_type",
     "billing_type",
     "input_price",
     "output_price",
+    "model_price",
     "price_unit",
     "currency",
     "raw_price_text",
     "confidence",
+    "quality_flag",
     "note",
 ]
+
+SUMMARY_FIELDS = [
+    "checked_at",
+    "monitor_checked_at",
+    "domain",
+    "platform_name",
+    "monitor_status",
+    "access_status",
+    "model_rows",
+    "usable_price_rows",
+    "quality_flags",
+    "matched_url",
+    "http_status",
+    "note",
+]
+
+BILLING_TAGS = {
+    "按次": "按次",
+    "按量": "按量",
+    "按token": "按量",
+    "token": "按量",
+}
+
+QUOTA_TYPE_LABELS = {
+    "0": "按量 (quota_type=0)",
+    "1": "按次 (quota_type=1)",
+}
 
 
 def origin_from_url(url, domain):
@@ -168,20 +201,25 @@ def base_row(site, checked_at, matched_url="", access_status="", http_status="",
         "checked_at": checked_at,
         "domain": site["domain"],
         "platform_name": site.get("platform_name", ""),
+        "monitor_status": site.get("online_status", ""),
         "source_url": site.get("final_url", "") or f"https://{site['domain']}",
         "matched_url": matched_url,
         "access_status": access_status,
         "http_status": http_status,
+        "raw_model_name": "",
         "model_name": "",
+        "model_tags": "",
         "provider": "",
         "model_type": "",
         "billing_type": "",
         "input_price": "",
         "output_price": "",
+        "model_price": "",
         "price_unit": "",
         "currency": "",
         "raw_price_text": "",
         "confidence": "",
+        "quality_flag": "",
         "note": note,
     }
 
@@ -279,8 +317,14 @@ def is_noise_text_block(text):
         "twitter:",
         "invalid_request_error",
         "invalid url",
+        "db-authoritative price refresh",
+        "model_pricing",
+        "overwrites them",
+        "const fallback",
     ]
-    return any(marker in lower for marker in noisy_markers)
+    return lower.lstrip().startswith(("//", "/*", "const ", "let ", "var ", "function ")) or any(
+        marker in lower for marker in noisy_markers
+    )
 
 
 def clean_text(value, limit=300):
@@ -309,6 +353,71 @@ def value_by_key_contains(item, include_words, exclude_words=()):
     return ""
 
 
+def append_note(note, addition):
+    if not addition:
+        return note
+    return f"{note}；{addition}" if note else addition
+
+
+def normalize_model_name(raw_name):
+    name = clean_text(raw_name, 200)
+    tags = []
+    while True:
+        match = re.match(r"^\s*\[([^\]]{1,40})\]\s*", name)
+        if not match:
+            break
+        tags.append(clean_text(match.group(1), 40))
+        name = name[match.end() :].strip()
+    return (name or clean_text(raw_name, 200)), tags
+
+
+def billing_type_from(raw_billing, tags):
+    for tag in tags:
+        normalized = tag.lower().replace(" ", "")
+        if normalized in BILLING_TAGS:
+            return BILLING_TAGS[normalized]
+    raw = clean_text(raw_billing, 80)
+    return QUOTA_TYPE_LABELS.get(raw, raw)
+
+
+def generic_price_value(item):
+    preferred_keys = ["model_price", "modelprice", "unit_price", "unitprice", "price"]
+    lowered = {str(key).lower(): value for key, value in item.items()}
+    for key in preferred_keys:
+        value = lowered.get(key)
+        if value not in (None, ""):
+            return clean_text(value)
+    for key, value in item.items():
+        lower_key = str(key).lower()
+        if "price" not in lower_key:
+            continue
+        if any(word in lower_key for word in ["input", "output", "prompt", "completion"]):
+            continue
+        if value not in (None, ""):
+            return clean_text(value)
+    return ""
+
+
+def is_zero_price(value):
+    if value in (None, ""):
+        return False
+    match = re.search(r"-?\d+(?:\.\d+)?", str(value).replace(",", ""))
+    return bool(match and float(match.group()) == 0)
+
+
+def quality_flags_for_price_row(row):
+    flags = []
+    if row["model_price"] and not row["input_price"] and not row["output_price"]:
+        flags.append("GENERIC_PRICE_ONLY")
+    if not any(row[field] for field in ["input_price", "output_price", "model_price"]):
+        flags.append("MISSING_PRICE")
+    if any(is_zero_price(row[field]) for field in ["input_price", "output_price", "model_price"]):
+        flags.append("ZERO_PRICE_CHECK")
+    if row["model_tags"]:
+        flags.append("MODEL_TAGS_NORMALIZED")
+    return "|".join(flags) or "OK"
+
+
 def looks_like_model_item(item):
     keys = {str(k).lower() for k in item.keys()}
     key_text = " ".join(keys)
@@ -321,6 +430,7 @@ def looks_like_model_item(item):
 
 def extract_from_json(data, site, url, checked_at):
     rows = []
+    seen = set()
 
     def walk(obj):
         if len(rows) >= MAX_ROWS_PER_SITE:
@@ -328,18 +438,22 @@ def extract_from_json(data, site, url, checked_at):
         if isinstance(obj, dict):
             if looks_like_model_item(obj):
                 row = base_row(site, checked_at, url, "PUBLIC_JSON", "", "")
-                row["model_name"] = first_value(
+                raw_model_name = first_value(
                     obj,
                     ["model_name", "modelName", "model", "name", "id", "model_id", "modelId"],
                 )
+                row["raw_model_name"] = raw_model_name
+                row["model_name"], model_tags = normalize_model_name(raw_model_name)
+                row["model_tags"] = "|".join(model_tags)
                 row["provider"] = first_value(
                     obj,
                     ["provider", "vendor", "supplier", "company", "owner", "group", "platform"],
                 )
                 row["model_type"] = first_value(obj, ["type", "model_type", "category", "mode"])
-                row["billing_type"] = first_value(
+                raw_billing = first_value(
                     obj, ["billing_type", "billing", "charge_type", "quota_type"]
                 )
+                row["billing_type"] = billing_type_from(raw_billing, model_tags)
                 row["input_price"] = (
                     value_by_key_contains(obj, ["input", "price"])
                     or value_by_key_contains(obj, ["prompt", "price"])
@@ -350,9 +464,7 @@ def extract_from_json(data, site, url, checked_at):
                     or value_by_key_contains(obj, ["completion", "price"])
                     or value_by_key_contains(obj, ["output"])
                 )
-                generic_price = value_by_key_contains(obj, ["price"])
-                if not row["input_price"] and not row["output_price"]:
-                    row["input_price"] = generic_price
+                row["model_price"] = generic_price_value(obj)
                 row["currency"] = first_value(obj, ["currency", "currency_code"])
                 row["price_unit"] = first_value(obj, ["unit", "price_unit", "quota_unit"])
                 price_bits = []
@@ -361,8 +473,25 @@ def extract_from_json(data, site, url, checked_at):
                         price_bits.append(f"{key}={clean_text(value, 100)}")
                 row["raw_price_text"] = "; ".join(price_bits)[:800]
                 row["confidence"] = "0.75"
-                row["note"] = "从 JSON 字段自动抽取，需抽样核对"
-                rows.append(row)
+                row["quality_flag"] = quality_flags_for_price_row(row)
+                row["note"] = "从 JSON 字段自动抽取"
+                if "GENERIC_PRICE_ONLY" in row["quality_flag"]:
+                    row["note"] = append_note(row["note"], "通用价格不能视为输入价")
+                if "ZERO_PRICE_CHECK" in row["quality_flag"]:
+                    row["note"] = append_note(
+                        row["note"], "价格为 0，可能是倍率/计费模式字段，需核对"
+                    )
+                key = (
+                    row["model_name"],
+                    row["provider"],
+                    row["billing_type"],
+                    row["input_price"],
+                    row["output_price"],
+                    row["model_price"],
+                )
+                if key not in seen:
+                    seen.add(key)
+                    rows.append(row)
             for value in obj.values():
                 walk(value)
         elif isinstance(obj, list):
@@ -442,11 +571,13 @@ def extract_from_text(text, site, url, checked_at, http_status):
         seen.add(key)
 
         row = base_row(site, checked_at, url, "PUBLIC_PAGE", http_status, "")
+        row["raw_model_name"] = model_name
         row["model_name"] = model_name
         row["input_price"] = input_price
         row["output_price"] = output_price
         row["raw_price_text"] = clean_text(block, 800)
         row["confidence"] = "0.45"
+        row["quality_flag"] = "PAGE_TEXT_REVIEW"
         row["note"] = "从页面文本自动抽取，格式多样，需人工核对"
         rows.append(row)
         if len(rows) >= MAX_ROWS_PER_SITE:
@@ -571,10 +702,66 @@ def probe_site(site, checked_at):
 
 def save_rows(rows):
     OUTPUT_CSV.parent.mkdir(parents=True, exist_ok=True)
+    rows.sort(
+        key=lambda row: (
+            row.get("domain", ""),
+            row.get("access_status", ""),
+            row.get("model_name", ""),
+            row.get("billing_type", ""),
+        )
+    )
     with open(OUTPUT_CSV, "w", newline="", encoding="utf-8-sig") as f:
         writer = csv.DictWriter(f, fieldnames=OUTPUT_FIELDS)
         writer.writeheader()
         writer.writerows(rows)
+
+
+def save_summary(rows, monitor_checked_at):
+    grouped = {}
+    for row in rows:
+        grouped.setdefault(row["domain"], []).append(row)
+
+    summary_rows = []
+    for domain in sorted(grouped):
+        site_rows = grouped[domain]
+        first = site_rows[0]
+        model_rows = [row for row in site_rows if row.get("model_name")]
+        usable_rows = [
+            row
+            for row in model_rows
+            if any(row.get(field) for field in ["input_price", "output_price", "model_price"])
+        ]
+        flag_counts = {}
+        for row in model_rows:
+            for flag in row.get("quality_flag", "").split("|"):
+                if flag and flag != "OK":
+                    flag_counts[flag] = flag_counts.get(flag, 0) + 1
+        flags = "|".join(f"{key}:{flag_counts[key]}" for key in sorted(flag_counts))
+        note = first.get("note", "") if not model_rows else ""
+        if len(model_rows) >= MAX_ROWS_PER_SITE:
+            flags = append_note(flags, f"ROW_LIMIT_REACHED:{MAX_ROWS_PER_SITE}").replace("；", "|")
+            note = "已达到单站点行数上限，结果可能被截断"
+        summary_rows.append(
+            {
+                "checked_at": first.get("checked_at", ""),
+                "monitor_checked_at": monitor_checked_at,
+                "domain": domain,
+                "platform_name": first.get("platform_name", ""),
+                "monitor_status": first.get("monitor_status", ""),
+                "access_status": first.get("access_status", ""),
+                "model_rows": len(model_rows),
+                "usable_price_rows": len(usable_rows),
+                "quality_flags": flags,
+                "matched_url": first.get("matched_url", ""),
+                "http_status": first.get("http_status", ""),
+                "note": note,
+            }
+        )
+
+    with open(SUMMARY_CSV, "w", newline="", encoding="utf-8-sig") as f:
+        writer = csv.DictWriter(f, fieldnames=SUMMARY_FIELDS)
+        writer.writeheader()
+        writer.writerows(summary_rows)
 
 
 def main():
@@ -612,7 +799,9 @@ def main():
             print(f"[{idx:3d}/{len(sites)}] {site['domain']:<35} {status:<24} rows={len(site_rows)}")
 
     save_rows(rows)
+    save_summary(rows, latest_ts)
     print(f"\n已保存: {OUTPUT_CSV}")
+    print(f"站点汇总: {SUMMARY_CSV}")
     print(f"总行数: {len(rows)}")
 
 
