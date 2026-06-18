@@ -1,32 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="760" viewBox="0 0 1100 760">
 <rect x="0" y="0" width="1100" height="760" rx="0" fill="#F8FAFC" stroke="none" />
 <text x="60" y="32" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">LLM Relay Monitor - Status Overview</text>
-<text x="60" y="62" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#475569">Generated: 2026-06-18 08:41 | Latest data: 2026-06-18T08:40:55Z</text>
+<text x="60" y="62" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#475569">Generated: 2026-06-18 12:52 | Latest data: 2026-06-18T12:52:25Z</text>
 <rect x="60" y="92" width="300" height="110" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
 <text x="82" y="125" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#16A34A">ALIVE</text>
-<text x="82" y="165" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#0F172A">267</text>
-<text x="154" y="163" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#64748B">/ 277</text>
+<text x="82" y="165" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#0F172A">269</text>
+<text x="154" y="163" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#64748B">/ 279</text>
 <text x="82" y="188" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#64748B">Confirmed reachable at least once</text>
 <rect x="390" y="92" width="300" height="110" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
 <text x="412" y="125" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#D97706">UNCERTAIN</text>
 <text x="412" y="165" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#0F172A">2</text>
-<text x="484" y="163" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#64748B">/ 277</text>
+<text x="484" y="163" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#64748B">/ 279</text>
 <text x="412" y="188" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#64748B">Needs manual confirmation</text>
 <rect x="720" y="92" width="300" height="110" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
 <text x="742" y="125" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#DC2626">DEAD</text>
 <text x="742" y="165" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#0F172A">8</text>
-<text x="814" y="163" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#64748B">/ 277</text>
+<text x="814" y="163" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#64748B">/ 279</text>
 <text x="742" y="188" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#64748B">DNS failed, parked, or service stopped</text>
 <text x="60" y="248" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">Overall classification</text>
 <rect x="70" y="272" width="655" height="34" rx="4" fill="#16A34A" stroke="none" />
-<text x="80" y="295" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">ALIVE 267</text>
+<text x="80" y="295" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">ALIVE 269</text>
 <rect x="725" y="272" width="4" height="34" rx="4" fill="#D97706" stroke="none" />
 <rect x="729" y="272" width="19" height="34" rx="4" fill="#DC2626" stroke="none" />
 <rect x="70" y="272" width="680" height="34" rx="4" fill="none" stroke="#CBD5E1" />
 <text x="60" y="352" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">Latest check status distribution</text>
 <text x="70" y="400" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">ONLINE</text>
-<rect x="275" y="382" width="394" height="18" rx="4" fill="#16A34A" stroke="none" />
-<text x="679" y="397" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">254</text>
+<rect x="275" y="382" width="396" height="18" rx="4" fill="#16A34A" stroke="none" />
+<text x="681" y="397" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">257</text>
 <text x="70" y="430" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">CLOUDFLARE_OR_BLOCKED</text>
 <rect x="275" y="412" width="12" height="18" rx="4" fill="#22C55E" stroke="none" />
 <text x="297" y="427" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">8</text>
@@ -34,8 +34,8 @@
 <rect x="275" y="442" width="12" height="18" rx="4" fill="#DC2626" stroke="none" />
 <text x="297" y="457" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">8</text>
 <text x="70" y="490" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">ONLINE_LOGIN_REQUIRED</text>
-<rect x="275" y="472" width="6" height="18" rx="4" fill="#65A30D" stroke="none" />
-<text x="291" y="487" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">4</text>
+<rect x="275" y="472" width="4" height="18" rx="4" fill="#65A30D" stroke="none" />
+<text x="289" y="487" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">3</text>
 <text x="70" y="520" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">HTTP_ERROR</text>
 <rect x="275" y="502" width="3" height="18" rx="4" fill="#F59E0B" stroke="none" />
 <text x="288" y="517" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">2</text>
@@ -45,7 +45,7 @@
 <rect x="790" y="238" width="250" height="416" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
 <text x="812" y="272" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">Notes</text>
 <text x="812" y="306" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#D97706">Needs review: 2</text>
-<text x="812" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#334155">Changed since previous check: 2</text>
+<text x="812" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#334155">Changed since previous check: 1</text>
 <text x="812" y="364" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0F172A">Review first</text>
 <text x="812" y="390" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#475569">DEAD: ai.anxidc.com (DNS_FAIL)</text>
 <text x="812" y="414" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#475569">DEAD: api.uglycat.cc (SERVICE_STOPPED)</text>
@@ -60,6 +60,5 @@
 <text x="812" y="640" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#64748B">UNCERTAIN: no confirmed good response yet.</text>
 <text x="812" y="660" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#64748B">DEAD: DNS fail, parked, or service stopped.</text>
 <text x="60" y="676" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">Recent status changes</text>
-<text x="70" y="706" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">api.rpg8.cn: TIMEOUT -&gt; ONLINE</text>
-<text x="70" y="728" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">linkapi.ai: ONLINE -&gt; ONLINE_LOGIN_REQUIRED</text>
+<text x="70" y="706" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">linkapi.ai: ONLINE_LOGIN_REQUIRED -&gt; ONLINE</text>
 </svg>

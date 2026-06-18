@@ -1,0 +1,46 @@
+{
+  "date": "2026-06-18",
+  "added": [
+    {
+      "relaySiteId": 40325,
+      "siteDomain": "wintoken.dev",
+      "siteName": "WinToken",
+      "detailSlug": "wintokendev",
+      "rankPosition": 5,
+      "overallScore": 80.1,
+      "avgOnlineRate": 97.2,
+      "avgLatencyS": 6.63,
+      "latencySuspicious": false,
+      "modelCount": 87,
+      "rankedModelCount": 5,
+      "verificationType": "",
+      "siteDescription": "WinToken 是一个面向开发者和团队的 AI 模型 API 聚合平台，提供 GPT、Claude、DeepSeek、Gemini、Qwen 等主流大模型的统",
+      "siteDescriptionHasMore": true,
+      "reviewCount": 0,
+      "averageRating": null,
+      "voteUpCount": 0,
+      "voteDownCount": 0
+    },
+    {
+      "relaySiteId": 40231,
+      "siteDomain": "officesai.top",
+      "siteName": "OfficesAI",
+      "detailSlug": "officesaitop",
+      "rankPosition": 56,
+      "overallScore": 0,
+      "avgOnlineRate": 91.4,
+      "avgLatencyS": 6.45,
+      "latencySuspicious": false,
+      "modelCount": 180,
+      "rankedModelCount": 1,
+      "verificationType": "",
+      "siteDescription": "✅我们的服务集群位于澳洲UNSW大学Katana算力集群，使用的模型均为Claude满血原版 ✅我们能够避免国内中转频繁触发官方的 PoW 校验和防对抗风控，导",
+      "siteDescriptionHasMore": true,
+      "reviewCount": 0,
+      "averageRating": null,
+      "voteUpCount": 0,
+      "voteDownCount": 0
+    }
+  ],
+  "removed": []
+}
