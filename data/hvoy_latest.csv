@@ -1,128 +1,128 @@
 ﻿domain,platform_name,rankPosition,siteName,siteDomain,verificationType,overallScore,avgOnlineRate,avgLatencyS,latencySuspicious,modelCount,rankedModelCount,averageRating,reviewCount,voteUpCount,voteDownCount,siteDescription,relaySiteId
-right.codes,RightCode,1,RightCode,right.codes,enterprise,94.4,99.6,4.2,否,48,5,4.2,5,26,12,RightCode 致力于为开发者提供稳定、高质量的 AI 模型 API 中转服务。 我们覆盖 Claude、GPT、Gemini 等主流模型，价格透明、在线率,39848
-packyapi.com,PackyCode,2,PackyCode,packyapi.com,enterprise,93.5,100,5.49,否,49,5,,0,22,54,PackyCode 是一家可靠高效的 API 中转服务商，提供 Claude Code、Codex、Gemini 等多种服务的中转。 PackyCode 大约是,39842
-unity2.ai,unity2,3,unity2,unity2.ai,enterprise,88.4,98.9,4.71,否,29,5,,0,0,0,**Unity2.ai** 是面向开发者、团队、企业和个人用户的 AI API 与组合套餐平台，长期服务国内头部企业，日均承载超 **300 亿 token**,39968
-toknex.ai,Toknex,4,Toknex,toknex.ai,enterprise,85.9,100,5.08,否,14,5,5,1,4,0,# AI 聚合平台｜企业级大模型 API 服务 我们专注于 AI 大模型 API 聚合与企业级集群服务，为开发者、企业团队、工作室及 AI 创业项目提供稳定、高,40158
-wintoken.dev,WinToken,5,WinToken,wintoken.dev,,80.1,97.2,6.63,否,87,5,,0,0,0,WinToken 是一个面向开发者和团队的 AI 模型 API 聚合平台，提供 GPT、Claude、DeepSeek、Gemini、Qwen 等主流大模型的统,40325
-juxingai.top,聚星AI,6,聚星AI,juxingai.top,enterprise,75.4,98.9,6.43,否,30,5,5,1,6,6,聚星AI--聚合了 OpenAI、Anthropic、Google、字节跳动等厂商的 50 + 主流大模型，解决了国内开发者面临的支付困难、网络不稳定、接口不统,40123
-uuapi.net,UU API,7,UU API,uuapi.net,enterprise,69,99.5,5.12,否,17,5,,0,11,7,UU API 是面向全球开发者与企业的 AI 模型聚合平台，一站式接入ChatGPT、Claude、Gemini等主流大模型。 秉持「渠道透明、绝不掺水、绝不映,39863
-portal.gpteamservices.com,GPTEAM,8,GPTEAM,portal.gpteamservices.com,personal,66.5,100,4.22,否,37,5,,0,7,1,专注提供稳定可靠的GPT系列模型服务。底层采用纯Pro官方订阅号池，四、五月零故障，极致稳定。主打高性价比，GPT-5.5约 ￥1.3 / 1M Token。承,39923
-724codes.com,724codes,9,724codes,724codes.com,enterprise,65.4,97.6,5.41,否,147,4,3,2,0,0,提供稳定低延迟的 AI API 中转服务，支持多模型调用、适合开发测试和日常集成，我们越级价格比质量。对稳定性和质量非常有信心，欢迎各位体验。,40209
-api.tallius.ai,tallius.ai,10,tallius.ai,api.tallius.ai,enterprise,65.1,99.5,5.96,否,9,4,5,1,0,0,tallius.ai 定位于开发者与团队的多模型 API 网关，而非仅做价格中转。平台对外提供 OpenAI 兼容接口，用户无需为每家大模型单独维护 SDK 与,40206
-worldbase.ai,WorldBase.ai,11,WorldBase.ai,worldbase.ai,enterprise,64.6,99.6,4.79,否,9,5,,0,2,0,2025年上线，支持大规模调用，GPT官价1折，Claude官价1.5折，缓存价格为输入价格的0.1，GPT缓存率99%，Claude缓存率90%左右，为开发者,40169
-modcon.top,ModCon,12,ModCon,modcon.top,enterprise,60.6,98.5,6.21,否,7,4,,0,10,2,ModCon 专注提供 Codex，Claude Code一站式聚合中转服务。透明计费，价格有优势。稳定、充足、高性价比。只做有良心的中转站。,40106
-claudecn.top,ClaudeCN,13,ClaudeCN,claudecn.top,,58.2,100,4.17,否,87,5,,0,8,8,ClaudeCN 由是一家实体企业运营的企业级AI中转平台。平台可提供高可用性的商用API服务，提供Claude、GPT、Deepseek等热门模型，支持企业采,39799
-sudocode.chat,SudoCode,14,SudoCode,sudocode.chat,enterprise,57.6,99.6,4.69,否,10,5,5,1,11,13,2026 全新上线，专注提供 GPT（Codex）与 Claude 两类 API 服务，接口稳定可靠。 价格如下： GPT-5.5 Codex-Plus分组为 ,40095
-toolcode.top,ToolCode,15,ToolCode,toolcode.top,personal,55.6,99.4,5.5,否,7,5,,0,0,0,Tool Code 致力于打造一个专供 GPT 用户使用的优质中转站，核心宗旨是以稳定且具性价比的方式持续提供服务。我们关注的不只是可用，更是长期体验上的稳定、,40208
-linkai.shop,LinkAi,16,LinkAi,linkai.shop,enterprise,51.7,99.6,4.91,否,14,5,,0,0,0,LinkAi面向企业与开发者提供稳定透明的多模型API接入服务，支持高并发调用、灵活计费与持续运维保障，适合长期业务集成。,40225
-dasuapi.com,DasuApi,17,DasuApi,dasuapi.com,personal,47.6,96.1,4.72,否,7,4,4.8,6,0,0,claude opus4.8 max号池 gpt plus号池 主打物美价廉 gpt大概0.04倍率，claude大概0.8倍率,40222
-api.xpluse.plus,数智AI,18,数智AI,api.xpluse.plus,enterprise,46.4,96.9,6.66,否,168,5,4.6,10,15,1,数智 AI 是面向开发者、AI 工具用户和自动化场景的一站式 AI 模型 API 服务平台，提供 OpenAI、Claude、Gemini、GPT 图像生成等多,39973
-yundu.lat,云渡,19,云渡,yundu.lat,personal,44.5,99.6,4.7,否,9,5,5,1,1,0,云渡 AI 中转平台专注于提供 AI 模型 API 接入服务，支持 OpenAI、Claude等主流模型，提供文本对话、代码生成、图像生成及多模态能力。兼容 O,40175
-api.ykh.ai,YKH.AI,20,YKH.AI,api.ykh.ai,enterprise,44.5,96.9,5.25,否,6,5,5,2,3,0,YKH·AI You Know How. YKH 帮你理清想法、写出内容、做出判断，并把问题推进成行动。 我们是一家可靠高效的 API 中转服务商，自建Pro、,39975
-runapi.co,RunAPI,21,RunAPI,runapi.co,enterprise,43.4,72,4.26,否,201,5,,0,13,42,RunAPI 是高效稳定的 AI 模型 API 中转平台，一个 API Key 即可访问 OpenAI、Claude、Gemini、DeepSeek、Grok ,39850
-ccmax20.cc,baby,22,baby,ccmax20.cc,enterprise,42.8,99.3,3.71,否,6,3,,0,0,0,baby是一家纯自研max号池的团队 我们拥有稳定的订阅账号运行方式 专业做cc 域名好记 ccmax20.cc 未来baby在AI的道路与你们同行,40299
-lingsuan.top,灵算,23,灵算,lingsuan.top,enterprise,41.7,95.7,6.49,否,7,5,5,2,17,4,灵算依托官方正价 Pro 号池，提供稳定、充足、高性价比的中转服务。我们致力于打造普通人也用得起的 AI 资源平台，让更多用户以更低成本轻松体验优质模型能力。,39980
-anpin.ai,AnPin AI,24,AnPin AI,anpin.ai,enterprise,40.5,98.3,4.68,否,7,4,5,1,5,3,ANPIN.AI 是一个技术与资源双核驱动的 AI 中转平台。技术方面具备多节点智能路由、1Gbps 海外专线、30TB 带宽、99.99% 稳定性和毫秒级流式,39783
-autorouter.io,AutoRouter,25,AutoRouter,autorouter.io,personal,38.1,98.7,4.74,否,43,5,,0,1,0,AutoRouter 的核心价值在于帮助用户更高效地管理和调用多个 AI 模型或服务商。它通过智能路由、成本优化、故障切换和统一 API 接入，降低开发者的运维,40162
-xyc.ai,XycAi(星道智能),26,XycAi(星道智能),xyc.ai,enterprise,37.8,98.7,5.24,否,9,4,5,1,0,0,企业级开放快速的wss接口，端点采用搬瓦工作为我们的cn2线路，和台湾一些线路作为163回程线路保证回程3网问题线路问题，我们是正规合规对外企业，我们与部分中转,40216
-sevnx.one,SevnX,27,SevnX,sevnx.one,personal,36.2,98.8,5.49,否,7,5,5,1,1,0,Sevnx 是一家专注于 AI 模型接口聚合与加速的可靠、高效的 API 中转服务商。 它通过统一的网关，为开发者和企业提供 Claude、ChatGPT 等多,40174
-chiyicn.com,词易,28,词易,chiyicn.com,enterprise,35.7,97.1,5.21,否,18,3,5,4,12,4,本网站专注于 GPT 接口中转与 AI 能力聚合服务，提供稳定高速的对话、绘图、生图等功能，适合开发者接入和个人用户使用。平台响应快、兼容性强、线路稳定，支持多,40001
-ccgoai.com,ccgo,29,ccgo,ccgoai.com,enterprise,34.6,99.6,4.92,否,7,3,,0,0,0,背景：维护团队是大厂背景的同学创建，有同学全职维护 支持模型：GPT为一手自营号池，全部账号为正价带账单的Pro20x订阅号池，倍率为0.35； Claude模,40281
-api.muskapi.cc,MuskAI,30,MuskAI,api.muskapi.cc,enterprise,32.4,100,4.37,否,42,2,4.3,3,2,0,全新系统架构，针对大模型场景优化。团队成立于 2022 年 12 月 11 日，专注大模型 API 中间层建设与稳定交付。 您可以使用平台提供的 LLM API,39946
-aokapi.com,AOK,31,AOK,aokapi.com,enterprise,30,100,6.65,否,30,2,,0,6,1,AOKAPI｜深耕 AI 底层架构，自研 GPT Pro 20x 号池，兼具高稳定与低成本优势。技术团队来自一线云原生与大模型研发背景，精通 API 网关、负载,40009
-daodunapi.com,我的刀盾,32,我的刀盾,daodunapi.com,enterprise,28.1,79.6,4.02,否,62,3,,0,4,8,我的刀盾 — 你的 AI 全能搭档 一把刀，斩断 API 访问的重重障碍；一面盾，守护你每一次稳定调用。 Claude、GPT、Gemini —— 当下最强的 ,40121
-sudocode.us,sudocode.us,33,sudocode.us,sudocode.us,enterprise,27.6,99.6,5.34,否,22,5,,0,2,1,,40133
-claude-api.org,Claude-API,34,Claude-API,claude-api.org,,27,100,4.98,否,46,5,5,1,174,2,"claude-api.org 是 Claude / GPT / Gemini 三家模型的 API 中转服务, 一个 Key 调用全部模型,原生官方模型输出。主流",39955
-api.hangzhale.com,夯炸了AI,35,夯炸了AI,api.hangzhale.com,,26.6,99.6,4.62,否,26,4,,0,0,0,"纯pro,plus号池的codex支持任何检测，一切为了稳定，价格优势大，稳定响应",40111
-api.rkai6.com,RK API,36,RK API,api.rkai6.com,enterprise,23.1,100,5.85,否,25,2,,0,1,0,按量计费，为 Claude Code 、 CodeX 用户提供的高质量 API 服务，主打稳定Codex-Pro号池,40178
-coderelay.cn,CodeRelay,37,CodeRelay,coderelay.cn,enterprise,22.4,84.2,5.47,否,44,5,,0,4,1,2026 全新上线，专注提供 GPT（Codex）与 Claude 两类 API 服务，接口稳定可靠。 本站秉承三大原则，1.不开活动 2.不招代理 3.不开订,39801
-ai.luminai.cc,Lumin AI,38,Lumin AI,ai.luminai.cc,,18.1,92.5,4.38,否,14,4,5,1,5,0,LuminAI 是面向企业与开发者的 AI 聚合网关。 统一接入 Claude、GPT、Gemini 及国产大模型 享受渠道优惠价，多通道冗余保障 99.9% ,39827
-dawclaudecode.com,DawCode,39,DawCode,dawclaudecode.com,,17,100,5.08,否,33,4,,0,2,0,Daw Code专注编程智能体，极致性能体验 1. 极低延迟 全球多节点部署，智能就近路由，确保每次 API 调用都以最短路径到达。 2. 纯净 IP 隔离 动,39807
-9527code.com,9527code,40,9527code,9527code.com,enterprise,16.3,86.1,6.63,否,139,3,4.7,6,877,35,企业级 满血 高速 私有线路 拒绝残血，拒绝套壳，只做满血官方模型。 我们的 AI 中转站专为追求稳定性和模型质量的用户打造，提供高速、稳定、可靠的 AI 模型,39937
-nekocode.ai,NekoCode,41,NekoCode,nekocode.ai,,15.9,100,4.13,否,12,3,,0,7,2,"Neko 成立于2026年初, 是一个 AI API 中继服务，兼容 OpenAI 和 Anthropic API 格式。",39832
-chintao.cn,Chintao AI,42,Chintao AI,chintao.cn,enterprise,15.6,95.7,5.11,否,41,4,,0,4,1,最早一批以不掺水，不私改倍率为Slogan的中转站站点。运营上线两个月，平台累计服务用户已达 5000 人，日常稳定日活 120，订阅企业用户数十家。 平台采用,39795
-mytokenpi.com,mytokenpi,43,mytokenpi,mytokenpi.com,,15.1,100,5.19,否,15,4,,0,1,0,MyTokenPi 是一个面向个人开发者、AI 应用团队和企业用户的统一 AI 模型聚合与分发网关。站点核心定位是把不同来源、不同格式的大语言模型统一接入，并转,40136
-huiyun.asia,汇云AI,44,汇云AI,huiyun.asia,personal,12.5,97.9,6.27,否,18,4,,0,0,0,RightCode 致力于为开发者提供稳定、高质量的 AI 模型 API 中转服务。 我们覆盖 Claude、GPT、Gemini 等主流模型，价格透明、在线率,40184
-clauqe.ai,ClauqeAI,45,ClauqeAI,clauqe.ai,,12.1,99.6,6.36,否,6,5,5,1,8,0,专注 Claude 与 OpenAI 双模型 API 服务，多线路高速接入，价格透明按量计费，链路稳定低延迟，提供 7×24 小时技术与售后响应。,40126
-api.whlemon.cn,橙芯算力,46,橙芯算力,api.whlemon.cn,enterprise,12,96.8,6.44,否,17,2,,0,0,0,橙芯算力专注于AI算力接入与数字服务，提供稳定接口、清晰计费和及时售后支持，适合 个人及团队日常使用。(服务器三网通+固定住宅ip),40239
-api.api2cn.com,智惠API,47,智惠API,api.api2cn.com,personal,10.9,97.9,7.38,否,12,2,5,34,1,0,为专业开发者构建的高速 AI 枢纽，毫秒级流式响应。采用Cloudflare CDN弹性部署，为用户提供超高速、稳定的API服务。 站点覆盖 Claude、GP,40026
-fishxcode.com,fishxcode,48,fishxcode,fishxcode.com,enterprise,7.6,86.8,6.4,否,56,3,,0,35,3,企业级 Claude API 官方通道中转 仅接 Anthropic 官方通道，不走逆向。智能缓存命中超 90%，比直连官方节省 60%+ Token 成本，兼,40064
-poixe.com,Poixe AI,49,Poixe AI,poixe.com,,5.9,100,5.6,否,157,4,5,1,11,7,PoixeAI 是一个提供 AI 大模型 API 接口的平台，致力于为用户提供高效、稳定且可靠的 AI 服务。我们聚合了领先的 AI 大模型，如 ChatGPT,39845
-tokenmix.ai,TokenMix,50,TokenMix,tokenmix.ai,enterprise,5.9,99.5,3.88,否,129,4,,0,1,1,所有模型零门槛。用你的语言，用当前支持的支付方式，接入主流 AI 模型。兼容 OpenAI 风格 SDK，迁移成本低。 1.统一 API：通过一个 OpenAI,39956
-qiuqiutoken.com,球球Token,51,球球Token,qiuqiutoken.com,enterprise,5.8,95.7,9.26,否,38,1,,0,10,0,我们的优势 支持异步生图 100%缓存命中，100%自建号池不接外部渠道，首字1秒响应，在线率99.99% Kubernetes高集群，弹性伸缩服务器，硬件软件,39921
-hao.ai,hao.ai,52,hao.ai,hao.ai,,3.8,100,4.21,否,14,2,,0,0,0,hao.ai 是面向开发者和团队的大模型统一 API 网关，支持通过一个 API Key 接入 GPT、Claude、Gemini 等主流 AI 模型，并兼容 ,40235
-claudeapi.com,Claude API,53,Claude API,claudeapi.com,,0.9,99.3,4.61,否,5,2,,0,0,0,Claude API国内直连，三分钟接入 Claude Code 与 Agent 应用 新用户可领取测试额度。一键配置，立即可用，支持检测，技术&客服7*24专,40010
-nexaxis.ai,Nexaxis,54,Nexaxis,nexaxis.ai,enterprise,0.9,97.4,5.88,否,8,1,5,1,0,0,Gemini、Claude、GPT 自建号池服务，企业级稳定接入，源头价格优惠，支持高并发与长期使用，提供 24 小时售后技术支持。,40300
-xbhuiz.com,XMAPI,55,XMAPI,xbhuiz.com,enterprise,0.5,98.3,4.3,否,7,1,,0,0,0,XMAPI —— 高速稳定的AI模型中转平台。覆盖GPT、Claude 等主流模型，三网优化专线，在线率98%+。为开发者和企业提供高性价比、即开即用的API服,40248
-officesai.top,OfficesAI,56,OfficesAI,officesai.top,,0,91.4,6.45,否,180,1,,0,0,0,✅我们的服务集群位于澳洲UNSW大学Katana算力集群，使用的模型均为Claude满血原版 ✅我们能够避免国内中转频繁触发官方的 PoW 校验和防对抗风控，导,40231
-api.ikuncode.cc,IKunCode,57,IKunCode,api.ikuncode.cc,,0,76.8,5.31,否,21,2,,0,5,5,IKunCode让 AI 编程更简单 专注于给编码人员生产提效的中转站 · 支持 Claude Code、CodeX、Gemini CLI 三大 AI 编程工具,39819
-zz.aigm99.cn,Green Mountain青山,58,Green Mountain青山,zz.aigm99.cn,enterprise,0,49.5,3.72,否,7,2,,0,0,0,自营ccmax 可外接 不限制客户端 一家主做claude的AI中转站 经过多月的测试 我们站在4月底进行上线 我们号池纯自研 支持高并发 欢迎各位老板体验 备,40246
-switchbase.vip,SwitchBase,59,SwitchBase,switchbase.vip,,0,38.1,5.03,否,14,2,5,2,3,2,重点:站长晚上喜欢熬夜 其他: . 三网优化，无需代理 . 长期99%以上可用性 . 用不完可以随时申请退款,39856
-ergouapi.com,二狗 API,60,二狗 API,ergouapi.com,,0,100,4.01,否,7,0,5,2,0,0,全站 0.1x~0.2x 倍率，二狗 API 保证： 1. 全站均使用 纯血模型，绝不掺水降级。如若发现模型降级或注水，无条件退款。 2. 顶级 CN2 GIA,40285
-xcode.best,Xcode,61,Xcode,xcode.best,,0,100,4.68,否,32,0,,0,0,0,不用了可以找我们退款！邀请返利可提现！可开票！ Xcode是一家聚合了 Claude Code、Codex、Gemini 等多种服务的中转。 运维团队 7×24,39866
-llmapi.pro,LLMAPI,62,LLMAPI,llmapi.pro,enterprise,0,100,5.17,否,26,0,5,1,19,2,Claude Code.十分之一的价格。 不限 Token 用量，完整工具支持，国内直连。两行环境变量配置，即刻开始编码。 最新模型 Claude Opus 4,39825
+right.codes,RightCode,1,RightCode,right.codes,enterprise,94.9,99.6,4.14,否,48,5,4.2,5,26,12,RightCode 致力于为开发者提供稳定、高质量的 AI 模型 API 中转服务。 我们覆盖 Claude、GPT、Gemini 等主流模型，价格透明、在线率,39848
+packyapi.com,PackyCode,2,PackyCode,packyapi.com,enterprise,90.7,100,5.49,否,49,5,,0,22,54,PackyCode 是一家可靠高效的 API 中转服务商，提供 Claude Code、Codex、Gemini 等多种服务的中转。 PackyCode 大约是,39842
+unity2.ai,unity2,3,unity2,unity2.ai,enterprise,90.3,98.9,4.56,否,29,5,,0,0,0,**Unity2.ai** 是面向开发者、团队、企业和个人用户的 AI API 与组合套餐平台，长期服务国内头部企业，日均承载超 **300 亿 token**,39968
+toknex.ai,Toknex,4,Toknex,toknex.ai,enterprise,84.1,100,4.82,否,14,5,5,1,4,0,# AI 聚合平台｜企业级大模型 API 服务 我们专注于 AI 大模型 API 聚合与企业级集群服务，为开发者、企业团队、工作室及 AI 创业项目提供稳定、高,40158
+wintoken.dev,WinToken,5,WinToken,wintoken.dev,,82,97.7,6.47,否,87,5,,0,0,0,WinToken 是一个面向开发者和团队的 AI 模型 API 聚合平台，提供 GPT、Claude、DeepSeek、Gemini、Qwen 等主流大模型的统,40325
+juxingai.top,聚星AI,6,聚星AI,juxingai.top,enterprise,75.5,99.1,6.36,否,30,5,5,1,6,6,聚星AI--聚合了 OpenAI、Anthropic、Google、字节跳动等厂商的 50 + 主流大模型，解决了国内开发者面临的支付困难、网络不稳定、接口不统,40123
+portal.gpteamservices.com,GPTEAM,7,GPTEAM,portal.gpteamservices.com,personal,69.7,100,4.21,否,37,5,,0,7,1,专注提供稳定可靠的GPT系列模型服务。底层采用纯Pro官方订阅号池，四、五月零故障，极致稳定。主打高性价比，GPT-5.5约 ￥1.3 / 1M Token。承,39923
+724codes.com,724codes,8,724codes,724codes.com,enterprise,67.8,97.6,5.32,否,147,4,3,2,0,0,提供稳定低延迟的 AI API 中转服务，支持多模型调用、适合开发测试和日常集成，我们越级价格比质量。对稳定性和质量非常有信心，欢迎各位体验。,40209
+api.tallius.ai,tallius.ai,9,tallius.ai,api.tallius.ai,enterprise,66.6,98.9,5.68,否,9,4,5,1,0,0,tallius.ai 定位于开发者与团队的多模型 API 网关，而非仅做价格中转。平台对外提供 OpenAI 兼容接口，用户无需为每家大模型单独维护 SDK 与,40206
+uuapi.net,UU API,10,UU API,uuapi.net,enterprise,65.5,99.3,5.07,否,17,5,,0,11,7,UU API 是面向全球开发者与企业的 AI 模型聚合平台，一站式接入ChatGPT、Claude、Gemini等主流大模型。 秉持「渠道透明、绝不掺水、绝不映,39863
+modcon.top,ModCon,11,ModCon,modcon.top,enterprise,62.3,98.8,5.9,否,7,4,,0,10,2,ModCon 专注提供 Codex，Claude Code一站式聚合中转服务。透明计费，价格有优势。稳定、充足、高性价比。只做有良心的中转站。,40106
+worldbase.ai,WorldBase.ai,12,WorldBase.ai,worldbase.ai,enterprise,61.5,99.6,4.74,否,9,5,,0,2,0,2025年上线，支持大规模调用，GPT官价1折，Claude官价1.5折，缓存价格为输入价格的0.1，GPT缓存率99%，Claude缓存率90%左右，为开发者,40169
+sudocode.chat,SudoCode,13,SudoCode,sudocode.chat,enterprise,58.8,99.6,4.69,否,10,5,5,1,11,13,2026 全新上线，专注提供 GPT（Codex）与 Claude 两类 API 服务，接口稳定可靠。 价格如下： GPT-5.5 Codex-Plus分组为 ,40095
+claudecn.top,ClaudeCN,14,ClaudeCN,claudecn.top,,58.5,100,4.19,否,87,5,,0,8,8,ClaudeCN 由是一家实体企业运营的企业级AI中转平台。平台可提供高可用性的商用API服务，提供Claude、GPT、Deepseek等热门模型，支持企业采,39799
+linkai.shop,LinkAi,15,LinkAi,linkai.shop,enterprise,53.2,99.6,4.91,否,14,5,,0,0,0,LinkAi面向企业与开发者提供稳定透明的多模型API接入服务，支持高并发调用、灵活计费与持续运维保障，适合长期业务集成。,40225
+api.xpluse.plus,数智AI,16,数智AI,api.xpluse.plus,enterprise,50.9,96.7,6.53,否,168,5,4.6,10,15,1,数智 AI 是面向开发者、AI 工具用户和自动化场景的一站式 AI 模型 API 服务平台，提供 OpenAI、Claude、Gemini、GPT 图像生成等多,39973
+toolcode.top,ToolCode,17,ToolCode,toolcode.top,personal,48.7,99.4,5.55,否,7,5,,0,0,0,Tool Code 致力于打造一个专供 GPT 用户使用的优质中转站，核心宗旨是以稳定且具性价比的方式持续提供服务。我们关注的不只是可用，更是长期体验上的稳定、,40208
+dasuapi.com,DasuApi,18,DasuApi,dasuapi.com,personal,48.6,96.1,4.87,否,7,4,4.8,6,0,0,claude opus4.8 max号池 gpt plus号池 主打物美价廉 gpt大概0.04倍率，claude大概0.8倍率,40222
+runapi.co,RunAPI,19,RunAPI,runapi.co,enterprise,45,72,4.29,否,201,5,,0,13,42,RunAPI 是高效稳定的 AI 模型 API 中转平台，一个 API Key 即可访问 OpenAI、Claude、Gemini、DeepSeek、Grok ,39850
+ccmax20.cc,baby,20,baby,ccmax20.cc,enterprise,43.4,99.3,3.82,否,6,3,,0,0,0,baby是一家纯自研max号池的团队 我们拥有稳定的订阅账号运行方式 专业做cc 域名好记 ccmax20.cc 未来baby在AI的道路与你们同行,40299
+xyc.ai,XycAi(星道智能),21,XycAi(星道智能),xyc.ai,enterprise,43.2,99.1,5.08,否,9,4,5,1,0,0,企业级开放快速的wss接口，端点采用搬瓦工作为我们的cn2线路，和台湾一些线路作为163回程线路保证回程3网问题线路问题，我们是正规合规对外企业，我们与部分中转,40216
+lingsuan.top,灵算,22,灵算,lingsuan.top,enterprise,43.1,95.7,6.15,否,7,5,5,2,17,4,灵算依托官方正价 Pro 号池，提供稳定、充足、高性价比的中转服务。我们致力于打造普通人也用得起的 AI 资源平台，让更多用户以更低成本轻松体验优质模型能力。,39980
+autorouter.io,AutoRouter,23,AutoRouter,autorouter.io,personal,41.6,99.1,4.81,否,43,5,,0,1,0,AutoRouter 的核心价值在于帮助用户更高效地管理和调用多个 AI 模型或服务商。它通过智能路由、成本优化、故障切换和统一 API 接入，降低开发者的运维,40162
+chiyicn.com,词易,24,词易,chiyicn.com,enterprise,41.3,98.6,5.31,否,18,3,5,4,12,4,本网站专注于 GPT 接口中转与 AI 能力聚合服务，提供稳定高速的对话、绘图、生图等功能，适合开发者接入和个人用户使用。平台响应快、兼容性强、线路稳定，支持多,40001
+api.ykh.ai,YKH.AI,25,YKH.AI,api.ykh.ai,enterprise,41.3,97.6,5.31,否,6,5,5,2,3,0,YKH·AI You Know How. YKH 帮你理清想法、写出内容、做出判断，并把问题推进成行动。 我们是一家可靠高效的 API 中转服务商，自建Pro、,39975
+yundu.lat,云渡,26,云渡,yundu.lat,personal,41.2,99.4,5.6,否,9,5,5,1,1,0,云渡 AI 中转平台专注于提供 AI 模型 API 接入服务，支持 OpenAI、Claude等主流模型，提供文本对话、代码生成、图像生成及多模态能力。兼容 O,40175
+anpin.ai,AnPin AI,27,AnPin AI,anpin.ai,enterprise,39.4,98.3,4.71,否,7,5,5,1,5,3,ANPIN.AI 是一个技术与资源双核驱动的 AI 中转平台。技术方面具备多节点智能路由、1Gbps 海外专线、30TB 带宽、99.99% 稳定性和毫秒级流式,39783
+sevnx.one,SevnX,28,SevnX,sevnx.one,personal,36.4,98.8,5.61,否,7,5,5,1,1,0,Sevnx 是一家专注于 AI 模型接口聚合与加速的可靠、高效的 API 中转服务商。 它通过统一的网关，为开发者和企业提供 Claude、ChatGPT 等多,40174
+claude-api.org,Claude-API,29,Claude-API,claude-api.org,,32.4,100,5,否,46,5,5,1,174,2,"claude-api.org 是 Claude / GPT / Gemini 三家模型的 API 中转服务, 一个 Key 调用全部模型,原生官方模型输出。主流",39955
+api.muskapi.cc,MuskAI,30,MuskAI,api.muskapi.cc,enterprise,31,100,4.38,否,40,2,4.3,3,2,0,全新系统架构，针对大模型场景优化。团队成立于 2022 年 12 月 11 日，专注大模型 API 中间层建设与稳定交付。 您可以使用平台提供的 LLM API,39946
+aokapi.com,AOK,31,AOK,aokapi.com,enterprise,30.9,100,6.59,否,30,2,,0,6,1,AOKAPI｜深耕 AI 底层架构，自研 GPT Pro 20x 号池，兼具高稳定与低成本优势。技术团队来自一线云原生与大模型研发背景，精通 API 网关、负载,40009
+ccgoai.com,ccgo,32,ccgo,ccgoai.com,enterprise,30.9,99.6,4.88,否,7,3,,0,0,0,背景：维护团队是大厂背景的同学创建，有同学全职维护 支持模型：GPT为一手自营号池，全部账号为正价带账单的Pro20x订阅号池，倍率为0.35； Claude模,40281
+api.hangzhale.com,夯炸了AI,33,夯炸了AI,api.hangzhale.com,,28.2,99.6,4.67,否,26,4,,0,0,0,"纯pro,plus号池的codex支持任何检测，一切为了稳定，价格优势大，稳定响应",40111
+daodunapi.com,我的刀盾,34,我的刀盾,daodunapi.com,enterprise,28.2,79.6,4.03,否,62,3,,0,4,8,我的刀盾 — 你的 AI 全能搭档 一把刀，斩断 API 访问的重重障碍；一面盾，守护你每一次稳定调用。 Claude、GPT、Gemini —— 当下最强的 ,40121
+sudocode.us,sudocode.us,35,sudocode.us,sudocode.us,enterprise,27.5,99.6,5.43,否,22,5,,0,2,1,,40133
+9527code.com,9527code,36,9527code,9527code.com,enterprise,24.4,89.8,6,否,139,4,4.7,6,877,35,企业级 满血 高速 私有线路 拒绝残血，拒绝套壳，只做满血官方模型。 我们的 AI 中转站专为追求稳定性和模型质量的用户打造，提供高速、稳定、可靠的 AI 模型,39937
+api.rkai6.com,RK API,37,RK API,api.rkai6.com,enterprise,23.6,100,5.89,否,25,2,,0,1,0,按量计费，为 Claude Code 、 CodeX 用户提供的高质量 API 服务，主打稳定Codex-Pro号池,40178
+ai.luminai.cc,Lumin AI,38,Lumin AI,ai.luminai.cc,,22.3,93.9,4.38,否,14,4,5,1,5,0,LuminAI 是面向企业与开发者的 AI 聚合网关。 统一接入 Claude、GPT、Gemini 及国产大模型 享受渠道优惠价，多通道冗余保障 99.9% ,39827
+chintao.cn,Chintao AI,39,Chintao AI,chintao.cn,enterprise,19.6,95.7,4.97,否,41,4,,0,4,1,最早一批以不掺水，不私改倍率为Slogan的中转站站点。运营上线两个月，平台累计服务用户已达 5000 人，日常稳定日活 120，订阅企业用户数十家。 平台采用,39795
+coderelay.cn,CodeRelay,40,CodeRelay,coderelay.cn,enterprise,18.2,86.6,5.54,否,44,5,,0,4,1,2026 全新上线，专注提供 GPT（Codex）与 Claude 两类 API 服务，接口稳定可靠。 本站秉承三大原则，1.不开活动 2.不招代理 3.不开订,39801
+dawclaudecode.com,DawCode,41,DawCode,dawclaudecode.com,,18,100,5.01,否,33,4,,0,2,0,Daw Code专注编程智能体，极致性能体验 1. 极低延迟 全球多节点部署，智能就近路由，确保每次 API 调用都以最短路径到达。 2. 纯净 IP 隔离 动,39807
+huiyun.asia,汇云AI,42,汇云AI,huiyun.asia,personal,15.1,97.9,6.06,否,18,4,,0,0,0,RightCode 致力于为开发者提供稳定、高质量的 AI 模型 API 中转服务。 我们覆盖 Claude、GPT、Gemini 等主流模型，价格透明、在线率,40184
+nekocode.ai,NekoCode,43,NekoCode,nekocode.ai,,14.8,100,4.19,否,12,3,,0,7,2,"Neko 成立于2026年初, 是一个 AI API 中继服务，兼容 OpenAI 和 Anthropic API 格式。",39832
+mytokenpi.com,mytokenpi,44,mytokenpi,mytokenpi.com,,14.6,97.4,5.12,否,15,4,,0,1,0,MyTokenPi 是一个面向个人开发者、AI 应用团队和企业用户的统一 AI 模型聚合与分发网关。站点核心定位是把不同来源、不同格式的大语言模型统一接入，并转,40136
+api.api2cn.com,智惠API,45,智惠API,api.api2cn.com,personal,12.9,98.3,7.23,否,12,4,5,34,1,0,为专业开发者构建的高速 AI 枢纽，毫秒级流式响应。采用Cloudflare CDN弹性部署，为用户提供超高速、稳定的API服务。 站点覆盖 Claude、GP,40026
+clauqe.ai,ClauqeAI,46,ClauqeAI,clauqe.ai,,12.5,99.6,6.3,否,6,5,5,1,8,0,专注 Claude 与 OpenAI 双模型 API 服务，多线路高速接入，价格透明按量计费，链路稳定低延迟，提供 7×24 小时技术与售后响应。,40126
+fishxcode.com,fishxcode,47,fishxcode,fishxcode.com,enterprise,11.9,91.1,6.42,否,51,3,,0,35,3,企业级 Claude API 官方通道中转 仅接 Anthropic 官方通道，不走逆向。智能缓存命中超 90%，比直连官方节省 60%+ Token 成本，兼,40064
+api.whlemon.cn,橙芯算力,48,橙芯算力,api.whlemon.cn,enterprise,11.1,96.8,6.37,否,17,2,,0,0,0,橙芯算力专注于AI算力接入与数字服务，提供稳定接口、清晰计费和及时售后支持，适合 个人及团队日常使用。(服务器三网通+固定住宅ip),40239
+poixe.com,Poixe AI,49,Poixe AI,poixe.com,,6.3,100,5.56,否,157,4,5,1,11,7,PoixeAI 是一个提供 AI 大模型 API 接口的平台，致力于为用户提供高效、稳定且可靠的 AI 服务。我们聚合了领先的 AI 大模型，如 ChatGPT,39845
+tokenmix.ai,TokenMix,50,TokenMix,tokenmix.ai,enterprise,6.3,99.5,3.8,否,129,4,,0,1,1,所有模型零门槛。用你的语言，用当前支持的支付方式，接入主流 AI 模型。兼容 OpenAI 风格 SDK，迁移成本低。 1.统一 API：通过一个 OpenAI,39956
+qiuqiutoken.com,球球Token,51,球球Token,qiuqiutoken.com,enterprise,4.9,95.7,9.09,否,38,1,,0,10,0,我们的优势 支持异步生图 100%缓存命中，100%自建号池不接外部渠道，首字1秒响应，在线率99.99% Kubernetes高集群，弹性伸缩服务器，硬件软件,39921
+hao.ai,hao.ai,52,hao.ai,hao.ai,,2.8,100,4.19,否,14,1,,0,0,0,hao.ai 是面向开发者和团队的大模型统一 API 网关，支持通过一个 API Key 接入 GPT、Claude、Gemini 等主流 AI 模型，并兼容 ,40235
+claudeapi.com,Claude API,53,Claude API,claudeapi.com,,0.9,99.3,4.84,否,5,1,,0,0,0,Claude API国内直连，三分钟接入 Claude Code 与 Agent 应用 新用户可领取测试额度。一键配置，立即可用，支持检测，技术&客服7*24专,40010
+nexaxis.ai,Nexaxis,54,Nexaxis,nexaxis.ai,enterprise,0.9,98.7,5.92,否,8,1,5,1,0,0,Gemini、Claude、GPT 自建号池服务，企业级稳定接入，源头价格优惠，支持高并发与长期使用，提供 24 小时售后技术支持。,40300
+xbhuiz.com,XMAPI,55,XMAPI,xbhuiz.com,enterprise,0.5,98.3,4.31,否,7,1,,0,0,0,XMAPI —— 高速稳定的AI模型中转平台。覆盖GPT、Claude 等主流模型，三网优化专线，在线率98%+。为开发者和企业提供高性价比、即开即用的API服,40248
+5cookie.cc,5Cookie Code,56,5Cookie Code,5cookie.cc,enterprise,0,99.4,6.76,否,7,1,5,1,0,0,5cookie code是一家稳定高速的 API 中继服务提供商，为 Claude Code、Codex 等平台提供API中继服务。面向个人、团队和企业用户提供,40241
+api.ikuncode.cc,IKunCode,57,IKunCode,api.ikuncode.cc,,0,74,5.27,否,21,1,,0,5,5,IKunCode让 AI 编程更简单 专注于给编码人员生产提效的中转站 · 支持 Claude Code、CodeX、Gemini CLI 三大 AI 编程工具,39819
+zz.aigm99.cn,Green Mountain青山,58,Green Mountain青山,zz.aigm99.cn,enterprise,0,48.9,3.98,否,7,2,,0,0,0,自营ccmax 可外接 不限制客户端 一家主做claude的AI中转站 经过多月的测试 我们站在4月底进行上线 我们号池纯自研 支持高并发 欢迎各位老板体验 备,40246
+switchbase.vip,SwitchBase,59,SwitchBase,switchbase.vip,,0,38.4,6.05,否,14,2,5,2,3,2,重点:站长晚上喜欢熬夜 其他: . 三网优化，无需代理 . 长期99%以上可用性 . 用不完可以随时申请退款,39856
+ergouapi.com,二狗 API,60,二狗 API,ergouapi.com,,0,100,4.03,否,7,0,5,2,0,0,全站 0.1x~0.2x 倍率，二狗 API 保证： 1. 全站均使用 纯血模型，绝不掺水降级。如若发现模型降级或注水，无条件退款。 2. 顶级 CN2 GIA,40285
+limiao.net,哩喵中转栈,61,哩喵中转栈,limiao.net,,0,100,4.5,否,9,0,,0,0,0,哩喵中转栈是一个面向开发者、AI 工具用户及自动化应用场景的一站式 AI 模型 API 服务平台，支持 OpenAI、Claude、Gemini、GPT 图像生,39922
+xcode.best,Xcode,62,Xcode,xcode.best,,0,100,4.62,否,32,0,,0,0,0,不用了可以找我们退款！邀请返利可提现！可开票！ Xcode是一家聚合了 Claude Code、Codex、Gemini 等多种服务的中转。 运维团队 7×24,39866
 main-new.codesuc.top,CodeSuc Hub,63,CodeSuc Hub,main-new.codesuc.top,personal,0,100,5.74,否,24,0,,0,0,0,CodeSuc Hub 专注提供正版真实AI模型服务，主营Claude、Codex两大热门模型，全程采用原生模型，无套壳分流，使用体验贴近官方标准。平台架构成熟,39804
-jbbtoken.cn,jbbtoken,64,jbbtoken,jbbtoken.cn,enterprise,0,100,6.85,否,7,0,,0,0,0,JBBToken 是一个面向 AI 爱好者、开发者和团队用户的高性价比 AI API 中转站，主打“低门槛接入、稳定调用、价格透明、社区共 建”。平台聚合 GP,40292
-api.frontier-intelligence.tech,Frontier Intelligence,65,Frontier Intelligence,api.frontier-intelligence.tech,personal,0,100,9.29,否,18,0,5,4,9,2,Frontier Intelligence 前沿智能 是高效稳定的 AI 模型 API 中转平台，主要面向香港和新加坡科研相关客户。 一个 API Key 即可,39961
-limiao.net,哩喵中转栈,66,哩喵中转栈,limiao.net,,0,99.6,4.76,否,9,0,,0,0,0,哩喵中转栈是一个面向开发者、AI 工具用户及自动化应用场景的一站式 AI 模型 API 服务平台，支持 OpenAI、Claude、Gemini、GPT 图像生,39922
-5cookie.cc,5Cookie Code,67,5Cookie Code,5cookie.cc,enterprise,0,99.4,6.72,否,7,0,5,1,0,0,5cookie code是一家稳定高速的 API 中继服务提供商，为 Claude Code、Codex 等平台提供API中继服务。面向个人、团队和企业用户提供,40241
-tieapi.com,TieAPI,68,TieAPI,tieapi.com,enterprise,0,98.9,5.91,否,5,0,,0,0,0,原版品质，不掺水，不套路。 低延迟，TTFT 快。 价格公道，童叟无欺。 各大模型实时同步最新官方模型，追求最新模型，最高品质，放心无忧。 尽在 tieapi.,40274
-token.baogutang.top,N1KO-API,69,N1KO-API,token.baogutang.top,personal,0,96.6,5.43,否,7,0,5,1,0,0,专注提供 OpenAI、Claude 等主流 AI 模型接入服务，主打模型保真、稳定可靠、支持检测，适合开发者、团队和 AI 工具用户快速调用高质量模型能力。,40224
-sudobug.top,SudoBug,70,SudoBug,sudobug.top,personal,0,96.6,5.81,否,6,0,,0,0,0,2026 全新上线，专注提供 GPT（Codex）与 Claude 两类 API 服务，接口稳定!稳定!还是TM稳定！ 价格如下： GPT-5.5 Codex-,40298
-api.aijws.com,我的贾维斯,71,我的贾维斯,api.aijws.com,enterprise,0,95.8,5.33,否,7,0,,0,0,0,我的贾维斯中转 致力于做体验最好，价格最优惠的中转站 使用过程中遇到任何随时联系我们 7*24小时为您服务 交流群：796808428,40324
-sub2.congmingai.com,聪明AI,72,聪明AI,sub2.congmingai.com,enterprise,0,94.8,5.51,否,147,0,,0,86,9,主要对接散户，价格公道合理，稳定是第一要素。codex倍率0.1，延迟单独做过优化，负载做的很好，号池有冗余，专业做codex。可生图1k，2k，4 k。可使用,40109
-cubence.com,Cubence,73,Cubence,cubence.com,,0,59.8,3.46,否,7,0,,0,1,1,CUBENCE是一个专业的 API 网关，提供对 Claude Code 和 Codex 模型的无缝访问，具备企业级可靠性、监控和分析功能。 1.定价如何计算：,39805
-sub2api.luchikey.com,luchikey,74,luchikey,sub2api.luchikey.com,enterprise,0,59.4,5.01,否,25,0,5,2,11,1,luchikey官网，主要是ai相关服务，所有商品详情会说明质保，中转站全程质保，主打让用户用上便宜好用的token,40007
-api.tmlab.store,Z-API,75,Z-API,api.tmlab.store,,0,45.5,6.54,否,4,0,,0,0,0,"提供gpt-image2,nano-banana-pro,seedance2等低价、优质的图片、视频模型，seedance-2.0低至3毛每秒",40323
-safeapi.vip,SafeAPI,76,SafeAPI,safeapi.vip,,0,39.7,5.24,否,7,0,,0,1,0,SAFE API 是一家消费级倍率，企业级稳定，满血 AI 模型中转服务，拒绝残血、拒绝套壳、拒绝低质通道的api可靠伙伴 平台支持 GPT、Claude、Co,40079
-ai.kividas.com,KyberRouter,77,KyberRouter,ai.kividas.com,,0,26.1,15.3,否,32,0,,0,0,0,KyberRouter 是统一的 AI 模型聚合网关。一套接口、一个密钥，即可调用 GPT、Claude、Gemini、DeepSeek、Llama 等全球主流,40271
-cc.anyroute.io,AnyRoute,78,AnyRoute,cc.anyroute.io,personal,0,3.4,5.18,否,8,0,,0,0,0,AnyRoute是一家可靠高效的 API 中转服务商，专注提供 Claude Code、Codex一站式聚合中转服务。 Codex Pro纯血号池源头，可对接，,40080
-api.vectorengine.ai,VectorEngine,79,VectorEngine,api.vectorengine.ai,,0,,,否,720,0,,0,0,4,,39865
-minitoken.top,云算API,80,云算API,minitoken.top,,0,,,否,653,0,,0,0,0,云算 Api 更强模型 更低价格 更易落地 致力于为开发者提供快速、便捷的 Web API 接口调用方案，打造稳定且易于使用的 API 接口平台，一站式集成几乎,39872
-api.gpt.ge,V-API,81,V-API,api.gpt.ge,,0,,,否,642,0,,0,0,0,V-API：使用标准的OpenAI接口协议访问500+模型，不限时间、按量计费、极速对话、明细透明，无隐藏消费，在线充值后即可使用所有模型，已服务数万用户。 —,39864
-api.timebackward.com,FastCode,82,FastCode,api.timebackward.com,,0,,,否,526,0,,0,1,0,响应更快的中转站——企业首选。所有模型，直连官方源头，长期稳定！透明的按量计费，无月费无套餐，用多少付多少，价格透明公开。 1.极速响应：全球CDN加速，毫秒级,39815
-infai.cc,无限API,83,无限API,infai.cc,,0,,,否,526,0,,0,0,0,,39893
-openclaudecode.cn,米醋AI,84,米醋AI,openclaudecode.cn,,0,,,否,425,0,,0,0,0,"米醋AI提供MAX号池，标注稳定性达到100%，适合对连接成功率有较高要求的开发者。 前身是OpenClaudeCode, 之前的风波里表现还挺好. 现在重新开",39904
-ephone.ai,ePhone AI,85,ePhone AI,ephone.ai,,0,,,否,254,0,,0,1,0,ePhone AI 介绍 ePhone AI 是一家专注于 AI 大模型 API 中转服务的专业平台，支持 ChatGPT、Claude、Gemini 等主流顶,39978
-api.gemai.cc,哈基米,86,哈基米,api.gemai.cc,,0,,,否,186,0,,0,0,0,欢迎加入哈基米 (GemAI)！ 🔗 快速开始 ✅ 官网地址：https://api.gemai.cc ✅ API 端点：https://api.gemai.c,39881
+jbbtoken.cn,jbbtoken,64,jbbtoken,jbbtoken.cn,enterprise,0,100,6.59,否,7,0,,0,0,0,JBBToken 是一个面向 AI 爱好者、开发者和团队用户的高性价比 AI API 中转站，主打“低门槛接入、稳定调用、价格透明、社区共 建”。平台聚合 GP,40292
+api.frontier-intelligence.tech,Frontier Intelligence,65,Frontier Intelligence,api.frontier-intelligence.tech,personal,0,100,9.39,否,18,0,5,4,9,2,Frontier Intelligence 前沿智能 是高效稳定的 AI 模型 API 中转平台，主要面向香港和新加坡科研相关客户。 一个 API Key 即可,39961
+tieapi.com,TieAPI,66,TieAPI,tieapi.com,enterprise,0,98.9,5.56,否,5,0,,0,0,0,原版品质，不掺水，不套路。 低延迟，TTFT 快。 价格公道，童叟无欺。 各大模型实时同步最新官方模型，追求最新模型，最高品质，放心无忧。 尽在 tieapi.,40274
+llmapi.pro,LLMAPI,67,LLMAPI,llmapi.pro,enterprise,0,98.3,5.27,否,24,0,5,1,19,2,Claude Code.十分之一的价格。 不限 Token 用量，完整工具支持，国内直连。两行环境变量配置，即刻开始编码。 最新模型 Claude Opus 4,39825
+sudobug.top,SudoBug,68,SudoBug,sudobug.top,personal,0,97,5.8,否,6,0,,0,0,0,2026 全新上线，专注提供 GPT（Codex）与 Claude 两类 API 服务，接口稳定!稳定!还是TM稳定！ 价格如下： GPT-5.5 Codex-,40298
+api.aijws.com,我的贾维斯,69,我的贾维斯,api.aijws.com,enterprise,0,96.9,5.15,否,2,0,,0,0,0,我的贾维斯中转 致力于做体验最好，价格最优惠的中转站 使用过程中遇到任何随时联系我们 7*24小时为您服务 交流群：796808428,40324
+token.baogutang.top,N1KO-API,70,N1KO-API,token.baogutang.top,personal,0,96.6,5.44,否,7,0,5,1,0,0,专注提供 OpenAI、Claude 等主流 AI 模型接入服务，主打模型保真、稳定可靠、支持检测，适合开发者、团队和 AI 工具用户快速调用高质量模型能力。,40224
+sub2.congmingai.com,聪明AI,71,聪明AI,sub2.congmingai.com,enterprise,0,94.9,5.5,否,147,0,,0,86,9,主要对接散户，价格公道合理，稳定是第一要素。codex倍率0.1，延迟单独做过优化，负载做的很好，号池有冗余，专业做codex。可生图1k，2k，4 k。可使用,40109
+officesai.top,OfficesAI,72,OfficesAI,officesai.top,,0,84.9,6.38,否,180,0,,0,0,0,✅我们的服务集群位于澳洲UNSW大学Katana算力集群，使用的模型均为Claude满血原版 ✅我们能够避免国内中转频繁触发官方的 PoW 校验和防对抗风控，导,40231
+sub2api.luchikey.com,luchikey,73,luchikey,sub2api.luchikey.com,enterprise,0,65.8,4.96,否,25,0,5,2,11,1,luchikey官网，主要是ai相关服务，所有商品详情会说明质保，中转站全程质保，主打让用户用上便宜好用的token,40007
+cubence.com,Cubence,74,Cubence,cubence.com,,0,59.8,3.39,否,7,0,,0,1,1,CUBENCE是一个专业的 API 网关，提供对 Claude Code 和 Codex 模型的无缝访问，具备企业级可靠性、监控和分析功能。 1.定价如何计算：,39805
+safeapi.vip,SafeAPI,75,SafeAPI,safeapi.vip,,0,46.1,5.83,否,7,0,,0,1,0,SAFE API 是一家消费级倍率，企业级稳定，满血 AI 模型中转服务，拒绝残血、拒绝套壳、拒绝低质通道的api可靠伙伴 平台支持 GPT、Claude、Co,40079
+api.tmlab.store,Z-API,76,Z-API,api.tmlab.store,,0,33.9,6.54,否,4,0,,0,0,0,"提供gpt-image2,nano-banana-pro,seedance2等低价、优质的图片、视频模型，seedance-2.0低至3毛每秒",40323
+ai.kividas.com,KyberRouter,77,KyberRouter,ai.kividas.com,,0,15.4,14.71,否,32,0,,0,0,0,KyberRouter 是统一的 AI 模型聚合网关。一套接口、一个密钥，即可调用 GPT、Claude、Gemini、DeepSeek、Llama 等全球主流,40271
+api.vectorengine.ai,VectorEngine,78,VectorEngine,api.vectorengine.ai,,0,,,否,670,0,,0,0,4,,39865
+minitoken.top,云算API,79,云算API,minitoken.top,,0,,,否,653,0,,0,0,0,云算 Api 更强模型 更低价格 更易落地 致力于为开发者提供快速、便捷的 Web API 接口调用方案，打造稳定且易于使用的 API 接口平台，一站式集成几乎,39872
+api.gpt.ge,V-API,80,V-API,api.gpt.ge,,0,,,否,642,0,,0,0,0,V-API：使用标准的OpenAI接口协议访问500+模型，不限时间、按量计费、极速对话、明细透明，无隐藏消费，在线充值后即可使用所有模型，已服务数万用户。 —,39864
+api.timebackward.com,FastCode,81,FastCode,api.timebackward.com,,0,,,否,526,0,,0,1,0,响应更快的中转站——企业首选。所有模型，直连官方源头，长期稳定！透明的按量计费，无月费无套餐，用多少付多少，价格透明公开。 1.极速响应：全球CDN加速，毫秒级,39815
+infai.cc,无限API,82,无限API,infai.cc,,0,,,否,526,0,,0,0,0,,39893
+openclaudecode.cn,米醋AI,83,米醋AI,openclaudecode.cn,,0,,,否,425,0,,0,0,0,"米醋AI提供MAX号池，标注稳定性达到100%，适合对连接成功率有较高要求的开发者。 前身是OpenClaudeCode, 之前的风波里表现还挺好. 现在重新开",39904
+ephone.ai,ePhone AI,84,ePhone AI,ephone.ai,,0,,,否,254,0,,0,1,0,ePhone AI 介绍 ePhone AI 是一家专注于 AI 大模型 API 中转服务的专业平台，支持 ChatGPT、Claude、Gemini 等主流顶,39978
+api.gemai.cc,哈基米,85,哈基米,api.gemai.cc,,0,,,否,186,0,,0,0,0,欢迎加入哈基米 (GemAI)！ 🔗 快速开始 ✅ 官网地址：https://api.gemai.cc ✅ API 端点：https://api.gemai.c,39881
+api.vip.crond.dev,PRY,86,PRY,api.vip.crond.dev,,0,,,否,151,0,,0,0,0,,39846
 ddshub.cc,DDShub,87,DDShub,ddshub.cc,,0,,,否,145,0,,0,2,0,呆呆兽: GPT & Claude开发者首选 专为全球开发者打造。解决区域限制、封号问题。支持支付宝/微信支付。低延迟直连 Anthropic 和 OpenAI,39808
-api.vip.crond.dev,PRY,88,PRY,api.vip.crond.dev,,0,,,否,145,0,,0,0,0,,39846
-az.zlapi.vip,宅恋,89,宅恋,az.zlapi.vip,,0,,,否,129,0,,0,0,0,新用户福利活动：注册领现金·邀请享返利·小红书推广额外赠 今天也要和喜欢的人一起快乐游戏哦,39885
-api.tryallai.com,TryAllAI,90,TryAllAI,api.tryallai.com,,0,,,否,123,0,,0,0,0,,39862
-zxai.work,ZX API,91,ZX API,zxai.work,,0,0,,否,117,0,,0,5,0,ZX AI 是一家海外 AI API 聚合网关服务商，主打亚洲及欧洲市场，多区域节点部署，为海外开发者与企业提供统一、稳定、低延迟的大模型接入服务。,39932
-traxnode.com,Traxnode,92,Traxnode,traxnode.com,,0,,,否,101,0,,0,0,0,,39861
-aiberm.com,Aiberm,93,Aiberm,aiberm.com,,0,,,否,100,0,,0,0,0,Aiberm提供统一的API接口，通过单一端点访问数百个AI模型。通过简单的集成流程，几分钟即可开始使用。 教程文档：https://aiberm.com/do,39777
-findcg.com,发现AI,94,发现AI,findcg.com,,0,,,否,100,0,,0,1,0,,39879
-tokaify.com,Tokaify,95,Tokaify,tokaify.com,enterprise,0,,,否,85,0,,0,5,1,tokaify企业级 AI 模型聚合平台，一套接口调用全球大模型 输入/输出 Token 独立计费 · 实时账单 · 永久额度 60+ 上游冗余 · 智能路由 ,40003
-linkapi.ai,LinkAPI,96,LinkAPI,linkapi.ai,,0,,,否,84,0,,0,0,0,LinkAPI：新一代 AI 大模型中转服务平台 稳定可靠、官方渠道保障、极速响应、生产级高可用、价格透明,39824
-dataeyes.ai,DataEyes AI,97,DataEyes AI,dataeyes.ai,,0,,,否,78,0,,0,1,1,DataEyes（数眼智能） 是一家面向全球的企业级 AI 模型云服务商，致力于成为开发者和企业接入大模型的 统一入口。 我们整合 OpenAI、Anthrop,39806
-api.xaix.me,xAIx,98,xAIx,api.xaix.me,,0,,,否,75,0,,0,0,0,,40040
-ogog.ai,OGOG.AI,99,OGOG.AI,ogog.ai,,0,,,否,60,0,,0,0,0,,39834
-ai.centos.hk,星辰,100,星辰,ai.centos.hk,,0,,,否,57,0,,0,0,0,,39895
-api.qiyiguo.uk,奇异果 API,101,奇异果 API,api.qiyiguo.uk,,0,,,否,55,0,,0,0,0,奇异果AI：让对话更有趣 💕 💝专业稳定的技术支持，服务正常运行，7×24小时稳定服务 为什么选择奇异果AI？：专业稳定的智能对话API服务 1.极速响应，毫秒,39884
-ai.xlyun.pro,小流云,102,小流云,ai.xlyun.pro,,0,,,否,49,0,,0,0,0,,39888
+az.zlapi.vip,宅恋,88,宅恋,az.zlapi.vip,,0,,,否,129,0,,0,0,0,新用户福利活动：注册领现金·邀请享返利·小红书推广额外赠 今天也要和喜欢的人一起快乐游戏哦,39885
+api.tryallai.com,TryAllAI,89,TryAllAI,api.tryallai.com,,0,,,否,123,0,,0,0,0,,39862
+zxai.work,ZX API,90,ZX API,zxai.work,,0,0,,否,117,0,,0,5,0,ZX AI 是一家海外 AI API 聚合网关服务商，主打亚洲及欧洲市场，多区域节点部署，为海外开发者与企业提供统一、稳定、低延迟的大模型接入服务。,39932
+aiberm.com,Aiberm,91,Aiberm,aiberm.com,,0,,,否,100,0,,0,0,0,Aiberm提供统一的API接口，通过单一端点访问数百个AI模型。通过简单的集成流程，几分钟即可开始使用。 教程文档：https://aiberm.com/do,39777
+findcg.com,发现AI,92,发现AI,findcg.com,,0,,,否,100,0,,0,1,0,,39879
+traxnode.com,Traxnode,93,Traxnode,traxnode.com,,0,,,否,96,0,,0,0,0,,39861
+tokaify.com,Tokaify,94,Tokaify,tokaify.com,enterprise,0,,,否,85,0,,0,5,1,tokaify企业级 AI 模型聚合平台，一套接口调用全球大模型 输入/输出 Token 独立计费 · 实时账单 · 永久额度 60+ 上游冗余 · 智能路由 ,40003
+linkapi.ai,LinkAPI,95,LinkAPI,linkapi.ai,,0,,,否,84,0,,0,0,0,LinkAPI：新一代 AI 大模型中转服务平台 稳定可靠、官方渠道保障、极速响应、生产级高可用、价格透明,39824
+dataeyes.ai,DataEyes AI,96,DataEyes AI,dataeyes.ai,,0,,,否,77,0,,0,1,1,DataEyes（数眼智能） 是一家面向全球的企业级 AI 模型云服务商，致力于成为开发者和企业接入大模型的 统一入口。 我们整合 OpenAI、Anthrop,39806
+api.xaix.me,xAIx,97,xAIx,api.xaix.me,,0,,,否,75,0,,0,0,0,,40040
+ogog.ai,OGOG.AI,98,OGOG.AI,ogog.ai,,0,,,否,60,0,,0,0,0,,39834
+ai.centos.hk,星辰,99,星辰,ai.centos.hk,,0,,,否,58,0,,0,0,0,,39895
+api.qiyiguo.uk,奇异果 API,100,奇异果 API,api.qiyiguo.uk,,0,,,否,54,0,,0,0,0,奇异果AI：让对话更有趣 💕 💝专业稳定的技术支持，服务正常运行，7×24小时稳定服务 为什么选择奇异果AI？：专业稳定的智能对话API服务 1.极速响应，毫秒,39884
+ai.xlyun.pro,小流云,101,小流云,ai.xlyun.pro,,0,,,否,49,0,,0,0,0,,39888
+api.ekan8.com,Ekan8,102,Ekan8,api.ekan8.com,,0,,,否,42,0,,0,1,0,依托gemini架构构建的全球低时延分发网络，为大家提供高效稳定的全域接入。1:1充值比例，拒绝虚假额度，所见即所得，不搞文字游戏，纯粹透明。,39814
 api.discordtool.vip,巨硬AI,103,巨硬AI,api.discordtool.vip,,0,,,否,42,0,,0,1,0,专注官方直连，企业级稳定中转7*24h可用。 适用于Claude Code、Cursor、Chatbox、OpenAI 兼容客户端。一个接口接入 Claude、,39943
 superapi.buzz,SuperAPI,104,SuperAPI,superapi.buzz,,0,,,否,41,0,,0,0,0,,40054
-api.ekan8.com,Ekan8,105,Ekan8,api.ekan8.com,,0,,,否,40,0,,0,1,0,依托gemini架构构建的全球低时延分发网络，为大家提供高效稳定的全域接入。1:1充值比例，拒绝虚假额度，所见即所得，不搞文字游戏，纯粹透明。,39814
-ai.17nas.com,镜核 AI,106,镜核 AI,ai.17nas.com,,0,,,否,37,0,,0,1,0,面向开发者与团队的稳定接入方案，支持 Claude、GPT-5.5 与主流国产模型生态，兼容 OpenAI 与 Claude 接口： 1.灵活计费：支持按量调用,39938
-gua.guagua.uk,SunnyPumpkinAPI,107,SunnyPumpkinAPI,gua.guagua.uk,,0,,,否,35,0,,0,1,0,"umpkinAPI provides premium large language model API proxy services, covering mai",39855
-xiaoruiapi.cc,小瑞API,108,小瑞API,xiaoruiapi.cc,,0,,,否,35,0,,0,3,0,,39915
+ai.17nas.com,镜核 AI,105,镜核 AI,ai.17nas.com,,0,,,否,37,0,,0,1,0,面向开发者与团队的稳定接入方案，支持 Claude、GPT-5.5 与主流国产模型生态，兼容 OpenAI 与 Claude 接口： 1.灵活计费：支持按量调用,39938
+gua.guagua.uk,SunnyPumpkinAPI,106,SunnyPumpkinAPI,gua.guagua.uk,,0,,,否,35,0,,0,1,0,"umpkinAPI provides premium large language model API proxy services, covering mai",39855
+xiaoruiapi.cc,小瑞API,107,小瑞API,xiaoruiapi.cc,,0,,,否,35,0,,0,3,0,,39915
+aaatoken.cn,3AToken,108,3AToken,aaatoken.cn,enterprise,0,,,否,34,0,,0,0,0,我们致力于打造一个高效的AI API聚合与运营平台。通过一个控制台，即可完成模型路由、配额管理、监控预警与多角色协作，彻底告别多套后台、重复对接的繁琐流程。 核,40254
 sparkcode.top,SparkCode,109,SparkCode,sparkcode.top,,0,,,否,34,0,,0,0,0,无需多个账号，一站式访问三大AI模型。标准1:1倍率，GPT系列仅0.2倍率，为您节省80%成本。 灵活的付费方式，两种模式可叠加使用，优先消耗套餐额度： 1.,39851
-aaatoken.cn,3AToken,110,3AToken,aaatoken.cn,enterprise,0,,,否,33,0,,0,0,0,我们致力于打造一个高效的AI API聚合与运营平台。通过一个控制台，即可完成模型路由、配额管理、监控预警与多角色协作，彻底告别多套后台、重复对接的繁琐流程。 核,40254
-uocode.com,UoCode,111,UoCode,uocode.com,,0,,,否,33,0,,0,6,0,"UoCode is an intelligent model service platform designed for general users, crea",39926
-api.rpg8.cn,RPG8,112,RPG8,api.rpg8.cn,,0,,,否,32,0,,0,0,0,主打Claude模型，MAX号池，SLA 95%+，不做掺水假模型，只为给原汁原味Claude带给开发者 售前售后咨询VX：os1246,39925
-bobdong.cn,Bob API,113,Bob API,bobdong.cn,,0,,,否,31,0,,0,2,0,稳定运行半年，主营Claude Max，GPT Plus， Pro号池等，渠道齐全，专门对接中转站，量大实惠，高RPM，高稳定。,39788
-api.rootflowai.com,RootFlow,114,RootFlow,api.rootflowai.com,,0,,,否,30,0,,0,0,0,,39849
-api.squarefaceicon.org,Square API,115,Square API,api.squarefaceicon.org,,0,,,否,30,0,,0,0,0,,39852
-ai.flashapi.top,闪电API,116,闪电API,ai.flashapi.top,,0,,,否,30,0,,0,0,0,,39912
-code.b886.top,CCTQ,117,CCTQ,code.b886.top,,0,,,否,28,0,,0,0,0,统一的大模型接口网关，更好的价格，更好的稳定性。,39793
-claudeagent.com.cn,ClaudeAgent,118,ClaudeAgent,claudeagent.com.cn,,0,,,否,28,0,,0,0,0,,39797
-cooper-api.com,Cooper-API,119,Cooper-API,cooper-api.com,,0,,,否,26,0,,0,1,0,全球直连：无需科学上网即可调用。 安全无忧：纯净底层链路，无封号风险。 智能路由：多渠道接口智能跳接。 极致保障：24小时监控，99%可用性。 Openclaw,39929
-timesniper.club,一元模型,120,一元模型,timesniper.club,,0,,,否,26,0,,0,1,0,一元模型 API 完美兼容所有主流 AI 编程助手 OpenAI 接口聚合管理，支持多种渠道，开箱即用,39870
-api.shiyutv.cn,像素群岛,121,像素群岛,api.shiyutv.cn,,0,,,否,26,0,,0,0,0,正价渠道采购 坚持正规采购，不使用来路不明、低价异常或风险资源 满血版体验 保留完整能力与稳定表现，不做人为阉割或缩水配置 纯净中转 不混杂劣质节点，不偷换资源,39972
-huanapi.com,换API,122,换API,huanapi.com,,0,,,否,25,0,,0,0,0,,39890
-cca.maya.today,BMCCA,123,BMCCA,cca.maya.today,,0,,,否,22,0,,0,0,0,本站为原站点cc.maya.today 新开站点，稳定运行三个月✅ 目前支持 GPT 全系模型，所有号池均为付费订阅账号。注册联系客服即送 1 美金额度试用，无,39787
-new.050602.xyz,LingxiCode,124,LingxiCode,new.050602.xyz,enterprise,0,,,否,22,0,,0,1,0,平价 AI 中转站，以稳定直连、透明低价、编程优化为核心，完美适配国内开发者接入 Claude、GPT 等顶级模型的需求，是个人与小团队的高性价比选择。,39823
+uocode.com,UoCode,110,UoCode,uocode.com,,0,,,否,33,0,,0,6,0,"UoCode is an intelligent model service platform designed for general users, crea",39926
+api.rpg8.cn,RPG8,111,RPG8,api.rpg8.cn,,0,,,否,32,0,,0,0,0,主打Claude模型，MAX号池，SLA 95%+，不做掺水假模型，只为给原汁原味Claude带给开发者 售前售后咨询VX：os1246,39925
+bobdong.cn,Bob API,112,Bob API,bobdong.cn,,0,,,否,31,0,,0,2,0,稳定运行半年，主营Claude Max，GPT Plus， Pro号池等，渠道齐全，专门对接中转站，量大实惠，高RPM，高稳定。,39788
+api.rootflowai.com,RootFlow,113,RootFlow,api.rootflowai.com,,0,,,否,30,0,,0,0,0,,39849
+api.squarefaceicon.org,Square API,114,Square API,api.squarefaceicon.org,,0,,,否,30,0,,0,0,0,,39852
+ai.flashapi.top,闪电API,115,闪电API,ai.flashapi.top,,0,,,否,30,0,,0,0,0,,39912
+code.b886.top,CCTQ,116,CCTQ,code.b886.top,,0,,,否,28,0,,0,0,0,统一的大模型接口网关，更好的价格，更好的稳定性。,39793
+claudeagent.com.cn,ClaudeAgent,117,ClaudeAgent,claudeagent.com.cn,,0,,,否,28,0,,0,0,0,,39797
+cooper-api.com,Cooper-API,118,Cooper-API,cooper-api.com,,0,,,否,26,0,,0,1,0,全球直连：无需科学上网即可调用。 安全无忧：纯净底层链路，无封号风险。 智能路由：多渠道接口智能跳接。 极致保障：24小时监控，99%可用性。 Openclaw,39929
+timesniper.club,一元模型,119,一元模型,timesniper.club,,0,,,否,26,0,,0,1,0,一元模型 API 完美兼容所有主流 AI 编程助手 OpenAI 接口聚合管理，支持多种渠道，开箱即用,39870
+api.shiyutv.cn,像素群岛,120,像素群岛,api.shiyutv.cn,,0,,,否,26,0,,0,0,0,正价渠道采购 坚持正规采购，不使用来路不明、低价异常或风险资源 满血版体验 保留完整能力与稳定表现，不做人为阉割或缩水配置 纯净中转 不混杂劣质节点，不偷换资源,39972
+huanapi.com,换API,121,换API,huanapi.com,,0,,,否,25,0,,0,0,0,,39890
+cca.maya.today,BMCCA,122,BMCCA,cca.maya.today,,0,,,否,22,0,,0,0,0,本站为原站点cc.maya.today 新开站点，稳定运行三个月✅ 目前支持 GPT 全系模型，所有号池均为付费订阅账号。注册联系客服即送 1 美金额度试用，无,39787
+new.050602.xyz,LingxiCode,123,LingxiCode,new.050602.xyz,enterprise,0,,,否,22,0,,0,1,0,平价 AI 中转站，以稳定直连、透明低价、编程优化为核心，完美适配国内开发者接入 Claude、GPT 等顶级模型的需求，是个人与小团队的高性价比选择。,39823
+callxyq.xyz,Ls.API,124,Ls.API,callxyq.xyz,,0,,,否,22,0,,0,0,0,,39826
 free.learn-ai.top,learn-ai,125,learn-ai,free.learn-ai.top,,0,,,否,20,0,,0,0,0,,39821
 nextoken.online,NexToken,126,NexToken,nextoken.online,,0,,,否,20,0,,0,0,0,"把多家厂商的订阅与 Key 统一接入,一个端点搞定调用、计费与配额： 1.通用 OpenAI 协议：任何兼容 OpenAI 的 SDK 与客户端,改 base_",39916
 ai.xem8k5.top,xem中转站,127,xem中转站,ai.xem8k5.top,,0,,,否,20,0,,0,1,0,xem API 是面向开发者的 AI 模型接入平台，目前支持 GPT 全系模型，所有号池均为付费订阅账号。 不掺水、不限速、不限并发，所有计费均透明，支持发票。,39959
@@ -130,12 +130,12 @@ ai.anxidc.com,安讯AI,128,安讯AI,ai.anxidc.com,,0,,,否,19,0,,0,0,0,,39886
 mzlone.top,AIMZ,129,AIMZ,mzlone.top,,0,,,否,17,0,,0,0,0,AIMZ 是一个用于自托管部署的开源 AI API 网关。接入多家上游服务，并集中管理模型、密钥、额度、日志与路由策略。 超低价格：比官网便宜 20 倍，低至 ,39944
 buzzai.cc,BUZZ,130,BUZZ,buzzai.cc,,0,,,否,17,0,,0,2,1,BUZZ AI 提供 Claude API 中转网关服务，支持 Claude Opus 4.6、Sonnet 4.6、Haiku 4.5 全系列模型。透明转发、,39789
 api.luccc.uk,Luccc,131,Luccc,api.luccc.uk,,0,,,否,17,0,,0,0,0,"api.luccc.uk, 2026 年 5 月新上线。站长自建自运维, 上游用的是ChatGPT Team / Pro 账号池, 没有二次嵌套中转。 主要模型",40006
-user.tocodex.com,ToCodex,132,ToCodex,user.tocodex.com,,0,,,否,17,0,,0,0,0,,39860
-fucheers.top,Fucheers,133,Fucheers,fucheers.top,,0,,,否,16,0,,0,1,0,,39817
+fucheers.top,Fucheers,132,Fucheers,fucheers.top,,0,,,否,16,0,,0,1,0,,39817
+user.tocodex.com,ToCodex,133,ToCodex,user.tocodex.com,,0,,,否,16,0,,0,0,0,,39860
 api.aisz.mom,Token Nexus,134,Token Nexus,api.aisz.mom,,0,,,否,16,0,,0,0,0,,40196
 chat.ekti.cc,AI Chat,135,AI Chat,chat.ekti.cc,,0,,,否,14,0,,0,0,0,,39774
 manbouapi.com,曼波API,136,曼波API,manbouapi.com,,0,,,否,14,0,,0,0,0,,39896
-api.sbbbbbbbbb.xyz,Neco Api,137,Neco Api,api.sbbbbbbbbb.xyz,,0,,,否,12,0,3,1,0,0,,39831
+api.sbbbbbbbbb.xyz,Neco Api,137,Neco Api,api.sbbbbbbbbb.xyz,,0,,,否,13,0,3,1,0,0,,39831
 api.sunskii.com,Sunskii,138,Sunskii,api.sunskii.com,,0,,,否,12,0,,0,0,0,Sunskii专注于OpenAI的Plus、Pro号池，提供稳定、充足、高性价比的中转服务。我们致力于打造普通人也用得起的 AI 资源平台，让更多用户以更低成本,39992
 chunxueapi.com,ChunXue API,139,ChunXue API,chunxueapi.com,,0,,,否,11,0,,0,1,0,ChunXue API 是一个面向开发者与个人用户的 API 中转与接入服务平台，旨在提供稳定、优质的tokens，一个key调用国外大模型。采用1G大带宽物理,39948
 derouter.ai,DeRouter,140,DeRouter,derouter.ai,,0,0,,否,9,0,,0,1,0,derouter.ai，一个连接 AI API 需求与闲置配额的去中心化路由网络 如果你有已经订阅但暂时闲置的 AI 账号，可以托管到平台，让其他用户按需使用你,39940
@@ -144,27 +144,27 @@ api.schyler.top,SchylerAI小栈,142,SchylerAI小栈,api.schyler.top,,0,,,否,9,0
 1xm.ai,1XM,143,1XM,1xm.ai,,0,,,否,8,0,,0,1,0,🔗 OneXModel 是一个聚合 AI 算力平台，全球顶级模型算力无门槛接入，适合日常写作、编程、创意生成、图像生成等多种场景 我们团队长期投入在模型接入、稳,40004
 aiapi.world,AiApi.World,144,AiApi.World,aiapi.world,enterprise,0,0,,否,8,0,,0,0,0,价格适中但稳定性极高，直连官方通道，模型更全面Claude、GPT、Gemini、Grok、Deepseek、Qwen、GLM、Kimi、Minimax、Mim,40257
 api.aicodemirror.com,AICodeMirror,145,AICodeMirror,api.aicodemirror.com,,0,,,否,8,0,,0,0,0,我们是一支专注于为中国内地工程师提供Claude Code服务的技术团队。我们深知中国开发者在使用国际AI工具时面临的种种挑战。 通过技术创新和优质服务，我们成,39778
-beecode.cc,BeeCode,146,BeeCode,beecode.cc,,0,,,否,8,0,,0,0,0,本站支持模型 GPT-5.4、GPT-5.4 mini 、GPT-5.3 Codex、GPT-5.2、GPT-5.2 Codex 无需魔法，无需信用卡。一把 K,39786
-cc-vibe.com,CCVibe,147,CCVibe,cc-vibe.com,,0,,,否,8,0,,0,2,0,1.一键接入 获取一个 API 密钥，即可调用所有已接入的 AI 模型，无需分别申请。 2.稳定可靠 智能调度多个上游账号，自动切换和负载均衡，告别频繁报错。 ,39794
-dragoncode.codes,Dragoncode,148,Dragoncode,dragoncode.codes,,0,,,否,8,0,,0,3,0,DragonCodes 专为日常编码而设计的一站式体验 更低的价格，更简单的配置，让每位开发者都能用上顶级 AI 编码模型。,39914
-lucen.cc,lucen,149,lucen,lucen.cc,,0,,,否,8,0,,0,0,0,,40018
-subrouter.ai,SubRouter,150,SubRouter,subrouter.ai,,0,,,否,8,0,5,1,0,0,【不只是中转，是公开市场】 SubRouter 构建了一个大模型公开交易市场，汇聚全球算力资源。智能路由引擎在你与模型之间自动选择最优供应商、实时故障转移、按价,39854
-tcdmx.com,TCDMX,151,TCDMX,tcdmx.com,,0,,,否,8,0,,0,4,6,,39988
-timicc.com,TimiCC,152,TimiCC,timicc.com,,0,,,否,8,0,,0,1,0,TiMi CC新手接入教程：https://timicc.com/tutorial 所有工具都先走一次共用准备，再分流到 Claude 或 Codex。页面按“,39859
-timyai.com,Timy AI,153,Timy AI,timyai.com,,0,,,否,8,0,,0,0,0,在 TimyAI 之上，Claude、GPT、Gemini 与上百款大模型像粒子般汇聚。智能路由、毫秒级回退、跨域观测，让每一次推理都精准抵达。 兼容 Open,39933
-co.yes.vg,YesCode,154,YesCode,co.yes.vg,,0,,,否,8,0,,0,0,0,YesCode运营一个面向专业开发者及技术团队的云资源整合与技术适配平台。我们通过集约化管理、技术封装和接口适配， 为您提供更稳定、高效的方式来调用您开发项目所,39868
-ai.chaozhi.chat,云枢,155,云枢,ai.chaozhi.chat,,0,,,否,8,0,,0,0,0,云枢API 是一个专注于高质量用户群体的 AI API 中转平台，主要服务 个人重度使用者、企业团队、下游渠道合作伙伴，提供稳定、高效、可持续的多模型 API ,39998
-api.tu-zi.com,兔子,156,兔子,api.tu-zi.com,,0,,,否,8,0,,0,1,1,统一的大模型接口，更优惠的价格，更稳定的服务，无需订阅。 成本节省：90%+ 无低消限制：0.7¥=1$ 模型数量：300+ 全球用户：30k+,39928
-api.lingshuai.cc,灵枢AI,157,灵枢AI,api.lingshuai.cc,,0,,,否,8,0,,0,1,0,为客户提供低价优质的满血模型，由上海复旦软件工程学院的高材生提供后端支持，同等品质看价格，同等价格比品质，只做最好的不做最贵的。,40056
-api.aigocode.com,AlGoCode,158,AlGoCode,api.aigocode.com,,0,,,否,7,0,,0,0,0,Ai Go Code 是面向开发者的 AI 编程工作台，提供代码辅助、智能问答、团队协作、订阅与按量购买等功能，帮助开发者更高效地完成日常研发工作。 我们把常用,39782
-api.b.ai,B.AI,159,B.AI,api.b.ai,,0,,,否,7,0,,0,0,1,孙哥的站.,39939
-api.aibinghe.xyz,BingHeAPI,160,BingHeAPI,api.aibinghe.xyz,personal,0,,,否,7,0,,0,0,0,GPTPLUS满血号池，速度很快+稳定，0.15倍率，1比1充值，小站新开，福利多多，进入QQ群还有更多惊喜,40260
-hk.ccplus.site,ccfly,161,ccfly,hk.ccplus.site,,0,,,否,7,0,,0,0,0,CCFly 是专为国内用户打造的 Claude 等海外大模型 API 中转平台，本站点从去年11月28号上线开始，截止现在已经运行半年左右，客服积极响应，低延迟,39979
-mx.free.codesonline.dev,codesonline,162,codesonline,mx.free.codesonline.dev,,0,,,否,7,0,,0,0,0,,39951
-thestocklist.site,Flux API,163,Flux API,thestocklist.site,,0,,,否,7,0,,0,1,0,平台核心优势 满血版输出：郑重承诺！所有上架模型均为官方原生满血版，绝不掺水，无任何降智处理，保证最高质量的上下文反馈。 支持模型检测：真金不怕火炼！平台完美兼,39958
-freemodel.dev,FreeModel,164,FreeModel,freemodel.dev,,0,,,否,7,0,5,1,2,0,,39987
-gpt.hslife.fun,H&SのToken食堂,165,H&SのToken食堂,gpt.hslife.fun,personal,0,,,否,7,0,,0,0,0,Token食堂｜AI Coding 额度补给站 量大管饱，稳定耐用，专为高频 Codex 用户准备。 Codex 支持按量使用，低至 0.18 倍率，用多少算多,40275
-callxyq.xyz,Ls.API,166,Ls.API,callxyq.xyz,,0,,,否,7,0,,0,0,0,,39826
+cc.anyroute.io,AnyRoute,146,AnyRoute,cc.anyroute.io,personal,0,0,,否,8,0,,0,0,0,AnyRoute是一家可靠高效的 API 中转服务商，专注提供 Claude Code、Codex一站式聚合中转服务。 Codex Pro纯血号池源头，可对接，,40080
+beecode.cc,BeeCode,147,BeeCode,beecode.cc,,0,,,否,8,0,,0,0,0,本站支持模型 GPT-5.4、GPT-5.4 mini 、GPT-5.3 Codex、GPT-5.2、GPT-5.2 Codex 无需魔法，无需信用卡。一把 K,39786
+cc-vibe.com,CCVibe,148,CCVibe,cc-vibe.com,,0,,,否,8,0,,0,2,0,1.一键接入 获取一个 API 密钥，即可调用所有已接入的 AI 模型，无需分别申请。 2.稳定可靠 智能调度多个上游账号，自动切换和负载均衡，告别频繁报错。 ,39794
+dragoncode.codes,Dragoncode,149,Dragoncode,dragoncode.codes,,0,,,否,8,0,,0,3,0,DragonCodes 专为日常编码而设计的一站式体验 更低的价格，更简单的配置，让每位开发者都能用上顶级 AI 编码模型。,39914
+lucen.cc,lucen,150,lucen,lucen.cc,,0,,,否,8,0,,0,0,0,,40018
+subrouter.ai,SubRouter,151,SubRouter,subrouter.ai,,0,,,否,8,0,5,1,0,0,【不只是中转，是公开市场】 SubRouter 构建了一个大模型公开交易市场，汇聚全球算力资源。智能路由引擎在你与模型之间自动选择最优供应商、实时故障转移、按价,39854
+tcdmx.com,TCDMX,152,TCDMX,tcdmx.com,,0,,,否,8,0,,0,4,6,,39988
+timicc.com,TimiCC,153,TimiCC,timicc.com,,0,,,否,8,0,,0,1,0,TiMi CC新手接入教程：https://timicc.com/tutorial 所有工具都先走一次共用准备，再分流到 Claude 或 Codex。页面按“,39859
+timyai.com,Timy AI,154,Timy AI,timyai.com,,0,,,否,8,0,,0,0,0,在 TimyAI 之上，Claude、GPT、Gemini 与上百款大模型像粒子般汇聚。智能路由、毫秒级回退、跨域观测，让每一次推理都精准抵达。 兼容 Open,39933
+co.yes.vg,YesCode,155,YesCode,co.yes.vg,,0,,,否,8,0,,0,0,0,YesCode运营一个面向专业开发者及技术团队的云资源整合与技术适配平台。我们通过集约化管理、技术封装和接口适配， 为您提供更稳定、高效的方式来调用您开发项目所,39868
+ai.chaozhi.chat,云枢,156,云枢,ai.chaozhi.chat,,0,,,否,8,0,,0,0,0,云枢API 是一个专注于高质量用户群体的 AI API 中转平台，主要服务 个人重度使用者、企业团队、下游渠道合作伙伴，提供稳定、高效、可持续的多模型 API ,39998
+api.tu-zi.com,兔子,157,兔子,api.tu-zi.com,,0,,,否,8,0,,0,1,1,统一的大模型接口，更优惠的价格，更稳定的服务，无需订阅。 成本节省：90%+ 无低消限制：0.7¥=1$ 模型数量：300+ 全球用户：30k+,39928
+api.lingshuai.cc,灵枢AI,158,灵枢AI,api.lingshuai.cc,,0,,,否,8,0,,0,1,0,为客户提供低价优质的满血模型，由上海复旦软件工程学院的高材生提供后端支持，同等品质看价格，同等价格比品质，只做最好的不做最贵的。,40056
+api.aigocode.com,AlGoCode,159,AlGoCode,api.aigocode.com,,0,,,否,7,0,,0,0,0,Ai Go Code 是面向开发者的 AI 编程工作台，提供代码辅助、智能问答、团队协作、订阅与按量购买等功能，帮助开发者更高效地完成日常研发工作。 我们把常用,39782
+api.b.ai,B.AI,160,B.AI,api.b.ai,,0,,,否,7,0,,0,0,1,孙哥的站.,39939
+api.aibinghe.xyz,BingHeAPI,161,BingHeAPI,api.aibinghe.xyz,personal,0,,,否,7,0,,0,0,0,GPTPLUS满血号池，速度很快+稳定，0.15倍率，1比1充值，小站新开，福利多多，进入QQ群还有更多惊喜,40260
+hk.ccplus.site,ccfly,162,ccfly,hk.ccplus.site,,0,,,否,7,0,,0,0,0,CCFly 是专为国内用户打造的 Claude 等海外大模型 API 中转平台，本站点从去年11月28号上线开始，截止现在已经运行半年左右，客服积极响应，低延迟,39979
+mx.free.codesonline.dev,codesonline,163,codesonline,mx.free.codesonline.dev,,0,,,否,7,0,,0,0,0,,39951
+thestocklist.site,Flux API,164,Flux API,thestocklist.site,,0,,,否,7,0,,0,1,0,平台核心优势 满血版输出：郑重承诺！所有上架模型均为官方原生满血版，绝不掺水，无任何降智处理，保证最高质量的上下文反馈。 支持模型检测：真金不怕火炼！平台完美兼,39958
+freemodel.dev,FreeModel,165,FreeModel,freemodel.dev,,0,,,否,7,0,5,1,2,0,,39987
+gpt.hslife.fun,H&SのToken食堂,166,H&SのToken食堂,gpt.hslife.fun,personal,0,,,否,7,0,,0,0,0,Token食堂｜AI Coding 额度补给站 量大管饱，稳定耐用，专为高频 Codex 用户准备。 Codex 支持按量使用，低至 0.18 倍率，用多少算多,40275
 prismapi.site,Prism API,167,Prism API,prismapi.site,,0,,,否,7,0,,0,0,0,,40019
 sssaicode.com,SSSAICode,168,SSSAICode,sssaicode.com,,0,,,否,7,0,,0,1,1,即刻体验官方最新版 Claude Code、CodeX、Gemini CLI；号池代理技术，降低封号风险，国内直连。 1.企业级号池代理技术，我们来解决网络访问,39853
 api.clawopen.top,Sum API,169,Sum API,api.clawopen.top,,0,,,否,7,0,,0,0,0,SumAPI是专注于为个人开发者和中小团队提供高性价比 AI API 中转服务的平台。我们支持 GPT、Claude、Gemini、DeepSeek、Kimi ,40025
@@ -210,18 +210,18 @@ yxaiapp.com,方舟,208,方舟,yxaiapp.com,,0,,,否,5,0,,0,0,0,,39892
 hemaapi.cc,河马中转站,209,河马中转站,hemaapi.cc,,0,,,否,5,0,,0,0,0,claude code，gpt等全方位渠道，api稳定，纯血max渠道，可接 高并发，外接（open claw）等等分组，适合科研人员，企业人员等等接入。,39986
 funnyskill.com,范尼API,210,范尼API,funnyskill.com,,0,,,否,5,0,,0,0,0,范尼API 是一个面向开发者和团队的 AI 接口聚合服务平台，专注于为 AI 应用开发提供统一、便捷的大模型 API 接入能力。平台支持多种主流 AI 模型相关,40022
 zhangyuapi.com,章鱼中枢AI服务平台,211,章鱼中枢AI服务平台,zhangyuapi.com,,0,,,否,5,0,,0,0,0,章鱼中枢 AI 服务平台是新一代 AI 基座平台，为您的 AI 应用提供统一的基础设施。承载所有 AI 应用，管理您的数字资产，连接未来的统一接口平台。,40125
-ccode.dev,Ccode,212,Ccode,ccode.dev,,0,,,否,4,0,,0,0,0,目前最稳、最具有性价比的Claude中转站，假一赔三！ 自建官方原生 Max x5 订阅池：官方 Claude Pro Max 5x 订阅账号； 自建官方原生 ,39995
-ccrouter.ai,CCRouter,213,CCRouter,ccrouter.ai,,0,,,否,4,0,,0,0,0,专注 Claude 全系模型中转。 纯血 Max 号池 + Anthropic 官方 API 双线 · 0.25× 倍率 · 余额扣费无套餐,40258
-cckeys.top,Claude密钥,214,Claude密钥,cckeys.top,,0,,,否,4,0,,0,0,0,,39800
-airouter.mxyhi.com,deepproxy,215,deepproxy,airouter.mxyhi.com,,0,,,否,4,0,,0,0,0,"主要做gpt套餐和次要claude,优势gpt价格低,稳定,但是限量发售套餐,避免超售,影响用户体验,售后快速",39991
-iacc.cc,IACC,216,IACC,iacc.cc,,0,,,否,4,0,,0,2,0,GPT 20x Pro号池与Claude Max号池长期稳定供应，主打价格实惠、连接稳定、使用流畅，提供24小时在线售后支持，配套教程完善， 新手也能快速上手使,40028
-newapi.junjun.site,junjuncc,217,junjuncc,newapi.junjun.site,,0,,,否,4,0,,0,0,0,,39820
-platform.ope.ai,OPE AI,218,OPE AI,platform.ope.ai,,0,,,否,4,0,,0,0,0,OPE.AI为大型AI模型提供API服务。 您独特的原始API密钥可以稳定、安全地使用。,39836
-pixelmuse.shop,PixelMuse,219,PixelMuse,pixelmuse.shop,,0,,,否,4,0,,0,0,0,🔥 御三家API全直连中转站 🌐 认准：pixelmuse.shop 💰 极致白菜价：1:1刀，Token消耗按官价1.5折！ 🛡️ 纯血原装：绝对不掺水、不降,39997
-ppword.cn,ppword,220,ppword,ppword.cn,,0,,,否,4,0,,0,0,0,网站成立于2023年3月。 经历多轮浪潮，从未中断。 原因是坚持诚信经营，走官方渠道的API。 实现国外主流大模型的对话，画图和视频生成。 同时，纯血国外模型的,40297
-enjoyapi.cc,安九API,221,安九API,enjoyapi.cc,enterprise,0,,,否,4,0,,0,0,0,"安九API 是一家可靠高效的 API 中转服务商，提供 Claude Code、Codex、Gemini 等多种服务的中转。 这个站点价格低,质量好 , 客服响",40093
-api.getezclaw.com,API GetEzClaw,222,API GetEzClaw,api.getezclaw.com,,0,,,否,3,0,,0,0,0,API GetEzClaw 是一個面向開發者與 AI 產品團隊的高穩定模型 API 接入平台。 平台整合多種主流 AI 模型，提供統一的 OpenAI 格式 A,40033
-apiclaude.cc,APIClaude,223,APIClaude,apiclaude.cc,enterprise,0,,,否,3,0,,0,0,0,专注Claude与Codex API，支持余额计费、Claude Code官方满血API Key，稳定透明，性价比高，服务到位。,40296
+apiclaude.cc,APIClaude,212,APIClaude,apiclaude.cc,enterprise,0,,,否,4,0,,0,0,0,专注Claude与Codex API，支持余额计费、Claude Code官方满血API Key，稳定透明，性价比高，服务到位。,40296
+ccode.dev,Ccode,213,Ccode,ccode.dev,,0,,,否,4,0,,0,0,0,目前最稳、最具有性价比的Claude中转站，假一赔三！ 自建官方原生 Max x5 订阅池：官方 Claude Pro Max 5x 订阅账号； 自建官方原生 ,39995
+ccrouter.ai,CCRouter,214,CCRouter,ccrouter.ai,,0,,,否,4,0,,0,0,0,专注 Claude 全系模型中转。 纯血 Max 号池 + Anthropic 官方 API 双线 · 0.25× 倍率 · 余额扣费无套餐,40258
+cckeys.top,Claude密钥,215,Claude密钥,cckeys.top,,0,,,否,4,0,,0,0,0,,39800
+airouter.mxyhi.com,deepproxy,216,deepproxy,airouter.mxyhi.com,,0,,,否,4,0,,0,0,0,"主要做gpt套餐和次要claude,优势gpt价格低,稳定,但是限量发售套餐,避免超售,影响用户体验,售后快速",39991
+iacc.cc,IACC,217,IACC,iacc.cc,,0,,,否,4,0,,0,2,0,GPT 20x Pro号池与Claude Max号池长期稳定供应，主打价格实惠、连接稳定、使用流畅，提供24小时在线售后支持，配套教程完善， 新手也能快速上手使,40028
+newapi.junjun.site,junjuncc,218,junjuncc,newapi.junjun.site,,0,,,否,4,0,,0,0,0,,39820
+platform.ope.ai,OPE AI,219,OPE AI,platform.ope.ai,,0,,,否,4,0,,0,0,0,OPE.AI为大型AI模型提供API服务。 您独特的原始API密钥可以稳定、安全地使用。,39836
+pixelmuse.shop,PixelMuse,220,PixelMuse,pixelmuse.shop,,0,,,否,4,0,,0,0,0,🔥 御三家API全直连中转站 🌐 认准：pixelmuse.shop 💰 极致白菜价：1:1刀，Token消耗按官价1.5折！ 🛡️ 纯血原装：绝对不掺水、不降,39997
+ppword.cn,ppword,221,ppword,ppword.cn,,0,,,否,4,0,,0,0,0,网站成立于2023年3月。 经历多轮浪潮，从未中断。 原因是坚持诚信经营，走官方渠道的API。 实现国外主流大模型的对话，画图和视频生成。 同时，纯血国外模型的,40297
+enjoyapi.cc,安九API,222,安九API,enjoyapi.cc,enterprise,0,,,否,4,0,,0,0,0,"安九API 是一家可靠高效的 API 中转服务商，提供 Claude Code、Codex、Gemini 等多种服务的中转。 这个站点价格低,质量好 , 客服响",40093
+api.getezclaw.com,API GetEzClaw,223,API GetEzClaw,api.getezclaw.com,,0,,,否,3,0,,0,0,0,API GetEzClaw 是一個面向開發者與 AI 產品團隊的高穩定模型 API 接入平台。 平台整合多種主流 AI 模型，提供統一的 OpenAI 格式 A,40033
 codesome.ai,CodeSome,224,CodeSome,codesome.ai,,0,,,否,3,0,,0,0,0,先进算力，也是一种投资。 小白友好型 Claude Code AI 社区，为您提供顶级模型接入与企业级交付方案。 欢迎自媒体用户与 KOL 加入 codesom,39802
 code.deepask.chat,deepask,225,deepask,code.deepask.chat,enterprise,0,,,否,3,0,,0,0,0,DeepAsk 依托官方正价 Pro 号池，提供稳定、充足、高性价比的 AI 中转服务，让每个人都能以更低成本体验优质模型能力。,40066
 codexopenai.cloud,Deer Codex,226,Deer Codex,codexopenai.cloud,,0,,,否,3,0,,0,0,0,Deer Codex 是一家成立于2026年1月的AI API中转服务平台，聚合了OpenAI、DeepSeek、阿里通义千问等主流厂商共23款推理与图像生成模,40049
