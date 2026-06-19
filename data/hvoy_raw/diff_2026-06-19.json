@@ -1,0 +1,26 @@
+{
+  "date": "2026-06-19",
+  "added": [
+    {
+      "relaySiteId": 40327,
+      "siteDomain": "apiporter.com",
+      "siteName": "Apiporter",
+      "detailSlug": "apiportercom",
+      "rankPosition": 77,
+      "overallScore": 0,
+      "avgOnlineRate": 60,
+      "avgLatencyS": null,
+      "latencySuspicious": false,
+      "modelCount": 111,
+      "rankedModelCount": 0,
+      "verificationType": "enterprise",
+      "siteDescription": "1.一个 API 接入所有主流模型 2.国内无需代理，访问稳定 3.兼容官方 SDK，迁移成本低 4.价格更优，支持成本控制 5.有售后和服务保障，不是纯自助平",
+      "siteDescriptionHasMore": true,
+      "reviewCount": 0,
+      "averageRating": null,
+      "voteUpCount": 0,
+      "voteDownCount": 0
+    }
+  ],
+  "removed": []
+}
