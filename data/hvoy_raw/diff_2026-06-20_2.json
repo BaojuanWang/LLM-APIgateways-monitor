@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-20",
+  "added": [
+    {
+      "relaySiteId": 40308,
+      "siteDomain": "sadai.top",
+      "siteName": "SadAI",
+      "detailSlug": "sadaitop",
+      "rankPosition": 223,
+      "overallScore": 0,
+      "avgOnlineRate": null,
+      "avgLatencyS": null,
+      "latencySuspicious": false,
+      "modelCount": 4,
+      "rankedModelCount": 0,
+      "verificationType": "",
+      "siteDescription": "主要是gpt模型，有售后不跑路，站点稳定,想用 GPT 搞创作、写代码、捋工作思路的朋友，不用费劲折腾海外账号和复杂充值，在这儿直接就能顺畅调用。不会说消失就消",
+      "siteDescriptionHasMore": true,
+      "paymentMethods": "",
+      "domesticInvoiceSupport": "",
+      "refundSupport": "",
+      "reviewCount": 1,
+      "averageRating": 5,
+      "voteUpCount": 0,
+      "voteDownCount": 0
+    }
+  ],
+  "removed": []
+}
