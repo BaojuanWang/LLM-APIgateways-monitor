@@ -1,0 +1,52 @@
+{
+  "date": "2026-06-20",
+  "added": [],
+  "removed": [
+    {
+      "relaySiteId": 39904,
+      "siteDomain": "openclaudecode.cn",
+      "siteName": "米醋AI",
+      "detailSlug": "openclaudecodecn",
+      "rankPosition": 80,
+      "overallScore": 0,
+      "avgOnlineRate": null,
+      "avgLatencyS": null,
+      "latencySuspicious": false,
+      "modelCount": 425,
+      "rankedModelCount": 0,
+      "verificationType": "",
+      "siteDescription": "米醋AI提供MAX号池，标注稳定性达到100%，适合对连接成功率有较高要求的开发者。 前身是OpenClaudeCode, 之前的风波里表现还挺好. 现在重新开",
+      "siteDescriptionHasMore": true,
+      "paymentMethods": "",
+      "domesticInvoiceSupport": "",
+      "refundSupport": "",
+      "reviewCount": 0,
+      "averageRating": null,
+      "voteUpCount": 0,
+      "voteDownCount": 0
+    },
+    {
+      "relaySiteId": 39881,
+      "siteDomain": "api.gemai.cc",
+      "siteName": "哈基米",
+      "detailSlug": "apigemaicc",
+      "rankPosition": 82,
+      "overallScore": 0,
+      "avgOnlineRate": null,
+      "avgLatencyS": null,
+      "latencySuspicious": false,
+      "modelCount": 176,
+      "rankedModelCount": 0,
+      "verificationType": "",
+      "siteDescription": "欢迎加入哈基米 (GemAI)！ 🔗 快速开始 ✅ 官网地址：https://api.gemai.cc ✅ API 端点：https://api.gemai.c",
+      "siteDescriptionHasMore": true,
+      "paymentMethods": "",
+      "domesticInvoiceSupport": "",
+      "refundSupport": "",
+      "reviewCount": 0,
+      "averageRating": null,
+      "voteUpCount": 0,
+      "voteDownCount": 0
+    }
+  ]
+}
