@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-21",
+  "added": [
+    {
+      "relaySiteId": 40323,
+      "siteDomain": "https://api.tmlab.store/pricing",
+      "siteName": "Z-API",
+      "detailSlug": "apitmlabstore",
+      "rankPosition": 71,
+      "overallScore": 0,
+      "avgOnlineRate": 90.6,
+      "avgLatencyS": 7.05,
+      "latencySuspicious": false,
+      "modelCount": 5,
+      "rankedModelCount": 0,
+      "verificationType": "",
+      "siteDescription": "提供gpt-image2,nano-banana-pro,seedance2等低价、优质的图片、视频模型，seedance-2.0低至3毛每秒",
+      "siteDescriptionHasMore": false,
+      "paymentMethods": "alipay",
+      "domesticInvoiceSupport": "no",
+      "refundSupport": "yes",
+      "reviewCount": 0,
+      "averageRating": null,
+      "voteUpCount": 0,
+      "voteDownCount": 0
+    }
+  ],
+  "removed": [
+    {
+      "relaySiteId": 40323,
+      "siteDomain": "api.tmlab.store",
+      "siteName": "Z-API",
+      "detailSlug": "apitmlabstore",
+      "rankPosition": 70,
+      "overallScore": 0,
+      "avgOnlineRate": 90.6,
+      "avgLatencyS": 6.85,
+      "latencySuspicious": false,
+      "modelCount": 5,
+      "rankedModelCount": 0,
+      "verificationType": "",
+      "siteDescription": "提供gpt-image2,nano-banana-pro,seedance2等低价、优质的图片、视频模型，seedance-2.0低至3毛每秒",
+      "siteDescriptionHasMore": false,
+      "paymentMethods": "alipay",
+      "domesticInvoiceSupport": "no",
+      "refundSupport": "yes",
+      "reviewCount": 0,
+      "averageRating": null,
+      "voteUpCount": 0,
+      "voteDownCount": 0
+    }
+  ]
+}
