@@ -261,3 +261,21 @@ Call log:
 Call log:
   - navigating to ""https://ai-szzx.online/"", waiting until ""domcontentloaded""
 "
+2026-06-22T06:17:51Z,dataeyes.ai,DataEyes AI,https://www.dataeyes.ai/,"Page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+"
+2026-06-22T06:17:51Z,api.sbbbbbbbbb.xyz,Neco Api,https://api.sbbbbbbbbb.xyz/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://api.sbbbbbbbbb.xyz/"", waiting until ""domcontentloaded""
+"
+2026-06-22T06:17:51Z,allinai7.cloud,Allin-AI,https://allinai7.cloud/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://allinai7.cloud/
+Call log:
+  - navigating to ""https://allinai7.cloud/"", waiting until ""domcontentloaded""
+"
+2026-06-22T06:17:51Z,ai-szzx.online,数智AI,https://ai-szzx.online/,"Page.goto: net::ERR_CERT_DATE_INVALID at https://ai-szzx.online/
+Call log:
+  - navigating to ""https://ai-szzx.online/"", waiting until ""domcontentloaded""
+"
