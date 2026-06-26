@@ -1,4 +1,4 @@
 ﻿domain,platform_name,综合判断,检测次数,各状态明细,最近状态,最近检测时间,最终URL,备注
-boya.one,伯牙中转,UNCERTAIN,89,HTTP_ERROR×89,HTTP_ERROR,2026-06-26T14:12:53Z,,请用国内网络手动验证
-shitang359.space,元气食堂API,UNCERTAIN,89,"HTTP_404×15, HTTP_ERROR×74",HTTP_ERROR,2026-06-26T14:13:11Z,,请用国内网络手动验证
-yuedongapi.top,yuedongapi.top,UNCERTAIN,19,TIMEOUT×19,TIMEOUT,2026-06-26T14:13:12Z,,请用国内网络手动验证
+boya.one,伯牙中转,UNCERTAIN,90,HTTP_ERROR×90,HTTP_ERROR,2026-06-26T19:41:26Z,,请用国内网络手动验证
+shitang359.space,元气食堂API,UNCERTAIN,90,"HTTP_404×15, HTTP_ERROR×75",HTTP_ERROR,2026-06-26T19:41:39Z,,请用国内网络手动验证
+yuedongapi.top,yuedongapi.top,UNCERTAIN,20,TIMEOUT×20,TIMEOUT,2026-06-26T19:41:40Z,,请用国内网络手动验证
