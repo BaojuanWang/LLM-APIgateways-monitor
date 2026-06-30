@@ -1,7 +1,5 @@
 name: Domain Enrichment
 on:
-  schedule:
-    - cron: '30 6 * * *'
   workflow_dispatch:
 jobs:
   enrich:
