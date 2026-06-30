@@ -531,3 +531,17 @@ Call log:
 Call log:
   - navigating to ""https://ai-szzx.online/"", waiting until ""domcontentloaded""
 "
+2026-06-30T15:23:05Z,api.aijws.com,我的贾维斯,https://api.aijws.com/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://api.aijws.com/"", waiting until ""domcontentloaded""
+"
+2026-06-30T15:23:05Z,dataeyes.ai,DataEyes AI,https://www.dataeyes.ai/,"Page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+"
+2026-06-30T15:23:05Z,ai-szzx.online,数智AI,https://ai-szzx.online/,"Page.goto: net::ERR_CERT_DATE_INVALID at https://ai-szzx.online/
+Call log:
+  - navigating to ""https://ai-szzx.online/"", waiting until ""domcontentloaded""
+"
