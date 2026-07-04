@@ -627,3 +627,21 @@ Call log:
 Call log:
   - navigating to ""https://ai-szzx.online/"", waiting until ""domcontentloaded""
 "
+2026-07-04T14:23:08Z,dataeyes.ai,DataEyes AI,https://www.dataeyes.ai/,"Page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+"
+2026-07-04T14:23:08Z,ai-szzx.online,数智AI,https://ai-szzx.online/,"Page.goto: net::ERR_CERT_DATE_INVALID at https://ai-szzx.online/
+Call log:
+  - navigating to ""https://ai-szzx.online/"", waiting until ""domcontentloaded""
+"
+2026-07-04T14:23:08Z,api.feng.cx,Feng AI,https://www.api.feng.cx/,"Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://www.api.feng.cx/
+Call log:
+  - navigating to ""https://www.api.feng.cx/"", waiting until ""domcontentloaded""
+"
+2026-07-04T14:23:08Z,api.satuo66.online,SaTuoAPI,https://api.satuo66.online/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://api.satuo66.online/"", waiting until ""domcontentloaded""
+"
