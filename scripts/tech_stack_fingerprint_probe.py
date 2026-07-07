@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import csv
 import re
+import socket
 import ssl
 import sys
 import time
@@ -52,7 +53,13 @@ APP_PATTERNS = [
     ("super-api", "one-api-family", "body", re.compile(r"\bsuper[-_ ]?api\b", re.I), "medium"),
     ("neo-api", "one-api-family", "body", re.compile(r"\bneo[-_ ]?api\b", re.I), "medium"),
     ("sub2api", "subscription-to-api", "body", re.compile(r"\bsub2api\b|Subscription to API Conversion Platform", re.I), "high"),
-    ("sub2api", "subscription-to-api", "body", re.compile(r"subscription\s+to\s+api|订阅.*api|api.*订阅", re.I), "medium"),
+    (
+        "sub2api",
+        "subscription-to-api",
+        "body",
+        re.compile(r"subscription\s+to\s+api|订阅.{0,24}(转|转换).{0,24}api|api.{0,24}(转|转换).{0,24}订阅|订阅.{0,24}api\s*key", re.I),
+        "medium",
+    ),
     ("auth2api", "oauth-to-api", "body", re.compile(r"\bauth2api\b|OAuth\s+to\s+API|Claude/Codex OAuth", re.I), "high"),
     ("cliproxyapi", "cli-proxy-api", "body", re.compile(r"\bcliproxyapi\b|\bcli[-_ ]?proxy[-_ ]?api\b", re.I), "high"),
     ("all-api-hub", "aggregator", "body", re.compile(r"\ball[-_ ]?api[-_ ]?hub\b", re.I), "high"),
@@ -202,7 +209,9 @@ def fetch_url(url: str, timeout: float, context: ssl.SSLContext) -> FetchResult:
             body=body,
             error=f"HTTPError:{exc.code}",
         )
-    except (URLError, TimeoutError, ssl.SSLError) as exc:
+    except (URLError, TimeoutError, socket.timeout, ssl.SSLError) as exc:
+        return FetchResult(url=url, error=type(exc).__name__ + ":" + str(exc))
+    except Exception as exc:
         return FetchResult(url=url, error=type(exc).__name__ + ":" + str(exc))
 
 
