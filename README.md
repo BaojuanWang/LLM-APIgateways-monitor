@@ -84,8 +84,7 @@ manual, 米醋API, www.micuapi.ai, ..., 2026-06-23 手动加入...
 ## 技术栈指纹检测
 `tech_stack_fingerprint_probe.py` 用于补充 `manual_sites.csv` 里较粗的 `tech_stack` 字段。它默认读取：
 ```
-data/hvoy_latest.csv
-数据 + data/manual_sites.csv
+data/hvoy_latest.csv + data/manual_sites.csv
 ```
 合并去重后探测每个站点的首页、登录页和少量无需登录的 API 路径：
 ```
