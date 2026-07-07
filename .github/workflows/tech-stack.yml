@@ -1,0 +1,54 @@
+name: Tech Stack Fingerprint Probe
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Limit number of sites to probe; 0 means all merged hvoy/manual sites"
+        required: false
+        default: "0"
+      timeout:
+        description: "Per-request timeout in seconds"
+        required: false
+        default: "12"
+      sleep:
+        description: "Delay between sites in seconds"
+        required: false
+        default: "0.2"
+      paths:
+        description: "Comma-separated probe paths"
+        required: false
+        default: "/,/login,/api/status,/api/pricing,/v1/models,/api/models"
+
+permissions:
+  contents: write
+
+jobs:
+  tech-stack:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Self-test classifier
+        run: python scripts/tech_stack_fingerprint_probe.py --self-test
+
+      - name: Probe tech stack fingerprints
+        run: |
+          python scripts/tech_stack_fingerprint_probe.py \
+            --limit "${{ inputs.limit }}" \
+            --timeout "${{ inputs.timeout }}" \
+            --sleep "${{ inputs.sleep }}" \
+            --paths "${{ inputs.paths }}"
+
+      - name: Commit and push results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add results/tech_stack_fingerprints.csv
+          git diff --staged --quiet || (git commit -m "tech-stack: $(date -u '+%Y-%m-%d %H:%M') UTC" && git pull --rebase origin main && git push)
