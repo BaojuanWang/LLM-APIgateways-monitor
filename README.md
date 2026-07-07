@@ -16,6 +16,7 @@ llm-relay-monitor/
 ├── .github/workflows/
 │   ├── monitor.yml                 ← 定时检测站点存活，不再自动抓 hvoy
 │   ├── screenshot.yml              ← 定时/手动截图
+│   ├── tech-stack.yml              ← 手动触发技术栈指纹检测
 │   └── enrich.yml                  ← 域名补充信息
 ├── data/
 │   ├── manual_sites.csv            ← 手动收集平台（你自己维护）
@@ -26,8 +27,11 @@ llm-relay-monitor/
 │   │   └── hvoy_resources_site_summary_2026-06-23.csv
 │   ├── manual_screenshots/         ← 手动截图证据
 │   └── screenshots/                ← 自动截图
+├── docs/
+│   └── tech_stack_fingerprints.md  ← 技术栈识别口径、指纹和偏差说明
 ├── results/
 │   ├── monitor_results.csv         ← 所有检测结果（追加写入）
+│   ├── tech_stack_fingerprints.csv ← 技术栈指纹检测结果（手动 workflow 覆盖）
 │   ├── summary_*.xlsx              ← 综合汇总报告
 │   ├── latest_status.svg           ← 最新状态图（覆盖）
 │   └── daily_status_*.svg          ← 每日状态图归档
@@ -35,7 +39,8 @@ llm-relay-monitor/
     ├── pipeline.py                 ← 检测平台存活
     ├── summarize.py                ← 生成汇总报告和状态图
     ├── hvoy_tracker.py             ← 旧 hvoy 抓取脚本，保留但 monitor 不再调用
-    └── model_price_probe.py        ← 模型价格/资源探测实验脚本
+    ├── model_price_probe.py        ← 模型价格/资源探测实验脚本
+    └── tech_stack_fingerprint_probe.py ← 技术栈/反代层指纹探测
 ```
 
 ---
@@ -47,6 +52,7 @@ llm-relay-monitor/
 | hvoy.ai model/resource 榜单 | `data/hvoy_resources/` | 手动提供页面 HTML 后导入 |
 | 淘宝/小红书/外部线索 | `data/manual_sites.csv` | 手动追加 |
 | 自动存活检测 | `results/monitor_results.csv` | GitHub Actions 定时追加 |
+| 技术栈指纹检测 | `results/tech_stack_fingerprints.csv` | 手动触发 `tech-stack.yml` |
 | 自动/手动截图 | `data/screenshots/`, `data/manual_screenshots/` | 自动截图加人工补充 |
 
 ### 2026-06-23 手动更新记录
@@ -72,6 +78,64 @@ manual, 米醋API, www.micuapi.ai, ..., 2026-06-23 手动加入...
 3. GitHub Actions 将 `data/` 和 `results/` 的变化 commit 回仓库。
 
 注意：因为 hvoy.ai 已经对 GitHub Actions 请求返回 403，`monitor.yml` 已经移除自动抓取 hvoy 的步骤。后续 hvoy 站点/资源数据通过手动打开页面、复制页面源，再导入仓库。
+
+---
+
+## 技术栈指纹检测
+`tech_stack_fingerprint_probe.py` 用于补充 `manual_sites.csv` 里较粗的 `tech_stack` 字段。它默认读取：
+```
+data/hvoy_latest.csv
+数据 + data/manual_sites.csv
+```
+合并去重后探测每个站点的首页、登录页和少量无需登录的 API 路径：
+```
+/
+/login
+/api/status
+/api/pricing
+/v1/models
+/api/models
+```
+输出：
+```
+results/tech_stack_fingerprints.csv
+```
+
+本地运行：
+```bash
+python3 scripts/tech_stack_fingerprint_probe.py
+```
+
+小样本 smoke test：
+```bash
+python3 scripts/tech_stack_fingerprint_probe.py --limit 10
+```
+
+GitHub Actions 手动运行：
+- Actions → `Tech Stack Fingerprint Probe` → `Run workflow`
+- `limit=0` 表示跑全部合并站点。
+
+### 当前识别类别
+应用层中转/聚合实现：
+- `one-api`
+- `new-api`
+- `veloera`
+- `one-hub` / `done-hub`
+- `voapi`
+- `shell-api`
+- `super-api`
+- `neo-api`
+- `sub2api`
+- `auth2api`
+- `cliproxyapi`
+- `xxx2api`
+- `all-api-hub` / `metapi`
+
+基础设施层信号：
+- `cloudflare`
+- `nginx`
+
+注意：`Cloudflare`/`Nginx` 只说明前面有 CDN/WAF/反代层，不能当成应用层中转软件。技术栈识别是证据优先的 best-effort 分类：`unknown`、`cloudflare-only`、`nginx-only` 很可能包含白标或魔改实现。指纹覆盖不全会系统性低估 `sub2api`、`one-api` 等非 NewAPI 实现，方法学说明见 `docs/tech_stack_fingerprints.md`。
 
 ---
 
@@ -137,6 +201,7 @@ data/manual_screenshots/YYYY-MM-DD/
 - 最新状态图：`results/latest_status.svg`
 - 每日状态图归档：`results/daily_status_*.svg`
 - Hvoy 资源汇总：`data/hvoy_resources/`
+- 技术栈指纹：`results/tech_stack_fingerprints.csv`
 
 ---
 
@@ -144,3 +209,4 @@ data/manual_screenshots/YYYY-MM-DD/
 - [ ] 持续核实外部线索和 hvoy 之外的新站点。
 - [ ] 区分“同团队换域名/改名”和真正的新平台。
 - [ ] 数据积累后分析存活率、Cloudflare 阻断率、资源/价格覆盖差异。
+- [ ] 用人工复核样本持续扩充技术栈指纹，降低 NewAPI 识别偏差。
