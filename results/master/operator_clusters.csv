@@ -1,14 +1,13 @@
 ﻿site_key,operator_id,cluster_size,merge_basis
-anyroute.io,anyroute.io,2,ip=['172.83.152.193']
-huanapi.com,anyroute.io,2,ip=['172.83.152.193']
+anyroute.io,anyroute.io,3,ip=['192.238.249.142']
+clauqe.ai,anyroute.io,3,ip=['192.238.249.142']
+dragoncode.codes,anyroute.io,3,ip=['192.238.249.142']
 ccfly.codes,ccfly.codes,2,ip=['69.63.217.215']
 ccplus.site,ccfly.codes,2,ip=['69.63.217.215']
 chatopens.vip,chatopens.vip,2,favicon=['f37ba1638b5f']
 hk.cn,chatopens.vip,2,favicon=['f37ba1638b5f']
 dataeyes.ai,dataeyes.ai,2,favicon=['b9a31d3949b1']
 newcli.com,dataeyes.ai,2,favicon=['b9a31d3949b1']
-dawclaudecode.com,dawclaudecode.com,2,ip=['154.219.121.55']
-sbbbbbbbbb.xyz,dawclaudecode.com,2,ip=['154.219.121.55']
 huiyun.asia,huiyun.asia,2,favicon=['2c5d4ccd6d1b']
 juxingai.top,huiyun.asia,2,favicon=['2c5d4ccd6d1b']
 050602.xyz,050602.xyz,1,
@@ -73,7 +72,6 @@ claude-api.org,claude-api.org,1,
 claudeagent.com.cn,claudeagent.com.cn,1,
 claudeapi.com,claudeapi.com,1,
 claudecn.top,claudecn.top,1,
-clauqe.ai,clauqe.ai,1,
 clawopen.top,clawopen.top,1,
 codefwd.top,codefwd.top,1,
 coderelay.cn,coderelay.cn,1,
@@ -89,13 +87,13 @@ daidaibird.top,daidaibird.top,1,
 dakeai.cc,dakeai.cc,1,
 daodunapi.com,daodunapi.com,1,
 dasuapi.com,dasuapi.com,1,
+dawclaudecode.com,dawclaudecode.com,1,
 ddshub.cc,ddshub.cc,1,
 deepask.chat,deepask.chat,1,
 derouter.ai,derouter.ai,1,
 discordtool.vip,discordtool.vip,1,
 dogenet.win,dogenet.win,1,
 dongli.work,dongli.work,1,
-dragoncode.codes,dragoncode.codes,1,
 duckcode.cn,duckcode.cn,1,
 duckcoding.ai,duckcoding.ai,1,
 dzzi.ai,dzzi.ai,1,
@@ -134,6 +132,7 @@ hhnto.top,hhnto.top,1,
 hiapi.store,hiapi.store,1,
 hohoapi.com,hohoapi.com,1,
 hslife.fun,hslife.fun,1,
+huanapi.com,huanapi.com,1,
 huiliuapi.com,huiliuapi.com,1,
 hvoy_removed,hvoy_removed,1,
 iacc.cc,iacc.cc,1,
@@ -210,6 +209,7 @@ runapi.co,runapi.co,1,
 sadai.top,sadai.top,1,
 safeapi.vip,safeapi.vip,1,
 satuo66.online,satuo66.online,1,
+sbbbbbbbbb.xyz,sbbbbbbbbb.xyz,1,
 schyler.top,schyler.top,1,
 sevnx.one,sevnx.one,1,
 shitang359.space,shitang359.space,1,

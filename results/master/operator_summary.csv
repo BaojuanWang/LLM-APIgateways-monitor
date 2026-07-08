@@ -1,9 +1,9 @@
 metric,value
 total_domains,292
 distinct_operators,286
-multi_site_operators,6
-singletons,280
-largest_operator_domains,2
+multi_site_operators,5
+singletons,281
+largest_operator_domains,3
 compression_ratio,1.02
 hhi_fraction,0.0036
 hhi_index_10000,36
