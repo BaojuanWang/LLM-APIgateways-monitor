@@ -183,9 +183,19 @@ def build_operators(sites, max_share, verbose=True):
             for other in members[1:]:
                 dsu.union(members[0], other, label, value)
 
-    # ── STRONG: certificate fingerprint + SAN (unfiltered up to a safety cap) ─
-    apply_edges("cert_fp", _value_to_sites(sites, "cert_fp"), CERT_MAX_SHARE, "cert_fp")
-    apply_edges("cert_san", _value_to_sites(sites, "cert_san", _san_tokens), CERT_MAX_SHARE, "cert_san")
+    # CDN-fronted sites present the CDN's certificate (e.g. Cloudflare Universal
+    # SSL bundles many unrelated customer domains on one shared cert + SAN), so
+    # they must be excluded from cert edges — the same failure mode as CDN edge
+    # IPs. A dedicated-cert operator behind a CDN loses the cert tie here, which
+    # is the conservative side to err on ("prefer dispersion over wrong merges").
+    cloud_sites = _cloud_fronted_sites(sites)
+    if verbose and cloud_sites:
+        print(f"  excluded {len(cloud_sites)} CDN-fronted site(s) from cert + IP edges "
+              f"(shared CDN cert/edge IP is not an operator tie)")
+
+    # ── STRONG: certificate fingerprint + SAN (direct-origin sites only) ─────
+    apply_edges("cert_fp", _value_to_sites(sites, "cert_fp", exclude=cloud_sites), CERT_MAX_SHARE, "cert_fp")
+    apply_edges("cert_san", _value_to_sites(sites, "cert_san", _san_tokens, exclude=cloud_sites), CERT_MAX_SHARE, "cert_san")
 
     # ── MEDIUM: favicon (drop the auto-detected default), IP, contacts ───────
     favicon_idx = _value_to_sites(sites, "favicon")
@@ -199,11 +209,7 @@ def build_operators(sites, max_share, verbose=True):
                 generic_favicons.add(v)
     favicon_idx = {v: m for v, m in favicon_idx.items() if v not in generic_favicons}
     apply_edges("favicon", favicon_idx, max_share, "favicon")
-    # IP edges only for direct-origin sites; CDN-fronted IPs are shared edges.
-    cloud_sites = _cloud_fronted_sites(sites)
-    if verbose and cloud_sites:
-        print(f"  excluded {len(cloud_sites)} CDN-fronted site(s) from IP edges "
-              f"(their IP is a shared CDN edge, not an origin)")
+    # IP edges only for direct-origin sites (cloud_sites excluded above).
     apply_edges("ip", _value_to_sites(sites, "ip", exclude=cloud_sites), max_share, "ip")
     for ctype in ("telegram", "qq", "wechat", "discord"):
         apply_edges(ctype, _value_to_sites(sites, ctype), CONTACT_MAX_SHARE, ctype)
@@ -247,13 +253,58 @@ def hhi(sizes, total):
     return frac, frac * 10000
 
 
+def self_test() -> None:
+    """Verify cert edges + the CDN-cert guardrail on controlled synthetic data.
+
+    Certs cannot be collected in a TLS-intercepting sandbox (the proxy re-signs
+    every host), so this fixture stands in for a real enrich pass to prove the
+    matching logic before real data lands.
+    """
+    def site(**kw):
+        base = {k: [] for k in SIG_SUFFIXES}
+        for k, v in kw.items():
+            base[k] = v if isinstance(v, list) else [v]
+        return base
+
+    sites = {
+        # Operator A — two direct-origin domains on the SAME certificate.
+        "a1.com": site(cert_fp="FP_A", cert_san="a1.com;a2.com", asn="AS111 Real Hosting"),
+        "a2.com": site(cert_fp="FP_A", cert_san="a1.com;a2.com", asn="AS111 Real Hosting"),
+        # Operator B — linked only by a shared SAN entry (no fp overlap).
+        "b1.net": site(cert_san="b1.net;b2.net", asn="AS222 Real Hosting"),
+        "b2.net": site(cert_san="b1.net;b2.net", asn="AS222 Real Hosting"),
+        # Two UNRELATED Cloudflare sites on a shared CF Universal-SSL cert
+        # (same fp + shared SAN). Must NOT merge — CF is excluded from cert edges.
+        "cf1.com": site(cert_fp="FP_CF", cert_san="cf1.com;cf2.com;stranger.org", asn="AS13335 Cloudflare, Inc."),
+        "cf2.com": site(cert_fp="FP_CF", cert_san="cf1.com;cf2.com;stranger.org", asn="AS13335 Cloudflare, Inc."),
+        # A lone site.
+        "solo.io": site(asn="AS333 Real Hosting"),
+    }
+    operators, dsu = build_operators(sites, DEFAULT_MAX_SHARE, verbose=False)
+    op_of = {m: op for op, members in operators.items() for m in members}
+
+    assert op_of["a1.com"] == op_of["a2.com"], "cert fingerprint should merge A"
+    assert op_of["b1.net"] == op_of["b2.net"], "shared SAN should merge B"
+    assert op_of["cf1.com"] != op_of["cf2.com"], "CF shared cert must NOT merge"
+    assert op_of["a1.com"] != op_of["b1.net"], "A and B are distinct operators"
+    assert len([m for m in operators if len(operators[m]) == 1]) == 3, "cf1, cf2, solo stay singletons"
+    print("self-test passed: cert edges merge direct-origin operators; "
+          "CDN-cert guardrail blocks Cloudflare false merges")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--self-test", action="store_true",
+                        help="Run the synthetic cert-matching verification and exit.")
     parser.add_argument("--master", default="results/master/master_table.csv")
     parser.add_argument("--out-dir", default="results/master")
     parser.add_argument("--max-share", type=int, default=DEFAULT_MAX_SHARE,
                         help="Drop a MEDIUM signal value shared by more than N sites.")
     args = parser.parse_args()
+
+    if args.self_test:
+        self_test()
+        return 0
 
     master_path = os.path.join(BASE_DIR, args.master)
     if not os.path.exists(master_path):
