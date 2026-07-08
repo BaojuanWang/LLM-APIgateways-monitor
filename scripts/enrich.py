@@ -42,7 +42,7 @@ HEADERS = {
 # ── 字段定义 ──────────────────────────────────────────────────
 STATIC_FIELDS = [
     "whois_reg_date", "whois_registrar", "whois_expiry_date",
-    "ssl_issuer", "ssl_org",
+    "ssl_issuer", "ssl_org", "ssl_san", "ssl_fingerprint",
 ]
 DYNAMIC_FIELDS = [
     "ip", "ip_country", "ip_city", "ip_asn", "ip_hosting",
@@ -107,13 +107,15 @@ def get_whois(domain):
 
 # ── SSL证书 ───────────────────────────────────────────────────
 def get_ssl(domain):
-    result = {k: "" for k in ["ssl_issuer", "ssl_org", "ssl_expiry"]}
+    result = {k: "" for k in
+              ["ssl_issuer", "ssl_org", "ssl_expiry", "ssl_san", "ssl_fingerprint"]}
     try:
         ctx = ssl.create_default_context()
         with ctx.wrap_socket(socket.socket(), server_hostname=domain) as s:
             s.settimeout(TIMEOUT)
             s.connect((domain, 443))
             cert = s.getpeercert()
+            der  = s.getpeercert(binary_form=True)   # DER bytes for fingerprint
         # 颁发机构
         issuer = dict(x[0] for x in cert.get("issuer", []))
         result["ssl_issuer"] = issuer.get("organizationName", "")[:80]
@@ -125,6 +127,12 @@ def get_ssl(domain):
         if exp:
             dt = datetime.strptime(exp, "%b %d %H:%M:%S %Y %Z")
             result["ssl_expiry"] = dt.strftime("%Y-%m-%d")
+        # SAN（同一张证书覆盖的所有域名）——运营者归并最硬的强信号
+        san = sorted({v for (k, v) in cert.get("subjectAltName", ()) if k == "DNS"})
+        result["ssl_san"] = ";".join(san[:20])
+        # 证书指纹（SHA-256 of DER）——同指纹≈同一张证书≈同源
+        if der:
+            result["ssl_fingerprint"] = hashlib.sha256(der).hexdigest()
     except Exception:
         pass
     return result
@@ -213,19 +221,25 @@ def main():
         rec = records[domain]
         is_new = domain not in existing
 
-        # ── 一次性字段（只查新域名）──
-        if is_new:
+        # ── 一次性字段：新域名首次查，或已有记录里该字段为空时回填/重试 ──
+        # （旧逻辑首次失败会被永久缓存成空、再不重试；这里改成"缺就补"，
+        #   同时让已有 292 行能回填新增的 ssl_san / ssl_fingerprint。）
+        need_whois = is_new or not rec.get("whois_reg_date")
+        need_ssl   = is_new or not rec.get("ssl_san")
+
+        if need_whois:
             print(f"  WHOIS...", end=" ", flush=True)
             rec.update(get_whois(domain))
             print(rec.get("whois_reg_date") or "无")
 
+        if need_ssl:
             print(f"  SSL(static)...", end=" ", flush=True)
             ssl_data = get_ssl(domain)
-            rec["ssl_issuer"] = ssl_data["ssl_issuer"]
-            rec["ssl_org"]    = ssl_data["ssl_org"]
-            rec["ssl_expiry"] = ssl_data["ssl_expiry"]
-            print(rec.get("ssl_issuer") or "无")
-        else:
+            for k in ("ssl_issuer", "ssl_org", "ssl_expiry", "ssl_san", "ssl_fingerprint"):
+                rec[k] = ssl_data[k]
+            print(rec.get("ssl_san") or rec.get("ssl_issuer") or "无")
+
+        if not need_whois and not need_ssl:
             print(f"  静态字段已有，跳过")
 
         # ── 定期字段（每次都查）──
@@ -237,10 +251,14 @@ def main():
         rec.update(get_http_headers(domain))
         print(rec.get("tech_stack") or "无")
 
-        # SSL过期时间每次更新
-        if not is_new:
+        # SSL过期时间每次刷新（未在上面查过 static 时补一次轻量查询）
+        if not need_ssl:
             ssl_data = get_ssl(domain)
             rec["ssl_expiry"] = ssl_data["ssl_expiry"]
+            # 指纹/SAN 若此前为空也顺手补上
+            if not rec.get("ssl_fingerprint") and ssl_data.get("ssl_fingerprint"):
+                rec["ssl_san"]         = ssl_data["ssl_san"]
+                rec["ssl_fingerprint"] = ssl_data["ssl_fingerprint"]
 
         rec["last_enriched"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
