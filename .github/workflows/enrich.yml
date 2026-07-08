@@ -1,6 +1,11 @@
 name: Domain Enrichment
 on:
   workflow_dispatch:
+    inputs:
+      full:
+        description: "Also run privacy + contacts (Step 2/3). Default: enrichment only."
+        type: boolean
+        default: false
 jobs:
   enrich:
     runs-on: ubuntu-latest
@@ -16,8 +21,10 @@ jobs:
       - name: Step 1 - Domain enrichment (WHOIS/IP/SSL/favicon)
         run: python scripts/enrich.py
       - name: Step 2 - Privacy policy analysis
+        if: ${{ inputs.full }}
         run: python scripts/privacy.py
       - name: Step 3 - Contact & affiliate detection
+        if: ${{ inputs.full }}
         run: python scripts/contacts.py
       - name: Commit and push results
         run: |
