@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="760" viewBox="0 0 1100 760">
 <rect x="0" y="0" width="1100" height="760" rx="0" fill="#F8FAFC" stroke="none" />
 <text x="60" y="32" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">LLM Relay Monitor - Status Overview</text>
-<text x="60" y="62" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#475569">Generated: 2026-07-07 19:51 | Latest data: 2026-07-07T19:49:44Z</text>
+<text x="60" y="62" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#475569">Generated: 2026-07-08 02:08 | Latest data: 2026-07-08T02:06:58Z</text>
 <rect x="60" y="92" width="300" height="110" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
 <text x="82" y="125" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#16A34A">ALIVE</text>
 <text x="82" y="165" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#0F172A">282</text>
@@ -25,17 +25,17 @@
 <rect x="70" y="272" width="680" height="34" rx="4" fill="none" stroke="#CBD5E1" />
 <text x="60" y="352" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">Latest check status distribution</text>
 <text x="70" y="400" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">ONLINE</text>
-<rect x="275" y="382" width="381" height="18" rx="4" fill="#16A34A" stroke="none" />
-<text x="666" y="397" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">259</text>
+<rect x="275" y="382" width="384" height="18" rx="4" fill="#16A34A" stroke="none" />
+<text x="669" y="397" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">261</text>
 <text x="70" y="430" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">CLOUDFLARE_OR_BLOCKED</text>
-<rect x="275" y="412" width="17" height="18" rx="4" fill="#22C55E" stroke="none" />
-<text x="302" y="427" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">12</text>
+<rect x="275" y="412" width="19" height="18" rx="4" fill="#22C55E" stroke="none" />
+<text x="304" y="427" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">13</text>
 <text x="70" y="460" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">DNS_FAIL</text>
-<rect x="275" y="442" width="16" height="18" rx="4" fill="#DC2626" stroke="none" />
-<text x="301" y="457" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">11</text>
+<rect x="275" y="442" width="14" height="18" rx="4" fill="#DC2626" stroke="none" />
+<text x="299" y="457" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">10</text>
 <text x="70" y="490" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">TIMEOUT</text>
-<rect x="275" y="472" width="8" height="18" rx="4" fill="#FBBF24" stroke="none" />
-<text x="293" y="487" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">6</text>
+<rect x="275" y="472" width="5" height="18" rx="4" fill="#FBBF24" stroke="none" />
+<text x="290" y="487" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">4</text>
 <text x="70" y="520" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">HTTP_ERROR</text>
 <rect x="275" y="502" width="2" height="18" rx="4" fill="#F59E0B" stroke="none" />
 <text x="287" y="517" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">2</text>
@@ -63,10 +63,10 @@
 <text x="812" y="640" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#64748B">UNCERTAIN: no confirmed good response yet.</text>
 <text x="812" y="660" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#64748B">DEAD: DNS fail, parked, or service stopped.</text>
 <text x="60" y="676" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">Recent status changes</text>
-<text x="70" y="706" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">ai.xem8k5.top: DNS_FAIL -&gt; CLOUDFLARE_OR_BLOCKED</text>
-<text x="70" y="728" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">linkapi.ai: ONLINE_LOGIN_REQUIRED -&gt; ONLINE</text>
-<text x="70" y="750" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">wangxiangai.org: TIMEOUT -&gt; ONLINE</text>
-<text x="70" y="772" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">yxaiapp.com: ONLINE -&gt; DNS_FAIL</text>
-<text x="70" y="794" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">claude.hk.cn: ONLINE -&gt; TIMEOUT</text>
-<text x="70" y="816" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">hemaapi.cc: ONLINE -&gt; TIMEOUT</text>
+<text x="70" y="706" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">claude.hk.cn: TIMEOUT -&gt; ONLINE</text>
+<text x="70" y="728" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">hemaapi.cc: TIMEOUT -&gt; ONLINE</text>
+<text x="70" y="750" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">modcon.top: ONLINE -&gt; CLOUDFLARE_OR_BLOCKED</text>
+<text x="70" y="772" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">traxnode.com: TIMEOUT -&gt; ONLINE</text>
+<text x="70" y="794" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">www.yooyai.cc: TIMEOUT -&gt; ONLINE</text>
+<text x="70" y="816" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">yxaiapp.com: DNS_FAIL -&gt; ONLINE</text>
 </svg>
