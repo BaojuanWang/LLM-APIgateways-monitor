@@ -1,0 +1,4 @@
+﻿domain,registrable_domain,already_in_seed,source_site,source_cert_fingerprint,san_entry,discovery_method
+aigptx.top,aigptx.top,no,x.dogenet.win,a453bec3bbfb77695ab8b2fc000e1a53ffd89b97d79c82451a5163aea8f498a5,www.aigptx.top,cert_san
+buzzai.top,buzzai.top,no,buzzai.cc,fc6867fa46358cda7d1cd25696c02b1fb74e73d003d98657b86c9b132d55d097,buzzai.top,cert_san
+nexaxis.io,nexaxis.io,no,nexaxis.ai,37c3de4f7ac97542024b64583e3329fe9753a67a68c155cd7449a9bfd4580c97,*.nexaxis.io,cert_san
