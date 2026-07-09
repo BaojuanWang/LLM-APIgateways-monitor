@@ -44,10 +44,10 @@
 | # | 信号 | 文献 / 出处 | 等级 |
 |---|------|-----------|------|
 | C1 | **favicon 哈希** | Solomos, Kristoff, Kanich, Polakis, *Tales of Favicons and Caches*, **NDSS 2021**(favicon 作稳定指纹);Shodan mmh3 favicon(归并/穿透 CDN 找源站) | ⭐ + ○ |
-| C2 | **TLS 证书指纹**(同证书=同源) | *Unsupervised Detection and Clustering of Malicious TLS Flows*(Wiley SCN 2023 / arXiv 2109.03878,用 leaf-cert 特征聚类);按相同 issuer/subject DN 追踪 22 台 Vidar 服务器 | ◆ + ○ |
-| C3 | **证书 SAN**(一张证书覆盖的所有域名) | *TLS Certificate and Domain Feature Analysis of Phishing Domains in the .dk Namespace*(arXiv)——显式用 **SAN overlaps + certificate reuse + graph clustering**;"high SAN count = 证书复用" | ◆ |
+| C2 | **TLS 证书指纹**(同证书=同源) | **Durumeric et al., *Analysis of the HTTPS Certificate Ecosystem*, IMC 2013**(Internet-wide 扫证书,按 issuer/SAN 分析);**VanderSloot et al., *Towards a Complete View of the Certificate Ecosystem*, IMC 2016**;*Unsupervised Detection and Clustering of Malicious TLS Flows*(SCN 2023);Vidar 22 台服务器靠相同 issuer DN 归并 | ⭐(IMC)+ ◆ |
+| C3 | **证书 SAN**(一张证书覆盖的所有域名) | **Durumeric et al., IMC 2013**(证书 SAN/subject 大规模分析);**VanderSloot et al., IMC 2016**;*TLS Certificate and Domain Feature Analysis of Phishing Domains in the .dk Namespace*(arXiv,显式用 **SAN overlaps + certificate reuse + graph clustering**) | ⭐(IMC)+ ◆ |
 | C4 | **ASN / 托管商**;并把 **ASN 作粗信号、CDN 后不可信** | ASN 是托管归属的标准信号但对 CDN 失效——Cloudflare 匿播共享 IP(Cloudflare 官方文档);实测 Cloudflare 占 AS-matched A records 的 40%;bot-detection 测量论文(arXiv 2606.14525) | ○ + ◆(**这条是我们 CDN 排除护栏的依据**) |
-| C5 | **WHOIS 注册日期(域龄)/ 注册商** | 域龄作恶意/新兴信号是成熟做法;**registrant clustering**(同注册邮箱/组织/电话归并)是"coordinated abuse 最可靠指标之一" | ○(广泛使用,建议配一篇具体 WHOIS-feature 论文) |
+| C5 | **WHOIS 注册日期(域龄)/ 注册商** | **Hao et al., *Understanding the Domain Registration Behavior of Spammers*, IMC 2013**;**Hao et al., *PREDATOR: ... Domain Abuse at Time-Of-Registration*, CCS 2016**(显式用 WHOIS 创建日期 + 注册商 + 注册时特征);registrant clustering 是 coordinated-abuse 可靠指标 | ⭐(IMC/CCS) |
 | C6 | IP GeoIP 国家/城市 | 标准 GeoIP,无需专引 | △ |
 
 **可写的话术**:favicon 作指纹信号见 NDSS'21;证书指纹 + SAN 作同源信号见恶意 TLS 聚类与 .dk 钓鱼证书分析(SAN overlaps + certificate reuse);ASN 我们**明确标注对 CDN 无效**(Cloudflare 共享匿播 IP),这是已知测量局限。
@@ -58,7 +58,7 @@
 
 | # | 我们做的 | 文献 / 出处 | 等级 |
 |---|---------|-----------|------|
-| D1 | **连通分量 / 并查集**把共享信号的域名归并成运营者簇 | *Co-Clustering Host-Domain Graphs to Discover Malware Infection*;ShadowSyndicate(靠**共享 SSH 指纹 + 复用托管**归并基础设施簇);"URLs in the same campaign component connected through shared IPs" + 层次聚类合并 | ○/◆(连通分量做共享基础设施归并是标准范式) |
+| D1 | **连通分量 / 并查集**把共享信号的域名归并成运营者簇 | **Konte, Perdisci, Feamster, *ASwatch: An AS Reputation System to Expose Bulletproof Hosting ASes*, SIGCOMM 2015**;**Chen et al. (Nadji, Perdisci, Antonakakis), *Practical Attacks Against Graph-based Clustering*, CCS 2017**(确认图聚类是恶意基础设施归并的标准手段);*Co-Clustering Host-Domain Graphs*;ShadowSyndicate 靠共享指纹+复用托管归并 | ⭐(SIGCOMM/CCS)+ ○ |
 | D2 | 归并边:**同证书指纹 / SAN 互含 / 同 favicon / 同 IP / 同联系方式** | 证书复用(C2/C3);favicon(C1);registrant/contact clustering(C5);同 IP 连接同一 campaign(D1 来源) | 见各信号行 |
 | D3 | **CDN 证书 / CDN IP 排除护栏**(CF Universal SSL 共享证书 + 匿播共享 IP 不参与归并) | Cloudflare 共享匿播 IP + 一张 Universal SSL 挂多客户域名(Cloudflare 文档;C3 的 "high SAN = reuse" 警示)——**不排除就会像共享 IP 一样错并** | ○ + ◆(我们的关键正确性护栏) |
 | D4 | **剔除默认 favicon**(one-api 图标 103 站共用) | favicon 是 "indicator, not proof",默认/共用图标会造成假聚类(Shodan/OSINT 实践共识) | ○ |
@@ -74,7 +74,7 @@
 
 | # | 我们做的 | 文献 / 出处 | 等级 |
 |---|---------|-----------|------|
-| E1 | 从证书 SAN 抽运营者**兄弟域名**当发现种子 | *Content-Agnostic Detection of Phishing Domains using Certificate Transparency and Passive DNS*(**RAID 2022**);*Using Certificate Transparency Logs for Target Reconnaissance*(**EuroS&P 2023**,UCSB);*Finding Phish in a Haystack: ... CT Logs*(arXiv 2106.12343)——CT/证书 SAN 记录全部签发主机名 → **域名/子域枚举**的标准手段 | ⭐(RAID/EuroS&P)+ ◆ |
+| E1 | 从证书 SAN 抽运营者**兄弟域名**当发现种子 | *Content-Agnostic Detection of Phishing Domains using Certificate Transparency and Passive DNS*(**RAID 2022**);*Using Certificate Transparency Logs for Target Reconnaissance*(**EuroS&P 2023**,UCSB);**Scheitle et al., *The Rise of Certificate Transparency and Its Implications on the Internet Ecosystem*, IMC 2018**(CT 暴露证书 DNS 名的含义);*Finding Phish in a Haystack*(arXiv 2106.12343)——CT/证书 SAN 记录全部签发主机名 → **域名/子域枚举**标准手段 | ⭐(RAID/EuroS&P/IMC)+ ◆ |
 | E2 | 排除 CDN / 共享证书的 SAN(apenft 那串) | 同 C4/D3(CF 共享证书 SAN 挂无关客户域名) | ○ + ◆ |
 | E3 | 证据链(来源站 + 证书指纹 + 原始 SAN) | 可复现/可审计原则;同 C2 的 issuer-DN 追踪范式 | △ |
 
@@ -117,3 +117,10 @@
 - Noroozian et al., Platforms in Everything (BPH), USENIX Sec 2019 — https://www.usenix.org/conference/usenixsecurity19/presentation/noroozian
 - Antonakakis et al., Understanding the Mirai Botnet, USENIX Sec 2017 — https://www.usenix.org/system/files/conference/usenixsecurity17/sec17-antonakakis.pdf
 - Santanna et al., Stress Testing the Booters, 2015 — https://arxiv.org/pdf/1508.03410
+- Durumeric, Kasten, Bailey, Halderman, Analysis of the HTTPS Certificate Ecosystem, IMC 2013 — https://conferences.sigcomm.org/imc/2013/papers/imc257-durumericAemb.pdf
+- VanderSloot, Amann, Bernhard, Durumeric, Bailey, Halderman, Towards a Complete View of the Certificate Ecosystem, IMC 2016 — https://experts.illinois.edu/en/publications/towards-a-complete-view-of-the-certificate-ecosystem/
+- Scheitle et al., The Rise of Certificate Transparency and Its Implications on the Internet Ecosystem, IMC 2018 — https://dl.acm.org/doi/10.1145/3278532.3278562
+- Hao, Thomas, Paxson, Feamster, Kreibich, Grier, Hollenbeck, Understanding the Domain Registration Behavior of Spammers, IMC 2013 — (ACM IMC 2013)
+- Hao, Kantchelian, Miller, Paxson, Feamster, PREDATOR: Proactive Recognition and Elimination of Domain Abuse at Time-Of-Registration, CCS 2016 — https://www.icir.org/vern/papers/predator-ccs16.pdf
+- Konte, Perdisci, Feamster, ASwatch: An AS Reputation System to Expose Bulletproof Hosting ASes, SIGCOMM 2015 — (ACM SIGCOMM 2015)
+- Chen, Nadji, Kountouras, Monrose, Perdisci, Antonakakis, Vasiloglou, Practical Attacks Against Graph-based Clustering, CCS 2017 — (ACM CCS 2017)
