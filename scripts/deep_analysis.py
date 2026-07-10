@@ -144,6 +144,17 @@ def main():
         if c in topc:
             sc[labels[r["site_key"]]["stack_family"]][c] += 1
 
+    # operations signals (populated after operations_probe.py has run)
+    ops_rows = [r for r in master if g(r, "ops__checked_pages")]
+    pay = Counter(); claims = Counter(); faka = 0
+    for r in ops_rows:
+        for t in g(r, "ops__payment_methods").split("|"):
+            if t: pay[t] += 1
+        for t in g(r, "ops__trust_claims").split("|"):
+            if t: claims[t] += 1
+        if g(r, "ops__has_faka") == "Y":
+            faka += 1
+
     # ---- render ----
     L = []
     L.append("# LLM 中转站生态 · 深度特征分析\n")
@@ -214,6 +225,13 @@ def main():
                  "本项目只统计可见性,不做模型身份核验(不在范围)。\n")
 
     L.append("## 9. 运营 / 商业模式信号(覆盖有限)\n")
+    if ops_rows:
+        L.append(f"_operations_probe 覆盖 {len(ops_rows)} 站_\n")
+        if pay:
+            L.append(table("支付 / 变现方式", pay, len(ops_rows), note="站点页面出现的支付/发卡渠道(可重叠)"))
+        if claims:
+            L.append(table("信任话术宣称", claims, len(ops_rows), note="营销宣称,非核实"))
+        L.append(f"- **发卡/卡密系统**:{faka}/{len(ops_rows)}({100*faka/len(ops_rows):.0f}%)\n")
     if aff_base:
         L.append(f"- **推广/代理页**:{aff}/{aff_base} 有({100*aff/aff_base:.0f}%)—— 分销返佣是主流获客(covered {aff_base} 站)。")
     if priv_base:
