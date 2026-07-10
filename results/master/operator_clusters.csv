@@ -1,40 +1,62 @@
 ﻿site_key,operator_id,cluster_size,merge_basis
-bdshmmkj3.cn,bdshmmkj3.cn,5,sitename=['aicost api']
-daikuankm.cn,bdshmmkj3.cn,5,sitename=['aicost api']
-oogaming.cn,bdshmmkj3.cn,5,sitename=['aicost api']
-racetozero.org.cn,bdshmmkj3.cn,5,sitename=['aicost api']
-zc-s.org.cn,bdshmmkj3.cn,5,sitename=['aicost api']
+ablai.top,ablai.top,6,favicon=['4214f2244b29']; ip=['64.32.23.99']; sitename=['柏拉图ai']
+bltcy.ai,ablai.top,6,favicon=['4214f2244b29']; ip=['64.32.23.99']; sitename=['柏拉图ai']
+bltcy.top,ablai.top,6,favicon=['4214f2244b29']; ip=['64.32.23.99']; sitename=['柏拉图ai']
+geekai.pro,ablai.top,6,favicon=['4214f2244b29']; ip=['64.32.23.99']; sitename=['柏拉图ai']
+linkapi.org,ablai.top,6,favicon=['4214f2244b29']; ip=['64.32.23.99']; sitename=['柏拉图ai']
+whatai.cc,ablai.top,6,favicon=['4214f2244b29']; ip=['64.32.23.99']; sitename=['柏拉图ai']
+africarouter.ai,africarouter.ai,5,favicon=['c30c7d42707a']
+easy-token.com,africarouter.ai,5,favicon=['c30c7d42707a']
+ocoolai.com,africarouter.ai,5,favicon=['c30c7d42707a']
+therouter.ai,africarouter.ai,5,favicon=['c30c7d42707a']
+threadzy.ai,africarouter.ai,5,favicon=['c30c7d42707a']
+bdshmmkj3.cn,bdshmmkj3.cn,5,ip=['172.83.153.31']; sitename=['aicost api']
+daikuankm.cn,bdshmmkj3.cn,5,ip=['172.83.153.31']; sitename=['aicost api']
+oogaming.cn,bdshmmkj3.cn,5,ip=['172.83.153.31']; sitename=['aicost api']
+racetozero.org.cn,bdshmmkj3.cn,5,ip=['172.83.153.31']; sitename=['aicost api']
+zc-s.org.cn,bdshmmkj3.cn,5,ip=['172.83.153.31']; sitename=['aicost api']
+ai-gaochao.cn,ai-gaochao.cn,4,"favicon=['2aeb552a8ba7']; ip=['43.169.13.10', '43.169.14.10']; sitename=['数标标api']"
+openai-hub.com,ai-gaochao.cn,4,"favicon=['2aeb552a8ba7']; ip=['43.169.13.10', '43.169.14.10']; sitename=['数标标api']"
+orcarouter.ai,ai-gaochao.cn,4,"favicon=['2aeb552a8ba7']; ip=['43.169.13.10', '43.169.14.10']; sitename=['数标标api']"
+shubiaobiao.cn,ai-gaochao.cn,4,"favicon=['2aeb552a8ba7']; ip=['43.169.13.10', '43.169.14.10']; sitename=['数标标api']"
+147ai.cn,147ai.cn,3,ip=['157.185.163.113']; sitename=['147 ai']
+147ai.com,147ai.cn,3,ip=['157.185.163.113']; sitename=['147 ai']
+580ai.net,147ai.cn,3,ip=['157.185.163.113']; sitename=['147 ai']
 a8.hk,a8.hk,3,sitename=['便携ai聚合api']
 bianxie.ai,a8.hk,3,sitename=['便携ai聚合api']
 bianxieai.com,a8.hk,3,sitename=['便携ai聚合api']
-ainstant.pro,ainstant.pro,3,sitename=['快稳稳 api']
-kuaiwenwen.top,ainstant.pro,3,sitename=['快稳稳 api']
-kwwai.top,ainstant.pro,3,sitename=['快稳稳 api']
-anyroute.io,anyroute.io,3,ip=['192.238.249.142']
-clauqe.ai,anyroute.io,3,ip=['192.238.249.142']
-dragoncode.codes,anyroute.io,3,ip=['192.238.249.142']
+aigc456.top,aigc456.top,3,ip=['154.21.93.129']; sitename=['钱多多 api']
+aigcbest.top,aigc456.top,3,ip=['154.21.93.129']; sitename=['钱多多 api']
+ifopen.ai,aigc456.top,3,ip=['154.21.93.129']; sitename=['钱多多 api']
+ainstant.pro,ainstant.pro,3,ip=['154.44.9.242']; sitename=['快稳稳 api']
+kuaiwenwen.top,ainstant.pro,3,ip=['154.44.9.242']; sitename=['快稳稳 api']
+kwwai.top,ainstant.pro,3,ip=['154.44.9.242']; sitename=['快稳稳 api']
 buzz7.top,buzz7.top,3,sitename=['buzz · ai']
 buzzai.cc,buzz7.top,3,sitename=['buzz · ai']
 buzzai.top,buzz7.top,3,sitename=['buzz · ai']
-ephone.ai,ephone.ai,3,sitename=['ephone ai']
-ephone.chat,ephone.ai,3,sitename=['ephone ai']
-innk.cc,ephone.ai,3,sitename=['ephone ai']
+ephone.ai,ephone.ai,3,favicon=['67a3ef99e381']; sitename=['ephone ai']
+ephone.chat,ephone.ai,3,favicon=['67a3ef99e381']; sitename=['ephone ai']
+innk.cc,ephone.ai,3,favicon=['67a3ef99e381']; sitename=['ephone ai']
+hcnote.cn,hcnote.cn,3,ip=['163.181.214.1']
+joyzhi.com,hcnote.cn,3,ip=['163.181.214.1']
+littlesheep.cc,hcnote.cn,3,ip=['163.181.214.1']
 onechats.ai,onechats.ai,3,sitename=['onechat api']
 onechats.cn,onechats.ai,3,sitename=['onechat api']
 onechats.top,onechats.ai,3,sitename=['onechat api']
 poloai.top,poloai.top,3,sitename=['poloapi']
 poloapi.com,poloai.top,3,sitename=['poloapi']
 poloapi.top,poloai.top,3,sitename=['poloapi']
-147ai.cn,147ai.cn,2,sitename=['147 ai']
-147ai.com,147ai.cn,2,sitename=['147 ai']
-4sapi.com,4sapi.com,2,sitename=['4sapi']
-4sapi.net,4sapi.com,2,sitename=['4sapi']
-ai-gaochao.cn,ai-gaochao.cn,2,sitename=['数标标api']
-shubiaobiao.cn,ai-gaochao.cn,2,sitename=['数标标api']
+satuo66.online,satuo66.online,3,ip=['221.204.163.72']; sitename=['小鲸 ai 开放平台']
+x-see.cn,satuo66.online,3,ip=['221.204.163.72']; sitename=['小鲸 ai 开放平台']
+xiaojingai.com,satuo66.online,3,ip=['221.204.163.72']; sitename=['小鲸 ai 开放平台']
+4sapi.com,4sapi.com,2,"cert_fp=['af0c1f4884ac72561455a4c01e6b69d306837a6b0a82419ed73a0d93cf9c9994']; cert_san=['4sapi.club', '4sapi.com']; ip=['154.17.20.134']; sitename=['4sapi']"
+4sapi.net,4sapi.com,2,"cert_fp=['af0c1f4884ac72561455a4c01e6b69d306837a6b0a82419ed73a0d93cf9c9994']; cert_san=['4sapi.club', '4sapi.com']; ip=['154.17.20.134']; sitename=['4sapi']"
 ai-szzx.online,ai-szzx.online,2,sitename=['数智ai']
 xpluse.plus,ai-szzx.online,2,sitename=['数智ai']
-aigc456.top,aigc456.top,2,sitename=['钱多多 api']
-ifopen.ai,aigc456.top,2,sitename=['钱多多 api']
+ai-wave.org,ai-wave.org,2,favicon=['9b33c57176e1']
+hybgzs.com,ai-wave.org,2,favicon=['9b33c57176e1']
+anyroute.io,anyroute.io,2,ip=['172.83.152.193']
+huanapi.com,anyroute.io,2,ip=['172.83.152.193']
 b886.top,b886.top,2,sitename=['cctq']
 cctq.ai,b886.top,2,sitename=['cctq']
 bbww.top,bbww.top,2,sitename=['旺旺中转站']
@@ -43,38 +65,46 @@ bearlab.ai,bearlab.ai,2,sitename=['pry api']
 crond.dev,bearlab.ai,2,sitename=['pry api']
 bjxrouter.com,bjxrouter.com,2,sitename=['北极星']
 bybing.cc,bjxrouter.com,2,sitename=['北极星']
-bltcy.ai,bltcy.ai,2,sitename=['柏拉图ai']
-bltcy.top,bltcy.ai,2,sitename=['柏拉图ai']
 ccfly.codes,ccfly.codes,2,ip=['69.63.217.215']; sitename=['ccfly']
 ccplus.site,ccfly.codes,2,ip=['69.63.217.215']; sitename=['ccfly']
 ccmax20.cc,ccmax20.cc,2,sitename=['baby']
 max20.cn,ccmax20.cc,2,sitename=['baby']
-chatopens.vip,chatopens.vip,2,favicon=['f37ba1638b5f']
-hk.cn,chatopens.vip,2,favicon=['f37ba1638b5f']
+ccode.dev,ccode.dev,2,ip=['23.147.52.12']
+monking.ai,ccode.dev,2,ip=['23.147.52.12']
 cherryin.ai,cherryin.ai,2,sitename=['cherryin']
 cherryin.net,cherryin.ai,2,sitename=['cherryin']
+claude-api.org,claude-api.org,2,favicon=['b085b6302e0c']
+voltapi.ai,claude-api.org,2,favicon=['b085b6302e0c']
+clauqe.ai,clauqe.ai,2,ip=['192.238.249.142']
+dragoncode.codes,clauqe.ai,2,ip=['192.238.249.142']
 cun.ai,cun.ai,2,sitename=['cun.ai']
 wintoken.dev,cun.ai,2,sitename=['cun.ai']
 dataeyes.ai,dataeyes.ai,2,favicon=['b9a31d3949b1']
 newcli.com,dataeyes.ai,2,favicon=['b9a31d3949b1']
+fastgpt.cn,fastgpt.cn,2,favicon=['2340bd772b87']
+fastgpt.io,fastgpt.cn,2,favicon=['2340bd772b87']
 fushengyunsuan.cn,fushengyunsuan.cn,2,sitename=['浮生云算']
 fushengyunsuan.com,fushengyunsuan.cn,2,sitename=['浮生云算']
 gpt.ge,gpt.ge,2,sitename=['v-api']
 vveai.com,gpt.ge,2,sitename=['v-api']
 hcnsec.cn,hcnsec.cn,2,sitename=['新疆幻城网安科技公益大模型api']
 iamhc.cn,hcnsec.cn,2,sitename=['新疆幻城网安科技公益大模型api']
+huaci.ai,huaci.ai,2,ip=['45.78.78.39']
+huasuan.ai,huaci.ai,2,ip=['45.78.78.39']
 huiyun.asia,huiyun.asia,2,favicon=['2c5d4ccd6d1b']
 juxingai.top,huiyun.asia,2,favicon=['2c5d4ccd6d1b']
 jeniya.cn,jeniya.cn,2,sitename=['简易-api中转站-专业的ai大模型api接口中转站平台api供应商']
 jeniya.top,jeniya.cn,2,sitename=['简易-api中转站-专业的ai大模型api接口中转站平台api供应商']
+ominigate.ai,ominigate.ai,2,favicon=['2d5804a1edf6']
+ominigate.com,ominigate.ai,2,favicon=['2d5804a1edf6']
 paintbot.top,paintbot.top,2,sitename=['pro api']
 prorisehub.com,paintbot.top,2,sitename=['pro api']
 sudocode.chat,sudocode.chat,2,sitename=['sudocode']
 sudocode.us,sudocode.chat,2,sitename=['sudocode']
+teamolab.com,teamolab.com,2,favicon=['b0fbe282e69b']; ip=['43.159.107.179']
+teamorouter.com,teamolab.com,2,favicon=['b0fbe282e69b']; ip=['43.159.107.179']
 wlai.vip,wlai.vip,2,sitename=['云雾 api']
 yunwu.ai,wlai.vip,2,sitename=['云雾 api']
-x-see.cn,x-see.cn,2,sitename=['小鲸 ai 开放平台']
-xiaojingai.com,x-see.cn,2,sitename=['小鲸 ai 开放平台']
 yansd666.com,yansd666.com,2,sitename=['烟神殿ai']
 yansd666.top,yansd666.com,2,sitename=['烟神殿ai']
 zlapi.pro,zlapi.pro,2,sitename=['zzzzzll api 💕']
@@ -99,7 +129,6 @@ zlapi.vip,zlapi.pro,2,sitename=['zzzzzll api 💕']
 4zapi.com,4zapi.com,1,
 52ccl.cn,52ccl.cn,1,
 52mx.net,52mx.net,1,
-580ai.net,580ai.net,1,
 5cookie.cc,5cookie.cc,1,
 66ai.ai,66ai.ai,1,
 724codes.com,724codes.com,1,
@@ -121,12 +150,9 @@ aaatoken.cn,aaatoken.cn,1,
 aabao.vip,aabao.vip,1,
 abacus.ai,abacus.ai,1,
 abcrelay.com,abcrelay.com,1,
-ablai.top,ablai.top,1,
 affordableaiapi.com,affordableaiapi.com,1,
-africarouter.ai,africarouter.ai,1,
 agentrouter.org,agentrouter.org,1,
 ai-openclaw.one,ai-openclaw.one,1,
-ai-wave.org,ai-wave.org,1,
 ai-yyds.com,ai-yyds.com,1,
 ai.cc,ai.cc,1,
 ai123.one,ai123.one,1,
@@ -145,7 +171,6 @@ aiearth.dev,aiearth.dev,1,
 aiflowhub.ai,aiflowhub.ai,1,
 aifoxspa.com,aifoxspa.com,1,
 aigc2d.com,aigc2d.com,1,
-aigcbest.top,aigcbest.top,1,
 aigm99.cn,aigm99.cn,1,
 aigo123.net,aigo123.net,1,
 aigocode.com,aigocode.com,1,
@@ -227,7 +252,6 @@ cc-vibe.com,cc-vibe.com,1,
 ccgoai.com,ccgoai.com,1,
 cckeys.top,cckeys.top,1,
 ccll.xyz,ccll.xyz,1,
-ccode.dev,ccode.dev,1,
 ccrouter.ai,ccrouter.ai,1,
 ccwu.cc,ccwu.cc,1,
 cdn.ad,cdn.ad,1,
@@ -238,6 +262,7 @@ chatfire.cn,chatfire.cn,1,
 chatgpt.org.uk,chatgpt.org.uk,1,
 chatgpt.top,chatgpt.top,1,
 chatgptid.net,chatgptid.net,1,
+chatopens.vip,chatopens.vip,1,
 cheapai.ai,cheapai.ai,1,
 cherry-ai.com,cherry-ai.com,1,
 chesspnt.com,chesspnt.com,1,
@@ -253,7 +278,6 @@ cialloapi.cn,cialloapi.cn,1,
 ciyuan-token.com,ciyuan-token.com,1,
 ciyuanshen.top,ciyuanshen.top,1,
 clauddy.com,clauddy.com,1,
-claude-api.org,claude-api.org,1,
 claude360.xyz,claude360.xyz,1,
 claudeagent.com.cn,claudeagent.com.cn,1,
 claudeapi.ai,claudeapi.ai,1,
@@ -320,7 +344,6 @@ duckcoding.ai,duckcoding.ai,1,
 dumplingai.com,dumplingai.com,1,
 duou.ai,duou.ai,1,
 dzzi.ai,dzzi.ai,1,
-easy-token.com,easy-token.com,1,
 easyart.cc,easyart.cc,1,
 easyrouter.io,easyrouter.io,1,
 ebutterfly.cc,ebutterfly.cc,1,
@@ -340,8 +363,6 @@ euzhi.com,euzhi.com,1,
 evolink.ai,evolink.ai,1,
 exe.xyz,exe.xyz,1,
 fastcc.ai,fastcc.ai,1,
-fastgpt.cn,fastgpt.cn,1,
-fastgpt.io,fastgpt.io,1,
 fastrouter.ai,fastrouter.ai,1,
 featherless.ai,featherless.ai,1,
 feng.cx,feng.cx,1,
@@ -363,7 +384,6 @@ futurmix.ai,futurmix.ai,1,
 fuxingapi.com,fuxingapi.com,1,
 gateone.ai,gateone.ai,1,
 gatewayapi.ai,gatewayapi.ai,1,
-geekai.pro,geekai.pro,1,
 geeknow.ai,geeknow.ai,1,
 gemai.cc,gemai.cc,1,
 geminiapi.ai,geminiapi.ai,1,
@@ -393,7 +413,6 @@ hangzhale.com,hangzhale.com,1,
 hao.ai,hao.ai,1,
 hapuppy.com,hapuppy.com,1,
 hboom.ai,hboom.ai,1,
-hcnote.cn,hcnote.cn,1,
 helicone.ai,helicone.ai,1,
 helpcoder.cc,helpcoder.cc,1,
 hemaapi.cc,hemaapi.cc,1,
@@ -401,6 +420,7 @@ hepingan.top,hepingan.top,1,
 heykey.ai,heykey.ai,1,
 hhnto.top,hhnto.top,1,
 hiapi.store,hiapi.store,1,
+hk.cn,hk.cn,1,
 hlool.top,hlool.top,1,
 hohoapi.com,hohoapi.com,1,
 holamexicali.com,holamexicali.com,1,
@@ -408,11 +428,7 @@ holdai.top,holdai.top,1,
 hottoken.ai,hottoken.ai,1,
 howlife.cc,howlife.cc,1,
 hslife.fun,hslife.fun,1,
-huaci.ai,huaci.ai,1,
-huanapi.com,huanapi.com,1,
-huasuan.ai,huasuan.ai,1,
 huiliuapi.com,huiliuapi.com,1,
-hybgzs.com,hybgzs.com,1,
 hyperapi.cc,hyperapi.cc,1,
 i4um.com,i4um.com,1,
 iacc.cc,iacc.cc,1,
@@ -430,7 +446,6 @@ jianzhile.vip,jianzhile.vip,1,
 jiekou.ai,jiekou.ai,1,
 jmyr.net,jmyr.net,1,
 jojocode.com,jojocode.com,1,
-joyzhi.com,joyzhi.com,1,
 junjun.site,junjun.site,1,
 kelaiapi.cc,kelaiapi.cc,1,
 kie.ai,kie.ai,1,
@@ -460,9 +475,7 @@ lingsuan.top,lingsuan.top,1,
 lingyaai.cn,lingyaai.cn,1,
 linkai.shop,linkai.shop,1,
 linkapi.ai,linkapi.ai,1,
-linkapi.org,linkapi.org,1,
 linoapi.com.cn,linoapi.com.cn,1,
-littlesheep.cc,littlesheep.cc,1,
 ll9e.cn,ll9e.cn,1,
 llmapi.pro,llmapi.pro,1,
 llmgw.cn,llmgw.cn,1,
@@ -516,7 +529,6 @@ mofas.one,mofas.one,1,
 moleapi.com,moleapi.com,1,
 mondon.ai,mondon.ai,1,
 mongodb.org,mongodb.org,1,
-monking.ai,monking.ai,1,
 mooko.ai,mooko.ai,1,
 morphllm.com,morphllm.com,1,
 mosshubs.com,mosshubs.com,1,
@@ -542,14 +554,11 @@ niubiai.ai,niubiai.ai,1,
 nodapi.com,nodapi.com,1,
 nuwaapi.com,nuwaapi.com,1,
 oai2api.com,oai2api.com,1,
-ocoolai.com,ocoolai.com,1,
 octoken.com.cn,octoken.com.cn,1,
 officesai.top,officesai.top,1,
 ofox.ai,ofox.ai,1,
 ogog.ai,ogog.ai,1,
 oiov.dev,oiov.dev,1,
-ominigate.ai,ominigate.ai,1,
-ominigate.com,ominigate.com,1,
 onebound.cn,onebound.cn,1,
 onecheckout.ai,onecheckout.ai,1,
 onehop.ai,onehop.ai,1,
@@ -558,7 +567,6 @@ onrender.com,onrender.com,1,
 ope.ai,ope.ai,1,
 openaeon.ai,openaeon.ai,1,
 openai-ch.top,openai-ch.top,1,
-openai-hub.com,openai-hub.com,1,
 openai-labs.com,openai-labs.com,1,
 openai-up.com,openai-up.com,1,
 openclaudecode.cn,openclaudecode.cn,1,
@@ -571,7 +579,6 @@ openrouter.com,openrouter.com,1,
 opentk.ai,opentk.ai,1,
 openxs.top,openxs.top,1,
 opper.ai,opper.ai,1,
-orcarouter.ai,orcarouter.ai,1,
 owlai.tech,owlai.tech,1,
 oxycode.net,oxycode.net,1,
 packyapi.com,packyapi.com,1,
@@ -622,7 +629,6 @@ runware.ai,runware.ai,1,
 sadai.top,sadai.top,1,
 safeapi.vip,safeapi.vip,1,
 sakana.ai,sakana.ai,1,
-satuo66.online,satuo66.online,1,
 sbbbbbbbbb.xyz,sbbbbbbbbb.xyz,1,
 scam.ai,scam.ai,1,
 schyler.top,schyler.top,1,
@@ -662,16 +668,12 @@ sychatplus.cc,sychatplus.cc,1,
 tallius.ai,tallius.ai,1,
 taluna.ai,taluna.ai,1,
 tcdmx.com,tcdmx.com,1,
-teamolab.com,teamolab.com,1,
-teamorouter.com,teamorouter.com,1,
 telenow.ai,telenow.ai,1,
 tencentcloudmaas.com,tencentcloudmaas.com,1,
 terminal.pub,terminal.pub,1,
 tetrate.ai,tetrate.ai,1,
-therouter.ai,therouter.ai,1,
 thestocklist.site,thestocklist.site,1,
 thousandengine.com,thousandengine.com,1,
-threadzy.ai,threadzy.ai,1,
 tian-shu.org,tian-shu.org,1,
 tiantianai.pro,tiantianai.pro,1,
 tieapi.com,tieapi.com,1,
@@ -733,7 +735,6 @@ vera-hub.ai,vera-hub.ai,1,
 vibecodingapi.ai,vibecodingapi.ai,1,
 visionati.com,visionati.com,1,
 vllm.ai,vllm.ai,1,
-voltapi.ai,voltapi.ai,1,
 vpszdm.com,vpszdm.com,1,
 vsllm.com,vsllm.com,1,
 vvcode.top,vvcode.top,1,
@@ -744,7 +745,6 @@ web3router.ai,web3router.ai,1,
 webchannel.ai,webchannel.ai,1,
 wellapi.ai,wellapi.ai,1,
 wenwen-ai.com,wenwen-ai.com,1,
-whatai.cc,whatai.cc,1,
 whlemon.cn,whlemon.cn,1,
 whyyapi.com,whyyapi.com,1,
 willapi.one,willapi.one,1,

@@ -3,7 +3,7 @@ disc,data/master_sites.csv,OK,764,652,80.6
 hvoy,data/hvoy_latest.csv,OK,246,246,30.4
 manual,data/manual_sites.csv,OK,48,41,5.1
 monitor,results/monitor_results.csv,OK,37441,292,36.1
-enrich,data/enrichment.csv,OK,292,292,36.1
+enrich,data/enrichment.csv,OK,930,809,100.0
 privacy,data/privacy.csv,OK,284,284,35.1
 contacts,data/contacts.csv,OK,284,284,35.1
 price,results/model_prices/model_prices_summary.csv,OK,284,284,35.1
