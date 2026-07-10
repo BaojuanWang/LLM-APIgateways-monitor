@@ -85,6 +85,49 @@ def build_data():
     cf = sum(v for k, v in host.items() if "cloudflare" in k.lower())
     y2026 = reg.get("2026", 0)
 
+    # ---- extra detailed features ----
+    def _g(row, c): return (row.get(c) or "").strip()
+
+    def _health(row):
+        st = _g(row, "monitor__online_status"); cert = bool(_g(row, "enrich__ssl_fingerprint"))
+        if st == "ONLINE": return "在线(监测)"
+        if st == "ONLINE_LOGIN_REQUIRED": return "在线·需登录"
+        if st == "CLOUDFLARE_OR_BLOCKED": return "被挡/CF"
+        if st in ("DNS_FAIL", "TIMEOUT", "HTTP_ERROR", "SERVICE_STOPPED"): return "疑似失效"
+        if cert: return "HTTPS可达·未监测"
+        return "未响应"
+    hstate = Counter(_health(mk.get(r["site_key"], {})) for r in labels)
+
+    def _ca(s):
+        s = s.lower()
+        for key, name in [("let's encrypt", "Let's Encrypt"), ("lets encrypt", "Let's Encrypt"),
+                          ("google trust", "Google Trust"), ("zerossl", "ZeroSSL"),
+                          ("digicert", "DigiCert"), ("trustasia", "TrustAsia"), ("sectigo", "Sectigo")]:
+            if key in s: return name
+        return "(其它)"
+    ca = Counter(_ca(_g(mk[r["site_key"]], "enrich__ssl_issuer")) for r in labels
+                 if _g(mk[r["site_key"]], "enrich__ssl_issuer"))
+    ca_base = sum(ca.values())
+    registrar = Counter(_g(mk[r["site_key"]], "enrich__whois_registrar")[:26] for r in labels
+                        if _g(mk[r["site_key"]], "enrich__whois_registrar"))
+    reg_base = sum(registrar.values())
+    tech = Counter()
+    for r in labels:
+        for t in (_g(mk[r["site_key"]], "enrich__tech_stack") or "").split(","):
+            t = t.strip()
+            if t: tech[t] += 1
+    monc = Counter()
+    for r in labels:
+        row = mk[r["site_key"]]; d = _g(row, "enrich__whois_reg_date") or _g(row, "enrich__ssl_not_before")
+        if d[:7].startswith("2026"): monc[d[:7]] += 1
+    mon_base = sum(monc.values())
+    KW = ["api", "ai", "gpt", "chat", "claude", "code", "hub", "proxy", "token", "new", "one"]
+    kw = Counter()
+    for r in labels:
+        d = r["site_key"].lower()
+        for k in KW:
+            if k in d: kw[k] += 1
+
     stats = [
         {"n": str(n), "lab": "分析站点总数", "cap": "发现层 764 ∪ 监测 292"},
         {"n": f"{round(100*one_api/n)}%", "lab": "one-api 家族占比",
@@ -115,6 +158,18 @@ def build_data():
         {"t": "站点出生年份(生态时间线)",
          "note": f"WHOIS 注册时间(证书 not_before 补) · {reg_dated}/{n} 站可查(~99%) · base {reg_dated}",
          "base": reg_dated, "neutral": [], "d": reg_rows},
+        {"t": "2026 按月出生(井喷曲线)", "note": f"2026 各月新站 · {mon_base} 站",
+         "base": mon_base or 1, "neutral": [], "d": [[k, monc[k]] for k in sorted(monc)]},
+        {"t": "存活状态", "note": f"HTTPS 握手≈活着 · base {n}", "base": n,
+         "neutral": ["疑似失效", "未响应", "被挡/CF"], "d": _top(hstate)},
+        {"t": "证书 CA(签发机构)", "note": f"{ca_base} 站有证书 · 免费 DV 主导 = 零成本起站",
+         "base": ca_base or 1, "neutral": [], "d": _top(ca)},
+        {"t": "域名注册商", "note": f"{reg_base} 站有 WHOIS", "base": reg_base or 1,
+         "neutral": [], "d": _top(registrar, 10)},
+        {"t": "前端 / 服务端技术", "note": "响应头 + HTML 粗提取", "base": n,
+         "neutral": [], "d": _top(tech, 10)},
+        {"t": "域名关键词主题", "note": "域名中含该词的站数(可重叠)", "base": n,
+         "neutral": [], "d": _top(kw)},
     ]
     snapshot = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     return {"N": n, "ENR": enr, "OPS": n_ops, "stats": stats, "charts": charts, "snapshot": snapshot}
@@ -239,7 +294,7 @@ stats.forEach(s=>{const el=document.createElement("div");el.className="stat";
   statsEl.appendChild(el);});
 charts.forEach(c=>{
   const max=Math.max(...c.d.map(x=>x[1]));
-  const span=(c.t.indexOf("原始框架")>=0||c.t.indexOf("TLD")>=0||c.t.indexOf("时间线")>=0)?" span2":"";
+  const span=(c.t.indexOf("原始框架")>=0||c.t.indexOf("TLD")>=0||c.t.indexOf("时间线")>=0||c.t.indexOf("井喷")>=0||c.t.indexOf("注册商")>=0)?" span2":"";
   const card=document.createElement("div");card.className="card"+span;
   const hasN=c.d.some(x=>c.neutral.indexOf(x[0])>=0);
   card.innerHTML=`<h3>${c.t}</h3><div class="note">${c.note}</div><div class="bars"></div>`;
