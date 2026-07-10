@@ -53,6 +53,7 @@ SOURCES = [
     {"name": "enrich", "path": "data/enrichment.csv", "dedup": "first"},
     {"name": "privacy", "path": "data/privacy.csv", "dedup": "first"},
     {"name": "contacts", "path": "data/contacts.csv", "dedup": "first"},
+    {"name": "ops", "path": "data/operations.csv", "dedup": "first", "optional": True},
     {"name": "price", "path": "results/model_prices/model_prices_summary.csv", "dedup": "latest", "ts": "checked_at"},
     {"name": "blocked", "path": "data/manual_confirmed_blocked.csv", "dedup": "first"},
 ]
