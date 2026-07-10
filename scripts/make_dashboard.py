@@ -68,10 +68,14 @@ def build_data():
     multi = sum(v for k, v in sizes.items() if k > 1)
     size_rows = [[f"{k} 域名" + ("(独立)" if k == 1 else ""), v] for k, v in sorted(sizes.items())]
 
-    # domain registration year (WHOIS creation date; enriched subset only)
+    # site "birth" year: WHOIS creation date, falling back to cert not_before
+    # (first HTTPS cert ~ went live). Combined coverage ~99% vs ~91% WHOIS alone.
     reg = Counter()
     for r in labels:
-        d = (mk.get(r["site_key"], {}).get("enrich__whois_reg_date") or "")[:4]
+        row = mk.get(r["site_key"], {})
+        d = (row.get("enrich__whois_reg_date") or "")[:4]
+        if not d.isdigit():
+            d = (row.get("enrich__ssl_not_before") or "")[:4]
         if d.isdigit():
             reg["≤2022" if int(d) <= 2022 else d] += 1
     reg_dated = sum(reg.values())
@@ -89,8 +93,8 @@ def build_data():
          "cap": f"{n} 域名 → {multi} 个多站运营者"},
         {"n": f"{round(100*cf/enr)}%" if enr else "—", "lab": "托管于 Cloudflare",
          "cap": f"占已富化 {enr} 站 · CDN 主导"},
-        {"n": f"{round(100*y2026/reg_dated)}%" if reg_dated else "—", "lab": "域名注册于 2026 年",
-         "cap": f"生态极年轻 · {reg_dated} 站有 WHOIS", "warn": True},
+        {"n": f"{round(100*y2026/reg_dated)}%" if reg_dated else "—", "lab": "站点出生于 2026 年",
+         "cap": f"生态极年轻 · {reg_dated} 站有时间数据", "warn": True},
     ]
     charts = [
         {"t": "技术栈家族", "note": f"三源统一归类 · base {n}", "base": n,
@@ -108,8 +112,8 @@ def build_data():
          "neutral": ["(无·非发现层)"], "d": _top(tier)},
         {"t": "运营者簇规模分布", "note": f"归并后每运营者控制域名数 · {n_ops} 个运营者",
          "base": n_ops, "neutral": [], "d": size_rows},
-        {"t": "域名注册年份(生态时间线)",
-         "note": f"WHOIS 创建时间 · 仅 {reg_dated} 站可查(隐私脱敏,证书 not_before 待补) · base {reg_dated}",
+        {"t": "站点出生年份(生态时间线)",
+         "note": f"WHOIS 注册时间(证书 not_before 补) · {reg_dated}/{n} 站可查(~99%) · base {reg_dated}",
          "base": reg_dated, "neutral": [], "d": reg_rows},
     ]
     snapshot = datetime.now(timezone.utc).strftime("%Y-%m-%d")
