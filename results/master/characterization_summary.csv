@@ -1,0 +1,125 @@
+dimension,value,count,pct_of_total
+stack_family,one-api-family,641,79.2
+stack_family,unlabeled,143,17.7
+stack_family,sub2api,14,1.7
+stack_family,openai-compatible-unknown,7,0.9
+stack_family,confirmed-unknown,4,0.5
+tld,com,227,28.1
+tld,ai,167,20.6
+tld,cn,75,9.3
+tld,top,72,8.9
+tld,cc,52,6.4
+tld,xyz,33,4.1
+tld,org,23,2.8
+tld,net,19,2.3
+tld,vip,19,2.3
+tld,pro,12,1.5
+tld,io,11,1.4
+tld,dev,10,1.2
+tld,chat,9,1.1
+tld,one,9,1.1
+tld,uk,5,0.6
+tld,online,4,0.5
+tld,club,4,0.5
+tld,site,4,0.5
+tld,hk,3,0.4
+tld,tech,3,0.4
+tld,cloud,3,0.4
+tld,codes,3,0.4
+tld,work,3,0.4
+tld,co,3,0.4
+tld,app,3,0.4
+tld,world,2,0.2
+tld,xin,2,0.2
+tld,icu,2,0.2
+tld,store,2,0.2
+tld,shop,2,0.2
+tld,space,2,0.2
+tld,us,2,0.2
+tld,mom,1,0.1
+tld,ad,1,0.1
+tld,win,1,0.1
+tld,cx,1,0.1
+tld,ge,1,0.1
+tld,ltd,1,0.1
+tld,fun,1,0.1
+tld,asia,1,0.1
+tld,hvoy_removed,1,0.1
+tld,today,1,0.1
+tld,ink,1,0.1
+tld,buzz,1,0.1
+tld,pub,1,0.1
+tld,me,1,0.1
+tld,best,1,0.1
+tld,plus,1,0.1
+tld,vg,1,0.1
+tld,lat,1,0.1
+tld,sbs,1,0.1
+signal_tier,A_api_status,529,65.4
+signal_tier,(none),157,19.4
+signal_tier,C_framework+content,116,14.3
+signal_tier,B_v1_models,7,0.9
+hosting (enriched only),Cloudflare,129,44.2
+hosting (enriched only),(unknown),16,5.5
+hosting (enriched only),Alibaba (US) Technology Co.,14,4.8
+hosting (enriched only),NetLab Global,14,4.8
+hosting (enriched only),Amazon.com,11,3.8
+hosting (enriched only),OVH SAS,10,3.4
+hosting (enriched only),Tencent Building,7,2.4
+hosting (enriched only),FASTNET DATA INC,7,2.4
+hosting (enriched only),DMIT Cloud Services,7,2.4
+hosting (enriched only),Hangzhou Alibaba Advertising C,6,2.1
+hosting (enriched only),IT7 Networks Inc,6,2.1
+hosting (enriched only),Antbox Networks Limited,4,1.4
+hosting (enriched only),cognetcloud INC,4,1.4
+hosting (enriched only),Spartan Host Ltd,4,1.4
+hosting (enriched only),Shenzhen Tencent Computer Syst,3,1.0
+hosting (enriched only),netcup GmbH,3,1.0
+hosting (enriched only),Zhejiang Taobao Network Co.,3,1.0
+hosting (enriched only),Peekabo Networks,3,1.0
+hosting (enriched only),The Constant Company,2,0.7
+hosting (enriched only),CHINA UNICOM China169 Backbone,2,0.7
+hosting (enriched only),CORENET CLOUD SDN. BHD.,2,0.7
+hosting (enriched only),CNSERVERS LLC,2,0.7
+hosting (enriched only),AROSSCLOUD INC.,2,0.7
+hosting (enriched only),Hubei Feixun Network Co.,2,0.7
+hosting (enriched only),ACE,2,0.7
+hosting (enriched only),VMISS Inc.,1,0.3
+hosting (enriched only),Data Communication Business Gr,1,0.3
+hosting (enriched only),SAKURA LINK LIMITED,1,0.3
+hosting (enriched only),CHINANET Yunnan province IDC1 ,1,0.3
+hosting (enriched only),Bunny Communications,1,0.3
+hosting (enriched only),FiberState,1,0.3
+hosting (enriched only),China Telecom,1,0.3
+hosting (enriched only),CTG Server Limited,1,0.3
+hosting (enriched only),Evoxt Sdn. Bhd.,1,0.3
+hosting (enriched only),UCLOUD INFORMATION TECHNOLOGY ,1,0.3
+hosting (enriched only),Akari Networks,1,0.3
+hosting (enriched only),Wen ZhangYu,1,0.3
+hosting (enriched only),Alice Network,1,0.3
+hosting (enriched only),Starry Network Limited,1,0.3
+hosting (enriched only),SonderCloud Limited,1,0.3
+hosting (enriched only),VpsQuan L.L.C.,1,0.3
+hosting (enriched only),Zenlayer Inc,1,0.3
+hosting (enriched only),FDCservers.net,1,0.3
+hosting (enriched only),AkileCloud Network,1,0.3
+hosting (enriched only),HostPapa,1,0.3
+hosting (enriched only),CYBERJET PTE. LTD.,1,0.3
+hosting (enriched only),PEG TECH INC,1,0.3
+hosting (enriched only),Florian Kolb,1,0.3
+hosting (enriched only),Hong Kong Communications Inter,1,0.3
+hosting (enriched only),China Telecom (Group),1,0.3
+hosting (enriched only),Sharktech,1,0.3
+hosting (enriched only),GoMami Networks,1,0.3
+ip_country (enriched only),Canada,128,43.8
+ip_country (enriched only),United States,82,28.1
+ip_country (enriched only),Hong Kong,29,9.9
+ip_country (enriched only),China,17,5.8
+ip_country (enriched only),(unknown),16,5.5
+ip_country (enriched only),Singapore,9,3.1
+ip_country (enriched only),Japan,3,1.0
+ip_country (enriched only),South Korea,3,1.0
+ip_country (enriched only),Germany,2,0.7
+ip_country (enriched only),Taiwan,1,0.3
+ip_country (enriched only),Malaysia,1,0.3
+ip_country (enriched only),United Kingdom,1,0.3
