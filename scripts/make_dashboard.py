@@ -128,6 +128,29 @@ def build_data():
         for k in KW:
             if k in d: kw[k] += 1
 
+    VENDOR = ["claude", "gpt", "openai", "gemini", "grok", "deepseek", "qwen", "llama", "kimi"]
+    vend = Counter()
+    for r in labels:
+        d = r["site_key"].lower()
+        for v in VENDOR:
+            if v in d: vend[v] += 1
+
+    def _hhi(counter):
+        tot = sum(counter.values())
+        return sum((c / tot) ** 2 for c in counter.values()) * 10000 if tot else 0
+    host_hhi, reg_hhi = _hhi(host), _hhi(registrar)
+
+    # template families (site_similarity.py output, if present)
+    fam_rows = []
+    fam_covered = 0
+    sim_path = os.path.join(M, "site_similarity_clusters.csv")
+    if os.path.exists(sim_path):
+        sim = list(csv.DictReader(open(sim_path, encoding="utf-8-sig")))
+        fam_covered = sum(int(r["size"]) for r in sim)
+        for r in sorted(sim, key=lambda x: -int(x["size"]))[:12]:
+            lab = (r["shared_features"].split(";")[0] or r["family_id"])[:22]
+            fam_rows.append([f"{lab} ({r['family_id'][:12]})", int(r["size"])])
+
     stats = [
         {"n": str(n), "lab": "分析站点总数", "cap": "发现层 764 ∪ 监测 292"},
         {"n": f"{round(100*one_api/n)}%", "lab": "one-api 家族占比",
@@ -147,7 +170,7 @@ def build_data():
          "neutral": ["(未进发现层)"], "d": _top(fw)},
         {"t": "顶级域(TLD)", "note": f"按注册域后缀 · base {n}", "base": n,
          "neutral": [], "d": _top(tld, 12)},
-        {"t": "托管商 / ASN", "note": f"仅已富化 {enr} 站 · ASN 归属", "base": enr,
+        {"t": "托管商 / ASN", "note": f"仅已富化 {enr} 站 · ASN 归属 · 集中度 HHI {host_hhi:.0f}", "base": enr,
          "neutral": [k for k in host if "cloudflare" in k.lower()], "d": _top(host, 8)},
         {"t": "源站 IP 国家", "note": f"仅已富化 {enr} 站 · CDN 后为边缘位置", "base": enr,
          "neutral": ["(未知)"], "d": _top(country, 8)},
@@ -164,12 +187,16 @@ def build_data():
          "neutral": ["疑似失效", "未响应", "被挡/CF"], "d": _top(hstate)},
         {"t": "证书 CA(签发机构)", "note": f"{ca_base} 站有证书 · 免费 DV 主导 = 零成本起站",
          "base": ca_base or 1, "neutral": [], "d": _top(ca)},
-        {"t": "域名注册商", "note": f"{reg_base} 站有 WHOIS", "base": reg_base or 1,
+        {"t": "域名注册商", "note": f"{reg_base} 站有 WHOIS · 集中度 HHI {reg_hhi:.0f}", "base": reg_base or 1,
          "neutral": [], "d": _top(registrar, 10)},
         {"t": "前端 / 服务端技术", "note": "响应头 + HTML 粗提取", "base": n,
          "neutral": [], "d": _top(tech, 10)},
         {"t": "域名关键词主题", "note": "域名中含该词的站数(可重叠)", "base": n,
          "neutral": [], "d": _top(kw)},
+        {"t": "域名含上游厂商名", "note": "把模型商写进域名(claude/gpt/...,可重叠)", "base": n,
+         "neutral": [], "d": _top(vend)},
+        {"t": "相似模板家族 Top(搭建商层)", "note": f"共享稀有特征聚类 · {fam_covered}/{n} 站进入家族 · Jaccard(§D7)",
+         "base": n, "neutral": [], "d": fam_rows or [["(需先跑 site_similarity.py)", 0]]},
     ]
     snapshot = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     return {"N": n, "ENR": enr, "OPS": n_ops, "stats": stats, "charts": charts, "snapshot": snapshot}
@@ -294,7 +321,7 @@ stats.forEach(s=>{const el=document.createElement("div");el.className="stat";
   statsEl.appendChild(el);});
 charts.forEach(c=>{
   const max=Math.max(...c.d.map(x=>x[1]));
-  const span=(c.t.indexOf("原始框架")>=0||c.t.indexOf("TLD")>=0||c.t.indexOf("时间线")>=0||c.t.indexOf("井喷")>=0||c.t.indexOf("注册商")>=0)?" span2":"";
+  const span=(c.t.indexOf("原始框架")>=0||c.t.indexOf("TLD")>=0||c.t.indexOf("时间线")>=0||c.t.indexOf("井喷")>=0||c.t.indexOf("注册商")>=0||c.t.indexOf("模板家族")>=0)?" span2":"";
   const card=document.createElement("div");card.className="card"+span;
   const hasN=c.d.some(x=>c.neutral.indexOf(x[0])>=0);
   card.innerHTML=`<h3>${c.t}</h3><div class="note">${c.note}</div><div class="bars"></div>`;
