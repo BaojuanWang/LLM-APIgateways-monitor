@@ -31,6 +31,7 @@ BASE_DIR      = Path(__file__).parent.parent
 DATA_DIR      = BASE_DIR / "data"
 HVOY_CSV      = DATA_DIR / "hvoy_latest.csv"
 MANUAL_CSV    = DATA_DIR / "manual_sites.csv"
+MASTER_SITES_CSV = DATA_DIR / "master_sites.csv"   # discovery-layer confirmed list
 ENRICHMENT_CSV= DATA_DIR / "enrichment.csv"
 
 TIMEOUT = 10
@@ -62,7 +63,8 @@ def extract_domain(url):
 
 def load_platforms():
     domains = {}
-    for csv_path, source in [(HVOY_CSV, "hvoy"), (MANUAL_CSV, "manual")]:
+    for csv_path, source in [(HVOY_CSV, "hvoy"), (MANUAL_CSV, "manual"),
+                             (MASTER_SITES_CSV, "discovery")]:
         if not csv_path.exists():
             continue
         with open(csv_path, encoding="utf-8-sig") as f:
