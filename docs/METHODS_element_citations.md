@@ -92,6 +92,21 @@
 
 ---
 
+## G. 生态刻画 / 归类分析(`site_characterization.py` + `operator_matching` 的 site_name 边)
+
+| # | 我们做的 | 文献 / 出处 | 等级 |
+|---|---------|-----------|------|
+| G1 | **统一栈 taxonomy**:把 disc framework + enrich tech_stack + manual 三源合并成一个栈家族标签 | Web 应用指纹(B2,WASADO/OWASP);**taxonomy-guided ecosystem characterization**——*Binge, Bot, Repeat: Unpacking the Ecosystem of Video Piracy on Telegram*(arXiv 2605.08418,用分类法把定性观察量化到全生态) | ⭐/◆ |
+| G2 | **描述性分布刻画**(栈/TLD/托管/信号层的分布统计) | 这就是测量论文的体裁本身:Noroozian BPH(USENIX Sec'19)、Antonakakis Mirai(USENIX Sec'17);*A Comprehensive Survey of Recent Internet Measurement Techniques for Cyber Security*(Computers & Security 2023) | ⭐ |
+| G3 | **"技术单一栈 = 单点脆弱"**(one-api 家族 79% → 指纹级 SPOF)这个论点 | **Geer et al., *CyberInsecurity: The Cost of Monopoly*, 2003**(软件单一栽培=安全风险的奠基论述);Schneier, *Software Monoculture*, 2010;结合 Zembruzki'22 的集中度量化 | ⭐(经典)+ ○ |
+| G4 | **TLD 分布**作生态特征 | Hao et al. PREDATOR(CCS 2016)把 TLD 纳入注册特征;spam/滥用域名研究普遍统计 TLD 分布 | ⭐ |
+| G5 | **托管 / ASN 分布**作生态特征 | Zembruzki et al., Hosting Industry Centralization(2022);ASwatch(SIGCOMM'15) | ⭐ |
+| G6 | **site_name / 运营者显示名**作归并身份信号(ePhone 用例);默认名黑名单 | registrant/身份属性聚类(Hao IMC'13,同注册身份归并)+ 内容/品牌同源聚类(钓鱼 kit homology,E-layer);默认名剔除同 favicon 默认图标逻辑(D4) | ○/◆(身份属性聚类思路成熟,建议正文标为"identity-attribute clustering") |
+
+**可写的话术**:栈分类是应用指纹 + 分类法驱动的生态刻画(WASADO;video-piracy Telegram);"79% 单一栈=单点脆弱"直接引 Geer 2003 的 monoculture 论述 + Zembruzki'22 的集中度量化;分布统计(栈/TLD/托管)是测量论文的标准描述层。site_name 归并作为 identity-attribute clustering,和 registrant 聚类同理,并配默认名护栏防过并。
+
+---
+
 ## 一句话给写作用
 
 **没有一个元素是我们凭空发明的**:eTLD+1 归一化(PSL)、banner+应用指纹(OWASP/WASADO)、favicon(NDSS'21)、证书指纹+SAN(恶意 TLS 聚类 / .dk 钓鱼)、连通分量归并(host-domain 图聚类)、HHI(Zembruzki'22)、CT/SAN 域名发现(RAID'22/EuroS&P'23)——每个都有用过它的文献。我们的原创只在**组合方式**和**针对 CDN 的正确性护栏**;后者本身也基于 Cloudflare 共享匿播/共享证书的公开事实。
@@ -117,6 +132,10 @@
 - Noroozian et al., Platforms in Everything (BPH), USENIX Sec 2019 — https://www.usenix.org/conference/usenixsecurity19/presentation/noroozian
 - Antonakakis et al., Understanding the Mirai Botnet, USENIX Sec 2017 — https://www.usenix.org/system/files/conference/usenixsecurity17/sec17-antonakakis.pdf
 - Santanna et al., Stress Testing the Booters, 2015 — https://arxiv.org/pdf/1508.03410
+- Geer, Bace, Gutmann, Metzger, Pfleeger, Quarterman, Schneier, CyberInsecurity: The Cost of Monopoly, 2003 — (software monoculture as security risk)
+- Schneier, Software Monoculture, 2010 — https://www.schneier.com/blog/archives/2010/12/software_monoculture.html
+- Binge, Bot, Repeat: Unpacking the Ecosystem of Video Piracy on Telegram (taxonomy-guided ecosystem characterization) — https://arxiv.org/pdf/2605.08418
+- A Comprehensive Survey of Recent Internet Measurement Techniques for Cyber Security, Computers & Security 2023 — https://www.sciencedirect.com/science/article/pii/S0167404823000330
 - Durumeric, Kasten, Bailey, Halderman, Analysis of the HTTPS Certificate Ecosystem, IMC 2013 — https://conferences.sigcomm.org/imc/2013/papers/imc257-durumericAemb.pdf
 - VanderSloot, Amann, Bernhard, Durumeric, Bailey, Halderman, Towards a Complete View of the Certificate Ecosystem, IMC 2016 — https://experts.illinois.edu/en/publications/towards-a-complete-view-of-the-certificate-ecosystem/
 - Scheitle et al., The Rise of Certificate Transparency and Its Implications on the Internet Ecosystem, IMC 2018 — https://dl.acm.org/doi/10.1145/3278532.3278562
