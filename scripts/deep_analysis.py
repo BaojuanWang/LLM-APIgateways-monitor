@@ -183,14 +183,44 @@ def main():
     L.append(table("顶级域(TLD)", tld, n, top=12))
     L.append(table("域名关键词主题", kw, n, note="域名中包含该词的站数(可重叠)"))
 
-    L.append("## 7. 运营 / 商业模式信号(覆盖有限)\n")
+    # vendor mentions + naming style in the domain itself
+    VENDOR = ["claude", "gpt", "openai", "gemini", "grok", "deepseek", "qwen", "llama", "kimi"]
+    vend = Counter()
+    for r in master:
+        d = r["site_key"].lower()
+        for v in VENDOR:
+            if v in d: vend[v] += 1
+    conv = sum(1 for r in master if re.search(r"[a-z0-9]+2api", r["site_key"].lower()))
+    has_digit = sum(1 for r in master if re.search(r"\d", r["site_key"]))
+    L.append("## 7. 域名命名深挖\n")
+    if vend:
+        L.append(table("域名含厂商名", vend, n, note="直接把上游模型商写进域名(可重叠)"))
+    L.append(f"- 域名带 `*2api` 转换层命名:{conv}/{n}({100*conv/n:.0f}%)")
+    L.append(f"- 域名含数字:{has_digit}/{n}({100*has_digit/n:.0f}%,常见于批量/马甲域名)\n")
+
+    # price / model (subset)
+    price = [r for r in master if g(r, "price__access_status")]
+    if price:
+        acc = Counter(g(r, "price__access_status") for r in price)
+        mrs = [int(g(r, "price__model_rows")) for r in price if g(r, "price__model_rows").isdigit()]
+        buckets = Counter()
+        for m in mrs:
+            buckets["0(未取到)" if m == 0 else "1–20" if m <= 20 else "21–50" if m <= 50 else "51–100" if m <= 100 else "100+"] += 1
+        L.append("## 8. 价格 / 模型可见性(仅监测子集)\n")
+        L.append(table("定价页可达性", acc, len(price), note=f"{len(price)} 站有探测记录"))
+        L.append(table("暴露模型数分级", buckets, len(mrs), note=f"{len(mrs)} 站取到模型列表"))
+        pub = acc.get("PUBLIC_JSON", 0)
+        L.append(f"> **要点**:{pub}/{len(price)}({100*pub/len(price):.0f}%)开放 JSON 定价端点(one-api 家族 `/api/pricing` 默认公开),透明度参差;"
+                 "本项目只统计可见性,不做模型身份核验(不在范围)。\n")
+
+    L.append("## 9. 运营 / 商业模式信号(覆盖有限)\n")
     if aff_base:
         L.append(f"- **推广/代理页**:{aff}/{aff_base} 有({100*aff/aff_base:.0f}%)—— 分销返佣是主流获客(covered {aff_base} 站)。")
     if priv_base:
         L.append(f"- **隐私政策**:{priv_yes}/{priv_base} 有({100*priv_yes/priv_base:.0f}%,仅监测子集)。")
     L.append("> 联系方式(TG/QQ/微信)当前抽取覆盖低,是已知的采集短板(见 AUDIT),需渲染后 DOM 才能救回。\n")
 
-    L.append("## 8. 运营者集中度\n")
+    L.append("## 10. 运营者集中度\n")
     L.append(f"- {n} 域名 → **{len(op_members)} 个运营者**,其中 **{len(multi)} 个多站运营者**,最大 {max(len(m) for m in op_members.values())} 域名。")
     L.append("- **诚实**:整体集中度低(HHI≈0.0015)—— 多数站独立运营;'集中'主要体现在**单一技术栈**,而非少数人控制全部。\n")
     L.append("| 运营者 | 域名数 | 归并依据 | 成员 |")
@@ -201,7 +231,7 @@ def main():
         L.append(f"| {o} | {len(m)} | {basis} | {members} |")
     L.append("")
 
-    L.append("## 9. 交叉分析:栈 × 国家\n")
+    L.append("## 11. 交叉分析:栈 × 国家\n")
     L.append("| 栈家族 | " + " | ".join(topc) + " |")
     L.append("|---|" + "---|" * len(topc))
     for s in stack:
