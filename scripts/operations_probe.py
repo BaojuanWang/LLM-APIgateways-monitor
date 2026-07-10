@@ -41,8 +41,8 @@ MANUAL_CSV = DATA_DIR / "manual_sites.csv"
 MASTER_SITES_CSV = DATA_DIR / "master_sites.csv"
 OUT_CSV = DATA_DIR / "operations.csv"
 
-TIMEOUT = 10
-PATHS = ["/", "/pricing", "/topup", "/recharge", "/about"]
+TIMEOUT = 7
+PATHS = ["/", "/pricing"]   # homepage + one commerce page (payment/claims usually here)
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                   "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
@@ -109,10 +109,12 @@ def save(records):
 
 
 def fetch_pages(domain):
-    """Return (concatenated_html, n_pages_ok)."""
+    """Return (concatenated_html, n_pages_ok). Homepage tries https+http; other
+    pages https only; skip the rest if the homepage is unreachable (dead site)."""
     html, ok = [], 0
-    for path in PATHS:
-        for scheme in ("https", "http"):
+    for i, path in enumerate(PATHS):
+        schemes = ("https", "http") if i == 0 else ("https",)
+        for scheme in schemes:
             try:
                 r = requests.get(f"{scheme}://{domain}{path}", headers=HEADERS,
                                  timeout=TIMEOUT, verify=False, allow_redirects=True)
@@ -122,6 +124,8 @@ def fetch_pages(domain):
                     break
             except Exception:
                 continue
+        if i == 0 and ok == 0:      # homepage dead → don't probe deeper
+            break
     return "\n".join(html), ok
 
 
@@ -174,7 +178,7 @@ def main():
         records[domain] = rec
         if i % 20 == 0:
             save(records)
-        time.sleep(random.uniform(1.0, 2.0))
+        time.sleep(random.uniform(0.4, 0.9))
 
     save(records)
     pay = sum(1 for r in records.values() if r.get("payment_methods"))
