@@ -332,5 +332,24 @@ _284 站取到模型列表_
 | openai-compatible-unknown | 0 | 7 | 0 | 0 | 0 |
 | confirmed-unknown | 2 | 2 | 0 | 0 | 0 |
 
+## 12. 相似模板家族(特征相似度聚类)
+
+用共享稀有特征(favicon/非CDN ASN/IP/注册商/Server/前端)做 Jaccard 式聚类,得 **22 个模板家族**,覆盖 62 站。这比运营者归并**粗一层**——揭示共享部署模板/搭建商基础设施(未必同一人)。方法依据:网站结构相似度聚类(见 §D7)。
+
+| 家族 | 站数 | 共享特征 | 成员 |
+|---|---:|---|---|
+| 52ccl.cn | 7 | server:esa | 52ccl.cn;bobdong.cn;hcnote.cn;iamhc.cn;joyzhi.com;little |
+| ablai.top | 5 | asn:Sharktech;favicon:4214f2244b29 | ablai.top;bltcy.ai;geekai.pro;linkapi.org;whatai.cc |
+| ai-gaochao.cn | 5 | asn:ACE | ai-gaochao.cn;api520.pro;openai-hub.com;orcarouter.ai;sh |
+| ccode.dev | 5 | asn:Peekabo Networks;server:photon-edg | ccode.dev;cdn.ad;monking.ai;uucode.org;vbcode.io |
+| bdshmmkj3.cn | 4 | asn:Spartan Host Ltd;registrar:上海福虎信息科 | bdshmmkj3.cn;daikuankm.cn;oogaming.cn;racetozero.org.cn |
+| 147ai.cn | 3 | asn:Meteverse Limited.;ip:157.185.163. | 147ai.cn;147ai.com;580ai.net |
+| buzzai.cc | 3 | asn:FASTNET DATA INC;server:cdn | buzzai.cc;cwapi.vip;sbbbbbbbbb.xyz |
+| 4sapi.com | 2 | asn:DMIT Cloud Service;ip:154.17.20.13 | 4sapi.com;4sapi.net |
+| africarouter.ai | 2 | favicon:c30c7d42707a;server:vercel | africarouter.ai;threadzy.ai |
+| aibinghe.xyz | 2 | asn:NetLab Global;registrar:Chengdu we | aibinghe.xyz;aladingapi.cc |
+| aigcbest.top | 2 | asn:DMIT Cloud Service;ip:154.21.93.12 | aigcbest.top;ifopen.ai |
+| anyroute.io | 2 | asn:Spartan Host Ltd;ip:172.83.152.193 | anyroute.io;huanapi.com |
+
 ---
 _方法与文献背书见 `docs/METHODS_element_citations.md`。低覆盖字段(隐私/联系方式/ICP)结论仅供参考。_

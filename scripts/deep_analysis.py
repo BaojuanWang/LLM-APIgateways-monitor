@@ -257,6 +257,21 @@ def main():
         L.append(f"| {s} | {row} |")
     L.append("")
 
+    # similarity families (if site_similarity.py has run)
+    sim_path = os.path.join(M, "site_similarity_clusters.csv")
+    if os.path.exists(sim_path):
+        sim = list(csv.DictReader(open(sim_path, encoding="utf-8-sig")))
+        covered = sum(int(r["size"]) for r in sim)
+        L.append("## 12. 相似模板家族(特征相似度聚类)\n")
+        L.append(f"用共享稀有特征(favicon/非CDN ASN/IP/注册商/Server/前端)做 Jaccard 式聚类,"
+                 f"得 **{len(sim)} 个模板家族**,覆盖 {covered} 站。这比运营者归并**粗一层**——"
+                 "揭示共享部署模板/搭建商基础设施(未必同一人)。方法依据:网站结构相似度聚类(见 §D7)。\n")
+        L.append("| 家族 | 站数 | 共享特征 | 成员 |")
+        L.append("|---|---:|---|---|")
+        for r in sorted(sim, key=lambda x: -int(x["size"]))[:12]:
+            L.append(f"| {r['family_id']} | {r['size']} | {r['shared_features'][:38]} | {r['members'][:56]} |")
+        L.append("")
+
     L.append("---\n_方法与文献背书见 `docs/METHODS_element_citations.md`。低覆盖字段(隐私/联系方式/ICP)结论仅供参考。_")
 
     out = os.path.join(M, "ANALYSIS_REPORT.md")
