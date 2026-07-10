@@ -1,0 +1,810 @@
+﻿domain,platform_name,stack_family,framework_raw,online_status,tld,whois_reg_date,ssl_not_before,hosting_asn,ip_country,has_privacy,telegram,qq,operator_id,operator_domains,discovery_round,verdict,signal_tier,in_discovery,in_monitor,in_enriched,observed_hosts
+bdshmmkj3.cn,aicost API,one-api-family,new-api/one-api系,,cn,,,,,,,,bdshmmkj3.cn,5,round7,confirmed,A_api_status,Y,,,bdshmmkj3.cn
+daikuankm.cn,aicost API,one-api-family,new-api/one-api系,,cn,,,,,,,,bdshmmkj3.cn,5,round2,confirmed,A_api_status,Y,,,daikuankm.cn
+oogaming.cn,aicost API,one-api-family,new-api/one-api系,,cn,,,,,,,,bdshmmkj3.cn,5,round7,confirmed,A_api_status,Y,,,oogaming.cn
+racetozero.org.cn,aicost API,one-api-family,new-api/one-api系,,cn,,,,,,,,bdshmmkj3.cn,5,round7,confirmed,A_api_status,Y,,,racetozero.org.cn
+zc-s.org.cn,aicost API,one-api-family,new-api/one-api系,,cn,,,,,,,,bdshmmkj3.cn,5,round7,confirmed,A_api_status,Y,,,zc-s.org.cn
+a8.hk,便携AI聚合API,one-api-family,new-api/one-api系,,hk,,,,,,,,a8.hk,3,round2,confirmed,A_api_status,Y,,,api.a8.hk
+ainstant.pro,快稳稳 API,one-api-family,new-api/one-api系,,pro,,,,,,,,ainstant.pro,3,round2,confirmed,A_api_status,Y,,,api.ainstant.pro
+anyroute.io,AnyRoute,unlabeled,,ONLINE,io,2026-04-05,,AS138995 Antbox Networks Limited,United States,有,,,anyroute.io,3,,,,,Y,Y,cc.anyroute.io
+bianxie.ai,便携AI聚合API,one-api-family,new-api/one-api系,,ai,,,,,,,,a8.hk,3,round2,confirmed,A_api_status,Y,,,api.bianxie.ai
+bianxieai.com,便携AI聚合API,one-api-family,new-api/one-api系,,com,,,,,,,,a8.hk,3,round2,confirmed,A_api_status,Y,,,api.bianxieai.com
+buzz7.top,Buzz · AI,one-api-family,new-api/one-api系,,top,,,,,,,,buzz7.top,3,round10,confirmed,A_api_status,Y,,,claude.buzz7.top
+buzzai.cc,Buzz · AI,one-api-family,new-api/one-api系,ONLINE,cc,2026-03-06,,AS8796 FASTNET DATA INC,United States,有,,,buzz7.top,3,round16,confirmed,A_api_status,Y,Y,Y,buzzai.cc
+buzzai.top,Buzz · AI,one-api-family,new-api/one-api系,,top,,,,,,,,buzz7.top,3,round10,confirmed,A_api_status,Y,,,buzzai.top
+clauqe.ai,ClauqeAI,unlabeled,Vue,ONLINE,ai,2026-04-08,,AS138995 Antbox Networks Limited,United States,,,,anyroute.io,3,,,,,Y,Y,clauqe.ai
+dragoncode.codes,Dragoncode,unlabeled,Vue,ONLINE,codes,,,AS138995 Antbox Networks Limited,United States,有,,,anyroute.io,3,,,,,Y,Y,dragoncode.codes
+ephone.ai,ePhone AI,confirmed-unknown,unknown,ONLINE,ai,2023-08-03,,"AS13335 Cloudflare, Inc.",Canada,有,,,ephone.ai,3,round1,confirmed,A_api_status,Y,Y,Y,api.ephone.ai;ephone.ai;platform.ephone.ai
+ephone.chat,ePhone AI,confirmed-unknown,unknown,,chat,,,,,,,,ephone.ai,3,round2,confirmed,A_api_status,Y,,,api.ephone.chat
+innk.cc,ePhone AI,confirmed-unknown,unknown,,cc,,,,,,,,ephone.ai,3,round9,confirmed,A_api_status,Y,,,chat.innk.cc
+kuaiwenwen.top,快稳稳 API,one-api-family,new-api/one-api系,,top,,,,,,,,ainstant.pro,3,round2,confirmed,A_api_status,Y,,,api.kuaiwenwen.top
+kwwai.top,快稳稳 API,one-api-family,new-api/one-api系,,top,,,,,,,,ainstant.pro,3,round2,confirmed,A_api_status,Y,,,api.kwwai.top
+onechats.ai,OneChat API,one-api-family,new-api/one-api系,,ai,,,,,,,,onechats.ai,3,round9,confirmed,A_api_status,Y,,,chatapi.onechats.ai
+onechats.cn,OneChat API,one-api-family,new-api/one-api系,,cn,,,,,,,,onechats.ai,3,round2,confirmed,A_api_status,Y,,,api.onechats.cn
+onechats.top,OneChat API,one-api-family,new-api/one-api系,,top,,,,,,,,onechats.ai,3,round2,confirmed,A_api_status,Y,,,api.onechats.top;chatapi.onechats.top
+poloai.top,PoloAPI,one-api-family,new-api/one-api系,,top,,,,,,,,poloai.top,3,round2,confirmed,A_api_status,Y,,,fast.poloai.top;poloai.top
+poloapi.com,PoloAPI,one-api-family,new-api/one-api系,,com,,,,,,,,poloai.top,3,round2,confirmed,A_api_status,Y,,,xy.poloapi.com
+poloapi.top,PoloAPI,one-api-family,new-api/one-api系,,top,,,,,,,,poloai.top,3,round2,confirmed,A_api_status,Y,,,poloapi.top
+147ai.cn,147 AI,one-api-family,new-api/one-api系,,cn,,,,,,,,147ai.cn,2,round4,confirmed,A_api_status,Y,,,api.147ai.cn
+147ai.com,147 AI,one-api-family,new-api/one-api系,,com,,,,,,,,147ai.cn,2,round1,confirmed,A_api_status,Y,,,147ai.com
+4sapi.com,4SAPI,one-api-family,new-api/one-api系,,com,,,,,,,,4sapi.com,2,round1,confirmed,A_api_status,Y,,,4sapi.com
+4sapi.net,4SAPI,one-api-family,new-api/one-api系,,net,,,,,,,,4sapi.com,2,round9,confirmed,A_api_status,Y,,,4sapi.net
+ai-gaochao.cn,数标标API,one-api-family,new-api/one-api系,,cn,,,,,,,,ai-gaochao.cn,2,round2,confirmed,A_api_status,Y,,,api.ai-gaochao.cn
+ai-szzx.online,数智AI,unlabeled,Nginx,ONLINE,online,2023-12-02,,AS45090 Shenzhen Tencent Computer Systems Company Limited,China,有,,,ai-szzx.online,2,,,,,Y,Y,ai-szzx.online
+aigc456.top,钱多多 API,one-api-family,new-api/one-api系,,top,,,,,,,,aigc456.top,2,round9,confirmed,A_api_status,Y,,,aigc456.top
+b886.top,CCTQ,unlabeled,,DNS_FAIL,top,2024-10-25,,,,无,,,b886.top,2,,,,,Y,Y,code.b886.top
+bbww.top,旺旺中转站,one-api-family,new-api/one-api系,ONLINE,top,2026-03-17,,"AS13335 Cloudflare, Inc.",Canada,,,,bbww.top,2,round1,confirmed,A_api_status,Y,Y,Y,api.bbww.top
+bearlab.ai,PRY API,one-api-family,new-api/one-api系,,ai,,,,,,,,bearlab.ai,2,round14,confirmed,A_api_status,Y,,,bearlab.ai
+bjxrouter.com,北极星,one-api-family,new-api/one-api系,,com,,,,,,,,bjxrouter.com,2,round2,confirmed,A_api_status,Y,,,api.bjxrouter.com
+bltcy.ai,柏拉图AI,one-api-family,new-api/one-api系,,ai,,,,,,,,bltcy.ai,2,round1,confirmed,A_api_status,Y,,,api.bltcy.ai
+bltcy.top,柏拉图AI,one-api-family,new-api/one-api系,,top,,,,,,,,bltcy.ai,2,round2,confirmed,A_api_status,Y,,,api.bltcy.top;one-api.bltcy.top
+bybing.cc,北极星,one-api-family,new-api/one-api系,,cc,,,,,,,,bjxrouter.com,2,round5,confirmed,A_api_status,Y,,,api.bybing.cc
+ccfly.codes,CCFly,unlabeled,,ONLINE,codes,,,AS906 DMIT Cloud Services,United States,有,,,ccfly.codes,2,,,,,Y,Y,ccfly.codes
+ccmax20.cc,baby,unlabeled,"Nginx, React",ONLINE,cc,2026-06-11,,AS16276 OVH SAS,United States,无,,,ccmax20.cc,2,,,,,Y,Y,ccmax20.cc
+ccplus.site,ccfly,unlabeled,Vue,ONLINE,site,2026-01-29,,AS906 DMIT Cloud Services,United States,有,,"1025463125, 645507046",ccfly.codes,2,,,,,Y,Y,hk.ccplus.site
+cctq.ai,CCTQ,one-api-family,new-api/one-api系,,ai,,,,,,,,b886.top,2,round7,confirmed,A_api_status,Y,,,www.cctq.ai
+chatopens.vip,CHATOPENS/b站小光,unlabeled,未识别,ONLINE,vip,2025-02-19,,AS979 NetLab Global,United States,有,,,chatopens.vip,2,,,,,Y,Y,hos.chatopens.vip
+cherryin.ai,CherryIN,one-api-family,new-api/one-api系,,ai,,,,,,,,cherryin.ai,2,round2,confirmed,A_api_status,Y,,,open.cherryin.ai
+cherryin.net,CherryIN,one-api-family,new-api/one-api系,,net,,,,,,,,cherryin.ai,2,round5,confirmed,A_api_status,Y,,,open.cherryin.net
+crond.dev,PRY API,one-api-family,new-api/one-api系,ONLINE,dev,,,"AS13335 Cloudflare, Inc.",Canada,无,,,bearlab.ai,2,round16,confirmed,A_api_status,Y,Y,Y,api.vip.crond.dev
+cun.ai,CUN.AI,one-api-family,new-api/one-api系,,ai,,,,,,,,cun.ai,2,round16,confirmed,A_api_status,Y,,,cun.ai
+dataeyes.ai,dataeyes API,one-api-family,new-api/one-api系,ONLINE,ai,2025-01-10,,"AS13335 Cloudflare, Inc.",Canada,有,,,dataeyes.ai,2,round1,confirmed,A_api_status,Y,Y,Y,cloud.dataeyes.ai;dataeyes.ai;www.dataeyes.ai
+fushengyunsuan.cn,浮生云算,one-api-family,new-api/one-api系,,cn,,,,,,,,fushengyunsuan.cn,2,round5,confirmed,A_api_status,Y,,,fushengyunsuan.cn;image.fushengyunsuan.cn
+fushengyunsuan.com,浮生云算,one-api-family,new-api/one-api系,,com,,,,,,,,fushengyunsuan.cn,2,round16,confirmed,A_api_status,Y,,,fushengyunsuan.com
+gpt.ge,V-API,one-api-family,new-api/one-api系,ONLINE,ge,2023-10-27,,AS25820 IT7 Networks Inc,United States,无,,,gpt.ge,2,round16,confirmed,A_api_status,Y,Y,Y,api.gpt.ge
+hcnsec.cn,新疆幻城网安科技公益大模型api,one-api-family,new-api/one-api系,,cn,,,,,,,,hcnsec.cn,2,round5,confirmed,A_api_status,Y,,,api.hcnsec.cn
+hk.cn,VAMN,unlabeled,Nginx,ONLINE,cn,2024-08-12,,AS201106 Spartan Host Ltd,United States,无,,,chatopens.vip,2,,,,,Y,Y,claude.hk.cn
+huiyun.asia,汇云AI,one-api-family,new-api/one-api系,ONLINE,asia,2026-05-18,,AS133199 SonderCloud Limited,Hong Kong,无,,,huiyun.asia,2,round16,confirmed,A_api_status,Y,Y,Y,huiyun.asia
+hvoy_removed,旺旺中转站,unlabeled,,DNS_FAIL,hvoy_removed,,,,,无,,,bbww.top,2,,,,,Y,Y,hvoy_removed
+iamhc.cn,新疆幻城网安科技公益大模型api,one-api-family,new-api/one-api系,,cn,,,,,,,,hcnsec.cn,2,round4,confirmed,A_api_status,Y,,,api.iamhc.cn
+ifopen.ai,钱多多 API,one-api-family,new-api/one-api系,,ai,,,,,,,,aigc456.top,2,round2,confirmed,A_api_status,Y,,,api.ifopen.ai;us.ifopen.ai
+jeniya.cn,简易-API中转站-专业的AI大模型API接口中转站平台API供应商,one-api-family,new-api/one-api系,,cn,,,,,,,,jeniya.cn,2,round6,confirmed,A_api_status,Y,,,jeniya.cn
+jeniya.top,简易-API中转站-专业的AI大模型API接口中转站平台API供应商,one-api-family,new-api/one-api系,,top,,,,,,,,jeniya.cn,2,round5,confirmed,A_api_status,Y,,,jeniya.top
+juxingai.top,聚星AI,one-api-family,new-api/one-api系,ONLINE,top,2026-05-08,,"AS45102 Alibaba (US) Technology Co., Ltd.",Hong Kong,无,,,huiyun.asia,2,round16,confirmed,A_api_status,Y,Y,Y,juxingai.top
+max20.cn,Baby,one-api-family,new-api/one-api系,,cn,,,,,,,,ccmax20.cc,2,round16,confirmed,A_api_status,Y,,,max20.cn
+newcli.com,企业专用Api,one-api-family,new-api/one-api系,CLOUDFLARE_OR_BLOCKED,com,2025-06-26,,"AS13335 Cloudflare, Inc.",Canada,无,,,dataeyes.ai,2,round7,confirmed,A_api_status,Y,Y,Y,business.newcli.com;code.newcli.com
+paintbot.top,Pro API,one-api-family,new-api/one-api系,,top,,,,,,,,paintbot.top,2,round1,confirmed,A_api_status,Y,,,oneapi.paintbot.top
+prorisehub.com,Pro API,one-api-family,new-api/one-api系,,com,,,,,,,,paintbot.top,2,round5,confirmed,A_api_status,Y,,,newapi.prorisehub.com
+shubiaobiao.cn,数标标API,one-api-family,new-api/one-api系,,cn,,,,,,,,ai-gaochao.cn,2,round2,confirmed,A_api_status,Y,,,api.shubiaobiao.cn
+sudocode.chat,SudoCode,unlabeled,"Cloudflare, React",ONLINE,chat,,,"AS13335 Cloudflare, Inc.",Canada,无,,,sudocode.chat,2,,,,,Y,Y,sudocode.chat
+sudocode.us,SudoCode,one-api-family,new-api/one-api系,ONLINE,us,2026-03-12,,AS25820 IT7 Networks Inc,United States,无,,,sudocode.chat,2,round16,confirmed,A_api_status,Y,Y,Y,sudocode.us
+vveai.com,V-API,one-api-family,new-api/one-api系,,com,,,,,,,,gpt.ge,2,round2,confirmed,A_api_status,Y,,,api.vveai.com
+wintoken.dev,CUN.AI,one-api-family,new-api/one-api系,ONLINE,dev,,,"AS13335 Cloudflare, Inc.",Canada,有,,,cun.ai,2,round16,confirmed,A_api_status,Y,Y,Y,wintoken.dev
+wlai.vip,云雾 API,one-api-family,new-api/one-api系,,vip,,,,,,,,wlai.vip,2,round2,confirmed,A_api_status,Y,,,api.wlai.vip;api3.wlai.vip
+x-see.cn,小鲸 AI 开放平台,one-api-family,new-api/one-api系,,cn,,,,,,,,x-see.cn,2,round2,confirmed,A_api_status,Y,,,aigc.x-see.cn
+xiaojingai.com,小鲸 AI 开放平台,one-api-family,new-api/one-api系,ONLINE,com,2024-09-20,,AS139341 ACE,Singapore,无,,,x-see.cn,2,round1,confirmed,A_api_status,Y,Y,Y,open.xiaojingai.com
+xpluse.plus,数智AI,one-api-family,new-api/one-api系,CLOUDFLARE_OR_BLOCKED,plus,,,"AS13335 Cloudflare, Inc.",Canada,无,,,ai-szzx.online,2,round1,confirmed,A_api_status,Y,Y,Y,api.xpluse.plus
+yansd666.com,烟神殿AI,one-api-family,new-api/one-api系,,com,,,,,,,,yansd666.com,2,round6,confirmed,A_api_status,Y,,,yansd666.com
+yansd666.top,烟神殿AI,one-api-family,new-api/one-api系,,top,,,,,,,,yansd666.com,2,round7,confirmed,A_api_status,Y,,,yansd666.top
+yunwu.ai,云雾 API,one-api-family,new-api/one-api系,,ai,,,,,,,,wlai.vip,2,round1,confirmed,A_api_status,Y,,,api.yunwu.ai;yunwu.ai
+zlapi.pro,zzzzzll API 💕,one-api-family,new-api/one-api系,,pro,,,,,,,,zlapi.pro,2,round1,confirmed,A_api_status,Y,,,az.zlapi.pro
+zlapi.vip,zzzzzll API 💕,one-api-family,new-api/one-api系,ONLINE,vip,2026-03-10,,AS979 NetLab Global,United States,无,,,zlapi.pro,2,round16,confirmed,A_api_status,Y,Y,Y,az.zlapi.vip
+0029.org,,sub2api,sub2api,,org,,,,,,,,0029.org,1,round5,confirmed,C_framework+content,Y,,,www.0029.org
+050602.xyz,LingxiCode,one-api-family,"Cloudflare, React, NewAPI",ONLINE,xyz,2025-11-14,,"AS13335 Cloudflare, Inc.",Canada,有,,,050602.xyz,1,,,,,Y,Y,new.050602.xyz
+10dianai.com,10dian-API企业台,one-api-family,new-api/one-api系,,com,,,,,,,,10dianai.com,1,round1,confirmed,A_api_status,Y,,,cy.10dianai.com
+112102.xyz,zifeiyu API,one-api-family,new-api/one-api系,,xyz,,,,,,,,112102.xyz,1,round10,confirmed,A_api_status,Y,,,ai.112102.xyz
+121628.xyz,霸气公益平台,one-api-family,new-api/one-api系,,xyz,,,,,,,,121628.xyz,1,round9,confirmed,A_api_status,Y,,,ai.121628.xyz
+123nhh.com,New API,one-api-family,new-api/one-api系,,com,,,,,,,,123nhh.com,1,round1,confirmed,A_api_status,Y,,,api.123nhh.com
+123nhh.xyz,New API,one-api-family,new-api/one-api系,,xyz,,,,,,,,123nhh.xyz,1,round6,confirmed,A_api_status,Y,,,new.123nhh.xyz
+12ai.org,12API,one-api-family,new-api/one-api系,,org,,,,,,,,12ai.org,1,round7,confirmed,A_api_status,Y,,,new.12ai.org
+132999.xyz,加菲猫-API,one-api-family,new-api/one-api系,,xyz,,,,,,,,132999.xyz,1,round2,confirmed,A_api_status,Y,,,api.132999.xyz
+17nas.com,镜核 AI,one-api-family,new-api/one-api系,CLOUDFLARE_OR_BLOCKED,com,2025-03-16,,"AS13335 Cloudflare, Inc.",Canada,无,,,17nas.com,1,round16,confirmed,A_api_status,Y,Y,Y,ai.17nas.com;api.17nas.com
+180txt.cn,180txt,one-api-family,new-api/one-api系,,cn,,,,,,,,180txt.cn,1,round6,confirmed,A_api_status,Y,,,180txt.cn
+1xm.ai,OneXModel,one-api-family,new-api/one-api系,ONLINE,ai,2026-03-06,,"AS13335 Cloudflare, Inc.",Canada,有,,,1xm.ai,1,round16,confirmed,A_api_status,Y,Y,Y,1xm.ai
+2020111.xyz,老魔公益站,one-api-family,new-api/one-api系,,xyz,,,,,,,,2020111.xyz,1,round1,confirmed,A_api_status,Y,,,api.2020111.xyz
+242243.xyz,小鸡农场,one-api-family,new-api/one-api系,,xyz,,,,,,,,242243.xyz,1,round11,confirmed,A_api_status,Y,,,api.242243.xyz
+361888.xyz,New API,one-api-family,new-api/one-api系,,xyz,,,,,,,,361888.xyz,1,round1,confirmed,A_api_status,Y,,,api.361888.xyz
+4399ai.cn,4399ai API,one-api-family,new-api/one-api系,,cn,,,,,,,,4399ai.cn,1,round13,confirmed,A_api_status,Y,,,api.4399ai.cn
+4router.net,4Router,one-api-family,new-api/one-api系,,net,,,,,,,,4router.net,1,round4,confirmed,A_api_status,Y,,,4router.net
+4zapi.com,4Z API,one-api-family,new-api/one-api系,,com,,,,,,,,4zapi.com,1,round4,confirmed,A_api_status,Y,,,4zapi.com
+52ccl.cn,月城公益站,one-api-family,new-api/one-api系,,cn,,,,,,,,52ccl.cn,1,round11,confirmed,A_api_status,Y,,,ai.52ccl.cn
+52mx.net,52模型|52mx.net,one-api-family,new-api/one-api系,,net,,,,,,,,52mx.net,1,round5,confirmed,A_api_status,Y,,,52mx.net
+580ai.net,Nano banana,one-api-family,new-api/one-api系,,net,,,,,,,,580ai.net,1,round2,confirmed,A_api_status,Y,,,nano.580ai.net
+5cookie.cc,5Cookie Code,one-api-family,new-api/one-api系,ONLINE,cc,2026-06-03,,AS967 VMISS Inc.,United States,无,,,5cookie.cc,1,round14,confirmed,A_api_status,Y,Y,Y,5cookie.cc;www.5cookie.cc
+66ai.ai,66AI.AI,one-api-family,new-api/one-api系,,ai,,,,,,,,66ai.ai,1,round14,confirmed,A_api_status,Y,,,66ai.ai
+724codes.com,724codes,unlabeled,Vue,ONLINE,com,2026-06-03,,AS3462 Data Communication Business Group,Taiwan,有,,,724codes.com,1,,,,,Y,Y,724codes.com
+777114.xyz,LogosAPI,one-api-family,new-api/one-api系,,xyz,,,,,,,,777114.xyz,1,round1,confirmed,A_api_status,Y,,,api.777114.xyz
+777358.xyz,三七中转,one-api-family,new-api/one-api系,,xyz,,,,,,,,777358.xyz,1,round1,confirmed,A_api_status,Y,,,newapi.777358.xyz
+78code.cc,78 code,one-api-family,new-api/one-api系,,cc,,,,,,,,78code.cc,1,round11,confirmed,A_api_status,Y,,,78code.cc;www.78code.cc
+7x.hk,七倍算力,one-api-family,new-api/one-api系,,hk,,,,,,,,7x.hk,1,round11,confirmed,A_api_status,Y,,,7x.hk
+8864k.com,8864k API,one-api-family,new-api/one-api系,,com,,,,,,,,8864k.com,1,round9,confirmed,A_api_status,Y,,,router.8864k.com
+88api.chat,88 API,one-api-family,new-api/one-api系,,chat,,,,,,,,88api.chat,1,round1,confirmed,A_api_status,Y,,,api.88api.chat
+8yes.cc,New API,one-api-family,new-api/one-api系,,cc,,,,,,,,8yes.cc,1,round4,confirmed,A_api_status,Y,,,8yes.cc
+91router.ai,91ROUTER,one-api-family,new-api/one-api系,,ai,,,,,,,,91router.ai,1,round14,confirmed,A_api_status,Y,,,91router.ai
+9527code.com,9527CODE,one-api-family,new-api/one-api系,ONLINE,com,2026-03-18,,"AS13335 Cloudflare, Inc.",Canada,有,,,9527code.com,1,round16,confirmed,A_api_status,Y,Y,Y,9527code.com;api.9527code.com
+992236.xyz,Meow Brother API Distribution Platform (New ),one-api-family,new-api/one-api系,,xyz,,,,,,,,992236.xyz,1,round7,confirmed,A_api_status,Y,,,992236.xyz
+996444.cn,清风阁 API,one-api-family,new-api/one-api系,,cn,,,,,,,,996444.cn,1,round2,confirmed,A_api_status,Y,,,api.996444.cn
+999554.xyz,云舟API,one-api-family,new-api/one-api系,,xyz,,,,,,,,999554.xyz,1,round4,confirmed,A_api_status,Y,,,cli.999554.xyz
+a1r.cc,A1R&聚合Ai,one-api-family,new-api/one-api系,,cc,,,,,,,,a1r.cc,1,round9,confirmed,A_api_status,Y,,,api.a1r.cc
+a6api.com,A6api-Token聚合站,one-api-family,new-api/one-api系,,com,,,,,,,,a6api.com,1,round16,confirmed,A_api_status,Y,,,a6api.com
+aaatoken.cn,3A API,one-api-family,new-api/one-api系,ONLINE,cn,2026-05-10,,"AS37963 Hangzhou Alibaba Advertising Co.,Ltd.",China,无,,,aaatoken.cn,1,round16,confirmed,A_api_status,Y,Y,Y,aaatoken.cn
+aabao.vip,主站_Aabao_API,one-api-family,new-api/one-api系,,vip,,,,,,,,aabao.vip,1,round2,confirmed,A_api_status,Y,,,api.aabao.vip;fastapi.aabao.vip
+abacus.ai,,one-api-family,one-api,,ai,,,,,,,,abacus.ai,1,round4,confirmed,C_framework+content,Y,,,routellm.abacus.ai
+abcrelay.com,ABC Relay,one-api-family,new-api/one-api系,,com,,,,,,,,abcrelay.com,1,round1,confirmed,A_api_status,Y,,,abcrelay.com;api.abcrelay.com
+ablai.top,1,one-api-family,new-api/one-api系,,top,,,,,,,,ablai.top,1,round2,confirmed,A_api_status,Y,,,api.ablai.top
+affordableaiapi.com,AffordableAI API,one-api-family,new-api/one-api系,,com,,,,,,,,affordableaiapi.com,1,round1,confirmed,A_api_status,Y,,,affordableaiapi.com
+africarouter.ai,,one-api-family,one-api,,ai,,,,,,,,africarouter.ai,1,round14,confirmed,C_framework+content,Y,,,africarouter.ai
+agentrouter.org,Agent Router,one-api-family,new-api/one-api系,,org,,,,,,,,agentrouter.org,1,round5,confirmed,A_api_status,Y,,,agentrouter.org
+ai-openclaw.one,CR.Ai,one-api-family,new-api/one-api系,,one,,,,,,,,ai-openclaw.one,1,round7,confirmed,A_api_status,Y,,,www.ai-openclaw.one
+ai-wave.org,AI Wave,one-api-family,new-api/one-api系,,org,,,,,,,,ai-wave.org,1,round9,confirmed,A_api_status,Y,,,www.ai-wave.org
+ai-yyds.com,AI-YYDS   GPT 5 API接口,one-api-family,new-api/one-api系,,com,,,,,,,,ai-yyds.com,1,round2,confirmed,A_api_status,Y,,,ai-yyds.com;api.ai-yyds.com
+ai.cc,,one-api-family,one-api,,cc,,,,,,,,ai.cc,1,round10,confirmed,C_framework+content,Y,,,ai.cc;www.ai.cc
+ai123.one,Ai123中转站,one-api-family,new-api/one-api系,,one,,,,,,,,ai123.one,1,round11,confirmed,A_api_status,Y,,,ai123.one
+aiapi.world,AiApi.World,unlabeled,Nginx,ONLINE,world,,,"AS45102 Alibaba (US) Technology Co., Ltd.",Hong Kong,有,,,aiapi.world,1,,,,,Y,Y,aiapi.world
+aiapidoctor.com,,one-api-family,new-api,,com,,,,,,,,aiapidoctor.com,1,round9,confirmed,C_framework+content,Y,,,aiapidoctor.com
+aiapify.com,AIApify,one-api-family,new-api/one-api系,ONLINE,com,2026-04-07,,"AS45102 Alibaba (US) Technology Co., Ltd.",Hong Kong,有,,,aiapify.com,1,round16,confirmed,A_api_status,Y,Y,Y,aiapify.com
+aiapipk.com,,one-api-family,one-api,,com,,,,,,,,aiapipk.com,1,round1,confirmed,C_framework+content,Y,,,www.aiapipk.com
+aiapis.io,AI APIS,unlabeled,"Cloudflare, Vue",ONLINE,io,2026-05-09,,"AS13335 Cloudflare, Inc.",Canada,有,,,aiapis.io,1,,,,,Y,Y,aiapis.io
+aiartmirror.com,AIArtMirror,one-api-family,new-api/one-api系,,com,,,,,,,,aiartmirror.com,1,round11,confirmed,A_api_status,Y,,,aiartmirror.com;www.aiartmirror.com
+aiberm.com,Aiberm,one-api-family,new-api/one-api系,ONLINE,com,2024-11-21,,"AS16509 Amazon.com, Inc.",United States,有,,,aiberm.com,1,round16,confirmed,A_api_status,Y,Y,Y,aiberm.com
+aibinghe.xyz,BingHeAPI,unlabeled,"Nginx, Vue",ONLINE,xyz,2026-05-02,,AS979 NetLab Global,Hong Kong,有,,1106800832,aibinghe.xyz,1,,,,,Y,Y,api.aibinghe.xyz
+aicc0.com,Z API,one-api-family,new-api/one-api系,,com,,,,,,,,aicc0.com,1,round11,confirmed,A_api_status,Y,,,zapi.aicc0.com
+aicodemirror.com,AICodeMirror,unlabeled,Cloudflare,ONLINE,com,2025-06-14,,"AS13335 Cloudflare, Inc.",Canada,无,,,aicodemirror.com,1,,,,,Y,Y,api.aicodemirror.com
+aieania.tech,CodexOne,unlabeled,"Nginx, Vue",ONLINE,tech,2026-04-15,,"AS132203 Tencent Building, Kejizhongyi Avenue",United States,有,,630150026,aieania.tech,1,,,,,Y,Y,codexone.aieania.tech
+aiearth.dev,AIO API,one-api-family,new-api/one-api系,,dev,,,,,,,,aiearth.dev,1,round9,confirmed,A_api_status,Y,,,api.aiearth.dev
+aiflowhub.ai,One API,one-api-family,new-api/one-api系,,ai,,,,,,,,aiflowhub.ai,1,round14,confirmed,A_api_status,Y,,,aiflowhub.ai
+aifoxspa.com,New API,one-api-family,new-api/one-api系,,com,,,,,,,,aifoxspa.com,1,round2,confirmed,A_api_status,Y,,,api.aifoxspa.com
+aigc2d.com,AIGC2D,one-api-family,new-api/one-api系,,com,,,,,,,,aigc2d.com,1,round7,confirmed,A_api_status,Y,,,next.aigc2d.com
+aigcbest.top,钱多多 API Beta,one-api-family,new-api/one-api系,,top,,,,,,,,aigcbest.top,1,round1,confirmed,A_api_status,Y,,,35.aigcbest.top;aigcbest.top;api.aigcbest.top;api2.aigcbest.top
+aigm99.cn,Green Mountain,one-api-family,new-api/one-api系,ONLINE,cn,2026-04-29,,"AS13335 Cloudflare, Inc.",Canada,无,,,aigm99.cn,1,round16,confirmed,A_api_status,Y,Y,Y,zz.aigm99.cn
+aigo123.net,AiGo123.net,one-api-family,new-api/one-api系,,net,,,,,,,,aigo123.net,1,round10,confirmed,A_api_status,Y,,,aigo123.net
+aigocode.com,AlGoCode,unlabeled,,ONLINE,com,2025-08-29,,"AS13335 Cloudflare, Inc.",Canada,有,t.me/+DjOEPVxszZw2NjRh,,aigocode.com,1,,,,,Y,Y,api.aigocode.com
+aijws.com,我的贾维斯,unlabeled,Cloudflare,CLOUDFLARE_OR_BLOCKED,com,2026-05-16,,"AS13335 Cloudflare, Inc.",Canada,有,,796808428,aijws.com,1,,,,,Y,Y,api.aijws.com
+aikeji.vip,AI科技全模型API,one-api-family,new-api/one-api系,,vip,,,,,,,,aikeji.vip,1,round2,confirmed,A_api_status,Y,,,api.aikeji.vip
+aimlapi.com,,one-api-family,one-api,,com,,,,,,,,aimlapi.com,1,round2,confirmed,C_framework+content,Y,,,aimlapi.com;www.aimlapi.com
+aiok.club,New API,one-api-family,new-api/one-api系,,club,,,,,,,,aiok.club,1,round4,confirmed,A_api_status,Y,,,aiok.club
+aiporters.com,One API,one-api-family,new-api/one-api系,,com,,,,,,,,aiporters.com,1,round2,confirmed,A_api_status,Y,,,one-api.aiporters.com
+aircode.xin,AirCode,unlabeled,"Nginx, Vue",ONLINE,xin,2026-04-29,,AS214996 netcup GmbH,United States,有,,,aircode.xin,1,,,,,Y,Y,api.aircode.xin
+aiskt.com,AiSKT API,one-api-family,new-api/one-api系,,com,,,,,,,,aiskt.com,1,round9,confirmed,A_api_status,Y,,,one.aiskt.com;pro.aiskt.com
+aisz.mom,词元枢阁 Token Nexus,one-api-family,new-api,ONLINE,mom,2026-05-18,,"AS13335 Cloudflare, Inc.",Canada,无,,,aisz.mom,1,round16,confirmed,A_api_status,Y,Y,Y,api.aisz.mom
+aixor.org,AiXor 大模型云,one-api-family,new-api/one-api系,,org,,,,,,,,aixor.org,1,round1,confirmed,A_api_status,Y,,,aixor.org
+aiyahmm.com,AiYa,one-api-family,new-api/one-api系,,com,,,,,,,,aiyahmm.com,1,round8,confirmed,A_api_status,Y,,,api.aiyahmm.com
+aizex.top,Aizex API,one-api-family,new-api/one-api系,,top,,,,,,,,aizex.top,1,round1,confirmed,A_api_status,Y,,,aizex.top
+aladingapi.cc,阿拉丁 API,one-api-family,new-api/one-api系,ONLINE,cc,2026-04-03,,AS979 NetLab Global,United States,无,,,aladingapi.cc,1,round1,confirmed,A_api_status,Y,Y,Y,www.aladingapi.cc
+allinai7.cloud,Allin-AI,unlabeled,,DNS_FAIL,cloud,2026-04-01,,,,无,,,allinai7.cloud,1,,,,,Y,Y,allinai7.cloud
+amutes.com,阿姆特斯,one-api-family,new-api/one-api系,,com,,,,,,,,amutes.com,1,round10,confirmed,A_api_status,Y,,,www.amutes.com
+amux.ai,Amux API,one-api-family,new-api/one-api系,,ai,,,,,,,,amux.ai,1,round2,confirmed,A_api_status,Y,,,api.amux.ai
+ananapi.com,AnAnAPI,one-api-family,new-api/one-api系,,com,,,,,,,,ananapi.com,1,round1,confirmed,A_api_status,Y,,,www.ananapi.com
+anpin.ai,AnPin AI,unlabeled,Vue,ONLINE,ai,2026-04-18,,AS49304 SAKURA LINK LIMITED,Hong Kong,有,,1229378916,anpin.ai,1,,,,,Y,Y,anpin.ai
+ant-ling.com,,openai-compatible-unknown,openai_compatible_unknown,,com,,,,,,,,ant-ling.com,1,round17,confirmed,B_v1_models,Y,,,api.ant-ling.com
+antirez.com,,one-api-family,new-api,,com,,,,,,,,antirez.com,1,round4,confirmed,C_framework+content,Y,,,antirez.com
+antsk.cn,AntSK API,one-api-family,new-api/one-api系,,cn,,,,,,,,antsk.cn,1,round11,confirmed,A_api_status,Y,,,api.antsk.cn
+anxidc.com,安讯AI,unlabeled,,DNS_FAIL,com,2023-05-05,,,,无,,,anxidc.com,1,,,,,Y,Y,ai.anxidc.com
+anyaigc.com,AnyAIGC,one-api-family,new-api/one-api系,,com,,,,,,,,anyaigc.com,1,round7,confirmed,A_api_status,Y,,,anyaigc.com
+anyone.ai,ANYONE.AI,one-api-family,new-api/one-api系,,ai,,,,,,,,anyone.ai,1,round1,confirmed,A_api_status,Y,,,anyone.ai;api.anyone.ai
+aokapi.com,AOK API,one-api-family,new-api/one-api系,ONLINE,com,2026-04-16,,"AS132203 Tencent Building, Kejizhongyi Avenue",Hong Kong,无,,,aokapi.com,1,round16,confirmed,A_api_status,Y,Y,Y,aokapi.com
+apertis.ai,Apertis,one-api-family,new-api/one-api系,,ai,,,,,,,,apertis.ai,1,round5,confirmed,A_api_status,Y,,,api.apertis.ai
+api000.com,零度API,one-api-family,new-api/one-api系,,com,,,,,,,,api000.com,1,round11,confirmed,A_api_status,Y,,,api000.com
+api2cn.com,智惠API,unlabeled,"Cloudflare, Vue",ONLINE,com,2026-04-29,,"AS13335 Cloudflare, Inc.",Canada,有,,,api2cn.com,1,,,,,Y,Y,api.api2cn.com
+api520.pro,熊猫API,one-api-family,new-api/one-api系,,pro,,,,,,,,api520.pro,1,round1,confirmed,A_api_status,Y,,,api520.pro
+api96.com,MG1 API,one-api-family,new-api/one-api系,,com,,,,,,,,api96.com,1,round14,confirmed,A_api_status,Y,,,x.api96.com
+apiclaude.cc,APIClaude,unlabeled,Vue,ONLINE,cc,2026-06-12,,"AS20473 The Constant Company, LLC",United States,无,,,apiclaude.cc,1,,,,,Y,Y,apiclaude.cc
+apiddt.com,DDTokens,one-api-family,new-api/one-api系,,com,,,,,,,,apiddt.com,1,round16,confirmed,A_api_status,Y,,,apiddt.com
+apidock.ai,APIDOCK,one-api-family,new-api/one-api系,,ai,,,,,,,,apidock.ai,1,round14,confirmed,A_api_status,Y,,,apidock.ai
+apigator.ai,,one-api-family,one-api,,ai,,,,,,,,apigator.ai,1,round14,confirmed,C_framework+content,Y,,,apigator.ai
+apihost.cn,APIHost AI,one-api-family,new-api/one-api系,,cn,,,,,,,,apihost.cn,1,round2,confirmed,A_api_status,Y,,,apihost.cn
+apimart.ai,APIMart,one-api-family,new-api/one-api系,,ai,,,,,,,,apimart.ai,1,round4,confirmed,A_api_status,Y,,,api.apimart.ai;apimart.ai
+apinebula.com,Nebula API,one-api-family,new-api/one-api系,,com,,,,,,,,apinebula.com,1,round1,confirmed,A_api_status,Y,,,apinebula.com
+apinova.cc,Nova AI,unlabeled,React,ONLINE,cc,2026-04-15,,AS979 NetLab Global,United States,无,,,apinova.cc,1,,,,,Y,Y,apinova.cc
+apiporter.com,Apiporter,one-api-family,"React, NewAPI",ONLINE,com,2026-03-31,,AS979 NetLab Global,United States,无,,,apiporter.com,1,,,,,Y,Y,apiporter.com
+apirouter.ai,接口通,one-api-family,new-api/one-api系,,ai,,,,,,,,apirouter.ai,1,round2,confirmed,A_api_status,Y,,,apirouter.ai
+apiwarrior.xyz,APIWarrior,one-api-family,new-api/one-api系,,xyz,,,,,,,,apiwarrior.xyz,1,round2,confirmed,A_api_status,Y,,,api.apiwarrior.xyz
+apixo.ai,,one-api-family,one-api,,ai,,,,,,,,apixo.ai,1,round17,confirmed,C_framework+content,Y,,,apixo.ai
+apiyi.com,APIYI,one-api-family,new-api/one-api系,,com,,,,,,,,apiyi.com,1,round1,confirmed,A_api_status,Y,,,api.apiyi.com
+ark717.com,小鸡毛的公益API站,one-api-family,new-api/one-api系,,com,,,,,,,,ark717.com,1,round11,confirmed,A_api_status,Y,,,api.ark717.com
+arkvision.ai,Stellark,one-api-family,new-api/one-api系,,ai,,,,,,,,arkvision.ai,1,round14,confirmed,A_api_status,Y,,,arkvision.ai
+arpanet.icu,ARPANET API,one-api-family,new-api/one-api系,ONLINE,icu,2025-10-13,,AS134765 CHINANET Yunnan province IDC1 network,China,无,,,arpanet.icu,1,round1,confirmed,A_api_status,Y,Y,Y,arpanet.icu
+atlascloud.ai,,one-api-family,one-api,,ai,,,,,,,,atlascloud.ai,1,round10,confirmed,C_framework+content,Y,,,atlascloud.ai;www.atlascloud.ai
+atomflow.vip,原子流动,one-api-family,new-api/one-api系,,vip,,,,,,,,atomflow.vip,1,round5,confirmed,A_api_status,Y,,,atomflow.vip
+autocontentapi.com,,one-api-family,one-api,,com,,,,,,,,autocontentapi.com,1,round8,confirmed,C_framework+content,Y,,,autocontentapi.com
+autorouter.io,AutoRouter,one-api-family,new-api/one-api系,CLOUDFLARE_OR_BLOCKED,io,2026-05-11,,"AS13335 Cloudflare, Inc.",Canada,无,,,autorouter.io,1,round16,confirmed,A_api_status,Y,Y,Y,autorouter.io
+avoapi.com,New API,one-api-family,new-api/one-api系,,com,,,,,,,,avoapi.com,1,round9,confirmed,A_api_status,Y,,,avoapi.com
+axisapi.cn,Axis Api,one-api-family,new-api/one-api系,,cn,,,,,,,,axisapi.cn,1,round10,confirmed,A_api_status,Y,,,axisapi.cn
+azapi.com.cn,AZ,one-api-family,new-api/one-api系,,cn,,,,,,,,azapi.com.cn,1,round1,confirmed,A_api_status,Y,,,azapi.com.cn
+b.ai,B.AI,unlabeled,,ONLINE_LOGIN_REQUIRED,ai,2017-12-16,,"AS16509 Amazon.com, Inc.",Singapore,无,,,b.ai,1,,,,,Y,Y,api.b.ai
+baobu.xyz,BAO-API,unlabeled,"Cloudflare, Vue",ONLINE,xyz,2025-09-05,,"AS13335 Cloudflare, Inc.",Canada,有,,,baobu.xyz,1,,,,,Y,Y,api.baobu.xyz
+baogutang.top,N1KO-API,unlabeled,"Nginx, Vue",ONLINE,top,2023-06-13,,AS5065 Bunny Communications,Japan,有,,"1105937029, 783246411",baogutang.top,1,,,,,Y,Y,token.baogutang.top
+bazaarlink.ai,,one-api-family,new-api,,ai,,,,,,,,bazaarlink.ai,1,round6,confirmed,C_framework+content,Y,,,bazaarlink.ai
+beecode.cc,BeeCode,unlabeled,"Cloudflare, Vue",ONLINE,cc,2026-03-23,,"AS13335 Cloudflare, Inc.",Canada,有,,,beecode.cc,1,,,,,Y,Y,beecode.cc
+beefapi.com,BeefAPI,one-api-family,new-api/one-api系,ONLINE,com,2026-04-13,,"AS13335 Cloudflare, Inc.",Canada,无,,,beefapi.com,1,round16,confirmed,A_api_status,Y,Y,Y,beefapi.com
+bestswifter.com,ByteClaude,one-api-family,new-api/one-api系,,com,,,,,,,,bestswifter.com,1,round1,confirmed,A_api_status,Y,,,claude.bestswifter.com
+biyuan.ai,彼源 AI,one-api-family,new-api/one-api系,,ai,,,,,,,,biyuan.ai,1,round14,confirmed,A_api_status,Y,,,biyuan.ai
+bluesminds.com,Bluesminds,one-api-family,new-api/one-api系,,com,,,,,,,,bluesminds.com,1,round5,confirmed,A_api_status,Y,,,api.bluesminds.com
+bobdong.cn,Bob API,one-api-family,new-api/one-api系,ONLINE,cn,2015-12-16,,"AS24429 Zhejiang Taobao Network Co.,Ltd",United States,无,,,bobdong.cn,1,round16,confirmed,A_api_status,Y,Y,Y,bobdong.cn
+bookapi.cc,TigerApi,one-api-family,new-api/one-api系,,cc,,,,,,,,bookapi.cc,1,round1,confirmed,A_api_status,Y,,,tiger.bookapi.cc
+bossclaw.org,BossClaw,unlabeled,"Cloudflare, Vue",ONLINE,org,2026-04-01,,"AS13335 Cloudflare, Inc.",Canada,有,,,bossclaw.org,1,,,,,Y,Y,bossclaw.org
+botcf.com,Bot Compute Fabric,one-api-family,new-api/one-api系,,com,,,,,,,,botcf.com,1,round8,confirmed,A_api_status,Y,,,api.botcf.com;botcf.com
+boxying.com,Boxying,one-api-family,new-api/one-api系,,com,,,,,,,,boxying.com,1,round11,confirmed,A_api_status,Y,,,www.boxying.com
+boya.one,伯牙中转,unlabeled,,HTTP_ERROR,one,2026-04-26,,,,无,,,boya.one,1,,,,,Y,Y,boya.one
+burncloud.com,BurnCloud AI API,one-api-family,new-api/one-api系,,com,,,,,,,,burncloud.com,1,round2,confirmed,A_api_status,Y,,,ai.burncloud.com
+buykey.ai,,one-api-family,new-api,,ai,,,,,,,,buykey.ai,1,round14,confirmed,C_framework+content,Y,,,buykey.ai
+bytecatcode.org,bytecat,one-api-family,new-api/one-api系,,org,,,,,,,,bytecatcode.org,1,round2,confirmed,A_api_status,Y,,,codecdn.bytecatcode.org
+callgpt.co.uk,,one-api-family,one-api,,uk,,,,,,,,callgpt.co.uk,1,round8,confirmed,C_framework+content,Y,,,www.callgpt.co.uk
+callxyq.xyz,Ls. API,one-api-family,new-api/one-api系,ONLINE,xyz,2025-09-06,,"AS26042 FiberState, LLC",United States,无,,,callxyq.xyz,1,round16,confirmed,A_api_status,Y,Y,Y,callxyq.xyz
+catapi.ai,Cat API,one-api-family,new-api/one-api系,,ai,,,,,,,,catapi.ai,1,round2,confirmed,A_api_status,Y,,,catapi.ai
+cc-api.chat,New API,one-api-family,new-api/one-api系,,chat,,,,,,,,cc-api.chat,1,round1,confirmed,A_api_status,Y,,,cc-api.chat
+cc-vibe.com,CCVibe,unlabeled,"Nginx, Vue",ONLINE,com,2026-04-09,,"AS20473 The Constant Company, LLC",United States,有,t.me/+_QKy,,cc-vibe.com,1,,,,,Y,Y,cc-vibe.com
+ccgoai.com,ccgo,unlabeled,"Cloudflare, Vue",ONLINE,com,2026-05-04,,"AS13335 Cloudflare, Inc.",Canada,有,,437857640,ccgoai.com,1,,,,,Y,Y,ccgoai.com
+cckeys.top,Claude密钥,unlabeled,,ONLINE,top,2026-03-09,,"AS37963 Hangzhou Alibaba Advertising Co.,Ltd.",China,无,,,cckeys.top,1,,,,,Y,Y,cckeys.top
+ccll.xyz,CCLL.xyz,one-api-family,new-api/one-api系,,xyz,,,,,,,,ccll.xyz,1,round11,confirmed,A_api_status,Y,,,ccll.xyz
+ccode.dev,Ccode,unlabeled,Vue,ONLINE,dev,,,AS402075 Peekabo Networks,United States,无,,,ccode.dev,1,,,,,Y,Y,ccode.dev
+ccrouter.ai,CCRouter,unlabeled,"Cloudflare, Vue",ONLINE,ai,2026-05-14,,"AS13335 Cloudflare, Inc.",Canada,有,t.me/ccrouterAI,,ccrouter.ai,1,,,,,Y,Y,ccrouter.ai
+ccwu.cc,CoeeApi,one-api-family,new-api/one-api系,,cc,,,,,,,,ccwu.cc,1,round11,confirmed,A_api_status,Y,,,api.coee.ccwu.cc;jarvis.ccwu.cc
+cdn.ad,Lightning AI,unlabeled,Vue,ONLINE,ad,2024-10-22,,AS402075 Peekabo Networks,United States,有,,,cdn.ad,1,,,,,Y,Y,ai.cdn.ad
+centos.hk,君の星辰,one-api-family,new-api/one-api系,ONLINE,hk,2025-03-11,,"AS13335 Cloudflare, Inc.",Canada,无,,,centos.hk,1,round16,confirmed,A_api_status,Y,Y,Y,ai.centos.hk
+chaozhi.chat,云枢,unlabeled,"Nginx, Vue",ONLINE,chat,,,"AS132203 Tencent Building, Kejizhongyi Avenue",South Korea,有,,,chaozhi.chat,1,,,,,Y,Y,ai.chaozhi.chat
+chat01.ai,,one-api-family,new-api,,ai,,,,,,,,chat01.ai,1,round2,confirmed,C_framework+content,Y,,,chat01.ai
+chatfire.cn,ChatfireAPI🔥,one-api-family,new-api/one-api系,,cn,,,,,,,,chatfire.cn,1,round1,confirmed,A_api_status,Y,,,api.chatfire.cn;chatfire.cn
+chatgpt.org.uk,,one-api-family,one-api,,uk,,,,,,,,chatgpt.org.uk,1,round1,confirmed,C_framework+content,Y,,,mail.chatgpt.org.uk
+chatgpt.top,,one-api-family,one-api,,top,,,,,,,,chatgpt.top,1,round9,confirmed,C_framework+content,Y,,,chatgpt.top
+chatgptid.net,刀刀中转API,one-api-family,new-api/one-api系,,net,,,,,,,,chatgptid.net,1,round7,confirmed,A_api_status,Y,,,api.chatgptid.net
+cheapai.ai,New API,one-api-family,new-api/one-api系,,ai,,,,,,,,cheapai.ai,1,round14,confirmed,A_api_status,Y,,,cheapai.ai
+cherry-ai.com,,one-api-family,new-api,,com,,,,,,,,cherry-ai.com,1,round13,confirmed,C_framework+content,Y,,,releases.cherry-ai.com
+chesspnt.com,棋点AI,unlabeled,未识别,ONLINE,com,2024-08-04,,AS906 DMIT Cloud Services,United States,无,,,chesspnt.com,1,,,,,Y,Y,chat.chesspnt.com
+chiangma.com,茳吢AI商城『关闭注册®』,one-api-family,new-api/one-api系,,com,,,,,,,,chiangma.com,1,round5,confirmed,A_api_status,Y,,,chiangma.com
+chintao.cn,Chintao AI Hub,one-api-family,new-api/one-api系,ONLINE,cn,2024-01-08,,AS4837 CHINA UNICOM China169 Backbone,China,无,,,chintao.cn,1,round16,confirmed,A_api_status,Y,Y,Y,chintao.cn
+chiyicn.com,词易,unlabeled,"Cloudflare, Vue",ONLINE,com,2026-05-14,,"AS13335 Cloudflare, Inc.",Canada,有,,2438256235,chiyicn.com,1,,,,,Y,Y,chiyicn.com
+chongcodex.cn,HaHaHa-API,one-api-family,new-api/one-api系,,cn,,,,,,,,chongcodex.cn,1,round14,confirmed,A_api_status,Y,,,chongcodex.cn
+chrouter.com,QUNL API,one-api-family,new-api/one-api系,,com,,,,,,,,chrouter.com,1,round2,confirmed,A_api_status,Y,,,api.chrouter.com;cn.chrouter.com
+chshapi.org,监控室大爷模拟器,one-api-family,new-api/one-api系,ONLINE,org,2026-05-16,,AS8796 FASTNET DATA INC,United States,无,,,chshapi.org,1,round1,confirmed,A_api_status,Y,Y,Y,api.chshapi.org
+chunxueapi.com,ChunXue API,one-api-family,new-api/one-api系,ONLINE,com,2026-04-23,,AS25820 IT7 Networks Inc,United States,无,,,chunxueapi.com,1,round16,confirmed,A_api_status,Y,Y,Y,chunxueapi.com
+chybenzun.top,CHY公益站,one-api-family,new-api/one-api系,,top,,,,,,,,chybenzun.top,1,round4,confirmed,A_api_status,Y,,,chybenzun.top
+cialloapi.cn,Ciallo API,unlabeled,Cloudflare,ONLINE,cn,2026-04-16,,"AS13335 Cloudflare, Inc.",Canada,无,,,cialloapi.cn,1,,,,,Y,Y,cialloapi.cn
+ciyuan-token.com,词元token,one-api-family,new-api/one-api系,,com,,,,,,,,ciyuan-token.com,1,round10,confirmed,A_api_status,Y,,,ciyuan-token.com
+ciyuanshen.top,词元神 - 全球AI聚合平台,one-api-family,new-api/one-api系,,top,,,,,,,,ciyuanshen.top,1,round6,confirmed,A_api_status,Y,,,ciyuanshen.top
+clauddy.com,Clauddy,one-api-family,new-api/one-api系,,com,,,,,,,,clauddy.com,1,round7,confirmed,A_api_status,Y,,,clauddy.com
+claude-api.org,Claude-API,sub2api,sub2api,ONLINE,org,2026-05-06,,"AS13335 Cloudflare, Inc.",Canada,有,t.me/+Lfq1A_3e6BRhNjE5,,claude-api.org,1,round16,confirmed,C_framework+content,Y,Y,Y,claude-api.org
+claude360.xyz,Claude 360,one-api-family,new-api/one-api系,,xyz,,,,,,,,claude360.xyz,1,round2,confirmed,A_api_status,Y,,,claude360.xyz
+claudeagent.com.cn,Claude Agent,one-api-family,new-api/one-api系,ONLINE,cn,2026-03-20,,"AS13335 Cloudflare, Inc.",Canada,有,,,claudeagent.com.cn,1,round16,confirmed,A_api_status,Y,Y,Y,claudeagent.com.cn
+claudeapi.ai,AI API Hub,one-api-family,new-api/one-api系,,ai,,,,,,,,claudeapi.ai,1,round10,confirmed,A_api_status,Y,,,claudeapi.ai
+claudeapi.com,Claude Api,one-api-family,new-api/one-api系,ONLINE,com,2025-07-16,,"AS16509 Amazon.com, Inc.",United States,无,,,claudeapi.com,1,round1,confirmed,A_api_status,Y,Y,Y,claudeapi.com;console.claudeapi.com;gw.claudeapi.com
+claudeapi.io,ClaudeApi,one-api-family,new-api/one-api系,,io,,,,,,,,claudeapi.io,1,round2,confirmed,A_api_status,Y,,,claudeapi.io
+claudecn.top,ClaudeCN,one-api-family,new-api/one-api系,ONLINE,top,2025-11-24,,"AS13335 Cloudflare, Inc.",Canada,有,,,claudecn.top,1,round16,confirmed,A_api_status,Y,Y,Y,claudecn.top
+claudeforcheap.com,Cheap Claude Api,one-api-family,new-api/one-api系,,com,,,,,,,,claudeforcheap.com,1,round10,confirmed,A_api_status,Y,,,claudeforcheap.com
+claudemain.com,Claudemain,one-api-family,new-api/one-api系,,com,,,,,,,,claudemain.com,1,round10,confirmed,A_api_status,Y,,,claudemain.com
+clawopen.top,Sum API,one-api-family,new-api/one-api系,ONLINE,top,2026-03-09,,AS979 NetLab Global,United States,无,,,clawopen.top,1,round16,confirmed,A_api_status,Y,Y,Y,api.clawopen.top
+cloudns.org,ai发财网,one-api-family,new-api/one-api系,,org,,,,,,,,cloudns.org,1,round11,confirmed,A_api_status,Y,,,ai.facai.cloudns.org
+coaiwork.com,CoAI Work,one-api-family,new-api/one-api系,,com,,,,,,,,coaiwork.com,1,round2,confirmed,A_api_status,Y,,,coaiwork.com
+code-cli.cn,Code-CLI,one-api-family,new-api/one-api系,,cn,,,,,,,,code-cli.cn,1,round4,confirmed,A_api_status,Y,,,code-cli.cn;www.code-cli.cn
+code-relay.com,Code Router,one-api-family,new-api/one-api系,,com,,,,,,,,code-relay.com,1,round1,confirmed,A_api_status,Y,,,api.code-relay.com
+code0.ai,Code0.ai,one-api-family,new-api/one-api系,,ai,,,,,,,,code0.ai,1,round1,confirmed,A_api_status,Y,,,code0.ai
+codefwd.top,CodeFwd,one-api-family,new-api/one-api系,ONLINE,top,2026-05-26,,AS154321 CORENET CLOUD SDN. BHD.,Hong Kong,无,,,codefwd.top,1,round16,confirmed,A_api_status,Y,Y,Y,codefwd.top
+codeilab.com,,one-api-family,new-api,,com,,,,,,,,codeilab.com,1,round2,confirmed,C_framework+content,Y,,,codeilab.com
+coderelay.cn,CodeRelay,one-api-family,new-api/one-api系,ONLINE,cn,2026-04-18,,"AS13335 Cloudflare, Inc.",Canada,无,,,coderelay.cn,1,round2,confirmed,A_api_status,Y,Y,Y,cdn.coderelay.cn;coderelay.cn
+codesome.ai,CodeSome,unlabeled,,ONLINE,ai,2026-02-10,,"AS132203 Tencent Building, Kejizhongyi Avenue",Singapore,无,,,codesome.ai,1,,,,,Y,Y,codesome.ai
+codesonline.dev,codesonline,unlabeled,"Nginx, Vue",ONLINE,dev,,,AS25820 IT7 Networks Inc,United States,有,,656827785,codesonline.dev,1,,,,,Y,Y,mx.free.codesonline.dev
+codesuc.top,CodeSuc Hub,unlabeled,React,ONLINE,top,2025-10-08,,"AS24429 Zhejiang Taobao Network Co.,Ltd",United States,无,,,codesuc.top,1,,,,,Y,Y,main-new.codesuc.top
+codexapis.com,刀刀刀-天才程序员-自己进售后群,one-api-family,new-api/one-api系,,com,,,,,,,,codexapis.com,1,round1,confirmed,A_api_status,Y,,,codexapis.com;www.codexapis.com
+codexopenai.cloud,Deer Codex,one-api-family,"React, NewAPI",ONLINE,cloud,2026-04-28,,AS140527 China Telecom,China,有,,,codexopenai.cloud,1,,,,,Y,Y,codexopenai.cloud
+codexzh.com,codex 中转站,one-api-family,new-api/one-api系,,com,,,,,,,,codexzh.com,1,round10,confirmed,A_api_status,Y,,,api.codexzh.com
+cognilead.ai,,one-api-family,one-api,,ai,,,,,,,,cognilead.ai,1,round14,confirmed,C_framework+content,Y,,,cognilead.ai
+cometapi.com,CometAPI,one-api-family,new-api/one-api系,,com,,,,,,,,cometapi.com,1,round7,confirmed,A_api_status,Y,,,api.cometapi.com;cometapi.com;www.cometapi.com
+computetoken.ai,Compute Token,one-api-family,new-api/one-api系,,ai,,,,,,,,computetoken.ai,1,round1,confirmed,A_api_status,Y,,,computetoken.ai
+congmingai.com,聪明AI,unlabeled,"Cloudflare, Vue",ONLINE,com,2026-05-09,,"AS13335 Cloudflare, Inc.",Canada,有,t.me/congmingxiayou1,,congmingai.com,1,,,,,Y,Y,sub2.congmingai.com
+cooper-api.com,Cooper-API,one-api-family,new-api/one-api系,ONLINE,com,2026-04-19,,AS152194 CTG Server Limited,South Korea,无,,,cooper-api.com,1,round16,confirmed,A_api_status,Y,Y,Y,cooper-api.com
+crazyrouter.com,Crazyrouter,one-api-family,new-api/one-api系,,com,,,,,,,,crazyrouter.com,1,round5,confirmed,A_api_status,Y,,,cn.crazyrouter.com;crazyrouter.com;www.crazyrouter.com
+crossmodel.ai,,one-api-family,one-api,,ai,,,,,,,,crossmodel.ai,1,round17,confirmed,C_framework+content,Y,,,crossmodel.ai
+cubence.com,Cubence,unlabeled,Cloudflare,ONLINE,com,2025-10-06,,"AS13335 Cloudflare, Inc.",Canada,无,,,cubence.com,1,,,,,Y,Y,cubence.com
+cuberouter.ai,Cube-Router,one-api-family,new-api/one-api系,,ai,,,,,,,,cuberouter.ai,1,round14,confirmed,A_api_status,Y,,,cuberouter.ai
+cwapi.vip,🦔,one-api-family,new-api/one-api系,,vip,,,,,,,,cwapi.vip,1,round1,confirmed,A_api_status,Y,,,cc.cwapi.vip
+d5wa.com,,one-api-family,new-api,,com,,,,,,,,d5wa.com,1,round8,confirmed,C_framework+content,Y,,,d5wa.com
+daidaibird.top,呆呆鸟,unlabeled,,ONLINE,top,2025-06-20,,"AS45102 Alibaba (US) Technology Co., Ltd.",Hong Kong,无,,,daidaibird.top,1,,,,,Y,Y,daidaibird.top
+dakeai.cc,DKAI/大可,unlabeled,"Nginx, Vue",ONLINE,cc,2025-12-23,,AS40065 CNSERVERS LLC,United States,有,,2415997472,dakeai.cc,1,,,,,Y,Y,codex.dakeai.cc
+daodunapi.com,我的刀盾,one-api-family,new-api/one-api系,ONLINE,com,2026-04-18,,"AS13335 Cloudflare, Inc.",Canada,无,,,daodunapi.com,1,round16,confirmed,A_api_status,Y,Y,Y,daodunapi.com
+dapicloud.com,DAPI,one-api-family,new-api/one-api系,,com,,,,,,,,dapicloud.com,1,round4,confirmed,A_api_status,Y,,,dapicloud.com
+darkrouter.ai,,one-api-family,one-api,,ai,,,,,,,,darkrouter.ai,1,round14,confirmed,C_framework+content,Y,,,darkrouter.ai
+dasuapi.com,DasuAPI,one-api-family,new-api/one-api系,ONLINE,com,2026-05-04,,AS149440 Evoxt Sdn. Bhd.,Malaysia,,,,dasuapi.com,1,round16,confirmed,A_api_status,Y,Y,Y,dasuapi.com
+dawclaudecode.com,DawCode,one-api-family,new-api/one-api系,ONLINE,com,2025-10-08,,AS401701 cognetcloud INC,Hong Kong,无,,,dawclaudecode.com,1,round1,confirmed,A_api_status,Y,Y,Y,api.dawclaudecode.com;dawclaudecode.com
+dbanalyst.ai,,one-api-family,one-api,,ai,,,,,,,,dbanalyst.ai,1,round14,confirmed,C_framework+content,Y,,,dbanalyst.ai
+dddai.dev,嘀嘀嘀 AI,one-api-family,new-api/one-api系,,dev,,,,,,,,dddai.dev,1,round2,confirmed,A_api_status,Y,,,dddai.dev
+ddshub.cc,DDShub,unlabeled,,ONLINE,cc,2026-02-24,,AS135377 UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,Hong Kong,有,,,ddshub.cc,1,,,,,Y,Y,ddshub.cc
+de5.net,分享奇点,one-api-family,new-api/one-api系,,net,,,,,,,,de5.net,1,round5,confirmed,A_api_status,Y,,,api-public.proxy-gls.de5.net;jiuuij.de5.net;v-api.de5.net
+deepask.chat,deepask,unlabeled,Cloudflare,ONLINE,chat,,,"AS13335 Cloudflare, Inc.",Canada,有,,,deepask.chat,1,,,,,Y,Y,code.deepask.chat
+deeprouter.top,DeepRouter,one-api-family,new-api/one-api系,,top,,,,,,,,deeprouter.top,1,round7,confirmed,A_api_status,Y,,,deeprouter.top
+deerapi.com,DeerAPI,one-api-family,new-api/one-api系,,com,,,,,,,,deerapi.com,1,round6,confirmed,A_api_status,Y,,,www.deerapi.com
+derouter.ai,DeRouter,one-api-family,new-api,ONLINE,ai,2026-03-26,,"AS13335 Cloudflare, Inc.",Canada,有,t.me/derouter_ai,,derouter.ai,1,round16,confirmed,C_framework+content,Y,Y,Y,derouter.ai
+dgbmc.top,DGB 公益站,one-api-family,new-api/one-api系,,top,,,,,,,,dgbmc.top,1,round1,confirmed,A_api_status,Y,,,freeapi.dgbmc.top
+discordtool.vip,Safa API,one-api-family,new-api/one-api系,ONLINE,vip,2025-03-21,,"AS45102 Alibaba (US) Technology Co., Ltd.",Hong Kong,无,,,discordtool.vip,1,round16,confirmed,A_api_status,Y,Y,Y,api.discordtool.vip
+dit.ai,,one-api-family,one-api,,ai,,,,,,,,dit.ai,1,round15,confirmed,C_framework+content,Y,,,dit.ai
+dmxapi.cn,DMXAPI官网：中国多模态大模型API聚合平台,one-api-family,new-api/one-api系,,cn,,,,,,,,dmxapi.cn,1,round1,confirmed,A_api_status,Y,,,www.dmxapi.cn
+dmxapi.com,DMXAPI Global,one-api-family,new-api/one-api系,,com,,,,,,,,dmxapi.com,1,round7,confirmed,A_api_status,Y,,,www.dmxapi.com
+dogenet.win,OhMyGPT,unlabeled,Cloudflare,ONLINE,win,2023-08-22,,AS38136 Akari Networks,United States,有,t.me/omg_pub,,dogenet.win,1,,,,,Y,Y,x.dogenet.win
+dohoya.com,地板 AI Gateway,one-api-family,new-api/one-api系,,com,,,,,,,,dohoya.com,1,round17,confirmed,A_api_status,Y,,,dohoya.com;www.dohoya.com
+dongli.work,冻梨API,one-api-family,new-api/one-api系,ONLINE,work,2025-07-27,,AS401696 cognetcloud INC,Hong Kong,无,,,dongli.work,1,round1,confirmed,A_api_status,Y,Y,Y,api.dongli.work
+dongtoken.com,DongToken,one-api-family,new-api/one-api系,,com,,,,,,,,dongtoken.com,1,round5,confirmed,A_api_status,Y,,,dongtoken.com
+dpapi.cn,DP Api,one-api-family,new-api/one-api系,,cn,,,,,,,,dpapi.cn,1,round4,confirmed,A_api_status,Y,,,dpapi.cn
+dpdns.org,Penguin Api,one-api-family,new-api/one-api系,,org,,,,,,,,dpdns.org,1,round1,confirmed,A_api_status,Y,,,api.penguinsaichat.dpdns.org;api2.penguinsaichat.dpdns.org;huashang.dpdns.org;sakuradori.dpdns.org
+dstopology.com,妖怪杂货铺 (半公益) 自己加群防失联560177927,one-api-family,new-api/one-api系,,com,,,,,,,,dstopology.com,1,round10,confirmed,A_api_status,Y,,,api.dstopology.com
+duckcode.cn,duckcode,unlabeled,Cloudflare,CLOUDFLARE_OR_BLOCKED,cn,2026-04-04,,"AS13335 Cloudflare, Inc.",Canada,无,,,duckcode.cn,1,,,,,Y,Y,duckcode.cn
+duckcoding.ai,DuckCoding,one-api-family,new-api/one-api系,ONLINE,ai,2026-02-25,,,,,,,duckcoding.ai,1,round1,confirmed,A_api_status,Y,Y,Y,api.duckcoding.ai;duckcoding.ai;www.duckcoding.ai
+dumplingai.com,,one-api-family,one-api,,com,,,,,,,,dumplingai.com,1,round8,confirmed,C_framework+content,Y,,,www.dumplingai.com
+duou.ai,Duo API,one-api-family,new-api/one-api系,,ai,,,,,,,,duou.ai,1,round1,confirmed,A_api_status,Y,,,api.duou.ai
+dzzi.ai,大肘子API,one-api-family,new-api/one-api系,ONLINE,ai,2025-12-23,,"AS13335 Cloudflare, Inc.",Canada,无,,,dzzi.ai,1,round1,confirmed,A_api_status,Y,Y,Y,api.dzzi.ai
+easy-token.com,EasyToken,unlabeled,Nginx,ONLINE,com,2026-03-11,,"AS37963 Hangzhou Alibaba Advertising Co.,Ltd.",China,无,,,easy-token.com,1,,,,,Y,Y,easy-token.com
+easyart.cc,ModelHub,one-api-family,new-api/one-api系,,cc,,,,,,,,easyart.cc,1,round2,confirmed,A_api_status,Y,,,api.easyart.cc
+easyrouter.io,EasyRouter,one-api-family,new-api/one-api系,ONLINE,io,2026-03-07,,"AS16509 Amazon.com, Inc.",United States,,,,easyrouter.io,1,round6,confirmed,A_api_status,Y,Y,Y,easyrouter.io
+ebutterfly.cc,电子蝴蝶,one-api-family,"Cloudflare, React, NewAPI",ONLINE,cc,2026-05-03,,"AS13335 Cloudflare, Inc.",Canada,无,,,ebutterfly.cc,1,,,,,Y,Y,api.ebutterfly.cc
+eccoapi.com,,one-api-family,one-api,,com,,,,,,,,eccoapi.com,1,round4,confirmed,C_framework+content,Y,,,eccoapi.com
+edenai.co,,one-api-family,one-api,,co,,,,,,,,edenai.co,1,round10,confirmed,C_framework+content,Y,,,edenai.co;www.edenai.co
+eirouter.com,ei-token,one-api-family,new-api/one-api系,,com,,,,,,,,eirouter.com,1,round16,confirmed,A_api_status,Y,,,eirouter.com;www.eirouter.com
+ejkoy.com,整点token,unlabeled,"Cloudflare, Vue",ONLINE,com,2023-02-15,,"AS13335 Cloudflare, Inc.",Canada,有,,1078053973,ejkoy.com,1,,,,,Y,Y,api.ejkoy.com
+ekan8.com,Ekan8 API,one-api-family,new-api/one-api系,ONLINE,com,2015-02-13,,AS979 NetLab Global,United States,无,,,ekan8.com,1,round1,confirmed,A_api_status,Y,Y,Y,api.ekan8.com
+ekti.cc,AI Chat,unlabeled,React,ONLINE,cc,2025-09-10,,AS50131 Spartan Host Ltd,United States,无,,,ekti.cc,1,,,,,Y,Y,chat.ekti.cc
+electronhub.ai,,one-api-family,one-api,,ai,,,,,,,,electronhub.ai,1,round12,confirmed,C_framework+content,Y,,,www.electronhub.ai
+enjoyapi.cc,安九API,unlabeled,"Cloudflare, Vue",ONLINE,cc,2026-04-23,,"AS13335 Cloudflare, Inc.",Canada,有,,,enjoyapi.cc,1,,,,,Y,Y,enjoyapi.cc
+ergouapi.com,二狗 API,one-api-family,new-api/one-api系,ONLINE,com,2026-06-03,,"AS13335 Cloudflare, Inc.",Canada,有,,,ergouapi.com,1,round16,confirmed,A_api_status,Y,Y,Y,ergouapi.com
+eu.cc,云端API,one-api-family,new-api/one-api系,ONLINE,cc,1997-10-13,,"AS13335 Cloudflare, Inc.",Canada,无,,,eu.cc,1,round1,confirmed,A_api_status,Y,Y,Y,cloudapi.wdyu.eu.cc;www.freezapi.eu.cc
+eu.org,iMeagicAPI,one-api-family,new-api/one-api系,,org,,,,,,,,eu.org,1,round13,confirmed,A_api_status,Y,,,newapi.imagic.eu.org
+eurouter.ai,,one-api-family,one-api,,ai,,,,,,,,eurouter.ai,1,round8,confirmed,C_framework+content,Y,,,www.eurouter.ai
+euzhi.com,Euzhi,one-api-family,new-api/one-api系,ONLINE,com,2020-05-19,,"AS16509 Amazon.com, Inc.",South Korea,无,,,euzhi.com,1,round7,confirmed,A_api_status,Y,Y,Y,admin.euzhi.com;api.euzhi.com
+evolink.ai,EvoLink,one-api-family,new-api/one-api系,,ai,,,,,,,,evolink.ai,1,round11,confirmed,A_api_status,Y,,,api.evolink.ai;evolink.ai
+exe.xyz,🤡公益站-人人都是别人眼中的🤡,one-api-family,new-api/one-api系,,xyz,,,,,,,,exe.xyz,1,round11,confirmed,A_api_status,Y,,,aiapi.exe.xyz
+fastcc.ai,fastcc.ai,one-api-family,new-api/one-api系,,ai,,,,,,,,fastcc.ai,1,round14,confirmed,A_api_status,Y,,,fastcc.ai
+fastgpt.cn,,one-api-family,new-api,,cn,,,,,,,,fastgpt.cn,1,round17,confirmed,C_framework+content,Y,,,cloud.fastgpt.cn
+fastgpt.io,,one-api-family,new-api,,io,,,,,,,,fastgpt.io,1,round10,confirmed,C_framework+content,Y,,,cloud.fastgpt.io
+fastrouter.ai,,one-api-family,one-api,,ai,,,,,,,,fastrouter.ai,1,round4,confirmed,C_framework+content,Y,,,fastrouter.ai
+featherless.ai,,one-api-family,one-api,,ai,,,,,,,,featherless.ai,1,round2,confirmed,C_framework+content,Y,,,featherless.ai
+feng.cx,Feng AI,unlabeled,"Nginx, React",ONLINE,cx,2023-04-12,,AS201674 Wen ZhangYu,United Kingdom,无,,,feng.cx,1,,,,,Y,Y,api.feng.cx
+ffir.cn,飞儿API中转站,one-api-family,new-api/one-api系,,cn,,,,,,,,ffir.cn,1,round7,confirmed,A_api_status,Y,,,ffir.cn
+findcg.com,发现AI,unlabeled,,ONLINE,com,2025-04-23,,AS400619 AROSSCLOUD INC.,United States,无,,,findcg.com,1,,,,,Y,Y,findcg.com
+fishxcode.com,FishXCode,one-api-family,new-api/one-api系,ONLINE,com,2026-02-11,,"AS16509 Amazon.com, Inc.",United States,有,,,fishxcode.com,1,round7,confirmed,A_api_status,Y,Y,Y,api.fishxcode.com;fishxcode.com
+fkclaude.xyz,FK Claude,one-api-family,new-api/one-api系,,xyz,,,,,,,,fkclaude.xyz,1,round10,confirmed,A_api_status,Y,,,fkclaude.xyz
+flashapi.top,闪电API,one-api-family,new-api/one-api系,ONLINE,top,2026-03-13,,AS8796 FASTNET DATA INC,United States,无,,,flashapi.top,1,round16,confirmed,A_api_status,Y,Y,Y,ai.flashapi.top
+fluxnode.org,Fluxnode,one-api-family,new-api/one-api系,,org,,,,,,,,fluxnode.org,1,round7,confirmed,A_api_status,Y,,,fluxnode.org
+fluxtoken.ai,FluxToken,one-api-family,new-api/one-api系,,ai,,,,,,,,fluxtoken.ai,1,round14,confirmed,A_api_status,Y,,,fluxtoken.ai
+franklybuilds.com,FranklyBuildsAPI,one-api-family,new-api/one-api系,,com,,,,,,,,franklybuilds.com,1,round2,confirmed,A_api_status,Y,,,api.franklybuilds.com
+freemodel.dev,FreeModel,unlabeled,Cloudflare,ONLINE,dev,,,"AS13335 Cloudflare, Inc.",Canada,有,,,freemodel.dev,1,,,,,Y,Y,freemodel.dev
+frogbot.ai,,one-api-family,one-api,,ai,,,,,,,,frogbot.ai,1,round4,confirmed,C_framework+content,Y,,,docs.frogbot.ai
+frontier-intelligence.tech,Frontier Intelligence,one-api-family,new-api/one-api系,ONLINE,tech,2026-03-08,,"AS13335 Cloudflare, Inc.",Canada,无,,,frontier-intelligence.tech,1,round16,confirmed,A_api_status,Y,Y,Y,api.frontier-intelligence.tech
+fucheers.top,Fucheers,one-api-family,new-api/one-api系,ONLINE,top,2026-01-28,,,,无,,,fucheers.top,1,round5,confirmed,A_api_status,Y,Y,Y,fucheers.top;www.fucheers.top
+fuhuacloud.ai,FuhuaCloud AI,one-api-family,new-api/one-api系,,ai,,,,,,,,fuhuacloud.ai,1,round14,confirmed,A_api_status,Y,,,fuhuacloud.ai
+funnyskill.com,范尼API,one-api-family,new-api/one-api系,ONLINE,com,2026-01-13,,AS16276 OVH SAS,United States,无,,,funnyskill.com,1,round16,confirmed,A_api_status,Y,Y,Y,funnyskill.com
+futurmix.ai,FuturMix,one-api-family,new-api/one-api系,,ai,,,,,,,,futurmix.ai,1,round16,confirmed,A_api_status,Y,,,futurmix.ai
+fuxingapi.com,福星 API,one-api-family,new-api/one-api系,,com,,,,,,,,fuxingapi.com,1,round13,confirmed,A_api_status,Y,,,www.fuxingapi.com
+gateone.ai,,one-api-family,one-api,,ai,,,,,,,,gateone.ai,1,round7,confirmed,C_framework+content,Y,,,gateone.ai;www.gateone.ai
+gatewayapi.ai,GatewayApi,one-api-family,new-api/one-api系,,ai,,,,,,,,gatewayapi.ai,1,round14,confirmed,A_api_status,Y,,,gatewayapi.ai
+geekai.pro,极客学长API-01,one-api-family,new-api/one-api系,,pro,,,,,,,,geekai.pro,1,round13,confirmed,A_api_status,Y,,,api.geekai.pro
+geeknow.ai,GeekAI,one-api-family,new-api/one-api系,,ai,,,,,,,,geeknow.ai,1,round1,confirmed,A_api_status,Y,,,geeknow.ai
+gemai.cc,哈基米,one-api-family,"Nginx, React, NewAPI",ONLINE,cc,2025-10-22,,AS979 NetLab Global,United States,,,,gemai.cc,1,,,,,Y,Y,api.gemai.cc
+geminiapi.ai,New API,one-api-family,new-api/one-api系,,ai,,,,,,,,geminiapi.ai,1,round10,confirmed,A_api_status,Y,,,geminiapi.ai
+getezclaw.com,API GetEzClaw,one-api-family,new-api/one-api系,ONLINE,com,2026-03-01,,"AS13335 Cloudflare, Inc.",Canada,无,,,getezclaw.com,1,round16,confirmed,A_api_status,Y,Y,Y,api.getezclaw.com
+getgoapi.com,GetGoAPI,one-api-family,new-api/one-api系,,com,,,,,,,,getgoapi.com,1,round11,confirmed,A_api_status,Y,,,api.getgoapi.com;getgoapi.com
+getunikey.ai,UNIKEY,one-api-family,new-api/one-api系,,ai,,,,,,,,getunikey.ai,1,round14,confirmed,A_api_status,Y,,,getunikey.ai
+ggff.net,yx,one-api-family,new-api/one-api系,,net,,,,,,,,ggff.net,1,round1,confirmed,A_api_status,Y,,,api.dx001.ggff.net
+ggrokheavy.xyz,GGgrok,one-api-family,new-api/one-api系,,xyz,,,,,,,,ggrokheavy.xyz,1,round6,confirmed,A_api_status,Y,,,ggrokheavy.xyz
+github.io,,sub2api,sub2api,,io,,,,,,,,github.io,1,round15,confirmed,C_framework+content,Y,,,zxj-2023.github.io
+globalai.vip,Global AI,one-api-family,new-api/one-api系,,vip,,,,,,,,globalai.vip,1,round1,confirmed,A_api_status,Y,,,globalai.vip
+goapis.vip,Go APIs,one-api-family,new-api/one-api系,,vip,,,,,,,,goapis.vip,1,round2,confirmed,A_api_status,Y,,,goapis.vip
+gogoapi.cloud,GOGOAPI,one-api-family,new-api/one-api系,ONLINE,cloud,2026-03-30,,AS16276 OVH SAS,United States,无,,,gogoapi.cloud,1,round1,confirmed,A_api_status,Y,Y,Y,www.gogoapi.cloud
+gogogotoken.ai,gogogoToken API,one-api-family,new-api/one-api系,,ai,,,,,,,,gogogotoken.ai,1,round14,confirmed,A_api_status,Y,,,gogogotoken.ai
+gpt-load.com,,one-api-family,new-api,,com,,,,,,,,gpt-load.com,1,round8,confirmed,C_framework+content,Y,,,www.gpt-load.com
+gpt-pool.com,GPT Pool,one-api-family,new-api/one-api系,,com,,,,,,,,gpt-pool.com,1,round1,confirmed,A_api_status,Y,,,gpt-pool.com
+gptbest.vip,,openai-compatible-unknown,openai_compatible_unknown,,vip,,,,,,,,gptbest.vip,1,round17,confirmed,B_v1_models,Y,,,hk-api.gptbest.vip
+gpteamservices.com,GPTEAM,unlabeled,Cloudflare,ONLINE,com,2026-01-31,,"AS13335 Cloudflare, Inc.",Canada,有,,,gpteamservices.com,1,,,,,Y,Y,portal.gpteamservices.com
+gptnb.ai,GPTNB GOAPI,one-api-family,new-api/one-api系,,ai,,,,,,,,gptnb.ai,1,round2,confirmed,A_api_status,Y,,,goapi.gptnb.ai;oneapi.gptnb.ai
+gptoai.top,专业中转API,one-api-family,new-api/one-api系,,top,,,,,,,,gptoai.top,1,round13,confirmed,A_api_status,Y,,,api.gptoai.top
+growupapi.ltd,GrowUpAPI,unlabeled,Cloudflare,ONLINE,ltd,,,"AS13335 Cloudflare, Inc.",Canada,无,,,growupapi.ltd,1,,,,,Y,Y,growupapi.ltd
+guagua.uk,☀️Sunny PumpkinAPI,one-api-family,new-api/one-api系,ONLINE,uk,2025-02-19,,AS197540 netcup GmbH,Germany,无,,,guagua.uk,1,round16,confirmed,A_api_status,Y,Y,Y,gua.guagua.uk
+guardentry.ai,,one-api-family,one-api,,ai,,,,,,,,guardentry.ai,1,round14,confirmed,C_framework+content,Y,,,guardentry.ai
+gzxsy.vip,星思研,one-api-family,new-api/one-api系,,vip,,,,,,,,gzxsy.vip,1,round5,confirmed,A_api_status,Y,,,gzxsy.vip
+h-e.top,烁,one-api-family,new-api/one-api系,,top,,,,,,,,h-e.top,1,round4,confirmed,A_api_status,Y,,,elysiver.h-e.top
+hack3rx.cn,Hack3rX-API,unlabeled,"Nginx, Vue",ONLINE,cn,2025-01-29,,"AS45102 Alibaba (US) Technology Co., Ltd.",Hong Kong,有,,1016970550,hack3rx.cn,1,,,,,Y,Y,api.hack3rx.cn
+hangzhale.com,夯炸了AI,unlabeled,"Cloudflare, Vue",ONLINE,com,2026-05-11,,"AS13335 Cloudflare, Inc.",Canada,有,,1105769045,hangzhale.com,1,,,,,Y,Y,api.hangzhale.com
+hao.ai,hao.ai,one-api-family,one-api,ONLINE,ai,2017-12-16,,"AS16509 Amazon.com, Inc.",United States,有,t.me/haoai_official,,hao.ai,1,round16,confirmed,C_framework+content,Y,Y,Y,hao.ai
+hapuppy.com,,one-api-family,one-api,,com,,,,,,,,hapuppy.com,1,round7,confirmed,C_framework+content,Y,,,hapuppy.com
+hboom.ai,Hboom,one-api-family,new-api/one-api系,,ai,,,,,,,,hboom.ai,1,round9,confirmed,A_api_status,Y,,,hboom.ai
+hcnote.cn,,one-api-family,new-api,,cn,,,,,,,,hcnote.cn,1,round5,confirmed,C_framework+content,Y,,,hcnote.cn
+helicone.ai,,one-api-family,one-api,,ai,,,,,,,,helicone.ai,1,round17,confirmed,C_framework+content,Y,,,docs.helicone.ai
+helpcoder.cc,帮帮程序员,one-api-family,new-api/one-api系,,cc,,,,,,,,helpcoder.cc,1,round4,confirmed,A_api_status,Y,,,helpcoder.cc
+hemaapi.cc,河马中转站,one-api-family,"React, NewAPI",ONLINE,cc,2026-04-24,,AS215355 Alice Network,United States,无,,,hemaapi.cc,1,,,,,Y,Y,hemaapi.cc
+hepingan.top,Guiwuli-Api,sub2api,sub2api,ONLINE,top,2023-04-14,,"AS13335 Cloudflare, Inc.",Canada,有,,1973016127,hepingan.top,1,round8,confirmed,C_framework+content,Y,Y,Y,ai.hepingan.top;api.hepingan.top
+heykey.ai,HeyKey,one-api-family,new-api/one-api系,,ai,,,,,,,,heykey.ai,1,round14,confirmed,A_api_status,Y,,,heykey.ai
+hhnto.top,hhnto的API中转,one-api-family,new-api/one-api系,ONLINE,top,2026-04-07,,AS134835 Starry Network Limited,Hong Kong,无,,,hhnto.top,1,round16,confirmed,A_api_status,Y,Y,Y,hk.hhnto.top
+hiapi.store,hi-api,one-api-family,new-api/one-api系,ONLINE,store,,,"AS45102 Alibaba (US) Technology Co., Ltd.",Hong Kong,无,,,hiapi.store,1,round16,confirmed,A_api_status,Y,Y,Y,hiapi.store
+hlool.top,Hlool API,one-api-family,new-api/one-api系,,top,,,,,,,,hlool.top,1,round11,confirmed,A_api_status,Y,,,api.hlool.top
+hohoapi.com,HoHoApi,one-api-family,new-api/one-api系,ONLINE,com,2026-03-26,,"AS13335 Cloudflare, Inc.",Canada,无,,,hohoapi.com,1,round1,confirmed,A_api_status,Y,Y,Y,hohoapi.com
+holamexicali.com,New API,one-api-family,new-api/one-api系,,com,,,,,,,,holamexicali.com,1,round14,confirmed,A_api_status,Y,,,holamexicali.com
+holdai.top,毫秒API,one-api-family,new-api/one-api系,,top,,,,,,,,holdai.top,1,round2,confirmed,A_api_status,Y,,,api.holdai.top
+hottoken.ai,New API,one-api-family,new-api/one-api系,,ai,,,,,,,,hottoken.ai,1,round14,confirmed,A_api_status,Y,,,hottoken.ai
+howlife.cc,Howlife,one-api-family,new-api/one-api系,,cc,,,,,,,,howlife.cc,1,round9,confirmed,A_api_status,Y,,,api.howlife.cc
+hslife.fun,H&SのToken食堂,unlabeled,"Nginx, Vue",ONLINE,fun,2025-12-28,,AS906 DMIT Cloud Services,United States,有,,1098863142,hslife.fun,1,,,,,Y,Y,gpt.hslife.fun
+huaci.ai,华元 API,one-api-family,new-api/one-api系,,ai,,,,,,,,huaci.ai,1,round14,confirmed,A_api_status,Y,,,huaci.ai
+huanapi.com,换API,one-api-family,new-api/one-api系,HTTP_ERROR,com,2026-02-12,,AS50131 Spartan Host Ltd,United States,有,,,huanapi.com,1,round1,confirmed,A_api_status,Y,Y,Y,huanapi.com;www.huanapi.com
+huasuan.ai,华算 API,one-api-family,new-api/one-api系,,ai,,,,,,,,huasuan.ai,1,round14,confirmed,A_api_status,Y,,,huasuan.ai
+huiliuapi.com,huiliuapi,unlabeled,,ONLINE,com,2026-05-22,,,,无,,,huiliuapi.com,1,,,,,Y,Y,huiliuapi.com
+hybgzs.com,黑与白公益站,one-api-family,new-api/one-api系,,com,,,,,,,,hybgzs.com,1,round1,confirmed,A_api_status,Y,,,ai.hybgzs.com
+hyperapi.cc,Hyper API,one-api-family,new-api/one-api系,,cc,,,,,,,,hyperapi.cc,1,round2,confirmed,A_api_status,Y,,,hyperapi.cc
+i4um.com,,one-api-family,voapi,,com,,,,,,,,i4um.com,1,round9,confirmed,C_framework+content,Y,,,i4um.com
+iacc.cc,IACC,unlabeled,Cloudflare,ONLINE,cc,2024-08-16,,"AS13335 Cloudflare, Inc.",Canada,无,,,iacc.cc,1,,,,,Y,Y,iacc.cc
+icreat.ai,iCreat Api,one-api-family,new-api/one-api系,,ai,,,,,,,,icreat.ai,1,round15,confirmed,A_api_status,Y,,,api.icreat.ai
+ikuncode.cc,IKunCode,one-api-family,new-api/one-api系,ONLINE,cc,2025-08-24,,"AS13335 Cloudflare, Inc.",Canada,无,,,ikuncode.cc,1,round16,confirmed,A_api_status,Y,Y,Y,api.ikuncode.cc
+indotoken.ai,Indo Token,one-api-family,new-api/one-api系,,ai,,,,,,,,indotoken.ai,1,round14,confirmed,A_api_status,Y,,,indotoken.ai
+indrin.cn,LLM API,one-api-family,new-api/one-api系,,cn,,,,,,,,indrin.cn,1,round1,confirmed,A_api_status,Y,,,llm.indrin.cn
+infai.cc,无限API,one-api-family,"Nginx, React, NewAPI, OneAPI",ONLINE,cc,2026-01-29,,AS16276 OVH SAS,United States,无,,,infai.cc,1,,,,,Y,Y,infai.cc
+infistar.ai,无限星河,one-api-family,new-api/one-api系,ONLINE,ai,2026-04-20,,"AS45102 Alibaba (US) Technology Co., Ltd.",Hong Kong,无,,,infistar.ai,1,round1,confirmed,A_api_status,Y,Y,Y,infistar.ai
+it.com,元启智科,one-api-family,new-api/one-api系,,com,,,,,,,,it.com,1,round6,confirmed,A_api_status,Y,,,mingyu.it.com
+itstudio.club,Itstudio,one-api-family,new-api/one-api系,,club,,,,,,,,itstudio.club,1,round4,confirmed,A_api_status,Y,,,airouter.service.itstudio.club
+jbbtoken.cn,jbb,one-api-family,new-api/one-api系,ONLINE,cn,2026-05-30,,"AS13335 Cloudflare, Inc.",Canada,有,,,jbbtoken.cn,1,round16,confirmed,A_api_status,Y,Y,Y,jbbtoken.cn
+jianxiaozhi.chat,简小智API中转站,one-api-family,new-api/one-api系,,chat,,,,,,,,jianxiaozhi.chat,1,round1,confirmed,A_api_status,Y,,,newapi.jianxiaozhi.chat
+jianzhile.vip,简直了,one-api-family,new-api/one-api系,,vip,,,,,,,,jianzhile.vip,1,round4,confirmed,A_api_status,Y,,,jianzhile.vip
+jiekou.ai,接口AI,unlabeled,,ONLINE,ai,2025-06-09,,"AS132203 Tencent Building, Kejizhongyi Avenue",Singapore,有,t.me/+ZKN8T8Hk8ggwYWMx,,jiekou.ai,1,,,,,Y,Y,jiekou.ai
+jmyr.net,JmyR,one-api-family,new-api/one-api系,ONLINE,net,2014-08-07,,AS979 NetLab Global,Hong Kong,无,,,jmyr.net,1,round16,confirmed,A_api_status,Y,Y,Y,jmyr.net
+jojocode.com,JOJO Code 聚合,one-api-family,new-api/one-api系,,com,,,,,,,,jojocode.com,1,round5,confirmed,A_api_status,Y,,,jojocode.com
+joyzhi.com,MiloCode,one-api-family,new-api/one-api系,,com,,,,,,,,joyzhi.com,1,round9,confirmed,A_api_status,Y,,,api.joyzhi.com
+junjun.site,junjuncc,unlabeled,,DNS_FAIL,site,2025-05-06,,,,无,,,junjun.site,1,,,,,Y,Y,newapi.junjun.site
+kelaiapi.cc,kelai,one-api-family,"Cloudflare, React, NewAPI",ONLINE,cc,2026-03-12,,"AS13335 Cloudflare, Inc.",Canada,无,,,kelaiapi.cc,1,,,,,Y,Y,kelaiapi.cc
+kie.ai,,one-api-family,one-api,,ai,,,,,,,,kie.ai,1,round5,confirmed,C_framework+content,Y,,,kie.ai
+kingflow.ai,KingFlow AI,one-api-family,new-api/one-api系,,ai,,,,,,,,kingflow.ai,1,round14,confirmed,A_api_status,Y,,,kingflow.ai
+kissapi.ai,KissAPI,one-api-family,new-api/one-api系,,ai,,,,,,,,kissapi.ai,1,round2,confirmed,A_api_status,Y,,,api.kissapi.ai
+kividas.com,KyberRouter,unlabeled,Nginx,ONLINE,com,2026-06-01,,"AS16509 Amazon.com, Inc.",United States,无,,,kividas.com,1,,,,,Y,Y,ai.kividas.com
+kksj.org,KKSJ AI模型中转API,one-api-family,new-api/one-api系,,org,,,,,,,,kksj.org,1,round2,confirmed,A_api_status,Y,,,api.kksj.org;cnapi.kksj.org
+knox.chat,KnoxChat,one-api-family,new-api/one-api系,,chat,,,,,,,,knox.chat,1,round5,confirmed,A_api_status,Y,,,api.knox.chat
+koalaapi.com,koalaapi,one-api-family,new-api/one-api系,,com,,,,,,,,koalaapi.com,1,round1,confirmed,A_api_status,Y,,,koalaapi.com
+koyeb.app,SWT-AI_API（Free）,one-api-family,new-api/one-api系,,app,,,,,,,,koyeb.app,1,round1,confirmed,A_api_status,Y,,,new-api.koyeb.app
+kr777.top,CaMeL AI,one-api-family,new-api/one-api系,,top,,,,,,,,kr777.top,1,round5,confirmed,A_api_status,Y,,,camel.kr777.top
+krizai.ai,灵枢 AI,one-api-family,new-api/one-api系,,ai,,,,,,,,krizai.ai,1,round14,confirmed,A_api_status,Y,,,krizai.ai
+kuaiaiapi.com,kuaiai,one-api-family,new-api/one-api系,,com,,,,,,,,kuaiaiapi.com,1,round10,confirmed,A_api_status,Y,,,www.kuaiaiapi.com
+kun8.vip,北妈AI,unlabeled,"Nginx, Vue",ONLINE,vip,2025-06-26,,AS906 DMIT Cloud Services,United States,有,,,kun8.vip,1,,,,,Y,Y,bmai.kun8.vip
+kunpengyr.xyz,鲲鹏api,one-api-family,new-api/one-api系,,xyz,,,,,,,,kunpengyr.xyz,1,round14,confirmed,A_api_status,Y,,,kunpengyr.xyz
+langziapi.online,langziApi,unlabeled,"Cloudflare, Vue",ONLINE,online,2026-04-24,,"AS13335 Cloudflare, Inc.",Canada,有,,3293238230,langziapi.online,1,,,,,Y,Y,langziapi.online
+lanxiu.cc,哈基米 API,one-api-family,new-api/one-api系,,cc,,,,,,,,lanxiu.cc,1,round13,confirmed,A_api_status,Y,,,lanxiu.cc
+laozhang.ai,LaoZhang API,one-api-family,new-api/one-api系,ONLINE,ai,2025-03-12,,AS25820 IT7 Networks Inc,United States,有,,,laozhang.ai,1,round1,confirmed,A_api_status,Y,Y,Y,api.laozhang.ai
+lcodex.cn,钧澈API,one-api-family,new-api/one-api系,,cn,,,,,,,,lcodex.cn,1,round1,confirmed,A_api_status,Y,,,vip.lcodex.cn
+lconai.com,智创聚合API,one-api-family,new-api/one-api系,,com,,,,,,,,lconai.com,1,round9,confirmed,A_api_status,Y,,,s.lconai.com
+learn-ai.top,learn-ai 公益站,one-api-family,new-api/one-api系,ONLINE,top,2025-08-12,,"AS13335 Cloudflare, Inc.",Canada,无,,,learn-ai.top,1,round16,confirmed,A_api_status,Y,Y,Y,free.learn-ai.top;learn-ai.top
+leleweb.cn,Ai乐,unlabeled,"Nginx, Vue",ONLINE,cn,2025-04-21,,AS400619 AROSSCLOUD INC.,United States,有,,,leleweb.cn,1,,,,,Y,Y,api.leleweb.cn
+lilililwan.xyz,liWAN LAB,one-api-family,new-api/one-api系,,xyz,,,,,,,,lilililwan.xyz,1,round13,confirmed,A_api_status,Y,,,metapi.lilililwan.xyz
+limiao.net,哩喵中转栈,unlabeled,Cloudflare,CLOUDFLARE_OR_BLOCKED,net,2026-04-03,,"AS13335 Cloudflare, Inc.",Canada,无,,,limiao.net,1,,,,,Y,Y,limiao.net
+lingshuai.cc,灵枢AI,unlabeled,"Nginx, Vue",ONLINE,cc,2026-04-16,,AS62468 VpsQuan L.L.C.,United States,有,,,lingshuai.cc,1,,,,,Y,Y,api.lingshuai.cc
+lingsuan.top,灵算,unlabeled,"Cloudflare, Vue",ONLINE,top,2026-05-15,,"AS13335 Cloudflare, Inc.",Canada,有,,951452883,lingsuan.top,1,,,,,Y,Y,lingsuan.top
+lingyaai.cn,灵芽API,one-api-family,new-api/one-api系,,cn,,,,,,,,lingyaai.cn,1,round1,confirmed,A_api_status,Y,,,api.lingyaai.cn
+linkai.shop,LinkAi,unlabeled,"Cloudflare, Vue",ONLINE,shop,,,"AS13335 Cloudflare, Inc.",Canada,有,,,linkai.shop,1,,,,,Y,Y,linkai.shop
+linkapi.ai,LinkAPI,one-api-family,new-api/one-api系,ONLINE_LOGIN_REQUIRED,ai,2025-10-11,,AS906 DMIT Cloud Services,United States,无,,,linkapi.ai,1,round5,confirmed,A_api_status,Y,Y,Y,api.linkapi.ai;linkapi.ai
+linkapi.org,小豆包API,one-api-family,new-api/one-api系,,org,,,,,,,,linkapi.org,1,round2,confirmed,A_api_status,Y,,,api.linkapi.org
+linoapi.com.cn,Lino API,one-api-family,new-api/one-api系,,cn,,,,,,,,linoapi.com.cn,1,round9,confirmed,A_api_status,Y,,,linoapi.com.cn
+littlesheep.cc,LittleSheep API,one-api-family,new-api/one-api系,,cc,,,,,,,,littlesheep.cc,1,round11,confirmed,A_api_status,Y,,,ai.littlesheep.cc
+ll9e.cn,猫叔大模型,one-api-family,new-api/one-api系,,cn,,,,,,,,ll9e.cn,1,round7,confirmed,A_api_status,Y,,,ai.ll9e.cn
+llmapi.pro,LLMAPI,unlabeled,Nginx,ONLINE,pro,,,AS401701 cognetcloud INC,Hong Kong,有,,,llmapi.pro,1,,,,,Y,Y,llmapi.pro
+llmgw.cn,Token API,one-api-family,new-api/one-api系,ONLINE,cn,2026-05-06,,"AS37963 Hangzhou Alibaba Advertising Co.,Ltd.",China,无,,,llmgw.cn,1,round16,confirmed,A_api_status,Y,Y,Y,llmgw.cn
+llmhub.com.cn,LLM Hub,one-api-family,new-api/one-api系,,cn,,,,,,,,llmhub.com.cn,1,round7,confirmed,A_api_status,Y,,,www.llmhub.com.cn
+longshang.pro,LONGSHANG 龍殤,one-api-family,new-api/one-api系,,pro,,,,,,,,longshang.pro,1,round4,confirmed,A_api_status,Y,,,longshang.pro
+loopllama.ai,,one-api-family,one-api,,ai,,,,,,,,loopllama.ai,1,round14,confirmed,C_framework+content,Y,,,loopllama.ai
+loptu.net,垂耳兔,one-api-family,"Nginx, React, NewAPI",ONLINE,net,2025-12-22,,AS906 DMIT Cloud Services,United States,无,,,loptu.net,1,,,,,Y,Y,loptu.net
+loyal-agent.ai,Loyal,one-api-family,new-api/one-api系,,ai,,,,,,,,loyal-agent.ai,1,round14,confirmed,A_api_status,Y,,,loyal-agent.ai
+ltcraft.cn,LTCraft AI,one-api-family,new-api/one-api系,,cn,,,,,,,,ltcraft.cn,1,round15,confirmed,A_api_status,Y,,,ai.ltcraft.cn
+luccc.uk,Luccc API,one-api-family,new-api/one-api系,ONLINE,uk,2026-04-28,,"AS13335 Cloudflare, Inc.",Canada,无,,,luccc.uk,1,round16,confirmed,A_api_status,Y,Y,Y,api.luccc.uk
+lucen.cc,lucen,unlabeled,"Cloudflare, Vue",ONLINE,cc,2023-09-06,,"AS13335 Cloudflare, Inc.",Canada,有,,,lucen.cc,1,,,,,Y,Y,lucen.cc
+luchikey.com,luchikey,sub2api,sub2api,ONLINE,com,2026-05-14,,AS214996 netcup GmbH,United States,无,,,luchikey.com,1,round16,confirmed,C_framework+content,Y,Y,Y,sub2api.luchikey.com
+luckyapi.chat,Lucky Code,one-api-family,new-api/one-api系,,chat,,,,,,,,luckyapi.chat,1,round9,confirmed,A_api_status,Y,,,cn.luckyapi.chat
+lulurouter.com,LuLuRouter,one-api-family,new-api/one-api系,ONLINE,com,2026-05-29,,"AS45102 Alibaba (US) Technology Co., Ltd.",Hong Kong,无,,,lulurouter.com,1,round1,confirmed,A_api_status,Y,Y,Y,lulurouter.com
+lumibest.cc,Lumi,one-api-family,new-api/one-api系,,cc,,,,,,,,lumibest.cc,1,round4,confirmed,A_api_status,Y,,,lumibest.cc
+luminai.cc,LuminAi,one-api-family,new-api/one-api系,ONLINE,cc,2026-04-05,,"AS13335 Cloudflare, Inc.",Canada,无,,,luminai.cc,1,round16,confirmed,A_api_status,Y,Y,Y,ai.luminai.cc
+lxtech.icu,LXAPI,one-api-family,new-api/one-api系,,icu,,,,,,,,lxtech.icu,1,round6,confirmed,A_api_status,Y,,,lxtech.icu
+lyjxka.top,午夜API,one-api-family,new-api/one-api系,,top,,,,,,,,lyjxka.top,1,round11,confirmed,A_api_status,Y,,,api.lyjxka.top
+magic666.top,即刻AI - 即刻拥抱最新AI技术,one-api-family,new-api/one-api系,,top,,,,,,,,magic666.top,1,round4,confirmed,A_api_status,Y,,,magic666.top
+manbouapi.com,曼波API,unlabeled,,ONLINE,com,2026-01-29,,,,无,,,manbouapi.com,1,,,,,Y,Y,manbouapi.com
+maoleio.cn,Maoleio API,one-api-family,new-api/one-api系,,cn,,,,,,,,maoleio.cn,1,round1,confirmed,A_api_status,Y,,,api.maoleio.cn
+maoyulin.xyz,猫羽雫API,one-api-family,new-api/one-api系,,xyz,,,,,,,,maoyulin.xyz,1,round11,confirmed,A_api_status,Y,,,maoyulin.xyz
+marting.pro,词元,one-api-family,new-api/one-api系,,pro,,,,,,,,marting.pro,1,round6,confirmed,A_api_status,Y,,,marting.pro
+maryandthedot.com,New API,one-api-family,new-api/one-api系,,com,,,,,,,,maryandthedot.com,1,round6,confirmed,A_api_status,Y,,,maryandthedot.com
+maton.ai,,openai-compatible-unknown,openai_compatible_unknown,,ai,,,,,,,,maton.ai,1,round17,confirmed,B_v1_models,Y,,,ctrl.maton.ai
+maya.today,BMCCA,unlabeled,"Cloudflare, Vue",ONLINE,today,,,"AS13335 Cloudflare, Inc.",Canada,有,,,maya.today,1,,,,,Y,Y,cca.maya.today
+mdbox.ai,,one-api-family,one-api,,ai,,,,,,,,mdbox.ai,1,round14,confirmed,C_framework+content,Y,,,mdbox.ai
+meeyo.org,悠米API,one-api-family,new-api,ONLINE,org,2026-03-17,,AS21859 Zenlayer Inc,Japan,无,,,meeyo.org,1,round1,confirmed,C_framework+content,Y,Y,Y,meeyo.org
+megallm.io,,one-api-family,one-api,,io,,,,,,,,megallm.io,1,round2,confirmed,C_framework+content,Y,,,megallm.io
+mentoe.com,Mentoe,unlabeled,,DNS_FAIL,com,2026-05-04,,,,无,,,mentoe.com,1,,,,,Y,Y,mentoe.com
+metachat.work,MetaChat元语,unlabeled,未识别,ONLINE,work,2023-10-20,,"AS16509 Amazon.com, Inc.",United States,无,,,metachat.work,1,,,,,Y,Y,www.metachat.work
+metoken.ai,MeToken AI,one-api-family,new-api/one-api系,,ai,,,,,,,,metoken.ai,1,round14,confirmed,A_api_status,Y,,,metoken.ai
+mfate.cn,dd.mfate.cn,unlabeled,"Nginx, React",ONLINE,cn,2026-04-02,,AS45090 Shenzhen Tencent Computer Systems Company Limited,China,有,,,mfate.cn,1,,,,,Y,Y,dd.mfate.cn
+micuapi.ai,米醋API,one-api-family,new-api/one-api系,ONLINE,ai,2026-05-07,,"AS13335 Cloudflare, Inc.",Canada,无,,,micuapi.ai,1,round2,confirmed,A_api_status,Y,Y,Y,micuapi.ai;www.micuapi.ai
+mikucode.xyz,MIKUCODE,one-api-family,new-api/one-api系,,xyz,,,,,,,,mikucode.xyz,1,round4,confirmed,A_api_status,Y,,,mikucode.xyz
+minitoken.top,云算 API,one-api-family,new-api/one-api系,ONLINE,top,2026-04-19,,AS16276 OVH SAS,United States,无,,,minitoken.top,1,round16,confirmed,A_api_status,Y,Y,Y,minitoken.top
+mitchll.com,Mitchll  API,one-api-family,new-api/one-api系,,com,,,,,,,,mitchll.com,1,round11,confirmed,A_api_status,Y,,,api.mitchll.com
+mkeai.com,MKEAI_AI中转站,one-api-family,new-api/one-api系,,com,,,,,,,,mkeai.com,1,round2,confirmed,A_api_status,Y,,,api.mkeai.com
+mmaqq.top,银河AI,one-api-family,new-api/one-api系,,top,,,,,,,,mmaqq.top,1,round6,confirmed,A_api_status,Y,,,mmaqq.top
+mmw.ink,妙妙屋APIMMW,unlabeled,未识别,ONLINE,ink,2024-01-20,,"AS146817 Hubei Feixun Network Co., Ltd",China,有,,,mmw.ink,1,,,,,Y,Y,web.mmw.ink
+mnapi.com,MN API,one-api-family,new-api/one-api系,CLOUDFLARE_OR_BLOCKED,com,2025-01-17,,"AS13335 Cloudflare, Inc.",Canada,无,,,mnapi.com,1,round2,confirmed,A_api_status,Y,Y,Y,api.mnapi.com;mnapi.com;www.mnapi.com
+moark.ai,MoArk AI,openai-compatible-unknown,openai_compatible_unknown,,ai,,,,,,,,moark.ai,1,round17,confirmed,B_v1_models,Y,,,moark.ai
+modcon.top,ModCon,unlabeled,Cloudflare,CLOUDFLARE_OR_BLOCKED,top,2026-05-17,,"AS13335 Cloudflare, Inc.",Canada,无,,"1206320059, 976235975",modcon.top,1,,,,,Y,Y,modcon.top
+model-port.xyz,NovaMesh AI,one-api-family,new-api/one-api系,,xyz,,,,,,,,model-port.xyz,1,round10,confirmed,A_api_status,Y,,,panel.model-port.xyz
+modelapi.co,Model API,one-api-family,new-api/one-api系,,co,,,,,,,,modelapi.co,1,round12,confirmed,A_api_status,Y,,,modelapi.co
+modelbeat.ai,,one-api-family,one-api,,ai,,,,,,,,modelbeat.ai,1,round14,confirmed,C_framework+content,Y,,,modelbeat.ai
+modelcode.one,modelcode,one-api-family,new-api/one-api系,,one,,,,,,,,modelcode.one,1,round5,confirmed,A_api_status,Y,,,modelcode.one
+modelpier.ai,New API,one-api-family,new-api/one-api系,,ai,,,,,,,,modelpier.ai,1,round14,confirmed,A_api_status,Y,,,modelpier.ai
+modernmt.com,,one-api-family,new-api,,com,,,,,,,,modernmt.com,1,round8,confirmed,C_framework+content,Y,,,modernmt.com;www.modernmt.com
+mofas.one,魔方公益站,one-api-family,new-api/one-api系,,one,,,,,,,,mofas.one,1,round13,confirmed,A_api_status,Y,,,mofas.one;www.mofas.one
+moleapi.com,MoleAPI,one-api-family,new-api/one-api系,,com,,,,,,,,moleapi.com,1,round7,confirmed,A_api_status,Y,,,home.moleapi.com
+mondon.ai,,one-api-family,one-api,,ai,,,,,,,,mondon.ai,1,round14,confirmed,C_framework+content,Y,,,mondon.ai
+mongodb.org,,one-api-family,one-api,,org,,,,,,,,mongodb.org,1,round6,confirmed,C_framework+content,Y,,,blog.mongodb.org
+monking.ai,MonkingAI,one-api-family,new-api/one-api系,,ai,,,,,,,,monking.ai,1,round1,confirmed,A_api_status,Y,,,monking.ai;www.monking.ai
+mooko.ai,木瓜AI-大模型中转平台,one-api-family,new-api/one-api系,,ai,,,,,,,,mooko.ai,1,round10,confirmed,A_api_status,Y,,,api.mooko.ai
+morphllm.com,,one-api-family,one-api,,com,,,,,,,,morphllm.com,1,round6,confirmed,C_framework+content,Y,,,morphllm.com;www.morphllm.com
+mosshubs.com,Global Model API Transfer Station,one-api-family,new-api/one-api系,,com,,,,,,,,mosshubs.com,1,round1,confirmed,A_api_status,Y,,,api.mosshubs.com
+moyuu.cc,Moyuu AI,one-api-family,new-api/one-api系,,cc,,,,,,,,moyuu.cc,1,round4,confirmed,A_api_status,Y,,,moyuu.cc
+muskapi.cc,MuskAI,unlabeled,"Cloudflare, Vue",ONLINE,cc,2026-03-01,,"AS13335 Cloudflare, Inc.",Canada,有,t.me/muskapi,,muskapi.cc,1,,,,,Y,Y,api.muskapi.cc
+mxyhi.com,TP-TokenProxy,one-api-family,new-api/one-api系,ONLINE,com,2023-02-13,,"AS13335 Cloudflare, Inc.",Canada,无,,,mxyhi.com,1,round16,confirmed,A_api_status,Y,Y,Y,airouter.mxyhi.com
+mytokenpi.com,mytokenpi,one-api-family,"Nginx, React, NewAPI",ONLINE,com,2026-04-23,,"AS45102 Alibaba (US) Technology Co., Ltd.",United States,无,,,mytokenpi.com,1,,,,,Y,Y,mytokenpi.com
+mzlone.top,AIMZ,unlabeled,"Cloudflare, React",ONLINE,top,2025-11-27,,"AS13335 Cloudflare, Inc.",Canada,无,,,mzlone.top,1,,,,,Y,Y,mzlone.top
+n1n.ai,,one-api-family,new-api/one-api系,,ai,,,,,,,,n1n.ai,1,round1,confirmed,A_api_status,Y,,,api.n1n.ai;n1n.ai
+naitok.ai,Naitok API,one-api-family,new-api/one-api系,,ai,,,,,,,,naitok.ai,1,round14,confirmed,A_api_status,Y,,,naitok.ai
+nbapi.cc,NBAPI,unlabeled,"Nginx, React",ONLINE,cc,2026-06-07,,AS979 NetLab Global,United States,无,,,nbapi.cc,1,,,,,Y,Y,nbapi.cc
+nbility.dev,Nbility,one-api-family,new-api/one-api系,ONLINE,dev,,,"AS13335 Cloudflare, Inc.",Canada,有,,,nbility.dev,1,round2,confirmed,A_api_status,Y,Y,Y,api.nbility.dev;nbility.dev
+nekoapi.com,NekoAPI,one-api-family,new-api/one-api系,,com,,,,,,,,nekoapi.com,1,round1,confirmed,A_api_status,Y,,,api.nekoapi.com;nekoapi.com
+nekocode.ai,NekoCode,unlabeled,"Cloudflare, React",ONLINE,ai,2026-01-16,,"AS13335 Cloudflare, Inc.",Canada,无,,,nekocode.ai,1,,,,,Y,Y,nekocode.ai
+neokoaigc.com,New API,one-api-family,new-api/one-api系,,com,,,,,,,,neokoaigc.com,1,round1,confirmed,A_api_status,Y,,,newapi.neokoaigc.com
+newapi.pro,,one-api-family,new-api,,pro,,,,,,,,newapi.pro,1,round4,confirmed,C_framework+content,Y,,,doc.newapi.pro
+newzone.top,,one-api-family,new-api,,top,,,,,,,,newzone.top,1,round9,confirmed,C_framework+content,Y,,,newzone.top
+nexaxis.ai,NEXAXIS,one-api-family,new-api/one-api系,ONLINE,ai,2026-05-01,,AS30058 FDCservers.net,United States,无,,,nexaxis.ai,1,round16,confirmed,A_api_status,Y,Y,Y,nexaxis.ai
+nextoken.online,NexToken,unlabeled,"Cloudflare, Vue",ONLINE,online,2026-04-24,,"AS13335 Cloudflare, Inc.",Canada,有,,,nextoken.online,1,,,,,Y,Y,nextoken.online
+nexusapi.cn,nexus,one-api-family,new-api/one-api系,,cn,,,,,,,,nexusapi.cn,1,round7,confirmed,A_api_status,Y,,,nexusapi.cn
+nikoapi.xyz,NikoAPI,one-api-family,new-api/one-api系,,xyz,,,,,,,,nikoapi.xyz,1,round1,confirmed,A_api_status,Y,,,nikoapi.xyz
+niubiai.ai,NBAI,one-api-family,new-api/one-api系,,ai,,,,,,,,niubiai.ai,1,round14,confirmed,A_api_status,Y,,,niubiai.ai
+nodapi.com,NodAPI,one-api-family,new-api/one-api系,,com,,,,,,,,nodapi.com,1,round1,confirmed,A_api_status,Y,,,nodapi.com
+nuwaapi.com,NUWA,one-api-family,new-api/one-api系,,com,,,,,,,,nuwaapi.com,1,round1,confirmed,A_api_status,Y,,,api.nuwaapi.com
+oai2api.com,OAI2API,one-api-family,new-api/one-api系,,com,,,,,,,,oai2api.com,1,round9,confirmed,A_api_status,Y,,,oai2api.com
+ocoolai.com,ocoolAI,one-api-family,new-api/one-api系,,com,,,,,,,,ocoolai.com,1,round2,confirmed,A_api_status,Y,,,one.ocoolai.com
+octoken.com.cn,Octoken,one-api-family,new-api/one-api系,,cn,,,,,,,,octoken.com.cn,1,round2,confirmed,A_api_status,Y,,,octoken.com.cn
+officesai.top,Offices AI,one-api-family,new-api/one-api系,ONLINE,top,2026-05-23,,"AS13335 Cloudflare, Inc.",Canada,有,,,officesai.top,1,round16,confirmed,A_api_status,Y,Y,Y,officesai.top
+ofox.ai,,one-api-family,one-api,,ai,,,,,,,,ofox.ai,1,round1,confirmed,C_framework+content,Y,,,ofox.ai
+ogog.ai,OGOG.AI,one-api-family,new-api/one-api系,ONLINE,ai,2024-10-27,,AS16276 OVH SAS,United States,无,,,ogog.ai,1,round16,confirmed,A_api_status,Y,Y,Y,ogog.ai
+oiov.dev,,one-api-family,new-api,,dev,,,,,,,,oiov.dev,1,round10,confirmed,C_framework+content,Y,,,blog.oiov.dev;oiov.dev;www.oiov.dev
+ominigate.ai,,one-api-family,one-api,,ai,,,,,,,,ominigate.ai,1,round2,confirmed,C_framework+content,Y,,,ominigate.ai
+ominigate.com,,one-api-family,one-api,,com,,,,,,,,ominigate.com,1,round2,confirmed,C_framework+content,Y,,,ominigate.com
+onebound.cn,,one-api-family,one-api,,cn,,,,,,,,onebound.cn,1,round7,confirmed,C_framework+content,Y,,,open.onebound.cn
+onecheckout.ai,,one-api-family,one-api,,ai,,,,,,,,onecheckout.ai,1,round14,confirmed,C_framework+content,Y,,,onecheckout.ai
+onehop.ai,,one-api-family,one-api,,ai,,,,,,,,onehop.ai,1,round16,confirmed,C_framework+content,Y,,,onehop.ai
+onetoken.one,OneToken,one-api-family,new-api/one-api系,,one,,,,,,,,onetoken.one,1,round2,confirmed,A_api_status,Y,,,onetoken.one
+onrender.com,API分享站,one-api-family,new-api/one-api系,,com,,,,,,,,onrender.com,1,round1,confirmed,A_api_status,Y,,,new-api-bxhm.onrender.com;new-api-latest-1-eu26.onrender.com
+ope.ai,Platform Console,one-api-family,new-api/one-api系,ONLINE,ai,2019-05-15,,"AS13335 Cloudflare, Inc.",Canada,有,,,ope.ai,1,round1,confirmed,A_api_status,Y,Y,Y,apicn-platform.ope.ai;platform.ope.ai
+openaeon.ai,openaeon-api,one-api-family,new-api/one-api系,ONLINE,ai,2026-03-15,,"AS13335 Cloudflare, Inc.",Canada,无,,,openaeon.ai,1,round16,confirmed,A_api_status,Y,Y,Y,api.openaeon.ai
+openai-ch.top,Galaxy API,one-api-family,new-api/one-api系,,top,,,,,,,,openai-ch.top,1,round1,confirmed,A_api_status,Y,,,api.openai-ch.top
+openai-hub.com,OpenAI-Hub,one-api-family,new-api/one-api系,,com,,,,,,,,openai-hub.com,1,round2,confirmed,A_api_status,Y,,,api.openai-hub.com
+openai-labs.com,Ai实验室,one-api-family,new-api/one-api系,,com,,,,,,,,openai-labs.com,1,round1,confirmed,A_api_status,Y,,,api.openai-labs.com;openai-labs.com;www.openai-labs.com
+openai-up.com,Ai-hub,one-api-family,new-api/one-api系,,com,,,,,,,,openai-up.com,1,round2,confirmed,A_api_status,Y,,,api.openai-up.com
+openclaudecode.cn,米醋AI,unlabeled,,DNS_FAIL,cn,2025-12-01,,,,,,,openclaudecode.cn,1,,,,,Y,Y,openclaudecode.cn
+openclawroot.com,橘子的浮光AI智能,one-api-family,new-api/one-api系,,com,,,,,,,,openclawroot.com,1,round5,confirmed,A_api_status,Y,,,openclawroot.com
+openiapi.com,OpenIAPI.com,one-api-family,new-api/one-api系,,com,,,,,,,,openiapi.com,1,round7,confirmed,A_api_status,Y,,,openiapi.com
+openminis.app,,one-api-family,one-api,,app,,,,,,,,openminis.app,1,round5,confirmed,C_framework+content,Y,,,openminis.app
+openmux.ai,openmux.ai,unlabeled,Nginx,ONLINE,ai,2026-05-15,,"AS45102 Alibaba (US) Technology Co., Ltd.",Singapore,有,,,openmux.ai,1,,,,,Y,Y,openmux.ai
+openrouter.ai,,one-api-family,one-api,,ai,,,,,,,,openrouter.ai,1,round1,confirmed,C_framework+content,Y,,,openrouter.ai
+openrouter.com,,one-api-family,one-api,,com,,,,,,,,openrouter.com,1,round10,confirmed,C_framework+content,Y,,,openrouter.com
+opentk.ai,OpenToken,unlabeled,"Cloudflare, Vue",ONLINE,ai,2026-04-26,,"AS13335 Cloudflare, Inc.",Canada,有,,,opentk.ai,1,,,,,Y,Y,opentk.ai
+openxs.top,云智 API,one-api-family,new-api/one-api系,,top,,,,,,,,openxs.top,1,round10,confirmed,A_api_status,Y,,,api.openxs.top
+opper.ai,,one-api-family,one-api,,ai,,,,,,,,opper.ai,1,round1,confirmed,C_framework+content,Y,,,opper.ai
+orcarouter.ai,OrcaRouter,one-api-family,new-api/one-api系,,ai,,,,,,,,orcarouter.ai,1,round4,confirmed,A_api_status,Y,,,api.orcarouter.ai;docs.orcarouter.ai;orcarouter.ai;www.orcarouter.ai
+owlai.tech,Owl AI,unlabeled,"Cloudflare, Vue",ONLINE,tech,2025-10-21,,"AS13335 Cloudflare, Inc.",Canada,有,,2270590574,owlai.tech,1,,,,,Y,Y,api.owlai.tech
+oxycode.net,OxyCode氧化代码,unlabeled,,TIMEOUT,net,2026-05-07,,AS154321 CORENET CLOUD SDN. BHD.,Hong Kong,无,,,oxycode.net,1,,,,,Y,Y,oxycode.net
+packyapi.com,PackyAPI,one-api-family,new-api/one-api系,ONLINE,com,2025-10-17,,"AS13335 Cloudflare, Inc.",Canada,有,,,packyapi.com,1,round16,confirmed,A_api_status,Y,Y,Y,packyapi.com;www.packyapi.com
+perfxlab.cn,PerfXAgent,one-api-family,new-api/one-api系,,cn,,,,,,,,perfxlab.cn,1,round12,confirmed,A_api_status,Y,,,deepseek.perfxlab.cn
+pixelmuse.shop,PixelMuse,unlabeled,"Nginx, Vue",ONLINE,shop,,,AS61112 AkileCloud Network,Japan,有,,,pixelmuse.shop,1,,,,,Y,Y,pixelmuse.shop
+playclaude.xyz,PlayClaude API,one-api-family,new-api/one-api系,,xyz,,,,,,,,playclaude.xyz,1,round5,confirmed,A_api_status,Y,,,playclaude.xyz
+plushub.ai,PLUSHUB,one-api-family,new-api/one-api系,,ai,,,,,,,,plushub.ai,1,round14,confirmed,A_api_status,Y,,,plushub.ai
+poixe.com,Poixe AI,unlabeled,Cloudflare,ONLINE,com,2019-03-05,,"AS13335 Cloudflare, Inc.",Canada,有,,,poixe.com,1,,,,,Y,Y,poixe.com
+poooai.com,PoooAI,one-api-family,new-api/one-api系,,com,,,,,,,,poooai.com,1,round7,confirmed,A_api_status,Y,,,poooai.com
+poyo.ai,,one-api-family,one-api,,ai,,,,,,,,poyo.ai,1,round10,confirmed,C_framework+content,Y,,,poyo.ai
+ppchat.vip,PPCHAT,one-api-family,new-api/one-api系,,vip,,,,,,,,ppchat.vip,1,round10,confirmed,A_api_status,Y,,,api.ppchat.vip
+pptoken.org,,sub2api,sub2api,,org,,,,,,,,pptoken.org,1,round2,confirmed,C_framework+content,Y,,,pptoken.org
+ppword.cn,ppword,unlabeled,Nginx,ONLINE,cn,2023-03-06,,"AS37963 Hangzhou Alibaba Advertising Co.,Ltd.",China,无,,,ppword.cn,1,,,,,Y,Y,ppword.cn
+prismapi.site,Prism API,unlabeled,Cloudflare,ONLINE,site,2026-03-26,,"AS13335 Cloudflare, Inc.",Canada,无,,,prismapi.site,1,,,,,Y,Y,prismapi.site
+pro365.top,GPTW API,one-api-family,new-api/one-api系,,top,,,,,,,,pro365.top,1,round9,confirmed,A_api_status,Y,,,api.pro365.top
+proxy2it.com,ProxyAI,unlabeled,Vue,ONLINE,com,2026-05-20,,AS979 NetLab Global,United States,有,,965070056,proxy2it.com,1,,,,,Y,Y,proxy2it.com
+publora.com,,one-api-family,one-api,,com,,,,,,,,publora.com,1,round8,confirmed,C_framework+content,Y,,,publora.com
+puter.com,,one-api-family,one-api,,com,,,,,,,,puter.com,1,round13,confirmed,C_framework+content,Y,,,developer.puter.com
+qhaigc.net,,confirmed-unknown,unknown,,net,,,,,,,,qhaigc.net,1,round4,confirmed,A_api_status,Y,,,www.qhaigc.net
+qianxing.pro,乾行AI,one-api-family,new-api/one-api系,,pro,,,,,,,,qianxing.pro,1,round13,confirmed,A_api_status,Y,,,fast.qianxing.pro
+qingyuntop.top,青云聚合API,one-api-family,new-api/one-api系,,top,,,,,,,,qingyuntop.top,1,round7,confirmed,A_api_status,Y,,,api.qingyuntop.top
+qinzhiai.com,ClaudeHub,one-api-family,new-api/one-api系,,com,,,,,,,,qinzhiai.com,1,round2,confirmed,A_api_status,Y,,,qinzhiai.com
+qiuqiutoken.com,球球Token - AI中转服务站,one-api-family,new-api/one-api系,ONLINE,com,2026-04-04,,AS40065 CNSERVERS LLC,United States,无,,,qiuqiutoken.com,1,round1,confirmed,A_api_status,Y,Y,Y,api.qiuqiutoken.com;api2.qiuqiutoken.com;qiuqiutoken.com
+qixing1217.top,,one-api-family,new-api,,top,,,,,,,,qixing1217.top,1,round5,confirmed,C_framework+content,Y,,,all-api-hub.qixing1217.top
+qiyiguo.uk,奇异果 API,one-api-family,new-api/one-api系,ONLINE,uk,2025-06-17,,"AS132203 Tencent Building, Kejizhongyi Avenue",Singapore,无,,,qiyiguo.uk,1,round16,confirmed,A_api_status,Y,Y,Y,api.qiyiguo.uk
+qlhazycoder.top,Coder API,one-api-family,new-api/one-api系,,top,,,,,,,,qlhazycoder.top,1,round5,confirmed,A_api_status,Y,,,api.qlhazycoder.top
+quickquickai.com,quickquickai,one-api-family,new-api/one-api系,,com,,,,,,,,quickquickai.com,1,round10,confirmed,A_api_status,Y,,,www.quickquickai.com
+qwqtao.one,Tao API,one-api-family,new-api/one-api系,ONLINE,one,2026-03-12,,"AS13335 Cloudflare, Inc.",Canada,无,,,qwqtao.one,1,round1,confirmed,A_api_status,Y,Y,Y,newapi.qwqtao.one
+qzz.io,Zero API,one-api-family,new-api/one-api系,,io,,,,,,,,qzz.io,1,round5,confirmed,A_api_status,Y,,,0api.qzz.io;api.cnlion.qzz.io;api.zhenhaoji.qzz.io
+rapidapi.com,,one-api-family,one-api,,com,,,,,,,,rapidapi.com,1,round2,confirmed,C_framework+content,Y,,,rapidapi.com
+rcouyi.com,No.1 API-Pro,one-api-family,new-api/one-api系,,com,,,,,,,,rcouyi.com,1,round2,confirmed,A_api_status,Y,,,api.rcouyi.com
+realmrouter.cn,RealmRouter,one-api-family,new-api/one-api系,,cn,,,,,,,,realmrouter.cn,1,round7,confirmed,A_api_status,Y,,,realmrouter.cn
+relaydance.com,Relaydance,one-api-family,new-api/one-api系,,com,,,,,,,,relaydance.com,1,round9,confirmed,A_api_status,Y,,,relaydance.com
+rewind.ai,,one-api-family,one-api,,ai,,,,,,,,rewind.ai,1,round4,confirmed,C_framework+content,Y,,,rewind.ai;www.rewind.ai
+right.codes,RightCode,unlabeled,Cloudflare,ONLINE,codes,,,"AS13335 Cloudflare, Inc.",Canada,无,,,right.codes,1,,,,,Y,Y,right.codes
+rinkoai.com,RinkoAI,one-api-family,new-api/one-api系,,com,,,,,,,,rinkoai.com,1,round5,confirmed,A_api_status,Y,,,rinkoai.com
+riserouter.ai,Rise Router,one-api-family,new-api/one-api系,,ai,,,,,,,,riserouter.ai,1,round14,confirmed,A_api_status,Y,,,riserouter.ai
+riyuexy.cc,,sub2api,sub2api,,cc,,,,,,,,riyuexy.cc,1,round5,confirmed,C_framework+content,Y,,,svip.riyuexy.cc
+rkai6.com,RK API,unlabeled,"Cloudflare, React",ONLINE,com,2026-04-02,,"AS13335 Cloudflare, Inc.",Canada,无,,,rkai6.com,1,,,,,Y,Y,api.rkai6.com
+rootflowai.com,RootFlow AI,one-api-family,new-api/one-api系,ONLINE,com,2026-03-19,,AS8796 FASTNET DATA INC,United States,无,,,rootflowai.com,1,round16,confirmed,A_api_status,Y,Y,Y,api.rootflowai.com
+routeeasy.ai,RouteEasy,one-api-family,new-api/one-api系,,ai,,,,,,,,routeeasy.ai,1,round14,confirmed,A_api_status,Y,,,routeeasy.ai
+routeplane.ai,,one-api-family,one-api,,ai,,,,,,,,routeplane.ai,1,round14,confirmed,C_framework+content,Y,,,routeplane.ai
+rpg8.cn,RPG8,one-api-family,new-api/one-api系,ONLINE,cn,2019-06-25,,"AS13335 Cloudflare, Inc.",Canada,无,,,rpg8.cn,1,round16,confirmed,A_api_status,Y,Y,Y,api.rpg8.cn
+rtoc.cc,旋转智能｜Radius to Core,one-api-family,new-api/one-api系,,cc,,,,,,,,rtoc.cc,1,round2,confirmed,A_api_status,Y,,,api.rtoc.cc
+runapi.ai,,one-api-family,one-api,,ai,,,,,,,,runapi.ai,1,round4,confirmed,C_framework+content,Y,,,runapi.ai
+runapi.co,Run API,one-api-family,new-api/one-api系,ONLINE,co,2025-12-08,,AS16276 OVH SAS,United States,有,,,runapi.co,1,round16,confirmed,A_api_status,Y,Y,Y,runapi.co
+runware.ai,,one-api-family,one-api,,ai,,,,,,,,runware.ai,1,round8,confirmed,C_framework+content,Y,,,runware.ai
+sadai.top,SadAI,unlabeled,"Cloudflare, React",ONLINE,top,2026-05-29,,"AS13335 Cloudflare, Inc.",Canada,无,,,sadai.top,1,,,,,Y,Y,sadai.top
+safeapi.vip,SafeAPI,sub2api,sub2api,ONLINE,vip,2026-04-19,,AS36352 HostPapa,United States,有,,,safeapi.vip,1,round16,confirmed,C_framework+content,Y,Y,Y,safeapi.vip
+sakana.ai,,one-api-family,new-api,,ai,,,,,,,,sakana.ai,1,round4,confirmed,C_framework+content,Y,,,console.sakana.ai;fugu.sakana.ai
+satuo66.online,SaTuoAPI,one-api-family,new-api/one-api系,ONLINE,online,2026-03-20,,AS4837 CHINA UNICOM China169 Backbone,China,无,,,satuo66.online,1,round16,confirmed,A_api_status,Y,Y,Y,api.satuo66.online
+sbbbbbbbbb.xyz,Neco Api,one-api-family,new-api/one-api系,ONLINE,xyz,2026-04-06,,AS8796 FASTNET DATA INC,United States,无,,,sbbbbbbbbb.xyz,1,round16,confirmed,A_api_status,Y,Y,Y,api.sbbbbbbbbb.xyz
+scam.ai,,one-api-family,one-api,,ai,,,,,,,,scam.ai,1,round13,confirmed,C_framework+content,Y,,,scam.ai
+schyler.top,SchylerAI小栈,unlabeled,Vue,ONLINE,top,2026-02-12,,AS216245 CYBERJET PTE. LTD.,Singapore,有,,,schyler.top,1,,,,,Y,Y,api.schyler.top
+sevnx.one,SevnX,unlabeled,,ONLINE,one,2026-05-26,,"AS13335 Cloudflare, Inc.",Canada,无,,,sevnx.one,1,,,,,Y,Y,sevnx.one
+shareapi.ai,Share API,one-api-family,new-api/one-api系,,ai,,,,,,,,shareapi.ai,1,round14,confirmed,A_api_status,Y,,,shareapi.ai
+shen-ai-xie.ai,神爱写 AI Hub,one-api-family,new-api/one-api系,,ai,,,,,,,,shen-ai-xie.ai,1,round14,confirmed,A_api_status,Y,,,shen-ai-xie.ai
+shitang359.space,元气食堂API,unlabeled,未识别,HTTP_ERROR,space,2025-11-29,,AS402075 Peekabo Networks,United States,无,,,shitang359.space,1,,,,,Y,Y,shitang359.space
+shiyutv.cn,像素群岛,unlabeled,Vue,ONLINE,cn,2025-07-04,,"AS24429 Zhejiang Taobao Network Co.,Ltd",United States,有,,,shiyutv.cn,1,,,,,Y,Y,api.shiyutv.cn
+shubiaobiao.com,,one-api-family,new-api/one-api系,,com,,,,,,,,shubiaobiao.com,1,round2,confirmed,A_api_status,Y,,,api.shubiaobiao.com
+silkapi.com,丝绸API,unlabeled,"Cloudflare, Vue",ONLINE,com,2026-03-27,,"AS13335 Cloudflare, Inc.",Canada,有,,,silkapi.com,1,,,,,Y,Y,code.silkapi.com
+skillto.ai,New API,one-api-family,new-api/one-api系,,ai,,,,,,,,skillto.ai,1,round14,confirmed,A_api_status,Y,,,skillto.ai
+skyapi.org,Sky API,one-api-family,new-api/one-api系,,org,,,,,,,,skyapi.org,1,round9,confirmed,A_api_status,Y,,,api.skyapi.org;skyapi.org
+smartaipro.cn,New API,one-api-family,new-api/one-api系,,cn,,,,,,,,smartaipro.cn,1,round2,confirmed,A_api_status,Y,,,fast.smartaipro.cn
+soruxgpt.com,SoruxGPT,one-api-family,new-api/one-api系,,com,,,,,,,,soruxgpt.com,1,round2,confirmed,A_api_status,Y,,,ai.soruxgpt.com;api.soruxgpt.com
+sourcesdata.com,,sub2api,sub2api,,com,,,,,,,,sourcesdata.com,1,round4,confirmed,C_framework+content,Y,,,sourcesdata.com
+sparkcode.top,SparkCode,unlabeled,"Cloudflare, React",ONLINE,top,2025-11-17,,"AS13335 Cloudflare, Inc.",Canada,无,,,sparkcode.top,1,,,,,Y,Y,sparkcode.top
+spritnest.com,Spritnest API,one-api-family,new-api/one-api系,ONLINE,com,2026-03-23,,"AS45102 Alibaba (US) Technology Co., Ltd.",Hong Kong,无,,,spritnest.com,1,round1,confirmed,A_api_status,Y,Y,Y,spritnest.com
+squarefaceicon.org,Square API,one-api-family,"Cloudflare, React, NewAPI",ONLINE,org,2026-01-24,,"AS13335 Cloudflare, Inc.",Canada,无,,,squarefaceicon.org,1,,,,,Y,Y,api.squarefaceicon.org
+ssgoo.net,TokenGo,unlabeled,"Nginx, Vue",ONLINE,net,2026-04-24,,AS401696 cognetcloud INC,Hong Kong,有,,,ssgoo.net,1,,,,,Y,Y,ai.ssgoo.net
+ssopen.top,SSOPEN,one-api-family,new-api/one-api系,,top,,,,,,,,ssopen.top,1,round2,confirmed,A_api_status,Y,,,api.ssopen.top
+sssaicode.com,SSSAICode,unlabeled,Cloudflare,ONLINE,com,2025-07-03,,"AS13335 Cloudflare, Inc.",Canada,有,,,sssaicode.com,1,,,,,Y,Y,sssaicode.com
+sta1n.cn,STA1N API,one-api-family,new-api/one-api系,ONLINE,cn,2026-04-13,,"AS13335 Cloudflare, Inc.",Canada,无,,,sta1n.cn,1,round1,confirmed,A_api_status,Y,Y,Y,cdn.sta1n.cn
+starveri.net,,one-api-family,new-api,,net,,,,,,,,starveri.net,1,round5,confirmed,C_framework+content,Y,,,api.starveri.net
+subgate.io,Subgate,unlabeled,"Cloudflare, Vue",ONLINE,io,2026-03-02,,"AS13335 Cloudflare, Inc.",Canada,有,,,subgate.io,1,,,,,Y,Y,subgate.io
+subisle.cc,西瓜狗,one-api-family,new-api/one-api系,,cc,,,,,,,,subisle.cc,1,round11,confirmed,A_api_status,Y,,,gongyi.subisle.cc
+subrouter.ai,SubRouter,one-api-family,new-api/one-api系,ONLINE,ai,2026-02-04,,"AS13335 Cloudflare, Inc.",Canada,有,,,subrouter.ai,1,round16,confirmed,A_api_status,Y,Y,Y,subrouter.ai
+subtoken.vip,,sub2api,sub2api,,vip,,,,,,,,subtoken.vip,1,round2,confirmed,C_framework+content,Y,,,subtoken.vip
+suchuang.vip,速创API-稳定可靠的 API 中转站,one-api-family,new-api/one-api系,,vip,,,,,,,,suchuang.vip,1,round1,confirmed,A_api_status,Y,,,api.suchuang.vip
+sudobug.top,SudoBug,one-api-family,new-api/one-api系,ONLINE,top,2026-05-28,,"AS45102 Alibaba (US) Technology Co., Ltd.",Singapore,无,,,sudobug.top,1,round16,confirmed,A_api_status,Y,Y,Y,sudobug.top
+sui-xiang.com,SuiXiang,unlabeled,"Cloudflare, Vue",ONLINE,com,2026-05-11,,AS54600 PEG TECH INC,China,有,,,sui-xiang.com,1,,,,,Y,Y,sui-xiang.com
+sunskii.com,Sunskii,unlabeled,Vue,ONLINE,com,2026-04-12,,AS58087 Florian Kolb,Germany,有,,753378823,sunskii.com,1,,,,,Y,Y,api.sunskii.com
+sunyears.com,光年AI,one-api-family,new-api/one-api系,,com,,,,,,,,sunyears.com,1,round9,confirmed,A_api_status,Y,,,api.sunyears.com
+superapi.buzz,SuperAPI,one-api-family,new-api/one-api系,CLOUDFLARE_OR_BLOCKED,buzz,2026-04-09,,"AS13335 Cloudflare, Inc.",Canada,有,,,superapi.buzz,1,round16,confirmed,A_api_status,Y,Y,Y,superapi.buzz
+supermemory.ai,,one-api-family,one-api,,ai,,,,,,,,supermemory.ai,1,round17,confirmed,C_framework+content,Y,,,supermemory.ai
+switchbase.vip,SwitchBase,one-api-family,new-api/one-api系,ONLINE,vip,2026-03-18,,AS979 NetLab Global,United States,无,,,switchbase.vip,1,round16,confirmed,A_api_status,Y,Y,Y,switchbase.vip
+sychatplus.cc,SY API,one-api-family,new-api/one-api系,,cc,,,,,,,,sychatplus.cc,1,round2,confirmed,A_api_status,Y,,,api.sychatplus.cc
+tallius.ai,tallius.ai,one-api-family,new-api/one-api系,ONLINE,ai,2026-02-05,,"AS13335 Cloudflare, Inc.",Canada,有,,,tallius.ai,1,round16,confirmed,A_api_status,Y,Y,Y,api.tallius.ai
+taluna.ai,Taluna,one-api-family,new-api/one-api系,,ai,,,,,,,,taluna.ai,1,round14,confirmed,A_api_status,Y,,,taluna.ai
+tcdmx.com,TCDMX,unlabeled,,TIMEOUT,com,2026-05-02,,AS138995 Antbox Networks Limited,Hong Kong,有,,,tcdmx.com,1,,,,,Y,Y,tcdmx.com
+teamolab.com,,one-api-family,one-api,,com,,,,,,,,teamolab.com,1,round8,confirmed,C_framework+content,Y,,,router.teamolab.com
+teamorouter.com,,one-api-family,one-api,,com,,,,,,,,teamorouter.com,1,round2,confirmed,C_framework+content,Y,,,api.teamorouter.com;teamorouter.com
+telenow.ai,,one-api-family,one-api,,ai,,,,,,,,telenow.ai,1,round14,confirmed,C_framework+content,Y,,,telenow.ai
+tencentcloudmaas.com,,openai-compatible-unknown,openai_compatible_unknown,,com,,,,,,,,tencentcloudmaas.com,1,round17,confirmed,B_v1_models,Y,,,tokenhub-intl.tencentcloudmaas.com;tokenhub.tencentcloudmaas.com
+terminal.pub,Terminal.Pub,unlabeled,Cloudflare,ONLINE,pub,,,"AS13335 Cloudflare, Inc.",Canada,无,,,terminal.pub,1,,,,,Y,Y,terminal.pub
+tetrate.ai,,openai-compatible-unknown,openai_compatible_unknown,,ai,,,,,,,,tetrate.ai,1,round17,confirmed,B_v1_models,Y,,,api.router.tetrate.ai
+therouter.ai,,one-api-family,one-api,,ai,,,,,,,,therouter.ai,1,round2,confirmed,C_framework+content,Y,,,therouter.ai
+thestocklist.site,Flux API,one-api-family,new-api/one-api系,ONLINE,site,2025-12-28,,"AS140227 Hong Kong Communications International Co., Limited",Hong Kong,无,,,thestocklist.site,1,round16,confirmed,A_api_status,Y,Y,Y,thestocklist.site
+thousandengine.com,千算引擎,one-api-family,new-api/one-api系,,com,,,,,,,,thousandengine.com,1,round7,confirmed,A_api_status,Y,,,thousandengine.com
+threadzy.ai,,one-api-family,one-api,,ai,,,,,,,,threadzy.ai,1,round14,confirmed,C_framework+content,Y,,,threadzy.ai
+tian-shu.org,天枢,one-api-family,new-api/one-api系,,org,,,,,,,,tian-shu.org,1,round16,confirmed,A_api_status,Y,,,tian-shu.org
+tiantianai.pro,TianTian API,one-api-family,new-api/one-api系,,pro,,,,,,,,tiantianai.pro,1,round2,confirmed,A_api_status,Y,,,tiantianai.pro
+tieapi.com,TieAPI,one-api-family,new-api/one-api系,ONLINE,com,2026-06-09,,"AS13335 Cloudflare, Inc.",Canada,无,,,tieapi.com,1,round16,confirmed,A_api_status,Y,Y,Y,tieapi.com
+timebackward.com,fast-code,one-api-family,new-api/one-api系,ONLINE,com,2025-09-15,,AS16276 OVH SAS,United States,无,,,timebackward.com,1,round16,confirmed,A_api_status,Y,Y,Y,api.timebackward.com
+timesniper.club,一元模型,unlabeled,,DNS_FAIL,club,2024-04-18,,,,无,,,timesniper.club,1,,,,,Y,Y,timesniper.club
+timicc.com,TimiCC,unlabeled,"Cloudflare, Vue",ONLINE,com,2026-01-06,,"AS13335 Cloudflare, Inc.",Canada,有,,1078510185,timicc.com,1,,,,,Y,Y,timicc.com
+timyai.com,Timy AI,unlabeled,,DNS_FAIL,com,2026-04-26,,,,无,,,timyai.com,1,,,,,Y,Y,timyai.com
+tmlab.store,Z-API,one-api-family,new-api/one-api系,ONLINE,store,,,"AS16509 Amazon.com, Inc.",Hong Kong,无,,,tmlab.store,1,round16,confirmed,A_api_status,Y,Y,Y,api.tmlab.store
+tocodex.com,ToCodex,one-api-family,new-api/one-api系,ONLINE,com,2026-03-26,,"AS13335 Cloudflare, Inc.",Canada,有,,,tocodex.com,1,round16,confirmed,A_api_status,Y,Y,Y,user.tocodex.com
+tokaify.com,Tokaify,unlabeled,React,ONLINE,com,2026-04-03,,AS4811 China Telecom (Group),China,无,,,tokaify.com,1,,,,,Y,Y,tokaify.com
+tokendodo.ai,TokenDoDo,one-api-family,new-api/one-api系,,ai,,,,,,,,tokendodo.ai,1,round14,confirmed,A_api_status,Y,,,tokendodo.ai
+tokeness.cn,Tokeness,one-api-family,new-api/one-api系,ONLINE,cn,2026-05-20,,"AS13335 Cloudflare, Inc.",Canada,有,,,tokeness.cn,1,round16,confirmed,A_api_status,Y,Y,Y,tokeness.cn
+tokeneum.ai,TokenEum,one-api-family,new-api/one-api系,,ai,,,,,,,,tokeneum.ai,1,round15,confirmed,A_api_status,Y,,,tokeneum.ai
+tokenflux.dev,词元流动,unlabeled,"Cloudflare, Vue",ONLINE,dev,,,"AS13335 Cloudflare, Inc.",Canada,有,t.me/+OjE,,tokenflux.dev,1,,,,,Y,Y,tokenflux.dev
+tokenget.ai,TokenGet,one-api-family,new-api/one-api系,,ai,,,,,,,,tokenget.ai,1,round14,confirmed,A_api_status,Y,,,tokenget.ai
+tokenlb.net,tokenlb,one-api-family,new-api/one-api系,,net,,,,,,,,tokenlb.net,1,round13,confirmed,A_api_status,Y,,,tokenlb.net
+tokenmix.ai,TokenMix,one-api-family,one-api,ONLINE,ai,2026-03-10,,"AS13335 Cloudflare, Inc.",Canada,有,t.me/tokenmixai,,tokenmix.ai,1,round16,confirmed,C_framework+content,Y,Y,Y,tokenmix.ai
+tokenonly.ai,tokenonly,unlabeled,,ONLINE,ai,2026-04-08,,"AS132203 Tencent Building, Kejizhongyi Avenue",Hong Kong,有,,,tokenonly.ai,1,,,,,Y,Y,tokenonly.ai
+tokenopen.ai,TOKENOPEN,one-api-family,new-api/one-api系,,ai,,,,,,,,tokenopen.ai,1,round14,confirmed,A_api_status,Y,,,tokenopen.ai
+tokenrouter.com,TokenRouter,one-api-family,new-api/one-api系,,com,,,,,,,,tokenrouter.com,1,round5,confirmed,A_api_status,Y,,,api.tokenrouter.com;tokenrouter.com
+tokenshen.top,tokenShen    联系客服加群,one-api-family,new-api/one-api系,,top,,,,,,,,tokenshen.top,1,round10,confirmed,A_api_status,Y,,,api.tokenshen.top
+tokenvalley.ai,TokenValley,one-api-family,new-api/one-api系,,ai,,,,,,,,tokenvalley.ai,1,round14,confirmed,A_api_status,Y,,,tokenvalley.ai
+toknex.ai,Toknex,unlabeled,"Cloudflare, Vue",ONLINE,ai,2026-05-16,,"AS13335 Cloudflare, Inc.",Canada,有,,,toknex.ai,1,,,,,Y,Y,toknex.ai
+tongapi.com,通API,one-api-family,new-api/one-api系,ONLINE,com,2026-05-06,,"AS13335 Cloudflare, Inc.",Canada,无,,,tongapi.com,1,round16,confirmed,A_api_status,Y,Y,Y,tongapi.com
+toolcode.top,ToolCode,unlabeled,"Cloudflare, Vue",ONLINE,top,2026-06-01,,"AS13335 Cloudflare, Inc.",Canada,有,,77430203,toolcode.top,1,,,,,Y,Y,toolcode.top
+torchai.ai,Torch  AI,one-api-family,new-api/one-api系,,ai,,,,,,,,torchai.ai,1,round13,confirmed,A_api_status,Y,,,torchai.ai
+tracup.com,蒲云 AI,one-api-family,new-api/one-api系,,com,,,,,,,,tracup.com,1,round11,confirmed,A_api_status,Y,,,ai.tracup.com
+traxnode.com,Traxnode,one-api-family,new-api/one-api系,ONLINE,com,2026-01-30,,"AS13335 Cloudflare, Inc.",Canada,无,,,traxnode.com,1,round16,confirmed,A_api_status,Y,Y,Y,traxnode.com;www.traxnode.com
+treerouter.com,TreeRouter,one-api-family,new-api/one-api系,,com,,,,,,,,treerouter.com,1,round6,confirmed,A_api_status,Y,,,treerouter.com
+trendsetting-ai.com,Ootvia API,one-api-family,new-api/one-api系,,com,,,,,,,,trendsetting-ai.com,1,round2,confirmed,A_api_status,Y,,,coding.trendsetting-ai.com
+trumpapi.ai,Trump API (川普API),one-api-family,new-api/one-api系,,ai,,,,,,,,trumpapi.ai,1,round14,confirmed,A_api_status,Y,,,trumpapi.ai
+trustedrouter.com,Status | TrustedRouter,openai-compatible-unknown,openai_compatible_unknown,,com,,,,,,,,trustedrouter.com,1,round17,confirmed,B_v1_models,Y,,,eu.trustedrouter.com;status.trustedrouter.com;trustedrouter.com;www.trustedrouter.com
+tryallai.com,TryAllAI,unlabeled,Cloudflare,CLOUDFLARE_OR_BLOCKED,com,2025-06-08,,"AS13335 Cloudflare, Inc.",United States,无,,,tryallai.com,1,,,,,Y,Y,api.tryallai.com
+tsbys.com,北洋API-AI大模型统一聚合网站：免魔法模型(claude、gpt、gemini)，国内大模型，超低价折扣,one-api-family,new-api/one-api系,,com,,,,,,,,tsbys.com,1,round7,confirmed,A_api_status,Y,,,api.tsbys.com
+ttop5.cc,,one-api-family,new-api,,cc,,,,,,,,ttop5.cc,1,round2,confirmed,C_framework+content,Y,,,apirank.ttop5.cc
+tu-zi.com,兔子API,one-api-family,new-api/one-api系,ONLINE,com,2024-07-01,,AS25820 IT7 Networks Inc,United States,有,,,tu-zi.com,1,round16,confirmed,A_api_status,Y,Y,Y,api.tu-zi.com
+twentytwohundred.ai,,one-api-family,one-api,,ai,,,,,,,,twentytwohundred.ai,1,round14,confirmed,C_framework+content,Y,,,twentytwohundred.ai
+twgom.com,token搬运工,one-api-family,new-api/one-api系,,com,,,,,,,,twgom.com,1,round4,confirmed,A_api_status,Y,,,api.twgom.com
+ugf.cc,,sub2api,sub2api,,cc,,,,,,,,ugf.cc,1,round10,confirmed,C_framework+content,Y,,,ai.ugf.cc
+uglycat.cc,uglycat,one-api-family,new-api/one-api系,SERVICE_STOPPED,cc,2025-03-28,,"AS13335 Cloudflare, Inc.",Canada,无,,,uglycat.cc,1,round1,confirmed,A_api_status,Y,Y,Y,api.uglycat.cc
+uibeai.com,dashboard.uibeai.com,unlabeled,"Cloudflare, Vue",ONLINE,com,2026-04-24,,"AS13335 Cloudflare, Inc.",Canada,有,,,uibeai.com,1,,,,,Y,Y,dashboard.uibeai.com
+uiuiapi.com,UiUi API聚合,one-api-family,new-api/one-api系,,com,,,,,,,,uiuiapi.com,1,round9,confirmed,A_api_status,Y,,,api1.uiuiapi.com;sg.uiuiapi.com
+undyingapi.com,Undy API,one-api-family,new-api/one-api系,,com,,,,,,,,undyingapi.com,1,round1,confirmed,A_api_status,Y,,,vip.undyingapi.com
+uniapi.ai,UniAPI,one-api-family,new-api/one-api系,,ai,,,,,,,,uniapi.ai,1,round10,confirmed,A_api_status,Y,,,api.uniapi.ai;uniapi.ai
+uniprep.world,Apex,one-api-family,new-api/one-api系,ONLINE,world,,,AS979 NetLab Global,United States,无,,,uniprep.world,1,round16,confirmed,A_api_status,Y,Y,Y,api.uniprep.world
+unity2.ai,unity2,unlabeled,"Cloudflare, Vue",ONLINE,ai,2026-03-14,,"AS13335 Cloudflare, Inc.",Canada,有,,1093411622,unity2.ai,1,,,,,Y,Y,unity2.ai
+unorouter.ai,Uno Router,one-api-family,new-api/one-api系,,ai,,,,,,,,unorouter.ai,1,round9,confirmed,A_api_status,Y,,,api.unorouter.ai;unorouter.ai
+uocode.com,𝓤𝓸𝓒𝓸𝓭𝓮,one-api-family,new-api/one-api系,ONLINE,com,2026-04-25,,"AS13335 Cloudflare, Inc.",Canada,有,,,uocode.com,1,round10,confirmed,A_api_status,Y,Y,Y,uocode.com;www.uocode.com
+usclaude.us,Flux AI,one-api-family,voapi,ONLINE,us,2026-05-11,,AS8796 FASTNET DATA INC,United States,有,,,usclaude.us,1,round16,confirmed,C_framework+content,Y,Y,Y,us.usclaude.us
+uu6.top,转转AI,one-api-family,new-api/one-api系,,top,,,,,,,,uu6.top,1,round4,confirmed,A_api_status,Y,,,api.uu6.top
+uuapi.net,UU API,unlabeled,"Cloudflare, Vue",ONLINE,net,2026-04-03,,"AS13335 Cloudflare, Inc.",Canada,有,,,uuapi.net,1,,,,,Y,Y,uuapi.net
+uucode.org,,one-api-family,new-api,,org,,,,,,,,uucode.org,1,round1,confirmed,C_framework+content,Y,,,www.uucode.org
+uuroute.ai,,one-api-family,one-api,,ai,,,,,,,,uuroute.ai,1,round14,confirmed,C_framework+content,Y,,,uuroute.ai
+vbcode.io,VBCode.io,one-api-family,new-api/one-api系,,io,,,,,,,,vbcode.io,1,round17,confirmed,A_api_status,Y,,,api.vbcode.io;hk.vbcode.io;vbcode.io;www.vbcode.io
+vectorengine.ai,向量引擎,one-api-family,new-api/one-api系,ONLINE,ai,2025-09-11,,AS16276 OVH SAS,United States,无,,,vectorengine.ai,1,round1,confirmed,A_api_status,Y,Y,Y,api.vectorengine.ai;vectorengine.ai
+velokey.ai,,one-api-family,one-api,,ai,,,,,,,,velokey.ai,1,round14,confirmed,C_framework+content,Y,,,velokey.ai
+venlacy.com,Lanln,one-api-family,new-api/one-api系,,com,,,,,,,,venlacy.com,1,round2,confirmed,A_api_status,Y,,,ai.venlacy.com;venlacy.com
+vera-hub.ai,VeraHub,one-api-family,new-api/one-api系,,ai,,,,,,,,vera-hub.ai,1,round14,confirmed,A_api_status,Y,,,vera-hub.ai
+vibecodingapi.ai,lionCC狮子API,one-api-family,new-api/one-api系,,ai,,,,,,,,vibecodingapi.ai,1,round1,confirmed,A_api_status,Y,,,vibecodingapi.ai
+visionati.com,,one-api-family,one-api,,com,,,,,,,,visionati.com,1,round8,confirmed,C_framework+content,Y,,,visionati.com
+vllm.ai,,one-api-family,new-api,,ai,,,,,,,,vllm.ai,1,round5,confirmed,C_framework+content,Y,,,docs.vllm.ai
+voltapi.ai,,sub2api,sub2api,,ai,,,,,,,,voltapi.ai,1,round16,confirmed,C_framework+content,Y,,,voltapi.ai
+vpszdm.com,,sub2api,sub2api,,com,,,,,,,,vpszdm.com,1,round5,confirmed,C_framework+content,Y,,,vpszdm.com
+vsllm.com,维云模型开放平台,one-api-family,new-api/one-api系,,com,,,,,,,,vsllm.com,1,round4,confirmed,A_api_status,Y,,,vsllm.com
+vvcode.top,VVCode,one-api-family,new-api/one-api系,,top,,,,,,,,vvcode.top,1,round1,confirmed,A_api_status,Y,,,vvcode.top
+wangmin.xyz,WM,one-api-family,new-api/one-api系,,xyz,,,,,,,,wangmin.xyz,1,round4,confirmed,A_api_status,Y,,,conv.wangmin.xyz
+wangxiangai.org,万象,unlabeled,,TIMEOUT,org,2026-05-07,,"AS13335 Cloudflare, Inc.",Canada,无,,,wangxiangai.org,1,,,,,Y,Y,wangxiangai.org
+wasdxx.xyz,蓝天 API,one-api-family,new-api/one-api系,,xyz,,,,,,,,wasdxx.xyz,1,round5,confirmed,A_api_status,Y,,,www.wasdxx.xyz
+web3router.ai,Web3Router,one-api-family,new-api/one-api系,,ai,,,,,,,,web3router.ai,1,round14,confirmed,A_api_status,Y,,,web3router.ai
+webchannel.ai,WebChannel,one-api-family,new-api/one-api系,,ai,,,,,,,,webchannel.ai,1,round14,confirmed,A_api_status,Y,,,webchannel.ai
+wellapi.ai,WellAPI,one-api-family,new-api/one-api系,,ai,,,,,,,,wellapi.ai,1,round11,confirmed,A_api_status,Y,,,wellapi.ai
+wenwen-ai.com,问问Code,one-api-family,new-api/one-api系,,com,,,,,,,,wenwen-ai.com,1,round2,confirmed,A_api_status,Y,,,code.wenwen-ai.com;key.wenwen-ai.com
+whatai.cc,神马中转API,one-api-family,new-api/one-api系,ONLINE,cc,2024-08-09,,AS46844 Sharktech,United States,无,,,whatai.cc,1,round1,confirmed,A_api_status,Y,Y,Y,api.whatai.cc
+whlemon.cn,橙芯算力,unlabeled,"Cloudflare, Vue",ONLINE,cn,2026-03-15,,"AS13335 Cloudflare, Inc.",Canada,有,t.me/+8UMrLUJQrogzZDE1,,whlemon.cn,1,,,,,Y,Y,api.whlemon.cn
+whyyapi.com,WhyymCode,one-api-family,new-api/one-api系,,com,,,,,,,,whyyapi.com,1,round5,confirmed,A_api_status,Y,,,whyyapi.com
+willapi.one,New API,one-api-family,new-api/one-api系,,one,,,,,,,,willapi.one,1,round5,confirmed,A_api_status,Y,,,willapi.one
+wkapi.club,悟空API,one-api-family,new-api/one-api系,,club,,,,,,,,wkapi.club,1,round16,confirmed,A_api_status,Y,,,wkapi.club
+wochirou.com,Chirou API,one-api-family,new-api/one-api系,,com,,,,,,,,wochirou.com,1,round9,confirmed,A_api_status,Y,,,api.wochirou.com;wochirou.com
+wolfai.top,WolfAI - 全球AI聚合平台,one-api-family,new-api/one-api系,,top,,,,,,,,wolfai.top,1,round2,confirmed,A_api_status,Y,,,wolfai.top
+worldbase.ai,WorldBase.ai,unlabeled,Cloudflare,ONLINE,ai,2025-08-12,,"AS13335 Cloudflare, Inc.",Canada,无,,,worldbase.ai,1,,,,,Y,Y,worldbase.ai
+worldrouter.ai,,one-api-family,one-api,,ai,,,,,,,,worldrouter.ai,1,round2,confirmed,C_framework+content,Y,,,worldrouter.ai
+wushuangai.com,New API,one-api-family,new-api/one-api系,,com,,,,,,,,wushuangai.com,1,round9,confirmed,A_api_status,Y,,,www.wushuangai.com
+xaix.me,xAIx,one-api-family,new-api/one-api系,ONLINE,me,2026-03-19,,"AS37963 Hangzhou Alibaba Advertising Co.,Ltd.",China,无,,,xaix.me,1,round16,confirmed,A_api_status,Y,Y,Y,api.xaix.me
+xb1520.com,小白中转站,unlabeled,"Cloudflare, Vue",ONLINE,com,2025-05-15,,"AS13335 Cloudflare, Inc.",Canada,有,,1404928196,xb1520.com,1,,,,,Y,Y,xb1520.com
+xbhuiz.com,XMAPI,unlabeled,,ONLINE,com,2026-04-03,,AS8796 FASTNET DATA INC,United States,有,,77178950,xbhuiz.com,1,,,,,Y,Y,xbhuiz.com
+xcode.best,Xcode,unlabeled,"Cloudflare, React",ONLINE,best,2026-01-29,,"AS13335 Cloudflare, Inc.",Canada,有,,,xcode.best,1,,,,,Y,Y,xcode.best
+xeduapi.com,聚合api服务,one-api-family,new-api/one-api系,,com,,,,,,,,xeduapi.com,1,round1,confirmed,A_api_status,Y,,,api.xeduapi.com;fast.xeduapi.com;xeduapi.com
+xem8k5.top,xem API,one-api-family,new-api/one-api系,CLOUDFLARE_OR_BLOCKED,top,2022-03-27,,"AS13335 Cloudflare, Inc.",Canada,无,,,xem8k5.top,1,round16,confirmed,A_api_status,Y,Y,Y,ai.xem8k5.top
+xfyun.cn,,one-api-family,one-api,,cn,,,,,,,,xfyun.cn,1,round6,confirmed,C_framework+content,Y,,,www.xfyun.cn
+xi-ai.cn,Xi-Api,one-api-family,new-api/one-api系,,cn,,,,,,,,xi-ai.cn,1,round2,confirmed,A_api_status,Y,,,api.xi-ai.cn
+xiaoruiapi.cc,小瑞API,unlabeled,Nginx,ONLINE,cc,2026-03-31,,AS45090 Shenzhen Tencent Computer Systems Company Limited,China,有,,,xiaoruiapi.cc,1,,,,,Y,Y,xiaoruiapi.cc
+xiaoyo.cn,XiaoYo,one-api-family,new-api/one-api系,,cn,,,,,,,,xiaoyo.cn,1,round6,confirmed,A_api_status,Y,,,www.xiaoyo.cn
+xinggangai.com,星港Ai,one-api-family,new-api/one-api系,ONLINE,com,2026-04-06,,"AS45102 Alibaba (US) Technology Co., Ltd.",Hong Kong,无,,,xinggangai.com,1,round1,confirmed,A_api_status,Y,Y,Y,xinggangai.com
+xinglianapi.com,星链引擎API,one-api-family,new-api/one-api系,,com,,,,,,,,xinglianapi.com,1,round1,confirmed,A_api_status,Y,,,xinglianapi.com
+xinyuanai666.com,鑫源API,one-api-family,new-api/one-api系,,com,,,,,,,,xinyuanai666.com,1,round1,confirmed,A_api_status,Y,,,xinyuanai666.com
+xlyun.pro,小流云,one-api-family,"Cloudflare, React, NewAPI",ONLINE,pro,,,"AS13335 Cloudflare, Inc.",Canada,无,,,xlyun.pro,1,,,,,Y,Y,ai.xlyun.pro
+xn--15q04w3tg4kio0a.com,已被BOTCF.COM收购😭,one-api-family,new-api/one-api系,,com,,,,,,,,xn--15q04w3tg4kio0a.com,1,round4,confirmed,A_api_status,Y,,,xn--15q04w3tg4kio0a.com
+xpoz.ai,,one-api-family,one-api,,ai,,,,,,,,xpoz.ai,1,round4,confirmed,C_framework+content,Y,,,xpoz.ai
+xt-url.com,小天公益站,one-api-family,new-api/one-api系,,com,,,,,,,,xt-url.com,1,round1,confirmed,A_api_status,Y,,,new-api.xt-url.com
+xtoken.xin,Xtoken,one-api-family,new-api/one-api系,ONLINE,xin,2026-04-10,,AS16276 OVH SAS,United States,无,,,xtoken.xin,1,round1,confirmed,A_api_status,Y,Y,Y,xtoken.xin
+xty.app,AiCore API,one-api-family,new-api/one-api系,,app,,,,,,,,xty.app,1,round2,confirmed,A_api_status,Y,,,api.xty.app;hk.xty.app;oneapi.xty.app;svip.xty.app
+xunhupay.com,,one-api-family,new-api,,com,,,,,,,,xunhupay.com,1,round14,confirmed,C_framework+content,Y,,,api.xunhupay.com;www.xunhupay.com;xunhupay.com
+xunhuweb.com,,one-api-family,new-api,,com,,,,,,,,xunhuweb.com,1,round14,confirmed,C_framework+content,Y,,,pay.xunhuweb.com
+xybbz.xyz,,sub2api,sub2api,,xyz,,,,,,,,xybbz.xyz,1,round1,confirmed,C_framework+content,Y,,,sub2api.xybbz.xyz
+xyc.ai,XycAi Inc,one-api-family,new-api/one-api系,ONLINE,ai,2025-01-25,,AS139341 ACE,Singapore,无,,,xyc.ai,1,round15,confirmed,A_api_status,Y,Y,Y,apicdn.xyc.ai;xyc.ai
+ycyapi.cn,YCY API,one-api-family,new-api/one-api系,,cn,,,,,,,,ycyapi.cn,1,round1,confirmed,A_api_status,Y,,,ycyapi.cn
+yes.vg,YesCode,unlabeled,"Cloudflare, React",ONLINE,vg,2024-05-07,,"AS13335 Cloudflare, Inc.",Canada,有,,,yes.vg,1,,,,,Y,Y,co.yes.vg
+yibuapi.com,一步API,one-api-family,new-api/one-api系,,com,,,,,,,,yibuapi.com,1,round7,confirmed,A_api_status,Y,,,yibuapi.com
+yijiarj.cn,yijia API,one-api-family,new-api/one-api系,,cn,,,,,,,,yijiarj.cn,1,round17,confirmed,A_api_status,Y,,,ai.yijiarj.cn
+yikoulian.cc,怡口莲Api,one-api-family,new-api/one-api系,,cc,,,,,,,,yikoulian.cc,1,round7,confirmed,A_api_status,Y,,,yikoulian.cc
+yixia.ai,ApiBest,one-api-family,new-api/one-api系,,ai,,,,,,,,yixia.ai,1,round10,confirmed,A_api_status,Y,,,api.yixia.ai
+ykh.ai,YKH.AI,one-api-family,new-api/one-api系,ONLINE,ai,2026-05-25,,"AS13335 Cloudflare, Inc.",Canada,无,,,ykh.ai,1,round16,confirmed,A_api_status,Y,Y,Y,api.ykh.ai
+yooart.top,YOOART,one-api-family,new-api/one-api系,,top,,,,,,,,yooart.top,1,round12,confirmed,A_api_status,Y,,,yooart.top
+yooyai.cc,www.yooyai.cc,one-api-family,"Nginx, React, NewAPI",ONLINE,cc,2026-06-18,,AS201106 Spartan Host Ltd,United States,无,,,yooyai.cc,1,,,,,Y,Y,www.yooyai.cc
+youkies.space,Youkies API,one-api-family,new-api/one-api系,ONLINE,space,2025-04-25,,AS36002 GoMami Networks,Hong Kong,有,,,youkies.space,1,round1,confirmed,A_api_status,Y,Y,Y,newapi.youkies.space
+yuedongapi.top,yuedongapi.top,unlabeled,,TIMEOUT,top,2026-06-08,,"AS16509 Amazon.com, Inc.",United States,无,,,yuedongapi.top,1,,,,,Y,Y,yuedongapi.top
+yuegle.com,yuegle API,one-api-family,new-api/one-api系,,com,,,,,,,,yuegle.com,1,round1,confirmed,A_api_status,Y,,,api.yuegle.com
+yundu.lat,云渡,unlabeled,"Cloudflare, Vue",ONLINE,lat,2026-05-26,,"AS13335 Cloudflare, Inc.",Canada,有,,751750729,yundu.lat,1,,,,,Y,Y,yundu.lat
+yunserver.cn,YunServer API,one-api-family,new-api/one-api系,ONLINE,cn,2024-10-31,,"AS146817 Hubei Feixun Network Co., Ltd",China,无,,,yunserver.cn,1,round16,confirmed,A_api_status,Y,Y,Y,api.yunserver.cn
+yunzhiapi.cn,,one-api-family,new-api,,cn,,,,,,,,yunzhiapi.cn,1,round1,confirmed,C_framework+content,Y,,,yunzhiapi.cn
+yxaiapp.com,方舟API,one-api-family,new-api/one-api系,ONLINE,com,2025-08-09,,,,无,,,yxaiapp.com,1,round1,confirmed,A_api_status,Y,Y,Y,www.yxaiapp.com;yxaiapp.com
+zaimaai.cn,在吗 AI,unlabeled,,DNS_FAIL,cn,2023-02-27,,,,无,,,zaimaai.cn,1,,,,,Y,Y,zaimaai.cn
+zaiwen.top,ZaiwenOneAPI,one-api-family,new-api/one-api系,,top,,,,,,,,zaiwen.top,1,round4,confirmed,A_api_status,Y,,,oneapi.zaiwen.top
+zen-ai.top,ZEN-AI,one-api-family,new-api/one-api系,,top,,,,,,,,zen-ai.top,1,round2,confirmed,A_api_status,Y,,,zen-ai.top
+zernio.com,,one-api-family,one-api,,com,,,,,,,,zernio.com,1,round4,confirmed,C_framework+content,Y,,,zernio.com
+zerocode.sbs,ZeroCode,unlabeled,"Cloudflare, React",ONLINE,sbs,2026-02-02,,"AS13335 Cloudflare, Inc.",Canada,有,,,zerocode.sbs,1,,,,,Y,Y,zerocode.sbs
+zetaapi.ai,,one-api-family,new-api,,ai,,,,,,,,zetaapi.ai,1,round2,confirmed,C_framework+content,Y,,,zetaapi.ai
+zhangyuapi.com,章鱼中枢 AI 服务平台,one-api-family,new-api/one-api系,CLOUDFLARE_OR_BLOCKED,com,2026-05-05,,"AS13335 Cloudflare, Inc.",Canada,有,,,zhangyuapi.com,1,round16,confirmed,A_api_status,Y,Y,Y,zhangyuapi.com
+zhansi.top,鱼汤公益站,one-api-family,new-api/one-api系,,top,,,,,,,,zhansi.top,1,round1,confirmed,A_api_status,Y,,,ai.zhansi.top
+zhengshuyun.net,wocao.ai,one-api-family,new-api/one-api系,,net,,,,,,,,zhengshuyun.net,1,round1,confirmed,A_api_status,Y,,,model.zhengshuyun.net
+zhtec.xyz,小海Chat,one-api-family,new-api/one-api系,,xyz,,,,,,,,zhtec.xyz,1,round1,confirmed,A_api_status,Y,,,api1.zhtec.xyz
+zivv.pro,ZIVV API,unlabeled,"Cloudflare, React",ONLINE,pro,,,"AS13335 Cloudflare, Inc.",Canada,有,t.me/+6yWiVBQsV1IyZjEx,,zivv.pro,1,,,,,Y,Y,zivv.pro
+zjt66.top,熵流 EntroFlux API,one-api-family,new-api/one-api系,,top,,,,,,,,zjt66.top,1,round13,confirmed,A_api_status,Y,,,chatapi.zjt66.top
+zxai.work,ZX API,one-api-family,"Cloudflare, React, NewAPI",ONLINE,work,2026-01-10,,"AS13335 Cloudflare, Inc.",Canada,,,,zxai.work,1,,,,,Y,Y,zxai.work
+zxiaoruan.cn,ThatAPI,one-api-family,new-api/one-api系,,cn,,,,,,,,zxiaoruan.cn,1,round1,confirmed,A_api_status,Y,,,gyapi.zxiaoruan.cn
+zzshu.cc,吱吱鼠AI,one-api-family,new-api/one-api系,,cc,,,,,,,,zzshu.cc,1,round6,confirmed,A_api_status,Y,,,zzshu.cc
