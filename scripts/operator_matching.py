@@ -42,6 +42,7 @@ from __future__ import annotations
 import argparse
 import csv
 import os
+import re
 import sys
 from collections import Counter, defaultdict
 
@@ -55,7 +56,17 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_MAX_SHARE = 8
 CONTACT_MAX_SHARE = 10          # contacts get a slightly higher cap
 CERT_MAX_SHARE = 40             # certs are strong, but cap pathological wildcards
+SITENAME_MAX_SHARE = 12         # a distinctive shared operator name is a strong tie
 GENERIC_FAVICON_PCT = 15.0      # a favicon covering >this% of sites is "default"
+
+# Non-identifying / software-default display names — a shared value here is NOT
+# an operator tie (e.g. "new api" is the default one-api/new-api install name,
+# seen on 21 unrelated domains in the 764 set).
+GENERIC_SITE_NAMES = {
+    "", "-", "n/a", "na", "none", "null", "unknown", "api", "ai", "gpt",
+    "new api", "one api", "new-api", "one-api", "newapi", "oneapi",
+    "chatgpt", "openai", "chat", "home", "index", "login", "dashboard",
+}
 
 # Known cloud / CDN ASNs — annotation only (never a merge edge).
 CLOUD_ASN_HINTS = [
@@ -75,6 +86,7 @@ SIG_SUFFIXES = {
     "qq":       ["qq_group", "contact_qq"],
     "wechat":   ["wechat"],
     "discord":  ["discord"],
+    "sitename": ["platform_name", "verified_site_name", "site_name", "sitename"],
 }
 
 
@@ -164,6 +176,14 @@ def _san_tokens(san_value):
     return {registrable_domain(part) for part in san_value.split(";") if part.strip()}
 
 
+def _sitename_tokens(value):
+    """Normalize an operator display name; drop generic / software-default names."""
+    v = re.sub(r"\s+", " ", (value or "").strip().lower())
+    if not v or len(v) < 3 or v in GENERIC_SITE_NAMES:
+        return []
+    return [v]
+
+
 def build_operators(sites, max_share, verbose=True):
     dsu = DSU()
     for key in sites:
@@ -213,6 +233,12 @@ def build_operators(sites, max_share, verbose=True):
     apply_edges("ip", _value_to_sites(sites, "ip", exclude=cloud_sites), max_share, "ip")
     for ctype in ("telegram", "qq", "wechat", "discord"):
         apply_edges(ctype, _value_to_sites(sites, ctype), CONTACT_MAX_SHARE, ctype)
+
+    # A distinctive shared operator display name (e.g. "ePhone AI" across three
+    # domains) is one of the strongest identity ties; generic/default names are
+    # dropped by _sitename_tokens, and a frequency cap guards the rest.
+    apply_edges("sitename", _value_to_sites(sites, "sitename", _sitename_tokens),
+                SITENAME_MAX_SHARE, "sitename")
 
     # ── assemble clusters ────────────────────────────────────────────────
     clusters = defaultdict(list)
@@ -288,8 +314,24 @@ def self_test() -> None:
     assert op_of["cf1.com"] != op_of["cf2.com"], "CF shared cert must NOT merge"
     assert op_of["a1.com"] != op_of["b1.net"], "A and B are distinct operators"
     assert len([m for m in operators if len(operators[m]) == 1]) == 3, "cf1, cf2, solo stay singletons"
+
+    # Site-name scenario: a distinctive shared name merges across registrable
+    # domains; a generic software-default name does not.
+    named = {
+        "ephone.ai":   site(sitename="ePhone AI"),
+        "ephone.chat": site(sitename="ePhone AI"),
+        "innk.cc":     site(sitename="ePhone AI"),
+        "g1.com":      site(sitename="New API"),   # default install name -> generic
+        "g2.com":      site(sitename="New API"),
+    }
+    ops2, _ = build_operators(named, DEFAULT_MAX_SHARE, verbose=False)
+    op2 = {m: op for op, members in ops2.items() for m in members}
+    assert op2["ephone.ai"] == op2["ephone.chat"] == op2["innk.cc"], "distinctive name must merge"
+    assert op2["g1.com"] != op2["g2.com"], "generic default name must NOT merge"
+
     print("self-test passed: cert edges merge direct-origin operators; "
-          "CDN-cert guardrail blocks Cloudflare false merges")
+          "CDN-cert guardrail blocks Cloudflare false merges; "
+          "distinctive site-name merges, generic name does not")
 
 
 def main() -> int:

@@ -42,7 +42,7 @@ HEADERS = {
 # ── 字段定义 ──────────────────────────────────────────────────
 STATIC_FIELDS = [
     "whois_reg_date", "whois_registrar", "whois_expiry_date",
-    "ssl_issuer", "ssl_org", "ssl_san", "ssl_fingerprint",
+    "ssl_issuer", "ssl_org", "ssl_san", "ssl_fingerprint", "ssl_not_before",
 ]
 DYNAMIC_FIELDS = [
     "ip", "ip_country", "ip_city", "ip_asn", "ip_hosting",
@@ -108,7 +108,8 @@ def get_whois(domain):
 # ── SSL证书 ───────────────────────────────────────────────────
 def get_ssl(domain):
     result = {k: "" for k in
-              ["ssl_issuer", "ssl_org", "ssl_expiry", "ssl_san", "ssl_fingerprint"]}
+              ["ssl_issuer", "ssl_org", "ssl_expiry", "ssl_san", "ssl_fingerprint",
+               "ssl_not_before"]}
     try:
         ctx = ssl.create_default_context()
         with ctx.wrap_socket(socket.socket(), server_hostname=domain) as s:
@@ -127,6 +128,11 @@ def get_ssl(domain):
         if exp:
             dt = datetime.strptime(exp, "%b %d %H:%M:%S %Y %Z")
             result["ssl_expiry"] = dt.strftime("%Y-%m-%d")
+        # 证书首次签发时间（notBefore）≈ 站点上线时间，覆盖率远高于 WHOIS
+        nb = cert.get("notBefore", "")
+        if nb:
+            dt = datetime.strptime(nb, "%b %d %H:%M:%S %Y %Z")
+            result["ssl_not_before"] = dt.strftime("%Y-%m-%d")
         # SAN（同一张证书覆盖的所有域名）——运营者归并最硬的强信号
         san = sorted({v for (k, v) in cert.get("subjectAltName", ()) if k == "DNS"})
         result["ssl_san"] = ";".join(san[:20])
@@ -225,7 +231,7 @@ def main():
         # （旧逻辑首次失败会被永久缓存成空、再不重试；这里改成"缺就补"，
         #   同时让已有 292 行能回填新增的 ssl_san / ssl_fingerprint。）
         need_whois = is_new or not rec.get("whois_reg_date")
-        need_ssl   = is_new or not rec.get("ssl_san")
+        need_ssl   = is_new or not rec.get("ssl_san") or not rec.get("ssl_not_before")
 
         if need_whois:
             print(f"  WHOIS...", end=" ", flush=True)
@@ -235,7 +241,8 @@ def main():
         if need_ssl:
             print(f"  SSL(static)...", end=" ", flush=True)
             ssl_data = get_ssl(domain)
-            for k in ("ssl_issuer", "ssl_org", "ssl_expiry", "ssl_san", "ssl_fingerprint"):
+            for k in ("ssl_issuer", "ssl_org", "ssl_expiry", "ssl_san",
+                      "ssl_fingerprint", "ssl_not_before"):
                 rec[k] = ssl_data[k]
             print(rec.get("ssl_san") or rec.get("ssl_issuer") or "无")
 
