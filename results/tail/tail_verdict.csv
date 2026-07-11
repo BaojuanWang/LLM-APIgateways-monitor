@@ -1,0 +1,67 @@
+﻿domain,verdict,app_family,app_stack_guess,status_class,confidence,version,evidence
+2dapi.online,hidden_one_api,one-api-family,one-api,identified,high,,header:x-oneapi-request-id=2026071206140882275794391609813 ; nginx:header:server=nginx/1.24.0 (Ubuntu)
+4hidc.com,genuine_unknown,unknown,unknown,spa_shell,none,,cloudflare:header:server=cloudflare
+73card.com,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx
+ahmes.dev,genuine_unknown,unknown,unknown,spa_shell,none,,cloudflare:header:server=cloudflare
+ai88.help,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.24.0 (Ubuntu)
+aibaz.ai,genuine_unknown,unknown,unknown,spa_shell,none,,
+aicloud.plus,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.18.0 (Ubuntu)
+aicodedog.com,genuine_unknown,unknown,unknown,spa_shell,none,,cloudflare:header:server=cloudflare
+aigcly.top,dead,unknown,unknown,unreachable,none,,
+aigptx.top,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.18.0 (Ubuntu)
+ailvaz.com,genuine_unknown,unknown,unknown,unidentified,none,,
+amaranta.asia,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.20.1
+baziapi.site,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.18.0 (Ubuntu)
+bestroute.center,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.20.1
+bm-tokenai.com,genuine_unknown,unknown,unknown,unidentified,none,,
+chaophone.top,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.18.0 (Ubuntu)
+check-in.tech,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.18.0 (Ubuntu)
+clauden.ai,genuine_unknown,unknown,unknown,unidentified,none,,cloudflare:header:server=cloudflare
+corelightai.com,genuine_unknown,unknown,unknown,unidentified,none,,
+cowcode.top,genuine_unknown,unknown,unknown,unidentified,none,,cloudflare:header:server=cloudflare
+creatraai.cn,genuine_unknown,unknown,unknown,spa_shell,none,,nginx:header:server=nginx/1.18.0 (Ubuntu)
+deepseek-api.com.cn,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.18.0 (Ubuntu)
+doroai.xyz,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.22.1
+dxnt.com,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx
+hook.rs,genuine_unknown,unknown,unknown,unidentified,none,,cloudflare:header:server=cloudflare
+juhes.com,genuine_unknown,unknown,unknown,unidentified,none,,
+koozhan.com,genuine_unknown,unknown,unknown,spa_shell,none,,cloudflare:header:server=cloudflare
+kopiaiagent.com,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.28.3 (Ubuntu)
+kove.cn,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx
+kunavo.com,genuine_unknown,unknown,unknown,unidentified,none,,
+lingcoreai.com,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx
+lkyujun.cn,genuine_unknown,unknown,unknown,unidentified,none,,
+llmroute.club,hidden_one_api,one-api-family,new-api|one-api,identified,high,v1.0.0-rc.11,header:x-new-api-version=v1.0.0-rc.11 ; header:x-oneapi-request-id=202607112217389817936738268d9d6tLxuw62K ; cloudflare:header:server=cloudflare
+ltvip.org,genuine_unknown,unknown,unknown,unidentified,none,,
+lyrid.cn,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.18.0 (Ubuntu)
+maiqilingai.com,hidden_one_api,one-api-family,new-api,identified,high,v0.0.0,header:x-new-api-version=v0.0.0 ; nginx:header:server=nginx/1.27.5
+minimaxi.com,genuine_unknown,unknown,unknown,unidentified,none,,
+mstoken.vip,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.18.0 (Ubuntu)
+neonartai.com,genuine_unknown,unknown,unknown,spa_shell,none,,nginx:header:server=nginx/1.24.0 (Ubuntu)
+onerouter.cn,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.24.0 (Ubuntu)
+onlyrouter.ai,genuine_unknown,unknown,unknown,unidentified,none,,cloudflare:header:server=cloudflare
+openox.tech,genuine_unknown,unknown,unknown,unidentified,none,,cloudflare:header:server=cloudflare
+openrouter.team,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.24.0 (Ubuntu)
+proxystacks.com,genuine_unknown,unknown,unknown,unidentified,none,,cloudflare:header:server=cloudflare
+qilingai.net,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.20.1
+samyu15.com,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.18.0 (Ubuntu)
+silkroadai.io,hidden_one_api,one-api-family,new-api|one-api,identified,high,v1.0.0-rc.2,header:x-new-api-version=v1.0.0-rc.2 ; header:x-oneapi-request-id=202607112218574530238278268d9d6bdZInYDR
+starstartai.com,genuine_unknown,unknown,unknown,unidentified,none,,
+szjsai.cn,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx
+szjsai.com,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx
+teai.io,genuine_unknown,unknown,unknown,unidentified,none,,
+tokencall.cn,hidden_one_api,one-api-family,one-api,identified,high,,header:x-oneapi-request-id=2026071206201112288851460568886 ; nginx:header:server=nginx/1.24.0 (Ubuntu)
+tokencheap.ai,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx
+tokencraft.cc,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.29.8
+tokengo.love,genuine_unknown,unknown,unknown,unidentified,none,,cloudflare:header:server=cloudflare
+vantapi.com,genuine_unknown,unknown,unknown,unidentified,none,,
+xiaoyue9527.xyz,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.31.0
+xuanduai.com,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.24.0 (Ubuntu)
+yaogod.com,genuine_unknown,unknown,unknown,unidentified,none,,
+ycvip.net,genuine_unknown,unknown,unknown,unidentified,none,,
+ycvvip.net,genuine_unknown,unknown,unknown,unidentified,none,,
+yhapiplatform.com,dead,unknown,unknown,unreachable,none,,
+youqi.tech,genuine_unknown,unknown,unknown,spa_shell,none,,nginx:header:server=nginx/1.24.0
+yout.chat,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx
+yxai.chat,genuine_unknown,unknown,unknown,spa_shell,none,,nginx:header:server=nginx/1.31.0
+zhumengwangluo.top,genuine_unknown,unknown,unknown,unidentified,none,,nginx:header:server=nginx/1.24.0
