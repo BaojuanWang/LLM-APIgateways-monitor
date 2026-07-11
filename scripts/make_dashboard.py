@@ -274,7 +274,12 @@ def main():
     print("  Re-publish this file to the artifact URL to refresh the hosted view.")
 
 
-TEMPLATE = r"""<title>LLM 中转站生态 · 分布总览</title>
+TEMPLATE = r"""<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LLM 中转站生态 · 分布总览</title>
 <style>
   :root{
     --plane:#f4f5f7; --surface:#fcfcfd; --ink:#0e1116; --ink-2:#4a5261; --muted:#8b93a3;
@@ -341,6 +346,8 @@ TEMPLATE = r"""<title>LLM 中转站生态 · 分布总览</title>
     padding:6px 9px;border-radius:7px;opacity:0;white-space:nowrap;font-variant-numeric:tabular-nums;box-shadow:var(--shadow);transition:opacity .1s ease}
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
+</head>
+<body>
 <div class="wrap">
   <header>
     <div>
@@ -392,6 +399,8 @@ charts.forEach(c=>{
 const root=document.documentElement;
 $("#tog").addEventListener("click",()=>root.setAttribute("data-theme",root.getAttribute("data-theme")==="dark"?"light":"dark"));
 </script>
+</body>
+</html>
 """
 
 
