@@ -351,5 +351,36 @@ _284 站取到模型列表_
 | aigcbest.top | 2 | asn:DMIT Cloud Service;ip:154.21.93.12 | aigcbest.top;ifopen.ai |
 | anyroute.io | 2 | asn:Spartan Host Ltd;ip:172.83.152.193 | anyroute.io;huanapi.com |
 
+## 13. 站点多维分类总览
+
+每站的最终分类(`site_classification.csv`,809 站)。
+
+### 角色(relay/转换层/聚合器/未识别)
+
+| 值 | 站数 | 占比 |
+|---|---:|---:|
+| relay | 631 | 78.0% |
+| unidentified | 164 | 20.3% |
+| conversion_layer | 14 | 1.7% |
+
+### 托管类型(CDN后/直连源站)
+
+| 值 | 站数 | 占比 |
+|---|---:|---:|
+| cdn_fronted | 499 | 61.7% |
+| direct_origin | 210 | 26.0% |
+| unknown | 100 | 12.4% |
+
+### 成熟度(出生年份+证书)
+
+| 值 | 站数 | 占比 |
+|---|---:|---:|
+| new_2026 | 441 | 54.5% |
+| established | 203 | 25.1% |
+| growing_2025 | 158 | 19.5% |
+| unknown | 7 | 0.9% |
+
+> **要点**:499/809(62%)藏在 CDN 后 —— 源站基础设施对外不可见,是不透明性的量化证据。
+
 ---
 _方法与文献背书见 `docs/METHODS_element_citations.md`。低覆盖字段(隐私/联系方式/ICP)结论仅供参考。_

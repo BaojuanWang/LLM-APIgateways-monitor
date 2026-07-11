@@ -272,6 +272,18 @@ def main():
             L.append(f"| {r['family_id']} | {r['size']} | {r['shared_features'][:38]} | {r['members'][:56]} |")
         L.append("")
 
+    cls_path = os.path.join(M, "site_classification.csv")
+    if os.path.exists(cls_path):
+        cls = list(csv.DictReader(open(cls_path, encoding="utf-8-sig")))
+        L.append("## 13. 站点多维分类总览\n")
+        L.append(f"每站的最终分类(`site_classification.csv`,{len(cls)} 站)。\n")
+        for dim, name in [("site_role", "角色(relay/转换层/聚合器/未识别)"),
+                          ("hosting_type", "托管类型(CDN后/直连源站)"),
+                          ("maturity_tier", "成熟度(出生年份+证书)")]:
+            L.append(table(name, Counter(g(r, dim) for r in cls), len(cls)))
+        cdn = sum(1 for r in cls if g(r, "hosting_type") == "cdn_fronted")
+        L.append(f"> **要点**:{cdn}/{len(cls)}({100*cdn/len(cls):.0f}%)藏在 CDN 后 —— 源站基础设施对外不可见,是不透明性的量化证据。\n")
+
     L.append("---\n_方法与文献背书见 `docs/METHODS_element_citations.md`。低覆盖字段(隐私/联系方式/ICP)结论仅供参考。_")
 
     out = os.path.join(M, "ANALYSIS_REPORT.md")

@@ -22,10 +22,11 @@ python3 scripts/operator_matching.py | tail -6
 echo "==> [4/7] site_characterization (stack taxonomy + distributions)…"
 python3 scripts/site_characterization.py | tail -4
 
-echo "==> [5/7] operator_profiles + site_similarity + cert_siblings…"
+echo "==> [5/7] operator_profiles + site_similarity + cert_siblings + classify_sites…"
 python3 scripts/operator_profiles.py
 python3 scripts/site_similarity.py | tail -2
 python3 scripts/cert_siblings.py | tail -2
+python3 scripts/classify_sites.py
 
 echo "==> [6/7] deep_analysis (full report)…"
 python3 scripts/deep_analysis.py
