@@ -1,4 +1,4 @@
-domain,origin,discovery_methods,verdict,framework,platform_name,verified_site_name,api_status_hit,html_framework_hit,content_hits,signal_tier,v1models_hit,last_round
+﻿domain,origin,discovery_methods,verdict,framework,platform_name,verified_site_name,api_status_hit,html_framework_hit,content_hits,signal_tier,v1models_hit,last_round
 0api.qzz.io,round5,codesearch,confirmed,new-api/one-api系,Zero API,Zero API,True,True,4,A_api_status,False,17
 147ai.com,round1,codesearch,confirmed,new-api/one-api系,147 AI,147 AI,True,True,4,A_api_status,False,17
 180txt.cn,round6,codesearch,confirmed,new-api/one-api系,180txt,180txt,True,True,4,A_api_status,False,17
@@ -763,3 +763,283 @@ yunzhiapi.cn,round1,codesearch,confirmed,new-api,,,False,True,8,C_framework+cont
 zernio.com,round4,codesearch,confirmed,one-api,,,False,True,2,C_framework+content,False,17
 zetaapi.ai,round2,codesearch,confirmed,new-api,,,False,True,5,C_framework+content,False,17
 zxj-2023.github.io,round15,codesearch,confirmed,sub2api,,,False,True,4,C_framework+content,False,17
+114api.com,fofa_g1,fofa,confirmed,new-api/one-api系,New API,New API,True,,4,A_api_status,False,fofa_g1
+16api.com,fofa_g1,fofa,confirmed,new-api/one-api系,一流API,一流API,True,,7,A_api_status,False,fofa_g1
+1ove.tech,fofa_g1,fofa,confirmed,sub2api,,,False,sub2api,4,C_framework+content,False,fofa_g1
+1publish.me,fofa_g1,fofa,confirmed,new-api/one-api系,Token Platform,Token Platform,True,one-api,5,A_api_status,False,fofa_g1
+2dapi.online,fofa_g1,fofa,confirmed,openai_compatible_unknown,酷燃AI — 巨量引擎 一站调用,酷燃AI — 巨量引擎 一站调用,False,,1,C_framework+content,True,fofa_g1
+4hidc.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,酷站AI · 你的全模型 API 中转站,酷站AI · 你的全模型 API 中转站,False,,13,C_framework+content,True,fofa_g1
+51api.org,fofa_g1,fofa,confirmed,new-api/one-api系,51API,51API,True,,5,A_api_status,False,fofa_g1
+5w5.wtf,fofa_g1,fofa,confirmed,new-api/one-api系,55api,55api,True,new-api,0,A_api_status,False,fofa_g1
+712api.cc,fofa_g1,fofa,confirmed,new-api/one-api系,712api,712api,True,new-api,10,A_api_status,False,fofa_g1
+73card.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,API 中转服务,API 中转服务,False,,5,C_framework+content,True,fofa_g1
+8511.top,fofa_g1,fofa,confirmed,new-api/one-api系,小卡拉中转站,小卡拉中转站,True,new-api,0,A_api_status,False,fofa_g1
+abaiapi.xyz,fofa_g1,fofa,confirmed,new-api/one-api系,aBai API,aBai API,True,new-api,0,A_api_status,False,fofa_g1
+aggbox.shop,fofa_g1,fofa,confirmed,new-api/one-api系,智模盒 AggBox,智模盒 AggBox,True,,2,A_api_status,False,fofa_g1
+ahmes.dev,fofa_g1,fofa,confirmed,openai_compatible_unknown,"Ahmes — AI API 网关:Anthropic / OpenAI / Gemini 一个 Base URL,按量直价","Ahmes — AI API 网关:Anthropic / OpenAI / Gemini 一个 Base URL,按量直价",False,,6,C_framework+content,True,fofa_g1
+ai-leapx.com,fofa_g1,fofa,confirmed,one-api,,,False,one-api,5,C_framework+content,False,fofa_g1
+ai01.yun,fofa_g1,fofa,confirmed,new-api/one-api系,AI Coding Token,AI Coding Token,True,new-api,5,A_api_status,False,fofa_g1
+ai163.cc,fofa_g1,fofa,confirmed,sub2api,,,False,sub2api,0,C_framework+content,False,fofa_g1
+ai88.help,fofa_g1,fofa,confirmed,openai_compatible_unknown,AI88 Relay Station · Claude API 中转,AI88 Relay Station · Claude API 中转,False,,4,C_framework+content,True,fofa_g1
+aibaz.ai,fofa_g1,fofa,confirmed,openai_compatible_unknown,AIBaz - AI统一网关,AIBaz - AI统一网关,False,,5,C_framework+content,True,fofa_g1
+aicloud.plus,fofa_g1,fofa,confirmed,openai_compatible_unknown,aicloud | 企业 AI 使用层,aicloud | 企业 AI 使用层,False,,4,C_framework+content,True,fofa_g1
+aicodedog.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,AICodeDog — AI Relay Source Code &amp; Managed API Gateway Setup,AICodeDog — AI Relay Source Code &amp; Managed API Gateway Setup,False,,6,C_framework+content,True,fofa_g1
+aifuel.cc,fofa_g1,fofa,confirmed,new-api/one-api系,AiFuel,AiFuel,True,,5,A_api_status,False,fofa_g1
+aigcly.top,fofa_g1,fofa,confirmed,openai_compatible_unknown,GPT2IMAGE - AI Chat-to-Image Generation Platform | GPT2IMAGE,GPT2IMAGE - AI Chat-to-Image Generation Platform | GPT2IMAGE,False,,1,C_framework+content,True,fofa_g1
+aigcwuji.com,fofa_g1,fofa,confirmed,new-api/one-api系,AIGC 无极 API,AIGC 无极 API,True,new-api,0,A_api_status,False,fofa_g1
+aigptx.top,fofa_g1,fofa,confirmed,openai_compatible_unknown,,,False,,0,C_framework+content,True,fofa_g1
+aihubmix.com,fofa_g1,fofa,confirmed,new-api/one-api系,AIHubMix,AIHubMix,True,,3,A_api_status,False,fofa_g1
+aiito.top,fofa_g1,fofa,confirmed,new-api/one-api系,风花AI,风花AI,True,new-api,2,A_api_status,False,fofa_g1
+ailvaz.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,登录 | AIPort,登录 | AIPort,False,,12,C_framework+content,True,fofa_g1
+airoute.vip,fofa_g1,fofa,confirmed,new-api/one-api系,airoute.vip,airoute.vip,True,new-api,4,A_api_status,False,fofa_g1
+airouter.work,fofa_g1,fofa,confirmed,one-api,,,False,one-api,5,C_framework+content,False,fofa_g1
+aishuch.com,fofa_g1,fofa,confirmed,new-api/one-api系,APIMart,APIMart,True,,4,A_api_status,False,fofa_g1
+aitokenapi.cc,fofa_g1,fofa,confirmed,new-api/one-api系,胖虎AI,胖虎AI,True,,4,A_api_status,False,fofa_g1
+aitransx.com,fofa_g1,fofa,confirmed,one-api,,,False,one-api,4,C_framework+content,False,fofa_g1
+aiuxu.com,fofa_g1,fofa,confirmed,new-api/one-api系,APIMart,APIMart,True,,4,A_api_status,False,fofa_g1
+albagubra.art,fofa_g1,fofa,confirmed,new-api,,,False,new-api,0,C_framework+content,False,fofa_g1
+allmodel.co,fofa_g1,fofa,confirmed,new-api/one-api系,All Model,All Model,True,one-api,5,A_api_status,False,fofa_g1
+alltkn.com,fofa_g1,fofa,confirmed,new-api/one-api系,ALLTKN,ALLTKN,True,new-api,6,A_api_status,False,fofa_g1
+amaranta.asia,fofa_g1,fofa,confirmed,openai_compatible_unknown,Amaranta 在线工具箱,Amaranta 在线工具箱,False,,0,C_framework+content,True,fofa_g1
+anyfast.ai,fofa_g1,fofa,confirmed,new-api/one-api系,Anyfast,Anyfast,True,one-api,5,A_api_status,False,fofa_g1
+anyport.xyz,fofa_g1,fofa,confirmed,new-api/one-api系,AnyPort,AnyPort,True,,6,A_api_status,False,fofa_g1
+apexapi.vip,fofa_g1,fofa,confirmed,one-api,,,False,one-api,5,C_framework+content,False,fofa_g1
+api260.com,fofa_g1,fofa,confirmed,new-api/one-api系,源创引擎,源创引擎,True,new-api,4,A_api_status,False,fofa_g1
+apib.ai,fofa_g1,fofa,confirmed,new-api/one-api系,APIMart,APIMart,True,,4,A_api_status,False,fofa_g1
+apibrg.com,fofa_g1,fofa,confirmed,new-api/one-api系,硅基算力,硅基算力,True,,5,A_api_status,False,fofa_g1
+apiliangrekui.com,fofa_g1,fofa,confirmed,new-api/one-api系,Ai-Middle,Ai-Middle,True,new-api,4,A_api_status,False,fofa_g1
+apilink.cc,fofa_g1,fofa,confirmed,new-api/one-api系,APILINK,APILINK,True,one-api,9,A_api_status,False,fofa_g1
+apimarket.top,fofa_g1,fofa,confirmed,new-api/one-api系,星光API,星光API,True,,2,A_api_status,False,fofa_g1
+apipod.ai,fofa_g1,fofa,confirmed,one-api,,,False,one-api,4,C_framework+content,False,fofa_g1
+apispk.com,fofa_g1,fofa,confirmed,new-api/one-api系,AI-Spark,AI-Spark,True,new-api,6,A_api_status,False,fofa_g1
+axis.fan,fofa_g1,fofa,confirmed,one-api,,,False,one-api,9,C_framework+content,False,fofa_g1
+axis.yoga,fofa_g1,fofa,confirmed,one-api,,,False,one-api,9,C_framework+content,False,fofa_g1
+base-url.cn,fofa_g1,fofa,confirmed,new-api/one-api系,接JieAPI,接JieAPI,True,new-api,4,A_api_status,False,fofa_g1
+baziapi.site,fofa_g1,fofa,confirmed,openai_compatible_unknown,,,False,,0,C_framework+content,True,fofa_g1
+bcapi.top,fofa_g1,fofa,confirmed,sub2api,,,False,sub2api,5,C_framework+content,False,fofa_g1
+beehears.com,fofa_g1,fofa,confirmed,one-api,,,False,one-api,5,C_framework+content,False,fofa_g1
+bestroute.center,fofa_g1,fofa,confirmed,openai_compatible_unknown,BestRoute - AI 路由网关,BestRoute - AI 路由网关,False,,4,C_framework+content,True,fofa_g1
+bgremoval.xyz,fofa_g1,fofa,confirmed,new-api,,,False,new-api,10,C_framework+content,False,fofa_g1
+blueshirtmap.com,fofa_g1,fofa,confirmed,new-api/one-api系,GPTMeta API,GPTMeta API,True,,5,A_api_status,False,fofa_g1
+bm-tokenai.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,登录 | 不鸣AI,登录 | 不鸣AI,False,,12,C_framework+content,True,fofa_g1
+c9api.cn,fofa_g1,fofa,confirmed,new-api/one-api系,C9API,C9API,True,,5,A_api_status,False,fofa_g1
+callflow.top,fofa_g1,fofa,confirmed,new-api/one-api系,Callflow API,Callflow API,True,new-api,2,A_api_status,False,fofa_g1
+cc2.cx,fofa_g1,fofa,confirmed,new-api/one-api系,cc2cx,cc2cx,True,new-api,4,A_api_status,False,fofa_g1
+ccg-cli.online,fofa_g1,fofa,confirmed,new-api/one-api系,New API,New API,True,,1,A_api_status,False,fofa_g1
+chaophone.top,fofa_g1,fofa,confirmed,openai_compatible_unknown,Atelier,Atelier,False,,1,C_framework+content,True,fofa_g1
+cheapvideo.cc,fofa_g1,fofa,confirmed,new-api,,,False,new-api,4,C_framework+content,False,fofa_g1
+check-in.tech,fofa_g1,fofa,confirmed,openai_compatible_unknown,,,False,,3,C_framework+content,True,fofa_g1
+chuizi.ai,fofa_g1,fofa,confirmed,one-api,,,False,one-api,6,C_framework+content,False,fofa_g1
+clauden.ai,fofa_g1,fofa,confirmed,openai_compatible_unknown,Claude、GPT、Gemini 多模型 API 聚合平台 · ClaudeN AI,Claude、GPT、Gemini 多模型 API 聚合平台 · ClaudeN AI,False,,8,C_framework+content,True,fofa_g1
+clawskills.shop,fofa_g1,fofa,confirmed,new-api,,,False,new-api,8,C_framework+content,False,fofa_g1
+cllmgate.com,fofa_g1,fofa,confirmed,one-api,,,False,one-api,2,C_framework+content,False,fofa_g1
+corelightai.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,,,False,,13,C_framework+content,True,fofa_g1
+corenode.best,fofa_g1,fofa,confirmed,new-api/one-api系,源点算力API,源点算力API,True,,0,A_api_status,False,fofa_g1
+cowcode.top,fofa_g1,fofa,confirmed,openai_compatible_unknown,Cow Code,Cow Code,False,,7,C_framework+content,True,fofa_g1
+creatraai.cn,fofa_g1,fofa,confirmed,openai_compatible_unknown,CreatrA AI 中转站管理,CreatrA AI 中转站管理,False,,5,C_framework+content,True,fofa_g1
+d2capi.com,fofa_g1,fofa,confirmed,new-api/one-api系,D2CAPI,D2CAPI,True,new-api,4,A_api_status,False,fofa_g1
+dailytokencloud.top,fofa_g1,fofa,confirmed,new-api/one-api系,DailyToken,DailyToken,True,,5,A_api_status,False,fofa_g1
+damiai.pro,fofa_g1,fofa,confirmed,one-api,,,False,one-api,5,C_framework+content,False,fofa_g1
+dashupp.xin,fofa_g1,fofa,confirmed,new-api/one-api系,大树API,大树API,True,,2,A_api_status,False,fofa_g1
+dealise.xyz,fofa_g1,fofa,confirmed,sub2api,,,False,sub2api,0,C_framework+content,False,fofa_g1
+dedicatedtoken.com,fofa_g1,fofa,confirmed,new-api/one-api系,专用Token,专用Token,True,new-api,4,A_api_status,False,fofa_g1
+deepestcode.com,fofa_g1,fofa,confirmed,one-api,,,False,one-api,2,C_framework+content,False,fofa_g1
+deeprelayapi.cloud,fofa_g1,fofa,confirmed,new-api/one-api系,New API,New API,True,,4,A_api_status,False,fofa_g1
+deepseek-api.com.cn,fofa_g1,fofa,confirmed,openai_compatible_unknown,TokenAPI - 全球AI模型聚合平台,TokenAPI - 全球AI模型聚合平台,False,,3,C_framework+content,True,fofa_g1
+doroai.xyz,fofa_g1,fofa,confirmed,openai_compatible_unknown,Web2Img,Web2Img,False,,6,C_framework+content,True,fofa_g1
+douke.chat,fofa_g1,fofa,confirmed,new-api,,,False,new-api,2,C_framework+content,False,fofa_g1
+dubhehub.com,fofa_g1,fofa,confirmed,one-api,,,False,one-api,1,C_framework+content,False,fofa_g1
+dxnt.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,DX Token Plan-coding plan|agent plan|生图套餐|生视频套餐,DX Token Plan-coding plan|agent plan|生图套餐|生视频套餐,False,,9,C_framework+content,True,fofa_g1
+echowynapi.xyz,fofa_g1,fofa,confirmed,new-api/one-api系,Echowyn API,Echowyn API,True,new-api,3,A_api_status,False,fofa_g1
+ecovai.cn,fofa_g1,fofa,confirmed,new-api/one-api系,Ecovai API,Ecovai API,True,,5,A_api_status,False,fofa_g1
+eronmind.com,fofa_g1,fofa,confirmed,new-api,,,False,new-api,9,C_framework+content,False,fofa_g1
+firstapi.top,fofa_g1,fofa,confirmed,one-api,,,False,one-api,6,C_framework+content,False,fofa_g1
+fksuda.xyz,fofa_g1,fofa,confirmed,sub2api,,,False,sub2api,0,C_framework+content,False,fofa_g1
+flowapi.fun,fofa_g1,fofa,confirmed,new-api,,,False,new-api,11,C_framework+content,False,fofa_g1
+flowbar.xyz,fofa_g1,fofa,confirmed,new-api/one-api系,FlowBar AI,FlowBar AI,True,,5,A_api_status,False,fofa_g1
+flowbarai.com,fofa_g1,fofa,confirmed,new-api/one-api系,FlowBar AI,FlowBar AI,True,,5,A_api_status,False,fofa_g1
+freeairouter.com,fofa_g1,fofa,confirmed,new-api,,,False,new-api,12,C_framework+content,False,fofa_g1
+freetokenrouter.cn,fofa_g1,fofa,confirmed,one-api,,,False,one-api,6,C_framework+content,False,fofa_g1
+fullrouter.com,fofa_g1,fofa,confirmed,one-api,,,False,one-api,3,C_framework+content,False,fofa_g1
+furryforum.com,fofa_g1,fofa,confirmed,new-api/one-api系,FURRY API,FURRY API,True,new-api,0,A_api_status,False,fofa_g1
+gantriq.cc,fofa_g1,fofa,confirmed,new-api,,,False,new-api,0,C_framework+content,False,fofa_g1
+gee-do.com,fofa_g1,fofa,confirmed,new-api/one-api系,GeeDo,GeeDo,True,new-api,0,A_api_status,False,fofa_g1
+gemini.wang,fofa_g1,fofa,confirmed,new-api/one-api系,ocoolAI,ocoolAI,True,,15,A_api_status,False,fofa_g1
+getclawapi.top,fofa_g1,fofa,confirmed,new-api/one-api系,ClawAPI,ClawAPI,True,,1,A_api_status,False,fofa_g1
+getllm.ai,fofa_g1,fofa,confirmed,one-api,,,False,one-api,6,C_framework+content,False,fofa_g1
+give2u.xyz,fofa_g1,fofa,confirmed,sub2api,,,False,sub2api,7,C_framework+content,False,fofa_g1
+hajisong.top,fofa_g1,fofa,confirmed,sub2api,,,False,sub2api,0,C_framework+content,False,fofa_g1
+haotokai.com,fofa_g1,fofa,confirmed,new-api/one-api系,Haotokai,Haotokai,True,one-api,2,A_api_status,False,fofa_g1
+hehuole.fun,fofa_g1,fofa,confirmed,new-api/one-api系,Hehuole API,Hehuole API,True,new-api,4,A_api_status,False,fofa_g1
+hiapi.ai,fofa_g1,fofa,confirmed,new-api/one-api系,hiapi,hiapi,True,one-api,3,A_api_status,False,fofa_g1
+holdzywoo.top,fofa_g1,fofa,confirmed,sub2api,,,False,sub2api,0,C_framework+content,False,fofa_g1
+hook.rs,fofa_g1,fofa,confirmed,openai_compatible_unknown,统一大模型网关,统一大模型网关,False,,2,C_framework+content,True,fofa_g1
+huanyuai.net,fofa_g1,fofa,confirmed,one-api,,,False,one-api,4,C_framework+content,False,fofa_g1
+hubllm.cn,fofa_g1,fofa,confirmed,new-api/one-api系,Hubllm,Hubllm,True,,5,A_api_status,False,fofa_g1
+huhuai.xyz,fofa_g1,fofa,confirmed,sub2api,,,False,sub2api,7,C_framework+content,False,fofa_g1
+huoxingapi.com,fofa_g1,fofa,confirmed,new-api/one-api系,火星API,火星API,True,,4,A_api_status,False,fofa_g1
+hypereal.cloud,fofa_g1,fofa,confirmed,one-api,,,False,one-api,5,C_framework+content,False,fofa_g1
+iaigc.fun,fofa_g1,fofa,confirmed,new-api/one-api系,筑基 AI,筑基 AI,True,new-api,2,A_api_status,False,fofa_g1
+ikun666.xyz,fofa_g1,fofa,confirmed,new-api/one-api系,Ikun API,Ikun API,True,new-api,4,A_api_status,False,fofa_g1
+jmaivip.com,fofa_g1,fofa,confirmed,new-api,,,False,new-api,3,C_framework+content,False,fofa_g1
+jmrai.net,fofa_g1,fofa,confirmed,new-api,,,False,new-api,3,C_framework+content,False,fofa_g1
+judianai.com,fofa_g1,fofa,confirmed,new-api/one-api系,New API,New API,True,one-api,10,A_api_status,False,fofa_g1
+juesiapi.top,fofa_g1,fofa,confirmed,new-api/one-api系,玦飔API,玦飔API,True,,10,A_api_status,False,fofa_g1
+juhes.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,登录 | 聚合引擎AIGC,登录 | 聚合引擎AIGC,False,,12,C_framework+content,True,fofa_g1
+kelongde.com,fofa_g1,fofa,confirmed,new-api/one-api系,Kelongde AI API,Kelongde AI API,True,new-api,9,A_api_status,False,fofa_g1
+kittyapi.xyz,fofa_g1,fofa,confirmed,sub2api,,,False,sub2api,8,C_framework+content,False,fofa_g1
+koozhan.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,酷站AI · 你的全模型 API 中转站,酷站AI · 你的全模型 API 中转站,False,,13,C_framework+content,True,fofa_g1
+kopiaiagent.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,KOPI Agent — Singapore AI Agent,KOPI Agent — Singapore AI Agent,False,,1,C_framework+content,True,fofa_g1
+kove.cn,fofa_g1,fofa,confirmed,openai_compatible_unknown,Claude API - 全球顶级AI模型聚合平台,Claude API - 全球顶级AI模型聚合平台,False,,10,C_framework+content,True,fofa_g1
+kuaihuiai.com,fofa_g1,fofa,confirmed,new-api/one-api系,快绘,快绘,True,,14,A_api_status,False,fofa_g1
+kunavo.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,Kunavo · OpenAI-compatible AI API gateway · Stripe-native · Built for global devs,Kunavo · OpenAI-compatible AI API gateway · Stripe-native · Built for global devs,False,,6,C_framework+content,True,fofa_g1
+li-token.com,fofa_g1,fofa,confirmed,new-api/one-api系,Li-Token,Li-Token,True,,2,A_api_status,False,fofa_g1
+liandanxia.io,fofa_g1,fofa,confirmed,one-api,,,False,one-api,3,C_framework+content,False,fofa_g1
+lienoo.cn,fofa_g1,fofa,confirmed,new-api,,,False,new-api,0,C_framework+content,False,fofa_g1
+lingcoreai.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,灵核 LingCore - 多模型 AI API网关、GPT/Claude/Gemini/Grok/Codex API 中转平台,灵核 LingCore - 多模型 AI API网关、GPT/Claude/Gemini/Grok/Codex API 中转平台,False,,7,C_framework+content,True,fofa_g1
+link-ai.cc,fofa_g1,fofa,confirmed,new-api/one-api系,Link-AI,Link-AI,True,new-api,4,A_api_status,False,fofa_g1
+ljww.asia,fofa_g1,fofa,confirmed,new-api/one-api系,灵境API,灵境API,True,,3,A_api_status,False,fofa_g1
+lkyujun.cn,fofa_g1,fofa,confirmed,openai_compatible_unknown,想要照亮世界,想要照亮世界,False,,1,C_framework+content,True,fofa_g1
+llm-agent.cc,fofa_g1,fofa,confirmed,new-api,,,False,new-api,6,C_framework+content,False,fofa_g1
+llm-token.cn,fofa_g1,fofa,confirmed,new-api,,,False,new-api,11,C_framework+content,False,fofa_g1
+llmgate.io,fofa_g1,fofa,confirmed,new-api/one-api系,LLM Gate,LLM Gate,True,new-api,4,A_api_status,False,fofa_g1
+llmhub.app,fofa_g1,fofa,confirmed,one-api,,,False,one-api,7,C_framework+content,False,fofa_g1
+llmoxy.com,fofa_g1,fofa,confirmed,new-api/one-api系,LLMoxy,LLMoxy,True,,5,A_api_status,False,fofa_g1
+llmroute.club,fofa_g1,fofa,confirmed,openai_compatible_unknown,"Silk Road AI · 一个 Key,接入 200+ AI 模型 | ChatGPT、Claude、Gemini 国内中转","Silk Road AI · 一个 Key,接入 200+ AI 模型 | ChatGPT、Claude、Gemini 国内中转",False,,12,C_framework+content,True,fofa_g1
+lowertoken.cn,fofa_g1,fofa,confirmed,new-api/one-api系,Lowertoken,Lowertoken,True,,5,A_api_status,False,fofa_g1
+lqapi.cc,fofa_g1,fofa,confirmed,new-api/one-api系,速极 API,速极 API,True,new-api,0,A_api_status,False,fofa_g1
+ltvip.org,fofa_g1,fofa,confirmed,openai_compatible_unknown,登录 | 领拓AIGC,登录 | 领拓AIGC,False,,12,C_framework+content,True,fofa_g1
+lumiya.vip,fofa_g1,fofa,confirmed,new-api/one-api系,露米娅API,露米娅API,True,new-api,4,A_api_status,False,fofa_g1
+lyrid.cn,fofa_g1,fofa,confirmed,openai_compatible_unknown,Dewfall,Dewfall,False,,1,C_framework+content,True,fofa_g1
+maiqilingai.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,迈启灵AI — 跨境电商 AI 智能体工作台,迈启灵AI — 跨境电商 AI 智能体工作台,False,,2,C_framework+content,True,fofa_g1
+maxai.asia,fofa_g1,fofa,confirmed,new-api/one-api系,MaxAI API,MaxAI API,True,new-api,4,A_api_status,False,fofa_g1
+maxapi.ai,fofa_g1,fofa,confirmed,one-api,,,False,one-api,5,C_framework+content,False,fofa_g1
+mayaa.com.cn,fofa_g1,fofa,confirmed,new-api,,,False,new-api,3,C_framework+content,False,fofa_g1
+mbapi.top,fofa_g1,fofa,confirmed,new-api/one-api系,一站式Api,一站式Api,True,,4,A_api_status,False,fofa_g1
+miaolici.top,fofa_g1,fofa,confirmed,new-api/one-api系,MiaoLiCi,MiaoLiCi,True,,5,A_api_status,False,fofa_g1
+miaoma.ai,fofa_g1,fofa,confirmed,new-api/one-api系,秒码 Miaoma,秒码 Miaoma,True,,5,A_api_status,False,fofa_g1
+miaomiaocode.com,fofa_g1,fofa,confirmed,one-api,,,False,one-api,8,C_framework+content,False,fofa_g1
+middlekingdom.cc,fofa_g1,fofa,confirmed,one-api,,,False,one-api,2,C_framework+content,False,fofa_g1
+minicod.com,fofa_g1,fofa,confirmed,one-api,,,False,one-api,2,C_framework+content,False,fofa_g1
+minimaxi.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,MiniMax,MiniMax,False,,4,C_framework+content,True,fofa_g1
+mixroute.ai,fofa_g1,fofa,confirmed,one-api,,,False,one-api,5,C_framework+content,False,fofa_g1
+modelhub.lat,fofa_g1,fofa,confirmed,new-api/one-api系,ModelHub,ModelHub,True,one-api,12,A_api_status,False,fofa_g1
+moometalink.com,fofa_g1,fofa,confirmed,new-api/one-api系,沐元智联,沐元智联,True,,1,A_api_status,False,fofa_g1
+moonlm.com,fofa_g1,fofa,confirmed,new-api/one-api系,MoonLM,MoonLM,True,,1,A_api_status,False,fofa_g1
+mr68ai.cn,fofa_g1,fofa,confirmed,new-api/one-api系,New API,New API,True,new-api,4,A_api_status,False,fofa_g1
+mstoken.vip,fofa_g1,fofa,confirmed,openai_compatible_unknown,Infinity API - API Gateway and Online Chat,Infinity API - API Gateway and Online Chat,False,,5,C_framework+content,True,fofa_g1
+mvptk.top,fofa_g1,fofa,confirmed,new-api/one-api系,Mvptoken API,Mvptoken API,True,new-api,4,A_api_status,False,fofa_g1
+myaitoken.com.cn,fofa_g1,fofa,confirmed,new-api/one-api系,One API,One API,True,,3,A_api_status,False,fofa_g1
+name1.ai,fofa_g1,fofa,confirmed,new-api/one-api系,New API,New API,True,,0,A_api_status,False,fofa_g1
+nameyn.shop,fofa_g1,fofa,confirmed,new-api/one-api系,Nameyn,Nameyn,True,new-api,4,A_api_status,False,fofa_g1
+nbp.lol,fofa_g1,fofa,confirmed,one-api,,,False,one-api,8,C_framework+content,False,fofa_g1
+neonartai.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,NeonArt AI · 简洁清新版,NeonArt AI · 简洁清新版,False,,1,C_framework+content,True,fofa_g1
+nexrouter.io,fofa_g1,fofa,confirmed,one-api,,,False,one-api,6,C_framework+content,False,fofa_g1
+nicetoone.com,fofa_g1,fofa,confirmed,one-api,,,False,one-api,0,C_framework+content,False,fofa_g1
+niubiai.net,fofa_g1,fofa,confirmed,new-api/one-api系,NBAI,NBAI,True,new-api,5,A_api_status,False,fofa_g1
+niucode.fun,fofa_g1,fofa,confirmed,new-api/one-api系,NiuCode,NiuCode,True,new-api,4,A_api_status,False,fofa_g1
+niudunbujige.cn,fofa_g1,fofa,confirmed,new-api/one-api系,allall.ai-全球AI聚合平台,allall.ai-全球AI聚合平台,True,new-api,4,A_api_status,False,fofa_g1
+noc.cy,fofa_g1,fofa,confirmed,sub2api,,,False,sub2api,0,C_framework+content,False,fofa_g1
+nodebyt.com,fofa_g1,fofa,confirmed,one-api,,,False,one-api,8,C_framework+content,False,fofa_g1
+nqapi.cn,fofa_g1,fofa,confirmed,new-api/one-api系,Nq API,Nq API,True,new-api,4,A_api_status,False,fofa_g1
+octopusx.ai,fofa_g1,fofa,confirmed,new-api/one-api系,,,True,one-api,2,A_api_status,False,fofa_g1
+oneai.cc,fofa_g1,fofa,confirmed,new-api/one-api系,OneAi,OneAi,True,new-api,0,A_api_status,False,fofa_g1
+oneapi.host,fofa_g1,fofa,confirmed,one-api,,,False,one-api,2,C_framework+content,False,fofa_g1
+onekeymodel.com,fofa_g1,fofa,confirmed,one-api,,,False,one-api,1,C_framework+content,False,fofa_g1
+onerouter.cn,fofa_g1,fofa,confirmed,openai_compatible_unknown,OneRouter · 一个密钥路由 DeepSeek · GLM · Kimi · Seedance · GPT Image,OneRouter · 一个密钥路由 DeepSeek · GLM · Kimi · Seedance · GPT Image,False,,10,C_framework+content,True,fofa_g1
+onerouter1688.com,fofa_g1,fofa,confirmed,new-api/one-api系,Token1688国际站,Token1688国际站,True,new-api,0,A_api_status,False,fofa_g1
+onlyrouter.ai,fofa_g1,fofa,confirmed,openai_compatible_unknown,OnlyRouter,OnlyRouter,False,,6,C_framework+content,True,fofa_g1
+openox.tech,fofa_g1,fofa,confirmed,openai_compatible_unknown,OpenOx - 企业级稳定满血低价官方 API,OpenOx - 企业级稳定满血低价官方 API,False,,9,C_framework+content,True,fofa_g1
+openrouter.team,fofa_g1,fofa,confirmed,openai_compatible_unknown,OpenRouter Team - API 控制台,OpenRouter Team - API 控制台,False,,8,C_framework+content,True,fofa_g1
+oxandhorse.site,fofa_g1,fofa,confirmed,new-api,,,False,new-api,2,C_framework+content,False,fofa_g1
+pantao.asia,fofa_g1,fofa,confirmed,new-api/one-api系,蟠桃中转站,蟠桃中转站,True,,3,A_api_status,False,fofa_g1
+paopaoapi.com,fofa_g1,fofa,confirmed,new-api/one-api系,泡泡API,泡泡API,True,,8,A_api_status,False,fofa_g1
+proxystacks.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,ProxyStacks Relay - AI API Management Platform,ProxyStacks Relay - AI API Management Platform,False,,3,C_framework+content,True,fofa_g1
+qilingai.net,fofa_g1,fofa,confirmed,openai_compatible_unknown,,,False,,0,C_framework+content,True,fofa_g1
+qingshanapi.com,fofa_g1,fofa,confirmed,new-api/one-api系,QingshanAPI,QingshanAPI,True,new-api,4,A_api_status,False,fofa_g1
+qingxumall.com,fofa_g1,fofa,confirmed,new-api,,,False,new-api,3,C_framework+content,False,fofa_g1
+renrenai.chat,fofa_g1,fofa,confirmed,new-api/one-api系,RenRen API,RenRen API,True,,3,A_api_status,False,fofa_g1
+rinnepro.tech,fofa_g1,fofa,confirmed,new-api/one-api系,RINNE,RINNE,True,new-api,4,A_api_status,False,fofa_g1
+route-agent.com,fofa_g1,fofa,confirmed,one-api,,,False,one-api,5,C_framework+content,False,fofa_g1
+routeall.ai,fofa_g1,fofa,confirmed,one-api,,,False,one-api,4,C_framework+content,False,fofa_g1
+ruapi.ai,fofa_g1,fofa,confirmed,new-api/one-api系,RuAPI,RuAPI,True,new-api,7,A_api_status,False,fofa_g1
+samyu15.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,samyu15 · AI Gateway,samyu15 · AI Gateway,False,,12,C_framework+content,True,fofa_g1
+shheng.xyz,fofa_g1,fofa,confirmed,new-api/one-api系,Shheng API,Shheng API,True,,3,A_api_status,False,fofa_g1
+shisuanai.com,fofa_g1,fofa,confirmed,new-api/one-api系,石蒜智算,石蒜智算,True,,0,A_api_status,False,fofa_g1
+shxybar.com,fofa_g1,fofa,confirmed,new-api/one-api系,FlowBar,FlowBar,True,new-api,3,A_api_status,False,fofa_g1
+silkroadai.io,fofa_g1,fofa,confirmed,openai_compatible_unknown,登录 — Silk Road AI,登录 — Silk Road AI,False,,0,C_framework+content,True,fofa_g1
+sjapi.top,fofa_g1,fofa,confirmed,new-api/one-api系,New API,New API,True,new-api,4,A_api_status,False,fofa_g1
+starstartai.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,星启AI - 面向未来的智能模型网关,星启AI - 面向未来的智能模型网关,False,,3,C_framework+content,True,fofa_g1
+summerapi.com,fofa_g1,fofa,confirmed,new-api/one-api系,夏夏中转站,夏夏中转站,True,new-api,5,A_api_status,False,fofa_g1
+superaiapi.com,fofa_g1,fofa,confirmed,new-api/one-api系,SuperAI API,SuperAI API,True,new-api,8,A_api_status,False,fofa_g1
+supermoxi.top,fofa_g1,fofa,confirmed,new-api/one-api系,MOXI-API,MOXI-API,True,,0,A_api_status,False,fofa_g1
+szjsai.cn,fofa_g1,fofa,confirmed,openai_compatible_unknown,Claude API - 全球顶级AI模型聚合平台,Claude API - 全球顶级AI模型聚合平台,False,,4,C_framework+content,True,fofa_g1
+szjsai.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,Claude API - 全球顶级AI模型聚合平台,Claude API - 全球顶级AI模型聚合平台,False,,4,C_framework+content,True,fofa_g1
+t-hub.cc,fofa_g1,fofa,confirmed,new-api/one-api系,One API,One API,True,one-api,4,A_api_status,False,fofa_g1
+teai.io,fofa_g1,fofa,confirmed,openai_compatible_unknown,teai.io — 日本発LLM API Gateway | Claude 5・GPT-5.5・Gemini 3.5 85+モデルを1つのAPIで,teai.io — 日本発LLM API Gateway | Claude 5・GPT-5.5・Gemini 3.5 85+モデルを1つのAPIで,False,,5,C_framework+content,True,fofa_g1
+tengd.site,fofa_g1,fofa,confirmed,new-api/one-api系,tengd,tengd,True,new-api,4,A_api_status,False,fofa_g1
+tenwayclaw.com,fofa_g1,fofa,confirmed,new-api/one-api系,Tenway AI,Tenway AI,True,,10,A_api_status,False,fofa_g1
+to2dog.top,fofa_g1,fofa,confirmed,new-api/one-api系,Carpool,Carpool,True,new-api,4,A_api_status,False,fofa_g1
+toapis.com,fofa_g1,fofa,confirmed,new-api/one-api系,ToAPIs,ToAPIs,True,,9,A_api_status,False,fofa_g1
+toapis.xyz,fofa_g1,fofa,confirmed,new-api/one-api系,ToAPIs,ToAPIs,True,,9,A_api_status,False,fofa_g1
+token.mg,fofa_g1,fofa,confirmed,new-api/one-api系,智模引擎,智模引擎,True,new-api,0,A_api_status,False,fofa_g1
+tokencall.cn,fofa_g1,fofa,confirmed,openai_compatible_unknown,TokenCall — 全球 AI 模型 API 服务,TokenCall — 全球 AI 模型 API 服务,False,,5,C_framework+content,True,fofa_g1
+tokencheap.ai,fofa_g1,fofa,confirmed,openai_compatible_unknown,TokenCheap - 简洁的模型 API 中转,TokenCheap - 简洁的模型 API 中转,False,,5,C_framework+content,True,fofa_g1
+tokencraft.cc,fofa_g1,fofa,confirmed,openai_compatible_unknown,企业可信 AI 接入平台 | TokenCraft,企业可信 AI 接入平台 | TokenCraft,False,,5,C_framework+content,True,fofa_g1
+tokendepot.vip,fofa_g1,fofa,confirmed,new-api,,,False,new-api,11,C_framework+content,False,fofa_g1
+tokengo.love,fofa_g1,fofa,confirmed,openai_compatible_unknown,登录 | TokenGo,登录 | TokenGo,False,,12,C_framework+content,True,fofa_g1
+tokenhai.com,fofa_g1,fofa,confirmed,new-api/one-api系,TokenHai · AI Token 之海,TokenHai · AI Token 之海,True,,10,A_api_status,False,fofa_g1
+tokenhot.cn,fofa_g1,fofa,confirmed,new-api/one-api系,Tokenhot,Tokenhot,True,,7,A_api_status,False,fofa_g1
+tokenhub.com,fofa_g1,fofa,confirmed,one-api,,,False,one-api,5,C_framework+content,False,fofa_g1
+tokenktv.com,fofa_g1,fofa,confirmed,new-api/one-api系,New API,New API,True,,13,A_api_status,False,fofa_g1
+tokennexus.vip,fofa_g1,fofa,confirmed,sub2api,,,False,sub2api,7,C_framework+content,False,fofa_g1
+tokensolo.com,fofa_g1,fofa,confirmed,new-api/one-api系,Token Solo,Token Solo,True,,4,A_api_status,False,fofa_g1
+tokenzz.cc,fofa_g1,fofa,confirmed,new-api/one-api系,Tokenzz,Tokenzz,True,new-api,5,A_api_status,False,fofa_g1
+trustapi.app,fofa_g1,fofa,confirmed,new-api/one-api系,TrustAPI,TrustAPI,True,one-api,4,A_api_status,False,fofa_g1
+tryaiapi.com,fofa_g1,fofa,confirmed,new-api/one-api系,Try AI API,Try AI API,True,,4,A_api_status,False,fofa_g1
+turiloop.com,fofa_g1,fofa,confirmed,one-api,,,False,one-api,4,C_framework+content,False,fofa_g1
+vantapi.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,VantAPI AI 开放平台,VantAPI AI 开放平台,False,,9,C_framework+content,True,fofa_g1
+velahub.ai,fofa_g1,fofa,confirmed,one-api,,,False,one-api,6,C_framework+content,False,fofa_g1
+veloraapi.com,fofa_g1,fofa,confirmed,sub2api,,,False,sub2api,4,C_framework+content,False,fofa_g1
+voyageage.com,fofa_g1,fofa,confirmed,sub2api,,,False,sub2api,0,C_framework+content,False,fofa_g1
+wagbrio.com,fofa_g1,fofa,confirmed,new-api/one-api系,Wagbrio,Wagbrio,True,,3,A_api_status,False,fofa_g1
+weimeta.ai,fofa_g1,fofa,confirmed,new-api/one-api系,WEIMETA.AI,WEIMETA.AI,True,,5,A_api_status,False,fofa_g1
+weimeta.cn,fofa_g1,fofa,confirmed,new-api/one-api系,唯一网络,唯一网络,True,,2,A_api_status,False,fofa_g1
+weisoft.chat,fofa_g1,fofa,confirmed,new-api,,,False,new-api,2,C_framework+content,False,fofa_g1
+wetoken.one,fofa_g1,fofa,confirmed,one-api,,,False,one-api,5,C_framework+content,False,fofa_g1
+winrouter.ai,fofa_g1,fofa,confirmed,one-api,,,False,one-api,3,C_framework+content,False,fofa_g1
+wowcode.cc,fofa_g1,fofa,confirmed,new-api/one-api系,WoWCode,WoWCode,True,,3,A_api_status,False,fofa_g1
+wox.lol,fofa_g1,fofa,confirmed,new-api/one-api系,WOX.LOL,WOX.LOL,True,new-api,0,A_api_status,False,fofa_g1
+wula.mom,fofa_g1,fofa,confirmed,new-api/one-api系,WuLa,WuLa,True,new-api,4,A_api_status,False,fofa_g1
+xbingo.xin,fofa_g1,fofa,confirmed,one-api,,,False,one-api,2,C_framework+content,False,fofa_g1
+xezn.org,fofa_g1,fofa,confirmed,one-api,,,False,one-api,9,C_framework+content,False,fofa_g1
+xiangjun.pw,fofa_g1,fofa,confirmed,new-api/one-api系,观澜 API,观澜 API,True,new-api,0,A_api_status,False,fofa_g1
+xiaoclaw.com,fofa_g1,fofa,confirmed,new-api/one-api系,New API,New API,True,,0,A_api_status,False,fofa_g1
+xiaoyue9527.xyz,fofa_g1,fofa,confirmed,openai_compatible_unknown,LYTokens LLM Gateway,LYTokens LLM Gateway,False,,2,C_framework+content,True,fofa_g1
+xinyun.ai,fofa_g1,fofa,confirmed,new-api/one-api系,心云AI,心云AI,True,new-api,4,A_api_status,False,fofa_g1
+xmapi.com.cn,fofa_g1,fofa,confirmed,new-api/one-api系,星猫Ai,星猫Ai,True,,4,A_api_status,False,fofa_g1
+xuanduai.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,玄渡AI · 在线 AI 对话 · OpenAI / Anthropic 兼容 API,玄渡AI · 在线 AI 对话 · OpenAI / Anthropic 兼容 API,False,,7,C_framework+content,True,fofa_g1
+xwrip.top,fofa_g1,fofa,confirmed,new-api/one-api系,JiaYaoAPI,JiaYaoAPI,True,new-api,4,A_api_status,False,fofa_g1
+xxxxtoken.com,fofa_g1,fofa,confirmed,new-api/one-api系,X-API,X-API,True,new-api,4,A_api_status,False,fofa_g1
+xy-chat.xyz,fofa_g1,fofa,confirmed,sub2api,,,False,sub2api,8,C_framework+content,False,fofa_g1
+xyapi.io,fofa_g1,fofa,confirmed,new-api/one-api系,XYAPI,XYAPI,True,new-api,0,A_api_status,False,fofa_g1
+yaogod.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,登录 | TokenGo,登录 | TokenGo,False,,12,C_framework+content,True,fofa_g1
+ybtech.cc,fofa_g1,fofa,confirmed,new-api/one-api系,云博API,云博API,True,new-api,10,A_api_status,False,fofa_g1
+ycvip.net,fofa_g1,fofa,confirmed,openai_compatible_unknown,登录 | 优创AIGC,登录 | 优创AIGC,False,,12,C_framework+content,True,fofa_g1
+ycvvip.net,fofa_g1,fofa,confirmed,openai_compatible_unknown,登录 | 优创AI,登录 | 优创AI,False,,12,C_framework+content,True,fofa_g1
+yhapiplatform.com,fofa_g1,fofa,confirmed,openai_compatible_unknown,YH API Platform,YH API Platform,False,,7,C_framework+content,True,fofa_g1
+yixintoken.com,fofa_g1,fofa,confirmed,new-api,,,False,new-api,3,C_framework+content,False,fofa_g1
+youqi.ai,fofa_g1,fofa,confirmed,new-api/one-api系,New API,New API,True,,5,A_api_status,False,fofa_g1
+youqi.tech,fofa_g1,fofa,confirmed,openai_compatible_unknown,Youqi AI — AI Agents. Real-World Doers.,Youqi AI — AI Agents. Real-World Doers.,False,,0,C_framework+content,True,fofa_g1
+yout.chat,fofa_g1,fofa,confirmed,openai_compatible_unknown,Yout.chat — Private AI chat with every model,Yout.chat — Private AI chat with every model,False,,6,C_framework+content,True,fofa_g1
+yuai.space,fofa_g1,fofa,confirmed,new-api/one-api系,悦云code,悦云code,True,new-api,4,A_api_status,False,fofa_g1
+yuanzhi.icu,fofa_g1,fofa,confirmed,voapi,,,False,voapi,1,C_framework+content,False,fofa_g1
+yun618.top,fofa_g1,fofa,confirmed,sub2api,,,False,sub2api,10,C_framework+content,False,fofa_g1
+yunshuaiapi.com,fofa_g1,fofa,confirmed,new-api/one-api系,云枢AI,云枢AI,True,new-api,4,A_api_status,False,fofa_g1
+yxai.chat,fofa_g1,fofa,confirmed,openai_compatible_unknown,,,False,,4,C_framework+content,True,fofa_g1
+yyc.lat,fofa_g1,fofa,confirmed,new-api/one-api系,YYC API,YYC API,True,,13,A_api_status,False,fofa_g1
+yysc.top,fofa_g1,fofa,confirmed,new-api,,,False,new-api,0,C_framework+content,False,fofa_g1
+zhinengfugu.cn,fofa_g1,fofa,confirmed,new-api/one-api系,智能富谷,智能富谷,True,,0,A_api_status,False,fofa_g1
+zhumengwangluo.top,fofa_g1,fofa,confirmed,openai_compatible_unknown,筑梦工作台,筑梦工作台,False,,0,C_framework+content,True,fofa_g1
+ziyeapi.com,fofa_g1,fofa,confirmed,new-api/one-api系,One API,One API,True,,4,A_api_status,False,fofa_g1
+zzhfwl.com,fofa_g1,fofa,confirmed,new-api/one-api系,蜘蛛API,蜘蛛API,True,,8,A_api_status,False,fofa_g1
