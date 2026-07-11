@@ -23,6 +23,7 @@ RESULTS_DIR = BASE_DIR / "results"
 
 HVOY_CSV    = DATA_DIR / "hvoy_latest.csv"
 MANUAL_CSV  = DATA_DIR / "manual_sites.csv"
+MASTER_SITES_CSV = DATA_DIR / "master_sites.csv"   # discovery-layer confirmed list
 RESULTS_CSV = RESULTS_DIR / "monitor_results.csv"
 REVIEW_CSV  = RESULTS_DIR / "needs_review.csv"
 
@@ -124,6 +125,19 @@ def load_platforms():
     else:
         print(f"⚠️  找不到 {MANUAL_CSV}")
 
+    disc_count = 0
+    if MASTER_SITES_CSV.exists():
+        with open(MASTER_SITES_CSV, encoding="utf-8-sig") as f:
+            for row in csv.DictReader(f):
+                domain = extract_domain(row.get("domain", ""))
+                if domain and domain not in platforms:
+                    platforms[domain] = {
+                        "domain":        domain,
+                        "platform_name": row.get("platform_name", ""),
+                        "source":        "discovery",
+                    }
+                    disc_count += 1
+
     stopped_count = 0
     for domain, info in STOPPED_SERVICES.items():
         if domain not in platforms:
@@ -137,6 +151,7 @@ def load_platforms():
             platforms[domain]["platform_name"] = info["platform_name"]
 
     print(f"manual来源新增: {manual_count} 个")
+    print(f"discovery来源新增: {disc_count} 个")
     print(f"人工停止维护标记: {len(STOPPED_SERVICES)} 个（新增 {stopped_count} 个）")
     print(f"合并去重后共: {len(platforms)} 个平台")
     return list(platforms.values())
