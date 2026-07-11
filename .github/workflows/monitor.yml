@@ -14,9 +14,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Install dependencies
-        run: |
-          pip install requests openpyxl playwright
-          playwright install chromium
+        run: pip install requests openpyxl
       - name: Step 1 - Check platform status
         run: python scripts/pipeline.py
       - name: Step 2 - Generate summary
