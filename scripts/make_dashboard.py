@@ -151,6 +151,15 @@ def build_data():
             lab = (r["shared_features"].split(";")[0] or r["family_id"])[:22]
             fam_rows.append([f"{lab} ({r['family_id'][:12]})", int(r["size"])])
 
+    # capstone classification (classify_sites.py output, if present)
+    role, htype, mat = Counter(), Counter(), Counter()
+    cls_path = os.path.join(M, "site_classification.csv")
+    if os.path.exists(cls_path):
+        for r in csv.DictReader(open(cls_path, encoding="utf-8-sig")):
+            role[r.get("site_role", "") or "?"] += 1
+            htype[r.get("hosting_type", "") or "?"] += 1
+            mat[r.get("maturity_tier", "") or "?"] += 1
+
     stats = [
         {"n": str(n), "lab": "分析站点总数", "cap": "发现层 764 ∪ 监测 292"},
         {"n": f"{round(100*one_api/n)}%", "lab": "one-api 家族占比",
@@ -197,6 +206,12 @@ def build_data():
          "neutral": [], "d": _top(vend)},
         {"t": "相似模板家族 Top(搭建商层)", "note": f"共享稀有特征聚类 · {fam_covered}/{n} 站进入家族 · Jaccard(§D7)",
          "base": n, "neutral": [], "d": fam_rows or [["(需先跑 site_similarity.py)", 0]]},
+        {"t": "站点角色分类", "note": "relay / 转换层 / 聚合器 / 未识别", "base": n,
+         "neutral": ["unidentified"], "d": _top(role) or [["(需跑 classify_sites.py)", 0]]},
+        {"t": "托管类型(不透明性)", "note": "CDN 后 = 源站不可见 · 直连 = 源站可见", "base": n,
+         "neutral": ["cdn_fronted", "unknown"], "d": _top(htype) or [["(需跑 classify_sites.py)", 0]]},
+        {"t": "站点成熟度分层", "note": "出生年份 + 是否有专属证书", "base": n,
+         "neutral": ["unknown"], "d": _top(mat) or [["(需跑 classify_sites.py)", 0]]},
     ]
     snapshot = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     return {"N": n, "ENR": enr, "OPS": n_ops, "stats": stats, "charts": charts, "snapshot": snapshot}
