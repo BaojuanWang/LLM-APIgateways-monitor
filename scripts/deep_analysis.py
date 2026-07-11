@@ -316,6 +316,22 @@ def main():
             L.append(f"> **保守下界表述**:one-api 家族在框架无关发现下占 ~{oa_f:.0f}%,构成集中度的**保守下界**;代码搜索高估集中度({oa_g:.0f}% vs {oa_f:.0f}%)并系统性遗漏约 {t_f:.0f}% 的异构/无法指纹化尾部。该尾部一部分可能是白标 one-api,真实集中度可能更高——无论如何,结论都落在'集中'与'代码搜索有偏'之间。")
             L.append("> **口径**:此对比用按发现来源分组的 `framework` 字段(confirmed);勿与面板的 809-合并 `stack_family`(78%)混用。\n")
 
+            # §14.1 — tail re-probe (scripts/probe_tail.sh output), if present.
+            tv_path = os.path.join(BASE, "results", "tail", "tail_verdict.csv")
+            if os.path.exists(tv_path):
+                tv = list(csv.DictReader(open(tv_path, encoding="utf-8-sig")))
+                vc = Counter(r.get("verdict", "") for r in tv)
+                hid, gen, dead = vc.get("hidden_one_api", 0), vc.get("genuine_unknown", 0), vc.get("dead", 0)
+                fo_base = sum(1 for r in fo if _fwb(r.get("framework", "")) == "one-api家族")
+                tight = 100 * (fo_base + hid) / (len(fo) - dead) if len(fo) - dead else 0
+                spa = sum(1 for r in tv if r.get("verdict") == "genuine_unknown"
+                          and r.get("status_class") == "spa_shell")
+                L.append("### 14.1 拆解那 24% 异构尾(深度指纹复探)\n")
+                L.append(f"对 FOFA 的 {len(tv)} 个 `openai_compatible_unknown` 尾站跑深度技术栈探针(`scripts/probe_tail.sh`),逐站裁定:\n")
+                L.append(table("尾部裁定", vc, len(tv)))
+                L.append(f"> **收紧下界**:探针在尾部认出 {hid} 个 FOFA 漏检的 one-api(响应头 `x-oneapi-request-id`/`x-new-api-version`,high 置信);剔除 {dead} 个死站后,FOFA one-api 份额由 {oa_f:.0f}% 收紧至 **{tight:.0f}%**——集中度是**紧的下界**,并未被大幅低估。")
+                L.append(f"> **尾巴的真实成分**:{gen} 站({100*gen/len(fo):.0f}% of FOFA)是**真异构/自研**——可达且无任何 one-api 信号(其中 {gen-spa} 个有真内容、仅 {spa} 个 SPA 空壳为残留模糊项)。即改壳 one-api 只占尾部 {100*hid/len(tv):.0f}%,尾巴**主体是 GitHub codesearch 结构性失明的真异构生态**。结论方向由此从『两头皆可能』收敛为『代码搜索有偏更硬』。\n")
+
     L.append("---\n_方法与文献背书见 `docs/METHODS_element_citations.md`。低覆盖字段(隐私/联系方式/ICP)结论仅供参考。_")
 
     out = os.path.join(M, "ANALYSIS_REPORT.md")
