@@ -160,6 +160,30 @@ def build_data():
             htype[r.get("hosting_type", "") or "?"] += 1
             mat[r.get("maturity_tier", "") or "?"] += 1
 
+    # ── §4.1 discovery-method bias: GitHub codesearch (framework fingerprint,
+    #    biased toward one-api) vs FOFA cyberspace mapping (framework-agnostic).
+    #    Reads the raw discovery list so the framework field is grouped by the
+    #    method that found the site, keeping the two distributions comparable.
+    def _fwb(fw):
+        fw = (fw or "").lower()
+        if any(k in fw for k in ("new-api", "one-api", "oneapi", "newapi", "voapi",
+                                 "veloera", "one-hub", "done-hub")):
+            return "one-api 家族"
+        if "sub2api" in fw:
+            return "sub2api 转换层"
+        if "openai_compatible" in fw or "unknown" in fw or not fw:
+            return "openai兼容·未识别尾"
+        return fw
+    ms_gh, ms_fo = Counter(), Counter()
+    ms_path = os.path.join(BASE_DIR, "data", "master_sites.csv")
+    if os.path.exists(ms_path):
+        for r in csv.DictReader(open(ms_path, encoding="utf-8-sig")):
+            b = _fwb(r.get("framework", ""))
+            (ms_fo if r.get("origin") == "fofa_g1" else ms_gh)[b] += 1
+    gh_n, fo_n = sum(ms_gh.values()), sum(ms_fo.values())
+    gh_oaf = ms_gh.get("one-api 家族", 0)
+    fo_oaf = ms_fo.get("one-api 家族", 0)
+
     stats = [
         {"n": str(n), "lab": "分析站点总数", "cap": "发现层 764 ∪ 监测 292"},
         {"n": f"{round(100*one_api/n)}%", "lab": "one-api 家族占比",
@@ -170,6 +194,9 @@ def build_data():
          "cap": f"占已富化 {enr} 站 · CDN 主导"},
         {"n": f"{round(100*y2026/reg_dated)}%" if reg_dated else "—", "lab": "站点出生于 2026 年",
          "cap": f"生态极年轻 · {reg_dated} 站有时间数据", "warn": True},
+        {"n": (f"{round(100*gh_oaf/gh_n)}→{round(100*fo_oaf/fo_n)}%" if gh_n and fo_n else "—"),
+         "lab": "one-api 占比:GitHub→FOFA",
+         "cap": f"§4.1 发现偏差 · 框架无关下 {round(100*fo_oaf/fo_n) if fo_n else 0}% 为集中度保守下界", "warn": True},
     ]
     charts = [
         {"t": "技术栈家族", "note": f"三源统一归类 · base {n}", "base": n,
@@ -177,6 +204,12 @@ def build_data():
          "d": _top(stack)},
         {"t": "发现层原始框架标注", "note": f"发现层 codesearch 直采 · base {n}", "base": n,
          "neutral": ["(未进发现层)"], "d": _top(fw)},
+        {"t": "技术栈 · GitHub 发现(框架指纹→有偏)",
+         "note": f"{gh_n} 站 · 代码搜索靠框架指纹→自然偏 one-api({round(100*gh_oaf/gh_n) if gh_n else 0}%)",
+         "base": gh_n or 1, "neutral": ["openai兼容·未识别尾"], "d": _top(ms_gh)},
+        {"t": "技术栈 · FOFA 发现(框架无关→无偏)",
+         "note": f"{fo_n} 站 · 网络空间测绘 · one-api 仍 {round(100*fo_oaf/fo_n) if fo_n else 0}%=集中真实 · 异构尾补回",
+         "base": fo_n or 1, "neutral": ["openai兼容·未识别尾"], "d": _top(ms_fo)},
         {"t": "顶级域(TLD)", "note": f"按注册域后缀 · base {n}", "base": n,
          "neutral": [], "d": _top(tld, 12)},
         {"t": "托管商 / ASN", "note": f"仅已富化 {enr} 站 · ASN 归属 · 集中度 HHI {host_hhi:.0f}", "base": enr,

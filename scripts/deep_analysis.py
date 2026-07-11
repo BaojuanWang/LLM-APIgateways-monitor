@@ -284,6 +284,38 @@ def main():
         cdn = sum(1 for r in cls if g(r, "hosting_type") == "cdn_fronted")
         L.append(f"> **要点**:{cdn}/{len(cls)}({100*cdn/len(cls):.0f}%)藏在 CDN 后 —— 源站基础设施对外不可见,是不透明性的量化证据。\n")
 
+    ms_path = os.path.join(BASE, "data", "master_sites.csv")
+    if os.path.exists(ms_path):
+        ms = list(csv.DictReader(open(ms_path, encoding="utf-8-sig")))
+        fo = [r for r in ms if r.get("origin") == "fofa_g1"]
+        gh = [r for r in ms if r.get("origin") != "fofa_g1"]
+
+        def _fwb(fw):
+            fw = (fw or "").lower()
+            if any(k in fw for k in ("new-api", "one-api", "oneapi", "newapi", "voapi", "veloera", "one-hub", "done-hub")):
+                return "one-api家族"
+            if "sub2api" in fw:
+                return "sub2api(转换层)"
+            if "auth2api" in fw:
+                return "auth2api(转换层)"
+            if "openai_compatible" in fw:
+                return "openai兼容·框架未识别"
+            return "unknown/空"
+
+        if fo:
+            def _pct(grp, keys):
+                nn = len(grp)
+                return 100 * sum(1 for r in grp if _fwb(r.get("framework", "")) in keys) / nn if nn else 0
+            L.append("## 14. 发现方法偏差 × 结构集中(§4.1 核心)\n")
+            L.append("对比两个独立发现方法的技术栈分布,量化 GitHub 代码搜索的偏差。完整论证见 `docs/FINDING_discovery_bias.md`。\n")
+            for nm, grp in [("GitHub codesearch(框架指纹→有偏)", gh), ("FOFA G1(框架无关→无偏)", fo)]:
+                L.append(table(f"技术栈 · {nm}", Counter(_fwb(r.get("framework", "")) for r in grp), len(grp)))
+            oa_g, oa_f = _pct(gh, {"one-api家族"}), _pct(fo, {"one-api家族"})
+            t_g, t_f = _pct(gh, {"openai兼容·框架未识别", "unknown/空"}), _pct(fo, {"openai兼容·框架未识别", "unknown/空"})
+            L.append(f"> **核心对比**:one-api 家族 GitHub {oa_g:.0f}% vs FOFA {oa_f:.0f}%(差量化了发现偏差);异构尾 GitHub {t_g:.0f}% vs FOFA {t_f:.0f}%(GitHub 系统性漏掉)。")
+            L.append(f"> **保守下界表述**:one-api 家族在框架无关发现下占 ~{oa_f:.0f}%,构成集中度的**保守下界**;代码搜索高估集中度({oa_g:.0f}% vs {oa_f:.0f}%)并系统性遗漏约 {t_f:.0f}% 的异构/无法指纹化尾部。该尾部一部分可能是白标 one-api,真实集中度可能更高——无论如何,结论都落在'集中'与'代码搜索有偏'之间。")
+            L.append("> **口径**:此对比用按发现来源分组的 `framework` 字段(confirmed);勿与面板的 809-合并 `stack_family`(78%)混用。\n")
+
     L.append("---\n_方法与文献背书见 `docs/METHODS_element_citations.md`。低覆盖字段(隐私/联系方式/ICP)结论仅供参考。_")
 
     out = os.path.join(M, "ANALYSIS_REPORT.md")
