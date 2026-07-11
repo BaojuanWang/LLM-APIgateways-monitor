@@ -26,6 +26,7 @@ DATA_DIR      = BASE_DIR / "data"
 SNAPSHOT_DIR  = DATA_DIR / "privacy_snapshots"
 HVOY_CSV      = DATA_DIR / "hvoy_latest.csv"
 MANUAL_CSV    = DATA_DIR / "manual_sites.csv"
+MASTER_CSV    = DATA_DIR / "master_sites.csv"   # discovery layer (GitHub + FOFA)
 PRIVACY_CSV   = DATA_DIR / "privacy.csv"
 
 TIMEOUT = 10
@@ -70,13 +71,17 @@ def extract_domain(url):
 
 
 def load_platforms():
+    # master_sites.csv (the full discovery list: GitHub codesearch + FOFA) is
+    # included so privacy crawling covers every discovered site, not just the
+    # hand-curated seed. Without it the FOFA/GitHub sites are structurally
+    # invisible to this crawler (they were 0% / 20% covered before this fix).
     domains = {}
-    for csv_path in [HVOY_CSV, MANUAL_CSV]:
+    for csv_path in [HVOY_CSV, MANUAL_CSV, MASTER_CSV]:
         if not csv_path.exists(): continue
         with open(csv_path, encoding="utf-8-sig") as f:
             for row in csv.DictReader(f):
                 d = extract_domain(row.get("domain", ""))
-                if d: domains[d] = row.get("platform_name", "")
+                if d: domains.setdefault(d, row.get("platform_name", "") or row.get("verified_site_name", ""))
     return domains
 
 

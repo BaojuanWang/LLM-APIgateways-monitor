@@ -43,6 +43,10 @@ HEADERS = {
 # ── 字段定义 ──────────────────────────────────────────────────
 STATIC_FIELDS = [
     "whois_reg_date", "whois_registrar", "whois_expiry_date",
+    # registrant identity — the "who operates this" signal. Often redacted
+    # (privacy proxy / GDPR) but frequently present for .cn/.com.cn and some
+    # budget registrars. registrar (above) is the reseller; these are the org.
+    "whois_registrant_org", "whois_registrant_name", "whois_registrant_country",
     "ssl_issuer", "ssl_org", "ssl_san", "ssl_fingerprint", "ssl_not_before",
 ]
 DYNAMIC_FIELDS = [
@@ -91,7 +95,9 @@ def save_all(records):
 
 # ── WHOIS ─────────────────────────────────────────────────────
 def get_whois(domain):
-    result = {k: "" for k in ["whois_reg_date", "whois_registrar", "whois_expiry_date"]}
+    keys = ["whois_reg_date", "whois_registrar", "whois_expiry_date",
+            "whois_registrant_org", "whois_registrant_name", "whois_registrant_country"]
+    result = {k: "" for k in keys}
     try:
         import whois
         w = whois.whois(domain)
@@ -102,6 +108,21 @@ def get_whois(domain):
         result["whois_reg_date"]   = str(reg)[:10] if reg else ""
         result["whois_expiry_date"]= str(exp)[:10] if exp else ""
         result["whois_registrar"]  = str(w.registrar or "")[:80]
+
+        # registrant identity — field names vary by TLD/registry, so try a
+        # prioritized list and take the first non-empty. Lists → first item.
+        def first(*names):
+            for nm in names:
+                v = w.get(nm) if hasattr(w, "get") else getattr(w, nm, None)
+                if isinstance(v, list):
+                    v = next((x for x in v if x), None)
+                if v and str(v).strip().lower() not in ("none", "redacted for privacy",
+                                                          "redacted", "not disclosed"):
+                    return str(v).strip()[:120]
+            return ""
+        result["whois_registrant_org"]     = first("org", "registrant_org", "registrant_organization")
+        result["whois_registrant_name"]    = first("name", "registrant_name")
+        result["whois_registrant_country"] = first("country", "registrant_country")
     except Exception:
         pass
     return result
@@ -232,7 +253,12 @@ def main():
         # ── 一次性字段：新域名首次查，或已有记录里该字段为空时回填/重试 ──
         # （旧逻辑首次失败会被永久缓存成空、再不重试；这里改成"缺就补"，
         #   同时让已有 292 行能回填新增的 ssl_san / ssl_fingerprint。）
-        need_whois = is_new or not rec.get("whois_reg_date")
+        # re-query WHOIS if we've never seen the domain, lack a reg date, OR
+        # the stored row predates the registrant-identity columns (one-time
+        # migration — checked on the RAW existing row, which lacks the key
+        # entirely under the old schema).
+        need_whois = (is_new or not rec.get("whois_reg_date")
+                      or "whois_registrant_org" not in existing.get(domain, {}))
         need_ssl   = is_new or not rec.get("ssl_san") or not rec.get("ssl_not_before")
 
         if need_whois:
