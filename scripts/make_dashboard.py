@@ -185,7 +185,7 @@ def build_data():
     fo_oaf = ms_fo.get("one-api 家族", 0)
 
     stats = [
-        {"n": str(n), "lab": "分析站点总数", "cap": "发现层 764 ∪ 监测 292"},
+        {"n": str(n), "lab": "分析站点总数", "cap": f"GitHub 发现 {gh_n} ∪ FOFA {fo_n} ∪ 监测"},
         {"n": f"{round(100*one_api/n)}%", "lab": "one-api 家族占比",
          "cap": "技术近乎单一栈 · 指纹级单点脆弱", "warn": True},
         {"n": str(n_ops), "lab": "归并后运营者数",
@@ -256,7 +256,9 @@ def render(data):
         f"const stats={json.dumps(data['stats'], ensure_ascii=False)};\n"
         f"const charts={json.dumps(data['charts'], ensure_ascii=False)};"
     )
-    return TEMPLATE.replace("/*__DATA__*/", payload).replace("__SNAPSHOT__", data["snapshot"])
+    return (TEMPLATE.replace("/*__DATA__*/", payload)
+            .replace("__SNAPSHOT__", data["snapshot"])
+            .replace("__N__", str(data["N"])))
 
 
 def main():
@@ -344,7 +346,7 @@ TEMPLATE = r"""<title>LLM 中转站生态 · 分布总览</title>
     <div>
       <div class="eyebrow">生态测绘 · 快照 __SNAPSHOT__</div>
       <h1>LLM 中转站生态 · 分布总览</h1>
-      <p class="sub">809 个站点(发现层已确认 + 监测,按注册域归并)的技术栈、TLD、托管、运营者集中度分布。归类依据见 <b>METHODS_element_citations</b>。</p>
+      <p class="sub">__N__ 个站点(发现层已确认 + 监测,按注册域归并)的技术栈、TLD、托管、运营者集中度分布。归类依据见 <b>METHODS_element_citations</b>。</p>
     </div>
     <button class="toggle" id="tog" aria-label="切换深浅色">◐ 主题</button>
   </header>
