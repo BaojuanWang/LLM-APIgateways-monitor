@@ -308,6 +308,8 @@ def main():
                 return 100 * sum(1 for r in grp if _fwb(r.get("framework", "")) in keys) / nn if nn else 0
             L.append("## 14. 发现方法偏差 × 结构集中(§4.1 核心)\n")
             L.append("对比两个独立发现方法的技术栈分布,量化 GitHub 代码搜索的偏差。完整论证见 `docs/FINDING_discovery_bias.md`。\n")
+            L.append(f"> **口径注**:GitHub 计数为发现层原始条目(去重前 {len(gh)});按 eTLD+1 去重后为唯一站,"
+                     f"one-api 占比两口径一致(去重不改变结论)。FOFA {len(fo)} 本就唯一。分析层其余表 N=1089 为去重口径。\n")
             for nm, grp in [("GitHub codesearch(框架指纹→有偏)", gh), ("FOFA G1(框架无关→无偏)", fo)]:
                 L.append(table(f"技术栈 · {nm}", Counter(_fwb(r.get("framework", "")) for r in grp), len(grp)))
             oa_g, oa_f = _pct(gh, {"one-api家族"}), _pct(fo, {"one-api家族"})

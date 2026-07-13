@@ -9,13 +9,13 @@
 
 ### 健康分布
 
-_HTTPS 握手成功≈活着:1037/1089 (95%)。仅 292 站在持续监测,764 发现站为'发现时确认',未追踪 churn。_
+_HTTPS 握手成功≈活着:1038/1089 (95%)。仅 292 站在持续监测,764 发现站为'发现时确认',未追踪 churn。_
 
 | 值 | 站数 | 占比 |
 |---|---:|---:|
-| HTTPS 可达(未持续监测) | 773 | 71.0% |
+| HTTPS 可达(未持续监测) | 774 | 71.1% |
 | 在线(持续监测) | 259 | 23.8% |
-| 未响应 | 24 | 2.2% |
+| 未响应 | 23 | 2.1% |
 | 疑似失效 | 18 | 1.7% |
 | 被挡/CF 挑战 | 13 | 1.2% |
 | 在线·需登录 | 2 | 0.2% |
@@ -99,43 +99,43 @@ _仅有 IP 的 1073 站;CF 后为边缘位置_
 
 | 值 | 站数 | 占比 |
 |---|---:|---:|
-| Canada | 412 | 38.4% |
-| United States | 340 | 31.7% |
-| Hong Kong | 119 | 11.1% |
-| China | 84 | 7.8% |
+| Canada | 413 | 38.5% |
+| United States | 334 | 31.1% |
+| Hong Kong | 125 | 11.6% |
+| China | 81 | 7.5% |
 | Singapore | 57 | 5.3% |
-| Japan | 29 | 2.7% |
+| Japan | 31 | 2.9% |
 | South Korea | 9 | 0.8% |
 | Germany | 5 | 0.5% |
 | Brazil | 4 | 0.4% |
-| The Netherlands | 3 | 0.3% |
+| South Africa | 3 | 0.3% |
 
 ### 托管商 / ASN
 
-_1065 站有 ASN;CF 占比高=边缘非源站_
+_1066 站有 ASN;CF 占比高=边缘非源站_
 
 | 值 | 站数 | 占比 |
 |---|---:|---:|
-| Cloudflare | 409 | 38.4% |
-| Amazon.com | 65 | 6.1% |
+| Cloudflare | 410 | 38.5% |
+| Amazon.com | 66 | 6.2% |
 | Alibaba (US) Technology Co. | 61 | 5.7% |
 | Tencent Building | 49 | 4.6% |
-| NetLab Global | 45 | 4.2% |
-| OVH SAS | 44 | 4.1% |
+| NetLab Global | 48 | 4.5% |
+| OVH SAS | 45 | 4.2% |
 | Hangzhou Alibaba Advertising | 37 | 3.5% |
 | DMIT Cloud Services | 21 | 2.0% |
 | Shenzhen Tencent Computer Sy | 21 | 2.0% |
 | IT7 Networks Inc | 20 | 1.9% |
-| FASTNET DATA INC | 18 | 1.7% |
+| cognetcloud INC | 17 | 1.6% |
 | ACE | 16 | 1.5% |
 
 ### 证书 CA
 
-_1037 站有证书_
+_1038 站有证书_
 
 | 值 | 站数 | 占比 |
 |---|---:|---:|
-| Let's Encrypt | 635 | 61.2% |
+| Let's Encrypt | 636 | 61.3% |
 | Google Trust Services | 251 | 24.2% |
 | TrustAsia | 37 | 3.6% |
 | DigiCert | 23 | 2.2% |
@@ -164,18 +164,18 @@ _1015 站有 WHOIS_
 
 | 值 | 站数 | 占比 |
 |---|---:|---:|
-| Alibaba Cloud Computing Ltd. d | 148 | 14.6% |
+| Alibaba Cloud Computing Ltd. d | 145 | 14.3% |
 | Spaceship, Inc. | 137 | 13.5% |
 | GoDaddy.com, LLC | 93 | 9.2% |
-| Cloudflare, Inc. | 89 | 8.8% |
+| Cloudflare, Inc. | 92 | 9.1% |
 | DNSPod, Inc. | 79 | 7.8% |
 | NameSilo, LLC | 78 | 7.7% |
 | Cloudflare, Inc | 56 | 5.5% |
 | 阿里云计算有限公司（万网） | 51 | 5.0% |
-| NAMECHEAP INC | 44 | 4.3% |
-| DYNADOT LLC | 23 | 2.3% |
+| NAMECHEAP INC | 49 | 4.8% |
 | Name.com, Inc. | 21 | 2.1% |
 | Gname.com Pte. Ltd. | 14 | 1.4% |
+| DYNADOT LLC | 14 | 1.4% |
 
 > **要点**:DV 证书(Let's Encrypt/Google Trust)主导 = 免费/自动化签发,零成本起站,与'年轻+海量'一致。
 
@@ -187,11 +187,11 @@ _从响应头/HTML 粗提取_
 
 | 值 | 站数 | 占比 |
 |---|---:|---:|
-| React | 549 | 50.4% |
+| React | 552 | 50.7% |
 | Cloudflare | 418 | 38.4% |
-| Nginx | 414 | 38.0% |
-| NewAPI | 227 | 20.8% |
-| Vue | 84 | 7.7% |
+| Nginx | 413 | 37.9% |
+| NewAPI | 224 | 20.6% |
+| Vue | 86 | 7.9% |
 | Next.js | 13 | 1.2% |
 | OneAPI | 5 | 0.5% |
 | Apache | 3 | 0.3% |
@@ -200,14 +200,14 @@ _从响应头/HTML 粗提取_
 
 | 值 | 站数 | 占比 |
 |---|---:|---:|
-| nginx | 414 | 42.5% |
-| cloudflare | 403 | 41.4% |
+| nginx | 413 | 42.2% |
+| cloudflare | 404 | 41.3% |
 | openresty | 48 | 4.9% |
-| vercel | 22 | 2.3% |
+| vercel | 22 | 2.2% |
 | caddy | 15 | 1.5% |
 | esa | 11 | 1.1% |
+| cdn | 8 | 0.8% |
 | photon-edge | 7 | 0.7% |
-| tengine | 5 | 0.5% |
 
 ## 6. 域名特征
 
@@ -330,7 +330,7 @@ _营销宣称,非核实_
 - **发卡/卡密系统**:22/1085(2%)
 
 - **推广/代理页**:82/260 有(32%)—— 分销返佣是主流获客(covered 260 站)。
-- **隐私政策**:123/284 有(43%,仅监测子集)。
+- **隐私政策**:182/1085 有(17%,仅监测子集)。
 > 联系方式(TG/QQ/微信)当前抽取覆盖低,是已知的采集短板(见 AUDIT),需渲染后 DOM 才能救回。
 
 ## 10. 运营者集中度
@@ -358,9 +358,9 @@ _营销宣称,非核实_
 | 栈家族 | Canada | United States | Hong Kong | China | Singapore |
 |---|---|---|---|---|---|
 | sub2api | 12 | 14 | 0 | 0 | 3 |
-| one-api-family | 322 | 269 | 91 | 64 | 42 |
+| one-api-family | 323 | 264 | 96 | 61 | 42 |
 | openai-compatible-unknown | 12 | 20 | 18 | 11 | 7 |
-| unlabeled | 64 | 35 | 10 | 9 | 5 |
+| unlabeled | 64 | 34 | 11 | 9 | 5 |
 | confirmed-unknown | 2 | 2 | 0 | 0 | 0 |
 
 ## 12. 相似模板家族(特征相似度聚类)
@@ -416,6 +416,8 @@ _营销宣称,非核实_
 ## 14. 发现方法偏差 × 结构集中(§4.1 核心)
 
 对比两个独立发现方法的技术栈分布,量化 GitHub 代码搜索的偏差。完整论证见 `docs/FINDING_discovery_bias.md`。
+
+> **口径注**:GitHub 计数为发现层原始条目(去重前 764);按 eTLD+1 去重后为唯一站,one-api 占比两口径一致(去重不改变结论)。FOFA 280 本就唯一。分析层其余表 N=1089 为去重口径。
 
 ### 技术栈 · GitHub codesearch(框架指纹→有偏)
 
