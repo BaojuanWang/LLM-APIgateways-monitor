@@ -17,9 +17,11 @@ jobs:
         run: |
           pip install requests openpyxl playwright
           playwright install chromium
-      - name: Step 1 - Check platform status
+      - name: Step 1 - Check platform status (all discovered sites)
         run: python scripts/pipeline.py
-      - name: Step 2 - Generate summary
+      - name: Step 2 - Screenshot new/changed sites (evidence)
+        run: python scripts/screenshot.py
+      - name: Step 3 - Generate summary
         run: python scripts/summarize.py
       - name: Commit and push results
         run: |
