@@ -7,20 +7,20 @@
 | 特征 | 已获取 | 覆盖率 | 缺失 | 缺失类别 |
 |---|---:|---:|---:|---|
 | 发现层框架 | 932 | 86% | 157 | collectible |
-| 证书 not_before | 1037 | 95% | 52 | structural |
-| 证书指纹 | 1037 | 95% | 52 | structural |
+| 证书 not_before | 1038 | 95% | 51 | structural |
+| 证书指纹 | 1038 | 95% | 51 | structural |
 | 证书公司名(Org) | 6 | 1% | 1083 | structural |
 | WHOIS 注册日 | 1015 | 93% | 74 | redactable |
 | WHOIS 注册商 | 1015 | 93% | 74 | redactable |
-| WHOIS 注册人机构 | 0 | 0% | 1089 | redactable |
+| WHOIS 注册人机构 | 377 | 35% | 712 | redactable |
 | 源站 IP | 1073 | 99% | 16 | structural |
-| 托管 ASN | 1065 | 98% | 24 | structural |
+| 托管 ASN | 1066 | 98% | 23 | structural |
 | IP 国家 | 1072 | 98% | 17 | structural |
-| favicon 指纹 | 900 | 83% | 189 | transient |
+| favicon 指纹 | 903 | 83% | 186 | transient |
 | ICP 备案主体 | 25 | 2% | 1064 | collectible |
-| 隐私政策 | 284 | 26% | 805 | collectible |
-| 隐私·适用法律 | 131 | 12% | 958 | collectible |
-| 隐私·第三方共享 | 131 | 12% | 958 | collectible |
+| 隐私政策 | 1085 | 100% | 4 | collectible |
+| 隐私·适用法律 | 193 | 18% | 896 | collectible |
+| 隐私·第三方共享 | 193 | 18% | 896 | collectible |
 | 支付方式 | 155 | 14% | 934 | collectible |
 | Telegram 触达 | 14 | 1% | 1075 | collectible |
 | 第三方榜单评分 | 246 | 23% | 843 | collectible |
