@@ -411,8 +411,13 @@ def probe_site(site: dict[str, str], paths: list[str], timeout: float, insecure:
     domain = site["domain"] or domain_from_url(base_url)
     context = ssl._create_unverified_context() if insecure else ssl.create_default_context()
     fetches: list[FetchResult] = []
-    for path in paths:
-        fetches.append(fetch_url(urljoin(base_url.rstrip("/") + "/", path.lstrip("/")), timeout, context))
+    for i, path in enumerate(paths):
+        result = fetch_url(urljoin(base_url.rstrip("/") + "/", path.lstrip("/")), timeout, context)
+        fetches.append(result)
+        # If the homepage itself is unreachable, don't grind the remaining
+        # paths — a dead/blackhole site then costs one timeout, not six.
+        if i == 0 and result.error and not result.status:
+            break
     row = classify(domain, fetches)
     row["checked_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     row["platform_name"] = site.get("platform_name", "")
@@ -542,12 +547,23 @@ def main() -> int:
         "errors",
     ]
 
-    with out_path.open("w", encoding="utf-8", newline="") as handle:
+    # resume: skip domains already in the output file, append to it.
+    done = set()
+    if out_path.exists():
+        with out_path.open(encoding="utf-8-sig", newline="") as fh:
+            done = {r.get("domain", "") for r in csv.DictReader(fh)}
+    mode = "a" if done else "w"
+    with out_path.open(mode, encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
-        writer.writeheader()
+        if not done:
+            writer.writeheader()
         for index, input_value in enumerate(inputs, 1):
+            dom = input_value.get("domain", "") if isinstance(input_value, dict) else str(input_value)
+            if dom in done:
+                continue
             row = probe_site(input_value, paths, args.timeout, args.insecure)
             writer.writerow(row)
+            handle.flush()
             print(f"[{index}/{len(inputs)}] {row['domain']} -> {row['app_stack_guess']} ({row['confidence']})")
             if args.sleep:
                 time.sleep(args.sleep)

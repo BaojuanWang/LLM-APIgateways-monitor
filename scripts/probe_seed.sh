@@ -17,7 +17,7 @@ echo "==> probing 143 unlabeled seed sites (same probe as FOFA tail)…"
 python3 scripts/tech_stack_fingerprint_probe.py \
     --input results/seed/unlabeled_seed_domains.txt \
     --out   results/seed/seed_fingerprints.csv \
-    --timeout 12 --sleep 0.3
+    --timeout 6 --sleep 0.2
 
 echo
 echo "==> bucket summary (one-api vs other vs genuine-unknown vs dead)…"
