@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="760" viewBox="0 0 1100 760">
 <rect x="0" y="0" width="1100" height="760" rx="0" fill="#F8FAFC" stroke="none" />
 <text x="60" y="32" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">LLM Relay Monitor - Status Overview</text>
-<text x="60" y="62" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#475569">Generated: 2026-07-14 02:55 | Latest data: 2026-07-14T02:52:26Z</text>
+<text x="60" y="62" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#475569">Generated: 2026-07-14 08:24 | Latest data: 2026-07-14T08:19:05Z</text>
 <rect x="60" y="92" width="300" height="110" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
 <text x="82" y="125" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#16A34A">ALIVE</text>
 <text x="82" y="165" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#0F172A">1180</text>
@@ -25,20 +25,20 @@
 <rect x="70" y="272" width="680" height="34" rx="4" fill="none" stroke="#CBD5E1" />
 <text x="60" y="352" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">Latest check status distribution</text>
 <text x="70" y="400" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">ONLINE</text>
-<rect x="275" y="382" width="395" height="18" rx="4" fill="#16A34A" stroke="none" />
-<text x="680" y="397" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">1112</text>
+<rect x="275" y="382" width="394" height="18" rx="4" fill="#16A34A" stroke="none" />
+<text x="679" y="397" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">1109</text>
 <text x="70" y="430" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">CLOUDFLARE_OR_BLOCKED</text>
-<rect x="275" y="412" width="16" height="18" rx="4" fill="#22C55E" stroke="none" />
-<text x="301" y="427" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">46</text>
+<rect x="275" y="412" width="15" height="18" rx="4" fill="#22C55E" stroke="none" />
+<text x="300" y="427" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">45</text>
 <text x="70" y="460" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">HTTP_404</text>
 <rect x="275" y="442" width="5" height="18" rx="4" fill="#D97706" stroke="none" />
 <text x="290" y="457" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">15</text>
 <text x="70" y="490" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">DNS_FAIL</text>
 <rect x="275" y="472" width="4" height="18" rx="4" fill="#DC2626" stroke="none" />
-<text x="289" y="487" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">13</text>
+<text x="289" y="487" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">14</text>
 <text x="70" y="520" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">TIMEOUT</text>
 <rect x="275" y="502" width="4" height="18" rx="4" fill="#FBBF24" stroke="none" />
-<text x="289" y="517" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">12</text>
+<text x="289" y="517" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">14</text>
 <text x="70" y="550" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">HTTP_ERROR</text>
 <rect x="275" y="532" width="2" height="18" rx="4" fill="#F59E0B" stroke="none" />
 <text x="287" y="547" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">7</text>
@@ -51,7 +51,7 @@
 <rect x="790" y="238" width="250" height="416" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
 <text x="812" y="272" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">Notes</text>
 <text x="812" y="306" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#D97706">Needs review: 22</text>
-<text x="812" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#334155">Changed since previous check: 8</text>
+<text x="812" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#334155">Changed since previous check: 5</text>
 <text x="812" y="364" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0F172A">Review first</text>
 <text x="812" y="390" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#475569">DEAD: ai.anxidc.com (DNS_FAIL)</text>
 <text x="812" y="414" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#475569">DEAD: api.uglycat.cc (SERVICE_STOPPED)</text>
@@ -66,10 +66,9 @@
 <text x="812" y="640" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#64748B">UNCERTAIN: no confirmed good response yet.</text>
 <text x="812" y="660" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#64748B">DEAD: DNS fail, parked, or service stopped.</text>
 <text x="60" y="676" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">Recent status changes</text>
-<text x="70" y="706" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">agentrouter.org: TIMEOUT -&gt; ONLINE</text>
-<text x="70" y="728" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">api-public.proxy-gls.de5.net: HTTP_400 -&gt; ONLINE</text>
-<text x="70" y="750" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">api.franklybuilds.com: TIMEOUT -&gt; CLOUDFLARE_OR_BLOCKED</text>
-<text x="70" y="772" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">api.starveri.net: HTTP_404 -&gt; ONLINE</text>
-<text x="70" y="794" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">s.lconai.com: TIMEOUT -&gt; ONLINE</text>
-<text x="70" y="816" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">www.ai-openclaw.one: TIMEOUT -&gt; ONLINE</text>
+<text x="70" y="706" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">api.franklybuilds.com: CLOUDFLARE_OR_BLOCKED -&gt; ONLINE</text>
+<text x="70" y="728" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">fucheers.top: ONLINE -&gt; DNS_FAIL</text>
+<text x="70" y="750" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">d5wa.com: ONLINE -&gt; HTTP_415</text>
+<text x="70" y="772" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">www.aladingapi.cc: ONLINE -&gt; TIMEOUT</text>
+<text x="70" y="794" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">zzhfwl.com: ONLINE -&gt; TIMEOUT</text>
 </svg>
