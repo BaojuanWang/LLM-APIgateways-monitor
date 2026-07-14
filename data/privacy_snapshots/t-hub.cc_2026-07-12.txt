@@ -1,0 +1,1 @@
+Privacy body{font-family:sans-serif;max-width:700px;margin:40px auto;padding:20px;background:#0a0e1a;color:#e2e8f0}h1{color:#60a5fa} Privacy Policy Email for orders. API logs only. Payment via LemonSqueezy/PayPal. No prompts stored. Contact: [email&#160;protected] Back

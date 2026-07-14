@@ -26,9 +26,10 @@ DATA_DIR      = BASE_DIR / "data"
 SNAPSHOT_DIR  = DATA_DIR / "privacy_snapshots"
 HVOY_CSV      = DATA_DIR / "hvoy_latest.csv"
 MANUAL_CSV    = DATA_DIR / "manual_sites.csv"
+MASTER_CSV    = DATA_DIR / "master_sites.csv"   # discovery layer (GitHub + FOFA)
 PRIVACY_CSV   = DATA_DIR / "privacy.csv"
 
-TIMEOUT = 10
+TIMEOUT = 6
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                   "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
@@ -70,13 +71,17 @@ def extract_domain(url):
 
 
 def load_platforms():
+    # master_sites.csv (the full discovery list: GitHub codesearch + FOFA) is
+    # included so privacy crawling covers every discovered site, not just the
+    # hand-curated seed. Without it the FOFA/GitHub sites are structurally
+    # invisible to this crawler (they were 0% / 20% covered before this fix).
     domains = {}
-    for csv_path in [HVOY_CSV, MANUAL_CSV]:
+    for csv_path in [HVOY_CSV, MANUAL_CSV, MASTER_CSV]:
         if not csv_path.exists(): continue
         with open(csv_path, encoding="utf-8-sig") as f:
             for row in csv.DictReader(f):
                 d = extract_domain(row.get("domain", ""))
-                if d: domains[d] = row.get("platform_name", "")
+                if d: domains.setdefault(d, row.get("platform_name", "") or row.get("verified_site_name", ""))
     return domains
 
 
@@ -102,19 +107,53 @@ def clean_html(html):
     return re.sub(r'\s+', ' ', text).strip()
 
 
+PRIV_LINK_RE = re.compile(r'href=["\']([^"\']*(?:privacy|隐私|policy|legal)[^"\']*)["\']', re.I)
+PRIV_TEXT_RE = re.compile(r'隐私|privacy|个人信息|personal (?:data|information)', re.I)
+
+
+def _get(url):
+    return requests.get(url, headers=HEADERS, timeout=TIMEOUT,
+                        verify=False, allow_redirects=True)
+
+
 def fetch_privacy(domain):
-    for path in PRIVACY_PATHS:
-        for scheme in ["https", "http"]:
-            try:
-                url = f"{scheme}://{domain}{path}"
-                resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT,
-                                    verify=False, allow_redirects=True)
-                if resp.status_code == 200 and len(resp.text) > 300:
-                    text = clean_html(resp.text)
-                    if len(text) > 200:
-                        return text[:8000], str(resp.url)
-            except Exception:
-                continue
+    """Fast path: probe the homepage ONCE to find the reachable scheme (a dead
+    site costs one timeout, not 16); then try privacy links found in the
+    homepage HTML first, then the standard paths — on the working scheme only.
+    Requires the fetched page to actually read like a privacy policy, so SPA
+    shells that echo the homepage for every path don't count as a hit."""
+    home = scheme = None
+    for s in ("https", "http"):
+        try:
+            home = _get(f"{s}://{domain}/"); scheme = s
+            break
+        except Exception:
+            continue
+    if home is None:
+        return "", ""                      # unreachable → no privacy, fast
+
+    candidates = []
+    try:
+        for href in PRIV_LINK_RE.findall(home.text or "")[:5]:
+            candidates.append(href if href.startswith("http")
+                              else f"{scheme}://{domain}/" + href.lstrip("/"))
+    except Exception:
+        pass
+    candidates += [f"{scheme}://{domain}{p}" for p in PRIVACY_PATHS]
+
+    seen = set()
+    for url in candidates:
+        if url in seen:
+            continue
+        seen.add(url)
+        try:
+            resp = _get(url)
+            if resp.status_code == 200 and len(resp.text) > 300:
+                text = clean_html(resp.text)
+                if len(text) > 200 and PRIV_TEXT_RE.search(text):
+                    return text[:8000], str(resp.url)
+        except Exception:
+            continue
     return "", ""
 
 
@@ -171,7 +210,12 @@ def main():
     ts       = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     total    = len(platforms)
 
+    done = 0
     for idx, domain in enumerate(platforms, 1):
+        # resume: skip domains already crawled in a prior run (autosaved).
+        if records[domain].get("last_checked"):
+            done += 1
+            continue
         print(f"[{idx}/{total}] {domain}", end=" ... ", flush=True)
 
         text, url = fetch_privacy(domain)
@@ -184,7 +228,9 @@ def main():
             rec["privacy_url"]  = ""
             rec["last_checked"] = ts
             print("无隐私政策")
-            time.sleep(random.uniform(0.5, 1.0))
+            if idx % 10 == 0:
+                save_all(records)
+            time.sleep(random.uniform(0.1, 0.3))
             continue
 
         # 对比hash
@@ -208,13 +254,15 @@ def main():
             status += " | ⚠️内容变化"
         print(status)
 
-        # 每20个保存一次
-        if idx % 20 == 0:
+        # 每10个保存一次
+        if idx % 10 == 0:
             save_all(records)
 
-        time.sleep(random.uniform(1.0, 2.0))
+        time.sleep(random.uniform(0.2, 0.5))
 
     save_all(records)
+    if done:
+        print(f"(跳过 {done} 个已采过的域名 — 断点续跑)")
     has_count     = sum(1 for r in records.values() if r.get("has_privacy") == "有")
     changed_count = sum(1 for r in records.values() if r.get("content_changed") == "是")
     print(f"\n✅ 完成")

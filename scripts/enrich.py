@@ -31,6 +31,7 @@ BASE_DIR      = Path(__file__).parent.parent
 DATA_DIR      = BASE_DIR / "data"
 HVOY_CSV      = DATA_DIR / "hvoy_latest.csv"
 MANUAL_CSV    = DATA_DIR / "manual_sites.csv"
+MASTER_SITES_CSV = DATA_DIR / "master_sites.csv"   # discovery-layer confirmed list
 ENRICHMENT_CSV= DATA_DIR / "enrichment.csv"
 
 TIMEOUT = 10
@@ -42,7 +43,11 @@ HEADERS = {
 # ── 字段定义 ──────────────────────────────────────────────────
 STATIC_FIELDS = [
     "whois_reg_date", "whois_registrar", "whois_expiry_date",
-    "ssl_issuer", "ssl_org",
+    # registrant identity — the "who operates this" signal. Often redacted
+    # (privacy proxy / GDPR) but frequently present for .cn/.com.cn and some
+    # budget registrars. registrar (above) is the reseller; these are the org.
+    "whois_registrant_org", "whois_registrant_name", "whois_registrant_country",
+    "ssl_issuer", "ssl_org", "ssl_san", "ssl_fingerprint", "ssl_not_before",
 ]
 DYNAMIC_FIELDS = [
     "ip", "ip_country", "ip_city", "ip_asn", "ip_hosting",
@@ -62,7 +67,8 @@ def extract_domain(url):
 
 def load_platforms():
     domains = {}
-    for csv_path, source in [(HVOY_CSV, "hvoy"), (MANUAL_CSV, "manual")]:
+    for csv_path, source in [(HVOY_CSV, "hvoy"), (MANUAL_CSV, "manual"),
+                             (MASTER_SITES_CSV, "discovery")]:
         if not csv_path.exists():
             continue
         with open(csv_path, encoding="utf-8-sig") as f:
@@ -89,7 +95,9 @@ def save_all(records):
 
 # ── WHOIS ─────────────────────────────────────────────────────
 def get_whois(domain):
-    result = {k: "" for k in ["whois_reg_date", "whois_registrar", "whois_expiry_date"]}
+    keys = ["whois_reg_date", "whois_registrar", "whois_expiry_date",
+            "whois_registrant_org", "whois_registrant_name", "whois_registrant_country"]
+    result = {k: "" for k in keys}
     try:
         import whois
         w = whois.whois(domain)
@@ -100,6 +108,21 @@ def get_whois(domain):
         result["whois_reg_date"]   = str(reg)[:10] if reg else ""
         result["whois_expiry_date"]= str(exp)[:10] if exp else ""
         result["whois_registrar"]  = str(w.registrar or "")[:80]
+
+        # registrant identity — field names vary by TLD/registry, so try a
+        # prioritized list and take the first non-empty. Lists → first item.
+        def first(*names):
+            for nm in names:
+                v = w.get(nm) if hasattr(w, "get") else getattr(w, nm, None)
+                if isinstance(v, list):
+                    v = next((x for x in v if x), None)
+                if v and str(v).strip().lower() not in ("none", "redacted for privacy",
+                                                          "redacted", "not disclosed"):
+                    return str(v).strip()[:120]
+            return ""
+        result["whois_registrant_org"]     = first("org", "registrant_org", "registrant_organization")
+        result["whois_registrant_name"]    = first("name", "registrant_name")
+        result["whois_registrant_country"] = first("country", "registrant_country")
     except Exception:
         pass
     return result
@@ -107,13 +130,16 @@ def get_whois(domain):
 
 # ── SSL证书 ───────────────────────────────────────────────────
 def get_ssl(domain):
-    result = {k: "" for k in ["ssl_issuer", "ssl_org", "ssl_expiry"]}
+    result = {k: "" for k in
+              ["ssl_issuer", "ssl_org", "ssl_expiry", "ssl_san", "ssl_fingerprint",
+               "ssl_not_before"]}
     try:
         ctx = ssl.create_default_context()
         with ctx.wrap_socket(socket.socket(), server_hostname=domain) as s:
             s.settimeout(TIMEOUT)
             s.connect((domain, 443))
             cert = s.getpeercert()
+            der  = s.getpeercert(binary_form=True)   # DER bytes for fingerprint
         # 颁发机构
         issuer = dict(x[0] for x in cert.get("issuer", []))
         result["ssl_issuer"] = issuer.get("organizationName", "")[:80]
@@ -125,6 +151,17 @@ def get_ssl(domain):
         if exp:
             dt = datetime.strptime(exp, "%b %d %H:%M:%S %Y %Z")
             result["ssl_expiry"] = dt.strftime("%Y-%m-%d")
+        # 证书首次签发时间（notBefore）≈ 站点上线时间，覆盖率远高于 WHOIS
+        nb = cert.get("notBefore", "")
+        if nb:
+            dt = datetime.strptime(nb, "%b %d %H:%M:%S %Y %Z")
+            result["ssl_not_before"] = dt.strftime("%Y-%m-%d")
+        # SAN（同一张证书覆盖的所有域名）——运营者归并最硬的强信号
+        san = sorted({v for (k, v) in cert.get("subjectAltName", ()) if k == "DNS"})
+        result["ssl_san"] = ";".join(san[:20])
+        # 证书指纹（SHA-256 of DER）——同指纹≈同一张证书≈同源
+        if der:
+            result["ssl_fingerprint"] = hashlib.sha256(der).hexdigest()
     except Exception:
         pass
     return result
@@ -213,19 +250,31 @@ def main():
         rec = records[domain]
         is_new = domain not in existing
 
-        # ── 一次性字段（只查新域名）──
-        if is_new:
+        # ── 一次性字段：新域名首次查，或已有记录里该字段为空时回填/重试 ──
+        # （旧逻辑首次失败会被永久缓存成空、再不重试；这里改成"缺就补"，
+        #   同时让已有 292 行能回填新增的 ssl_san / ssl_fingerprint。）
+        # re-query WHOIS if we've never seen the domain, lack a reg date, OR
+        # the stored row predates the registrant-identity columns (one-time
+        # migration — checked on the RAW existing row, which lacks the key
+        # entirely under the old schema).
+        need_whois = (is_new or not rec.get("whois_reg_date")
+                      or "whois_registrant_org" not in existing.get(domain, {}))
+        need_ssl   = is_new or not rec.get("ssl_san") or not rec.get("ssl_not_before")
+
+        if need_whois:
             print(f"  WHOIS...", end=" ", flush=True)
             rec.update(get_whois(domain))
             print(rec.get("whois_reg_date") or "无")
 
+        if need_ssl:
             print(f"  SSL(static)...", end=" ", flush=True)
             ssl_data = get_ssl(domain)
-            rec["ssl_issuer"] = ssl_data["ssl_issuer"]
-            rec["ssl_org"]    = ssl_data["ssl_org"]
-            rec["ssl_expiry"] = ssl_data["ssl_expiry"]
-            print(rec.get("ssl_issuer") or "无")
-        else:
+            for k in ("ssl_issuer", "ssl_org", "ssl_expiry", "ssl_san",
+                      "ssl_fingerprint", "ssl_not_before"):
+                rec[k] = ssl_data[k]
+            print(rec.get("ssl_san") or rec.get("ssl_issuer") or "无")
+
+        if not need_whois and not need_ssl:
             print(f"  静态字段已有，跳过")
 
         # ── 定期字段（每次都查）──
@@ -237,10 +286,14 @@ def main():
         rec.update(get_http_headers(domain))
         print(rec.get("tech_stack") or "无")
 
-        # SSL过期时间每次更新
-        if not is_new:
+        # SSL过期时间每次刷新（未在上面查过 static 时补一次轻量查询）
+        if not need_ssl:
             ssl_data = get_ssl(domain)
             rec["ssl_expiry"] = ssl_data["ssl_expiry"]
+            # 指纹/SAN 若此前为空也顺手补上
+            if not rec.get("ssl_fingerprint") and ssl_data.get("ssl_fingerprint"):
+                rec["ssl_san"]         = ssl_data["ssl_san"]
+                rec["ssl_fingerprint"] = ssl_data["ssl_fingerprint"]
 
         rec["last_enriched"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 

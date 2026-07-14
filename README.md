@@ -1,211 +1,204 @@
-# LLM-APIgateways-monitor
+# LLM API Gateway Monitor
 
-# LLM中转站监测项目 - 快速上手文档
+A measurement pipeline for the **LLM API relay ("中转站") ecosystem** — the
+third-party gateways that resell or re-broker access to commercial LLM APIs. The
+project builds a reproducible, longitudinally-updated map of this supply side:
+which software stacks the sites run, how they are deployed and hosted, when they
+appeared, and how many nominally-independent domains actually trace back to the
+same operator.
 
-## 项目目标
-系统性测量中国 LLM 中转站（API relay）生态：站点发现、存活状态、阻断情况、截图证据、基础技术/合规线索，以及部分模型资源/价格线索。
-
-## GitHub Repo
-`BaojuanWang/LLM-APIgateways-monitor`（私有）
-
----
-
-## 文件结构
-```
-llm-relay-monitor/
-├── .github/workflows/
-│   ├── monitor.yml                 ← 定时检测站点存活，不再自动抓 hvoy
-│   ├── screenshot.yml              ← 定时/手动截图
-│   ├── tech-stack.yml              ← 手动触发技术栈指纹检测
-│   └── enrich.yml                  ← 域名补充信息
-├── data/
-│   ├── manual_sites.csv            ← 手动收集平台（你自己维护）
-│   ├── hvoy_latest.csv             ← 最近一次 hvoy 站点总表（手动源更新）
-│   ├── hvoy_latest.json            ← 同上，JSON 格式
-│   ├── hvoy_raw/                   ← hvoy 历史存档和 diff
-│   ├── hvoy_resources/             ← 手动导入的 hvoy model/resource 汇总
-│   │   └── hvoy_resources_site_summary_2026-06-23.csv
-│   ├── manual_screenshots/         ← 手动截图证据
-│   └── screenshots/                ← 自动截图
-├── docs/
-│   └── tech_stack_fingerprints.md  ← 技术栈识别口径、指纹和偏差说明
-├── results/
-│   ├── monitor_results.csv         ← 所有检测结果（追加写入）
-│   ├── tech_stack_fingerprints.csv ← 技术栈指纹检测结果（手动 workflow 覆盖）
-│   ├── summary_*.xlsx              ← 综合汇总报告
-│   ├── latest_status.svg           ← 最新状态图（覆盖）
-│   └── daily_status_*.svg          ← 每日状态图归档
-└── scripts/
-    ├── pipeline.py                 ← 检测平台存活
-    ├── summarize.py                ← 生成汇总报告和状态图
-    ├── hvoy_tracker.py             ← 旧 hvoy 抓取脚本，保留但 monitor 不再调用
-    ├── model_price_probe.py        ← 模型价格/资源探测实验脚本
-    └── tech_stack_fingerprint_probe.py ← 技术栈/反代层指纹探测
-```
+The research question is **supply-side infrastructure characterization**, not
+data-plane abuse (model-identity mismatch, token dilution, etc.) — that space is
+covered elsewhere and is deliberately out of scope here.
 
 ---
 
-## 数据来源
-| 来源 | 文件 | 更新方式 |
-|------|------|----------|
-| hvoy.ai 站点榜单 | `data/hvoy_latest.csv`, `data/hvoy_latest.json` | 现在以手动页面源更新为主 |
-| hvoy.ai model/resource 榜单 | `data/hvoy_resources/` | 手动提供页面 HTML 后导入 |
-| 淘宝/小红书/外部线索 | `data/manual_sites.csv` | 手动追加 |
-| 自动存活检测 | `results/monitor_results.csv` | GitHub Actions 定时追加 |
-| 技术栈指纹检测 | `results/tech_stack_fingerprints.csv` | 手动触发 `tech-stack.yml` |
-| 自动/手动截图 | `data/screenshots/`, `data/manual_screenshots/` | 自动截图加人工补充 |
+## What it measures
 
-### 2026-06-23 手动更新记录
-- 新增外部线索：`www.micuapi.ai`，平台名 `米醋API`。
-- 已有相近记录：`openclaudecode.cn`，平台名 `米醋AI`，标记为 `hvoy_removed`。
-- 因此 `米醋API` 先作为新线索加入，但备注可能与 `openclaudecode.cn / 米醋AI` 有关联，后续再核实。
-- 新增 `data/hvoy_resources/hvoy_resources_site_summary_2026-06-23.csv`：来自手动提供的 Hvoy 首页 HTML 中 `__LEADERBOARD_PAYLOAD__`，展开后为 345 条 model-site 记录，汇总为 71 个唯一站点。
+The pipeline is organised as two layers with a clean interface between them.
 
-### manual_sites.csv 格式
-```
-source, platform_name, domain, tech_stack, favicon_group, icp_filing, has_privacy_policy, contact_telegram, contact_qq, notes
-Taobao, DKAI/大可, codex.dakeai.cc, Nginx, ...
-manual, 米醋API, www.micuapi.ai, ..., 2026-06-23 手动加入...
-```
-新平台直接追加行即可，下次 workflow 自动包含。
+**1. Discovery + collection** produces, for each site, a set of raw
+observations:
+
+- **Liveness** — periodic reachability / status classification.
+- **Application stack** — new-api / one-api family, sub2api, and related forks,
+  via HTTP header, body, and unauthenticated-endpoint fingerprints.
+- **Infrastructure** — WHOIS (registration date, registrar), TLS certificate
+  (issuer, SAN, SHA-256 fingerprint, `not_before`), IP / ASN / hosting / geo,
+  server headers, favicon hash.
+- **Operations** — privacy-policy presence, contact channels, affiliate pages,
+  model/pricing visibility.
+
+**2. Analysis** turns those observations into findings:
+
+- **Master merge** — every source outer-joined into one row per site, keyed on
+  the registrable domain (eTLD+1), so host variants collapse.
+- **Operator grouping** — a union-find over shared signals (TLS certificate,
+  certificate SAN, favicon, origin IP, operator display name) that collapses
+  domains into operators, with explicit guardrails against CDN- and
+  default-asset false merges.
+- **Characterization** — stack taxonomy, birth timeline, hosting / CA /
+  registrar / country / TLD distributions, domain-naming themes, and
+  concentration metrics (HHI).
+- **Seed feedback** — certificate-SAN sibling domains extracted as new discovery
+  seeds.
+
+Methodology and the literature grounding for every signal and heuristic are in
+[`docs/METHODS_element_citations.md`](docs/METHODS_element_citations.md).
 
 ---
 
-## 自动流水线
-当前 `LLM Relay Monitor` 定时运行：
-1. `pipeline.py` 读取 `hvoy_latest.csv` + `manual_sites.csv`，合并去重，对每个域名尝试访问并记录状态。
-2. `summarize.py` 聚合历史检测数据，生成 summary Excel 和状态 SVG。
-3. GitHub Actions 将 `data/` 和 `results/` 的变化 commit 回仓库。
+## Pipeline
 
-注意：因为 hvoy.ai 已经对 GitHub Actions 请求返回 403，`monitor.yml` 已经移除自动抓取 hvoy 的步骤。后续 hvoy 站点/资源数据通过手动打开页面、复制页面源，再导入仓库。
+```
+ discovery list ─┐
+ hvoy / manual ──┤
+                 ▼
+        collection (network)
+   pipeline.py · enrich.py · privacy.py · contacts.py · model_price_probe.py
+                 │
+                 ▼
+        build_master.py            one row per site (eTLD+1)
+                 │
+      ┌──────────┼───────────────┬────────────────────┐
+      ▼          ▼               ▼                    ▼
+ operator_    site_          deep_analysis.py    cert_siblings.py
+ matching.py  characterization.py  (report)      (new seeds)
+      │          │               │
+      └──────────┴───────────────┘
+                 ▼
+        make_dashboard.py          interactive distribution dashboard
+```
+
+Run the whole analysis chain locally with
+[`scripts/refresh_all.sh`](scripts/refresh_all.sh); only the collection step
+touches the network.
 
 ---
 
-## 技术栈指纹检测
-`tech_stack_fingerprint_probe.py` 用于补充 `manual_sites.csv` 里较粗的 `tech_stack` 字段。它默认读取：
-```
-data/hvoy_latest.csv + data/manual_sites.csv
-```
-合并去重后探测每个站点的首页、登录页和少量无需登录的 API 路径：
-```
-/
-/login
-/api/status
-/api/pricing
-/v1/models
-/api/models
-```
-输出：
-```
-results/tech_stack_fingerprints.csv
-```
+## Scripts
 
-本地运行：
+### Collection (require network)
+
+| Script | Purpose |
+|---|---|
+| `pipeline.py` | Liveness / status classification, appended to `results/monitor_results.csv`. |
+| `enrich.py` | WHOIS, TLS cert (issuer/SAN/fingerprint/`not_before`), IP/ASN/geo, server headers, favicon → `data/enrichment.csv`. |
+| `privacy.py` | Privacy-policy fetch + snapshot + rule-based coding → `data/privacy.csv`. |
+| `contacts.py` | Contact channels (Telegram/QQ/WeChat/Discord) + affiliate detection → `data/contacts.csv`. |
+| `model_price_probe.py` | Model list / pricing-page visibility → `results/model_prices/`. |
+| `tech_stack_fingerprint_probe.py` | Tiered stack fingerprint (fork / family / domain confidence) with distinct blocked / SPA / unreachable buckets. |
+| `screenshot.py` | Page screenshots. |
+| `hvoy_tracker*.py` | Legacy hvoy list tracker (retained; not on the monitor path). |
+
+### Analysis (local, no network)
+
+| Script | Purpose |
+|---|---|
+| `build_master.py` | Defensive outer-join of every source into `results/master/master_table.csv`, keyed on eTLD+1. |
+| `operator_matching.py` | Union-find operator grouping → `operator_clusters.csv` + `operator_summary.csv` (HHI). |
+| `site_characterization.py` | Unified stack taxonomy + per-site labels → `site_stack_labels.csv`. |
+| `deep_analysis.py` | Full feature report (liveness, timeline, infra, CA, registrar, naming, price, cross-tabs) → `ANALYSIS_REPORT.md`. |
+| `operator_profiles.py` | Per-operator aggregate profiles + favicon families → `operator_profiles.csv`, `favicon_families.csv`. |
+| `cert_siblings.py` | Certificate-SAN sibling-domain extraction → `cert_sibling_seeds.csv`. |
+| `make_dashboard.py` | Regenerate the interactive distribution dashboard (`ecosystem_dashboard.html`). |
+| `quality_audit.py` | Privacy-snapshot text-quality audit. |
+| `summarize.py` | Monitor-result summary tables / status graphics. |
+
+### Utilities
+
+| Script | Purpose |
+|---|---|
+| `domain_utils.py` | Registrable-domain (eTLD+1) and host normalization (stdlib only). |
+| `refresh_all.sh` | One-command local run: enrich → build_master → operator_matching → site_characterization → make_dashboard. |
+
+---
+
+## Outputs
+
+Analysis artifacts are written to `results/master/`:
+
+| File | Contents |
+|---|---|
+| `master_table.csv` | One row per site, all sources joined (namespaced columns). |
+| `all_sites_merged.csv` | Human-readable one-row-per-site summary (curated columns). |
+| `operator_clusters.csv` / `operator_summary.csv` | Domain→operator assignment + concentration metrics. |
+| `operator_profiles.csv` | Multi-site operators with aggregated features and tie signals. |
+| `favicon_families.csv` | Sites sharing a non-default favicon (template / operator families). |
+| `site_stack_labels.csv` | Per-site unified stack family + feature flags. |
+| `ANALYSIS_REPORT.md` | Full deep-characterization report. |
+| `cert_sibling_seeds.csv` | Operator sibling domains for discovery expansion. |
+| `ecosystem_dashboard.html` | Self-contained interactive dashboard. |
+
+---
+
+## Running
+
+Collection must run on an ordinary network (a TLS-intercepting environment
+corrupts certificate data). The repository is public, so GitHub Actions is free;
+local execution is equally supported.
+
 ```bash
-python3 scripts/tech_stack_fingerprint_probe.py
+pip install requests openpyxl python-whois dnspython
+bash scripts/refresh_all.sh          # enrich (~60-90 min) + full analysis chain
+git add data/enrichment.csv results/master/
+git commit -m "refresh: enrich + rebuild analysis"
+git push
 ```
 
-小样本 smoke test：
+`enrich.py` autosaves every 10 domains and is resumable. Analysis-only reruns
+(after new data lands) skip the network:
+
 ```bash
-python3 scripts/tech_stack_fingerprint_probe.py --limit 10
+python3 scripts/build_master.py
+python3 scripts/operator_matching.py
+python3 scripts/site_characterization.py
+python3 scripts/deep_analysis.py
+python3 scripts/operator_profiles.py
+python3 scripts/make_dashboard.py
 ```
 
-GitHub Actions 手动运行：
-- Actions → `Tech Stack Fingerprint Probe` → `Run workflow`
-- `limit=0` 表示跑全部合并站点。
-
-### 当前识别类别
-应用层中转/聚合实现：
-- `one-api`
-- `new-api`
-- `veloera`
-- `one-hub` / `done-hub`
-- `voapi`
-- `shell-api`
-- `super-api`
-- `neo-api`
-- `sub2api`
-- `auth2api`
-- `cliproxyapi`
-- `xxx2api`
-- `all-api-hub` / `metapi`
-
-基础设施层信号：
-- `cloudflare`
-- `nginx`
-
-注意：`Cloudflare`/`Nginx` 只说明前面有 CDN/WAF/反代层，不能当成应用层中转软件。技术栈识别是证据优先的 best-effort 分类：`unknown`、`cloudflare-only`、`nginx-only` 很可能包含白标或魔改实现。指纹覆盖不全会系统性低估 `sub2api`、`one-api` 等非 NewAPI 实现，方法学说明见 `docs/tech_stack_fingerprints.md`。
+Workflows under `.github/workflows/` (`monitor`, `enrich`, `model-prices`,
+`screenshot`, `tech-stack`) run the collectors on a schedule or on demand.
 
 ---
 
-## 手动导入 hvoy 数据
-### 站点总表
-如果页面源里有：
-```
-<script id="__RELAY_SITE_RANKINGS_PAYLOAD__" type="application/json">...</script>
-```
-可以更新 `data/hvoy_latest.csv/json`，并按日期归档到 `data/hvoy_raw/`。
+## Selected findings
 
-### 模型资源/价格榜
-如果页面源里有：
-```
-<script id="__LEADERBOARD_PAYLOAD__" type="application/json">...</script>
-```
-它不是完整站点总表，而是按模型/渠道的 leaderboard。当前做法是导出站点级汇总到：
-```
-data/hvoy_resources/hvoy_resources_site_summary_YYYY-MM-DD.csv
-```
-该表每个站点一行，记录覆盖的模型 tab、模型 key、渠道数、价格区间、平均在线率、平均通过率、平均延迟和示例 URL。
+Current snapshot (809 sites; discovery set union monitored set, collapsed to
+registrable domains):
 
----
+- **Near-monoculture stack** — ~78% of sites run the one-api family; a
+  fingerprint-level single point of failure.
+- **Very young ecosystem** — ~99% of sites have a resolvable birth date (WHOIS
+  with certificate `not_before` fallback); ~73% appeared in 2025-2026 and ~55%
+  in 2026 alone, peaking mid-2026.
+- **Zero-cost startup profile** — ~85% use free DV certificates (Let's Encrypt +
+  Google Trust Services); hosting concentrated on Cloudflare edges.
+- **Apparent diversity, structural concentration** — grouping reveals single
+  operators running several differently-branded sites (e.g. one operator across
+  six domains under five brand names), even though population-level operator
+  concentration is otherwise low.
 
-## 存活状态分类
-| 状态 | 含义 | 算法判定 |
-|------|------|---------|
-| ONLINE | 正常在线 | HTTP 200 |
-| CLOUDFLARE_OR_BLOCKED | Cloudflare/人机验证拦截，但站点大概率在线 | CF challenge 页面 |
-| ONLINE_LOGIN_REQUIRED | 需登录，实际在线 | HTTP 401/403 或登录页 |
-| HTTP_444 | Nginx 拒绝，实际在线 | HTTP 444 |
-| TIMEOUT | 超时，不确定 | 连接超时 |
-| HTTP_ERROR | 连接错误，不确定 | SSL 错误/连接重置等 |
-| DNS_FAIL | 域名解析失败，大概率已关闭 | DNS 解析错误 |
-| PARKED_OR_FOR_SALE | 域名停放/出售 | 页面含关键词 |
-| SERVICE_STOPPED | 人工确认服务停止维护 | 例如 `api.uglycat.cc` 公告停止维护 |
-
-### 综合判定规则（summarize.py）
-- **ALIVE** = 至少一次检测为 ONLINE/CLOUDFLARE/444/LOGIN
-- **UNCERTAIN** = 所有检测均为 TIMEOUT 或 HTTP_ERROR
-- **DEAD** = 所有检测均为 DNS_FAIL、PARKED、或人工标记 SERVICE_STOPPED
+Numbers refresh with each collection run; see `ANALYSIS_REPORT.md` and the
+dashboard for current values and full caveats.
 
 ---
 
-## 截图规则
-- GitHub Actions 对 Cloudflare/人机验证站点经常只能截到阻断页，不代表真实站点 UI。
-- 已人工确认过的 Cloudflare 站点可保留为存活/被拦截状态，不必每轮都要求手动截图。
-- 手动截图建议放在：
-```
-data/manual_screenshots/YYYY-MM-DD/
-```
-命名建议：
-```
-{domain_with_underscores}_YYYY-MM-DD_manual.png
-{domain_with_underscores}_YYYY-MM-DD_manual_top.png
-{domain_with_underscores}_YYYY-MM-DD_manual_bottom.png
-```
+## Ethics
+
+All probing is read-only: unauthenticated GETs and standard TLS handshakes to
+public endpoints, rate-limited, with no login attempts, no state-changing
+requests, and no attack-shaped payloads. Endpoint checks test for existence
+only. Low-coverage fields (contacts, privacy, ICP) are reported with explicit
+coverage caveats rather than over-claimed.
 
 ---
 
-## 查看最新结果
-- 最新汇总：`results/summary_*.xlsx`
-- 最新状态图：`results/latest_status.svg`
-- 每日状态图归档：`results/daily_status_*.svg`
-- Hvoy 资源汇总：`data/hvoy_resources/`
-- 技术栈指纹：`results/tech_stack_fingerprints.csv`
+## Documentation
 
----
-
-## 待办
-- [ ] 持续核实外部线索和 hvoy 之外的新站点。
-- [ ] 区分“同团队换域名/改名”和真正的新平台。
-- [ ] 数据积累后分析存活率、Cloudflare 阻断率、资源/价格覆盖差异。
-- [ ] 用人工复核样本持续扩充技术栈指纹，降低 NewAPI 识别偏差。
+- [`docs/analysis_pipeline.md`](docs/analysis_pipeline.md) — analysis stages and the discovery-layer interface.
+- [`docs/METHODS_element_citations.md`](docs/METHODS_element_citations.md) — every method mapped to published precedent.
+- [`docs/METHODS_literature_grounding_2026-07-08.md`](docs/METHODS_literature_grounding_2026-07-08.md) — higher-level methodology grounding.
+- [`docs/tech_stack_fingerprints.md`](docs/tech_stack_fingerprints.md) — fingerprint taxonomy and confidence tiers.
+- [`docs/AUDIT_collectors_2026-07-08.md`](docs/AUDIT_collectors_2026-07-08.md) — collector audit and known limitations.

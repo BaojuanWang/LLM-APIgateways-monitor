@@ -1,0 +1,11 @@
+source,path,status,raw_rows,unique_sites,coverage_pct_of_master
+disc,data/master_sites.csv,OK,1044,932,85.6
+hvoy,data/hvoy_latest.csv,OK,246,246,22.6
+manual,data/manual_sites.csv,OK,48,41,3.8
+monitor,results/monitor_results.csv,OK,37441,292,26.8
+enrich,data/enrichment.csv,OK,1210,1089,100.0
+privacy,data/privacy.csv,OK,1205,1085,99.6
+contacts,data/contacts.csv,OK,284,284,26.1
+ops,data/operations.csv,OK,1205,1085,99.6
+price,results/model_prices/model_prices_summary.csv,OK,284,284,26.1
+blocked,data/manual_confirmed_blocked.csv,OK,8,8,0.7

@@ -1,0 +1,210 @@
+dimension,value,count,pct_of_total
+stack_family,one-api-family,838,77.0
+stack_family,unlabeled,144,13.2
+stack_family,openai-compatible-unknown,73,6.7
+stack_family,sub2api,30,2.8
+stack_family,confirmed-unknown,4,0.4
+tld,com,317,29.1
+tld,ai,189,17.4
+tld,cn,100,9.2
+tld,top,97,8.9
+tld,cc,69,6.3
+tld,xyz,49,4.5
+tld,org,26,2.4
+tld,net,25,2.3
+tld,vip,25,2.3
+tld,io,17,1.6
+tld,chat,14,1.3
+tld,pro,13,1.2
+tld,dev,11,1.0
+tld,one,10,0.9
+tld,tech,8,0.7
+tld,site,7,0.6
+tld,online,6,0.6
+tld,shop,5,0.5
+tld,club,5,0.5
+tld,cloud,5,0.5
+tld,asia,5,0.5
+tld,uk,5,0.5
+tld,fun,5,0.5
+tld,app,5,0.5
+tld,xin,4,0.4
+tld,work,4,0.4
+tld,co,4,0.4
+tld,hk,3,0.3
+tld,icu,3,0.3
+tld,codes,3,0.3
+tld,lat,3,0.3
+tld,space,3,0.3
+tld,me,2,0.2
+tld,world,2,0.2
+tld,plus,2,0.2
+tld,mom,2,0.2
+tld,cx,2,0.2
+tld,best,2,0.2
+tld,store,2,0.2
+tld,lol,2,0.2
+tld,us,2,0.2
+tld,wtf,1,0.1
+tld,yun,1,0.1
+tld,help,1,0.1
+tld,art,1,0.1
+tld,fan,1,0.1
+tld,yoga,1,0.1
+tld,center,1,0.1
+tld,ad,1,0.1
+tld,win,1,0.1
+tld,wang,1,0.1
+tld,ge,1,0.1
+tld,ltd,1,0.1
+tld,rs,1,0.1
+tld,hvoy_removed,1,0.1
+tld,today,1,0.1
+tld,ink,1,0.1
+tld,cy,1,0.1
+tld,host,1,0.1
+tld,team,1,0.1
+tld,buzz,1,0.1
+tld,pub,1,0.1
+tld,mg,1,0.1
+tld,love,1,0.1
+tld,pw,1,0.1
+tld,vg,1,0.1
+tld,sbs,1,0.1
+signal_tier,A_api_status,664,61.0
+signal_tier,C_framework+content,261,24.0
+signal_tier,(none),157,14.4
+signal_tier,B_v1_models,7,0.6
+hosting (enriched only),Cloudflare,409,37.6
+hosting (enriched only),Amazon.com,65,6.0
+hosting (enriched only),Alibaba (US) Technology Co.,61,5.6
+hosting (enriched only),Tencent Building,49,4.5
+hosting (enriched only),NetLab Global,45,4.1
+hosting (enriched only),OVH SAS,44,4.0
+hosting (enriched only),Hangzhou Alibaba Advertising C,37,3.4
+hosting (enriched only),(unknown),24,2.2
+hosting (enriched only),DMIT Cloud Services,21,1.9
+hosting (enriched only),Shenzhen Tencent Computer Syst,21,1.9
+hosting (enriched only),IT7 Networks Inc,20,1.8
+hosting (enriched only),FASTNET DATA INC,18,1.7
+hosting (enriched only),ACE,16,1.5
+hosting (enriched only),cognetcloud INC,16,1.5
+hosting (enriched only),Spartan Host Ltd,13,1.2
+hosting (enriched only),The Constant Company,12,1.1
+hosting (enriched only),Zhejiang Taobao Network Co.,11,1.0
+hosting (enriched only),Google LLC,10,0.9
+hosting (enriched only),Sharktech,9,0.8
+hosting (enriched only),ReliableSite.Net LLC,9,0.8
+hosting (enriched only),HostPapa,8,0.7
+hosting (enriched only),Peekabo Networks,8,0.7
+hosting (enriched only),DigitalOcean,7,0.6
+hosting (enriched only),Microsoft Corporation,6,0.6
+hosting (enriched only),CHINA UNICOM China169 Backbone,5,0.5
+hosting (enriched only),Cogent Communications,5,0.5
+hosting (enriched only),Cloudie Limited,5,0.5
+hosting (enriched only),netcup GmbH,4,0.4
+hosting (enriched only),Antbox Networks Limited,4,0.4
+hosting (enriched only),UCLOUD INFORMATION TECHNOLOGY ,4,0.4
+hosting (enriched only),Byteplus Pte. Ltd.,4,0.4
+hosting (enriched only),AROSSCLOUD INC.,4,0.4
+hosting (enriched only),Meteverse Limited.,3,0.3
+hosting (enriched only),FiberState,3,0.3
+hosting (enriched only),Hetzner Online GmbH,3,0.3
+hosting (enriched only),Fly.io,3,0.3
+hosting (enriched only),Fastly,3,0.3
+hosting (enriched only),YISU CLOUD LTD,2,0.2
+hosting (enriched only),Leaseweb USA,2,0.2
+hosting (enriched only),Akamai Connected Cloud,2,0.2
+hosting (enriched only),VpsQuan L.L.C.,2,0.2
+hosting (enriched only),GoMami Networks,2,0.2
+hosting (enriched only),VMISS Inc.,2,0.2
+hosting (enriched only),XNNET LLC,2,0.2
+hosting (enriched only),CHINANET Yunnan province IDC1 ,2,0.2
+hosting (enriched only),Florian Kolb,2,0.2
+hosting (enriched only),CORENET CLOUD SDN. BHD.,2,0.2
+hosting (enriched only),LUCIDACLOUD LIMITED,2,0.2
+hosting (enriched only),PEG TECH INC,2,0.2
+hosting (enriched only),West263 International Limited,2,0.2
+hosting (enriched only),Starry Network Limited,2,0.2
+hosting (enriched only),SonderCloud Limited,2,0.2
+hosting (enriched only),EASY LINK LLC,2,0.2
+hosting (enriched only),China Telecom (Group),2,0.2
+hosting (enriched only),Hubei Feixun Network Co.,2,0.2
+hosting (enriched only),Beijing Baidu Netcom Science a,2,0.2
+hosting (enriched only),Uscloud Inc,2,0.2
+hosting (enriched only),AkileCloud Network,2,0.2
+hosting (enriched only),GorillaServers,2,0.2
+hosting (enriched only),Nocix,1,0.1
+hosting (enriched only),Data Communication Business Gr,1,0.1
+hosting (enriched only),Jiangsu Dongyun Cloud computin,1,0.1
+hosting (enriched only),LUOGELANG (FRANCE) LIMITED,1,0.1
+hosting (enriched only),EGIHosting,1,0.1
+hosting (enriched only),NTT America,1,0.1
+hosting (enriched only),Law's Cloud Infrastructure Lim,1,0.1
+hosting (enriched only),Bunny Communications,1,0.1
+hosting (enriched only),N963 PTE. LTD.,1,0.1
+hosting (enriched only),Datacamp Limited,1,0.1
+hosting (enriched only),New Dream Network,1,0.1
+hosting (enriched only),EDGENAP LTD,1,0.1
+hosting (enriched only),AEZA GROUP LLC,1,0.1
+hosting (enriched only),China Telecom,1,0.1
+hosting (enriched only),NAMESILO,1,0.1
+hosting (enriched only),PLAY2GO INTERNATIONAL LIMITED,1,0.1
+hosting (enriched only),CYBERCON,1,0.1
+hosting (enriched only),RouterHosting LLC,1,0.1
+hosting (enriched only),China Mobile communications co,1,0.1
+hosting (enriched only),Akari Networks,1,0.1
+hosting (enriched only),Railway,1,0.1
+hosting (enriched only),IENS TECHNOLOGY PTE. LTD,1,0.1
+hosting (enriched only),Scaleway SAS,1,0.1
+hosting (enriched only),Bold Software Inc,1,0.1
+hosting (enriched only),Wen ZhangYu,1,0.1
+hosting (enriched only),Huicast Telecom Limited,1,0.1
+hosting (enriched only),Alice Network,1,0.1
+hosting (enriched only),CT HuNan Changsha IDC,1,0.1
+hosting (enriched only),UAB Cherry Servers,1,0.1
+hosting (enriched only),CHINANET SHAANXI province Clou,1,0.1
+hosting (enriched only),Beijing Volcano Engine Technol,1,0.1
+hosting (enriched only),Zenlayer Inc,1,0.1
+hosting (enriched only),synlinq.de,1,0.1
+hosting (enriched only),UFO Network Limited,1,0.1
+hosting (enriched only),Ansheng Network Technology Co.,1,0.1
+hosting (enriched only),FDCservers.net,1,0.1
+hosting (enriched only),China Telecom Beijing Tianjin ,1,0.1
+hosting (enriched only),Render,1,0.1
+hosting (enriched only),Contabo Inc.,1,0.1
+hosting (enriched only),Kirino LLC,1,0.1
+hosting (enriched only),CNSERVERS LLC,1,0.1
+hosting (enriched only),CYBERJET PTE. LTD.,1,0.1
+hosting (enriched only),CNServer LLC,1,0.1
+hosting (enriched only),CHINANET BACKBONE,1,0.1
+hosting (enriched only),Tianfeng (Hong Kong) Communica,1,0.1
+hosting (enriched only),Verizon Business,1,0.1
+hosting (enriched only),Hong Kong Communications Inter,1,0.1
+hosting (enriched only),HanMing HK Limited,1,0.1
+hosting (enriched only),Enzu Inc,1,0.1
+hosting (enriched only),Google Ireland Limited,1,0.1
+hosting (enriched only),xTom,1,0.1
+hosting (enriched only),IDC,1,0.1
+hosting (enriched only),HUAWEI CLOUDS,1,0.1
+hosting (enriched only),Oracle Corporation,1,0.1
+hosting (enriched only),VH Global Limited,1,0.1
+hosting (enriched only),CHINATELECOM Jiangsu province ,1,0.1
+ip_country (enriched only),Canada,412,37.8
+ip_country (enriched only),United States,340,31.2
+ip_country (enriched only),Hong Kong,119,10.9
+ip_country (enriched only),China,84,7.7
+ip_country (enriched only),Singapore,57,5.2
+ip_country (enriched only),Japan,29,2.7
+ip_country (enriched only),(unknown),17,1.6
+ip_country (enriched only),South Korea,9,0.8
+ip_country (enriched only),Germany,5,0.5
+ip_country (enriched only),Brazil,4,0.4
+ip_country (enriched only),The Netherlands,3,0.3
+ip_country (enriched only),Finland,2,0.2
+ip_country (enriched only),South Africa,2,0.2
+ip_country (enriched only),United Kingdom,2,0.2
+ip_country (enriched only),Taiwan,1,0.1
+ip_country (enriched only),Philippines,1,0.1
+ip_country (enriched only),Indonesia,1,0.1
+ip_country (enriched only),Russia,1,0.1
