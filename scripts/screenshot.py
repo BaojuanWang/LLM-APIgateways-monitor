@@ -353,6 +353,9 @@ def main():
                        "AppleWebKit/537.36 (KHTML, like Gecko) "
                        "Chrome/124.0.0.0 Safari/537.36",
             locale="zh-CN",
+            # relay sites routinely run expired / name-mismatched free certs;
+            # a live page shouldn't fail to screenshot just for a bad cert.
+            ignore_https_errors=True,
         )
         page = context.new_page()
 
