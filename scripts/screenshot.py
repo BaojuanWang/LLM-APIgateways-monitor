@@ -100,38 +100,39 @@ def load_latest_round(results_csv):
 
     confirmed_blocked = load_confirmed_blocked_domains()
 
-    # 读取最新一轮数据（同一轮的 timestamp 精确到秒可能有细微差异，取最近1分钟内的）
-    from datetime import datetime
-    latest_dt = datetime.fromisoformat(latest_ts.replace("Z", "+00:00"))
+    # Take the LATEST row PER DOMAIN across the whole log — NOT a 5-minute
+    # window around the newest timestamp. A full 1200-site run takes far longer
+    # than 5 minutes (each site is stamped at its own completion time), so the
+    # old window silently dropped ~1000 sites and only ~200 near the end got
+    # screenshotted. Latest-per-domain makes every monitored site a candidate.
+    latest_row = {}
+    with open(results_csv, encoding="utf-8-sig") as f:
+        for row in csv.DictReader(f):
+            domain = row.get("domain", "").strip()
+            ts = row.get("timestamp", "")
+            if not domain or not ts:
+                continue
+            if domain not in latest_row or ts > latest_row[domain].get("timestamp", ""):
+                latest_row[domain] = row
 
     sites = {}
     manual_confirmation = []
     blocked_sites = []
-    with open(results_csv, encoding="utf-8-sig") as f:
-        for row in csv.DictReader(f):
-            ts = row.get("timestamp", "")
-            if not ts:
-                continue
-            dt = datetime.fromisoformat(ts.replace("Z", "+00:00"))
-            # 同一轮：在最新 timestamp 的 5 分钟窗口内
-            if abs((latest_dt - dt).total_seconds()) <= 300:
-                domain = row.get("domain", "").strip()
-                status = row.get("online_status", "")
-                if not domain:
-                    continue
-                if status in MANUAL_CONFIRM_STATUSES:
-                    blocked_row = manual_confirmation_row(row, latest_ts)
-                    blocked_sites.append(blocked_row)
-                    if domain.lower() not in confirmed_blocked:
-                        manual_confirmation.append(blocked_row)
-                    continue
-                if status not in SKIP_STATUSES:
-                    sites[domain] = {
-                        "hash":          row.get("html_hash", ""),
-                        "final_url":     row.get("final_url", ""),
-                        "platform_name": row.get("platform_name", ""),
-                        "status":        status,
-                    }
+    for domain, row in latest_row.items():
+        status = row.get("online_status", "")
+        if status in MANUAL_CONFIRM_STATUSES:
+            blocked_row = manual_confirmation_row(row, latest_ts)
+            blocked_sites.append(blocked_row)
+            if domain.lower() not in confirmed_blocked:
+                manual_confirmation.append(blocked_row)
+            continue
+        if status not in SKIP_STATUSES:
+            sites[domain] = {
+                "hash":          row.get("html_hash", ""),
+                "final_url":     row.get("final_url", ""),
+                "platform_name": row.get("platform_name", ""),
+                "status":        status,
+            }
 
     return sites, latest_ts, manual_confirmation, blocked_sites
 
