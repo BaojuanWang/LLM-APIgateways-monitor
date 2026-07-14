@@ -665,3 +665,120 @@ Call log:
 Call log:
   - navigating to ""https://ai-szzx.online/"", waiting until ""domcontentloaded""
 "
+2026-07-14T00:59:27Z,base-url.cn,接JieAPI,https://base-url.cn/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://base-url.cn/
+Call log:
+  - navigating to ""https://base-url.cn/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,c9api.cn,C9API,https://c9api.cn/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://c9api.cn/
+Call log:
+  - navigating to ""https://c9api.cn/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,clawskills.shop,,https://clawskills.shop/,"Page.goto: net::ERR_CERT_DATE_INVALID at https://clawskills.shop/
+Call log:
+  - navigating to ""https://clawskills.shop/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,dealise.xyz,,https://dealise.xyz/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://dealise.xyz/
+Call log:
+  - navigating to ""https://dealise.xyz/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,ecovai.cn,Ecovai API,https://ecovai.cn/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://ecovai.cn/
+Call log:
+  - navigating to ""https://ecovai.cn/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,getllm.ai,,https://getllm.ai/,"Page.goto: net::ERR_INTERNET_DISCONNECTED at https://getllm.ai/
+Call log:
+  - navigating to ""https://getllm.ai/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,haotokai.com,Haotokai,https://haotokai.com/,"Page.goto: net::ERR_INTERNET_DISCONNECTED at https://haotokai.com/
+Call log:
+  - navigating to ""https://haotokai.com/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,hehuole.fun,Hehuole API,https://hehuole.fun/,"Page.goto: net::ERR_INTERNET_DISCONNECTED at https://hehuole.fun/
+Call log:
+  - navigating to ""https://hehuole.fun/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,hiapi.ai,hiapi,https://www.hiapi.ai/en,"Page.goto: net::ERR_INTERNET_DISCONNECTED at https://www.hiapi.ai/en
+Call log:
+  - navigating to ""https://www.hiapi.ai/en"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,holdzywoo.top,,https://holdzywoo.top/,"Page.goto: net::ERR_INTERNET_DISCONNECTED at https://holdzywoo.top/
+Call log:
+  - navigating to ""https://holdzywoo.top/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,hook.rs,统一大模型网关,https://hook.rs/,"Page.goto: net::ERR_INTERNET_DISCONNECTED at https://hook.rs/
+Call log:
+  - navigating to ""https://hook.rs/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,ikun666.xyz,Ikun API,https://ikun666.xyz/,"Page.goto: net::ERR_INTERNET_DISCONNECTED at https://ikun666.xyz/
+Call log:
+  - navigating to ""https://ikun666.xyz/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,iaigc.fun,筑基 AI,https://iaigc.fun/,"Page.goto: net::ERR_INTERNET_DISCONNECTED at https://iaigc.fun/
+Call log:
+  - navigating to ""https://iaigc.fun/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,judianai.com,New API,https://judianai.com/zh-CN/home,"Page.goto: net::ERR_INTERNET_DISCONNECTED at https://judianai.com/zh-CN/home
+Call log:
+  - navigating to ""https://judianai.com/zh-CN/home"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,jmrai.net,,https://jmrai.net/,"Page.goto: net::ERR_INTERNET_DISCONNECTED at https://jmrai.net/
+Call log:
+  - navigating to ""https://jmrai.net/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,jmaivip.com,,https://jmaivip.com/,"Page.goto: net::ERR_INTERNET_DISCONNECTED at https://jmaivip.com/
+Call log:
+  - navigating to ""https://jmaivip.com/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,juesiapi.top,玦飔API,https://juesiapi.top/,"Page.goto: net::ERR_INTERNET_DISCONNECTED at https://juesiapi.top/
+Call log:
+  - navigating to ""https://juesiapi.top/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,kelongde.com,Kelongde AI API,https://kelongde.com/,"Page.goto: net::ERR_INTERNET_DISCONNECTED at https://kelongde.com/
+Call log:
+  - navigating to ""https://kelongde.com/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,koozhan.com,酷站AI · 你的全模型 API 中转站,https://koozhan.com/,"Page.goto: net::ERR_INTERNET_DISCONNECTED at https://koozhan.com/
+Call log:
+  - navigating to ""https://koozhan.com/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,kopiaiagent.com,KOPI Agent — Singapore AI Agent,https://kopiaiagent.com/,"Page.goto: net::ERR_INTERNET_DISCONNECTED at https://kopiaiagent.com/
+Call log:
+  - navigating to ""https://kopiaiagent.com/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,kove.cn,Claude API - 全球顶级AI模型聚合平台,https://kove.cn/,"Page.goto: net::ERR_INTERNET_DISCONNECTED at https://kove.cn/
+Call log:
+  - navigating to ""https://kove.cn/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,kunavo.com,Kunavo · OpenAI-compatible AI API gateway · Stripe-native · Built for global devs,https://kunavo.com/,"Page.goto: net::ERR_INTERNET_DISCONNECTED at https://kunavo.com/
+Call log:
+  - navigating to ""https://kunavo.com/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,juhes.com,登录 | 聚合引擎AIGC,https://juhes.com/zh-CN/login,"Page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+"
+2026-07-14T00:59:27Z,mayaa.com.cn,,https://mayaa.com.cn/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://mayaa.com.cn/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,niudunbujige.cn,allall.ai-全球AI聚合平台,https://niudunbujige.cn/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://niudunbujige.cn/
+Call log:
+  - navigating to ""https://niudunbujige.cn/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,tengd.site,tengd,https://tengd.site/,"Page.goto: net::ERR_CERT_DATE_INVALID at https://tengd.site/
+Call log:
+  - navigating to ""https://tengd.site/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,token.mg,智模引擎,https://token.mg/sign-in,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://token.mg/sign-in
+Call log:
+  - navigating to ""https://token.mg/sign-in"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,yhapiplatform.com,YH API Platform,https://yhapiplatform.com/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://yhapiplatform.com/
+Call log:
+  - navigating to ""https://yhapiplatform.com/"", waiting until ""domcontentloaded""
+"
+2026-07-14T00:59:27Z,ziyeapi.com,One API,https://ziyeapi.com/,"Page.goto: net::ERR_CERT_DATE_INVALID at https://ziyeapi.com/
+Call log:
+  - navigating to ""https://ziyeapi.com/"", waiting until ""domcontentloaded""
+"

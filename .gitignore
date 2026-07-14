@@ -3,3 +3,6 @@ __pycache__/
 
 # Per-run master snapshots regenerate from sources; keep them out of git.
 results/master/snapshots/
+
+data/screenshots/
+data/manual_screenshots/
