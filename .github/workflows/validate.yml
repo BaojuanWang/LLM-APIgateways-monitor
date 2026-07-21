@@ -12,8 +12,14 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout only validation inputs
         uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts
+            data/manual_sites.csv
+            data/hvoy_latest.csv
+            data/master_sites.csv
 
       - name: Set up Python
         uses: actions/setup-python@v5
