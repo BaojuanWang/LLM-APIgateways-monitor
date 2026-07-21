@@ -2,7 +2,7 @@ name: Site Screenshots
 
 on:
   schedule:
-    - cron: '40 5 * * 0'   # Weekly, after the stopped-service recheck
+    - cron: '40 6 * * 0'   # Weekly, after Sunday's 06:00 full monitor round
   workflow_dispatch:
 
 permissions:
