@@ -6,6 +6,8 @@ Two levels of normalization are provided:
   stripped. Keeps the sub-domain (``api.toknex.ai`` stays ``api.toknex.ai``).
 * ``registrable_domain`` — the eTLD+1 / "one site" key. ``api.toknex.ai``,
   ``www.toknex.ai`` and ``toknex.ai`` all collapse to ``toknex.ai``.
+* ``is_valid_host`` — rejects placeholders, malformed labels, and bare IPs
+  before a value enters the network-monitoring pipeline.
 
 We deliberately avoid a public-suffix-list dependency; instead an embedded set
 of common multi-label suffixes handles the ccTLDs that actually appear in this
@@ -29,6 +31,10 @@ MULTI_LABEL_SUFFIXES = {
 }
 
 _SCHEME_RE = re.compile(r"^[a-z][a-z0-9+.-]*://", re.I)
+_HOST_LABEL_RE = re.compile(r"^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$", re.I)
+_PLACEHOLDER_HOSTS = {
+    "hvoy_removed", "removed", "unknown", "none", "null", "n/a", "na",
+}
 
 
 def normalize_host(value: str) -> str:
@@ -44,6 +50,25 @@ def normalize_host(value: str) -> str:
     v = v.split(":", 1)[0]             # drop port
     v = v.strip().strip(".")
     return v
+
+
+def is_valid_host(value: str) -> bool:
+    """Return True for a plausible DNS hostname suitable for network probing."""
+    host = normalize_host(value)
+    if not host or host in _PLACEHOLDER_HOSTS or len(host) > 253:
+        return False
+    if "." not in host or host.replace(".", "").isdigit():
+        return False
+
+    try:
+        ascii_host = host.encode("idna").decode("ascii")
+    except UnicodeError:
+        return False
+
+    labels = ascii_host.split(".")
+    if len(labels[-1]) < 2:
+        return False
+    return all(_HOST_LABEL_RE.fullmatch(label) for label in labels)
 
 
 def registrable_domain(value: str) -> str:

@@ -1,4 +1,4 @@
-﻿source,platform_name,domain,tech_stack,favicon_group,icp_filing,has_privacy_policy,contact_telegram,contact_qq,notes
+source,platform_name,domain,tech_stack,favicon_group,icp_filing,has_privacy_policy,contact_telegram,contact_qq,notes
 Taobao,DKAI/大可,codex.dakeai.cc,Nginx,,无,是,,2415997472.0,
 Taobao,向量引擎,api.vectorengine.ai,,,,,,,
 Taobao,BestAIAPI/老张,api.laozhang.ai,未识别,,无,是,,,
@@ -28,16 +28,14 @@ Xiaohongshu,GOGOAPI,www.gogoapi.cloud,Nginx,,无,是,,,
 Xiaohongshu,Ekan8 API,api.ekan8.com,,,,,,,
 Xiaohongshu,元气食堂API,shitang359.space,未识别,,无,否,,,
 unknown,数智AI,ai-szzx.online,,,,,,,
-api.bbww.top,旺旺中转站,hvoy_removed
-
-easyrouter.io,EasyRouter,hvoy_removed
-openclaudecode.cn,米醋AI,hvoy_removed
-api.gemai.cc,哈基米,hvoy_removed
-api.tmlab.store,Z-API,hvoy_removed
-
-dasuapi.com,DasuApi,hvoy_removed
-zxai.work,ZX API,hvoy_removed
-clauqe.ai,ClauqeAI,hvoy_removed
+hvoy_removed,旺旺中转站,api.bbww.top,,,,,,,"原 hvoy 列表移除，保留为手动追踪"
+hvoy_removed,EasyRouter,easyrouter.io,,,,,,,"原 hvoy 列表移除，保留为手动追踪"
+hvoy_removed,米醋AI,openclaudecode.cn,,,,,,,"原 hvoy 列表移除，保留为手动追踪"
+hvoy_removed,哈基米,api.gemai.cc,,,,,,,"原 hvoy 列表移除，保留为手动追踪"
+hvoy_removed,Z-API,api.tmlab.store,,,,,,,"原 hvoy 列表移除，保留为手动追踪"
+hvoy_removed,DasuApi,dasuapi.com,,,,,,,"原 hvoy 列表移除，保留为手动追踪"
+hvoy_removed,ZX API,zxai.work,,,,,,,"原 hvoy 列表移除，保留为手动追踪"
+hvoy_removed,ClauqeAI,clauqe.ai,,,,,,,"原 hvoy 列表移除，保留为手动追踪"
 manual,米醋API,www.micuapi.ai,,,,,,,"2026-06-23 手动加入；可能与 openclaudecode.cn / 米醋AI 有关联，待核实"
 manual,dd.mfate.cn,dd.mfate.cn,,,,,,,2026-06-23 手动查找到
 manual,dashboard.uibeai.com,dashboard.uibeai.com,,,,,,,"2026-06-23 手动查找到；原始URL: https://dashboard.uibeai.com/home"
