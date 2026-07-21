@@ -19,7 +19,7 @@ jobs:
       - name: Step 1 - Check platform status (all discovered sites)
         run: python scripts/monitor_runner.py
       - name: Step 2 - Generate summary
-        run: python scripts/summarize.py
+        run: python scripts/summarize_runner.py
       # Screenshots run in the separate low-frequency screenshot workflow.
       # That workflow captures only new or content-changed sites.
       - name: Commit and push results
