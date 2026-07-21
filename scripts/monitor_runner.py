@@ -1,14 +1,10 @@
-"""Run the regular monitor while honoring stopped-service recheck results.
-
-A domain remains in ``pipeline.STOPPED_SERVICES`` until a real weekly recheck
-returns a reachable status. Once reachable, the synthetic SERVICE_STOPPED
-shortcut is removed for that run and normal six-hour probing resumes.
-"""
+"""Run the regular monitor with stopped-service recovery and input validation."""
 
 import csv
 from pathlib import Path
 
 import pipeline
+from domain_utils import is_valid_host
 
 BASE_DIR = Path(__file__).parent.parent
 RECHECK_CSV = BASE_DIR / "results" / "stopped_service_rechecks.csv"
@@ -38,6 +34,30 @@ def latest_rechecks():
     return latest
 
 
+def validated_platform_loader(original_loader):
+    """Wrap pipeline.load_platforms and drop malformed or placeholder domains."""
+
+    def load_validated():
+        platforms = original_loader()
+        valid = []
+        rejected = []
+        for platform in platforms:
+            domain = platform.get("domain", "")
+            if is_valid_host(domain):
+                valid.append(platform)
+            else:
+                rejected.append(domain or "<empty>")
+
+        if rejected:
+            print(
+                f"跳过 {len(rejected)} 个无效域名输入: "
+                + ", ".join(sorted(set(rejected))[:20])
+            )
+        return valid
+
+    return load_validated
+
+
 def main():
     rechecks = latest_rechecks()
     resumed = []
@@ -51,6 +71,7 @@ def main():
     if resumed:
         print("复查后恢复常规监控:", ", ".join(sorted(resumed)))
 
+    pipeline.load_platforms = validated_platform_loader(pipeline.load_platforms)
     pipeline.main()
 
 
