@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: monitor-repo-writes-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   recheck-stopped:
     runs-on: ubuntu-latest
