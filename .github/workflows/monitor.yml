@@ -17,13 +17,11 @@ jobs:
         run: |
           pip install requests openpyxl
       - name: Step 1 - Check platform status (all discovered sites)
-        run: python scripts/pipeline.py
+        run: python scripts/monitor_runner.py
       - name: Step 2 - Generate summary
-        run: python scripts/summarize.py
-      # NOTE: screenshots are run LOCALLY (bash scripts/monitor_all.sh or
-      # python scripts/screenshot.py), not in CI — keeps the repo from bloating
-      # with PNGs on every scheduled run. Liveness stays on Actions (free on
-      # public repos).
+        run: python scripts/summarize_runner.py
+      # Screenshots run in the separate low-frequency screenshot workflow.
+      # That workflow captures only new or content-changed sites.
       - name: Commit and push results
         run: |
           git config user.name "github-actions[bot]"

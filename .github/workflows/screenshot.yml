@@ -2,8 +2,11 @@ name: Site Screenshots
 
 on:
   schedule:
-    - cron: '0 1,13 * * *'   # 每天 UTC 1:00 和 13:00，避开 monitor 的整点
+    - cron: '40 6 * * 0'   # Weekly, after Sunday's 06:00 full monitor round
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   screenshot:
@@ -26,7 +29,7 @@ jobs:
           playwright install chromium
           playwright install-deps chromium
 
-      - name: Run screenshot script
+      - name: Capture new or changed sites only
         run: python scripts/screenshot.py
 
       - name: Commit and push results

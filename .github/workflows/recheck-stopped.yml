@@ -1,0 +1,34 @@
+name: Recheck Stopped Services
+
+on:
+  schedule:
+    - cron: '20 4 * * 0'   # Sundays at 04:20 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  recheck-stopped:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Perform real rechecks
+        run: python scripts/recheck_stopped.py
+
+      - name: Commit and push results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add results/monitor_results.csv results/stopped_service_rechecks.csv
+          git diff --staged --quiet || (git commit -m "recheck stopped services: $(date -u '+%Y-%m-%d') UTC" && git pull --rebase origin main && git push)
