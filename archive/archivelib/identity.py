@@ -212,12 +212,27 @@ TERMINAL_CANDIDATE_STATUSES = frozenset(
 # Statuses that mean "we could not see the site", not "the site is gone".
 INCONCLUSIVE_STATUSES = frozenset({"CLOUDFLARE_OR_BLOCKED", "TIMEOUT"})
 
+# Documented monitor sentinels: literal strings written into the ``domain``
+# column of monitor_results.csv that are NOT real hosts. ``hvoy_removed`` marks
+# rows for services delisted from the hvoy ranking source. They are book-keeping,
+# not monitored services, so they are dropped at read time and never counted as
+# observed services or considered for capture. Historical rows are never edited;
+# this is a non-destructive read-time filter only.
+MONITOR_SENTINELS = frozenset({"hvoy_removed"})
 
-def load_monitor_history(repo: Path, *, limit_rows: int | None = None) -> list[MonitorObservation]:
+
+def is_monitor_sentinel(host: str) -> bool:
+    return (host or "").strip().lower() in MONITOR_SENTINELS
+
+
+def load_monitor_history(
+    repo: Path, *, limit_rows: int | None = None, include_sentinels: bool = False
+) -> list[MonitorObservation]:
     """Read monitor results in file order (oldest first).
 
     Read-only. ``limit_rows`` keeps only the most recent N rows for planning
-    runs that do not need the full multi-year history.
+    runs that do not need the full multi-year history. Documented sentinels
+    (see ``MONITOR_SENTINELS``) are excluded unless ``include_sentinels`` is set.
     """
     path = repo / MONITOR_RESULTS
     rows = _read_csv(path)
@@ -227,6 +242,8 @@ def load_monitor_history(repo: Path, *, limit_rows: int | None = None) -> list[M
     for row in rows:
         raw_domain = row.get("domain", "")
         if not raw_domain:
+            continue
+        if not include_sentinels and is_monitor_sentinel(raw_domain):
             continue
         try:
             host = normalize_host(raw_domain)

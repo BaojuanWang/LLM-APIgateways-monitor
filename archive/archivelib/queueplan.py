@@ -174,19 +174,31 @@ def plan_queue(
     max_sites: int | None = None,
     monthly_days: int | None = None,
     retry_failures: bool | None = None,
+    exclusions=None,
 ) -> dict:
-    """Produce a deterministic, bounded capture queue."""
+    """Produce a deterministic, bounded capture queue.
+
+    ``exclusions`` is an optional ``ExclusionSet``. Services marked ``excluded``
+    are removed from the candidate pool (and reported separately); services
+    marked ``questionable`` are left in the queue but annotated for human review.
+    """
     qcfg = cfg.get("queue", {})
     monthly_days = int(qcfg.get("monthly_days", 30) if monthly_days is None else monthly_days)
     cooldown_hours = float(qcfg.get("cooldown_hours", 24))
     max_sites = int(qcfg.get("max_sites", 10) if max_sites is None else max_sites)
     retry_failures = bool(qcfg.get("retry_failures", False) if retry_failures is None else retry_failures)
 
+    excluded_ids: set[str] = exclusions.excluded_service_ids() if exclusions is not None else set()
+    questionable_map = (
+        {e.service_id: e for e in exclusions.questionable} if exclusions is not None else {}
+    )
+
     now = parse_utc(now_utc or utc_now_iso())
     grouped = group_by_service(observations)
 
     candidates: list[QueueEntry] = []
     skipped: list[dict] = []
+    excluded_hits: list[dict] = []
 
     target_sid = only_service_id
     if only_domain and not target_sid:
@@ -257,6 +269,21 @@ def plan_queue(
         if reason is None:
             continue
 
+        # Non-destructive eligibility gate: a reviewed 'excluded' service would
+        # have been a candidate, but is held out of the queue and reported.
+        if sid in excluded_ids:
+            entry = exclusions.by_service_id().get(sid)
+            excluded_hits.append(
+                {
+                    "service_id": sid,
+                    "host": identity.host,
+                    "would_capture_reason": reason,
+                    "exclusion_reason": entry.reason if entry else "",
+                    "review_version": entry.review_version if entry else "",
+                }
+            )
+            continue
+
         candidates.append(
             QueueEntry(
                 service_id=sid,
@@ -274,6 +301,19 @@ def plan_queue(
     candidates.sort(key=lambda e: (e.priority, e.service_id))
     selected = candidates[:max_sites]
     deferred = candidates[max_sites:]
+
+    # Annotate (do not remove) selected entries that are flagged questionable.
+    selected_dicts = []
+    questionable_selected = []
+    for e in selected:
+        d = e.as_dict()
+        q = questionable_map.get(e.service_id)
+        if q is not None:
+            d["questionable"] = True
+            d["questionable_reason"] = q.reason
+            d["review_version"] = q.review_version
+            questionable_selected.append({"service_id": e.service_id, "host": e.host, "reason": q.reason})
+        selected_dicts.append(d)
 
     queue = {
         "schema": "archive_queue",
@@ -293,10 +333,20 @@ def plan_queue(
             "with_observations": len(grouped),
             "candidates": len(candidates),
             "selected": len(selected),
+            "questionable_selected": len(questionable_selected),
+            "excluded_candidates": len(excluded_hits),
             "deferred": len(deferred),
             "skipped_cooldown": len(skipped),
         },
-        "entries": [e.as_dict() for e in selected],
+        "exclusions": {
+            "applied": exclusions is not None,
+            "source": exclusions.source_path if exclusions is not None else None,
+            "excluded_total": len(excluded_ids),
+            "questionable_total": len(questionable_map),
+        },
+        "entries": selected_dicts,
+        "excluded": excluded_hits,
+        "questionable_selected": questionable_selected,
         "deferred": [{"service_id": e.service_id, "reason": e.reason, "priority": e.priority} for e in deferred[:100]],
         "skipped": skipped[:100],
     }

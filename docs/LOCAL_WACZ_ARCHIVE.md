@@ -869,7 +869,7 @@ not touch Git; publishing stays a manual, reviewed step.
 python3 -m pytest archive/tests/ -q
 ```
 
-309 tests, no network access, no dependency on any live third-party site. They
+321 tests, no network access, no dependency on any live third-party site. They
 run against a synthetic fixture site served from `archive/tests/fixtures/site/`
 and a scratch `ARCHIVE_ROOT` gated by an explicit test-only opt-in.
 
@@ -914,6 +914,47 @@ selects dying services. Before this bound, a silently-hanging host cost ~13
 sequential probes each waiting the full timeout (~90 s+); now it costs one
 homepage timeout. It is purely an efficiency and politeness change — a dead
 host still produces a complete, manifested, retained `failed_no_wacz` capture.
+
+---
+
+## Capture eligibility (exclusions register)
+
+The discovery inventory contains false positives — GitHub-codesearch matches an
+upstream provider, an unrelated platform, a blog, or payment infrastructure that
+merely mentions the one-api framework. Rather than edit the authoritative
+inventories or the historical monitor results, eligibility decisions live in a
+**non-destructive, versioned register**:
+
+```
+data/archive_config/capture_exclusions.csv
+  domain, status, reason, evidence, reviewed_at, review_version
+```
+
+- `status = excluded` — a *confirmed* false positive. The planner holds it out
+  of the queue and reports it under `excluded`.
+- `status = questionable` — an uncertain case. The planner keeps it selectable
+  but flags it (`⚑QUESTIONABLE`) so a human decides before capture.
+
+The planner auto-loads the register when present; `--exclusions-file <path>`
+points at another one and `--no-exclusions` ignores it. Two principles govern
+what gets excluded:
+
+1. **Eligibility is a judgment about the entity, not the fingerprint.** A
+   discovery endpoint signal (running one-api, answering `/v1/models`) is not
+   proof of study eligibility — an upstream provider answers `/v1/models` too
+   (`tokenhub.tencentcloudmaas.com` is a Tencent Cloud MaaS endpoint, still
+   out of scope). So a fingerprint never justifies *inclusion*, and only clearly
+   confirmed non-relays are `excluded`.
+2. **Aggregators are in scope by role.** The study defines `aggregator` as a
+   `site_role`, so global independent aggregators (e.g. `openrouter.com`) are
+   marked `questionable`, never auto-excluded.
+
+### Monitor sentinels
+
+`monitor_results.csv` contains the literal sentinel `hvoy_removed` in its
+`domain` column to mark hvoy-delisted services. It is not a real host, so it is
+dropped at **read time** (`MONITOR_SENTINELS`) and never counted as an observed
+service or considered for capture. The CSV rows are never edited.
 
 ---
 

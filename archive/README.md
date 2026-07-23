@@ -56,7 +56,7 @@ archive/
   config/         archive.example.toml, browsertrix.template.yaml
   schemas/        JSON Schemas for site / capture / tombstone / public index
   scripts/        the CLI entry points listed above
-  tests/          309 tests + a synthetic fixture site + a Docker smoke test
+  tests/          321 tests + a synthetic fixture site + a Docker smoke test
   launchd/        plist template (rendered on request; never auto-installed)
 ```
 

@@ -5,8 +5,14 @@ Reads the monitor's results and the *sanitized public* capture history, so
 ``--dry-run`` works with the external disk unplugged. Never queues the whole
 inventory: output is bounded by ``--max-sites`` and ordered deterministically.
 
+A reviewed eligibility register (data/archive_config/capture_exclusions.csv) is
+applied when present: ``excluded`` services are held out of the queue and
+reported; ``questionable`` services stay in the queue but are flagged.
+
     python3 archive/scripts/plan_archive_queue.py --dry-run
     python3 archive/scripts/plan_archive_queue.py --dry-run --max-sites 5
+    python3 archive/scripts/plan_archive_queue.py --dry-run --exclusions-file <path>
+    python3 archive/scripts/plan_archive_queue.py --dry-run --no-exclusions
     python3 archive/scripts/plan_archive_queue.py --service-id foo_1a2b3c4d --reason manual
     python3 archive/scripts/plan_archive_queue.py --monthly-days 45 --retry-failures
 """
@@ -24,6 +30,7 @@ from _cli import add_common_args, emit, get_archive_root, get_config, get_repo, 
 
 from archivelib.canonical import write_json  # noqa: E402
 from archivelib.envmeta import utc_now_compact  # noqa: E402
+from archivelib.exclusions import load_exclusions_or_default  # noqa: E402
 from archivelib.identity import load_inventory, load_monitor_history  # noqa: E402
 from archivelib.locks import file_lock  # noqa: E402
 from archivelib.queueplan import load_capture_history, plan_queue  # noqa: E402
@@ -40,6 +47,16 @@ def main() -> int:
     parser.add_argument("--monthly-days", type=int, default=None, help="periodic re-capture interval in days")
     parser.add_argument("--retry-failures", action="store_true", help="also queue services whose last capture failed")
     parser.add_argument("--history-rows", type=int, default=60000, help="most recent monitor rows to consider")
+    parser.add_argument(
+        "--exclusions-file",
+        type=Path,
+        default=None,
+        help="reviewed capture-eligibility register (CSV). Defaults to "
+        "data/archive_config/capture_exclusions.csv when present.",
+    )
+    parser.add_argument(
+        "--no-exclusions", action="store_true", help="ignore the exclusions register entirely"
+    )
     args = parser.parse_args()
 
     repo = get_repo()
@@ -48,6 +65,7 @@ def main() -> int:
     inventory = load_inventory(repo)
     observations = load_monitor_history(repo, limit_rows=args.history_rows)
     history = load_capture_history(repo)
+    exclusions = load_exclusions_or_default(repo, args.exclusions_file, enabled=not args.no_exclusions)
 
     queue = plan_queue(
         inventory=inventory,
@@ -60,6 +78,7 @@ def main() -> int:
         max_sites=args.max_sites,
         monthly_days=args.monthly_days,
         retry_failures=True if args.retry_failures else None,
+        exclusions=exclusions,
     )
 
     written_to = None
@@ -79,16 +98,31 @@ def main() -> int:
         emit(queue, as_json=True)
     else:
         counts = queue["counts"]
+        excl = queue["exclusions"]
         print(f"planned at {queue['generated_at_utc']}  (queue_hash={queue['queue_hash']})")
         print(
             f"  inventory={counts['inventory']}  observed={counts['with_observations']}  "
             f"candidates={counts['candidates']}  selected={counts['selected']}  "
             f"deferred={counts['deferred']}  skipped_cooldown={counts['skipped_cooldown']}"
         )
+        if excl["applied"]:
+            print(
+                f"  exclusions: register={excl['source']}  "
+                f"excluded_from_queue={counts['excluded_candidates']}  "
+                f"questionable_in_queue={counts['questionable_selected']} "
+                f"(of {excl['excluded_total']} excluded / {excl['questionable_total']} questionable on file)"
+            )
+        else:
+            print("  exclusions: none applied")
         for entry in queue["entries"]:
-            print(f"  [{entry['priority']:>3}] {entry['reason']:<22} {entry['host']}")
+            flag = "  ⚑QUESTIONABLE" if entry.get("questionable") else ""
+            print(f"  [{entry['priority']:>3}] {entry['reason']:<22} {entry['host']}{flag}")
             if entry["detail"]:
                 print(f"        {entry['detail']}")
+        if queue["excluded"]:
+            print("  excluded from queue (reviewed false positives):")
+            for e in queue["excluded"]:
+                print(f"    - {e['host']}  ({e['exclusion_reason']})")
         if not queue["entries"]:
             print("  nothing to capture")
         print(f"  written to: $ARCHIVE_ROOT/{written_to}" if written_to else "  dry run — nothing written")
