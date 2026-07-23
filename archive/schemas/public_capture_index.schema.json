@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/BaojuanWang/LLM-APIgateways-monitor/archive/schemas/public_capture_index.schema.json",
+  "title": "Public capture index row",
+  "description": "One row of data/archive_public/captures.csv — the ONLY archive data committed to this public repository. It is sanitized metadata about a capture, never the capture itself. Raw material (WACZ/WARC, HTML, headers, cookies, storage values, screenshots, SingleFile output) lives exclusively on the external corpus volume.",
+  "type": "object",
+  "required": [
+    "service_id",
+    "domain",
+    "capture_id",
+    "capture_started_utc",
+    "capture_reason",
+    "status",
+    "validation_status",
+    "corpus_relpath"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "service_id": { "type": "string" },
+    "domain": { "type": "string", "description": "Observed host. Already public in the monitor inventories." },
+    "capture_id": { "type": "string" },
+    "capture_started_utc": { "type": "string" },
+    "capture_ended_utc": { "type": "string" },
+    "capture_reason": { "type": "string" },
+    "status": { "type": "string" },
+    "site_condition": { "type": "string" },
+    "seed_count": { "type": ["string", "integer"] },
+    "page_count": { "type": ["string", "integer"] },
+    "wacz_bytes": { "type": ["string", "integer"] },
+    "wacz_sha256": { "type": "string" },
+    "capture_directory_digest": { "type": "string" },
+    "browsertrix_version": { "type": "string" },
+    "browsertrix_image_digest": { "type": "string" },
+    "singlefile_version": { "type": "string" },
+    "effective_config_hash": { "type": "string" },
+    "code_commit_sha": { "type": "string" },
+    "source_monitor_timestamp": { "type": "string" },
+    "source_monitor_status": { "type": "string" },
+    "source_final_url": {
+      "type": "string",
+      "description": "Query string is stripped: gateway redirects routinely carry invite and referral parameters."
+    },
+    "source_page_title": { "type": "string" },
+    "source_homepage_html_hash": { "type": "string" },
+    "validation_status": { "type": "string", "enum": ["valid", "valid_with_warnings", "invalid", ""] },
+    "validation_errors": { "type": "string" },
+    "tombstone_status": { "type": "string" },
+    "corpus_relpath": {
+      "type": "string",
+      "pattern": "^(?!/)(?!.*\\.\\.).*$",
+      "description": "Identifier relative to $ARCHIVE_ROOT. MUST NOT be an absolute path and MUST NOT traverse upward."
+    }
+  },
+  "$comment": "Fields explicitly forbidden here: WACZ/WARC bytes, HTML or response bodies, full headers, cookies or Set-Cookie, browser storage values, Authorization values, API keys or tokens, raw redirect query parameters, personal filesystem paths, SingleFile HTML, screenshots, unsanitized Browsertrix logs. additionalProperties is false so a new field cannot appear by accident."
+}

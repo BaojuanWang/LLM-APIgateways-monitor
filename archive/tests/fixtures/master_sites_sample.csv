@@ -1,0 +1,9 @@
+domain,origin,discovery_methods,verdict,framework,platform_name,verified_site_name,api_status_hit,html_framework_hit,content_hits,signal_tier,v1models_hit,last_round
+alpha.example.test,round1,synthetic,confirmed,fixture,Alpha,Alpha,True,True,3,A_api_status,True,1
+beta.example.test,round1,synthetic,confirmed,fixture,Beta,Beta,True,True,2,A_api_status,False,1
+gamma.example.test,round1,synthetic,confirmed,fixture,Gamma,Gamma,False,True,1,B_html,False,1
+delta.example.test,round1,synthetic,confirmed,fixture,Delta,Delta,True,True,2,A_api_status,True,1
+epsilon.example.test,round1,synthetic,confirmed,fixture,Epsilon,Epsilon,True,True,4,A_api_status,True,1
+zeta.example.test,round1,synthetic,confirmed,fixture,Zeta,Zeta,False,False,1,C_weak,False,1
+a-b.example.test,round1,synthetic,confirmed,fixture,CollisionA,CollisionA,False,False,1,C_weak,False,1
+a.b.example.test,round1,synthetic,confirmed,fixture,CollisionB,CollisionB,False,False,1,C_weak,False,1

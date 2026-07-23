@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/BaojuanWang/LLM-APIgateways-monitor/archive/schemas/site.schema.json",
+  "title": "Archived service identity",
+  "description": "Identity record for one archived service. Written once per service into $ARCHIVE_ROOT/corpus/<service_id>/site.json. Identity is host-level: distinct hosts are distinct services and are never merged by eTLD+1.",
+  "type": "object",
+  "required": ["service_id", "host", "canonical_url", "identity_policy", "inventory"],
+  "additionalProperties": true,
+  "properties": {
+    "schema": { "type": "string" },
+    "service_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*_[0-9a-f]{8}$",
+      "description": "Stable directory-safe id: sanitized host plus 8 hex chars of sha256(host). The hash disambiguates hosts that sanitize to the same slug."
+    },
+    "host": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Normalized lowercase hostname (punycode for IDNs). No scheme, port, path, or userinfo."
+    },
+    "canonical_url": { "type": "string", "format": "uri" },
+    "platform_name": { "type": "string" },
+    "source": {
+      "type": "string",
+      "description": "Which monitor inventory this service came from (hvoy | manual | discovery | ...)."
+    },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "identity_policy": {
+      "type": "string",
+      "const": "host-level; no eTLD+1 merging"
+    },
+    "inventory": {
+      "type": "object",
+      "required": ["file", "file_sha256", "row_sha256"],
+      "properties": {
+        "file": { "type": "string", "description": "Repository-relative inventory path." },
+        "file_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "row": { "type": "object", "description": "The exact inventory row as read." },
+        "row_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "first_seen_utc": { "type": ["string", "null"] },
+    "last_seen_utc": { "type": ["string", "null"] }
+  }
+}

@@ -1,0 +1,25 @@
+timestamp,domain,platform_name,source,online_status,http_status,final_url,page_title,html_hash,redirect_chain,error
+2026-05-01T00:00:00Z,alpha.example.test,Alpha,hvoy,ONLINE,200,https://alpha.example.test/,Alpha Gateway,aaaa1111,https://alpha.example.test/,
+2026-05-08T00:00:00Z,alpha.example.test,Alpha,hvoy,ONLINE,200,https://alpha.example.test/,Alpha Gateway,aaaa1111,https://alpha.example.test/,
+2026-05-15T00:00:00Z,alpha.example.test,Alpha,hvoy,ONLINE,200,https://alpha.example.test/,Alpha Gateway v2,bbbb2222,https://alpha.example.test/,
+2026-05-01T00:00:00Z,beta.example.test,Beta,hvoy,ONLINE,200,https://beta.example.test/,Beta Gateway,cccc3333,https://beta.example.test/,
+2026-05-08T00:00:00Z,beta.example.test,Beta,hvoy,TIMEOUT,,,,,,Read timed out
+2026-05-10T00:00:00Z,beta.example.test,Beta,hvoy,DNS_FAIL,,,,,,nodename nor servname provided
+2026-05-12T00:00:00Z,beta.example.test,Beta,hvoy,DNS_FAIL,,,,,,nodename nor servname provided
+2026-05-14T00:00:00Z,beta.example.test,Beta,hvoy,DNS_FAIL,,,,,,nodename nor servname provided
+2026-05-16T00:00:00Z,beta.example.test,Beta,hvoy,DNS_FAIL,,,,,,nodename nor servname provided
+2026-05-01T00:00:00Z,gamma.example.test,Gamma,hvoy,ONLINE,200,https://gamma.example.test/,Gamma,dddd4444,https://gamma.example.test/,
+2026-05-08T00:00:00Z,gamma.example.test,Gamma,hvoy,TIMEOUT,,,,,,Read timed out
+2026-05-01T00:00:00Z,delta.example.test,Delta,hvoy,ONLINE,200,https://delta.example.test/,Delta,eeee5555,https://delta.example.test/,
+2026-05-08T00:00:00Z,delta.example.test,Delta,hvoy,DNS_FAIL,,,,,,nodename nor servname provided
+2026-05-15T00:00:00Z,delta.example.test,Delta,hvoy,ONLINE,200,https://delta.example.test/,Delta,eeee5555,https://delta.example.test/,
+2026-05-01T00:00:00Z,epsilon.example.test,Epsilon,hvoy,ONLINE,200,https://epsilon.example.test/,Epsilon,ffff6666,https://epsilon.example.test/,
+2026-05-08T00:00:00Z,epsilon.example.test,Epsilon,hvoy,CLOUDFLARE_OR_BLOCKED,403,https://epsilon.example.test/,Just a moment...,9999aaaa,https://epsilon.example.test/,
+2026-05-10T00:00:00Z,epsilon.example.test,Epsilon,hvoy,CLOUDFLARE_OR_BLOCKED,403,https://epsilon.example.test/,Just a moment...,9999aaaa,https://epsilon.example.test/,
+2026-05-12T00:00:00Z,epsilon.example.test,Epsilon,hvoy,CLOUDFLARE_OR_BLOCKED,403,https://epsilon.example.test/,Just a moment...,9999aaaa,https://epsilon.example.test/,
+2026-05-14T00:00:00Z,epsilon.example.test,Epsilon,hvoy,CLOUDFLARE_OR_BLOCKED,403,https://epsilon.example.test/,Just a moment...,9999aaaa,https://epsilon.example.test/,
+2026-05-16T00:00:00Z,epsilon.example.test,Epsilon,hvoy,CLOUDFLARE_OR_BLOCKED,403,https://epsilon.example.test/,Just a moment...,9999aaaa,https://epsilon.example.test/,
+2026-05-01T00:00:00Z,zeta.example.test,Zeta,hvoy,ONLINE,200,https://zeta.example.test/,Zeta,1111bbbb,https://zeta.example.test/,
+2026-05-08T00:00:00Z,zeta.example.test,Zeta,hvoy,REDIRECTED,301,https://unrelated-parking.example.org/,Domain for sale,2222cccc,https://zeta.example.test/ -> https://unrelated-parking.example.org/,
+2026-05-10T00:00:00Z,zeta.example.test,Zeta,hvoy,REDIRECTED,301,https://unrelated-parking.example.org/,Domain for sale,2222cccc,https://zeta.example.test/ -> https://unrelated-parking.example.org/,
+2026-05-14T00:00:00Z,zeta.example.test,Zeta,hvoy,REDIRECTED,301,https://unrelated-parking.example.org/,Domain for sale,2222cccc,https://zeta.example.test/ -> https://unrelated-parking.example.org/,
