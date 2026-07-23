@@ -584,6 +584,22 @@ Two deliberate exceptions, both before or outside the seal:
    excluded from the manifest and a re-run writes a timestamped sibling rather
    than replacing the original.
 
+### macOS metadata is allowlisted, nothing else
+
+macOS injects `.DS_Store` (Finder) and `._*` (AppleDouble) sidecar files into any
+directory it browses, copies, or indexes. These are **not** archived content, so
+they are ignored — by exact basename only — when generating manifests, computing
+the directory digest, checking for post-manifest additions, and validating.
+
+This allowlist is deliberately narrow and is **not** a "hidden file" rule:
+`.env`, `.secret`, a hidden `.json`, a hidden `.html`, and any other unexpected
+file are still fully manifested, and adding, modifying, or removing any of them
+still fails validation. A `.DS_Store` sitting next to a smuggled `.env` does not
+hide the `.env`. Storage initialization also drops a best-effort
+`$ARCHIVE_ROOT/.metadata_never_index` marker to discourage Spotlight from
+indexing the corpus, but integrity does **not** depend on it — the allowlist is
+the fix.
+
 ---
 
 ## Retention policy
@@ -853,7 +869,7 @@ not touch Git; publishing stays a manual, reviewed step.
 python3 -m pytest archive/tests/ -q
 ```
 
-249 tests, no network access, no dependency on any live third-party site. They
+309 tests, no network access, no dependency on any live third-party site. They
 run against a synthetic fixture site served from `archive/tests/fixtures/site/`
 and a scratch `ARCHIVE_ROOT` gated by an explicit test-only opt-in.
 
@@ -876,6 +892,28 @@ variable `ARCHIVE_TEST_ONLY_ALLOW_NONEXTERNAL=1` *and* the
 `--test-only-allow-nonexternal` flag. A stray flag alone cannot redirect real
 captures off the external disk, and neither signal permits a root inside the Git
 repository.
+
+---
+
+## Seed discovery on unreachable hosts
+
+Discovery always fetches the **canonical homepage first**, with a per-request
+timeout set by `seeds.request_timeout_seconds` (default **10 s**). What happens
+next depends on whether the homepage answered:
+
+- **Network-layer failure** — DNS failure, connection timeout, connection
+  refused, TLS handshake failure, network unreachable, or a read timeout with no
+  HTTP response — the host is unreachable, so the homepage is retained as the
+  **sole seed** and no known-path or API probing happens. `capture.json` records
+  `seed_discovery.probing_skipped` and the `probing_skipped_reason`.
+- **Any HTTP response** — including 404, 502, 503, 520, challenge pages, and
+  redirects — the server is answering, so bounded discovery proceeds as normal.
+
+This matters because the queue's highest-priority trigger (`tombstone_evidence`)
+selects dying services. Before this bound, a silently-hanging host cost ~13
+sequential probes each waiting the full timeout (~90 s+); now it costs one
+homepage timeout. It is purely an efficiency and politeness change — a dead
+host still produces a complete, manifested, retained `failed_no_wacz` capture.
 
 ---
 

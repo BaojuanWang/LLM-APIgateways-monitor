@@ -32,7 +32,7 @@ from .docker_tools import ImagePin, build_browsertrix_config, run_browsertrix
 from .envmeta import base_environment, free_bytes, utc_now_compact, utc_now_iso
 from .errors import CaptureError
 from .manifest import generate_manifest
-from .paths import ArchiveRootInfo, create_capture_dir, relative_corpus_path
+from .paths import ArchiveRootInfo, create_capture_dir, ensure_metadata_never_index, relative_corpus_path
 from .render import render_pages, run_singlefile, singlefile_available
 from .sanitize import normalize_local_path
 from .seeds import SeedPlan, discovery_evidence_record
@@ -169,6 +169,8 @@ def run_capture(
         )
 
     # --- 1. fail-closed directory creation -----------------------------
+    # Best-effort Spotlight-exclusion marker at the archive root (never fatal).
+    ensure_metadata_never_index(root.path)
     capture_dir = create_capture_dir(root, identity.service_id, capture_id)
     outcome = CaptureOutcome(capture_id=capture_id, service_id=identity.service_id, capture_dir=capture_dir)
 
@@ -328,6 +330,12 @@ def run_capture(
         "seed_count": len(seeds),
         "seeds": [s.as_dict() for s in plan.seeds],
         "missing_page_types": plan.missing_page_types,
+        "seed_discovery": {
+            "homepage_reachable": plan.homepage_reachable,
+            "probing_skipped": plan.probing_skipped,
+            "probing_skipped_reason": plan.probing_skipped_reason,
+            "request_timeout_seconds": plan.request_timeout_seconds,
+        },
         "page_count": len(page_results),
         "collection": collection,
         "collection_relpath": (

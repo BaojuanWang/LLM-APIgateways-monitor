@@ -241,3 +241,90 @@ def test_manifest_generation_refuses_escaping_symlink(archive_root, tmp_path):
     (capture / "raw" / "escape.txt").symlink_to(outside)
     with pytest.raises(ManifestError, match="symlink"):
         generate_manifest(capture, capture_id="cid", service_id="svc_22222222")
+
+
+# --- macOS metadata allowlist (Fix 2) ---------------------------------------
+
+from archivelib.paths import is_macos_metadata  # noqa: E402
+
+
+@pytest.mark.parametrize(
+    "name,ignored",
+    [
+        (".DS_Store", True),
+        ("._index.html", True),
+        ("._", False),            # bare "._" is not an AppleDouble sidecar
+        (".env", False),
+        (".secret", False),
+        (".hidden.json", False),
+        (".config", False),
+        ("index.html", False),
+        ("raw/rendered/.DS_Store", True),
+        ("raw/._final_dom.html", True),
+    ],
+)
+def test_is_macos_metadata_is_narrow(name, ignored):
+    assert is_macos_metadata(name) is ignored
+
+
+def test_ds_store_does_not_invalidate(capture_dir):
+    generate_manifest(capture_dir, capture_id="cid", service_id="svc_00000000")
+    (capture_dir / ".DS_Store").write_bytes(b"\x00\x00\x01Bud1")
+    (capture_dir / "raw" / "rendered" / ".DS_Store").write_bytes(b"\x00\x00\x01Bud1")
+    report = verify_manifest(capture_dir)
+    assert report["ok"], report
+    assert report["added_files"] == []
+    assert report["digest_matches"]
+
+
+def test_appledouble_does_not_invalidate(capture_dir):
+    generate_manifest(capture_dir, capture_id="cid", service_id="svc_00000000")
+    (capture_dir / "._capture.json").write_bytes(b"\x00\x05\x16\x07AppleDouble")
+    (capture_dir / "raw" / "._final_dom.html").write_bytes(b"\x00\x05\x16\x07")
+    report = verify_manifest(capture_dir)
+    assert report["ok"], report
+    assert report["added_files"] == []
+
+
+def test_ds_store_is_not_manifested(archive_root):
+    """A .DS_Store present at seal time is not recorded in the manifest."""
+    from archivelib.paths import create_capture_dir
+
+    cap = create_capture_dir(archive_root, "svc_dddddddd", "20260101T000000Z_svc_dddddddd_abcdef123456")
+    _populate(cap)
+    (cap / ".DS_Store").write_bytes(b"\x00\x00\x01Bud1")
+    manifest = generate_manifest(cap, capture_id="cid", service_id="svc_dddddddd")
+    assert not any(e["path"].endswith(".DS_Store") for e in manifest["files"])
+    assert verify_manifest(cap)["ok"]
+
+
+@pytest.mark.parametrize("evil", [".env", ".secret", ".hidden.html", ".data.json", "stray.bin", "raw/rendered/late.txt"])
+def test_arbitrary_hidden_and_normal_files_still_invalidate(capture_dir, evil):
+    generate_manifest(capture_dir, capture_id="cid", service_id="svc_00000000")
+    target = capture_dir / evil
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text("unmanifested", encoding="utf-8")
+    report = verify_manifest(capture_dir)
+    assert not report["ok"], f"{evil} must be detected as an unmanifested addition"
+    assert evil in report["added_files"]
+
+
+def test_macos_metadata_does_not_mask_a_real_addition(capture_dir):
+    """A .DS_Store is ignored, but a sibling .env in the same dir is still caught."""
+    generate_manifest(capture_dir, capture_id="cid", service_id="svc_00000000")
+    (capture_dir / ".DS_Store").write_bytes(b"\x00\x00\x01Bud1")
+    (capture_dir / ".env").write_text("SECRET=1", encoding="utf-8")
+    report = verify_manifest(capture_dir)
+    assert not report["ok"]
+    assert ".env" in report["added_files"]
+    assert ".DS_Store" not in report["added_files"]
+
+
+def test_modified_and_missing_still_detected_with_ds_store_present(capture_dir):
+    generate_manifest(capture_dir, capture_id="cid", service_id="svc_00000000")
+    (capture_dir / ".DS_Store").write_bytes(b"\x00\x00\x01Bud1")
+    # modify a real file
+    (capture_dir / "config" / "seeds.txt").write_text("http://changed/\n", encoding="utf-8")
+    report = verify_manifest(capture_dir)
+    assert not report["ok"]
+    assert any(m["path"] == "config/seeds.txt" for m in report["hash_mismatches"])

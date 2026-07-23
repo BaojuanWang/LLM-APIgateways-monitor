@@ -21,10 +21,52 @@ from urllib.parse import urljoin, urlsplit
 
 import requests
 import urllib3
+from requests import exceptions as _rex
 
 from .envmeta import utc_now_iso
 from .identity import normalize_host
 from .sanitize import redact_url
+
+
+def network_failure_reason(exc: BaseException) -> str | None:
+    """Classify a homepage-fetch exception as a network-layer failure, or None.
+
+    Returns a short reason string when the host could not be reached at the
+    network layer — DNS resolution failure, connection timeout, connection
+    refused, TLS handshake failure, network unreachable, or a read timeout with
+    no HTTP response. Returns ``None`` for anything meaning the server actually
+    answered (any HTTP status, including 4xx/5xx/challenge/redirect) or for a
+    client-side error, so bounded path discovery still proceeds.
+
+    Ordering matters: ``ConnectTimeout`` subclasses both ``ConnectionError`` and
+    ``Timeout``, and ``SSLError``/``ReadTimeout`` are also subclasses, so the
+    most specific types are tested first.
+    """
+    if isinstance(exc, _rex.ConnectTimeout):
+        return "connection_timeout"
+    if isinstance(exc, _rex.ReadTimeout):
+        return "read_timeout_no_response"
+    if isinstance(exc, _rex.SSLError):
+        return "tls_failure"
+    if isinstance(exc, _rex.ConnectionError):
+        text = str(exc).lower()
+        if any(k in text for k in ("name or service not known", "nodename nor servname",
+                                   "getaddrinfo", "name resolution", "temporary failure in name resolution",
+                                   "no address associated")):
+            return "dns_failure"
+        if "refused" in text:
+            return "connection_refused"
+        if "unreachable" in text:
+            return "network_unreachable"
+        # DNS failures on some platforms surface as a bare ConnectionError; any
+        # ConnectionError still means we never got an HTTP response, so it is a
+        # network-layer failure that should stop further probing.
+        return "connection_error"
+    if isinstance(exc, _rex.Timeout):
+        return "timeout"
+    # TooManyRedirects (server answered with redirects), InvalidURL, MissingSchema,
+    # etc. are not network-layer failures — probing continues.
+    return None
 
 # Page types the project cares about, in capture priority order. Homepage is
 # always seed #1; the rest fill remaining slots in this order.
@@ -132,6 +174,10 @@ class SeedPlan:
     probed: list[dict] = field(default_factory=list)
     errors: list[str] = field(default_factory=list)
     discovered_at_utc: str = ""
+    homepage_reachable: bool = True
+    probing_skipped: bool = False
+    probing_skipped_reason: str = ""
+    request_timeout_seconds: int = 0
 
     @property
     def seed_urls(self) -> list[str]:
@@ -148,6 +194,10 @@ class SeedPlan:
             "missing_page_types": sorted(self.missing_page_types),
             "probe_results": self.probed,
             "errors": self.errors,
+            "homepage_reachable": self.homepage_reachable,
+            "probing_skipped": self.probing_skipped,
+            "probing_skipped_reason": self.probing_skipped_reason,
+            "request_timeout_seconds": self.request_timeout_seconds,
         }
 
 
@@ -249,7 +299,8 @@ def discover_seeds(
     """
     seed_cfg = cfg.get("seeds", {})
     max_seeds = int(cfg.get("capture", {}).get("max_seeds", 8))
-    timeout = int(seed_cfg.get("link_discovery_timeout_seconds", 30))
+    # New primary knob (default 10s); fall back to the legacy key for compat.
+    timeout = int(seed_cfg.get("request_timeout_seconds", seed_cfg.get("link_discovery_timeout_seconds", 10)))
     max_links = int(seed_cfg.get("max_link_candidates", 200))
 
     plan = SeedPlan(
@@ -257,6 +308,7 @@ def discover_seeds(
         host=host,
         canonical_url=canonical_url,
         discovered_at_utc=utc_now_iso(),
+        request_timeout_seconds=timeout,
     )
 
     owns_session = session is None
@@ -284,6 +336,24 @@ def discover_seeds(
         except requests.RequestException as exc:
             plan.errors.append(f"homepage fetch failed: {type(exc).__name__}")
             plan.seeds[0].present = False
+            reason = network_failure_reason(exc)
+            if reason is not None:
+                # The host is unreachable at the network layer. Probing a dozen
+                # more known paths would each burn the full timeout and learn
+                # nothing — the host is simply down. Retain the homepage as the
+                # sole seed (its failure is itself the evidence) and stop.
+                plan.homepage_reachable = False
+                plan.probing_skipped = True
+                plan.probing_skipped_reason = reason
+                plan.errors.append(
+                    f"skipped known-path and API probing: homepage unreachable ({reason}); "
+                    f"no HTTP response within {timeout}s"
+                )
+
+        # If the homepage never returned an HTTP response, do not probe further.
+        # Any HTTP response (including 4xx/5xx/challenge/redirect) leaves
+        # probe_here True so bounded discovery proceeds exactly as before.
+        probe_here = probe_known_paths and not plan.probing_skipped
 
         by_type: dict[str, SeedCandidate] = {"homepage": plan.seeds[0]}
 
@@ -300,7 +370,7 @@ def discover_seeds(
             )
 
         # --- source 2: the short explicit known-path list ---------------
-        if probe_known_paths:
+        if probe_here:
             for path in seed_cfg.get("known_paths", []):
                 page_type = classify_url(urljoin(canonical_url, path))
                 if not page_type or page_type in by_type:
@@ -321,7 +391,7 @@ def discover_seeds(
 
         # --- source 3: public unauthenticated API paths -----------------
         api_seeds: list[SeedCandidate] = []
-        if seed_cfg.get("include_api_paths", True) and probe_known_paths:
+        if seed_cfg.get("include_api_paths", True) and probe_here:
             for path in seed_cfg.get("api_paths", []):
                 if len(api_seeds) >= MAX_API_SEEDS:
                     break

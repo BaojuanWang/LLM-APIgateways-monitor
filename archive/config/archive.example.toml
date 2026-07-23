@@ -78,7 +78,15 @@ known_paths = [
 api_paths = ["/api/status", "/api/pricing", "/v1/models", "/api/models"]
 include_api_paths = true            # public unauthenticated endpoints only
 max_link_candidates = 200
-link_discovery_timeout_seconds = 30
+# Per-request timeout for every seed-discovery HTTP call. The homepage is tried
+# first; if it fails at the network layer (DNS failure, connection timeout,
+# connection refused, TLS failure, network unreachable, or a read timeout with
+# no HTTP response) the host is treated as unreachable and NO further known-path
+# or API probing happens — the homepage stays the sole seed and the reason is
+# recorded in capture.json. Any HTTP response (incl. 404/502/503/520/redirects)
+# lets bounded discovery proceed as normal.
+request_timeout_seconds = 10
+link_discovery_timeout_seconds = 30 # legacy fallback if request_timeout_seconds is unset
 
 [queue]
 monthly_days = 30                   # re-capture interval when nothing else fires

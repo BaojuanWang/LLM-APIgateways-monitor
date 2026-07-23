@@ -441,14 +441,67 @@ def relative_corpus_path(root: ArchiveRootInfo, path: Path) -> str:
     return str(resolved.relative_to(root_resolved))
 
 
+# Explicitly allowlisted, non-evidential macOS metadata that Finder and
+# AppleDouble-aware tools drop into any directory that gets browsed or copied.
+# These are the ONLY files ignored for integrity purposes. The match is by exact
+# basename — never by extension, and never a blanket "hidden file" rule — so
+# .env, .secret, or any hidden HTML/JSON is still fully manifested and detected.
+MACOS_METADATA_BASENAMES = frozenset({".DS_Store"})
+METADATA_NEVER_INDEX = ".metadata_never_index"
+
+
+def is_macos_metadata(name: str) -> bool:
+    """True only for allowlisted macOS sidecar metadata (``.DS_Store``, ``._*``).
+
+    Accepts either a bare basename or a relative path; only the final component
+    is examined.
+    """
+    base = str(name).replace("\\", "/").rsplit("/", 1)[-1]
+    if base in MACOS_METADATA_BASENAMES:
+        return True
+    # AppleDouble resource forks: "._" followed by the original filename.
+    return base.startswith("._") and len(base) > 2
+
+
 def iter_capture_files(capture_root: Path) -> list[Path]:
-    """Deterministically ordered list of regular files under a capture dir."""
+    """Deterministically ordered list of regular files under a capture dir.
+
+    Allowlisted macOS metadata (``.DS_Store``, ``._*``) is skipped so that Finder
+    or Spotlight touching a sealed capture cannot flip it to invalid. Every other
+    file — including arbitrary hidden files such as ``.env`` — is returned, so
+    added/missing/modified detection stays intact.
+    """
     found: list[Path] = []
     for dirpath, dirnames, filenames in os.walk(capture_root, followlinks=False):
         dirnames.sort()
         for name in sorted(filenames):
+            if is_macos_metadata(name):
+                continue
             entry = Path(dirpath) / name
             if entry.is_symlink() or not entry.is_file():
                 continue
             found.append(entry)
     return sorted(found, key=lambda p: str(p.relative_to(capture_root)))
+
+
+def ensure_metadata_never_index(root_path: Path) -> Path | None:
+    """Best-effort: drop a ``.metadata_never_index`` marker at the archive root.
+
+    macOS honours this file by excluding the tree from Spotlight, which reduces
+    (but does not eliminate) ``.DS_Store`` injection. This is a convenience only;
+    the real integrity fix is the allowlist above, so any failure here is
+    swallowed and never blocks a capture.
+    """
+    try:
+        root_path = Path(root_path)
+        marker = root_path / METADATA_NEVER_INDEX
+        if not marker.exists():
+            root_path.mkdir(parents=True, exist_ok=True)
+            marker.write_text(
+                "Spotlight-exclusion marker created by the LLM-APIgateways archive "
+                "subsystem. Integrity does not depend on this file.\n",
+                encoding="utf-8",
+            )
+        return marker
+    except OSError:
+        return None

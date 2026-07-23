@@ -271,3 +271,38 @@ def test_retained_browser_profile_is_detected(archive_root):
 def test_clean_capture_has_no_browser_profile(good_capture):
     report = validate_capture(good_capture, write_report=False)
     assert "no_browser_profile_retained" not in report["failed_checks"]
+
+
+# --- macOS metadata does not invalidate; other additions still do (Fix 2) ---
+
+
+def test_ds_store_does_not_invalidate_a_sealed_capture(good_capture):
+    (good_capture / ".DS_Store").write_bytes(b"\x00\x00\x01Bud1")
+    (good_capture / "raw" / "rendered" / ".DS_Store").write_bytes(b"\x00\x00\x01Bud1")
+    report = validate_capture(good_capture, write_report=False)
+    assert report["status"] in ("valid", "valid_with_warnings"), report["failed_checks"]
+    assert "no_files_added_after_manifest" not in report["failed_checks"]
+
+
+def test_appledouble_does_not_invalidate_a_sealed_capture(good_capture):
+    (good_capture / "._capture.json").write_bytes(b"\x00\x05\x16\x07")
+    report = validate_capture(good_capture, write_report=False)
+    assert report["status"] in ("valid", "valid_with_warnings"), report["failed_checks"]
+
+
+@pytest.mark.parametrize("evil", [".env", ".secret", ".creds.json", ".index.html", "extra.bin"])
+def test_non_metadata_additions_still_invalidate(good_capture, evil):
+    (good_capture / evil).write_text("unmanifested", encoding="utf-8")
+    report = validate_capture(good_capture, write_report=False)
+    assert report["status"] == "invalid"
+    assert "no_files_added_after_manifest" in report["failed_checks"]
+
+
+def test_ds_store_present_but_env_still_caught(good_capture):
+    (good_capture / ".DS_Store").write_bytes(b"\x00\x00\x01Bud1")
+    (good_capture / ".env").write_text("SECRET=1", encoding="utf-8")
+    report = validate_capture(good_capture, write_report=False)
+    assert report["status"] == "invalid"
+    check = _check(report, "no_files_added_after_manifest")
+    assert ".env" in check["data"]["added_files"]
+    assert ".DS_Store" not in check["data"]["added_files"]

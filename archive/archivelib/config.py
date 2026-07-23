@@ -84,6 +84,14 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "api_paths": ["/api/status", "/api/pricing", "/v1/models", "/api/models"],
         "include_api_paths": True,
         "max_link_candidates": 200,
+        # Per-request timeout for every seed-discovery HTTP call (homepage and
+        # each known-path/API probe). Conservative default: a dying host that
+        # accepts a connection but never answers costs at most this long per
+        # request, and — since the homepage is tried first — a network-layer
+        # failure there skips all further probing entirely.
+        "request_timeout_seconds": 10,
+        # Retained for backward compatibility; used only as a fallback when
+        # request_timeout_seconds is absent.
         "link_discovery_timeout_seconds": 30,
     },
     "queue": {
