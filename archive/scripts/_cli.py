@@ -26,10 +26,21 @@ def add_common_args(parser: argparse.ArgumentParser) -> argparse.ArgumentParser:
     parser.add_argument("--config", type=Path, default=None, help="path to an archive TOML config")
     parser.add_argument("--json", action="store_true", help="emit machine-readable JSON on stdout")
     parser.add_argument(
+        "--allow-local-storage",
+        action="store_true",
+        help=(
+            "Authorize keeping the corpus on this Mac's own disk instead of an "
+            "external volume. External storage remains the default and the "
+            "recommendation. The path must still be outside every Git repository, "
+            "outside Desktop/Downloads/Documents and iCloud, not a symlink, "
+            "writable, and have enough free space."
+        ),
+    )
+    parser.add_argument(
         "--test-only-allow-nonexternal",
         action="store_true",
         help=(
-            "TESTS ONLY: permit a non-external ARCHIVE_ROOT. Also requires the "
+            "TESTS ONLY: permit a scratch ARCHIVE_ROOT. Also requires the "
             "environment opt-in ARCHIVE_TEST_ONLY_ALLOW_NONEXTERNAL=1. Never use "
             "this for a capture of a real third-party site."
         ),
@@ -45,10 +56,17 @@ def get_config(args) -> dict:
     return load_config(get_repo(), getattr(args, "config", None))
 
 
-def get_archive_root(args, *, require_writable: bool = True):
-    """Resolve $ARCHIVE_ROOT under the mode implied by CLI flags."""
+def get_archive_root(args, *, require_writable: bool = True, cfg: dict | None = None):
+    """Resolve $ARCHIVE_ROOT under the mode implied by CLI flags and config."""
+    if cfg is None:
+        try:
+            cfg = get_config(args)
+        except Exception:
+            cfg = None
     return resolve_archive_root(
         allow_nonexternal=bool(getattr(args, "test_only_allow_nonexternal", False)),
+        allow_local_storage=bool(getattr(args, "allow_local_storage", False)),
+        cfg=cfg,
         require_writable=require_writable,
     )
 

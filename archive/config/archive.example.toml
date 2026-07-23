@@ -10,6 +10,22 @@
 # Any key you omit keeps its default. The merged result is hashed into each
 # capture as `effective_config_hash`.
 
+[storage]
+# External-volume storage is the default and the recommendation: an external
+# corpus can be unmounted and stored separately from the laptop that made it.
+#
+# Setting this to true authorizes keeping the corpus on this Mac's own disk
+# instead. The --allow-local-storage CLI flag does the same thing for a single
+# invocation, and ARCHIVE_ALLOW_LOCAL_STORAGE=1 does it for a launchd job.
+# Authorization is not a bypass: the path must still be outside every Git
+# repository and worktree, outside Desktop/Downloads/Documents and iCloud, not a
+# symlink (at the root or any ancestor), under the home directory, writable, and
+# have at least safety.min_free_bytes free.
+#
+# The documented local root is $HOME/LLM-APIgateways-corpus. ARCHIVE_ROOT is
+# still required explicitly — this option never picks a path for you.
+allow_local_storage = false
+
 [capture]
 max_seeds = 8                       # hard cap on pages seeded per service
 page_limit = 8                      # Browsertrix --pageLimit

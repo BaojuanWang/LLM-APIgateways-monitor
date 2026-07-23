@@ -18,8 +18,16 @@ something changed — without publishing anything the capture recorded.
 The archived material itself. No WACZ, no WARC, no HTML, no response bodies, no
 headers, no cookies, no browser storage values, no screenshots, no SingleFile
 output, and no unsanitized crawl logs. The raw corpus lives only under
-`$ARCHIVE_ROOT` on an external volume and is never committed to this public
-repository — see [docs/LOCAL_WACZ_ARCHIVE.md](../../../docs/LOCAL_WACZ_ARCHIVE.md).
+`$ARCHIVE_ROOT` — on an external volume by default, or on the operator's own
+machine when that was explicitly authorized — and is never committed to this
+public repository. See
+[docs/LOCAL_WACZ_ARCHIVE.md](../../../docs/LOCAL_WACZ_ARCHIVE.md).
+
+The `storage_mode` column in `captures.csv` records *which* of those two applied
+(`external_volume` or `explicitly_authorized_local`). The archive root **path**
+is never published: it would disclose the operator's username, and it is not a
+property of the capture — a corpus can be migrated between disks without
+invalidating anything.
 
 Paths inside these files are relative to the capture directory. An absolute path
 here would disclose the operator's filesystem layout, so the exporter refuses to

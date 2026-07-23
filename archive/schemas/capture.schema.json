@@ -66,6 +66,11 @@
       "description": "What the site looked like, as distinct from whether the capture succeeded."
     },
     "effective_config_hash": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "storage_mode": {
+      "type": "string",
+      "enum": ["external_volume", "explicitly_authorized_local", "test_only"],
+      "description": "Where the corpus lived when this capture was taken. external_volume is the recommended default; explicitly_authorized_local requires --allow-local-storage (or the config/env equivalent) plus passing every local-root guard. The archive root PATH is deliberately not recorded — it would carry the operator's username, and the corpus can be migrated between disks without invalidating a capture."
+    },
     "code_commit_sha": { "type": ["string", "null"] },
     "seed_count": { "type": "integer", "minimum": 1, "maximum": 25 },
     "seeds": {

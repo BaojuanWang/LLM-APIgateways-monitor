@@ -33,6 +33,11 @@
     "browsertrix_image_digest": { "type": "string" },
     "singlefile_version": { "type": "string" },
     "effective_config_hash": { "type": "string" },
+    "storage_mode": {
+      "type": "string",
+      "enum": ["external_volume", "explicitly_authorized_local", "test_only", ""],
+      "description": "The storage mode only. The archive root path is never published: it would disclose the operator's username."
+    },
     "code_commit_sha": { "type": "string" },
     "source_monitor_timestamp": { "type": "string" },
     "source_monitor_status": { "type": "string" },

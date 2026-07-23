@@ -223,7 +223,10 @@ def run_capture(
             "capture_reason": reason,
             "started_utc": started_utc,
             "effective_config_hash": eff_hash,
-            "archive_root_mode": root.mode,
+            # The MODE is recorded, never the absolute root path: the path would
+            # disclose the operator's username, and it is not a property of the
+            # capture anyway — the same corpus can be migrated between disks.
+            "storage_mode": root.storage_mode,
             "archive_volume": root.volume.summary() if root.volume else None,
             "free_bytes_before": free_before,
             "source_inventory": {
@@ -320,6 +323,7 @@ def run_capture(
         "status": status,
         "site_condition": site_condition,
         "effective_config_hash": eff_hash,
+        "storage_mode": root.storage_mode,
         "code_commit_sha": (environment.get("git") or {}).get("commit_sha"),
         "seed_count": len(seeds),
         "seeds": [s.as_dict() for s in plan.seeds],

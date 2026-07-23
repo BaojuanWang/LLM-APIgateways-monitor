@@ -333,3 +333,50 @@ def test_unknown_timing_is_null_not_negative():
     assert sanitized_network_record(timestamp_utc="t", url="https://x.test/", timing_ms=-1)["timing_ms"] is None
     assert sanitized_network_record(timestamp_utc="t", url="https://x.test/", timing_ms=12.5)["timing_ms"] == 12.5
     assert sanitized_network_record(timestamp_utc="t", url="https://x.test/", timing_ms=None)["timing_ms"] is None
+
+
+# --- storage mode ------------------------------------------------------------
+
+
+def test_storage_mode_is_published_but_the_path_is_not(dirty_capture):
+    """Requirement: the public export carries the MODE, never the local path."""
+    capture = {
+        **dirty_capture,
+        "storage_mode": "explicitly_authorized_local",
+        # A capture.json field that names the actual root must not survive.
+        "environment": {"archive_root": "/Users/someone/LLM-APIgateways-corpus"},
+    }
+    row = capture_public_row(capture, corpus_relpath="corpus/svc/captures/cid")
+    assert row["storage_mode"] == "explicitly_authorized_local"
+    blob = "\n".join(f"{k}={v}" for k, v in row.items())
+    assert "LLM-APIgateways-corpus" not in blob
+    assert "/Users/" not in blob
+    assert scan_text_for_secrets(blob) == []
+
+
+@pytest.mark.parametrize("mode", ["external_volume", "explicitly_authorized_local"])
+def test_both_storage_modes_round_trip(dirty_capture, mode):
+    row = capture_public_row({**dirty_capture, "storage_mode": mode}, corpus_relpath="corpus/x/captures/y")
+    assert row["storage_mode"] == mode
+
+
+def test_storage_mode_column_is_declared():
+    assert "storage_mode" in CAPTURE_COLUMNS
+
+
+def test_local_root_path_is_normalized_if_it_ever_reaches_a_row():
+    """Defence in depth: _clean() normalizes any path that slips through."""
+    row = tombstone_public_row(
+        {
+            "service_id": "s",
+            "host": "example.com",
+            "recorded_at_utc": "2026-01-01T00:00:00Z",
+            "prior_state": "ONLINE",
+            "new_state": "dns_failure_persistent",
+            "confidence": "probable",
+            "evidence": {"consecutive_observations": 3, "span_hours": 72, "source": {"file": "x"}},
+            "notes": ["corpus was at /Users/someone/LLM-APIgateways-corpus"],
+        }
+    )
+    assert "/Users/someone" not in row["notes"]
+    assert "$USER" in row["notes"]

@@ -45,6 +45,7 @@ CAPTURE_COLUMNS = (
     "browsertrix_image_digest",
     "singlefile_version",
     "effective_config_hash",
+    "storage_mode",
     "code_commit_sha",
     "source_monitor_timestamp",
     "source_monitor_status",
@@ -118,6 +119,9 @@ def capture_public_row(capture: dict, *, corpus_relpath: str, tombstone_status: 
         "browsertrix_image_digest": _clean(browsertrix.get("digest")),
         "singlefile_version": _clean(singlefile.get("version")),
         "effective_config_hash": _clean(capture.get("effective_config_hash")),
+        # The mode only — external_volume | explicitly_authorized_local. Never
+        # the archive root path, which would carry the operator's username.
+        "storage_mode": _clean(capture.get("storage_mode")),
         "code_commit_sha": _clean(capture.get("code_commit_sha")),
         "source_monitor_timestamp": _clean(monitor.get("timestamp")),
         "source_monitor_status": _clean(monitor.get("online_status")),

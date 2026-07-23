@@ -1,9 +1,10 @@
 # Local WACZ archive subsystem
 
 A local, research-grade longitudinal web archive for the services this project
-monitors. It captures full WACZ web archives to an **external disk**, keeps them
-append-only and hash-verified, and publishes only sanitized metadata to this
-public GitHub repository.
+monitors. It captures full WACZ web archives to an **external disk** — or, when
+explicitly authorized, to this Mac's own disk — keeps them append-only and
+hash-verified, and publishes only sanitized metadata to this public GitHub
+repository.
 
 The existing six-hour GitHub Actions monitor is unchanged. It remains the
 lightweight change detector: cheap, frequent, and it tells this subsystem *when*
@@ -17,7 +18,9 @@ a full capture is worth taking. This is the heavyweight local capture layer.
 - [Threat model](#threat-model)
 - [Why GitHub does not store WACZ](#why-github-does-not-store-wacz)
 - [The three layers: raw, derived, classification](#the-three-layers-raw-derived-classification)
+- [Storage modes](#storage-modes)
 - [External disk setup](#external-disk-setup)
+- [Authorized local storage](#authorized-local-storage)
 - [Commands](#commands)
 - [Replaying a WACZ](#replaying-a-wacz)
 - [Behaviour when the disk is unavailable](#behaviour-when-the-disk-is-unavailable)
@@ -65,8 +68,10 @@ Two facts define the design:
    screenshots are secondary representations. They are convenient, they are not
    a replacement, and no code path treats them as one. A capture whose WACZ is
    missing or corrupt is `invalid` no matter how good its screenshots are.
-2. **Raw material never enters Git.** It lives only under `$ARCHIVE_ROOT` on a
-   verified external volume.
+2. **Raw material never enters Git.** It lives only under `$ARCHIVE_ROOT`, on a
+   verified external volume by default, or on this Mac's own disk when that is
+   explicitly authorized. Either way it is outside every Git working tree, and
+   no mode will place a corpus inside one.
 
 ### Tool pinning
 
@@ -91,10 +96,11 @@ What this subsystem defends against, and what it does not.
 
 | Risk | Control |
 |---|---|
-| Raw archival data committed to a public repo | Storage boundary refuses any root inside the repo (both modes); narrow `.gitignore`; public export is a field allowlist; secret scan gates the export; validator fails a capture located inside the repo |
+| Raw archival data committed to a public repo | Storage boundary refuses any root inside any Git repo or worktree, in *every* mode; narrow `.gitignore`; public export is a field allowlist; secret scan gates the export; validator fails a capture located inside the repo |
 | Credentials or tokens published | Only allowlisted fields reach `data/archive_public/`; network summaries are built field-by-field so headers and bodies cannot leak by omission; browser state records **names** only; secret scan as backstop |
 | Operator de-anonymization | No username, no raw hostname (a truncated hash instead), no absolute paths in public output; validator fails on absolute-path leakage |
-| Writing a multi-GB corpus to the boot disk | `ARCHIVE_ROOT` must be under `/Volumes` **before and after** symlink resolution, and `diskutil` must confirm `Internal=false` and writable; `/Volumes/Macintosh HD` is a symlink to `/` and is rejected |
+| Writing a multi-GB corpus to the boot disk **unintentionally** | `ARCHIVE_ROOT` under `/Volumes` must pass symlink resolution and `diskutil` `Internal=false`; a non-`/Volumes` path is refused unless local storage is *explicitly* authorized, and then only after every guard in [Authorized local storage](#authorized-local-storage) passes |
+| An authorized local corpus landing somewhere replicated or committable | Refused if inside any Git repo or worktree, inside Desktop/Downloads/Documents/Library, iCloud-synchronized, a symlink at any level, or outside `$HOME` |
 | Silent fallback when the disk is missing | There is no fallback. Every command fails closed; the scheduled path exits 0 with a SKIP line |
 | Overwriting earlier evidence | Capture directories are created with `exist_ok=False`; manifests and tombstones refuse to overwrite; retries get new capture ids |
 | Undetected corruption or tampering | Per-file SHA256 plus a content-only directory digest; the validator detects modified, missing, and post-hoc-added files, and catches a manifest edited to match tampered bytes |
@@ -220,10 +226,43 @@ the service, the sorted seeds, the effective config hash, and the timestamp.
 
 ---
 
+## Storage modes
+
+Three modes, each of which has to be asked for. The mode is decided by the
+*path*, not by preference: a `/Volumes` path is always evaluated as an external
+volume, so authorizing local storage can never weaken the external checks.
+
+| Mode | When | How it is enabled |
+|---|---|---|
+| `external_volume` | **Recommended default.** `ARCHIVE_ROOT` is under `/Volumes` and `diskutil` confirms the backing volume is external and writable. | Nothing extra. |
+| `explicitly_authorized_local` | Corpus on this Mac's own disk. | `--allow-local-storage`, **or** `[storage] allow_local_storage = true`, **or** `ARCHIVE_ALLOW_LOCAL_STORAGE=1` |
+| `test_only` | Unit tests and the synthetic smoke test, against a scratch directory. | `--test-only-allow-nonexternal` **and** `ARCHIVE_TEST_ONLY_ALLOW_NONEXTERNAL=1` |
+
+The mode is recorded in every `capture.json` as `storage_mode` and published in
+`data/archive_public/captures.csv`. The archive root **path** is never recorded
+in either — it would carry the operator's username, and it is not a property of
+the capture anyway, since a corpus can be migrated between disks without
+invalidating anything.
+
+### Why external is still the recommendation
+
+An external volume can be unmounted, shelved, and physically separated from the
+laptop that made it. A local corpus shares the fate of the machine: one theft,
+one disk failure, one wipe-and-reinstall and the primary evidence is gone. It
+also sits in the same home directory as the Git repository it must never enter,
+which is why the local guards are stricter than the external ones.
+
+Local storage is a reasonable choice when no external disk is available and the
+alternative is *not capturing at all* — a corpus on the internal disk is far more
+valuable than a site that vanished before anyone archived it. Treat it as the
+working copy and back it up.
+
+---
+
 ## External disk setup
 
-The subsystem refuses to write real captures anywhere except a volume
-`diskutil` confirms is external and writable.
+In the default mode the subsystem refuses to write captures anywhere except a
+volume `diskutil` confirms is external and writable.
 
 1. Attach the disk. Give it a distinctive name (`ResearchArchive`, not
    `Untitled`) — if two writable external volumes are mounted, selection is
@@ -255,14 +294,76 @@ output says why.
 | `ARCHIVE_ROOT` | Result |
 |---|---|
 | unset | Refused. There is no default. |
-| `~/corpus`, `/tmp/corpus`, `~/Documents/corpus` | Refused: not under `/Volumes`. |
 | `/Volumes/Macintosh HD/corpus` | Refused: resolves through a symlink to `/`. This is the internal disk. |
 | `/Volumes/NoSuchDisk/corpus` | Refused: backed by the root filesystem mount. |
-| anywhere inside the Git repository | Refused **in both modes**, including tests. |
-| a verified external writable volume | Accepted. |
+| `~/corpus` **without** `--allow-local-storage` | Refused: not on an external volume, and local storage is not authorized. |
+| `/tmp/corpus` **with** `--allow-local-storage` | Refused: not under the home directory. Authorization is not a bypass. |
+| anywhere inside a Git repository or worktree | Refused **in every mode**, including tests and authorized local storage. |
+| a verified external writable volume | Accepted → `external_volume`. |
+| an authorized local root that passes every guard | Accepted → `explicitly_authorized_local`. |
 
-There is no third mode and no fallback. A missing disk is an error, never a
-quiet redirect.
+There is no fallback. A missing disk is an error, never a quiet redirect — and
+enabling local storage does not change that, it only makes a second explicit
+destination available.
+
+---
+
+## Authorized local storage
+
+Keeping the corpus on the MacBook's own disk is supported, opt-in, and guarded.
+
+### Enable it
+
+```bash
+export ARCHIVE_ROOT=$HOME/LLM-APIgateways-corpus
+python3 archive/scripts/archive_preflight.py --allow-local-storage
+```
+
+Any one of these three authorizes it, and all three default to off — silence is
+never authorization:
+
+| Signal | Scope | Use for |
+|---|---|---|
+| `--allow-local-storage` | one invocation | interactive runs |
+| `[storage] allow_local_storage = true` in `archive/config/archive.toml` | persistent | a machine that has no external disk |
+| `ARCHIVE_ALLOW_LOCAL_STORAGE=1` | environment | launchd jobs, where there is no place to put a flag |
+
+`ARCHIVE_ROOT` still has to be set explicitly. Authorization permits a local
+path; it never picks one for you. The documented default is
+`$HOME/LLM-APIgateways-corpus`.
+
+> The default is expressed relative to `$HOME` rather than written out as an
+> absolute path. This repository is public, and a literal `/Users/<name>/…` in
+> committed source would publish the operator's account name in every clone. A
+> test enforces that no shipped source file contains one.
+
+### What a local root must satisfy
+
+Every one of these is checked, and all failures are reported at once so they can
+be fixed in a single pass:
+
+| Guard | Why |
+|---|---|
+| Outside **every** Git repository and worktree | The whole point of the storage boundary. Checked by walking up for a `.git` entry — as a directory *and* as a file, since a linked worktree uses a file — plus `git rev-parse --show-toplevel` as a cross-check. |
+| Outside the project's own repositories | The monitor and archive working trees are refused by name as well. |
+| Not inside Desktop, Downloads, Documents, Library, Movies, Music, Pictures, Public, Applications | The first three replicate to iCloud; the rest are managed by macOS. |
+| Not iCloud-synchronized | Detected three ways: literally under `Library/Mobile Documents`; under Desktop/Documents while "Desktop & Documents Folders" sync is on (where the paths *look* normal but the contents replicate); or a directory containing `.icloud` placeholder stubs. Uploading gigabytes of third-party page captures to Apple would be a serious mistake. |
+| Not a symlink, at the root **or any ancestor** | An ancestor link can be repointed after authorization, silently relocating the corpus. |
+| Under the home directory | So an authorized flag cannot aim a corpus at a system directory. |
+| Writable | Probed by actually writing a file, not by reading a permission bit. |
+| At least `safety.min_free_bytes` free (default 5 GiB) | A capture that runs out of disk halfway produces a truncated WACZ. |
+
+Preflight reports how the default local root would fare whenever local storage
+is authorized, so problems surface before you point `ARCHIVE_ROOT` at it.
+
+### What local storage costs you
+
+Everything in [Retention policy](#retention-policy) applies with more force. The
+corpus now shares the fate of one machine, and macOS backup tooling is not aware
+that these files are irreplaceable. Back the corpus up to a second disk and
+verify it with the digest procedure in
+[Migrating the corpus](#migrating-the-corpus-to-another-disk) — the same
+procedure works for verifying a backup, not just a migration.
 
 ---
 
@@ -274,6 +375,7 @@ All commands are run from the repository root.
 
 ```bash
 python3 archive/scripts/archive_preflight.py
+python3 archive/scripts/archive_preflight.py --allow-local-storage   # local corpus
 ```
 
 Verifies the storage boundary, resolves and pins the Docker image digests,
@@ -301,8 +403,10 @@ Useful flags: `--service-id`, `--domain`, `--reason`, `--max-sites`,
 
 ```bash
 python3 archive/scripts/run_archive_capture.py --domain example.com --reason manual
+python3 archive/scripts/run_archive_capture.py --domain example.com --allow-local-storage
 ```
 
+`--allow-local-storage` is accepted by every command that resolves storage.
 Add `--dry-run` to see the seeds without writing anything, or `--max-seeds 3` to
 tighten the cap. Storage is verified **before** the first request to the target,
 so a missing disk never causes pointless traffic against someone else's server.
@@ -399,7 +503,10 @@ unzip -p "$WACZ" indexes/index.cdxj | cut -d' ' -f1   # every archived URL
 
 The `--scheduled` distinction exists so an unplugged disk is a no-op for
 launchd rather than a recurring failure notification — while still making it
-impossible to fall back to internal storage.
+impossible to fall back to internal storage *implicitly*. With an authorized
+local corpus these rows do not apply: the storage is always present, which is
+convenient and is also exactly the property that makes an external volume
+safer.
 
 ---
 
@@ -562,6 +669,7 @@ authenticated areas. Config validation rejects turning any of that on.
 | Crawl logs | yes | **never** unless separately sanitized |
 | URL with query string | yes | query **stripped** |
 | Absolute local paths | yes, normalized | **never** |
+| Archive root path | not recorded at all | **never** — only `storage_mode` |
 | Hashes, sizes, timestamps, tool digests, validation status | yes | yes |
 
 The public export is an **allowlist**: each row is assembled field by field in
@@ -728,6 +836,10 @@ To stop it:
 launchctl unload ~/Library/LaunchAgents/edu.drexel.llm-api-archive.plist
 ```
 
+If the corpus lives on the internal disk, add `ARCHIVE_ALLOW_LOCAL_STORAGE=1`
+to the plist's `EnvironmentVariables` — a launchd job has nowhere to put a CLI
+flag, and the job must be authorized as explicitly as an interactive run.
+
 The job runs `process_archive_queue.py --scheduled`, which exits 0 with a SKIP
 line when the volume is absent. `RunAtLoad` is false so reattaching the disk does
 not trigger a backlog burst. The job does **not** run the public export and does
@@ -741,7 +853,7 @@ not touch Git; publishing stays a manual, reviewed step.
 python3 -m pytest archive/tests/ -q
 ```
 
-220 tests, no network access, no dependency on any live third-party site. They
+249 tests, no network access, no dependency on any live third-party site. They
 run against a synthetic fixture site served from `archive/tests/fixtures/site/`
 and a scratch `ARCHIVE_ROOT` gated by an explicit test-only opt-in.
 

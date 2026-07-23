@@ -16,6 +16,13 @@ from typing import Any
 from .canonical import sha256_json
 
 DEFAULT_CONFIG: dict[str, Any] = {
+    "storage": {
+        # External-volume storage is the default and the recommendation. Setting
+        # this to true authorizes keeping the corpus on the Mac's own disk; the
+        # path must still clear every check in localstore.validate_local_root.
+        # The --allow-local-storage CLI flag does the same thing per-invocation.
+        "allow_local_storage": False,
+    },
     "capture": {
         # Bounded by policy, not by taste: an unbounded crawl of a third-party
         # service is both rude and unusable as evidence.
@@ -190,6 +197,10 @@ def validate_config(cfg: dict) -> None:
     queue = cfg.get("queue", {})
     if int(queue.get("concurrency", 1)) < 1:
         raise ConfigError("queue.concurrency must be >= 1")
+
+    storage = cfg.get("storage", {})
+    if not isinstance(storage.get("allow_local_storage", False), bool):
+        raise ConfigError("storage.allow_local_storage must be a boolean")
 
 
 def hashable_config(cfg: dict) -> dict:

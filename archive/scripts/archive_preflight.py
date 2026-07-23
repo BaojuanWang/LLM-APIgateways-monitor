@@ -31,9 +31,12 @@ from archivelib.config import config_hash  # noqa: E402
 from archivelib.docker_tools import resolve_image_digest  # noqa: E402
 from archivelib.envmeta import base_environment, utc_now_iso  # noqa: E402
 from archivelib.errors import ArchiveRootError, ExternalVolumeError  # noqa: E402
+from archivelib.localstore import default_local_root, validate_local_root  # noqa: E402
 from archivelib.paths import (  # noqa: E402
     ARCHIVE_ROOT_ENV,
     TEST_ONLY_ENV,
+    local_storage_authorized,
+    project_repo_roots,
     repo_root,
     resolve_archive_root,
 )
@@ -45,7 +48,7 @@ from archivelib.volumes import (  # noqa: E402
 )
 
 
-def check_storage(args) -> dict:
+def check_storage(args, cfg: dict) -> dict:
     """Resolve the archive root, and describe the disk situation either way."""
     candidates = [v.summary() for v in list_candidate_volumes()]
     externals = [v.summary() for v in external_writable_volumes()]
@@ -68,9 +71,16 @@ def check_storage(args) -> dict:
     else:
         result["volume_selection"] = f"unique external volume at {externals[0]['mount_point']}"
 
+    result["local_storage_authorized"] = local_storage_authorized(
+        cli_flag=bool(args.allow_local_storage), cfg=cfg
+    )
+    result["default_local_root"] = str(default_local_root())
+
     try:
         root = resolve_archive_root(
             allow_nonexternal=bool(args.test_only_allow_nonexternal),
+            allow_local_storage=bool(args.allow_local_storage),
+            cfg=cfg,
             require_writable=True,
         )
         result["archive_root"] = root.summary()
@@ -78,12 +88,24 @@ def check_storage(args) -> dict:
         result["archive_root_error"] = None
         result["free_bytes"] = free_bytes(root.path)
         result["real_captures_permitted"] = root.is_real
+        result["storage_mode"] = root.storage_mode
     except (ArchiveRootError, ExternalVolumeError) as exc:
         result["archive_root"] = None
         result["archive_root_ok"] = False
         result["archive_root_error"] = f"{type(exc).__name__}: {exc}"
         result["free_bytes"] = None
         result["real_captures_permitted"] = False
+        result["storage_mode"] = None
+
+    # When local storage is authorized, always report how the default local root
+    # would fare, so the operator can fix problems before pointing at it.
+    if result["local_storage_authorized"]:
+        result["default_local_root_checks"] = validate_local_root(
+            default_local_root(),
+            min_free_bytes=int(cfg.get("safety", {}).get("min_free_bytes", 5 * 1024**3)),
+            require_writable=False,
+            extra_forbidden_roots=project_repo_roots(),
+        ).summary()
     return result
 
 
@@ -140,7 +162,7 @@ def main() -> int:
         "checked_at_utc": utc_now_iso(),
         "repo": repo.name,
         "effective_config_hash": config_hash(cfg),
-        "storage": check_storage(args),
+        "storage": check_storage(args, cfg),
         "tools": check_tools(cfg),
         "git_safety": check_git_safety(repo),
         "environment": base_environment(repo, None),
@@ -177,9 +199,17 @@ def main() -> int:
               f"(python {pw.get('playwright_python')}, browser {pw.get('browser')})")
         print(f"  volumes under /Volumes : {len(storage['volumes_seen'])}")
         print(f"  external writable      : {storage['external_volume_count']} — {storage['volume_selection']}")
+        print(f"  local storage          : {'AUTHORIZED' if storage['local_storage_authorized'] else 'not authorized (default)'}")
+        checks = storage.get("default_local_root_checks")
+        if checks is not None:
+            verdict = "usable" if checks["ok"] else "NOT usable"
+            print(f"    default local root   : {storage['default_local_root']} — {verdict}")
+            for failure in checks["failures"]:
+                print(f"      FAIL {failure}")
         if storage["archive_root_ok"]:
             root = storage["archive_root"]
-            print(f"  ARCHIVE_ROOT       : {root['resolved']}  [mode={root['mode']}]")
+            print(f"  ARCHIVE_ROOT       : {root['resolved']}")
+            print(f"  storage mode       : {root['storage_mode']}")
             print(f"  free space         : {storage['free_bytes']} bytes")
         else:
             print(f"  ARCHIVE_ROOT       : NOT USABLE — {storage['archive_root_error']}")
@@ -190,8 +220,11 @@ def main() -> int:
         print(f"  READY FOR SYNTHETIC TESTS: {'YES' if report['ready_for_synthetic_tests'] else 'NO'}")
         if not ready_for_real:
             print()
-            print("  To enable real captures, attach a single external writable volume and run:")
+            print("  Recommended: attach a single external writable volume and run:")
             print("    export ARCHIVE_ROOT=/Volumes/<external-volume>/LLM-APIgateways-corpus")
+            print("  Or authorize local storage on this Mac explicitly:")
+            print(f"    export ARCHIVE_ROOT={storage['default_local_root']}")
+            print("    <command> --allow-local-storage")
 
     return 0 if ready_for_real else 1
 

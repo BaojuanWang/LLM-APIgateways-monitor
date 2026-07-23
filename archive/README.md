@@ -14,14 +14,32 @@ change detector. This is the local full-capture layer it triggers.
 1. **The WACZ is the canonical artifact.** SingleFile HTML and standalone
    screenshots are secondary representations, never substitutes. A capture with a
    missing or corrupt WACZ is `invalid` however good its screenshots are.
-2. **Raw material never enters Git.** It lives only under `$ARCHIVE_ROOT` on a
-   volume `diskutil` confirms is external and writable. There is no fallback: a
-   missing disk is an error, never a quiet redirect to the repo, home, or `/tmp`.
+2. **Raw material never enters Git.** It lives only under `$ARCHIVE_ROOT` — on a
+   volume `diskutil` confirms is external and writable by default, or on this
+   Mac's own disk when explicitly authorized with `--allow-local-storage`. There
+   is no fallback: a missing disk is an error, never a quiet redirect, and no
+   mode places a corpus inside a Git working tree.
+
+## Storage modes
+
+| Mode | How to get it |
+|---|---|
+| `external_volume` (recommended default) | `ARCHIVE_ROOT` under `/Volumes` on a verified external disk |
+| `explicitly_authorized_local` | `--allow-local-storage`, or `[storage] allow_local_storage = true`, or `ARCHIVE_ALLOW_LOCAL_STORAGE=1` |
+| `test_only` | `--test-only-allow-nonexternal` **and** `ARCHIVE_TEST_ONLY_ALLOW_NONEXTERNAL=1` |
+
+An authorized local root must be outside every Git repository and worktree,
+outside Desktop/Downloads/Documents and iCloud, not a symlink at any level,
+under `$HOME`, writable, and have enough free space. The mode is recorded per
+capture and published; the archive root **path** never is.
 
 ## Quick start
 
 ```bash
 export ARCHIVE_ROOT=/Volumes/<external-volume>/LLM-APIgateways-corpus
+# or, to keep the corpus on this Mac:
+#   export ARCHIVE_ROOT=$HOME/LLM-APIgateways-corpus
+#   ...and pass --allow-local-storage to each command below
 python3 archive/scripts/archive_preflight.py                    # verify disk + pin images
 python3 archive/scripts/plan_archive_queue.py --dry-run         # works without the disk
 python3 archive/scripts/run_archive_capture.py --domain example.com --reason manual
@@ -38,7 +56,7 @@ archive/
   config/         archive.example.toml, browsertrix.template.yaml
   schemas/        JSON Schemas for site / capture / tombstone / public index
   scripts/        the CLI entry points listed above
-  tests/          220 tests + a synthetic fixture site + a Docker smoke test
+  tests/          249 tests + a synthetic fixture site + a Docker smoke test
   launchd/        plist template (rendered on request; never auto-installed)
 ```
 
