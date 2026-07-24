@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:146cfc722b42f11d4615d89b3c635f39340e0d7b1f4750aa71e74b92e64b1ccc",
+  "capture_id": "20260723T214425Z_catapi-ai_c500c26f_ec0e86d0469c",
+  "capture_started_utc": "2026-07-23T21:44:25Z",
+  "domain": "catapi.ai",
+  "file_count": 23,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 476,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 62,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4694,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 2824,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 7097,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2292,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9963,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 542,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 1016,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 13213,
+      "count": 1
+    },
+    "screenshot": {
+      "bytes": 152124,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 19,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 153968,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 141121,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:27:12Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "catapi-ai_c500c26f",
+  "total_bytes": 492239,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260723t214425z-catapi-ai-c500c26f-ec0e86d0469c/20260723t214425z-catapi-ai-c500c26f-ec0e86d0469c.wacz",
+      "sha256": "abc9e11ca4ff168210d7d1b4fa959876c1bd9e97974a43809a022071876fa0e5",
+      "size_bytes": 153968
+    }
+  ]
+}

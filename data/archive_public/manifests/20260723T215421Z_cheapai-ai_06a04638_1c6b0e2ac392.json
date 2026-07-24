@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:d0098762c061a9e695039c9dbff2b109380dc22133594e494c88492af68ff6e7",
+  "capture_id": "20260723T215421Z_cheapai-ai_06a04638_1c6b0e2ac392",
+  "capture_started_utc": "2026-07-23T21:54:21Z",
+  "domain": "cheapai.ai",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 478,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 63,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4541,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 994,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11617,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2294,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10028,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 534,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 304,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 20,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1602,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:27:12Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "cheapai-ai_06a04638",
+  "total_bytes": 35303,
+  "wacz": []
+}

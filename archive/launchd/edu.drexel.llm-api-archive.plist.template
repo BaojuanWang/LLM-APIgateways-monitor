@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  launchd TEMPLATE for the local WACZ archive subsystem.
+
+  This file is a template, not an installed job. Render it with:
+
+      python3 archive/scripts/install_launchd_template.py --out ./job.plist
+
+  and install it yourself only after reading it. Nothing in this repository
+  loads a launchd job automatically.
+
+  Placeholders are double-underscore tokens (LABEL, ARCHIVE_ROOT, REPO_ROOT,
+  PYTHON, HOUR, MINUTE, MAX_SITES) and are substituted by the render script.
+
+  Disk-absent behaviour: process_archive_queue.py --scheduled prints one SKIP
+  line and exits 0 when $ARCHIVE_ROOT cannot be verified as an external writable
+  volume. An unplugged disk is therefore a no-op, not a recurring failure — and
+  the job can never fall back to writing captures onto the internal disk.
+
+  Note the job does NOT run the public export or touch Git. Publishing metadata
+  to a public repository stays a manual, reviewed step.
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>__LABEL__</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>__PYTHON__</string>
+        <string>__REPO_ROOT__/archive/scripts/process_archive_queue.py</string>
+        <string>--scheduled</string>
+        <string>--max-sites</string>
+        <string>__MAX_SITES__</string>
+    </array>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>ARCHIVE_ROOT</key>
+        <string>__ARCHIVE_ROOT__</string>
+        <key>PATH</key>
+        <string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+
+    <key>WorkingDirectory</key>
+    <string>__REPO_ROOT__</string>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>__HOUR__</integer>
+        <key>Minute</key>
+        <integer>__MINUTE__</integer>
+    </dict>
+
+    <!-- Do not run a backlog burst after the Mac wakes or the disk reappears. -->
+    <key>RunAtLoad</key>
+    <false/>
+
+    <!-- Logs go to the corpus volume, so they vanish with it rather than
+         accumulating on the internal disk. -->
+    <key>StandardOutPath</key>
+    <string>__ARCHIVE_ROOT__/operational/logs/launchd.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>__ARCHIVE_ROOT__/operational/logs/launchd.err.log</string>
+
+    <key>ProcessType</key>
+    <string>Background</string>
+
+    <key>LowPriorityIO</key>
+    <true/>
+
+    <key>Nice</key>
+    <integer>5</integer>
+</dict>
+</plist>

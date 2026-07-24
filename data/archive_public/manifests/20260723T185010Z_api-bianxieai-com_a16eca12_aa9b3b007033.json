@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:19af78d6d80e2bf2ef3095a20cf58581fcde9706a7720ed3685f8de3346f9716",
+  "capture_id": "20260723T185010Z_api-bianxieai-com_a16eca12_aa9b3b007033",
+  "capture_started_utc": "2026-07-23T18:50:10Z",
+  "domain": "api.bianxieai.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 907,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 70,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8393,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 61764,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 48985,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2624,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2308,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9987,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 26445,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 11345,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 333184,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1222783,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 267,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1051009,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5285169,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5190594,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:27:12Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-bianxieai-com_a16eca12",
+  "total_bytes": 13256143,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260723t185010z-api-bianxieai-com-a16eca12-aa9b3b007033/20260723t185010z-api-bianxieai-com-a16eca12-aa9b3b007033.wacz",
+      "sha256": "09aa1520490e42c617101f1bb7b14fda42ec991aa89020a8e31d2a572bbd00a5",
+      "size_bytes": 5285169
+    }
+  ]
+}

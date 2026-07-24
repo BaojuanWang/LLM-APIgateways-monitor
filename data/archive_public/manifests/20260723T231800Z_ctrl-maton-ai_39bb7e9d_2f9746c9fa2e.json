@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:6b13d97d0adda10e3f3b18923f776faf3b5d936f5c3d83f219cabc23afd70389",
+  "capture_id": "20260723T231800Z_ctrl-maton-ai_39bb7e9d_2f9746c9fa2e",
+  "capture_started_utc": "2026-07-23T23:18:00Z",
+  "domain": "ctrl.maton.ai",
+  "file_count": 20,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 484,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 66,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4627,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 2088,
+      "count": 2
+    },
+    "crawl_log": {
+      "bytes": 6036,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2299,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9892,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 560,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 357,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 185,
+      "count": 1
+    },
+    "screenshot": {
+      "bytes": 20530,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 23,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 628,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 13445,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 3487,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:27:12Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "ctrl-maton-ai_39bb7e9d",
+  "total_bytes": 67535,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260723t231800z-ctrl-maton-ai-39bb7e9d-2f9746c9fa2e/20260723t231800z-ctrl-maton-ai-39bb7e9d-2f9746c9fa2e.wacz",
+      "sha256": "8b75acc08f3a7ba3fd51ef040244368ab977a0b127e8a73cd3804787e0cd0f25",
+      "size_bytes": 13445
+    }
+  ]
+}

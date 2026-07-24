@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:b552e731d7d4e4a6e55af6a6be4f5243c0f50ebcefe5637df9f089d69a4292d8",
+  "capture_id": "20260723T190143Z_api-iamhc-cn_6c9288ee_0a6327b29cf1",
+  "capture_started_utc": "2026-07-23T19:01:43Z",
+  "domain": "api.iamhc.cn",
+  "file_count": 32,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 685,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 857,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 65,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8094,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 48648,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 51622,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2624,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2298,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9932,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 23748,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 6921,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 154107,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1050316,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 222,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 7327727,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 7241518,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:27:12Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-iamhc-cn_6c9288ee",
+  "total_bytes": 15929384,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260723t190143z-api-iamhc-cn-6c9288ee-0a6327b29cf1/20260723t190143z-api-iamhc-cn-6c9288ee-0a6327b29cf1.wacz",
+      "sha256": "affe42e853fb51971f3678771a1382073a295d3cca63157eec094c8cbb25ac3b",
+      "size_bytes": 7327727
+    }
+  ]
+}

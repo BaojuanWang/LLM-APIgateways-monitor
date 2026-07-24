@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:530b0cc56b5f1f6cf911a7c1d872e1dcfc6a0dc3891afd21bde498fa8b5b24ce",
+  "capture_id": "20260723T181839Z_73card-com_de009634_305422a42a80",
+  "capture_started_utc": "2026-07-23T18:18:39Z",
+  "domain": "73card.com",
+  "file_count": 23,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 478,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 63,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4701,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 3570,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 6867,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2624,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2294,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9983,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 542,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 394,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 148,
+      "count": 1
+    },
+    "screenshot": {
+      "bytes": 25150,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 20,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 27765,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 15394,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:27:12Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "73card-com_de009634",
+  "total_bytes": 100160,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260723t181839z-73card-com-de009634-305422a42a80/20260723t181839z-73card-com-de009634-305422a42a80.wacz",
+      "sha256": "97131830a7eab108f52b3578be0587bf5d87a80704ef602a87dde2a762b9d2ca",
+      "size_bytes": 27765
+    }
+  ]
+}

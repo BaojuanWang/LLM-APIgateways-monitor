@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:ecb8e26b97ccf69a39506d756d437a6e36de8b31bde500b796b3bf09098f0530",
+  "capture_id": "20260724T004121Z_enjoyapi-cc_7ae3c10d_ad7b0edab2b8",
+  "capture_started_utc": "2026-07-24T00:41:21Z",
+  "domain": "enjoyapi.cc",
+  "file_count": 23,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 480,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 64,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4760,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 7988,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 7143,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2294,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9964,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 3248,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 1323,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 6952,
+      "count": 1
+    },
+    "screenshot": {
+      "bytes": 208977,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 21,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 254411,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 238618,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:27:12Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "enjoyapi-cc_7ae3c10d",
+  "total_bytes": 749071,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t004121z-enjoyapi-cc-7ae3c10d-ad7b0edab2b8/20260724t004121z-enjoyapi-cc-7ae3c10d-ad7b0edab2b8.wacz",
+      "sha256": "1576c771e072c397776595f06a3c638b4071d7c3f673044191cc406a07626c99",
+      "size_bytes": 254411
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+# Example configuration for the local WACZ archive subsystem.
+#
+# Copy to archive/config/archive.toml to override defaults. Both files are read
+# from the repository; NEITHER may contain credentials, API keys, cookies, or
+# absolute local paths. Storage location comes from $ARCHIVE_ROOT only — it is
+# deliberately NOT configurable here, so a config file can never silently
+# redirect raw capture data off the verified external volume.
+#
+# Every value below matches the built-in default in archive/archivelib/config.py.
+# Any key you omit keeps its default. The merged result is hashed into each
+# capture as `effective_config_hash`.
+
+[storage]
+# External-volume storage is the default and the recommendation: an external
+# corpus can be unmounted and stored separately from the laptop that made it.
+#
+# Setting this to true authorizes keeping the corpus on this Mac's own disk
+# instead. The --allow-local-storage CLI flag does the same thing for a single
+# invocation, and ARCHIVE_ALLOW_LOCAL_STORAGE=1 does it for a launchd job.
+# Authorization is not a bypass: the path must still be outside every Git
+# repository and worktree, outside Desktop/Downloads/Documents and iCloud, not a
+# symlink (at the root or any ancestor), under the home directory, writable, and
+# have at least safety.min_free_bytes free.
+#
+# The documented local root is $HOME/LLM-APIgateways-corpus. ARCHIVE_ROOT is
+# still required explicitly — this option never picks a path for you.
+allow_local_storage = false
+
+[capture]
+max_seeds = 8                       # hard cap on pages seeded per service
+page_limit = 8                      # Browsertrix --pageLimit
+time_limit_seconds = 600            # Browsertrix --timeLimit
+workers = 1                         # one worker: gentle on third-party hosts
+scope_type = "page"                 # page | page-spa | prefix (never a host crawl)
+page_load_timeout_seconds = 60
+behavior_timeout_seconds = 30
+user_agent_suffix = "LLM-APIgateways-archive/0.1 (research; contact via repository)"
+
+[browsertrix]
+image = "webrecorder/browsertrix-crawler"
+tag = "1.12.4"                      # pinned; "latest" is rejected by validation
+digest = ""                         # resolved at preflight, recorded per capture
+generate_wacz = true                # canonical artifact; validation forbids false
+generate_cdx = true
+text_extraction = ["to-pages", "to-warc"]
+screenshot_modes = ["view", "fullPage"]
+behaviors = ["autoscroll"]          # no autoplay, no form interaction
+block_ads = false                   # ads are part of the observed page
+fail_on_failed_seed = false         # a dead seed is evidence, not a fatal error
+log_options = ["stats", "debug"]
+
+[singlefile]
+enabled = true
+version = "2.0.83"                  # pinned npm release
+package = "single-file-cli"
+docker_image = ""                   # optional alternative to npx
+docker_digest = ""                  # REQUIRED if docker_image is set
+timeout_seconds = 120
+
+[rendered]
+enabled = true
+viewport_width = 1440
+viewport_height = 900
+device_scale_factor = 1
+navigation_timeout_seconds = 45
+settle_seconds = 3
+max_pages = 4                       # rendered outputs for the N most important seeds
+full_page_screenshot = true
+
+[seeds]
+# A small explicit list of conventional locations. This is NOT directory
+# brute-forcing: paths are probed once each, and misses are recorded as
+# "not present" rather than retried or permuted.
+known_paths = [
+  "/login", "/register", "/pricing", "/docs", "/about",
+  "/models", "/status", "/privacy", "/terms", "/announcement",
+]
+api_paths = ["/api/status", "/api/pricing", "/v1/models", "/api/models"]
+include_api_paths = true            # public unauthenticated endpoints only
+max_link_candidates = 200
+# Per-request timeout for every seed-discovery HTTP call. The homepage is tried
+# first; if it fails at the network layer (DNS failure, connection timeout,
+# connection refused, TLS failure, network unreachable, or a read timeout with
+# no HTTP response) the host is treated as unreachable and NO further known-path
+# or API probing happens — the homepage stays the sole seed and the reason is
+# recorded in capture.json. Any HTTP response (incl. 404/502/503/520/redirects)
+# lets bounded discovery proceed as normal.
+request_timeout_seconds = 10
+link_discovery_timeout_seconds = 30 # legacy fallback if request_timeout_seconds is unset
+
+[queue]
+monthly_days = 30                   # re-capture interval when nothing else fires
+cooldown_hours = 24                 # per-service floor between captures
+max_sites = 10                      # never queue the whole inventory at once
+concurrency = 1
+retry_failures = false
+retry_backoff_hours = 12
+
+[tombstone]
+# Thresholds that separate "a request failed" from "this service ended".
+min_consecutive_observations = 3
+min_span_hours = 48
+high_confidence_consecutive = 6
+high_confidence_span_hours = 168
+
+[safety]
+# These three must stay false; config validation rejects true.
+allow_form_submission = false
+allow_authenticated_areas = false
+load_browser_profile = false
+max_capture_bytes = 2147483648      # 2 GiB per capture
+min_free_bytes = 5368709120         # 5 GiB free required before starting

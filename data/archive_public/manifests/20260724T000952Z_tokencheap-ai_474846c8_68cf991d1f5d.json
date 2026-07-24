@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:c7f1d3f5fabff45c3d34da8d43f3537926e02557e58ef7af9dbcd28aadc50c8d",
+  "capture_id": "20260724T000952Z_tokencheap-ai_474846c8_68cf991d1f5d",
+  "capture_started_utc": "2026-07-24T00:09:52Z",
+  "domain": "tokencheap.ai",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 484,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 66,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4706,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1021,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11960,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2300,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9959,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 544,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 307,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 23,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1588,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:27:12Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "tokencheap-ai_474846c8",
+  "total_bytes": 35786,
+  "wacz": []
+}

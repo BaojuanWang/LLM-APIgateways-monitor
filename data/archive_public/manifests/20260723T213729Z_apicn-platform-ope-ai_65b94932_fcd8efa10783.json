@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:9c3572adee18179545db0f141a7867da2047e5a8016d72aade97c474cf704f63",
+  "capture_id": "20260723T213729Z_apicn-platform-ope-ai_65b94932_fcd8efa10783",
+  "capture_started_utc": "2026-07-23T21:37:29Z",
+  "domain": "apicn-platform.ope.ai",
+  "file_count": 28,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 633,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 74,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 6847,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 5246,
+      "count": 2
+    },
+    "crawl_log": {
+      "bytes": 11390,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2315,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9993,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 1163,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 764,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 2323,
+      "count": 3
+    },
+    "screenshot": {
+      "bytes": 249420,
+      "count": 6
+    },
+    "seeds": {
+      "bytes": 114,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 3760,
+      "count": 3
+    },
+    "wacz": {
+      "bytes": 24974,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 7643,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:27:12Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "apicn-platform-ope-ai_65b94932",
+  "total_bytes": 329487,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260723t213729z-apicn-platform-ope-ai-65b94932-fcd8efa10783/20260723t213729z-apicn-platform-ope-ai-65b94932-fcd8efa10783.wacz",
+      "sha256": "de8696dce7557982f4cb3b01a01ec067a634ba8d2996efb8275726207af2f726",
+      "size_bytes": 24974
+    }
+  ]
+}

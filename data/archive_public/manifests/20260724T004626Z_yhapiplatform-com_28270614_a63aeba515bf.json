@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:6d6208b1b0f8ceea4cbfa8ecf4da44bb9a1b0b9c9b4630b8352ce004fa3c8673",
+  "capture_id": "20260724T004626Z_yhapiplatform-com_28270614_a63aeba515bf",
+  "capture_started_utc": "2026-07-24T00:46:26Z",
+  "domain": "yhapiplatform.com",
+  "file_count": 26,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 553,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 70,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 5770,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 6162,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 11357,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2306,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9951,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 1499,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 1244,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 299619,
+      "count": 2
+    },
+    "screenshot": {
+      "bytes": 973962,
+      "count": 4
+    },
+    "seeds": {
+      "bytes": 63,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 1251308,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1232267,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:27:12Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "yhapiplatform-com_28270614",
+  "total_bytes": 3798959,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t004626z-yhapiplatform-com-28270614-a63aeba515bf/20260724t004626z-yhapiplatform-com-28270614-a63aeba515bf.wacz",
+      "sha256": "27eb4cac78371967147056016cb6d0d67f940d96f140aa86e5b910a74e973321",
+      "size_bytes": 1251308
+    }
+  ]
+}

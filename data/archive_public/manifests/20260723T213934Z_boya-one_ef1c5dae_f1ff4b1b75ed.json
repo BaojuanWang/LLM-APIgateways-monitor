@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:9836d8b2b981ec2b23d8fc2742fde687c3671604c88df76d38a6d191c30f6f00",
+  "capture_id": "20260723T213934Z_boya-one_ef1c5dae_f1ff4b1b75ed",
+  "capture_started_utc": "2026-07-23T21:39:34Z",
+  "domain": "boya.one",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 474,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 61,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4631,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 976,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11539,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2287,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10027,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 540,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 302,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 18,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1590,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:27:12Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "boya-one_ef1c5dae",
+  "total_bytes": 35273,
+  "wacz": []
+}

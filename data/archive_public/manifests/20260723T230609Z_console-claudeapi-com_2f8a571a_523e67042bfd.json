@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:525c527a1deda9985adc5048d103911c0fc9ae182c39fdfefd68457718705817",
+  "capture_id": "20260723T230609Z_console-claudeapi-com_2f8a571a_523e67042bfd",
+  "capture_started_utc": "2026-07-23T23:06:09Z",
+  "domain": "console.claudeapi.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 1423,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 943,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 74,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8632,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 47646,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 49303,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2315,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9904,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 28209,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 4895,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 27559,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1240320,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 299,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 761670,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 3701535,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 3620137,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:27:12Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "console-claudeapi-com_2f8a571a",
+  "total_bytes": 9507525,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260723t230609z-console-claudeapi-com-2f8a571a-523e67042bfd/20260723t230609z-console-claudeapi-com-2f8a571a-523e67042bfd.wacz",
+      "sha256": "a15cb77eb5994f009487a711bc82af555f5a5e5c383eb4ab7b3c0c0c8aeaf139",
+      "size_bytes": 3701535
+    }
+  ]
+}

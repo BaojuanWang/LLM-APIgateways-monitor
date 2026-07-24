@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:738712007c9359fbdcd9f19aafce553d925fe9a65ca1fb0b38c6e186ba25369e",
+  "capture_id": "20260724T002317Z_www-deerapi-com_207d1e67_34df79c6e095",
+  "capture_started_utc": "2026-07-24T00:23:17Z",
+  "domain": "www.deerapi.com",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 2345,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 889,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 9145,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8439,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 61818,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 63017,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2303,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9922,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 90250,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 48954,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 761186,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1169304,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 251,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 3450765,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 6162850,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 6037870,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:27:12Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "www-deerapi-com_207d1e67",
+  "total_bytes": 17881969,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t002317z-www-deerapi-com-207d1e67-34df79c6e095/20260724t002317z-www-deerapi-com-207d1e67-34df79c6e095.wacz",
+      "sha256": "745e0f1e8bf2e1b3410ca96fa02a91177c1c79120f18d73164f403f935b6e7f6",
+      "size_bytes": 6162850
+    }
+  ]
+}
