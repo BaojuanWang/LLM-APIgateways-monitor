@@ -380,3 +380,56 @@ def test_local_root_path_is_normalized_if_it_ever_reaches_a_row():
     )
     assert "/Users/someone" not in row["notes"]
     assert "$USER" in row["notes"]
+
+
+# --- capture_outcome column (exporter surfaces the validator's verdict) ------
+
+from archivelib.publicexport import PUBLIC_OUTCOMES  # noqa: E402
+
+
+def _row_with(outcome=None, status="valid", wacz_sha="a" * 64):
+    cap = {
+        "capture_id": "cid", "service_id": "svc", "host": "example.com",
+        "started_utc": "2026-01-01T00:00:00Z", "capture_reason": "tombstone_evidence",
+        "status": "completed", "wacz": {"sha256": wacz_sha, "size_bytes": 1} if wacz_sha else {},
+        "validation": {"status": status, "failed_checks": []},
+    }
+    if outcome is not None:
+        cap["validation"]["outcome"] = {"outcome": outcome}
+    return capture_public_row(cap, corpus_relpath="corpus/svc/captures/cid")
+
+
+def test_capture_outcome_is_a_declared_column():
+    assert "capture_outcome" in CAPTURE_COLUMNS
+
+
+@pytest.mark.parametrize("outcome", ["archived", "documented_unreachable", "retryable_no_wacz"])
+def test_capture_outcome_reflects_validation_report(outcome):
+    row = _row_with(outcome=outcome)
+    assert row["capture_outcome"] == outcome
+
+
+def test_incomplete_outcome_is_not_emitted_verbatim():
+    """'incomplete' should never reach the index; if seen, it collapses out."""
+    row = _row_with(outcome="incomplete", status="incomplete", wacz_sha="")
+    assert row["capture_outcome"] not in ("incomplete",)
+
+
+def test_capture_outcome_fallback_archived():
+    row = _row_with(outcome=None, status="valid", wacz_sha="a" * 64)
+    assert row["capture_outcome"] == "archived"
+
+
+def test_capture_outcome_fallback_documented_unreachable():
+    row = _row_with(outcome=None, status="valid_with_warnings", wacz_sha="")
+    assert row["capture_outcome"] == "documented_unreachable"
+
+
+def test_capture_outcome_fallback_retryable():
+    row = _row_with(outcome=None, status="invalid", wacz_sha="")
+    assert row["capture_outcome"] == "retryable_no_wacz"
+
+
+def test_capture_outcome_only_public_values():
+    for outcome in PUBLIC_OUTCOMES:
+        assert _row_with(outcome=outcome)["capture_outcome"] in PUBLIC_OUTCOMES

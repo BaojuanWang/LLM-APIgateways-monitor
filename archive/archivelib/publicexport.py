@@ -53,10 +53,39 @@ CAPTURE_COLUMNS = (
     "source_page_title",
     "source_homepage_html_hash",
     "validation_status",
+    "capture_outcome",
     "validation_errors",
     "tombstone_status",
     "corpus_relpath",
 )
+
+# The three outcomes a capture in the public index can carry. 'incomplete'
+# never appears: quarantined/interrupted directories have no capture.json and
+# are skipped during collection, so they are absent from the index entirely.
+PUBLIC_OUTCOMES = ("archived", "documented_unreachable", "retryable_no_wacz")
+
+
+def _public_capture_outcome(validation: dict, wacz: dict) -> str:
+    """The validator's recorded outcome, restricted to the public set.
+
+    Reads ``outcome.outcome`` from the capture's validation report. For older
+    reports written before the outcome field existed, it is derived from WACZ
+    presence and the validation status so the column is always populated
+    consistently. An unclassifiable/incomplete value collapses to "" (which
+    should not occur for indexed captures).
+    """
+    recorded = ((validation.get("outcome") or {}).get("outcome") or "").strip()
+    if recorded in PUBLIC_OUTCOMES:
+        return recorded
+    has_wacz = bool((wacz.get("sha256") or "").strip())
+    status = str(validation.get("status") or "")
+    if has_wacz and status.startswith("valid"):
+        return "archived"
+    if not has_wacz and status.startswith("valid"):
+        return "documented_unreachable"
+    if not has_wacz and status == "invalid":
+        return "retryable_no_wacz"
+    return ""
 
 TOMBSTONE_COLUMNS = (
     "service_id",
@@ -131,6 +160,11 @@ def capture_public_row(capture: dict, *, corpus_relpath: str, tombstone_status: 
         "source_page_title": _clean(monitor.get("page_title"))[:160],
         "source_homepage_html_hash": _clean(monitor.get("html_hash")),
         "validation_status": _clean(validation.get("status")),
+        # The validator's outcome/artifact classification: archived (WACZ
+        # present), documented_unreachable (valid tombstone without a WACZ), or
+        # retryable_no_wacz. Reflects the recorded verdict; it does not compute
+        # eligibility or re-run validation.
+        "capture_outcome": _clean(_public_capture_outcome(validation, wacz)),
         "validation_errors": _clean(";".join(validation.get("failed_checks", []) or [])),
         "tombstone_status": _clean(tombstone_status),
         "corpus_relpath": _clean(corpus_relpath),
