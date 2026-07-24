@@ -1,17 +1,17 @@
 {
   "algorithm": "sha256",
-  "capture_directory_digest": "sha256:2540c3df95024712ac302d41ae2b6cc0eab2e7cacf639d2d0c2e2a7c75a5ca78",
-  "capture_id": "20260723T171352Z_uuapi-net_5320da5c_d1307f684aef",
-  "capture_started_utc": "2026-07-23T17:13:52Z",
-  "domain": "uuapi.net",
-  "file_count": 32,
+  "capture_directory_digest": "sha256:b765ac477b5453c4bdaaba2187a03151991ec0778f180205b88525f1aee08969",
+  "capture_id": "20260724T011222Z_4hidc-com_fcd7869b_659cf089f0b8",
+  "capture_started_utc": "2026-07-24T01:12:22Z",
+  "domain": "4hidc.com",
+  "file_count": 36,
   "files_by_role": {
     "browser_state_names": {
       "bytes": 167,
       "count": 1
     },
     "browsertrix_config": {
-      "bytes": 582,
+      "bytes": 835,
       "count": 1
     },
     "browsertrix_output": {
@@ -19,72 +19,72 @@
       "count": 1
     },
     "capture_metadata": {
-      "bytes": 6196,
+      "bytes": 8338,
       "count": 1
     },
     "cdx_index": {
-      "bytes": 51896,
+      "bytes": 63244,
       "count": 4
     },
     "crawl_log": {
-      "bytes": 19484,
+      "bytes": 56429,
       "count": 1
     },
     "effective_config": {
-      "bytes": 2624,
+      "bytes": 2661,
       "count": 1
     },
     "environment": {
-      "bytes": 2278,
+      "bytes": 2286,
       "count": 1
     },
     "exit_status": {
-      "bytes": 9873,
+      "bytes": 9865,
       "count": 1
     },
     "network_summary": {
-      "bytes": 39004,
+      "bytes": 10115,
       "count": 1
     },
     "pages_jsonl": {
-      "bytes": 17378,
+      "bytes": 28227,
       "count": 2
     },
     "rendered_dom": {
-      "bytes": 199896,
-      "count": 3
+      "bytes": 117164,
+      "count": 4
     },
     "screenshot": {
-      "bytes": 3183720,
-      "count": 6
+      "bytes": 3537285,
+      "count": 8
     },
     "seeds": {
-      "bytes": 75,
+      "bytes": 203,
       "count": 1
     },
     "singlefile": {
-      "bytes": 6695785,
-      "count": 3
+      "bytes": 236142,
+      "count": 4
     },
     "wacz": {
-      "bytes": 3754905,
+      "bytes": 7011944,
       "count": 1
     },
     "warc": {
-      "bytes": 3688764,
+      "bytes": 6892335,
       "count": 3
     }
   },
   "generated_at_utc": "2026-07-24T04:10:07Z",
   "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
   "schema": "public_capture_manifest_summary",
-  "service_id": "uuapi-net_5320da5c",
-  "total_bytes": 17672689,
+  "service_id": "4hidc-com_fcd7869b",
+  "total_bytes": 17977302,
   "wacz": [
     {
-      "relative_path": "raw/browsertrix/collections/20260723t171352z-uuapi-net-5320da5c-d1307f684aef/20260723t171352z-uuapi-net-5320da5c-d1307f684aef.wacz",
-      "sha256": "c6598466f897f698213c7162a7ca9cb1273f110bc50d44e61d3e5daa9d0cf1c3",
-      "size_bytes": 3754905
+      "relative_path": "raw/browsertrix/collections/20260724t011222z-4hidc-com-fcd7869b-659cf089f0b8/20260724t011222z-4hidc-com-fcd7869b-659cf089f0b8.wacz",
+      "sha256": "3f5677717cba9e6ff4e0e3f2c8b035ef14645336ca25258ef132af1fd5532063",
+      "size_bytes": 7011944
     }
   ]
 }

@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:148ce3eee559f7b00bbfe1b88f1111205f85dcb6a0e7dc14a4e10b3cb6466fc7",
+  "capture_id": "20260724T003601Z_zhumengwangluo-top_c5294608_61af75f937d9",
+  "capture_started_utc": "2026-07-24T00:36:01Z",
+  "domain": "zhumengwangluo.top",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 494,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 71,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4742,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1066,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 12185,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2310,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9960,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 554,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 312,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 28,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1605,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:10:07Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "zhumengwangluo-top_c5294608",
+  "total_bytes": 36155,
+  "wacz": []
+}

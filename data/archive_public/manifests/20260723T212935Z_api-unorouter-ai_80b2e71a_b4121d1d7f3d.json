@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:ffce5921fb517ff30e93dbb6fe7b5525f954d89b02f7f43912ad8fdadde1d428",
+  "capture_id": "20260723T212935Z_api-unorouter-ai_80b2e71a_b4121d1d7f3d",
+  "capture_started_utc": "2026-07-23T21:29:35Z",
+  "domain": "api.unorouter.ai",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 898,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 69,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8520,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 91348,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 65508,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2305,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9927,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 35078,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 20936,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 348016,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1743138,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 259,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 622935,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 7501052,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 7365575,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:10:07Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-unorouter-ai_80b2e71a",
+  "total_bytes": 17818534,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260723t212935z-api-unorouter-ai-80b2e71a-b4121d1d7f3d/20260723t212935z-api-unorouter-ai-80b2e71a-b4121d1d7f3d.wacz",
+      "sha256": "cc6f3faa80c43a9fa1b79ab2ecd94f95c71686e4959d621e4c64282befe124e5",
+      "size_bytes": 7501052
+    }
+  ]
+}

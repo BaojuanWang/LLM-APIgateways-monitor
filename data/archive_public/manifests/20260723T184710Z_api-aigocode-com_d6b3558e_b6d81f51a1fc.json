@@ -1,33 +1,33 @@
 {
   "algorithm": "sha256",
-  "capture_directory_digest": "sha256:2540c3df95024712ac302d41ae2b6cc0eab2e7cacf639d2d0c2e2a7c75a5ca78",
-  "capture_id": "20260723T171352Z_uuapi-net_5320da5c_d1307f684aef",
-  "capture_started_utc": "2026-07-23T17:13:52Z",
-  "domain": "uuapi.net",
-  "file_count": 32,
+  "capture_directory_digest": "sha256:15e613eeb4f1dd7460c5cf92c38878f6fdfb74d005d450c93a728e9d3366ea36",
+  "capture_id": "20260723T184710Z_api-aigocode-com_d6b3558e_b6d81f51a1fc",
+  "capture_started_utc": "2026-07-23T18:47:10Z",
+  "domain": "api.aigocode.com",
+  "file_count": 37,
   "files_by_role": {
     "browser_state_names": {
       "bytes": 167,
       "count": 1
     },
     "browsertrix_config": {
-      "bytes": 582,
+      "bytes": 904,
       "count": 1
     },
     "browsertrix_output": {
-      "bytes": 62,
-      "count": 1
+      "bytes": 8114,
+      "count": 2
     },
     "capture_metadata": {
-      "bytes": 6196,
+      "bytes": 8468,
       "count": 1
     },
     "cdx_index": {
-      "bytes": 51896,
+      "bytes": 58107,
       "count": 4
     },
     "crawl_log": {
-      "bytes": 19484,
+      "bytes": 66100,
       "count": 1
     },
     "effective_config": {
@@ -35,56 +35,56 @@
       "count": 1
     },
     "environment": {
-      "bytes": 2278,
+      "bytes": 2305,
       "count": 1
     },
     "exit_status": {
-      "bytes": 9873,
+      "bytes": 9850,
       "count": 1
     },
     "network_summary": {
-      "bytes": 39004,
+      "bytes": 64648,
       "count": 1
     },
     "pages_jsonl": {
-      "bytes": 17378,
+      "bytes": 68190,
       "count": 2
     },
     "rendered_dom": {
-      "bytes": 199896,
-      "count": 3
+      "bytes": 670674,
+      "count": 4
     },
     "screenshot": {
-      "bytes": 3183720,
-      "count": 6
+      "bytes": 3450724,
+      "count": 8
     },
     "seeds": {
-      "bytes": 75,
+      "bytes": 265,
       "count": 1
     },
     "singlefile": {
-      "bytes": 6695785,
-      "count": 3
+      "bytes": 846081,
+      "count": 4
     },
     "wacz": {
-      "bytes": 3754905,
+      "bytes": 7700527,
       "count": 1
     },
     "warc": {
-      "bytes": 3688764,
+      "bytes": 7554290,
       "count": 3
     }
   },
   "generated_at_utc": "2026-07-24T04:10:07Z",
   "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
   "schema": "public_capture_manifest_summary",
-  "service_id": "uuapi-net_5320da5c",
-  "total_bytes": 17672689,
+  "service_id": "api-aigocode-com_d6b3558e",
+  "total_bytes": 20512038,
   "wacz": [
     {
-      "relative_path": "raw/browsertrix/collections/20260723t171352z-uuapi-net-5320da5c-d1307f684aef/20260723t171352z-uuapi-net-5320da5c-d1307f684aef.wacz",
-      "sha256": "c6598466f897f698213c7162a7ca9cb1273f110bc50d44e61d3e5daa9d0cf1c3",
-      "size_bytes": 3754905
+      "relative_path": "raw/browsertrix/collections/20260723t184710z-api-aigocode-com-d6b3558e-b6d81f51a1fc/20260723t184710z-api-aigocode-com-d6b3558e-b6d81f51a1fc.wacz",
+      "sha256": "d274d472edc46c60d795895a8ce9132f1adfde0cd80a04605536eca680963a68",
+      "size_bytes": 7700527
     }
   ]
 }

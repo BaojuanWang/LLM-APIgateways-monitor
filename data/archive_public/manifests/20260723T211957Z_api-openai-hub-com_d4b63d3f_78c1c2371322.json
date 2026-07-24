@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:5ad6835d5b8364a3fc66e8f0dd9a549836547a6fa1ebe0ab54ee7c0136b95f01",
+  "capture_id": "20260723T211957Z_api-openai-hub-com_d4b63d3f_78c1c2371322",
+  "capture_started_utc": "2026-07-23T21:19:57Z",
+  "domain": "api.openai-hub.com",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 494,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 71,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4755,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1066,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 12025,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2308,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10014,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 546,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 312,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 28,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1623,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:10:07Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-openai-hub-com_d4b63d3f",
+  "total_bytes": 36070,
+  "wacz": []
+}

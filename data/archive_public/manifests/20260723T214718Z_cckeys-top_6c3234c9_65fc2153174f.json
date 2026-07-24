@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:9e5ee72b64d75a23f525f07cb0c929ce6c4972acf1d728211276ab331811695c",
+  "capture_id": "20260723T214718Z_cckeys-top_6c3234c9_65fc2153174f",
+  "capture_started_utc": "2026-07-23T21:47:18Z",
+  "domain": "cckeys.top",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 478,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 63,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4637,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 994,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 13170,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2293,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9791,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 538,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 304,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 20,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1577,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:10:07Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "cckeys-top_6c3234c9",
+  "total_bytes": 36693,
+  "wacz": []
+}

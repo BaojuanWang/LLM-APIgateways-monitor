@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:d704f5dbdcc311fe01098fe5f55245765fc9138a63f00afa95426161a90b2fdb",
+  "capture_id": "20260724T000251Z_tcdmx-com_27a190d4_0b58648fe7dd",
+  "capture_started_utc": "2026-07-24T00:02:51Z",
+  "domain": "tcdmx.com",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 476,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 62,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4618,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 985,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 13124,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2291,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9797,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 536,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 303,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 19,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1579,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:10:07Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "tcdmx-com_27a190d4",
+  "total_bytes": 36618,
+  "wacz": []
+}

@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:b1efeb4ab75b4b78088f156c578dc2be21b872514535fedfd4a6cf6a296999ec",
+  "capture_id": "20260723T235011Z_newapi-junjun-site_9e92c784_673c2056d831",
+  "capture_started_utc": "2026-07-23T23:50:11Z",
+  "domain": "newapi.junjun.site",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 494,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 71,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4747,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1066,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 12025,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2307,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10015,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 546,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 312,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 28,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1625,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:10:07Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "newapi-junjun-site_9e92c784",
+  "total_bytes": 36064,
+  "wacz": []
+}

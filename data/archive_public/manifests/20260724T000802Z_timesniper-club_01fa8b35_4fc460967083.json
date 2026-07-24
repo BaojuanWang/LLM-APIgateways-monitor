@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:08e1dd09f88a9bb10063e30a52d2976922d22615b778aca2fd8879d3b5a24a35",
+  "capture_id": "20260724T000802Z_timesniper-club_01fa8b35_4fc460967083",
+  "capture_started_utc": "2026-07-24T00:08:02Z",
+  "domain": "timesniper.club",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 488,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 68,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4712,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1039,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11872,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2301,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10019,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 540,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 309,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 25,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1619,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:10:07Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "timesniper-club_01fa8b35",
+  "total_bytes": 35820,
+  "wacz": []
+}

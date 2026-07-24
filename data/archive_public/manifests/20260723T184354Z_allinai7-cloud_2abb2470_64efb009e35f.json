@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:d0b692a268cb1a5688c88afa5a01c1745181b0a2dc5fad1627329cd50bd06d3b",
+  "capture_id": "20260723T184354Z_allinai7-cloud_2abb2470_64efb009e35f",
+  "capture_started_utc": "2026-07-23T18:43:54Z",
+  "domain": "allinai7.cloud",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 486,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 67,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4527,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1030,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11821,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2624,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2300,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10018,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 538,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 308,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 24,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1610,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:10:07Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "allinai7-cloud_2abb2470",
+  "total_bytes": 35520,
+  "wacz": []
+}

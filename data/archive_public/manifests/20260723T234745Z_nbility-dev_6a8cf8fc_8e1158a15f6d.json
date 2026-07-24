@@ -1,90 +1,90 @@
 {
   "algorithm": "sha256",
-  "capture_directory_digest": "sha256:2540c3df95024712ac302d41ae2b6cc0eab2e7cacf639d2d0c2e2a7c75a5ca78",
-  "capture_id": "20260723T171352Z_uuapi-net_5320da5c_d1307f684aef",
-  "capture_started_utc": "2026-07-23T17:13:52Z",
-  "domain": "uuapi.net",
-  "file_count": 32,
+  "capture_directory_digest": "sha256:5e871075380415eec77d3a2c83859fc6bb8f355ecfd39717b45b64e3895da656",
+  "capture_id": "20260723T234745Z_nbility-dev_6a8cf8fc_8e1158a15f6d",
+  "capture_started_utc": "2026-07-23T23:47:45Z",
+  "domain": "nbility.dev",
+  "file_count": 36,
   "files_by_role": {
     "browser_state_names": {
       "bytes": 167,
       "count": 1
     },
     "browsertrix_config": {
-      "bytes": 582,
+      "bytes": 848,
       "count": 1
     },
     "browsertrix_output": {
-      "bytes": 62,
-      "count": 1
+      "bytes": 13660,
+      "count": 2
     },
     "capture_metadata": {
-      "bytes": 6196,
+      "bytes": 8580,
       "count": 1
     },
     "cdx_index": {
-      "bytes": 51896,
+      "bytes": 72371,
       "count": 4
     },
     "crawl_log": {
-      "bytes": 19484,
+      "bytes": 50261,
       "count": 1
     },
     "effective_config": {
-      "bytes": 2624,
+      "bytes": 2661,
       "count": 1
     },
     "environment": {
-      "bytes": 2278,
+      "bytes": 2295,
       "count": 1
     },
     "exit_status": {
-      "bytes": 9873,
+      "bytes": 9903,
       "count": 1
     },
     "network_summary": {
-      "bytes": 39004,
+      "bytes": 61952,
       "count": 1
     },
     "pages_jsonl": {
-      "bytes": 17378,
+      "bytes": 55759,
       "count": 2
     },
     "rendered_dom": {
-      "bytes": 199896,
-      "count": 3
+      "bytes": 264219,
+      "count": 4
     },
     "screenshot": {
-      "bytes": 3183720,
-      "count": 6
+      "bytes": 2133939,
+      "count": 8
     },
     "seeds": {
-      "bytes": 75,
+      "bytes": 214,
       "count": 1
     },
     "singlefile": {
-      "bytes": 6695785,
+      "bytes": 2099488,
       "count": 3
     },
     "wacz": {
-      "bytes": 3754905,
+      "bytes": 44665780,
       "count": 1
     },
     "warc": {
-      "bytes": 3688764,
+      "bytes": 44542280,
       "count": 3
     }
   },
   "generated_at_utc": "2026-07-24T04:10:07Z",
   "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
   "schema": "public_capture_manifest_summary",
-  "service_id": "uuapi-net_5320da5c",
-  "total_bytes": 17672689,
+  "service_id": "nbility-dev_6a8cf8fc",
+  "total_bytes": 93984377,
   "wacz": [
     {
-      "relative_path": "raw/browsertrix/collections/20260723t171352z-uuapi-net-5320da5c-d1307f684aef/20260723t171352z-uuapi-net-5320da5c-d1307f684aef.wacz",
-      "sha256": "c6598466f897f698213c7162a7ca9cb1273f110bc50d44e61d3e5daa9d0cf1c3",
-      "size_bytes": 3754905
+      "relative_path": "raw/browsertrix/collections/20260723t234745z-nbility-dev-6a8cf8fc-8e1158a15f6d/20260723t234745z-nbility-dev-6a8cf8fc-8e1158a15f6d.wacz",
+      "sha256": "dac23a7725584a99e485bab31bf3837e3227e1fc5eac4e129896fe32c71ce8b4",
+      "size_bytes": 44665780
     }
   ]
 }

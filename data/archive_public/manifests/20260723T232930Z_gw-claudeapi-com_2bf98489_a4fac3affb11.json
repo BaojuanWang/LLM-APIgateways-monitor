@@ -1,90 +1,90 @@
 {
   "algorithm": "sha256",
-  "capture_directory_digest": "sha256:2540c3df95024712ac302d41ae2b6cc0eab2e7cacf639d2d0c2e2a7c75a5ca78",
-  "capture_id": "20260723T171352Z_uuapi-net_5320da5c_d1307f684aef",
-  "capture_started_utc": "2026-07-23T17:13:52Z",
-  "domain": "uuapi.net",
-  "file_count": 32,
+  "capture_directory_digest": "sha256:8d573b3488652bf39142c95423b4346c9f5810999936568f9eb9ea7107cf7260",
+  "capture_id": "20260723T232930Z_gw-claudeapi-com_2bf98489_a4fac3affb11",
+  "capture_started_utc": "2026-07-23T23:29:30Z",
+  "domain": "gw.claudeapi.com",
+  "file_count": 28,
   "files_by_role": {
     "browser_state_names": {
       "bytes": 167,
       "count": 1
     },
     "browsertrix_config": {
-      "bytes": 582,
+      "bytes": 613,
       "count": 1
     },
     "browsertrix_output": {
-      "bytes": 62,
+      "bytes": 69,
       "count": 1
     },
     "capture_metadata": {
-      "bytes": 6196,
+      "bytes": 6721,
       "count": 1
     },
     "cdx_index": {
-      "bytes": 51896,
-      "count": 4
+      "bytes": 5026,
+      "count": 2
     },
     "crawl_log": {
-      "bytes": 19484,
+      "bytes": 11182,
       "count": 1
     },
     "effective_config": {
-      "bytes": 2624,
+      "bytes": 2661,
       "count": 1
     },
     "environment": {
-      "bytes": 2278,
+      "bytes": 2305,
       "count": 1
     },
     "exit_status": {
-      "bytes": 9873,
+      "bytes": 9989,
       "count": 1
     },
     "network_summary": {
-      "bytes": 39004,
+      "bytes": 1142,
       "count": 1
     },
     "pages_jsonl": {
-      "bytes": 17378,
+      "bytes": 749,
       "count": 2
     },
     "rendered_dom": {
-      "bytes": 199896,
+      "bytes": 7000,
       "count": 3
     },
     "screenshot": {
-      "bytes": 3183720,
+      "bytes": 762494,
       "count": 6
     },
     "seeds": {
-      "bytes": 75,
+      "bytes": 99,
       "count": 1
     },
     "singlefile": {
-      "bytes": 6695785,
+      "bytes": 8407,
       "count": 3
     },
     "wacz": {
-      "bytes": 3754905,
+      "bytes": 25971,
       "count": 1
     },
     "warc": {
-      "bytes": 3688764,
-      "count": 3
+      "bytes": 8993,
+      "count": 1
     }
   },
   "generated_at_utc": "2026-07-24T04:10:07Z",
   "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
   "schema": "public_capture_manifest_summary",
-  "service_id": "uuapi-net_5320da5c",
-  "total_bytes": 17672689,
+  "service_id": "gw-claudeapi-com_2bf98489",
+  "total_bytes": 853588,
   "wacz": [
     {
-      "relative_path": "raw/browsertrix/collections/20260723t171352z-uuapi-net-5320da5c-d1307f684aef/20260723t171352z-uuapi-net-5320da5c-d1307f684aef.wacz",
-      "sha256": "c6598466f897f698213c7162a7ca9cb1273f110bc50d44e61d3e5daa9d0cf1c3",
-      "size_bytes": 3754905
+      "relative_path": "raw/browsertrix/collections/20260723t232930z-gw-claudeapi-com-2bf98489-a4fac3affb11/20260723t232930z-gw-claudeapi-com-2bf98489-a4fac3affb11.wacz",
+      "sha256": "d2f09ef34cdccbac3810c1f98389c2b64401d2924ee1e2076714e72a65c66800",
+      "size_bytes": 25971
     }
   ]
 }

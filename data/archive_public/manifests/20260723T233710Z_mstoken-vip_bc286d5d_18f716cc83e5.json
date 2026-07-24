@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:520383659ade656871b99b48d7c3db0b93e8385a7d6d46be03e1116cfdc69533",
+  "capture_id": "20260723T233710Z_mstoken-vip_bc286d5d_18f716cc83e5",
+  "capture_started_utc": "2026-07-23T23:37:10Z",
+  "domain": "mstoken.vip",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 480,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 64,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4685,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1003,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11870,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2296,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9959,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 540,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 305,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 21,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1586,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:10:07Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "mstoken-vip_bc286d5d",
+  "total_bytes": 35637,
+  "wacz": []
+}

@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:03eca88da8664a5949cbe23b32e8732ed1a47f16e152606e548f5ed4d0f12c13",
+  "capture_id": "20260723T182559Z_affordableaiapi-com_bdf7ca8c_795847d95edd",
+  "capture_started_utc": "2026-07-23T18:25:59Z",
+  "domain": "affordableaiapi.com",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 496,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 72,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4580,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1075,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 12230,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2624,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2312,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9959,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 556,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 313,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 29,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1602,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:10:07Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "affordableaiapi-com_bdf7ca8c",
+  "total_bytes": 36015,
+  "wacz": []
+}

@@ -1,90 +1,90 @@
 {
   "algorithm": "sha256",
-  "capture_directory_digest": "sha256:2540c3df95024712ac302d41ae2b6cc0eab2e7cacf639d2d0c2e2a7c75a5ca78",
-  "capture_id": "20260723T171352Z_uuapi-net_5320da5c_d1307f684aef",
-  "capture_started_utc": "2026-07-23T17:13:52Z",
-  "domain": "uuapi.net",
-  "file_count": 32,
+  "capture_directory_digest": "sha256:627624fb770bf60767410c8d01e2d108bfba9ecd1b4c1cae2a5f2e1de53e0420",
+  "capture_id": "20260724T004411Z_wkapi-club_d52d45a3_e94164918c90",
+  "capture_started_utc": "2026-07-24T00:44:11Z",
+  "domain": "wkapi.club",
+  "file_count": 36,
   "files_by_role": {
     "browser_state_names": {
-      "bytes": 167,
+      "bytes": 309,
       "count": 1
     },
     "browsertrix_config": {
-      "bytes": 582,
+      "bytes": 844,
       "count": 1
     },
     "browsertrix_output": {
-      "bytes": 62,
+      "bytes": 63,
       "count": 1
     },
     "capture_metadata": {
-      "bytes": 6196,
+      "bytes": 8419,
       "count": 1
     },
     "cdx_index": {
-      "bytes": 51896,
+      "bytes": 61450,
       "count": 4
     },
     "crawl_log": {
-      "bytes": 19484,
+      "bytes": 60208,
       "count": 1
     },
     "effective_config": {
-      "bytes": 2624,
+      "bytes": 2661,
       "count": 1
     },
     "environment": {
-      "bytes": 2278,
+      "bytes": 2293,
       "count": 1
     },
     "exit_status": {
-      "bytes": 9873,
+      "bytes": 9994,
       "count": 1
     },
     "network_summary": {
-      "bytes": 39004,
+      "bytes": 40069,
       "count": 1
     },
     "pages_jsonl": {
-      "bytes": 17378,
+      "bytes": 20920,
       "count": 2
     },
     "rendered_dom": {
-      "bytes": 199896,
-      "count": 3
+      "bytes": 345235,
+      "count": 4
     },
     "screenshot": {
-      "bytes": 3183720,
-      "count": 6
+      "bytes": 3798592,
+      "count": 8
     },
     "seeds": {
-      "bytes": 75,
+      "bytes": 211,
       "count": 1
     },
     "singlefile": {
-      "bytes": 6695785,
-      "count": 3
+      "bytes": 1232644,
+      "count": 4
     },
     "wacz": {
-      "bytes": 3754905,
+      "bytes": 8138755,
       "count": 1
     },
     "warc": {
-      "bytes": 3688764,
+      "bytes": 8023567,
       "count": 3
     }
   },
   "generated_at_utc": "2026-07-24T04:10:07Z",
   "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
   "schema": "public_capture_manifest_summary",
-  "service_id": "uuapi-net_5320da5c",
-  "total_bytes": 17672689,
+  "service_id": "wkapi-club_d52d45a3",
+  "total_bytes": 21746234,
   "wacz": [
     {
-      "relative_path": "raw/browsertrix/collections/20260723t171352z-uuapi-net-5320da5c-d1307f684aef/20260723t171352z-uuapi-net-5320da5c-d1307f684aef.wacz",
-      "sha256": "c6598466f897f698213c7162a7ca9cb1273f110bc50d44e61d3e5daa9d0cf1c3",
-      "size_bytes": 3754905
+      "relative_path": "raw/browsertrix/collections/20260724t004411z-wkapi-club-d52d45a3-e94164918c90/20260724t004411z-wkapi-club-d52d45a3-e94164918c90.wacz",
+      "sha256": "43a6a36c956b63f2b07270122715220bab052fd22895357077d63436de2c4219",
+      "size_bytes": 8138755
     }
   ]
 }

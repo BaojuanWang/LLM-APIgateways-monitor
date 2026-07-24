@@ -1,33 +1,33 @@
 {
   "algorithm": "sha256",
-  "capture_directory_digest": "sha256:2540c3df95024712ac302d41ae2b6cc0eab2e7cacf639d2d0c2e2a7c75a5ca78",
-  "capture_id": "20260723T171352Z_uuapi-net_5320da5c_d1307f684aef",
-  "capture_started_utc": "2026-07-23T17:13:52Z",
-  "domain": "uuapi.net",
-  "file_count": 32,
+  "capture_directory_digest": "sha256:1647542ccfb9557af19bf7fca5977fb0a6e2b56bda4b892549b82d25023c57a9",
+  "capture_id": "20260723T184902Z_api-anyone-ai_64419e7c_1a086596a760",
+  "capture_started_utc": "2026-07-23T18:49:02Z",
+  "domain": "api.anyone.ai",
+  "file_count": 24,
   "files_by_role": {
     "browser_state_names": {
       "bytes": 167,
       "count": 1
     },
     "browsertrix_config": {
-      "bytes": 582,
+      "bytes": 484,
       "count": 1
     },
     "browsertrix_output": {
-      "bytes": 62,
+      "bytes": 66,
       "count": 1
     },
     "capture_metadata": {
-      "bytes": 6196,
+      "bytes": 4778,
       "count": 1
     },
     "cdx_index": {
-      "bytes": 51896,
+      "bytes": 3674,
       "count": 4
     },
     "crawl_log": {
-      "bytes": 19484,
+      "bytes": 6930,
       "count": 1
     },
     "effective_config": {
@@ -35,56 +35,56 @@
       "count": 1
     },
     "environment": {
-      "bytes": 2278,
+      "bytes": 2300,
       "count": 1
     },
     "exit_status": {
-      "bytes": 9873,
+      "bytes": 9983,
       "count": 1
     },
     "network_summary": {
-      "bytes": 39004,
+      "bytes": 550,
       "count": 1
     },
     "pages_jsonl": {
-      "bytes": 17378,
+      "bytes": 1215,
       "count": 2
     },
     "rendered_dom": {
-      "bytes": 199896,
-      "count": 3
+      "bytes": 5666,
+      "count": 1
     },
     "screenshot": {
-      "bytes": 3183720,
-      "count": 6
+      "bytes": 162520,
+      "count": 2
     },
     "seeds": {
-      "bytes": 75,
+      "bytes": 23,
       "count": 1
     },
     "singlefile": {
-      "bytes": 6695785,
-      "count": 3
+      "bytes": 4647,
+      "count": 1
     },
     "wacz": {
-      "bytes": 3754905,
+      "bytes": 161014,
       "count": 1
     },
     "warc": {
-      "bytes": 3688764,
+      "bytes": 147693,
       "count": 3
     }
   },
   "generated_at_utc": "2026-07-24T04:10:07Z",
   "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
   "schema": "public_capture_manifest_summary",
-  "service_id": "uuapi-net_5320da5c",
-  "total_bytes": 17672689,
+  "service_id": "api-anyone-ai_64419e7c",
+  "total_bytes": 514334,
   "wacz": [
     {
-      "relative_path": "raw/browsertrix/collections/20260723t171352z-uuapi-net-5320da5c-d1307f684aef/20260723t171352z-uuapi-net-5320da5c-d1307f684aef.wacz",
-      "sha256": "c6598466f897f698213c7162a7ca9cb1273f110bc50d44e61d3e5daa9d0cf1c3",
-      "size_bytes": 3754905
+      "relative_path": "raw/browsertrix/collections/20260723t184902z-api-anyone-ai-64419e7c-1a086596a760/20260723t184902z-api-anyone-ai-64419e7c-1a086596a760.wacz",
+      "sha256": "bb55702c4a6995fa2a4ddbf267759564da07f2f559457ca7e765bbe64488352e",
+      "size_bytes": 161014
     }
   ]
 }

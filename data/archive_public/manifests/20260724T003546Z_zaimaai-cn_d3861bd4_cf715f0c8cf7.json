@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:4d8c570c6b7b8d63e17dbdc659b85299da5c7a91db196e4f23207bcbcda71cf3",
+  "capture_id": "20260724T003546Z_zaimaai-cn_d3861bd4_cf715f0c8cf7",
+  "capture_started_utc": "2026-07-24T00:35:46Z",
+  "domain": "zaimaai.cn",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 478,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 63,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4644,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 994,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11617,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2291,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10026,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 530,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 304,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 20,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1603,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:10:07Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "zaimaai-cn_d3861bd4",
+  "total_bytes": 35398,
+  "wacz": []
+}

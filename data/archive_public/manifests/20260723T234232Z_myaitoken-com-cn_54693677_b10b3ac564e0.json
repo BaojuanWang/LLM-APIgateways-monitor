@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:bae0a440e559bdc1a6593fdab1d019270e2984be9f963165002ab4a6e0d8b6a2",
+  "capture_id": "20260723T234232Z_myaitoken-com-cn_54693677_b10b3ac564e0",
+  "capture_started_utc": "2026-07-23T23:42:32Z",
+  "domain": "myaitoken.com.cn",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 490,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 69,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4710,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1048,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 12384,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2306,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9955,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 550,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 310,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 26,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1610,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:10:07Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "myaitoken-com-cn_54693677",
+  "total_bytes": 36286,
+  "wacz": []
+}

@@ -1,33 +1,33 @@
 {
   "algorithm": "sha256",
-  "capture_directory_digest": "sha256:2540c3df95024712ac302d41ae2b6cc0eab2e7cacf639d2d0c2e2a7c75a5ca78",
-  "capture_id": "20260723T171352Z_uuapi-net_5320da5c_d1307f684aef",
-  "capture_started_utc": "2026-07-23T17:13:52Z",
-  "domain": "uuapi.net",
+  "capture_directory_digest": "sha256:8fb372d17455cfe44bd5d7510c147c7bcce869d93ecbf29eb9eaba89fa0a7e92",
+  "capture_id": "20260723T190255Z_api-knox-chat_7f5d532c_c011f322630a",
+  "capture_started_utc": "2026-07-23T19:02:55Z",
+  "domain": "api.knox.chat",
   "file_count": 32,
   "files_by_role": {
     "browser_state_names": {
-      "bytes": 167,
+      "bytes": 208,
       "count": 1
     },
     "browsertrix_config": {
-      "bytes": 582,
+      "bytes": 599,
       "count": 1
     },
     "browsertrix_output": {
-      "bytes": 62,
+      "bytes": 66,
       "count": 1
     },
     "capture_metadata": {
-      "bytes": 6196,
+      "bytes": 6505,
       "count": 1
     },
     "cdx_index": {
-      "bytes": 51896,
+      "bytes": 90612,
       "count": 4
     },
     "crawl_log": {
-      "bytes": 19484,
+      "bytes": 34790,
       "count": 1
     },
     "effective_config": {
@@ -35,56 +35,56 @@
       "count": 1
     },
     "environment": {
-      "bytes": 2278,
+      "bytes": 2300,
       "count": 1
     },
     "exit_status": {
-      "bytes": 9873,
+      "bytes": 9971,
       "count": 1
     },
     "network_summary": {
-      "bytes": 39004,
+      "bytes": 43068,
       "count": 1
     },
     "pages_jsonl": {
-      "bytes": 17378,
+      "bytes": 7081,
       "count": 2
     },
     "rendered_dom": {
-      "bytes": 199896,
+      "bytes": 310152,
       "count": 3
     },
     "screenshot": {
-      "bytes": 3183720,
+      "bytes": 5465166,
       "count": 6
     },
     "seeds": {
-      "bytes": 75,
+      "bytes": 88,
       "count": 1
     },
     "singlefile": {
-      "bytes": 6695785,
+      "bytes": 1022239,
       "count": 3
     },
     "wacz": {
-      "bytes": 3754905,
+      "bytes": 3844572,
       "count": 1
     },
     "warc": {
-      "bytes": 3688764,
+      "bytes": 3754049,
       "count": 3
     }
   },
   "generated_at_utc": "2026-07-24T04:10:07Z",
   "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
   "schema": "public_capture_manifest_summary",
-  "service_id": "uuapi-net_5320da5c",
-  "total_bytes": 17672689,
+  "service_id": "api-knox-chat_7f5d532c",
+  "total_bytes": 14594090,
   "wacz": [
     {
-      "relative_path": "raw/browsertrix/collections/20260723t171352z-uuapi-net-5320da5c-d1307f684aef/20260723t171352z-uuapi-net-5320da5c-d1307f684aef.wacz",
-      "sha256": "c6598466f897f698213c7162a7ca9cb1273f110bc50d44e61d3e5daa9d0cf1c3",
-      "size_bytes": 3754905
+      "relative_path": "raw/browsertrix/collections/20260723t190255z-api-knox-chat-7f5d532c-c011f322630a/20260723t190255z-api-knox-chat-7f5d532c-c011f322630a.wacz",
+      "sha256": "10aa047c48e281b2dd09fece3583692d578e0ea6db25046fb3821a08f795ee34",
+      "size_bytes": 3844572
     }
   ]
 }

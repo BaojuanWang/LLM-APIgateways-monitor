@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:de368f5e52feda2078f9b2802e14fc33a09241611c79cd029611b4ffec4e499e",
+  "capture_id": "20260723T190015Z_api-ephone-chat_59aeb8a0_d4cd9f059fd0",
+  "capture_started_utc": "2026-07-23T19:00:15Z",
+  "domain": "api.ephone.chat",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 1024,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 889,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 8754,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8264,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 57581,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 70111,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2624,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2304,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9979,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 50671,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 19154,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 763775,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1332345,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 251,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1897939,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 3956531,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 3854657,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:10:07Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-ephone-chat_59aeb8a0",
+  "total_bytes": 12036853,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260723t190015z-api-ephone-chat-59aeb8a0-d4cd9f059fd0/20260723t190015z-api-ephone-chat-59aeb8a0-d4cd9f059fd0.wacz",
+      "sha256": "26867d641701a8a13f7efe462ab237b278c188c42167f9120d2efeeb64f077a8",
+      "size_bytes": 3956531
+    }
+  ]
+}

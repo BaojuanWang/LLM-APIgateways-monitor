@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:296eee17e26a1da821641ab9a45780764f93ac275b40a947deb59d36399df997",
+  "capture_id": "20260723T230725Z_corenode-best_d5d5f251_d7c36a1afde5",
+  "capture_started_utc": "2026-07-23T23:07:25Z",
+  "domain": "corenode.best",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 484,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 66,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4682,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1021,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 12240,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2300,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9958,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 544,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 307,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 23,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1599,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:10:07Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "corenode-best_d5d5f251",
+  "total_bytes": 36052,
+  "wacz": []
+}

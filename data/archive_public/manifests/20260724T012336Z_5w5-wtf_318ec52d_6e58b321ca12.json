@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:74e807772e93d55b5e0f02731275966b279c58c131cd93b92005a84a006d4352",
+  "capture_id": "20260724T012336Z_5w5-wtf_318ec52d_6e58b321ca12",
+  "capture_started_utc": "2026-07-24T01:23:36Z",
+  "domain": "5w5.wtf",
+  "file_count": 32,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 817,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 60,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 7755,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 46390,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 47506,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2282,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9993,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 18607,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 10056,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 256658,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1465050,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 187,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 6741454,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 6657375,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:10:07Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "5w5-wtf_318ec52d",
+  "total_bytes": 15267160,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t012336z-5w5-wtf-318ec52d-6e58b321ca12/20260724t012336z-5w5-wtf-318ec52d-6e58b321ca12.wacz",
+      "sha256": "e9aea6393b2a9ddafda972b335d76a11a93fa12b3d112659381b92178a1437ed",
+      "size_bytes": 6741454
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:140e281a2d93ed9d783c1c20a9cfa66005bc055787768970f8244cf975e412cf",
+  "capture_id": "20260724T004309Z_sub2api-luchikey-com_72774d46_1f2c2b428c23",
+  "capture_started_utc": "2026-07-24T00:43:09Z",
+  "domain": "sub2api.luchikey.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 191,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 934,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 73,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8571,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 41162,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 54257,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2311,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9929,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 16561,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 8319,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 219686,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2812919,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 291,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 486876,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5051543,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4965013,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:10:07Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "sub2api-luchikey-com_72774d46",
+  "total_bytes": 13681297,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t004309z-sub2api-luchikey-com-72774d46-1f2c2b428c23/20260724t004309z-sub2api-luchikey-com-72774d46-1f2c2b428c23.wacz",
+      "sha256": "adde328003e62b677b703dd0d759d90926726721c6a691ad55efed57a031cd3e",
+      "size_bytes": 5051543
+    }
+  ]
+}

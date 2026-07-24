@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:493dc2cec83e4ec7e357383839222eb83157a63abb7b27d9f2acfe922abd19c0",
+  "capture_id": "20260723T183111Z_ai-anxidc-com_d3ec7674_79be16ca1ce9",
+  "capture_started_utc": "2026-07-23T18:31:11Z",
+  "domain": "ai.anxidc.com",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 484,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 66,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4514,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1021,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11770,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2624,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2298,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10023,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 536,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 307,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 23,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1613,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-24T04:10:07Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "ai-anxidc-com_d3ec7674",
+  "total_bytes": 35446,
+  "wacz": []
+}

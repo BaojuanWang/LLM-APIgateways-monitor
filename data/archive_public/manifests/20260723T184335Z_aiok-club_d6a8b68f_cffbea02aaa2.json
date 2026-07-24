@@ -1,17 +1,17 @@
 {
   "algorithm": "sha256",
-  "capture_directory_digest": "sha256:2540c3df95024712ac302d41ae2b6cc0eab2e7cacf639d2d0c2e2a7c75a5ca78",
-  "capture_id": "20260723T171352Z_uuapi-net_5320da5c_d1307f684aef",
-  "capture_started_utc": "2026-07-23T17:13:52Z",
-  "domain": "uuapi.net",
-  "file_count": 32,
+  "capture_directory_digest": "sha256:7d8f0f364d27aa9f7e9a9596a56a598024290a5583ecfbec8f4ef74520af8db3",
+  "capture_id": "20260723T184335Z_aiok-club_d6a8b68f_cffbea02aaa2",
+  "capture_started_utc": "2026-07-23T18:43:35Z",
+  "domain": "aiok.club",
+  "file_count": 24,
   "files_by_role": {
     "browser_state_names": {
       "bytes": 167,
       "count": 1
     },
     "browsertrix_config": {
-      "bytes": 582,
+      "bytes": 476,
       "count": 1
     },
     "browsertrix_output": {
@@ -19,15 +19,15 @@
       "count": 1
     },
     "capture_metadata": {
-      "bytes": 6196,
+      "bytes": 4612,
       "count": 1
     },
     "cdx_index": {
-      "bytes": 51896,
+      "bytes": 8592,
       "count": 4
     },
     "crawl_log": {
-      "bytes": 19484,
+      "bytes": 7254,
       "count": 1
     },
     "effective_config": {
@@ -35,56 +35,56 @@
       "count": 1
     },
     "environment": {
-      "bytes": 2278,
+      "bytes": 2292,
       "count": 1
     },
     "exit_status": {
-      "bytes": 9873,
+      "bytes": 9961,
       "count": 1
     },
     "network_summary": {
-      "bytes": 39004,
+      "bytes": 4126,
       "count": 1
     },
     "pages_jsonl": {
-      "bytes": 17378,
+      "bytes": 1463,
       "count": 2
     },
     "rendered_dom": {
-      "bytes": 199896,
-      "count": 3
+      "bytes": 7039,
+      "count": 1
     },
     "screenshot": {
-      "bytes": 3183720,
-      "count": 6
+      "bytes": 200023,
+      "count": 2
     },
     "seeds": {
-      "bytes": 75,
+      "bytes": 19,
       "count": 1
     },
     "singlefile": {
-      "bytes": 6695785,
-      "count": 3
+      "bytes": 30676,
+      "count": 1
     },
     "wacz": {
-      "bytes": 3754905,
+      "bytes": 287841,
       "count": 1
     },
     "warc": {
-      "bytes": 3688764,
+      "bytes": 271503,
       "count": 3
     }
   },
   "generated_at_utc": "2026-07-24T04:10:07Z",
   "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
   "schema": "public_capture_manifest_summary",
-  "service_id": "uuapi-net_5320da5c",
-  "total_bytes": 17672689,
+  "service_id": "aiok-club_d6a8b68f",
+  "total_bytes": 838730,
   "wacz": [
     {
-      "relative_path": "raw/browsertrix/collections/20260723t171352z-uuapi-net-5320da5c-d1307f684aef/20260723t171352z-uuapi-net-5320da5c-d1307f684aef.wacz",
-      "sha256": "c6598466f897f698213c7162a7ca9cb1273f110bc50d44e61d3e5daa9d0cf1c3",
-      "size_bytes": 3754905
+      "relative_path": "raw/browsertrix/collections/20260723t184335z-aiok-club-d6a8b68f-cffbea02aaa2/20260723t184335z-aiok-club-d6a8b68f-cffbea02aaa2.wacz",
+      "sha256": "1a8eb4aa800ad1e0af52fb331aaf5939d1afc9b78d15cc71304fefdccf4c5448",
+      "size_bytes": 287841
     }
   ]
 }
