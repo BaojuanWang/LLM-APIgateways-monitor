@@ -69,37 +69,59 @@ def main() -> int:
                 report["schema_validation"] = validate_document(read_json(meta), "capture")
         reports.append(report)
 
+    def outcome_of(r):
+        return (r.get("outcome") or {}).get("outcome", "")
+
+    # Outcome-aware categories (the WACZ requirement follows the outcome policy).
+    valid_wacz = [r for r in reports if outcome_of(r) == "archived" and r["status"].startswith("valid")]
+    valid_unreachable = [r for r in reports if outcome_of(r) == "documented_unreachable"]
+    retryable = [r for r in reports if outcome_of(r) == "retryable_no_wacz"]
+    incomplete = [r for r in reports if r["status"] == "incomplete" or outcome_of(r) == "incomplete"]
+    # Anything invalid that is not a retryable-no-WACZ (e.g. corrupt WACZ, hash
+    # mismatch) is a hard failure that still needs attention.
+    other_invalid = [
+        r for r in reports if r["status"] == "invalid" and outcome_of(r) != "retryable_no_wacz"
+    ]
+
     summary = {
         "validated_at_utc": utc_now_iso(),
         "capture_count": len(reports),
-        "valid": sum(1 for r in reports if r["status"] == "valid"),
-        "valid_with_warnings": sum(1 for r in reports if r["status"] == "valid_with_warnings"),
-        "invalid": sum(1 for r in reports if r["status"] == "invalid"),
+        "valid_total": sum(1 for r in reports if r["status"].startswith("valid")),
+        "valid_wacz_captures": len(valid_wacz),
+        "valid_tombstones_without_wacz": len(valid_unreachable),
+        "retryable_failures": len(retryable),
+        "other_invalid": len(other_invalid),
+        "incomplete_interrupted": len(incomplete),
         "reports": reports,
     }
 
     if args.json:
         emit(summary, as_json=True)
     else:
-        print(f"validated {summary['capture_count']} capture(s)")
-        print(
-            f"  valid={summary['valid']}  with_warnings={summary['valid_with_warnings']}  invalid={summary['invalid']}"
-        )
+        print(f"validated {summary['capture_count']} capture(s) (incomplete excluded from valid/invalid totals)")
+        print(f"  valid WACZ captures            : {summary['valid_wacz_captures']}")
+        print(f"  valid tombstones without WACZ  : {summary['valid_tombstones_without_wacz']}")
+        print(f"  retryable failures             : {summary['retryable_failures']}")
+        if summary["other_invalid"]:
+            print(f"  other invalid (needs attention): {summary['other_invalid']}")
+        print(f"  incomplete / interrupted       : {summary['incomplete_interrupted']}")
+        marker = {"valid": "OK  ", "valid_with_warnings": "WARN", "invalid": "FAIL", "incomplete": "INCM"}
         for report in reports:
-            marker = {"valid": "OK  ", "valid_with_warnings": "WARN", "invalid": "FAIL"}[report["status"]]
-            print(f"  {marker} {report['capture_dir']}")
+            oc = outcome_of(report)
+            tag = {"documented_unreachable": " [tombstone/no-wacz]", "retryable_no_wacz": " [retryable]",
+                   "incomplete": " [quarantined]"}.get(oc, "")
+            print(f"  {marker.get(report['status'], '????')} {report['capture_dir']}{tag}")
             for check in report["failed_checks"]:
                 detail = next((c["detail"] for c in report["checks"] if c["name"] == check), "")
                 print(f"         error  : {check} — {detail}")
-            for check in report["warning_checks"]:
-                detail = next((c["detail"] for c in report["checks"] if c["name"] == check), "")
-                print(f"         warning: {check} — {detail}")
             sv = report.get("schema_validation")
             if sv and sv.get("valid") is False:
                 for err in sv["errors"][:5]:
                     print(f"         schema : {err['path']}: {err['message']}")
 
-    return 0 if summary["invalid"] == 0 else 1
+    # Exit non-zero only on hard failures (retryable/other invalid); tombstone
+    # captures and quarantined interrupted dirs are not failures.
+    return 0 if not retryable and not other_invalid else 1
 
 
 if __name__ == "__main__":

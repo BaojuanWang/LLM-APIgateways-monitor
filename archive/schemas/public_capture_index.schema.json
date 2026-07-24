@@ -47,7 +47,12 @@
     },
     "source_page_title": { "type": "string" },
     "source_homepage_html_hash": { "type": "string" },
-    "validation_status": { "type": "string", "enum": ["valid", "valid_with_warnings", "invalid", ""] },
+    "validation_status": { "type": "string", "enum": ["valid", "valid_with_warnings", "invalid", "incomplete", ""] },
+    "capture_outcome": {
+      "type": "string",
+      "enum": ["archived", "documented_unreachable", "retryable_no_wacz", "incomplete", ""],
+      "description": "Outcome policy result. 'archived' = WACZ present; 'documented_unreachable' = valid without WACZ (a genuine network-layer failure with a complete record); 'retryable_no_wacz' = reachable/indeterminate with no WACZ (retry); 'incomplete' = interrupted/quarantined."
+    },
     "validation_errors": { "type": "string" },
     "tombstone_status": { "type": "string" },
     "corpus_relpath": {

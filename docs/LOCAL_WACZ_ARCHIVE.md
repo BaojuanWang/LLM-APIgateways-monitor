@@ -66,8 +66,11 @@ Two facts define the design:
 
 1. **The WACZ is the canonical artifact.** SingleFile HTML and standalone
    screenshots are secondary representations. They are convenient, they are not
-   a replacement, and no code path treats them as one. A capture whose WACZ is
-   missing or corrupt is `invalid` no matter how good its screenshots are.
+   a replacement, and no code path treats them as one. A reachable capture whose
+   WACZ is missing or corrupt is `invalid` no matter how good its screenshots
+   are — the sole exception being a capture that documented a genuine
+   network-layer unreachability with a complete record (see
+   [Capture outcome and artifact policy](#capture-outcome-and-artifact-policy)).
 2. **Raw material never enters Git.** It lives only under `$ARCHIVE_ROOT`, on a
    verified external volume by default, or on this Mac's own disk when that is
    explicitly authorized. Either way it is outside every Git working tree, and
@@ -436,6 +439,29 @@ python3 archive/scripts/validate_archive_capture.py --all
 python3 archive/scripts/validate_archive_capture.py --capture-dir "$ARCHIVE_ROOT/corpus/<sid>/captures/<cid>"
 python3 archive/scripts/validate_archive_capture.py --all --no-write --json
 ```
+
+Validation reports four outcome categories (see the policy below): valid WACZ
+captures, valid tombstones without WACZ, retryable failures, and incomplete /
+interrupted captures.
+
+### Capture outcome and artifact policy
+
+The WACZ is the canonical artifact, but "no WACZ" does not mean one thing. The
+validator asks what artifact *this* capture needed (`archivelib/outcome.py`), and
+crucially it **never infers a valid tombstone merely from a missing WACZ** — a
+WACZ-less capture is valid only on positive evidence:
+
+| outcome | when | valid? |
+|---|---|---|
+| `archived` | a WACZ is present and passes the container check | **valid** |
+| `documented_unreachable` | no HTTP response was received, the failure is a **definitive** network-layer failure (DNS failure, connection refused, network unreachable, TLS handshake failure), **and** the record is complete (capture.json, the network summary documenting the failure, `browsertrix_exit.json`, environment, started/ended timestamps, and a verifying SHA256 manifest) | **valid** (no WACZ required) |
+| `retryable_no_wacz` | no WACZ **and** either an HTTP response *was* seen (reachable — should have been captured) or the failure is **indeterminate** (a connection or read timeout: the host may be up and merely slow) | **invalid** (retry) |
+| `incomplete` | the directory was never sealed (no `capture.json`) or carries a `quarantine.json` marker | **incomplete** — excluded from valid/invalid totals |
+
+An endpoint fingerprint is never the deciding factor: a definitive *network*
+failure with a complete record is what makes a dead-site capture citable, and a
+mere connection timeout is not enough (it cannot distinguish "gone" from "slow").
+A corrupt WACZ that *does* exist is always invalid regardless of the site state.
 
 ### Export public metadata
 
@@ -869,7 +895,7 @@ not touch Git; publishing stays a manual, reviewed step.
 python3 -m pytest archive/tests/ -q
 ```
 
-321 tests, no network access, no dependency on any live third-party site. They
+341 tests, no network access, no dependency on any live third-party site. They
 run against a synthetic fixture site served from `archive/tests/fixtures/site/`
 and a scratch `ARCHIVE_ROOT` gated by an explicit test-only opt-in.
 

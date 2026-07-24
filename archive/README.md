@@ -12,8 +12,13 @@ change detector. This is the local full-capture layer it triggers.
 ## Two rules everything else follows from
 
 1. **The WACZ is the canonical artifact.** SingleFile HTML and standalone
-   screenshots are secondary representations, never substitutes. A capture with a
-   missing or corrupt WACZ is `invalid` however good its screenshots are.
+   screenshots are secondary representations, never substitutes. A reachable
+   capture — or a corrupt WACZ — is `invalid` however good its screenshots are.
+   The one exception is a capture that *documented a genuine network-layer
+   unreachability* (DNS failure, connection refused, TLS failure) with a
+   complete record: it is a valid citable tombstone without a WACZ. Validity is
+   never inferred from a missing WACZ alone — see the outcome policy in
+   [docs/LOCAL_WACZ_ARCHIVE.md](../docs/LOCAL_WACZ_ARCHIVE.md).
 2. **Raw material never enters Git.** It lives only under `$ARCHIVE_ROOT` — on a
    volume `diskutil` confirms is external and writable by default, or on this
    Mac's own disk when explicitly authorized with `--allow-local-storage`. There
@@ -56,7 +61,7 @@ archive/
   config/         archive.example.toml, browsertrix.template.yaml
   schemas/        JSON Schemas for site / capture / tombstone / public index
   scripts/        the CLI entry points listed above
-  tests/          321 tests + a synthetic fixture site + a Docker smoke test
+  tests/          341 tests + a synthetic fixture site + a Docker smoke test
   launchd/        plist template (rendered on request; never auto-installed)
 ```
 

@@ -27,6 +27,13 @@ from pathlib import Path
 from .canonical import read_json, write_json
 from .envmeta import utc_now_iso
 from .manifest import MANIFEST_RELPATH, load_manifest, verify_manifest
+from .outcome import (
+    OUTCOME_ARCHIVED,
+    OUTCOME_INCOMPLETE,
+    OUTCOME_RETRYABLE,
+    OUTCOME_UNREACHABLE,
+    classify_outcome,
+)
 from .paths import repo_root
 from .sanitize import SECRET_RULES, scan_text_for_secrets
 
@@ -328,13 +335,50 @@ def check_capture_metadata(capture_root: Path) -> Check:
 
 
 def validate_capture(capture_root: Path, *, write_report: bool = True) -> dict:
-    """Run every check and (optionally) persist the report inside the capture."""
+    """Run every check and (optionally) persist the report inside the capture.
+
+    The WACZ requirement follows the capture outcome policy (see
+    ``archivelib.outcome``): a WACZ is mandatory for a reachable capture, but a
+    capture that documented a genuine network-layer unreachability with a
+    complete record is valid without one. An interrupted directory is neither
+    valid nor invalid — it is reported as ``incomplete`` and excluded from
+    normal totals.
+    """
     capture_root = Path(capture_root)
+
+    outcome = classify_outcome(capture_root)
+
+    # Interrupted / quarantined directories are not validated as pass/fail.
+    if outcome.outcome == OUTCOME_INCOMPLETE:
+        report = {
+            "schema": "validation",
+            "validated_at_utc": utc_now_iso(),
+            "capture_directory_digest": None,
+            "status": "incomplete",
+            "outcome": outcome.as_dict(),
+            "error_count": 0,
+            "warning_count": 0,
+            "checks": [],
+            "failed_checks": [],
+            "warning_checks": [],
+        }
+        return _persist_report(capture_root, report, write_report)
+
     checks: list[Check] = []
 
     wacz_check, wacz = check_wacz_present(capture_root)
+    container_check = check_wacz_container(wacz)
+    # When the outcome policy says a WACZ is not required (a confirmed
+    # unreachable host with a complete record), its absence is informational,
+    # not an error — the capture is still a valid, citable record of the
+    # failure. A retryable/reachable capture keeps the WACZ checks as errors.
+    if not outcome.wacz_required:
+        for c in (wacz_check, container_check):
+            if not c.passed:
+                c.severity = "info"
+                c.detail = f"{c.detail} — WACZ not required ({outcome.reachability}: {outcome.network_failure})"
     checks.append(wacz_check)
-    checks.append(check_wacz_container(wacz))
+    checks.append(container_check)
     checks.append(check_browsertrix_logs(capture_root))
     checks.append(check_browsertrix_aux(capture_root))
     checks.extend(check_manifest(capture_root))
@@ -363,6 +407,7 @@ def validate_capture(capture_root: Path, *, write_report: bool = True) -> dict:
         "validated_at_utc": utc_now_iso(),
         "capture_directory_digest": manifest_digest,
         "status": status,
+        "outcome": outcome.as_dict(),
         "error_count": len(errors),
         "warning_count": len(warnings),
         "checks": [c.as_dict() for c in checks],
@@ -370,6 +415,11 @@ def validate_capture(capture_root: Path, *, write_report: bool = True) -> dict:
         "warning_checks": [c.name for c in warnings],
     }
 
+    return _persist_report(capture_root, report, write_report)
+
+
+def _persist_report(capture_root: Path, report: dict, write_report: bool) -> dict:
+    """Append a validation report without ever replacing an earlier one."""
     if write_report:
         target = capture_root / VALIDATION_RELPATH
         # The validation report is the one file that may be written more than
@@ -382,5 +432,4 @@ def validate_capture(capture_root: Path, *, write_report: bool = True) -> dict:
         else:
             write_json(target, report)
             report["written_to"] = VALIDATION_RELPATH
-
     return report
