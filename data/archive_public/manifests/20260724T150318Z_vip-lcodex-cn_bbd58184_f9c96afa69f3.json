@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:2425181190c1928eff54d8698b05b2375cc57dd1de9f2ae54e3a64e4aa1e349a",
+  "capture_id": "20260724T150318Z_vip-lcodex-cn_bbd58184_f9c96afa69f3",
+  "capture_started_utc": "2026-07-24T15:03:18Z",
+  "domain": "vip.lcodex.cn",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 484,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 66,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4689,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1021,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11770,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2299,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10023,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 536,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 307,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 23,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1616,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "vip-lcodex-cn_bbd58184",
+  "total_bytes": 35662,
+  "wacz": []
+}

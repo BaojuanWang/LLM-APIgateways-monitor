@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:1ab98f140eb9d009ca2cbbdee4aca7273518638ae30adbd2fd954b4b00ae5ee2",
+  "capture_id": "20260724T203403Z_api-getezclaw-com_03ba8181_d828cf3bc662",
+  "capture_started_utc": "2026-07-24T20:34:03Z",
+  "domain": "api.getezclaw.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 537,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 907,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 70,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8455,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 60008,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 57702,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2302,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10004,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 19038,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 10143,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 227466,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2138485,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 267,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1356132,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 6647501,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 6546289,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-getezclaw-com_03ba8181",
+  "total_bytes": 17087967,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t203403z-api-getezclaw-com-03ba8181-d828cf3bc662/20260724t203403z-api-getezclaw-com-03ba8181-d828cf3bc662.wacz",
+      "sha256": "7d17aff8c003fbf19af5be847dae3bd93c2bbabfab9fbf38ef5935f55156752f",
+      "size_bytes": 6647501
+    }
+  ]
+}

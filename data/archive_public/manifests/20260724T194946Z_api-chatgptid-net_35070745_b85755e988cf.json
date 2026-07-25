@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:ed8c5296a499ee178edddbbea3536f91a01c3a93b23da4b91254af83a1aa5ceb",
+  "capture_id": "20260724T194946Z_api-chatgptid-net_35070745_b85755e988cf",
+  "capture_started_utc": "2026-07-24T19:49:46Z",
+  "domain": "api.chatgptid.net",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 537,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 907,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 70,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8458,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 56332,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 57656,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2303,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10004,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 18399,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 8724,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 194931,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1166594,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 267,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1007338,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5116547,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5018639,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-chatgptid-net_35070745",
+  "total_bytes": 12670367,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t194946z-api-chatgptid-net-35070745-b85755e988cf/20260724t194946z-api-chatgptid-net-35070745-b85755e988cf.wacz",
+      "sha256": "0c29d9303c6ea72582b57f8e7c4be262235f6ce17e822f6910ce64411cff5ae4",
+      "size_bytes": 5116547
+    }
+  ]
+}

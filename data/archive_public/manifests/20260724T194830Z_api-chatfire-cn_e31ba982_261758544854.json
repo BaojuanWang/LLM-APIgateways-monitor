@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:6bf03e9c2cdec754f775e646870482c6a2fec5b9874ba2c092cc48d0a3792039",
+  "capture_id": "20260724T194830Z_api-chatfire-cn_e31ba982_261758544854",
+  "capture_started_utc": "2026-07-24T19:48:30Z",
+  "domain": "api.chatfire.cn",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 1384,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 889,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 68,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8394,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 59584,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 58511,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2299,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10001,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 47951,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 8814,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 2787602,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1520890,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 251,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 6906574,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5101104,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5000633,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-chatfire-cn_e31ba982",
+  "total_bytes": 21517610,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t194830z-api-chatfire-cn-e31ba982-261758544854/20260724t194830z-api-chatfire-cn-e31ba982-261758544854.wacz",
+      "sha256": "8bab7164690b15fa3fe6fd2992da76b8ca38e9dffffc16d22fe5424d28842bca",
+      "size_bytes": 5101104
+    }
+  ]
+}

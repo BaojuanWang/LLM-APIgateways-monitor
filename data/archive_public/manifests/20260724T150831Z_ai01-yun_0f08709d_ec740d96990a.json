@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:fcc04c7319025660f3a4bd9b7d8376ca8537d8926a83b42a1e4c86505388de17",
+  "capture_id": "20260724T150831Z_ai01-yun_0f08709d_ec740d96990a",
+  "capture_started_utc": "2026-07-24T15:08:31Z",
+  "domain": "ai01.yun",
+  "file_count": 32,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 826,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 61,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 7848,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 43512,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 56688,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2285,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9995,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 20863,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 5266,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 218207,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1477923,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 195,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 4074749,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 3987714,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "ai01-yun_0f08709d",
+  "total_bytes": 9909102,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t150831z-ai01-yun-0f08709d-ec740d96990a/20260724t150831z-ai01-yun-0f08709d-ec740d96990a.wacz",
+      "sha256": "9648edb986be4683513f41cc715df3a7813f305e7bae8c726f5ad8a849ab18cb",
+      "size_bytes": 4074749
+    }
+  ]
+}

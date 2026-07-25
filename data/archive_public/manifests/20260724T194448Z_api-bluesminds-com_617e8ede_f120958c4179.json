@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:42dde5783c9cc59ed4848d6c2daafeea43ddb55fad0acfbca32099eac108a85e",
+  "capture_id": "20260724T194448Z_api-bluesminds-com_617e8ede_f120958c4179",
+  "capture_started_utc": "2026-07-24T19:44:48Z",
+  "domain": "api.bluesminds.com",
+  "file_count": 35,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 916,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 71,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8523,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 51026,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 57674,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2305,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10003,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 25971,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 9905,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 306056,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1570032,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 275,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 587456,
+      "count": 3
+    },
+    "wacz": {
+      "bytes": 5543297,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5446839,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-bluesminds-com_617e8ede",
+  "total_bytes": 13623319,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t194448z-api-bluesminds-com-617e8ede-f120958c4179/20260724t194448z-api-bluesminds-com-617e8ede-f120958c4179.wacz",
+      "sha256": "dede29c68f8966c6ae2feb2b5199c6a63a965915125cf3ea4c70c1b31926d2fb",
+      "size_bytes": 5543297
+    }
+  ]
+}

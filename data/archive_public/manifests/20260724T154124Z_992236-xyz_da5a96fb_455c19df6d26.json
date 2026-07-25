@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:4b74bfca47b544dd4c9f5aa1379512bebecb79c32d659b302da4006dab13c4d5",
+  "capture_id": "20260724T154124Z_992236-xyz_da5a96fb_455c19df6d26",
+  "capture_started_utc": "2026-07-24T15:41:24Z",
+  "domain": "992236.xyz",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 478,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 63,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4528,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 994,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11617,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2290,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10028,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 534,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 304,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 20,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1606,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "992236-xyz_da5a96fb",
+  "total_bytes": 35290,
+  "wacz": []
+}

@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:a0010d01479559c0334ec4e356eaa208fdf9c39802dd527d913b62c9d01f6d57",
+  "capture_id": "20260724T202707Z_api-frontier-intelligence-tech_07f1d650_d1134550c2af",
+  "capture_started_utc": "2026-07-24T20:27:07Z",
+  "domain": "api.frontier-intelligence.tech",
+  "file_count": 32,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 1020,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 83,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8416,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 51196,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 47169,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2328,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10010,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 3078,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 7098,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 156,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 46800,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 367,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 2051341,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1968063,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-frontier-intelligence-tech_07f1d650",
+  "total_bytes": 4199953,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t202707z-api-frontier-intelligence-tech-07f1d650-d1134550c2af/20260724t202707z-api-frontier-intelligence-tech-07f1d650-d1134550c2af.wacz",
+      "sha256": "5f960f0592e4fdfe9c3863a6c4d2b01a5730ff7a392e9a6ded10f5ec0481f268",
+      "size_bytes": 2051341
+    }
+  ]
+}

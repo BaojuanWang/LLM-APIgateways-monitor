@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:fa4ac6ad3e41724007d65dd22b8e02e5be51c77f7fba745b4441c94bbbbb5b69",
+  "capture_id": "20260724T202551Z_api-franklybuilds-com_23a664e3_d6a2f77566b1",
+  "capture_started_utc": "2026-07-24T20:25:51Z",
+  "domain": "api.franklybuilds.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 943,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 74,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8619,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 80542,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 59113,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2311,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10006,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 31327,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 9300,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 274543,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1501235,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 299,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 537012,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5810047,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5697985,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-franklybuilds-com_23a664e3",
+  "total_bytes": 14026326,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t202551z-api-franklybuilds-com-23a664e3-d6a2f77566b1/20260724t202551z-api-franklybuilds-com-23a664e3-d6a2f77566b1.wacz",
+      "sha256": "ccd96107dab3d63977dd9a4e491e7d4a6b979b877c31e98cbbca557525cee9f5",
+      "size_bytes": 5810047
+    }
+  ]
+}

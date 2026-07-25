@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:af6ea37d4e0281869a1e3800eb3372af42b82bbfdca60d7cb958e113eed7aa44",
+  "capture_id": "20260724T232813Z_api-tmlab-store_bf5a8c03_1ffbbd2bccdc",
+  "capture_started_utc": "2026-07-24T23:28:13Z",
+  "domain": "api.tmlab.store",
+  "file_count": 32,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 334,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 889,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 68,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 7999,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 59646,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 57335,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2298,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10001,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 20552,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 9955,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 261124,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2108623,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 251,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 8459359,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 8358892,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-tmlab-store_bf5a8c03",
+  "total_bytes": 19359987,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t232813z-api-tmlab-store-bf5a8c03-1ffbbd2bccdc/20260724t232813z-api-tmlab-store-bf5a8c03-1ffbbd2bccdc.wacz",
+      "sha256": "1a1f13a3b6542fea94a213543ed3298e68d5c4ae7c6f02e89eb38c9a413e311b",
+      "size_bytes": 8459359
+    }
+  ]
+}

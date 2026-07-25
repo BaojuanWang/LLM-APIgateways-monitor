@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:975d8214261a4a8e0b7430bcbc7ba1d959cbc98b96e60692484c2aae26e23d66",
+  "capture_id": "20260724T235119Z_api-xeduapi-com_1cb312db_1cd4883417f2",
+  "capture_started_utc": "2026-07-24T23:51:19Z",
+  "domain": "api.xeduapi.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 334,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 889,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 68,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8422,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 48986,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 56461,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2299,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10001,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 24601,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 10927,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 240526,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1268801,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 251,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 357942,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5181726,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5086490,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-xeduapi-com_1cb312db",
+  "total_bytes": 12301385,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t235119z-api-xeduapi-com-1cb312db-1cd4883417f2/20260724t235119z-api-xeduapi-com-1cb312db-1cd4883417f2.wacz",
+      "sha256": "1cb549c677d44f270184e87835ef02fed9cfba068e5b5f0cfb8b569d5cfd0d86",
+      "size_bytes": 5181726
+    }
+  ]
+}

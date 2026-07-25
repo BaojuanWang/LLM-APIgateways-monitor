@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:a2dff9b58686da8f905ea28fc15cf8ded2b4d78f69dd9d3f4818f830af59256b",
+  "capture_id": "20260724T160749Z_ai-cdn-ad_394562c2_6d689d231dfa",
+  "capture_started_utc": "2026-07-24T16:07:49Z",
+  "domain": "ai.cdn.ad",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 476,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 62,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4489,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 985,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11566,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2286,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10031,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 528,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 303,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 19,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1597,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "ai-cdn-ad_394562c2",
+  "total_bytes": 35170,
+  "wacz": []
+}

@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:7af69b714329885d526aa4d3d802ee9e24fad59bb326dc43b06fefa71e6c740d",
+  "capture_id": "20260724T175026Z_aiito-top_7e60e1bd_99ec380a2494",
+  "capture_started_utc": "2026-07-24T17:50:26Z",
+  "domain": "aiito.top",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 476,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 62,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4511,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 985,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11566,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2288,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10032,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 532,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 303,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 19,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1597,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "aiito-top_7e60e1bd",
+  "total_bytes": 35199,
+  "wacz": []
+}

@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:f6b55349bc7baace8e2ac9b0bb8b30ab5b9e0cbfcc9b406ad4d8213649869336",
+  "capture_id": "20260724T233727Z_api-uu6-top_68e3fb05_2a95acf55e91",
+  "capture_started_utc": "2026-07-24T23:37:27Z",
+  "domain": "api.uu6.top",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 537,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 751,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 64,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8193,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 28696,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 41052,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2291,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9997,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 15935,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 8901,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 245984,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1698647,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 167,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1017349,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5166761,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5099122,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-uu6-top_68e3fb05",
+  "total_bytes": 13347108,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t233727z-api-uu6-top-68e3fb05-2a95acf55e91/20260724t233727z-api-uu6-top-68e3fb05-2a95acf55e91.wacz",
+      "sha256": "64bdfebba5fbbcb5b8b7c7376a6db45599e46d818bb05be374961a356878d9b3",
+      "size_bytes": 5166761
+    }
+  ]
+}

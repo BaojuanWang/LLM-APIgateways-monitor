@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:3a5e147e335c5530a81403c260d706dd6cb8d19fdb8d4ac2108639dbd6a2cdff",
+  "capture_id": "20260724T232650Z_api-timebackward-com_7e545ae5_abe94d39c207",
+  "capture_started_utc": "2026-07-24T23:26:50Z",
+  "domain": "api.timebackward.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 1146,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 934,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 73,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8631,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 54082,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 55508,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2308,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9981,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 21279,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 5552,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 148786,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1007166,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 291,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1221971,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 4254542,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4163067,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-timebackward-com_7e545ae5",
+  "total_bytes": 10957978,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t232650z-api-timebackward-com-7e545ae5-abe94d39c207/20260724t232650z-api-timebackward-com-7e545ae5-abe94d39c207.wacz",
+      "sha256": "b785270a12913ab09056a549a81edb663ebf0ffc325b25e86714c8e80dd3037b",
+      "size_bytes": 4254542
+    }
+  ]
+}

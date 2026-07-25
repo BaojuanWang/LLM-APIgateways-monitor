@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:ee02d1c6fd3f68120f1c4a48187fcb499adc113c3c11f6b13ce61eea1591e87e",
+  "capture_id": "20260725T000846Z_api1-uiuiapi-com_02086563_63d1bcc1fba2",
+  "capture_started_utc": "2026-07-25T00:08:46Z",
+  "domain": "api1.uiuiapi.com",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 334,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 898,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 13573,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8506,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 53855,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 79311,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2301,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9986,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 44395,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 19115,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 302888,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 3339068,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 259,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 633030,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 16662113,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 16546269,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api1-uiuiapi-com_02086563",
+  "total_bytes": 37718562,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t000846z-api1-uiuiapi-com-02086563-63d1bcc1fba2/20260725t000846z-api1-uiuiapi-com-02086563-63d1bcc1fba2.wacz",
+      "sha256": "20e61aff20819c3a07d5a20adc26221e8ee7380203ed6fb3729d1a1ec9c65a64",
+      "size_bytes": 16662113
+    }
+  ]
+}

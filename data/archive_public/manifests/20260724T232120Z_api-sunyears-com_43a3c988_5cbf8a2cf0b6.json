@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:1af471ee0391beebd9d9e6fe18d66053748e5e333a0d72b08cd03cbaeed926a5",
+  "capture_id": "20260724T232120Z_api-sunyears-com_43a3c988_5cbf8a2cf0b6",
+  "capture_started_utc": "2026-07-24T23:21:20Z",
+  "domain": "api.sunyears.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 537,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 898,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 69,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8397,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 57642,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 57877,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2301,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9999,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 21321,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 4158,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 111908,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 966858,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 259,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1183081,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 4453400,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4359186,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-sunyears-com_43a3c988",
+  "total_bytes": 11240552,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t232120z-api-sunyears-com-43a3c988-5cbf8a2cf0b6/20260724t232120z-api-sunyears-com-43a3c988-5cbf8a2cf0b6.wacz",
+      "sha256": "bc5724132708e233d45715286a2e63e2c8f0c1efad341378967a544d8e822f6e",
+      "size_bytes": 4453400
+    }
+  ]
+}

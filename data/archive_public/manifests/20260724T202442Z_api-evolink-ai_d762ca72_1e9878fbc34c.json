@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:c70ccf17cc4c801c1f0bacc402ac796cf09a4f4f86d3294fe7a2b441156f6bc3",
+  "capture_id": "20260724T202442Z_api-evolink-ai_d762ca72_1e9878fbc34c",
+  "capture_started_utc": "2026-07-24T20:24:42Z",
+  "domain": "api.evolink.ai",
+  "file_count": 24,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 545,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 67,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 5666,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 3510,
+      "count": 2
+    },
+    "crawl_log": {
+      "bytes": 8661,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2297,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9992,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 840,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 547,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 1813,
+      "count": 2
+    },
+    "screenshot": {
+      "bytes": 182114,
+      "count": 4
+    },
+    "seeds": {
+      "bytes": 58,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 2741,
+      "count": 2
+    },
+    "wacz": {
+      "bytes": 19977,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 6489,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-evolink-ai_d762ca72",
+  "total_bytes": 248145,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t202442z-api-evolink-ai-d762ca72-1e9878fbc34c/20260724t202442z-api-evolink-ai-d762ca72-1e9878fbc34c.wacz",
+      "sha256": "0a6bc39545ff9094cd5b9f040ec2a6bf1ea505a2833c7cb22e6e93ca585eadbb",
+      "size_bytes": 19977
+    }
+  ]
+}

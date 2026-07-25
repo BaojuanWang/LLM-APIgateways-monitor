@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:9b04df5ddb75c5f372ed0735089b4a9b39f9309b1a6acf7fad470010d5a90445",
+  "capture_id": "20260724T210716Z_api-lingshuai-cc_136972b7_466a401faacb",
+  "capture_started_utc": "2026-07-24T21:07:16Z",
+  "domain": "api.lingshuai.cc",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 490,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 69,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4557,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1048,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11923,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2301,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10021,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 546,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 310,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 26,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1615,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-lingshuai-cc_136972b7",
+  "total_bytes": 35734,
+  "wacz": []
+}

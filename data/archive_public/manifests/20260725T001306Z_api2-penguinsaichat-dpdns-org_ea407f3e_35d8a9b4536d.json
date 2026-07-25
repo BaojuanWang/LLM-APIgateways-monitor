@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:b0b582b1e14f6f5a257cda9c3037d24a7a856392a9adaf927bab26ebce7153c8",
+  "capture_id": "20260725T001306Z_api2-penguinsaichat-dpdns-org_ea407f3e_35d8a9b4536d",
+  "capture_started_utc": "2026-07-25T00:13:06Z",
+  "domain": "api2.penguinsaichat.dpdns.org",
+  "file_count": 32,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 1010,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 82,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8424,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 48724,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 63485,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2327,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9988,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 23340,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 5935,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 133573,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 865551,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 358,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 2788491,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 2691299,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api2-penguinsaichat-dpdns-org_ea407f3e",
+  "total_bytes": 6645557,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t001306z-api2-penguinsaichat-dpdns-org-ea407f3e-35d8a9b4536d/20260725t001306z-api2-penguinsaichat-dpdns-org-ea407f3e-35d8a9b4536d.wacz",
+      "sha256": "a58529024d9001725aa66669b456dac853fe8b2710412b464cd60a5705f9844f",
+      "size_bytes": 2788491
+    }
+  ]
+}

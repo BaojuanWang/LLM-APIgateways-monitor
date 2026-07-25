@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:91296af9a07e0ade70e62e8cd031cf89df72c231dc5fd343e01a18753ac957b8",
+  "capture_id": "20260724T201139Z_api-duckcoding-ai_ebb6c643_05f247512572",
+  "capture_started_utc": "2026-07-24T20:11:39Z",
+  "domain": "api.duckcoding.ai",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 717,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 907,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 70,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8460,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 73522,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 65765,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2303,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10004,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 33733,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 27693,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 269362,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 962742,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 267,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 349315,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 7312096,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 7178514,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-duckcoding-ai_ebb6c643",
+  "total_bytes": 16298131,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t201139z-api-duckcoding-ai-ebb6c643-05f247512572/20260724t201139z-api-duckcoding-ai-ebb6c643-05f247512572.wacz",
+      "sha256": "35e788abcc5d7681cc067e259619b7179028f788b3e15f60deb9b8f647ecda94",
+      "size_bytes": 7312096
+    }
+  ]
+}

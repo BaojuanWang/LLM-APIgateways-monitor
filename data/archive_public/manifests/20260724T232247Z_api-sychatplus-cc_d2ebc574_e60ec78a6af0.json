@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:f49f74562d7654823549c5b051cd9a6dda3fa34bfad9f4b3a256fd826ec9ba17",
+  "capture_id": "20260724T232247Z_api-sychatplus-cc_d2ebc574_e60ec78a6af0",
+  "capture_started_utc": "2026-07-24T23:22:47Z",
+  "domain": "api.sychatplus.cc",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 334,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 902,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 70,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8428,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 43804,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 60345,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2303,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9977,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 22404,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 3525,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 98557,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 172452,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 262,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 310960,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 1994798,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1905665,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-sychatplus-cc_d2ebc574",
+  "total_bytes": 4637447,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t232247z-api-sychatplus-cc-d2ebc574-e60ec78a6af0/20260724t232247z-api-sychatplus-cc-d2ebc574-e60ec78a6af0.wacz",
+      "sha256": "e68a03fa530631bf5434ff7058f9cd3eca614bdc6cfa0d968c09cdccd55b912f",
+      "size_bytes": 1994798
+    }
+  ]
+}

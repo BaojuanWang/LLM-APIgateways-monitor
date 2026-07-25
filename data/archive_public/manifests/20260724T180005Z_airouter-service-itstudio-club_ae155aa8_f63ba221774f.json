@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:4e69b8913e1e55b20a95803a6f67fd7ba8ee725f345a2a67d0035b965800f63d",
+  "capture_id": "20260724T180005Z_airouter-service-itstudio-club_ae155aa8_f63ba221774f",
+  "capture_started_utc": "2026-07-24T18:00:05Z",
+  "domain": "airouter.service.itstudio.club",
+  "file_count": 24,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 518,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 83,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4962,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 4210,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 7287,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2329,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9988,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 582,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 414,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 148,
+      "count": 1
+    },
+    "screenshot": {
+      "bytes": 25150,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 40,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 650,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 28692,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 15481,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "airouter-service-itstudio-club_ae155aa8",
+  "total_bytes": 103362,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t180005z-airouter-service-itstudio-club-ae155aa8-f63ba221774f/20260724t180005z-airouter-service-itstudio-club-ae155aa8-f63ba221774f.wacz",
+      "sha256": "0a73c32075dad77e07a5c695dc9d29cd02313479cf0c12ca73322481bbd7f089",
+      "size_bytes": 28692
+    }
+  ]
+}

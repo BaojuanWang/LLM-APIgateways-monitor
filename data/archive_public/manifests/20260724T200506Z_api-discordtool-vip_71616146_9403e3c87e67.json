@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:6e181be6db847ca7ff31ba35d7ccca469aac3cf21599a62c5635c9844509bf8b",
+  "capture_id": "20260724T200506Z_api-discordtool-vip_71616146_9403e3c87e67",
+  "capture_started_utc": "2026-07-24T20:05:06Z",
+  "domain": "api.discordtool.vip",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 334,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 920,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 72,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8469,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 66504,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 62346,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2306,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9981,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 27456,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 12218,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 105319,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1403138,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 278,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 4147071,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 3652039,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 3540852,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-discordtool-vip_71616146",
+  "total_bytes": 13041964,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t200506z-api-discordtool-vip-71616146-9403e3c87e67/20260724t200506z-api-discordtool-vip-71616146-9403e3c87e67.wacz",
+      "sha256": "3b790a628eeae8bd5a2179bfa08d842cdbe5714446527b2beee335d6b59f681a",
+      "size_bytes": 3652039
+    }
+  ]
+}

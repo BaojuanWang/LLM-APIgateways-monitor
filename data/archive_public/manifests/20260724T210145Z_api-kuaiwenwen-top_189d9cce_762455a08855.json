@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:b47cdfc1dadaa4041fd08d215a2c4b985c78dba986cec2cdde8a1e5e0357ad0e",
+  "capture_id": "20260724T210145Z_api-kuaiwenwen-top_189d9cce_762455a08855",
+  "capture_started_utc": "2026-07-24T21:01:45Z",
+  "domain": "api.kuaiwenwen.top",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 916,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 71,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8570,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 48684,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 55523,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2305,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10004,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 16361,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 10084,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 266422,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1143670,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 275,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 746951,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5148080,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5054764,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-kuaiwenwen-top_189d9cce",
+  "total_bytes": 12515650,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t210145z-api-kuaiwenwen-top-189d9cce-762455a08855/20260724t210145z-api-kuaiwenwen-top-189d9cce-762455a08855.wacz",
+      "sha256": "e703b4febfed0c1665716305230077de0f14dbf8e47c69e3c42bcbe5d7352988",
+      "size_bytes": 5148080
+    }
+  ]
+}

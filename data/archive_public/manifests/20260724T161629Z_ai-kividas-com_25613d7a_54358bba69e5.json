@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:3abf8893571794f8a1a2dbf00e93c93b793ba33bb8849098767b3886bf816a2e",
+  "capture_id": "20260724T161629Z_ai-kividas-com_25613d7a_54358bba69e5",
+  "capture_started_utc": "2026-07-24T16:16:29Z",
+  "domain": "ai.kividas.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 187,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 874,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 67,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8383,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 36044,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 51106,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2297,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9863,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 18735,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 21520,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 263578,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 4246949,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 237,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1889596,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 11336588,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 11242588,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "ai-kividas-com_25613d7a",
+  "total_bytes": 29131273,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t161629z-ai-kividas-com-25613d7a-54358bba69e5/20260724t161629z-ai-kividas-com-25613d7a-54358bba69e5.wacz",
+      "sha256": "7834858e8a9106b7f7d170f9258c57dbb421051895c6026356c5b9e56f30f67f",
+      "size_bytes": 11336588
+    }
+  ]
+}

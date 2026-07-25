@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:e4e6a93d7813ee4ed3814cf4f7f27876db846e195fb9faab3f66ea30f8087025",
+  "capture_id": "20260724T191548Z_api-ainstant-pro_67ba2cfd_ca44fe8d0d3b",
+  "capture_started_utc": "2026-07-24T19:15:48Z",
+  "domain": "api.ainstant.pro",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 898,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 69,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8444,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 71774,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 60348,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2301,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10000,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 28150,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 5409,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 327333,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1658820,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 259,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 477456,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 4880784,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4775783,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-ainstant-pro_67ba2cfd",
+  "total_bytes": 12310798,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t191548z-api-ainstant-pro-67ba2cfd-ca44fe8d0d3b/20260724t191548z-api-ainstant-pro-67ba2cfd-ca44fe8d0d3b.wacz",
+      "sha256": "9f73391f69d87fcf2714b2a9187719f05cbedf8dcaf76b2471925699c20648cd",
+      "size_bytes": 4880784
+    }
+  ]
+}

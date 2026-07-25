@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:9bbb9fbdfc66886b99bef63653bc5655f46344012fb3652282a142c7a36e34d4",
+  "capture_id": "20260724T205542Z_api-ikuncode-cc_f71f482a_b7d8a7a99d50",
+  "capture_started_utc": "2026-07-24T20:55:42Z",
+  "domain": "api.ikuncode.cc",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 334,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 889,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 68,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8381,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 92198,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 68957,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2298,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10001,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 35268,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 10246,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 273096,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2231072,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 251,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 8532843,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 8553895,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 8425238,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-ikuncode-cc_f71f482a",
+  "total_bytes": 28247696,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t205542z-api-ikuncode-cc-f71f482a-b7d8a7a99d50/20260724t205542z-api-ikuncode-cc-f71f482a-b7d8a7a99d50.wacz",
+      "sha256": "d18d11e3d0a246b6bcd6c4333bedf5a10bb6d968fe66e851eb9f83f96cb7bb92",
+      "size_bytes": 8553895
+    }
+  ]
+}

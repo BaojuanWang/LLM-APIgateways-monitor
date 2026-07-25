@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:cd1f197e66d4bbc4741a2b685245676b05f55f8109069534f59952a7b45fdb1b",
+  "capture_id": "20260724T181557Z_amaranta-asia_dc092f52_f645f33ee5df",
+  "capture_started_utc": "2026-07-24T18:15:57Z",
+  "domain": "amaranta.asia",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 871,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 66,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8413,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 25350,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 50328,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2295,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9893,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 1397,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 18021,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 100384,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 3072176,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 235,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 58338,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 8075611,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 7991241,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "amaranta-asia_dc092f52",
+  "total_bytes": 19417447,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t181557z-amaranta-asia-dc092f52-f645f33ee5df/20260724t181557z-amaranta-asia-dc092f52-f645f33ee5df.wacz",
+      "sha256": "727d176d1ba402f6a0d4e81105ace32f7d84b63a2d4932780dd9ba7c9fee21b5",
+      "size_bytes": 8075611
+    }
+  ]
+}

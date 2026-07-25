@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:a0bf1a9c85445ddc2faf0f086c203bb2bbd58e0f18e5f6be581ee451fac7a977",
+  "capture_id": "20260724T205357Z_api-ifopen-ai_6ef700d3_4718fb6653c4",
+  "capture_started_utc": "2026-07-24T20:53:57Z",
+  "domain": "api.ifopen.ai",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 334,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 871,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 66,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8348,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 49102,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 100235,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2296,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9997,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 25640,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 25975,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 366422,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2847751,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 235,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1054810,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 7434456,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 7280346,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-ifopen-ai_6ef700d3",
+  "total_bytes": 19209545,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t205357z-api-ifopen-ai-6ef700d3-4718fb6653c4/20260724t205357z-api-ifopen-ai-6ef700d3-4718fb6653c4.wacz",
+      "sha256": "01745f2f3de1fbfd52232fe33685816793c4470c3904297910d5c3068c0169c7",
+      "size_bytes": 7434456
+    }
+  ]
+}

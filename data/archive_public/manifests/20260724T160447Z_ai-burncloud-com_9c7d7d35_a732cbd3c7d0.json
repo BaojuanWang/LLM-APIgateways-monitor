@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:32b390e5e75b9f9d0af27f5068eb0edab8714a51bf7047f4d9b3f741633f448f",
+  "capture_id": "20260724T160447Z_ai-burncloud-com_9c7d7d35_a732cbd3c7d0",
+  "capture_started_utc": "2026-07-24T16:04:47Z",
+  "domain": "ai.burncloud.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 735,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 898,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 69,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8430,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 41122,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 57226,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2301,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10000,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 20018,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 9147,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 219253,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1359524,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 259,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1748750,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5278404,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5188112,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "ai-burncloud-com_9c7d7d35",
+  "total_bytes": 13946909,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t160447z-ai-burncloud-com-9c7d7d35-a732cbd3c7d0/20260724t160447z-ai-burncloud-com-9c7d7d35-a732cbd3c7d0.wacz",
+      "sha256": "ee09314cf39860fde56679e70191d646a4fe0decf660f5d07cdf53c14724ada2",
+      "size_bytes": 5278404
+    }
+  ]
+}

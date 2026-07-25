@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:a5e3af76e7142f6dac391124223994e0ca5f7bc346a1c23e03b9c36d58852c7b",
+  "capture_id": "20260725T001403Z_api2-qiuqiutoken-com_da31f042_bb47d209162d",
+  "capture_started_utc": "2026-07-25T00:14:03Z",
+  "domain": "api2.qiuqiutoken.com",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 506,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 934,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 7137,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8686,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 52684,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 59902,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2309,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9983,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 30026,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 11179,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 294087,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1682743,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 291,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 560535,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 6130207,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 6048067,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api2-qiuqiutoken-com_da31f042",
+  "total_bytes": 14901937,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t001403z-api2-qiuqiutoken-com-da31f042-bb47d209162d/20260725t001403z-api2-qiuqiutoken-com-da31f042-bb47d209162d.wacz",
+      "sha256": "c88df29cc472db7c7aff9d71801ba3d7320e3b18cc6a80db371de9ad1cc701fa",
+      "size_bytes": 6130207
+    }
+  ]
+}

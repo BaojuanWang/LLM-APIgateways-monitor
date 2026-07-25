@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:bf2fa70fa8735573a951dc89fead88fafbffed313825bde7d70561aa2f7f60bf",
+  "capture_id": "20260724T195743Z_api-codexzh-com_6b689f1c_f3c2c37c6f28",
+  "capture_started_utc": "2026-07-24T19:57:43Z",
+  "domain": "api.codexzh.com",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 732,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 889,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 17154,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8559,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 100052,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 81049,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2298,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9978,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 70974,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 8744,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 296217,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1223956,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 251,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 954960,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 19375902,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 19264924,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-codexzh-com_6b689f1c",
+  "total_bytes": 41419300,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t195743z-api-codexzh-com-6b689f1c-f3c2c37c6f28/20260724t195743z-api-codexzh-com-6b689f1c-f3c2c37c6f28.wacz",
+      "sha256": "937c6fd2f7a4acaf9054d7b2026a33601c0f1b160c888d6332721cb2c092908a",
+      "size_bytes": 19375902
+    }
+  ]
+}

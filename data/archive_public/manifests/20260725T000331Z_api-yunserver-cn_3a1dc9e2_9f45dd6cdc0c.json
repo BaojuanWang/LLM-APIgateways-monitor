@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:b84cb8ca00ea5cfa8603fe8a1b303962328fcedd929df6fac9951947b115d6a9",
+  "capture_id": "20260725T000331Z_api-yunserver-cn_3a1dc9e2_9f45dd6cdc0c",
+  "capture_started_utc": "2026-07-25T00:03:31Z",
+  "domain": "api.yunserver.cn",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 898,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 69,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8438,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 50146,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 75269,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2300,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10000,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 23403,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 12766,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 130351,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 847269,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 259,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 374450,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5136501,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5020034,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-yunserver-cn_3a1dc9e2",
+  "total_bytes": 11695123,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t000331z-api-yunserver-cn-3a1dc9e2-9f45dd6cdc0c/20260725t000331z-api-yunserver-cn-3a1dc9e2-9f45dd6cdc0c.wacz",
+      "sha256": "fff0eb61771e01bdc0f12bf218933b2cfb0ffe07cfaa45fc3148e362e405d903",
+      "size_bytes": 5136501
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:b638a0920011daa9a8c0c2f86a32519ede8751f045af9f714dc6e0b0f516224b",
+  "capture_id": "20260724T231455Z_api-squarefaceicon-org_a1156b8b_fe34c6d6f54b",
+  "capture_started_utc": "2026-07-24T23:14:55Z",
+  "domain": "api.squarefaceicon.org",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 952,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 75,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8615,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 74250,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 60242,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2312,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10008,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 28954,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 10911,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 284075,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1609035,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 307,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 666985,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5591368,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5479707,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-squarefaceicon-org_a1156b8b",
+  "total_bytes": 13830766,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t231455z-api-squarefaceicon-org-a1156b8b-fe34c6d6f54b/20260724t231455z-api-squarefaceicon-org-a1156b8b-fe34c6d6f54b.wacz",
+      "sha256": "1eeeb917ba64063ca5d026154eade0ba455603e0e73f16008bc287a30a5f23e9",
+      "size_bytes": 5591368
+    }
+  ]
+}

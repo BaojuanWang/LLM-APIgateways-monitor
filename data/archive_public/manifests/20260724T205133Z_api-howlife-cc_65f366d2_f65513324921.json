@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:f8a0a6296c90ca0c5abeff2ca8ad2e2a6a3989d4f18c7ce9b99e41cb60546069",
+  "capture_id": "20260724T205133Z_api-howlife-cc_65f366d2_f65513324921",
+  "capture_started_utc": "2026-07-24T20:51:33Z",
+  "domain": "api.howlife.cc",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 880,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 67,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8349,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 49324,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 57057,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2297,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9997,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 25639,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 9579,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 292635,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1544973,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 243,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 366423,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5606292,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5511644,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-howlife-cc_65f366d2",
+  "total_bytes": 13488369,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t205133z-api-howlife-cc-65f366d2-f65513324921/20260724t205133z-api-howlife-cc-65f366d2-f65513324921.wacz",
+      "sha256": "40b71e17c61ca2738179ed3e0651150e627fae083378f0ec84279b4b4c8ff76b",
+      "size_bytes": 5606292
+    }
+  ]
+}

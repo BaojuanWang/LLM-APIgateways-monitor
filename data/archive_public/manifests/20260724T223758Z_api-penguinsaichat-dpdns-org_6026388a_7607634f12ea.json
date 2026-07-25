@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:63bf80c5c48b91d3c4c721d9794fe4f64add6ac119dec4cef471931c8c315ad0",
+  "capture_id": "20260724T223758Z_api-penguinsaichat-dpdns-org_6026388a_7607634f12ea",
+  "capture_started_utc": "2026-07-24T22:37:58Z",
+  "domain": "api.penguinsaichat.dpdns.org",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 1001,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 81,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8805,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 48360,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 63214,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2325,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9987,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 23268,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 5920,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 133573,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 865504,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 350,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 516789,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 2787792,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 2691072,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-penguinsaichat-dpdns-org_6026388a",
+  "total_bytes": 7161011,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t223758z-api-penguinsaichat-dpdns-org-6026388a-7607634f12ea/20260724t223758z-api-penguinsaichat-dpdns-org-6026388a-7607634f12ea.wacz",
+      "sha256": "0635c900e987e518ba8c6d76ce6c6a3584d674a5143c39aa4a5adefdcb589c9a",
+      "size_bytes": 2787792
+    }
+  ]
+}

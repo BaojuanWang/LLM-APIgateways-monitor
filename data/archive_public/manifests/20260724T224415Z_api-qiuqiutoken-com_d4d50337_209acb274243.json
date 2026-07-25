@@ -1,0 +1,78 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:d2b3d4daa9b4de185e7c352f86009a39f655b9bda4fdb1cbf380e0aaff1a4d3c",
+  "capture_id": "20260724T224415Z_api-qiuqiutoken-com_d4d50337_209acb274243",
+  "capture_started_utc": "2026-07-24T22:44:15Z",
+  "domain": "api.qiuqiutoken.com",
+  "file_count": 20,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 926,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 72,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8358,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 49270,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 58752,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2308,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9886,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 1420,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 6211,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 284,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 5175697,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5082729,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-qiuqiutoken-com_d4d50337",
+  "total_bytes": 10398741,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t224415z-api-qiuqiutoken-com-d4d50337-209acb274243/20260724t224415z-api-qiuqiutoken-com-d4d50337-209acb274243.wacz",
+      "sha256": "bd1a16f0b5fdd7b365c46a986ad1b3c34125f3e162274a195085f83035717b83",
+      "size_bytes": 5175697
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:7e7c5908bb4068d12c79557754bd94ce7bf0c0b9c8ee4e29165004f1dec7314d",
+  "capture_id": "20260724T224140Z_api-public-proxy-gls-de5-net_10914835_6b69273a9597",
+  "capture_started_utc": "2026-07-24T22:41:40Z",
+  "domain": "api-public.proxy-gls.de5.net",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 1006,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 81,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8822,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 55374,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 60285,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2325,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10005,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 26873,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 10551,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 308679,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1640212,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 355,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 705868,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5634328,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5532398,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-public-proxy-gls-de5-net_10914835",
+  "total_bytes": 14000132,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t224140z-api-public-proxy-gls-de5-net-10914835-6b69273a9597/20260724t224140z-api-public-proxy-gls-de5-net-10914835-6b69273a9597.wacz",
+      "sha256": "f46a408b2800a1c0ff02f20b6a0535ba26767acb7b7da1ce2db38c3904ec2b76",
+      "size_bytes": 5634328
+    }
+  ]
+}

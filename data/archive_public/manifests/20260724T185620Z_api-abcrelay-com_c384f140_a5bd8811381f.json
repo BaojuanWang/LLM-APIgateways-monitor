@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:3864c8826f857d6f3a29f2ff0ed691f81195a6dfc410696cf8f8317d6a58187a",
+  "capture_id": "20260724T185620Z_api-abcrelay-com_c384f140_a5bd8811381f",
+  "capture_started_utc": "2026-07-24T18:56:20Z",
+  "domain": "api.abcrelay.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 900,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 69,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8422,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 77480,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 59952,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2301,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10001,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 29863,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 9422,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 279110,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1582871,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 261,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 680333,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5459266,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5347794,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-abcrelay-com_c384f140",
+  "total_bytes": 13551015,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t185620z-api-abcrelay-com-c384f140-a5bd8811381f/20260724t185620z-api-abcrelay-com-c384f140-a5bd8811381f.wacz",
+      "sha256": "592aeadf03feadd99c644a4a6516f243a68bf62986f80ca625cf74716b02960b",
+      "size_bytes": 5459266
+    }
+  ]
+}

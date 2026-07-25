@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:4c63e0c25dec267c9ba5fa36bbd1bcc786cf3d06a6fec4ec93e51266086c5ad3",
+  "capture_id": "20260724T212036Z_api-mitchll-com_77c86bea_8a47f1c92334",
+  "capture_started_utc": "2026-07-24T21:20:36Z",
+  "domain": "api.mitchll.com",
+  "file_count": 33,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 537,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 884,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 68,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8121,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 64802,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 62828,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2299,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9978,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 30918,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 6063,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 91977,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 809188,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 246,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 196811,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 6045968,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5941322,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-mitchll-com_77c86bea",
+  "total_bytes": 13274671,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t212036z-api-mitchll-com-77c86bea-8a47f1c92334/20260724t212036z-api-mitchll-com-77c86bea-8a47f1c92334.wacz",
+      "sha256": "ae2525540f5870c8175b8a2ce7e19f59b7e6187d89ec41ea814eb3745456bf70",
+      "size_bytes": 6045968
+    }
+  ]
+}

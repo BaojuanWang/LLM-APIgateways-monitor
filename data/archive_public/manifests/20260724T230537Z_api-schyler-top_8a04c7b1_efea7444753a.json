@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:3dd810bd255b1581bfa05299e9c496554697fd2e61a8fa122815158c95649c0b",
+  "capture_id": "20260724T230537Z_api-schyler-top_8a04c7b1_efea7444753a",
+  "capture_started_utc": "2026-07-24T23:05:37Z",
+  "domain": "api.schyler.top",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 880,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 68,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8416,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 64074,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 77395,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2298,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9865,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 32764,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 534006,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 1042507,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1607144,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 242,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 884557,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 4800591,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4153797,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-schyler-top_8a04c7b1",
+  "total_bytes": 13221432,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t230537z-api-schyler-top-8a04c7b1-efea7444753a/20260724t230537z-api-schyler-top-8a04c7b1-efea7444753a.wacz",
+      "sha256": "fc2dba751f289e72c9de84151645a2c2db8efcfb700de0515494bea35cef7230",
+      "size_bytes": 4800591
+    }
+  ]
+}

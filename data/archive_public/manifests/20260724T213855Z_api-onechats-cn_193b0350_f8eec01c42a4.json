@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:8d1bdc9e2f1684ec742d9b76882e146bbe88ac027cd327a1cc83ede75384a86b",
+  "capture_id": "20260724T213855Z_api-onechats-cn_193b0350_f8eec01c42a4",
+  "capture_started_utc": "2026-07-24T21:38:55Z",
+  "domain": "api.onechats.cn",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 724,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 889,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 68,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8378,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 71532,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 69874,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2299,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10000,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 28463,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 15017,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 131948,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1097947,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 251,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1343797,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 4603315,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4479303,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-onechats-cn_193b0350",
+  "total_bytes": 11866466,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t213855z-api-onechats-cn-193b0350-f8eec01c42a4/20260724t213855z-api-onechats-cn-193b0350-f8eec01c42a4.wacz",
+      "sha256": "a9b9797c1acdee051aa0b51d8ca7abbc074fe895a6bc3230979fcfec5d611e95",
+      "size_bytes": 4603315
+    }
+  ]
+}

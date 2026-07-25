@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:4e01689e40dd6f7e1a292601934edc6971450924c6d98e9ddaa5df0135d1aba3",
+  "capture_id": "20260724T214447Z_api-openai-up-com_0919ad7a_f88c314d06a1",
+  "capture_started_utc": "2026-07-24T21:44:47Z",
+  "domain": "api.openai-up.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 276,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 902,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 70,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8390,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 42096,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 60502,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2304,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10005,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 16535,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 2632,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 13932,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 80314,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 262,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 343486,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 967037,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 879495,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-openai-up-com_0919ad7a",
+  "total_bytes": 2430899,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t214447z-api-openai-up-com-0919ad7a-f88c314d06a1/20260724t214447z-api-openai-up-com-0919ad7a-f88c314d06a1.wacz",
+      "sha256": "45cd2bd10a12566488d89ae9a79777a0ddda1229d7f5a0b6df5a5e3338f4f747",
+      "size_bytes": 967037
+    }
+  ]
+}

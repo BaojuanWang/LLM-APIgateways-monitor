@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:47d98383edf5f313840ae22b257907227f20d9cfdc1e10ffe449e9f3e408aaaa",
+  "capture_id": "20260724T234402Z_api-whlemon-cn_34f9f7a4_40cab5367983",
+  "capture_started_utc": "2026-07-24T23:44:02Z",
+  "domain": "api.whlemon.cn",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 743,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 870,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 29860,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8382,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 108152,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 153681,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2297,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9829,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 66006,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 31762,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 176173,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 3272560,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 233,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 4476522,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 10199728,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 9980593,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-whlemon-cn_34f9f7a4",
+  "total_bytes": 28520052,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t234402z-api-whlemon-cn-34f9f7a4-40cab5367983/20260724t234402z-api-whlemon-cn-34f9f7a4-40cab5367983.wacz",
+      "sha256": "7deacb802869b95abd00da0f072838af6012d2d5ead0c931452d270e69e469bc",
+      "size_bytes": 10199728
+    }
+  ]
+}

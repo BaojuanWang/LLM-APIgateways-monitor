@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:8e569ad2d2d9782d5b65cbcf8201c34937ba2856c73af537b02d42775f9b7bca",
+  "capture_id": "20260724T160942Z_ai-chaozhi-chat_640d93ee_3c81fdcf1a75",
+  "capture_started_utc": "2026-07-24T16:09:42Z",
+  "domain": "ai.chaozhi.chat",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 745,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 880,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 68,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8377,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 81396,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 82256,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2298,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9903,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 41626,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 1398217,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 2895517,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1576473,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 242,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1016273,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 9785059,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 8260531,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "ai-chaozhi-chat_640d93ee",
+  "total_bytes": 25162522,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t160942z-ai-chaozhi-chat-640d93ee-3c81fdcf1a75/20260724t160942z-ai-chaozhi-chat-640d93ee-3c81fdcf1a75.wacz",
+      "sha256": "bba0192cc9726151203cbfa5035681925cf669472c550853c64c93dae2957422",
+      "size_bytes": 9785059
+    }
+  ]
+}

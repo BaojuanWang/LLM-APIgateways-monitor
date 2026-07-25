@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:245636c1172798be22cc13e92a979f91b2ccd1fc4f60445e3897ea7c6962dd7e",
+  "capture_id": "20260724T204737Z_api-hepingan-top_deabbe81_7cfdc44c2d72",
+  "capture_started_utc": "2026-07-24T20:47:37Z",
+  "domain": "api.hepingan.top",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 889,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 69,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8426,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 85640,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 78858,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2299,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9870,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 36803,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 590218,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 1003047,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 3208518,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 250,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 904306,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 10068204,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 9352948,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-hepingan-top_deabbe81",
+  "total_bytes": 25353173,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260724t204737z-api-hepingan-top-deabbe81-7cfdc44c2d72/20260724t204737z-api-hepingan-top-deabbe81-7cfdc44c2d72.wacz",
+      "sha256": "93c9104bc89627882570dcfb33ac268a7bd88e8e3a6f3111665543af876b415a",
+      "size_bytes": 10068204
+    }
+  ]
+}

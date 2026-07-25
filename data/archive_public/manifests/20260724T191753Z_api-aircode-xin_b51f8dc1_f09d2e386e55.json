@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:62f92fd4694a6135d2edfdf4b20ee0bc1706e88f41377f880f5685e4f81802f2",
+  "capture_id": "20260724T191753Z_api-aircode-xin_b51f8dc1_f09d2e386e55",
+  "capture_started_utc": "2026-07-24T19:17:53Z",
+  "domain": "api.aircode.xin",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 488,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 68,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4542,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1039,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11872,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2299,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10021,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 544,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 309,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 25,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1618,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-aircode-xin_b51f8dc1",
+  "total_bytes": 35653,
+  "wacz": []
+}

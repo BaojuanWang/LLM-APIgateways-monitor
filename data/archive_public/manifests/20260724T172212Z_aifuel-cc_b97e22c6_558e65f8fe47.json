@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:8258273b41510957d22ca9ae4d6efff78153de6d567e59853a4049d40bdefad6",
+  "capture_id": "20260724T172212Z_aifuel-cc_b97e22c6_558e65f8fe47",
+  "capture_started_utc": "2026-07-24T17:22:12Z",
+  "domain": "aifuel.cc",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 476,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 62,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4552,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 985,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11566,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2288,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10032,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 532,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 303,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 19,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1595,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-25T15:35:40Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "aifuel-cc_b97e22c6",
+  "total_bytes": 35238,
+  "wacz": []
+}
