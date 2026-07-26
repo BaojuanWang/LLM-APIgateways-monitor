@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:640c016d780da2426f5c7cf3b1267283fe37f44a2c64d7d1cbd6b8b65d74f6e0",
+  "capture_id": "20260725T230403Z_coding-trendsetting-ai-com_7989792e_a17eb1c373d1",
+  "capture_started_utc": "2026-07-25T23:04:03Z",
+  "domain": "coding.trendsetting-ai.com",
+  "file_count": 32,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 988,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 79,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8344,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 50678,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 58499,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2321,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10008,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 16672,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 8503,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 205593,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1373403,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 339,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 4658638,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4562899,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "coding-trendsetting-ai-com_7989792e",
+  "total_bytes": 10959934,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t230403z-coding-trendsetting-ai-com-7989792e-a17eb1c373d1/20260725t230403z-coding-trendsetting-ai-com-7989792e-a17eb1c373d1.wacz",
+      "sha256": "d307e117acdd7cc49a55bb1b252cb8101b8adccd412f1e26afa65ac9ec3d1f85",
+      "size_bytes": 4658638
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:42ce160430f0fe1fbdda3b492d60c62469b15dd99be3eeb9a7ef184462c518a4",
+  "capture_id": "20260726T003120Z_dragoncode-codes_604b0dbb_4c897091af53",
+  "capture_started_utc": "2026-07-26T00:31:20Z",
+  "domain": "dragoncode.codes",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 888,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 69,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8435,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 84078,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 69502,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2300,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9876,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 47599,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 1270414,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 1636217,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2697336,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 249,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 11371277,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 13005286,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 11619970,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "dragoncode-codes_604b0dbb",
+  "total_bytes": 41826324,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t003120z-dragoncode-codes-604b0dbb-4c897091af53/20260726t003120z-dragoncode-codes-604b0dbb-4c897091af53.wacz",
+      "sha256": "4b4f0efbe909e6685365f87572570dd6ba1a9f56b1fec2d8523c6fce2c96f1eb",
+      "size_bytes": 13005286
+    }
+  ]
+}

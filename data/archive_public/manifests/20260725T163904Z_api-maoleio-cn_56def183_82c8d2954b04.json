@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:c89877109b00b14d0bf1c272991d4b045aa3a39a309546a07541cbdab8e16f1f",
+  "capture_id": "20260725T163904Z_api-maoleio-cn_56def183_82c8d2954b04",
+  "capture_started_utc": "2026-07-25T16:39:04Z",
+  "domain": "api.maoleio.cn",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 486,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 67,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4689,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1030,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 12005,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2302,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9956,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 546,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 308,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 24,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1591,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-maoleio-cn_56def183",
+  "total_bytes": 35832,
+  "wacz": []
+}

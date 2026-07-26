@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:bf646166e8e37939a2efb095ffef9a9bd160549137084dfa0f7dcd150edb2a94",
+  "capture_id": "20260725T170040Z_camel-kr777-top_6a611982_b7642cfb48bc",
+  "capture_started_utc": "2026-07-25T17:00:40Z",
+  "domain": "camel.kr777.top",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 1278,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 889,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 6918,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8439,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 50992,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 53074,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2304,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9876,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 43785,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 44257,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 339173,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 4382960,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 251,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 2189687,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 7916314,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 7808185,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "camel-kr777-top_6a611982",
+  "total_bytes": 22861043,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t170040z-camel-kr777-top-6a611982-b7642cfb48bc/20260725t170040z-camel-kr777-top-6a611982-b7642cfb48bc.wacz",
+      "sha256": "3a54889d3380ad422ba00721834ac80af476a1d53b380c1a67bd5fa2d63e2ff4",
+      "size_bytes": 7916314
+    }
+  ]
+}

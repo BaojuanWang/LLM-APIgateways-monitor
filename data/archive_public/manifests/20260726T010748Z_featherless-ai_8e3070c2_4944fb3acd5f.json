@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:314e6f139d791dc58fddb5ba6545eca347f028c6c7f0f7d1812850d1ad61cfc5",
+  "capture_id": "20260726T010748Z_featherless-ai_8e3070c2_4944fb3acd5f",
+  "capture_started_utc": "2026-07-26T01:07:48Z",
+  "domain": "featherless.ai",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 6481,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 917,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 74577,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8561,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 423849,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 304651,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2298,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9832,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 322489,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 46391,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 3996133,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2855685,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 280,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 8140727,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 23169656,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 22739963,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "featherless-ai_8e3070c2",
+  "total_bytes": 62105151,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t010748z-featherless-ai-8e3070c2-4944fb3acd5f/20260726t010748z-featherless-ai-8e3070c2-4944fb3acd5f.wacz",
+      "sha256": "4d346e9f169f17bd7ef8083c4b2d8a8e8b865d3b5018a3ca562879a069aa5e45",
+      "size_bytes": 23169656
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:295e27be71d6e2574f29377a8c5cf713f03e42fe628be711fb229cc9eeb46188",
+  "capture_id": "20260725T222603Z_cloudapi-wdyu-eu-cc_e11809df_a1ee3910b964",
+  "capture_started_utc": "2026-07-25T22:26:03Z",
+  "domain": "cloudapi.wdyu.eu.cc",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 537,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 925,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 72,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8497,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 57666,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 58631,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2307,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10004,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 21478,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 5363,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 134517,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 979547,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 283,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1260102,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 4293701,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4197504,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "cloudapi-wdyu-eu-cc_e11809df",
+  "total_bytes": 11033795,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t222603z-cloudapi-wdyu-eu-cc-e11809df-a1ee3910b964/20260725t222603z-cloudapi-wdyu-eu-cc-e11809df-a1ee3910b964.wacz",
+      "sha256": "653a3d1e58b674ba95ee4fe55ee4cb51bac0d2d445f932ec90cdcb3dee22a1ac",
+      "size_bytes": 4293701
+    }
+  ]
+}

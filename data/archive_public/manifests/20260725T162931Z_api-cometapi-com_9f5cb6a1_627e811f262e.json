@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:83983fff2e74622239617c439f3f6d9c6d86158163ea335c30261f1bc3a77e2b",
+  "capture_id": "20260725T162931Z_api-cometapi-com_9f5cb6a1_627e811f262e",
+  "capture_started_utc": "2026-07-25T16:29:31Z",
+  "domain": "api.cometapi.com",
+  "file_count": 28,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 612,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 69,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 6717,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 5044,
+      "count": 2
+    },
+    "crawl_log": {
+      "bytes": 11360,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2306,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10014,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 1156,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 754,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 441065,
+      "count": 3
+    },
+    "screenshot": {
+      "bytes": 23194932,
+      "count": 6
+    },
+    "seeds": {
+      "bytes": 98,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 442493,
+      "count": 3
+    },
+    "wacz": {
+      "bytes": 69876,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 52705,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-cometapi-com_9f5cb6a1",
+  "total_bytes": 24242029,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t162931z-api-cometapi-com-9f5cb6a1-627e811f262e/20260725t162931z-api-cometapi-com-9f5cb6a1-627e811f262e.wacz",
+      "sha256": "d05c9014f1a052962efb363d39653fc3c4a1dfc781054af28ef9f7bc5592729d",
+      "size_bytes": 69876
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:ca6115c01f05ef7620f84088d34f8a15aa4b56342fe0cdc59bad510b2d95599d",
+  "capture_id": "20260725T163218Z_api-ephone-ai_21ca77d6_d201bdf52b36",
+  "capture_started_utc": "2026-07-25T16:32:18Z",
+  "domain": "api.ephone.ai",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 1016,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 871,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 9619,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8355,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 59847,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 68662,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2300,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9974,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 52600,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 18671,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 762919,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1326581,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 235,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1923410,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 8334780,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 8234003,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-ephone-ai_21ca77d6",
+  "total_bytes": 20816504,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t163218z-api-ephone-ai-21ca77d6-d201bdf52b36/20260725t163218z-api-ephone-ai-21ca77d6-d201bdf52b36.wacz",
+      "sha256": "b30ae69a28c091a5e38536b39d0e4b8dfb30d5f5049a7dd6698dd850549b3041",
+      "size_bytes": 8334780
+    }
+  ]
+}

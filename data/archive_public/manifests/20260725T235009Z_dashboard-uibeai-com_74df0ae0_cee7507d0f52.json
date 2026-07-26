@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:c99995890176ee5c9305779bfbbf2ab0cd3cb3df9e5a82c65eacf5716772a59f",
+  "capture_id": "20260725T235009Z_dashboard-uibeai-com_74df0ae0_cee7507d0f52",
+  "capture_started_utc": "2026-07-25T23:50:09Z",
+  "domain": "dashboard.uibeai.com",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 755,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 924,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 29896,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8554,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 110098,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 157898,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2310,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9784,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 67926,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 421908,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 749181,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 8014772,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 281,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1562545,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 22505533,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 21891925,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "dashboard-uibeai-com_74df0ae0",
+  "total_bytes": 55536951,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t235009z-dashboard-uibeai-com-74df0ae0-cee7507d0f52/20260725t235009z-dashboard-uibeai-com-74df0ae0-cee7507d0f52.wacz",
+      "sha256": "6b745e33e216fd48a6de6cd4479d92dc7a0898b0f97276616ce3c8716ab374f0",
+      "size_bytes": 22505533
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:8c4453f960c150fa9b59a919985e4f5d230a30cb1eea1c953e59b5dc7ba7ed13",
+  "capture_id": "20260726T010128Z_fast-smartaipro-cn_5412eb31_096194cf46bb",
+  "capture_started_utc": "2026-07-26T01:01:28Z",
+  "domain": "fast.smartaipro.cn",
+  "file_count": 23,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 494,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 71,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4792,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 3032,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 7304,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2304,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9973,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 558,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 428,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 174,
+      "count": 1
+    },
+    "screenshot": {
+      "bytes": 30300,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 28,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 30033,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 17428,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "fast-smartaipro-cn_5412eb31",
+  "total_bytes": 109747,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t010128z-fast-smartaipro-cn-5412eb31-096194cf46bb/20260726t010128z-fast-smartaipro-cn-5412eb31-096194cf46bb.wacz",
+      "sha256": "852fa2dc8507e4c664c222a1a272ac01d125e6c6b768f045aae405f4be05b887",
+      "size_bytes": 30033
+    }
+  ]
+}

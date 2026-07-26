@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:53c355f23bfabf341f9848a35b735f695ee69fa64463ccf7708d53fe3a39c5a0",
+  "capture_id": "20260725T215218Z_chatapi-onechats-top_3d7f8c58_5d7d00f5617f",
+  "capture_started_utc": "2026-07-25T21:52:18Z",
+  "domain": "chatapi.onechats.top",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 503,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 929,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 73,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8547,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 85098,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 62793,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2309,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10010,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 26939,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 6037,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 139119,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 877167,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 286,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 882012,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 2968392,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 2853639,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "chatapi-onechats-top_3d7f8c58",
+  "total_bytes": 7926514,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t215218z-chatapi-onechats-top-3d7f8c58-5d7d00f5617f/20260725t215218z-chatapi-onechats-top-3d7f8c58-5d7d00f5617f.wacz",
+      "sha256": "f156484cf01b49fb66136006db49507c3a23345adbb5551b3838a9f5211ef3a8",
+      "size_bytes": 2968392
+    }
+  ]
+}

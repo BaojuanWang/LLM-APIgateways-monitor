@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:2198568802a140c164650b87cd35005f9a149c1b843835fb81924c39de4f42e4",
+  "capture_id": "20260726T010530Z_fastrouter-ai_135a18e4_e3ae32988665",
+  "capture_started_utc": "2026-07-26T01:05:30Z",
+  "domain": "fastrouter.ai",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 8946,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 808,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 42778,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8259,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 484630,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 376742,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2296,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9877,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 225022,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 191526,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 2413995,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 3920113,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 197,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 8197571,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 16025524,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 15410442,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "fastrouter-ai_135a18e4",
+  "total_bytes": 47321387,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t010530z-fastrouter-ai-135a18e4-e3ae32988665/20260726t010530z-fastrouter-ai-135a18e4-e3ae32988665.wacz",
+      "sha256": "5e4a1283eea910c139356f323e1619d86afc2df414f50472df4e743aab7c46aa",
+      "size_bytes": 16025524
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:932ae92c38175fa3f77b66b558b22231a95c3de3612305b245b9c476606bb6ff",
+  "capture_id": "20260725T173828Z_daidaibird-top_7f3741ef_5b6086639a5b",
+  "capture_started_utc": "2026-07-25T17:38:28Z",
+  "domain": "daidaibird.top",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 486,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 67,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4673,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1030,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11956,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2302,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9939,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 546,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 308,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 24,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1579,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "daidaibird-top_7f3741ef",
+  "total_bytes": 35738,
+  "wacz": []
+}

@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:dc716490e42d5c481a5ae230859cbe99e669e24cb05e6abbd7a5ac6e08bb9fe7",
+  "capture_id": "20260725T181946Z_model-zhengshuyun-net_c1abb494_295e058a1b92",
+  "capture_started_utc": "2026-07-25T18:19:46Z",
+  "domain": "model.zhengshuyun.net",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 499,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 943,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 74,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8668,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 96358,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 55444,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2316,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9943,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 31905,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 13689,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 279088,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1184437,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 299,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 2610997,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 6716961,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 6596270,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "model-zhengshuyun-net_c1abb494",
+  "total_bytes": 17610552,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t181946z-model-zhengshuyun-net-c1abb494-295e058a1b92/20260725t181946z-model-zhengshuyun-net-c1abb494-295e058a1b92.wacz",
+      "sha256": "73a7d4a533d57df76a0736482bd709552ba524ea9600047d7643be5e24692151",
+      "size_bytes": 6716961
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:28f8019c188410ef8cd9e3b7220762a2697963eb1b7d622d13ae34714c71d645",
+  "capture_id": "20260726T001143Z_deepseek-perfxlab-cn_e909982f_986acf1c4021",
+  "capture_started_utc": "2026-07-26T00:11:43Z",
+  "domain": "deepseek.perfxlab.cn",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 256,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 933,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 7752,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8541,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 51845,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 67040,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2309,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9973,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 40874,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 10790,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 128241,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1416734,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 290,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 4627091,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 37756332,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 37666896,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "deepseek-perfxlab-cn_e909982f",
+  "total_bytes": 81798558,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t001143z-deepseek-perfxlab-cn-e909982f-986acf1c4021/20260726t001143z-deepseek-perfxlab-cn-e909982f-986acf1c4021.wacz",
+      "sha256": "40aa0fe92731d680c32b15b8ed603864c63da810ce4d75dd7fe1d0545e48f963",
+      "size_bytes": 37756332
+    }
+  ]
+}

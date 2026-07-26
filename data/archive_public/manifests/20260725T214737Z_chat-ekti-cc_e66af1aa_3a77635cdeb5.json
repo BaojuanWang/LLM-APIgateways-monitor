@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:214c6a5943393505fd62388d7d28e8bf20ed14cab47b4b0ca098bea92e70e1d5",
+  "capture_id": "20260725T214737Z_chat-ekti-cc_e66af1aa_3a77635cdeb5",
+  "capture_started_utc": "2026-07-25T21:47:37Z",
+  "domain": "chat.ekti.cc",
+  "file_count": 33,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 862,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 65,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8334,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 48496,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 55705,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2293,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9995,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 18593,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 9728,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 58829,
+      "count": 3
+    },
+    "screenshot": {
+      "bytes": 116348,
+      "count": 6
+    },
+    "seeds": {
+      "bytes": 227,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 558533,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5549709,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5456686,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "chat-ekti-cc_e66af1aa",
+  "total_bytes": 11897373,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t214737z-chat-ekti-cc-e66af1aa-3a77635cdeb5/20260725t214737z-chat-ekti-cc-e66af1aa-3a77635cdeb5.wacz",
+      "sha256": "b17d25be535ce0aacd94ae6d4297bfb6843f3e1d87405f994b160e7de11c1c1e",
+      "size_bytes": 5549709
+    }
+  ]
+}

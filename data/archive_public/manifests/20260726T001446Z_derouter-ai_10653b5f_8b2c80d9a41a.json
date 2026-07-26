@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:0a6537d0ef41775dc510e9c70ffb52c8a64895f549e0d2fa97ed9c4f8204c328",
+  "capture_id": "20260726T001446Z_derouter-ai_10653b5f_8b2c80d9a41a",
+  "capture_started_utc": "2026-07-26T00:14:46Z",
+  "domain": "derouter.ai",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 738,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 8995,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 7990,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 56907,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 84279,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2290,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9899,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 38997,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 17726,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 342803,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1023159,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 154,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 197677,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 2821181,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 2706365,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "derouter-ai_10653b5f",
+  "total_bytes": 7321988,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t001446z-derouter-ai-10653b5f-8b2c80d9a41a/20260726t001446z-derouter-ai-10653b5f-8b2c80d9a41a.wacz",
+      "sha256": "7f3f34c87079d06a65af173725fa45cefd49de6265aec7e4d5535569114828d6",
+      "size_bytes": 2821181
+    }
+  ]
+}

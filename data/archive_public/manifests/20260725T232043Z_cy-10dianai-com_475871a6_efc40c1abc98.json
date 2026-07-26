@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:71934153ad12782a69d5bb58d527a42e23ed94cee2343f3a2ba418554275508d",
+  "capture_id": "20260725T232043Z_cy-10dianai-com_475871a6_efc40c1abc98",
+  "capture_started_utc": "2026-07-25T23:20:43Z",
+  "domain": "cy.10dianai.com",
+  "file_count": 23,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 488,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 68,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4819,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 8276,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 7235,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2300,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9969,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 2683,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 1332,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 6973,
+      "count": 1
+    },
+    "screenshot": {
+      "bytes": 209727,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 25,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 255900,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 239846,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "cy-10dianai-com_475871a6",
+  "total_bytes": 752469,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t232043z-cy-10dianai-com-475871a6-efc40c1abc98/20260725t232043z-cy-10dianai-com-475871a6-efc40c1abc98.wacz",
+      "sha256": "1bcdef1c9f688c506066ed51b07b62dbfa1de9e72ed64d0d73038a3d996a7f17",
+      "size_bytes": 255900
+    }
+  ]
+}

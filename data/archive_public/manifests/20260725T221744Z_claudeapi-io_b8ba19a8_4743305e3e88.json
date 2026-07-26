@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:c97cdfbd783a8fb7935d965d3c1011c85fea0b519d70cfab804383019cad03b9",
+  "capture_id": "20260725T221744Z_claudeapi-io_b8ba19a8_4743305e3e88",
+  "capture_started_utc": "2026-07-25T22:17:44Z",
+  "domain": "claudeapi.io",
+  "file_count": 32,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 258,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 862,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 65,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 7934,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 42614,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 57943,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2293,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9997,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 12910,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 6753,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 109709,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 319168,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 227,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 3564380,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 3475036,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "claudeapi-io_b8ba19a8",
+  "total_bytes": 7612810,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t221744z-claudeapi-io-b8ba19a8-4743305e3e88/20260725t221744z-claudeapi-io-b8ba19a8-4743305e3e88.wacz",
+      "sha256": "c7880ec6cc574128593f88b3ee6182466010a2c231ad8a78af00be3fa1f8eeaa",
+      "size_bytes": 3564380
+    }
+  ]
+}

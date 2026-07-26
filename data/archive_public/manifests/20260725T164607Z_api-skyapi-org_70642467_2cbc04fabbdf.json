@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:77997a3305ff617aec1f71695d06aa1dfc4700d4915a8b2aa492bb0ae13899a0",
+  "capture_id": "20260725T164607Z_api-skyapi-org_70642467_2cbc04fabbdf",
+  "capture_started_utc": "2026-07-25T16:46:07Z",
+  "domain": "api.skyapi.org",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 544,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 880,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 16276,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8399,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 101009,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 58390,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2302,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9964,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 255531,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 59089,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 533420,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 8321324,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 243,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 11017830,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 15529455,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 15391792,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-skyapi-org_70642467",
+  "total_bytes": 51309109,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t164607z-api-skyapi-org-70642467-2cbc04fabbdf/20260725t164607z-api-skyapi-org-70642467-2cbc04fabbdf.wacz",
+      "sha256": "890b0d4c9177de2ede2ba825f9027f4f4b2e4ca1f48dc5c75150532090a796a1",
+      "size_bytes": 15529455
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:c4609f57f6b7ff57f63d3167f3a0062e2f2cdd6d83693bcbd2ec03521dac45e6",
+  "capture_id": "20260725T225402Z_codecdn-bytecatcode-org_aa604503_b656c9d1723b",
+  "capture_started_utc": "2026-07-25T22:54:02Z",
+  "domain": "codecdn.bytecatcode.org",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 956,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 76,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8626,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 53176,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 59492,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2315,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9983,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 31538,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 11563,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 152400,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1105706,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 310,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 745827,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 3415290,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 3314260,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "codecdn-bytecatcode-org_aa604503",
+  "total_bytes": 8914488,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t225402z-codecdn-bytecatcode-org-aa604503-b656c9d1723b/20260725t225402z-codecdn-bytecatcode-org-aa604503-b656c9d1723b.wacz",
+      "sha256": "e9ce185118d36e4095b5635a027256c81d0bccc67c39a24355937cb6dfbedbdc",
+      "size_bytes": 3415290
+    }
+  ]
+}

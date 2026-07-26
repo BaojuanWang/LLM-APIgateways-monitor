@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:cde7c692e015a41eb9fd12032878f5538774f14cc607e3004ee6d1b80c56d98c",
+  "capture_id": "20260725T183607Z_openclaudecode-cn_2fa59f7f_243501e06192",
+  "capture_started_utc": "2026-07-25T18:36:07Z",
+  "domain": "openclaudecode.cn",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 492,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 70,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4743,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1057,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11974,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2307,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10015,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 544,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 311,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 27,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1620,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "openclaudecode-cn_2fa59f7f",
+  "total_bytes": 35988,
+  "wacz": []
+}

@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:7a1cf709e69516e4d3959a2fcdfae39f1946d52812c059560434391960012761",
+  "capture_id": "20260725T180115Z_hajisong-top_4237364f_75f4a465f990",
+  "capture_started_utc": "2026-07-25T18:01:15Z",
+  "domain": "hajisong.top",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 482,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 65,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4667,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1012,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11719,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2297,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10022,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 534,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 306,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 22,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1607,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "hajisong-top_4237364f",
+  "total_bytes": 35561,
+  "wacz": []
+}

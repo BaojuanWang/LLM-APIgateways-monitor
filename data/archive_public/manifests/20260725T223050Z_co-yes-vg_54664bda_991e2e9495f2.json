@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:4171782c14ad2908331db61edbdcbb40e6d10f94b464bf855f8d7ad1afa435f3",
+  "capture_id": "20260725T223050Z_co-yes-vg_54664bda_991e2e9495f2",
+  "capture_started_utc": "2026-07-25T22:30:50Z",
+  "domain": "co.yes.vg",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 222,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 825,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 13299,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8090,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 76074,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 62006,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2287,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9903,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 176669,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 27591,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 191012,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2842833,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 193,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 2272858,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 7882283,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 7775551,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "co-yes-vg_54664bda",
+  "total_bytes": 21344357,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t223050z-co-yes-vg-54664bda-991e2e9495f2/20260725t223050z-co-yes-vg-54664bda-991e2e9495f2.wacz",
+      "sha256": "c6fa7f7e59db336754021597f7c7109e76905af02e4ac11d950373a8e3c90a17",
+      "size_bytes": 7882283
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:ae5f04010358bed3fec080fc22155ac4d3b1c31bbfd53a381f3d6c7d00d6184e",
+  "capture_id": "20260726T004329Z_ecovai-cn_33fba632_784f9d647988",
+  "capture_started_utc": "2026-07-26T00:43:29Z",
+  "domain": "ecovai.cn",
+  "file_count": 32,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 1384,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 835,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 62,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 7824,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 55782,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 57529,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2287,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9996,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 38024,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 4656,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 1471517,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 642846,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 203,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 3950585,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 3857180,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "ecovai-cn_33fba632",
+  "total_bytes": 10103371,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t004329z-ecovai-cn-33fba632-784f9d647988/20260726t004329z-ecovai-cn-33fba632-784f9d647988.wacz",
+      "sha256": "69553cabde88b5d16e79d9e8fcb6e67367b51ca554698c4b5523a8f942cbaf3d",
+      "size_bytes": 3950585
+    }
+  ]
+}

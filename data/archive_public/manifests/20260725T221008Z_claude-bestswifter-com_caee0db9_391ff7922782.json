@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:43908eb9062b896b02857e0c1dfac1cea307c6057727a14104426401a12ea9b7",
+  "capture_id": "20260725T221008Z_claude-bestswifter-com_caee0db9_391ff7922782",
+  "capture_started_utc": "2026-07-25T22:10:08Z",
+  "domain": "claude.bestswifter.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 537,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 952,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 75,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8598,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 45298,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 57334,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2313,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10006,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 25160,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 8934,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 206291,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1288301,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 307,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1434334,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 4328018,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4235719,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "claude-bestswifter-com_caee0db9",
+  "total_bytes": 11654838,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t221008z-claude-bestswifter-com-caee0db9-391ff7922782/20260725t221008z-claude-bestswifter-com-caee0db9-391ff7922782.wacz",
+      "sha256": "44f807c2c4449b11961e91283156bacde2bb59826273e84395baa797be9088bb",
+      "size_bytes": 4328018
+    }
+  ]
+}

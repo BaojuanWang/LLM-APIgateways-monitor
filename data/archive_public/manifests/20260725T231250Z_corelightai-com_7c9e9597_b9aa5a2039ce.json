@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:7e12ac2c91c4b9a8b8252fb18ef1201a509bdb20cda22c838743ee3475eb513d",
+  "capture_id": "20260725T231250Z_corelightai-com_7c9e9597_b9aa5a2039ce",
+  "capture_started_utc": "2026-07-25T23:12:50Z",
+  "domain": "corelightai.com",
+  "file_count": 34,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 967,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 885,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 10981,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8141,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 79984,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 188146,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2299,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9863,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 169098,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 8314,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 711108,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 6990942,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 247,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 2751736,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 35488153,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 35276875,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "corelightai-com_7c9e9597",
+  "total_bytes": 81700400,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t231250z-corelightai-com-7c9e9597-b9aa5a2039ce/20260725t231250z-corelightai-com-7c9e9597-b9aa5a2039ce.wacz",
+      "sha256": "10ecbe3ce56574ba7942d7d55dfdc36771d8639911880d2745aab1b66de774ef",
+      "size_bytes": 35488153
+    }
+  ]
+}

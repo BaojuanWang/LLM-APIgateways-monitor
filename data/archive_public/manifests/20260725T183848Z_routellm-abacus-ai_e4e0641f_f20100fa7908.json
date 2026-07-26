@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:9cd56f51778c69b564d2ca9cf980fd55fcfe804bde38ebae292aa5d1a6a7b477",
+  "capture_id": "20260725T183848Z_routellm-abacus-ai_e4e0641f_f20100fa7908",
+  "capture_started_utc": "2026-07-25T18:38:48Z",
+  "domain": "routellm.abacus.ai",
+  "file_count": 29,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 3402,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 556,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 10972,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 5847,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 75337,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 44274,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2310,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9947,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 67443,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 2923,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 134913,
+      "count": 2
+    },
+    "screenshot": {
+      "bytes": 4590394,
+      "count": 4
+    },
+    "seeds": {
+      "bytes": 65,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 4033664,
+      "count": 2
+    },
+    "wacz": {
+      "bytes": 4152671,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4090656,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "routellm-abacus-ai_e4e0641f",
+  "total_bytes": 17228035,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t183848z-routellm-abacus-ai-e4e0641f-f20100fa7908/20260725t183848z-routellm-abacus-ai-e4e0641f-f20100fa7908.wacz",
+      "sha256": "43d67ee6e0c79d698e38447eafdadd07a200ccd5c7e38b87481fa4ea01336b07",
+      "size_bytes": 4152671
+    }
+  ]
+}

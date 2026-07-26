@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:2adf329d6a605292a23d9a305c5cb027927d28a1c7385a0d336805f8d622fc90",
+  "capture_id": "20260725T231024Z_console-sakana-ai_f9e0af6f_b8471fe3db0b",
+  "capture_started_utc": "2026-07-25T23:10:24Z",
+  "domain": "console.sakana.ai",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 585,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 666,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 8083,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 7561,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 68255,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 75747,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2303,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9892,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 84224,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 15796,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 446253,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2031959,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 126,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1821553,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 3518202,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 3414735,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "console-sakana-ai_f9e0af6f",
+  "total_bytes": 11508601,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t231024z-console-sakana-ai-f9e0af6f-b8471fe3db0b/20260725t231024z-console-sakana-ai-f9e0af6f-b8471fe3db0b.wacz",
+      "sha256": "acda6b0209d5db98039b9d343659f91d1e4533b5fa2094e5370cf1f6895c611d",
+      "size_bytes": 3518202
+    }
+  ]
+}

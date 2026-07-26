@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:d8cc9e2359084baad0610c3c42974b217bdc5c828e62792702b98f0071c377c6",
+  "capture_id": "20260725T210403Z_bobdong-cn_d6a8a36c_608882bc015f",
+  "capture_started_utc": "2026-07-25T21:04:03Z",
+  "domain": "bobdong.cn",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 1266,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 844,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 63,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8197,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 53176,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 69233,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2289,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9994,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 22312,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 17081,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 445598,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 4318960,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 211,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1067245,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 17846134,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 17729896,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "bobdong-cn_d6a8a36c",
+  "total_bytes": 41595160,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t210403z-bobdong-cn-d6a8a36c-608882bc015f/20260725t210403z-bobdong-cn-d6a8a36c-608882bc015f.wacz",
+      "sha256": "f6b595c3af2d5455a5547e7b12ebd07a72a4ea184973780aa02bac82bf830711",
+      "size_bytes": 17846134
+    }
+  ]
+}

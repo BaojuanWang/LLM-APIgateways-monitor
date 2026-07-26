@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:547c2f28358f77a3fb4bb67c164b7f637c810894e2424143941fec7b90f1ac5a",
+  "capture_id": "20260725T173002Z_creatraai-cn_5500c62f_f0075d80f379",
+  "capture_started_utc": "2026-07-25T17:30:02Z",
+  "domain": "creatraai.cn",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 482,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 65,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4681,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1012,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11915,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2299,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9957,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 542,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 306,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 22,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1582,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "creatraai-cn_5500c62f",
+  "total_bytes": 35691,
+  "wacz": []
+}

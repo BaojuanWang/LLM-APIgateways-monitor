@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:fba959b4c82afac98b4893a473803cc8eefda1b35e60c4c6ac8f439638412598",
+  "capture_id": "20260725T212026Z_cc-api-chat_ce051b71_c6a4d17d5351",
+  "capture_started_utc": "2026-07-25T21:20:26Z",
+  "domain": "cc-api.chat",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 480,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 64,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4645,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1003,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11870,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2292,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9960,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 540,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 305,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 21,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1579,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "cc-api-chat_ce051b71",
+  "total_bytes": 35587,
+  "wacz": []
+}

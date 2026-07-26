@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:edc773e2c304c01c56ae3263068a29f4c9e8e2040391a19de4225074f92bbcc8",
+  "capture_id": "20260726T000632Z_dealise-xyz_4ec7463a_1953959bc743",
+  "capture_started_utc": "2026-07-26T00:06:32Z",
+  "domain": "dealise.xyz",
+  "file_count": 32,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 844,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 64,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 7882,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 63124,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 75988,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2291,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9858,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 31994,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 4439,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 49603,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 3209192,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 210,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 8453754,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 8338428,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "dealise-xyz_4ec7463a",
+  "total_bytes": 20250499,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t000632z-dealise-xyz-4ec7463a-1953959bc743/20260726t000632z-dealise-xyz-4ec7463a-1953959bc743.wacz",
+      "sha256": "ce7975543aa5215b50bde484dc29c8adf24ca52bd9cde5f4f80460783fd73e93",
+      "size_bytes": 8453754
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:ab9ba5443ce82d6d9bf30641a522647e46f23de291b345bfebf35d4b85d5a875",
+  "capture_id": "20260725T172114Z_claudeforcheap-com_8351f0c8_a6f4e93cfd75",
+  "capture_started_utc": "2026-07-25T17:21:14Z",
+  "domain": "claudeforcheap.com",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 494,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 71,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4763,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1066,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 12556,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2308,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9971,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 546,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 312,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 28,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1619,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "claudeforcheap-com_8351f0c8",
+  "total_bytes": 36562,
+  "wacz": []
+}

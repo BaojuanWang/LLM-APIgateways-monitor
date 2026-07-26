@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:b89287ebaaae985aa22f585292932d7b1ef33d2a31257f206ead433bdf7aadac",
+  "capture_id": "20260725T222817Z_cn-luckyapi-chat_f802008e_b99c749a150a",
+  "capture_started_utc": "2026-07-25T22:28:17Z",
+  "domain": "cn.luckyapi.chat",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 334,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 893,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 69,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8416,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 55944,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 61330,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2301,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9977,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 25895,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 10127,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 103268,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 655502,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 254,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 330724,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 3493694,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 3390907,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "cn-luckyapi-chat_f802008e",
+  "total_bytes": 8152296,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t222817z-cn-luckyapi-chat-f802008e-b99c749a150a/20260725t222817z-cn-luckyapi-chat-f802008e-b99c749a150a.wacz",
+      "sha256": "db6ef2bfa0672eae4893060a0153dfa341ab8ace688a712f9caaecff26f5870e",
+      "size_bytes": 3493694
+    }
+  ]
+}

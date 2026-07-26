@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:ec78037c2165859581ace88bfdbf254d1545d53b476dbd656fbf2564ba032241",
+  "capture_id": "20260725T222518Z_cloud-fastgpt-io_c57f162a_00e500e72200",
+  "capture_started_utc": "2026-07-25T22:25:18Z",
+  "domain": "cloud.fastgpt.io",
+  "file_count": 29,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 1647,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 546,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 10280,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 5634,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 63597,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 66301,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2301,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9841,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 111449,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 1621,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 781362,
+      "count": 2
+    },
+    "screenshot": {
+      "bytes": 380672,
+      "count": 4
+    },
+    "seeds": {
+      "bytes": 57,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 384754,
+      "count": 2
+    },
+    "wacz": {
+      "bytes": 3417938,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 3335886,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "cloud-fastgpt-io_c57f162a",
+  "total_bytes": 8576547,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t222518z-cloud-fastgpt-io-c57f162a-00e500e72200/20260725t222518z-cloud-fastgpt-io-c57f162a-00e500e72200.wacz",
+      "sha256": "14b58987448da29e02331b7e40cc4bf1ef7524c2d4ee9d8f8d3ad6f6fd8d767b",
+      "size_bytes": 3417938
+    }
+  ]
+}

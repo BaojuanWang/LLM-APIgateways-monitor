@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:236ce0499050717fec9170593e22b2fe0ee92c6d1cc5fb8cc21a698de0487146",
+  "capture_id": "20260725T222721Z_cn-chrouter-com_5ec2f0f9_f7c97c989b47",
+  "capture_started_utc": "2026-07-25T22:27:21Z",
+  "domain": "cn.chrouter.com",
+  "file_count": 33,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 567,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 889,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 68,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8130,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 36300,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 56694,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2299,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10000,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 18353,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 5520,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 125422,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 997594,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 251,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 778386,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 4736827,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4653109,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "cn-chrouter-com_5ec2f0f9",
+  "total_bytes": 11433070,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t222721z-cn-chrouter-com-5ec2f0f9-f7c97c989b47/20260725t222721z-cn-chrouter-com-5ec2f0f9-f7c97c989b47.wacz",
+      "sha256": "443c864a3ebf1dfdb7b686384ae3816fa048a1edc87cb022d410f70b734edc81",
+      "size_bytes": 4736827
+    }
+  ]
+}

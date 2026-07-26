@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:86489ee7003192988f644095768c4e05da69fff2e8d1a00e241a3cf274f1c15f",
+  "capture_id": "20260725T220536Z_cialloapi-cn_434ff1c8_27aefa921d2b",
+  "capture_started_utc": "2026-07-25T22:05:36Z",
+  "domain": "cialloapi.cn",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 361,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 856,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 65,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8301,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 74232,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 54265,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2292,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9882,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 11802,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 2679,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 10655,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2352984,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 221,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 44280,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5935865,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5838464,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "cialloapi-cn_434ff1c8",
+  "total_bytes": 14349865,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t220536z-cialloapi-cn-434ff1c8-27aefa921d2b/20260725t220536z-cialloapi-cn-434ff1c8-27aefa921d2b.wacz",
+      "sha256": "1736bc50a9d11a66b27f7b4300b6be324beea755b2534a5cb2eb04072b6ed0d1",
+      "size_bytes": 5935865
+    }
+  ]
+}

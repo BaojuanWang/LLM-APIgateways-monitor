@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:5a8ae6eb0b29bd1bf7c730731b30b7a61309a8849c6afc19b4773d3bbe0d6569",
+  "capture_id": "20260726T002844Z_douke-chat_9148a6ff_93387f3c7d46",
+  "capture_started_utc": "2026-07-26T00:28:44Z",
+  "domain": "douke.chat",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 844,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 63,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8470,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 25506,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 50469,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2289,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9887,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 2832,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 44293,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 51236,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 4245652,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 211,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 75450,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 8062283,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 7951434,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "douke-chat_9148a6ff",
+  "total_bytes": 20533747,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t002844z-douke-chat-9148a6ff-93387f3c7d46/20260726t002844z-douke-chat-9148a6ff-93387f3c7d46.wacz",
+      "sha256": "f8483a5b52a570050856a638ed7064fc8e84c51abeaffa018e1d3b1547127a66",
+      "size_bytes": 8062283
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:fa01d50ab137784cb99dd184d383069f67edd3daffe1ef18fe95afd48e6bf849",
+  "capture_id": "20260725T194502Z_apiporter-com_77234c41_4687ec955cac",
+  "capture_started_utc": "2026-07-25T19:45:02Z",
+  "domain": "apiporter.com",
+  "file_count": 32,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 334,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 871,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 66,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 7959,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 69330,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 74836,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2295,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9998,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 26673,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 12494,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 265741,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1742167,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 235,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 8643476,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 8518134,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "apiporter-com_77234c41",
+  "total_bytes": 19377270,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t194502z-apiporter-com-77234c41-4687ec955cac/20260725t194502z-apiporter-com-77234c41-4687ec955cac.wacz",
+      "sha256": "5750b2d2ec653052bc8b1742f64a3500335da78c8013e1c4a42f4eac3d435465",
+      "size_bytes": 8643476
+    }
+  ]
+}

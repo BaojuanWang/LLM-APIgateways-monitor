@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:cd4734086f3565950d51f4f6eb8441ba37bcadb0e3a64e9bf86cc0da9c8cde39",
+  "capture_id": "20260725T212657Z_cc-vibe-com_cb79be95_ea74f103d67c",
+  "capture_started_utc": "2026-07-25T21:26:57Z",
+  "domain": "cc-vibe.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 844,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 64,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8236,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 65752,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 77302,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2290,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9865,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 35001,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 2458180,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 3996396,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 3563446,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 210,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 2807559,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 15594398,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 13022699,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "cc-vibe-com_cb79be95",
+  "total_bytes": 41645070,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t212657z-cc-vibe-com-cb79be95-ea74f103d67c/20260725t212657z-cc-vibe-com-cb79be95-ea74f103d67c.wacz",
+      "sha256": "bcfbf0b84dbe91e437d861ffeb1515d2d6707b5c17fb93079431fac22c3848f2",
+      "size_bytes": 15594398
+    }
+  ]
+}

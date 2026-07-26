@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:a673316329525418083b9ff902066daa7b814ec663eea16d96d75f7b8ccf9b5e",
+  "capture_id": "20260725T195611Z_atlascloud-ai_949c8d2e_d6ab9051b120",
+  "capture_started_utc": "2026-07-25T19:56:11Z",
+  "domain": "atlascloud.ai",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 5829,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 762,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 88990,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8265,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1057265,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 410388,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2296,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9826,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 367874,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 156869,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 14397101,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 15806418,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 176,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 35084368,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 51732841,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 51071802,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "atlascloud-ai_949c8d2e",
+  "total_bytes": 170203731,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t195611z-atlascloud-ai-949c8d2e-d6ab9051b120/20260725t195611z-atlascloud-ai-949c8d2e-d6ab9051b120.wacz",
+      "sha256": "057a747b38d60e2c760b5690f0b229c1cd683b392e1617d9d1e63e60ec62cdc0",
+      "size_bytes": 51732841
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:6a311d22c51d40f7ba3b4be4b7b0bf9eb39071de38c67ac2842257b72e3a895c",
+  "capture_id": "20260726T001600Z_developer-puter-com_b3406d78_9db0a70ee073",
+  "capture_started_utc": "2026-07-26T00:16:00Z",
+  "domain": "developer.puter.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 2059,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 674,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 72,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 7883,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 66916,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 38745,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2306,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9888,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 43226,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 23714,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 403577,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2573261,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 132,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 4410276,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 3633110,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 3533821,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "developer-puter-com_b3406d78",
+  "total_bytes": 14752321,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t001600z-developer-puter-com-b3406d78-9db0a70ee073/20260726t001600z-developer-puter-com-b3406d78-9db0a70ee073.wacz",
+      "sha256": "89e85f77b643f90ef25356070af0fdcb953d14eb5a80fe81c4ba0325190e865a",
+      "size_bytes": 3633110
+    }
+  ]
+}

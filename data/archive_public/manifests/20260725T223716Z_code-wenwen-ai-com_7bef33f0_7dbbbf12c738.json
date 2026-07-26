@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:8687df9801f4d0024c3ae29554ae8ae3c13485ba47f7493923dc732deeaf2b1e",
+  "capture_id": "20260725T223716Z_code-wenwen-ai-com_7bef33f0_7dbbbf12c738",
+  "capture_started_utc": "2026-07-25T22:37:16Z",
+  "domain": "code.wenwen-ai.com",
+  "file_count": 34,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 556,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 916,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 71,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8365,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 39770,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 58994,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2305,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10004,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 20082,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 8346,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 162221,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1015438,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 275,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 239411,
+      "count": 2
+    },
+    "wacz": {
+      "bytes": 3938067,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 3847476,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "code-wenwen-ai-com_7bef33f0",
+  "total_bytes": 9354958,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t223716z-code-wenwen-ai-com-7bef33f0-7dbbbf12c738/20260725t223716z-code-wenwen-ai-com-7bef33f0-7dbbbf12c738.wacz",
+      "sha256": "dce708123bef385714113aa4f212efed661df885e0df560de483205f70e02db2",
+      "size_bytes": 3938067
+    }
+  ]
+}

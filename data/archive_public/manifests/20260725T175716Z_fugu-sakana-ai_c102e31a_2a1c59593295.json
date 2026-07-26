@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:4a7441c45a939898dcdd1f27a47613cd9c83a3f72f25ab83e6a80a73db42dc40",
+  "capture_id": "20260725T175716Z_fugu-sakana-ai_c102e31a_2a1c59593295",
+  "capture_started_utc": "2026-07-25T17:57:16Z",
+  "domain": "fugu.sakana.ai",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 585,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 651,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 8202,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 7576,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 67758,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 49505,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2302,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9894,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 86076,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 15784,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 446253,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2027598,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 114,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1825529,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 3492656,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 3415333,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "fugu-sakana-ai_c102e31a",
+  "total_bytes": 11458477,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t175716z-fugu-sakana-ai-c102e31a-2a1c59593295/20260725t175716z-fugu-sakana-ai-c102e31a-2a1c59593295.wacz",
+      "sha256": "f35a3df57ef639d6bcddfea289a1de3c79eeba9cab5a32006e7dfea3d9c93b7b",
+      "size_bytes": 3492656
+    }
+  ]
+}

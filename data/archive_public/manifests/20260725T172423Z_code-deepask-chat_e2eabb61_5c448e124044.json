@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:6a52a0e66351a4562e8ea89c0768cdcade6bef70c219766e1b53475f06327681",
+  "capture_id": "20260725T172423Z_code-deepask-chat_e2eabb61_5c448e124044",
+  "capture_started_utc": "2026-07-25T17:24:23Z",
+  "domain": "code.deepask.chat",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 492,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 70,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4733,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1057,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11974,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2306,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10015,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 544,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 311,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 27,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1619,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "code-deepask-chat_e2eabb61",
+  "total_bytes": 35976,
+  "wacz": []
+}

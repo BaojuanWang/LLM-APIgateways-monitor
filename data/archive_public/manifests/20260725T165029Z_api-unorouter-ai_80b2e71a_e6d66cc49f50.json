@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:4a47ab31ea448d29e36bed0cbf4e465046256e7b6cd4b0e76d682a4a6c021418",
+  "capture_id": "20260725T165029Z_api-unorouter-ai_80b2e71a_e6d66cc49f50",
+  "capture_started_utc": "2026-07-25T16:50:29Z",
+  "domain": "api.unorouter.ai",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 898,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 15350,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8520,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 56031,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 65509,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2306,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9924,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 36753,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 19608,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 344458,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1740597,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 259,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 619102,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 7482789,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 7378483,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-unorouter-ai_80b2e71a",
+  "total_bytes": 17783557,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t165029z-api-unorouter-ai-80b2e71a-e6d66cc49f50/20260725t165029z-api-unorouter-ai-80b2e71a-e6d66cc49f50.wacz",
+      "sha256": "5b9581718afc6ca1a32dc2f1c10585f80adfc3047a54fa2129e771c6dcf352f4",
+      "size_bytes": 7482789
+    }
+  ]
+}

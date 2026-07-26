@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:ca375174251bc5d6c16521d724c58b225f9fda6c44ec6402a71c252164f19fb7",
+  "capture_id": "20260725T191022Z_www-deerapi-com_207d1e67_72b71b4663b7",
+  "capture_started_utc": "2026-07-25T19:10:22Z",
+  "domain": "www.deerapi.com",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 2345,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 889,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 9405,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8440,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 61531,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 64549,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2304,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9890,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 89963,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 48210,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 769521,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1214572,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 251,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 3484537,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 6006212,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5880184,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "www-deerapi-com_207d1e67",
+  "total_bytes": 17655464,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t191022z-www-deerapi-com-207d1e67-72b71b4663b7/20260725t191022z-www-deerapi-com-207d1e67-72b71b4663b7.wacz",
+      "sha256": "7e1c3f58e42763dcb1fdff44b4738948caa91dd091b01e7c78d1c68e94cdcf52",
+      "size_bytes": 6006212
+    }
+  ]
+}

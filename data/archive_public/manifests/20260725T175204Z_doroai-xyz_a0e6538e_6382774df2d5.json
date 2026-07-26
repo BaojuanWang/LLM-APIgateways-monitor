@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:aaf5fe384cc22344e19073ed3ba72a8c2bb9c9169988c2cc866df16c8fe762ab",
+  "capture_id": "20260725T175204Z_doroai-xyz_a0e6538e_6382774df2d5",
+  "capture_started_utc": "2026-07-25T17:52:04Z",
+  "domain": "doroai.xyz",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 478,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 63,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4638,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 994,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 13170,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2294,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9791,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 538,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 304,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 20,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1584,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "doroai-xyz_a0e6538e",
+  "total_bytes": 36702,
+  "wacz": []
+}

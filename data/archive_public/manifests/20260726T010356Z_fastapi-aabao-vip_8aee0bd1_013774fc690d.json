@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:63f724a528c2057e255e711456760352c9878507c74db6c41c05cd7a6e05e0f9",
+  "capture_id": "20260726T010356Z_fastapi-aabao-vip_8aee0bd1_013774fc690d",
+  "capture_started_utc": "2026-07-26T01:03:56Z",
+  "domain": "fastapi.aabao.vip",
+  "file_count": 24,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 492,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 70,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4723,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 29118,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 18017,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2303,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9915,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 15280,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 1077,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 43964,
+      "count": 1
+    },
+    "screenshot": {
+      "bytes": 317437,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 27,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1190208,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 1611372,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1574359,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "fastapi-aabao-vip_8aee0bd1",
+  "total_bytes": 4821190,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t010356z-fastapi-aabao-vip-8aee0bd1-013774fc690d/20260726t010356z-fastapi-aabao-vip-8aee0bd1-013774fc690d.wacz",
+      "sha256": "2614940e42e7d4df41d3ad46ce0f7258618cf9f31697413c2001e2ab252fbe88",
+      "size_bytes": 1611372
+    }
+  ]
+}

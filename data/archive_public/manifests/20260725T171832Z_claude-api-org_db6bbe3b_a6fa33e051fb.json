@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:4e79591bd78a851c6c75ce6000361a2d8efdb026c53c37619f373d8cc37e0333",
+  "capture_id": "20260725T171832Z_claude-api-org_db6bbe3b_a6fa33e051fb",
+  "capture_started_utc": "2026-07-25T17:18:32Z",
+  "domain": "claude-api.org",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 871,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 25422,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8417,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 83059,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 107044,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2301,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9850,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 52073,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 229911,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 376772,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 3017194,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 234,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 513174,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 11895631,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 11529425,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "claude-api-org_db6bbe3b",
+  "total_bytes": 27854206,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t171832z-claude-api-org-db6bbe3b-a6fa33e051fb/20260725t171832z-claude-api-org-db6bbe3b-a6fa33e051fb.wacz",
+      "sha256": "10f1ac2e066c15cb884b80f233d39ec620061a9fcd0d40053b25aebf43f5452c",
+      "size_bytes": 11895631
+    }
+  ]
+}

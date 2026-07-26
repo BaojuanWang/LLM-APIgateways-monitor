@@ -1,0 +1,76 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:babaa6e5266f4005b2d09c8cad875b69ec14f6f92ed2318e3b876ac24eb18bbe",
+  "capture_id": "20260725T181356Z_lkyujun-cn_e3a57a0c_c73d92692f72",
+  "capture_started_utc": "2026-07-25T18:13:56Z",
+  "domain": "lkyujun.cn",
+  "file_count": 17,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 478,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 63,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4631,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 619,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 5622,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2294,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 7966,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 526,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 317,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 39,
+      "count": 1
+    },
+    "screenshot": {
+      "bytes": 11700,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 20,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 2415,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "lkyujun-cn_e3a57a0c",
+  "total_bytes": 39518,
+  "wacz": []
+}

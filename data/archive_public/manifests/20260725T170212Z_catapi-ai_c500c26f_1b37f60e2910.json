@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:b450c152731c1451ce56160e1cf6d3586efd6361b986285417a3e66133a1559c",
+  "capture_id": "20260725T170212Z_catapi-ai_c500c26f_1b37f60e2910",
+  "capture_started_utc": "2026-07-25T17:02:12Z",
+  "domain": "catapi.ai",
+  "file_count": 23,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 476,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 62,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4694,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 2824,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 7097,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2292,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9963,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 542,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 1018,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 13215,
+      "count": 1
+    },
+    "screenshot": {
+      "bytes": 154726,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 19,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 155211,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 142362,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "catapi-ai_c500c26f",
+  "total_bytes": 497329,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t170212z-catapi-ai-c500c26f-1b37f60e2910/20260725t170212z-catapi-ai-c500c26f-1b37f60e2910.wacz",
+      "sha256": "1e6676af613d465c22b46fd65691687d7c30bab37639e3dcb9e1da38764a9cbd",
+      "size_bytes": 155211
+    }
+  ]
+}

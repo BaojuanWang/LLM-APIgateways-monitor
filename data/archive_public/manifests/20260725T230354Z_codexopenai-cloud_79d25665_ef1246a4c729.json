@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:7ef67635dcfe3b97aae788f376b78b0a33e608d55f491c02591c92e5e1d5585c",
+  "capture_id": "20260725T230354Z_codexopenai-cloud_79d25665_ef1246a4c729",
+  "capture_started_utc": "2026-07-25T23:03:54Z",
+  "domain": "codexopenai.cloud",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 492,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 70,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4630,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1057,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11974,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2300,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10015,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 544,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 311,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 27,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1626,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "codexopenai-cloud_79d25665",
+  "total_bytes": 35874,
+  "wacz": []
+}

@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:abade87dd0bafad8e63aa9da6af709f9f76ce68077a789d3e908bb26cb73a6ff",
+  "capture_id": "20260725T205303Z_blueshirtmap-com_714d030f_983baed06b61",
+  "capture_started_utc": "2026-07-25T20:53:03Z",
+  "domain": "blueshirtmap.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 1384,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 898,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 69,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8425,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 62066,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 60153,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2302,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10002,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 46631,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 14343,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 5128792,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1667392,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 259,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 13078152,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 9195366,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 9086478,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "blueshirtmap-com_714d030f",
+  "total_bytes": 38365373,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t205303z-blueshirtmap-com-714d030f-983baed06b61/20260725t205303z-blueshirtmap-com-714d030f-983baed06b61.wacz",
+      "sha256": "db1b330ce7a7d7ccabbc53bf8b061f697574a86afec52d54ff7a3781f7377868",
+      "size_bytes": 9195366
+    }
+  ]
+}

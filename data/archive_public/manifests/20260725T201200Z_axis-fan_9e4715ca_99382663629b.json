@@ -1,0 +1,76 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:ecc0be50115e959ac8ea625c0744c876d75fd1acce15950b664e7bdd3bce75c7",
+  "capture_id": "20260725T201200Z_axis-fan_9e4715ca_99382663629b",
+  "capture_started_utc": "2026-07-25T20:12:00Z",
+  "domain": "axis.fan",
+  "file_count": 26,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 670,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 61,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 6937,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 3230,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 18618,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2284,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10008,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 1366,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 951,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 156,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 46800,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 114,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 9284,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "axis-fan_9e4715ca",
+  "total_bytes": 103307,
+  "wacz": []
+}

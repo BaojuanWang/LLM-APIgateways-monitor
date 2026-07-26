@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:032738e2c80b88766e8008507449360c1f93f231297a42bd3754ae286d3b2214",
+  "capture_id": "20260726T003604Z_dxnt-com_6f555359_a915d5579656",
+  "capture_started_utc": "2026-07-26T00:36:04Z",
+  "domain": "dxnt.com",
+  "file_count": 33,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 721,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 13816,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 7660,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 97923,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 121010,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2285,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9870,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 75982,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 31178,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 392505,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 3789139,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 140,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 7827630,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 7657802,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "dxnt-com_6f555359",
+  "total_bytes": 20030489,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t003604z-dxnt-com-6f555359-a915d5579656/20260726t003604z-dxnt-com-6f555359-a915d5579656.wacz",
+      "sha256": "3d2a4b5c42515db38bca0461927c0c07b39aeaab88dd3022a37b9878ab836e6a",
+      "size_bytes": 7827630
+    }
+  ]
+}

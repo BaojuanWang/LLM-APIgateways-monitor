@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:088e9ed21570b1c20d1abd09e400484194f1e69066b7cd726b2f434bec837113",
+  "capture_id": "20260725T230231Z_codexone-aieania-tech_8c2407a2_3c6b31e652b1",
+  "capture_started_utc": "2026-07-25T23:02:31Z",
+  "domain": "codexone.aieania.tech",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 934,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 74,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8568,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 66640,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 79512,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2309,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9873,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 33426,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 1134602,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 1764733,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2431225,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 290,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1281652,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 10479644,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 9228829,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "codexone-aieania-tech_8c2407a2",
+  "total_bytes": 26525139,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t230231z-codexone-aieania-tech-8c2407a2-3c6b31e652b1/20260725t230231z-codexone-aieania-tech-8c2407a2-3c6b31e652b1.wacz",
+      "sha256": "a49104156abf559a46416452c65d39cb532853e1d4e3d1c25a2749372623485f",
+      "size_bytes": 10479644
+    }
+  ]
+}

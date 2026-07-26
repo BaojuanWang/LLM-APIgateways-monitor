@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:a7c385e793649af9551eb8506743a809d7ae39dddbc51cb9e0594c14a04d7f32",
+  "capture_id": "20260725T214310Z_cdn-coderelay-cn_53c10d43_8d14f6c22bb5",
+  "capture_started_utc": "2026-07-25T21:43:10Z",
+  "domain": "cdn.coderelay.cn",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 898,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 69,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8424,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 50298,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 57257,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2301,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10002,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 22220,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 10981,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 128882,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 836352,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 259,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1774633,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5735852,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5639106,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "cdn-coderelay-cn_53c10d43",
+  "total_bytes": 14280504,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t214310z-cdn-coderelay-cn-53c10d43-8d14f6c22bb5/20260725t214310z-cdn-coderelay-cn-53c10d43-8d14f6c22bb5.wacz",
+      "sha256": "97224f18178610b12efe3212d42553f6026975c3952c815b34e21341e40ba6f9",
+      "size_bytes": 5735852
+    }
+  ]
+}

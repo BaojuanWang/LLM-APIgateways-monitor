@@ -1,0 +1,78 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:551112d33e2d9eaec011e074a90f30cd66f262b7359fab4c0a6f90a404959f1c",
+  "capture_id": "20260725T202731Z_bdshmmkj3-cn_c6f392ac_6ae15937991e",
+  "capture_started_utc": "2026-07-25T20:27:31Z",
+  "domain": "bdshmmkj3.cn",
+  "file_count": 16,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 857,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 65,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 7962,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 11826,
+      "count": 2
+    },
+    "crawl_log": {
+      "bytes": 48166,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2295,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9826,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 1372,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 499,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 222,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 68165,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 11068,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "bdshmmkj3-cn_c6f392ac",
+  "total_bytes": 165151,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t202731z-bdshmmkj3-cn-c6f392ac-6ae15937991e/20260725t202731z-bdshmmkj3-cn-c6f392ac-6ae15937991e.wacz",
+      "sha256": "70effc7ed586e1fb87f56d80013904313b7afd439de918c356bc7dd7e7e172e4",
+      "size_bytes": 68165
+    }
+  ]
+}

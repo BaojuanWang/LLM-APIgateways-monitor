@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:777b450601b13a9de5c1386cfea728ad6086e80b181ea097821bc92396e7c41e",
+  "capture_id": "20260725T215636Z_cheapvideo-cc_cb662560_b71a2e18ff08",
+  "capture_started_utc": "2026-07-25T21:56:36Z",
+  "domain": "cheapvideo.cc",
+  "file_count": 32,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 593,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 66,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 6624,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 24594,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 19562,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2295,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10007,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 6186,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 21542,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 147497,
+      "count": 3
+    },
+    "screenshot": {
+      "bytes": 2187748,
+      "count": 6
+    },
+    "seeds": {
+      "bytes": 82,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 757670,
+      "count": 3
+    },
+    "wacz": {
+      "bytes": 1997555,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1940808,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "cheapvideo-cc_cb662560",
+  "total_bytes": 7125657,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t215636z-cheapvideo-cc-cb662560-b71a2e18ff08/20260725t215636z-cheapvideo-cc-cb662560-b71a2e18ff08.wacz",
+      "sha256": "7d8fe63479626a12f84ce3c8e642e20c66c04abccdea79b678d5627b1dbed280",
+      "size_bytes": 1997555
+    }
+  ]
+}

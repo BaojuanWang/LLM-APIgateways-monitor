@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:41de07b4a6979631dc110aa85f3f7d32a789270376084eff9a348a85f856ae95",
+  "capture_id": "20260725T172119Z_claudemain-com_1225cc5f_56f3a17c1229",
+  "capture_started_utc": "2026-07-25T17:21:19Z",
+  "domain": "claudemain.com",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 486,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 67,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4713,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1030,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11833,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2301,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10018,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 552,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 308,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 24,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1613,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "claudemain-com_1225cc5f",
+  "total_bytes": 35773,
+  "wacz": []
+}

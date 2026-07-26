@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:654d65b9d3e3696824e98e207cb94b567d3ab2fbf848d57d177702058968baf7",
+  "capture_id": "20260725T223600Z_code-silkapi-com_50533c33_cfb96cce4b23",
+  "capture_started_utc": "2026-07-25T22:36:00Z",
+  "domain": "code.silkapi.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 889,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 69,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8453,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 86658,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 80344,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2300,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9872,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 37664,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 6366,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 269869,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 3466178,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 250,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 310326,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 9002242,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 8868846,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "code-silkapi-com_50533c33",
+  "total_bytes": 22153154,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260725t223600z-code-silkapi-com-50533c33-cfb96cce4b23/20260725t223600z-code-silkapi-com-50533c33-cfb96cce4b23.wacz",
+      "sha256": "e1adaca50cb1ccd43187ade4ae3570d3b6b2bb69973c78d944714ab7c64af4ca",
+      "size_bytes": 9002242
+    }
+  ]
+}
