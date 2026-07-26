@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:ab5361b7e622a33d1ff1c6431fa13afd017e623373bd7624256f8f38cfc44fd3",
+  "capture_id": "20260726T073935Z_miaomiaocode-com_371e56fa_c6de131c8bfb",
+  "capture_started_utc": "2026-07-26T07:39:35Z",
+  "domain": "miaomiaocode.com",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 810,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 859,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 7345,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8732,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 68965,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 89562,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2301,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9882,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 32701,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 16544,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 249709,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 5121475,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 245,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 299971,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 11369580,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 11252292,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "miaomiaocode-com_371e56fa",
+  "total_bytes": 28533634,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t073935z-miaomiaocode-com-371e56fa-c6de131c8bfb/20260726t073935z-miaomiaocode-com-371e56fa-c6de131c8bfb.wacz",
+      "sha256": "68ff6367ed543abe565afb5d5a9896ad3733b4786d6e128aeefe93bfd5ebd6ad",
+      "size_bytes": 11369580
+    }
+  ]
+}

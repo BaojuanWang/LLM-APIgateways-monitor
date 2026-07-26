@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:21657383118029d05ca012fe659d218cf6b439d033207b7c4c80001848df5023",
+  "capture_id": "20260726T103121Z_openai-labs-com_6f0d5e4e_5d116c06c56f",
+  "capture_started_utc": "2026-07-26T10:31:21Z",
+  "domain": "openai-labs.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 4030,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 889,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 68,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8385,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 68496,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 62491,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2299,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9975,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 44836,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 5389,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 2009234,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 738911,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 251,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 994619,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 2544925,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 2439444,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "openai-labs-com_6f0d5e4e",
+  "total_bytes": 8936903,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t103121z-openai-labs-com-6f0d5e4e-5d116c06c56f/20260726t103121z-openai-labs-com-6f0d5e4e-5d116c06c56f.wacz",
+      "sha256": "b8ef13e5e960d1cf26a5afc352132374f0cac451c065ee07144a49d0531c0b3c",
+      "size_bytes": 2544925
+    }
+  ]
+}

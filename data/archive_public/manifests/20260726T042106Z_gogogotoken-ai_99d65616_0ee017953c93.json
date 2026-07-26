@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:1ab1f8d11ef1113f02521624f2051d88c45f906d32fd212939bde1228b6df629",
+  "capture_id": "20260726T042106Z_gogogotoken-ai_99d65616_0ee017953c93",
+  "capture_started_utc": "2026-07-26T04:21:06Z",
+  "domain": "gogogotoken.ai",
+  "file_count": 33,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 537,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 882,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 67,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8127,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 36794,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 56654,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2297,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9997,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 19347,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 10529,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 179254,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1188383,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 245,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 227372,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 5266303,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5177372,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "gogogotoken-ai_99d65616",
+  "total_bytes": 12186821,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t042106z-gogogotoken-ai-99d65616-0ee017953c93/20260726t042106z-gogogotoken-ai-99d65616-0ee017953c93.wacz",
+      "sha256": "f9bee53717b13beb7db25c4d408f723eba5445c4253f9bc26b8df99c712e6ebb",
+      "size_bytes": 5266303
+    }
+  ]
+}

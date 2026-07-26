@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:82fdfa4d447f67baf1c340bcc45917d880ab14320603446c5b9255a1eed8e30a",
+  "capture_id": "20260726T070654Z_lulurouter-com_8a311d59_42670613c1dd",
+  "capture_started_utc": "2026-07-26T07:06:54Z",
+  "domain": "lulurouter.com",
+  "file_count": 33,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 1375,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 875,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 67,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8094,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 44166,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 58075,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2297,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9974,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 21747,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 13042,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 241238,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1840163,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 238,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 63784,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 5036122,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4939571,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "lulurouter-com_8a311d59",
+  "total_bytes": 12283489,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t070654z-lulurouter-com-8a311d59-42670613c1dd/20260726t070654z-lulurouter-com-8a311d59-42670613c1dd.wacz",
+      "sha256": "3479b610d7fe2813e254465965218ed526e972191032597ba8942bd38b923bbb",
+      "size_bytes": 5036122
+    }
+  ]
+}

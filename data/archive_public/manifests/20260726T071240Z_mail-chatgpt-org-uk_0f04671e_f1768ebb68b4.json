@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:c9e45069f611bc84c19151c62a758a80db27e16ed43b6909562b5f308b7684c3",
+  "capture_id": "20260726T071240Z_mail-chatgpt-org-uk_0f04671e_f1768ebb68b4",
+  "capture_started_utc": "2026-07-26T07:12:40Z",
+  "domain": "mail.chatgpt.org.uk",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 1700,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 671,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 15797,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 7794,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 87311,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 129205,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2308,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9879,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 110644,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 39691,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 1300139,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 3153990,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 129,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 2212135,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 4524683,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4336125,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "mail-chatgpt-org-uk_0f04671e",
+  "total_bytes": 15934862,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t071240z-mail-chatgpt-org-uk-0f04671e-f1768ebb68b4/20260726t071240z-mail-chatgpt-org-uk-0f04671e-f1768ebb68b4.wacz",
+      "sha256": "cb746c1fddebff9764ad25177512265e3e29c401c505b07a527dfa4ebd424f44",
+      "size_bytes": 4524683
+    }
+  ]
+}

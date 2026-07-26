@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:be8c3a0a364d870d30eff72c7ea2cf23c8f6fdaeb367f2c7535a5d21c26c6925",
+  "capture_id": "20260726T045743Z_home-moleapi-com_782e5ce8_bf747b1f9935",
+  "capture_started_utc": "2026-07-26T04:57:43Z",
+  "domain": "home.moleapi.com",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 898,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 15048,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8415,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 58733,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 74500,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2301,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9987,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 35761,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 18965,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 731379,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2287561,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 259,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1416254,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 8018410,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 7905173,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "home-moleapi-com_782e5ce8",
+  "total_bytes": 20586614,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t045743z-home-moleapi-com-782e5ce8-bf747b1f9935/20260726t045743z-home-moleapi-com-782e5ce8-bf747b1f9935.wacz",
+      "sha256": "669d60b72ce193349eeba000a18db5788ecd361c563bdae64686bcb69141a6f9",
+      "size_bytes": 8018410
+    }
+  ]
+}

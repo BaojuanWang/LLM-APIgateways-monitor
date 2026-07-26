@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:a215dc902e954068a73c8a29fae9d1a05e511906effe1049ebb728ba8f2ce803",
+  "capture_id": "20260726T073643Z_miaolici-top_aa2100df_a2920cd6994b",
+  "capture_started_utc": "2026-07-26T07:36:43Z",
+  "domain": "miaolici.top",
+  "file_count": 33,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 530,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 862,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 10480,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8030,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 59728,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 81212,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2293,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9989,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 57152,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 19842,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 122096,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 3338008,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 227,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 14529797,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 14414359,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "miaolici-top_aa2100df",
+  "total_bytes": 32657266,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t073643z-miaolici-top-aa2100df-a2920cd6994b/20260726t073643z-miaolici-top-aa2100df-a2920cd6994b.wacz",
+      "sha256": "0c3fc885046bd33c25e33a7bfd90afaee15c3e025a3b49cd5b8930d7c2fd46a4",
+      "size_bytes": 14529797
+    }
+  ]
+}

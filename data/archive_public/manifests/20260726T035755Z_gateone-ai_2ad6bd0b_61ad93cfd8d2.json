@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:6284285895786f48f3305000d1a43733726c430b7341dfc3c33ea8d7bcefd690",
+  "capture_id": "20260726T035755Z_gateone-ai_2ad6bd0b_61ad93cfd8d2",
+  "capture_started_utc": "2026-07-26T03:57:55Z",
+  "domain": "gateone.ai",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 1118,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 726,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 6683,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 7782,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 50855,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 56203,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2290,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9891,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 71593,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 10346,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 138011,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 5611726,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 143,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 3598105,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 8989213,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 8912168,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "gateone-ai_2ad6bd0b",
+  "total_bytes": 27469514,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t035755z-gateone-ai-2ad6bd0b-61ad93cfd8d2/20260726t035755z-gateone-ai-2ad6bd0b-61ad93cfd8d2.wacz",
+      "sha256": "fc3f7771e38aba1018b97ccc29388dc3b818a8ab1a03bc5452b87c455e81aa02",
+      "size_bytes": 8989213
+    }
+  ]
+}

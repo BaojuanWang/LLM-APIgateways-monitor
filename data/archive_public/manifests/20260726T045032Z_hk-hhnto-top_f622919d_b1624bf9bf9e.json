@@ -1,0 +1,76 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:1026a588e1a6b182e7e0bb44a75be6a959bac44a1f962fd3ef8f4837f783759d",
+  "capture_id": "20260726T045032Z_hk-hhnto-top_f622919d_b1624bf9bf9e",
+  "capture_started_utc": "2026-07-26T04:50:32Z",
+  "domain": "hk.hhnto.top",
+  "file_count": 17,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 482,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 65,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4434,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 631,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 5654,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2292,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 8010,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 526,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 319,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 39,
+      "count": 1
+    },
+    "screenshot": {
+      "bytes": 11700,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 22,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 2128,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "hk-hhnto-top_f622919d",
+  "total_bytes": 39130,
+  "wacz": []
+}

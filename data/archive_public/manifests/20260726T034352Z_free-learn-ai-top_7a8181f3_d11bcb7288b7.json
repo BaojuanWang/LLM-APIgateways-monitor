@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:c932c6e25ffee936486ec575f6aeb684aefe6d2ca2b08c4592e5a0440d7dcdc1",
+  "capture_id": "20260726T034352Z_free-learn-ai-top_7a8181f3_d11bcb7288b7",
+  "capture_started_utc": "2026-07-26T03:43:52Z",
+  "domain": "free.learn-ai.top",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 537,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 907,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 70,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8454,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 57620,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 58119,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2302,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10003,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 21350,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 7786,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 152388,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1167576,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 267,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1268443,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 4489340,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4391263,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "free-learn-ai-top_7a8181f3",
+  "total_bytes": 11639086,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t034352z-free-learn-ai-top-7a8181f3-d11bcb7288b7/20260726t034352z-free-learn-ai-top-7a8181f3-d11bcb7288b7.wacz",
+      "sha256": "c3825fe51bdfdcb93f2b8b9590a9cf8a51d57ec22f4ca40ddb59c4664ed1483c",
+      "size_bytes": 4489340
+    }
+  ]
+}

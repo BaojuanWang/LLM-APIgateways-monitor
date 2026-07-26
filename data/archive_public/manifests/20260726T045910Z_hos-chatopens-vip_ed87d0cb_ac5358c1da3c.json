@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:9fddb5c3a9af0d2ccaaf2c22d25adb867f2fa460d8561a5aba42fad823d36ba8",
+  "capture_id": "20260726T045910Z_hos-chatopens-vip_ed87d0cb_ac5358c1da3c",
+  "capture_started_utc": "2026-07-26T04:59:10Z",
+  "domain": "hos.chatopens.vip",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 364,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 907,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 70,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8487,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 97114,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 126384,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2303,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9869,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 68281,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 40997,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 310525,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 4416730,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 267,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 12251612,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 13711072,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 13491768,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "hos-chatopens-vip_ed87d0cb",
+  "total_bytes": 44539411,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t045910z-hos-chatopens-vip-ed87d0cb-ac5358c1da3c/20260726t045910z-hos-chatopens-vip-ed87d0cb-ac5358c1da3c.wacz",
+      "sha256": "fd1d06a897a073ac913d2b2ed00c4c857a35dc21d4a548a7226416a0ee9b6c82",
+      "size_bytes": 13711072
+    }
+  ]
+}

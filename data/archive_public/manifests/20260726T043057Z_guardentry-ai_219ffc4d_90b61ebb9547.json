@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:5a1774076e487cb608dbd6cc438a50bf3987c2d69b82d03e81500b3f21ff86a9",
+  "capture_id": "20260726T043057Z_guardentry-ai_219ffc4d_90b61ebb9547",
+  "capture_started_utc": "2026-07-26T04:30:57Z",
+  "domain": "guardentry.ai",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 701,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 7587,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 7878,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 62653,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 73849,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2295,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9890,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 44873,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 29624,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 329489,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2679635,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 140,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 509333,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 3905646,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 3790761,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "guardentry-ai_219ffc4d",
+  "total_bytes": 11457182,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t043057z-guardentry-ai-219ffc4d-90b61ebb9547/20260726t043057z-guardentry-ai-219ffc4d-90b61ebb9547.wacz",
+      "sha256": "6a51a3577f77c8edee1c8d56163a422f8836512d9cea34fa84dbbde5553b1d44",
+      "size_bytes": 3905646
+    }
+  ]
+}

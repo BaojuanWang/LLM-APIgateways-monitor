@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:024ae49ebf349365eecb8f590dfdaabf738f313547a53a2c821aafc556904013",
+  "capture_id": "20260726T043941Z_hcnote-cn_0622f370_cfa7b07fc39c",
+  "capture_started_utc": "2026-07-26T04:39:41Z",
+  "domain": "hcnote.cn",
+  "file_count": 33,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 1104,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 680,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 10528,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 7449,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 80222,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 67623,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2287,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9856,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 61731,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 99800,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 920407,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2906344,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 123,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 10000911,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 9819148,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "hcnote-cn_0622f370",
+  "total_bytes": 23990874,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t043941z-hcnote-cn-0622f370-cfa7b07fc39c/20260726t043941z-hcnote-cn-0622f370-cfa7b07fc39c.wacz",
+      "sha256": "cfa822d2efb522891f469683725d0c80e79273032827f5dab1d3431df263dce1",
+      "size_bytes": 10000911
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:ccfbdf5f085522ea50ef3908c85d629284a0113200147d9abc6dd5589528d76a",
+  "capture_id": "20260726T032025Z_api-ebutterfly-cc_c8c401e8_06cda5652c24",
+  "capture_started_utc": "2026-07-26T03:20:25Z",
+  "domain": "api.ebutterfly.cc",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 520,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 907,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 70,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8448,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 76600,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 57233,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2303,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10004,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 32557,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 11034,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 218071,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1651684,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 267,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 11811349,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 7975562,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 7865632,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-ebutterfly-cc_c8c401e8",
+  "total_bytes": 29724902,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t032025z-api-ebutterfly-cc-c8c401e8-06cda5652c24/20260726t032025z-api-ebutterfly-cc-c8c401e8-06cda5652c24.wacz",
+      "sha256": "70ca7d145bafc80c9dd9277ff8d11fea51ec064e70eb473712be417f44fc55f2",
+      "size_bytes": 7975562
+    }
+  ]
+}

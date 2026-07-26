@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:1ecb63e38345c00a07b9492cbe27f4f439c61658ffaa474c0f7db128681d8822",
+  "capture_id": "20260726T065334Z_loopllama-ai_2147b7f7_c3930274320c",
+  "capture_started_utc": "2026-07-26T06:53:34Z",
+  "domain": "loopllama.ai",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 607,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 851,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 7602,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8385,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 81713,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 108061,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2293,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9883,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 30704,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 24522,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 190468,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1832723,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 216,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 134534,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 4111183,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 3967176,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "loopllama-ai_2147b7f7",
+  "total_bytes": 10513582,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t065334z-loopllama-ai-2147b7f7-c3930274320c/20260726t065334z-loopllama-ai-2147b7f7-c3930274320c.wacz",
+      "sha256": "6518e7ca451367f0efa9fac86309c2a324984ce7e21b8e93f7c59292e6106132",
+      "size_bytes": 4111183
+    }
+  ]
+}

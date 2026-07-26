@@ -1,0 +1,68 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:d9e98aeab039a6abab35c716cd4154b6b082fad3bcecc88fc7d44fccb6e09b8f",
+  "capture_id": "20260726T035018Z_fucheers-top_452643e5_60d0120b12b7",
+  "capture_started_utc": "2026-07-26T03:50:18Z",
+  "domain": "fucheers.top",
+  "file_count": 14,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 482,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 65,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4508,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 1012,
+      "count": 1
+    },
+    "crawl_log": {
+      "bytes": 11719,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2291,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10022,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 534,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 306,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 22,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1606,
+      "count": 1
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "fucheers-top_452643e5",
+  "total_bytes": 35395,
+  "wacz": []
+}

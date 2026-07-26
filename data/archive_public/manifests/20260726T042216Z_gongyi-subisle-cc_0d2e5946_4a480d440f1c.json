@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:f784cf9b4f156b5d94b2e9cd37adc21196260f553bf44280aa3ccbf01d822fb0",
+  "capture_id": "20260726T042216Z_gongyi-subisle-cc_0d2e5946_4a480d440f1c",
+  "capture_started_utc": "2026-07-26T04:22:16Z",
+  "domain": "gongyi.subisle.cc",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 501,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 907,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 70,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8479,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 95064,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 57713,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2303,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9974,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 29944,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 3356,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 92638,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 250922,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 267,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 304234,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 4325801,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4213839,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "gongyi-subisle-cc_0d2e5946",
+  "total_bytes": 9398673,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t042216z-gongyi-subisle-cc-0d2e5946-4a480d440f1c/20260726t042216z-gongyi-subisle-cc-0d2e5946-4a480d440f1c.wacz",
+      "sha256": "acedb49e4cbdaf641caf53beb8bfc6975d7afa4039a08f7eb87eecae34f5b2a8",
+      "size_bytes": 4325801
+    }
+  ]
+}

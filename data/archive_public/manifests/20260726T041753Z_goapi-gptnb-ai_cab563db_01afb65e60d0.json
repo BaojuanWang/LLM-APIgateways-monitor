@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:771d627fff111fae1dcf51439e234ec7c0fa3effcd873f3770f8846535d265b8",
+  "capture_id": "20260726T041753Z_goapi-gptnb-ai_cab563db_01afb65e60d0",
+  "capture_started_utc": "2026-07-26T04:17:53Z",
+  "domain": "goapi.gptnb.ai",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 3972,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 880,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 8912,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8353,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 60994,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 81143,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2297,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9934,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 81627,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 24974,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 1959815,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1850057,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 243,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1115914,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 4761924,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4643065,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "goapi-gptnb-ai_cab563db",
+  "total_bytes": 14616765,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t041753z-goapi-gptnb-ai-cab563db-01afb65e60d0/20260726t041753z-goapi-gptnb-ai-cab563db-01afb65e60d0.wacz",
+      "sha256": "2614beb7eb106770ebcc72b6bd3dc7b64367f3314bab619c971df5e1dad6b93e",
+      "size_bytes": 4761924
+    }
+  ]
+}

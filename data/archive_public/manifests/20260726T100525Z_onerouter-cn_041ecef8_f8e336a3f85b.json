@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:f4d69ca43c489f0eefeaa18830e6c6af195164cb87d574d09723969242e831a9",
+  "capture_id": "20260726T100525Z_onerouter-cn_041ecef8_f8e336a3f85b",
+  "capture_started_utc": "2026-07-26T10:05:25Z",
+  "domain": "onerouter.cn",
+  "file_count": 32,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 201,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 589,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 65,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 6739,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 16734,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 23766,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2293,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9864,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 7870,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 6637,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 88726,
+      "count": 3
+    },
+    "screenshot": {
+      "bytes": 1197606,
+      "count": 6
+    },
+    "seeds": {
+      "bytes": 79,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 941687,
+      "count": 3
+    },
+    "wacz": {
+      "bytes": 1621999,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 1579889,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "onerouter-cn_041ecef8",
+  "total_bytes": 5507405,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t100525z-onerouter-cn-041ecef8-f8e336a3f85b/20260726t100525z-onerouter-cn-041ecef8-f8e336a3f85b.wacz",
+      "sha256": "6f6b108c2535c6d3fd688167d50e9e75a2b0328437e0cdd4b4de9d950a98ccbc",
+      "size_bytes": 1621999
+    }
+  ]
+}

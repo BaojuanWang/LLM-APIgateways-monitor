@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:53a719762827cfd43dc4322c19579aceffac22af176ad8278ccc1ee3ea00a84f",
+  "capture_id": "20260726T080218Z_modelhub-lat_13f6d835_ab9694a3203a",
+  "capture_started_utc": "2026-07-26T08:02:18Z",
+  "domain": "modelhub.lat",
+  "file_count": 32,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 856,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 65,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8253,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 60052,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 58888,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2293,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9930,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 10548,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 38083,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 28316,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 800747,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 221,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 8699153,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 8568812,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "modelhub-lat_13f6d835",
+  "total_bytes": 18289045,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t080218z-modelhub-lat-13f6d835-ab9694a3203a/20260726t080218z-modelhub-lat-13f6d835-ab9694a3203a.wacz",
+      "sha256": "472ffedaccf2d9564b2575659d1722ac1fcdd5a9a0aca17a06e0abd6951531c9",
+      "size_bytes": 8699153
+    }
+  ]
+}

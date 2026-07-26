@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:329aa78515a214ffa1ac261d8ccbb498bd29315a75640b45ea0126a1fac562bb",
+  "capture_id": "20260726T042510Z_gpt-hslife-fun_f4d88d48_ef52e3e84afb",
+  "capture_started_utc": "2026-07-26T04:25:10Z",
+  "domain": "gpt.hslife.fun",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 871,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 67,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8402,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 63584,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 77042,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2296,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9867,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 32744,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 1043862,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 1610532,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 3290768,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 234,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1341168,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 11311470,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 10155421,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "gpt-hslife-fun_f4d88d48",
+  "total_bytes": 28951156,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t042510z-gpt-hslife-fun-f4d88d48-ef52e3e84afb/20260726t042510z-gpt-hslife-fun-f4d88d48-ef52e3e84afb.wacz",
+      "sha256": "425aef65a2eff8dc02ac98fbdb9d197f0473bd96aa3893d7cb56437283d02ead",
+      "size_bytes": 11311470
+    }
+  ]
+}

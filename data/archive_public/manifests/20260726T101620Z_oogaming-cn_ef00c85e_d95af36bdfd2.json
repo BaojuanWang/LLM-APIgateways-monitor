@@ -1,0 +1,78 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:cea9e64b8faba60a7d4a09b9708c1360109604ae5c8ce3be793306e94c6e4766",
+  "capture_id": "20260726T101620Z_oogaming-cn_ef00c85e_d95af36bdfd2",
+  "capture_started_utc": "2026-07-26T10:16:20Z",
+  "domain": "oogaming.cn",
+  "file_count": 20,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 848,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 64,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 7934,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 38288,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 63750,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2292,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9976,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 1367,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 5074,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 214,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 4472554,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4381248,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "oogaming-cn_ef00c85e",
+  "total_bytes": 8986437,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t101620z-oogaming-cn-ef00c85e-d95af36bdfd2/20260726t101620z-oogaming-cn-ef00c85e-d95af36bdfd2.wacz",
+      "sha256": "a4ac22ca40d21339ac50dd9a571e0646b8a2c30c4154389b6a9060d67a06fd17",
+      "size_bytes": 4472554
+    }
+  ]
+}

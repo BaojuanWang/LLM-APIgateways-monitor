@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:6135b85721ba50f669b9974862fb199de3abbe8d0921f800dd295682b95a30f9",
+  "capture_id": "20260726T104434Z_opper-ai_ab6e1701_018abbd52b1b",
+  "capture_started_utc": "2026-07-26T10:44:34Z",
+  "domain": "opper.ai",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 3299,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 865,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 59860,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8600,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 586915,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 403034,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2286,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9821,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 114947,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 225262,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 4067762,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 15435066,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 234,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 90497490,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 27754958,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 27062146,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "opper-ai_ab6e1701",
+  "total_bytes": 166235206,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t104434z-opper-ai-ab6e1701-018abbd52b1b/20260726t104434z-opper-ai-ab6e1701-018abbd52b1b.wacz",
+      "sha256": "a95be098feca3208bee0876603a21739ba51ba52937ea67ebeabd9a0300a019d",
+      "size_bytes": 27754958
+    }
+  ]
+}

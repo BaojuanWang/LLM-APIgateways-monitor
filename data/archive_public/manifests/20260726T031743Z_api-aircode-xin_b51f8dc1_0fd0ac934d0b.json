@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:b27b84f9ec6e50c525961a8411cb2306c820228e0906d5f237d20252271e0224",
+  "capture_id": "20260726T031743Z_api-aircode-xin_b51f8dc1_0fd0ac934d0b",
+  "capture_started_utc": "2026-07-26T03:17:43Z",
+  "domain": "api.aircode.xin",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 946,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 880,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 68,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8399,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 90284,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 81634,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2298,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9866,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 36153,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 7230,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 113792,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2763120,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 242,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1065774,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 8256314,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 8118954,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-aircode-xin_b51f8dc1",
+  "total_bytes": 20558615,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t031743z-api-aircode-xin-b51f8dc1-0fd0ac934d0b/20260726t031743z-api-aircode-xin-b51f8dc1-0fd0ac934d0b.wacz",
+      "sha256": "cd62ac5d7301a58007b0e0c97145c8a2e77cd7f7df78259e474f46f1a2d1ead3",
+      "size_bytes": 8256314
+    }
+  ]
+}

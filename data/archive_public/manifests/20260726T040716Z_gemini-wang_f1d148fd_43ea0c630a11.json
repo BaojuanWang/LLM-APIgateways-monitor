@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:e7f86b41122744404d20b2e95c3a1f545067405e9a95eaa7a6693dfcbb190f2d",
+  "capture_id": "20260726T040716Z_gemini-wang_f1d148fd_43ea0c630a11",
+  "capture_started_utc": "2026-07-26T04:07:16Z",
+  "domain": "gemini.wang",
+  "file_count": 33,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 315,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 800,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 12415,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 7774,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 79300,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 73082,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2292,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9735,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 98145,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 5034,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 1010957,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 745662,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 191,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 6750464,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 6656072,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "gemini-wang_f1d148fd",
+  "total_bytes": 15454899,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t040716z-gemini-wang-f1d148fd-43ea0c630a11/20260726t040716z-gemini-wang-f1d148fd-43ea0c630a11.wacz",
+      "sha256": "fd4a9606b1af38aad4606b1f88bb1d137eac41864b0ffaa2d06d6738096355b4",
+      "size_bytes": 6750464
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:0cf653760e0106b812f2e9f6184f0801c57865d3cafc183fc136d3af421f2f72",
+  "capture_id": "20260726T070123Z_loyal-agent-ai_e3151e6c_daa4ff1aefc9",
+  "capture_started_utc": "2026-07-26T07:01:23Z",
+  "domain": "loyal-agent.ai",
+  "file_count": 33,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 280,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 880,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 9037,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8054,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 51498,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 59248,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2296,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9990,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 28763,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 22473,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 127515,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 4149684,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 243,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 19359351,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 19264763,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "loyal-agent-ai_e3151e6c",
+  "total_bytes": 43096736,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t070123z-loyal-agent-ai-e3151e6c-daa4ff1aefc9/20260726t070123z-loyal-agent-ai-e3151e6c-daa4ff1aefc9.wacz",
+      "sha256": "5d5b8b19a99de4651ad14790e1c112192d684ab7c67dd894718c021272c13e3b",
+      "size_bytes": 19359351
+    }
+  ]
+}

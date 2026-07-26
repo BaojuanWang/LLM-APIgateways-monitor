@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:1a1de64090856dd0553c934d39c3468a89afa06f9a8d405a4cccac286cddfb1d",
+  "capture_id": "20260726T073416Z_metapi-lilililwan-xyz_916d68a7_8f08f4613045",
+  "capture_started_utc": "2026-07-26T07:34:16Z",
+  "domain": "metapi.lilililwan.xyz",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 943,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 74,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8583,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 74466,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 59576,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2311,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10008,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 28932,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 10304,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 308343,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1626665,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 299,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1377517,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5886643,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5776151,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "metapi-lilililwan-xyz_916d68a7",
+  "total_bytes": 15173785,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t073416z-metapi-lilililwan-xyz-916d68a7-8f08f4613045/20260726t073416z-metapi-lilililwan-xyz-916d68a7-8f08f4613045.wacz",
+      "sha256": "d9b4223959e6a03d971aa2d407276e7990170a70c3b7cdcbc191175d6e8f0843",
+      "size_bytes": 5886643
+    }
+  ]
+}

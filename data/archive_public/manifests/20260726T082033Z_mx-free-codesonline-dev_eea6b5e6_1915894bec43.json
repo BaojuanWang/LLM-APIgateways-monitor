@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:5bdcbc986b6bc1102599dc67bb7654233f4eeceb84b3bc81d77c2bd2124458b5",
+  "capture_id": "20260726T082033Z_mx-free-codesonline-dev_eea6b5e6_1915894bec43",
+  "capture_started_utc": "2026-07-26T08:20:33Z",
+  "domain": "mx.free.codesonline.dev",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 761,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 951,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 76,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8664,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 85568,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 60665,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2313,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9877,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 38216,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 2886328,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 4027089,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2791636,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 305,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 2777768,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 13694413,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 10701247,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "mx-free-codesonline-dev_eea6b5e6",
+  "total_bytes": 37088538,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t082033z-mx-free-codesonline-dev-eea6b5e6-1915894bec43/20260726t082033z-mx-free-codesonline-dev-eea6b5e6-1915894bec43.wacz",
+      "sha256": "1444cbe7aad26e0e659b747fed6dd90515789e06f6fe7d6438e378eb7abf51db",
+      "size_bytes": 13694413
+    }
+  ]
+}

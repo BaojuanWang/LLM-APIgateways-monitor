@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:f51a1e7f3a2b179310fc91192060c90f4108b90aa17fd2ee6ef2c492a3f4152e",
+  "capture_id": "20260726T090247Z_new-api-xt-url-com_999af6dc_38f7d47943bf",
+  "capture_started_utc": "2026-07-26T09:02:47Z",
+  "domain": "new-api.xt-url.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 537,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 916,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 71,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8490,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 35488,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 54617,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2305,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10003,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 14417,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 8164,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 291060,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1362833,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 275,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1018045,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5379740,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5295849,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "new-api-xt-url-com_999af6dc",
+  "total_bytes": 13485471,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t090247z-new-api-xt-url-com-999af6dc-38f7d47943bf/20260726t090247z-new-api-xt-url-com-999af6dc-38f7d47943bf.wacz",
+      "sha256": "c85688f72f607c15c0062c317b085c44b30b6f04a92776960206940cbd88aa7e",
+      "size_bytes": 5379740
+    }
+  ]
+}

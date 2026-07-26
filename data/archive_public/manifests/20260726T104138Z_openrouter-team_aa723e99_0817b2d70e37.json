@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:b65224101ea2ae85a2d13d4a880b5c1739e1667743b6d7d8902a10d4876055d2",
+  "capture_id": "20260726T104138Z_openrouter-team_aa723e99_0817b2d70e37",
+  "capture_started_utc": "2026-07-26T10:41:38Z",
+  "domain": "openrouter.team",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 768,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 9525,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8097,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 71158,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 98444,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2299,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9894,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 72968,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 18818,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 440641,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2963698,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 180,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 831904,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 10198346,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 10067726,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "openrouter-team_aa723e99",
+  "total_bytes": 24797294,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t104138z-openrouter-team-aa723e99-0817b2d70e37/20260726t104138z-openrouter-team-aa723e99-0817b2d70e37.wacz",
+      "sha256": "d334264d817616f3faa2e9a6aef69b7da401bc939a9b845de741ec26b186a253",
+      "size_bytes": 10198346
+    }
+  ]
+}

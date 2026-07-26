@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:4905e5db3399e1b29c40c58a3f7fc2daa789cf18f7e84e7d2d5c4a1f34ca1f92",
+  "capture_id": "20260726T092801Z_niudunbujige-cn_0d65a997_009ecebb6105",
+  "capture_started_utc": "2026-07-26T09:28:01Z",
+  "domain": "niudunbujige.cn",
+  "file_count": 32,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 537,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 889,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 68,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8018,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 35296,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 59854,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2299,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10000,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 8307,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 9082,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 54029,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 489327,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 251,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 4892130,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4802192,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "niudunbujige-cn_0d65a997",
+  "total_bytes": 10374940,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t092801z-niudunbujige-cn-0d65a997-009ecebb6105/20260726t092801z-niudunbujige-cn-0d65a997-009ecebb6105.wacz",
+      "sha256": "4d09014fa0c193f1e652d8e4e98e4b494064310af196d776fa52ced030cf4982",
+      "size_bytes": 4892130
+    }
+  ]
+}

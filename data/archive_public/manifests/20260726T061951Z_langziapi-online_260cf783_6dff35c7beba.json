@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:774bde6aa9ced87683e86169374be95c4a7a8ea57dcd5144319007450c148983",
+  "capture_id": "20260726T061951Z_langziapi-online_260cf783_6dff35c7beba",
+  "capture_started_utc": "2026-07-26T06:19:51Z",
+  "domain": "langziapi.online",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 889,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 69,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8413,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 86976,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 78858,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2300,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9870,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 36104,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 52317,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 222859,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2837071,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 250,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 427086,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 8378561,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 8200540,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "langziapi-online_260cf783",
+  "total_bytes": 20344991,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t061951z-langziapi-online-260cf783-6dff35c7beba/20260726t061951z-langziapi-online-260cf783-6dff35c7beba.wacz",
+      "sha256": "6573d99e985e0f732b1195b0d3d720a61c5a963b29857c6d977da0d41bd44a6a",
+      "size_bytes": 8378561
+    }
+  ]
+}

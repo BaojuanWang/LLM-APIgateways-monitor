@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:cac74be57c42aa50a1003256ccda04be54574d2cbba8b759e763d62998cd65f4",
+  "capture_id": "20260726T095848Z_onecheckout-ai_258580ab_4cdde64ff3e7",
+  "capture_started_utc": "2026-07-26T09:58:48Z",
+  "domain": "onecheckout.ai",
+  "file_count": 33,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 1294,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 614,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 15946,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 6903,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 94336,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 109772,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2297,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9810,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 66440,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 52886,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 733384,
+      "count": 3
+    },
+    "screenshot": {
+      "bytes": 9033621,
+      "count": 6
+    },
+    "seeds": {
+      "bytes": 102,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 7257347,
+      "count": 3
+    },
+    "wacz": {
+      "bytes": 19848650,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 19666212,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "onecheckout-ai_258580ab",
+  "total_bytes": 56902275,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t095848z-onecheckout-ai-258580ab-4cdde64ff3e7/20260726t095848z-onecheckout-ai-258580ab-4cdde64ff3e7.wacz",
+      "sha256": "8eabcca3af2e4359f611db20626d804365ef252f78162c92840b61396d54e740",
+      "size_bytes": 19848650
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:09e4de0ce8d7efd82aa5619a47b6894bb3cd77cd991ac11be69c80bcfac0597c",
+  "capture_id": "20260726T072407Z_mayaa-com-cn_378b995c_afa7aae15f02",
+  "capture_started_utc": "2026-07-26T07:24:07Z",
+  "domain": "mayaa.com.cn",
+  "file_count": 33,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 539,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 867,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 18063,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8109,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 131879,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 265022,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2294,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9690,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 152961,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 937978,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 2899437,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 3933769,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 232,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 86556669,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 85331581,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "mayaa-com-cn_378b995c",
+  "total_bytes": 180251751,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t072407z-mayaa-com-cn-378b995c-afa7aae15f02/20260726t072407z-mayaa-com-cn-378b995c-afa7aae15f02.wacz",
+      "sha256": "8896999b1a1b15104abb08360ae4199797b989dea27a8e26747ff5e1b302ca49",
+      "size_bytes": 86556669
+    }
+  ]
+}

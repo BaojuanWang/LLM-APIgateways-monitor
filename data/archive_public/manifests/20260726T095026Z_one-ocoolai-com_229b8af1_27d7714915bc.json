@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:5987ea8c860a7c75ed25a50780e3933e102acb3b1697d2224fb248a18d8df496",
+  "capture_id": "20260726T095026Z_one-ocoolai-com_229b8af1_27d7714915bc",
+  "capture_started_utc": "2026-07-26T09:50:26Z",
+  "domain": "one.ocoolai.com",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 442,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 832,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 8790,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8223,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 64723,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 84418,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2299,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9983,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 100538,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 5128,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 986210,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 564474,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 219,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 15936736,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 7349427,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 7247219,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "one-ocoolai-com_229b8af1",
+  "total_bytes": 32372322,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t095026z-one-ocoolai-com-229b8af1-27d7714915bc/20260726t095026z-one-ocoolai-com-229b8af1-27d7714915bc.wacz",
+      "sha256": "5bddb662a48db9113e4285d8e4b9b1a0f75eefecd5a36ddce9375529dbedfc34",
+      "size_bytes": 7349427
+    }
+  ]
+}

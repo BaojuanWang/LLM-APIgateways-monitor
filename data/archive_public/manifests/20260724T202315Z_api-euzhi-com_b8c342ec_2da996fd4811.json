@@ -75,7 +75,7 @@
       "count": 3
     }
   },
-  "generated_at_utc": "2026-07-26T02:18:48Z",
+  "generated_at_utc": "2026-07-26T15:11:56Z",
   "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
   "schema": "public_capture_manifest_summary",
   "service_id": "api-euzhi-com_b8c342ec",

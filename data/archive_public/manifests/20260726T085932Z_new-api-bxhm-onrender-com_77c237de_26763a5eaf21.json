@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:6b92554c799a3a06791ab0157eccd63d8d76ad79b98fa1a146e5413e52c17b26",
+  "capture_id": "20260726T085932Z_new-api-bxhm-onrender-com_77c237de_26763a5eaf21",
+  "capture_started_utc": "2026-07-26T08:59:32Z",
+  "domain": "new-api-bxhm.onrender.com",
+  "file_count": 33,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 537,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 979,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 78,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8446,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 38260,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 59297,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2319,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10007,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 18908,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 4372,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 79193,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 713720,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 331,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 274377,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 3939499,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 3853306,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "new-api-bxhm-onrender-com_77c237de",
+  "total_bytes": 9006290,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t085932z-new-api-bxhm-onrender-com-77c237de-26763a5eaf21/20260726t085932z-new-api-bxhm-onrender-com-77c237de-26763a5eaf21.wacz",
+      "sha256": "f6f54b83079480796c87c73d878b4f1dbe62f812c84657b7df2ef86ce001e319",
+      "size_bytes": 3939499
+    }
+  ]
+}

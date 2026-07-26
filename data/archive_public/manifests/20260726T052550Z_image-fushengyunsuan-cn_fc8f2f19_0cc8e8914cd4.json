@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:ccb98e6d28afc0a5f7e3e9cbae7386d3d866fb203e10bb29e1c85135541f2bd8",
+  "capture_id": "20260726T052550Z_image-fushengyunsuan-cn_fc8f2f19_0cc8e8914cd4",
+  "capture_started_utc": "2026-07-26T05:25:50Z",
+  "domain": "image.fushengyunsuan.cn",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 961,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 76,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8663,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 53200,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 59445,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2315,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10007,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 26429,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 10271,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 290561,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1632752,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 315,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 548897,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5929626,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5829923,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "image-fushengyunsuan-cn_fc8f2f19",
+  "total_bytes": 14406411,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t052550z-image-fushengyunsuan-cn-fc8f2f19-0cc8e8914cd4/20260726t052550z-image-fushengyunsuan-cn-fc8f2f19-0cc8e8914cd4.wacz",
+      "sha256": "f55b9226bddedee50983cb4260dd8b7082f5f7adcbde3038bd6525c9bb879845",
+      "size_bytes": 5929626
+    }
+  ]
+}

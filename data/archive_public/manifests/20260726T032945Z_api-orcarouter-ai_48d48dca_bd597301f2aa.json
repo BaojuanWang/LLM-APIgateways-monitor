@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:467a57fea4e6b6e3d2e077ab4b8477570ba28671deb9a4d77d705daa1ceae002",
+  "capture_id": "20260726T032945Z_api-orcarouter-ai_48d48dca_bd597301f2aa",
+  "capture_started_utc": "2026-07-26T03:29:45Z",
+  "domain": "api.orcarouter.ai",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 1550,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 907,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 17439,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8710,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 72179,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 93855,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2304,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9975,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 63571,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 57445,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 2757471,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2160092,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 267,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 3182645,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 25310336,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 25137752,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-orcarouter-ai_48d48dca",
+  "total_bytes": 58879159,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t032945z-api-orcarouter-ai-48d48dca-bd597301f2aa/20260726t032945z-api-orcarouter-ai-48d48dca-bd597301f2aa.wacz",
+      "sha256": "89d977fb53d176b33067f9f0d3a9f30c4c55848d773cd5ffaf6aa7b15214dd9d",
+      "size_bytes": 25310336
+    }
+  ]
+}

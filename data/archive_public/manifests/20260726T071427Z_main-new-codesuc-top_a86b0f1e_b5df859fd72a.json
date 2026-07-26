@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:6eec795fedc2c9ce7019b314f406092e91015a1a58735708e82e567807fbfcd8",
+  "capture_id": "20260726T071427Z_main-new-codesuc-top_a86b0f1e_b5df859fd72a",
+  "capture_started_utc": "2026-07-26T07:14:27Z",
+  "domain": "main-new.codesuc.top",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 701,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 934,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 73,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8556,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 62634,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 58224,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2307,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10004,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 26285,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 10288,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 295524,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1602734,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 291,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 5082299,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 6056888,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5953684,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "main-new-codesuc-top_a86b0f1e",
+  "total_bytes": 19174087,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t071427z-main-new-codesuc-top-a86b0f1e-b5df859fd72a/20260726t071427z-main-new-codesuc-top-a86b0f1e-b5df859fd72a.wacz",
+      "sha256": "e5a53712a99fff04b9f57299249f02c7e1ad99c1a936734958c0f1bae19d485f",
+      "size_bytes": 6056888
+    }
+  ]
+}

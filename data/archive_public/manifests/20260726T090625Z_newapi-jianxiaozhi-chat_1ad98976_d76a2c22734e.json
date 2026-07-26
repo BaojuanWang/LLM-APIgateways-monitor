@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:5becd2aa29aba020fa7a02633d3591ff7361175dbd78a7102765dea92af54411",
+  "capture_id": "20260726T090625Z_newapi-jianxiaozhi-chat_1ad98976_d76a2c22734e",
+  "capture_started_utc": "2026-07-26T09:06:25Z",
+  "domain": "newapi.jianxiaozhi.chat",
+  "file_count": 33,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 537,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 961,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 76,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8422,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 37684,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 58539,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2315,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10006,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 18489,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 6077,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 172259,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1201167,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 315,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 238525,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 4351426,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4264582,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "newapi-jianxiaozhi-chat_1ad98976",
+  "total_bytes": 10374041,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t090625z-newapi-jianxiaozhi-chat-1ad98976-d76a2c22734e/20260726t090625z-newapi-jianxiaozhi-chat-1ad98976-d76a2c22734e.wacz",
+      "sha256": "a93a736f098018a4581111d8fcc30abd2fcb2628e1591bb0ef7d578a2d8877b4",
+      "size_bytes": 4351426
+    }
+  ]
+}

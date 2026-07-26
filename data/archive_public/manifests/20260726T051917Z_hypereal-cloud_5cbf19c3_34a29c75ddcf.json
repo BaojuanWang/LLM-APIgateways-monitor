@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:5009b3499491790cacb0fbc6abf94af5f01ba54ddaf5dd0728c488a056fc1824",
+  "capture_id": "20260726T051917Z_hypereal-cloud_5cbf19c3_34a29c75ddcf",
+  "capture_started_utc": "2026-07-26T05:19:17Z",
+  "domain": "hypereal.cloud",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 1358,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 873,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 47906,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8603,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 638149,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 480418,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2298,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9908,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 184585,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 81866,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 2247444,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 11034128,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 236,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 56258152,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 240458207,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 239843584,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "hypereal-cloud_5cbf19c3",
+  "total_bytes": 551300376,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t051917z-hypereal-cloud-5cbf19c3-34a29c75ddcf/20260726t051917z-hypereal-cloud-5cbf19c3-34a29c75ddcf.wacz",
+      "sha256": "01d7c8541c3e90fd61eaf1823bf9c544f9904d0b55203705f8401a4b7354b1cd",
+      "size_bytes": 240458207
+    }
+  ]
+}

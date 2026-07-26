@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:597a024e121a0bd037a93f44f4f7922c85536d6fe2866c1bc003cd71c7b02e72",
+  "capture_id": "20260726T034501Z_freeairouter-com_45299252_3cd9542ccaed",
+  "capture_started_utc": "2026-07-26T03:45:01Z",
+  "domain": "freeairouter.com",
+  "file_count": 28,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 289,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 547,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 69,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 5848,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 18564,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 30280,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2301,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9890,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 9018,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 48095,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 207144,
+      "count": 2
+    },
+    "screenshot": {
+      "bytes": 3835157,
+      "count": 4
+    },
+    "seeds": {
+      "bytes": 58,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 785096,
+      "count": 2
+    },
+    "wacz": {
+      "bytes": 4202438,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4111423,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "freeairouter-com_45299252",
+  "total_bytes": 13268878,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t034501z-freeairouter-com-45299252-3cd9542ccaed/20260726t034501z-freeairouter-com-45299252-3cd9542ccaed.wacz",
+      "sha256": "2ebedccfb72a419fb789070ed19078c992e1d83b9b24e76f762888174c3d9a97",
+      "size_bytes": 4202438
+    }
+  ]
+}

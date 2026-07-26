@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:2d294dfa20f3347da120460932effc4bd20f3ae4d3c0931d7a75d7ecae10cca3",
+  "capture_id": "20260726T052707Z_indotoken-ai_9928f50b_f6c5c55a8888",
+  "capture_started_utc": "2026-07-26T05:27:07Z",
+  "domain": "indotoken.ai",
+  "file_count": 32,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 857,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 65,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 7928,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 40716,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 57654,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2293,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9968,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 18417,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 5487,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 139027,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 758894,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 222,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 4582089,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4495248,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "indotoken-ai_9928f50b",
+  "total_bytes": 10121835,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t052707z-indotoken-ai-9928f50b-f6c5c55a8888/20260726t052707z-indotoken-ai-9928f50b-f6c5c55a8888.wacz",
+      "sha256": "a35d00f90a0b9bb73c93d12c1f9c634e3d904c1f707f88d9a8420e9bdf3c0cbf",
+      "size_bytes": 4582089
+    }
+  ]
+}

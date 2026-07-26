@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:713aef75f1a33b3605bf7eff5ec7e168276b7bb78b5d564c8904914ec2666c28",
+  "capture_id": "20260726T061037Z_kopiaiagent-com_701f16be_b94dd934e08e",
+  "capture_started_utc": "2026-07-26T06:10:37Z",
+  "domain": "kopiaiagent.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 554,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 891,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 68,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8533,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 82754,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 58412,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2300,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10001,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 27652,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 58031,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 288399,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 11920293,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 253,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 13759935,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 45233594,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 45072416,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "kopiaiagent-com_701f16be",
+  "total_bytes": 116526747,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t061037z-kopiaiagent-com-701f16be-b94dd934e08e/20260726t061037z-kopiaiagent-com-701f16be-b94dd934e08e.wacz",
+      "sha256": "2d19f007db5d10a0893d231e6e0f049dfd5a8380650bbb1b7a3d246dcea1c395",
+      "size_bytes": 45233594
+    }
+  ]
+}

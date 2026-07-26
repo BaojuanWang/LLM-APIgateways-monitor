@@ -1,0 +1,86 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:381f3892f6a20ece7d9c33a454e329e9d161efcb34840612b29b9b851ea8966a",
+  "capture_id": "20260726T093755Z_officesai-top_e57346a3_7e25fa96593d",
+  "capture_started_utc": "2026-07-26T09:37:55Z",
+  "domain": "officesai.top",
+  "file_count": 33,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 871,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 15415,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 7960,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 75928,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 60477,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2295,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9989,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 2585,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 30768,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 63461,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1708535,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 235,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 9858583,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 9748083,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "officesai-top_e57346a3",
+  "total_bytes": 21588013,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t093755z-officesai-top-e57346a3-7e25fa96593d/20260726t093755z-officesai-top-e57346a3-7e25fa96593d.wacz",
+      "sha256": "ee37ba3449986c3d7a0a633512ef840437f78cdc5af037c1903e5e9bb1ef4185",
+      "size_bytes": 9858583
+    }
+  ]
+}

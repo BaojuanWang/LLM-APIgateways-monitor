@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:970c9e0fa2f2bd6a4c47d8dea508c4995bc6033d980f527995516c74ffac1aa9",
+  "capture_id": "20260726T092352Z_niubiai-net_29c50c64_983176ae6878",
+  "capture_started_utc": "2026-07-26T09:23:52Z",
+  "domain": "niubiai.net",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 512,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 853,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 64,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8365,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 40558,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 57209,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2291,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9995,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 17864,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 9481,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 227927,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 3508458,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 219,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1883039,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 16752512,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 16662204,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "niubiai-net_29c50c64",
+  "total_bytes": 39184212,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t092352z-niubiai-net-29c50c64-983176ae6878/20260726t092352z-niubiai-net-29c50c64-983176ae6878.wacz",
+      "sha256": "4cdf0715556a68e644db8f4cb69bc2ffddde1128e7d2393b3844a0a4d45e5520",
+      "size_bytes": 16752512
+    }
+  ]
+}

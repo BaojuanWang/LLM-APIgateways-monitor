@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:0a4bf7ebba4e43b8d8a81a438514380a54269bc30b776cce00a511165014c4a7",
+  "capture_id": "20260726T050641Z_huashang-dpdns-org_82a97b46_aebcfd1604d2",
+  "capture_started_utc": "2026-07-26T05:06:41Z",
+  "domain": "huashang.dpdns.org",
+  "file_count": 24,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 494,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 71,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 4829,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 9276,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 7036,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2305,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9978,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 2710,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 1095,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 6743,
+      "count": 1
+    },
+    "screenshot": {
+      "bytes": 175651,
+      "count": 2
+    },
+    "seeds": {
+      "bytes": 28,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 18878,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 223717,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 207588,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "huashang-dpdns-org_82a97b46",
+  "total_bytes": 673227,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t050641z-huashang-dpdns-org-82a97b46-aebcfd1604d2/20260726t050641z-huashang-dpdns-org-82a97b46-aebcfd1604d2.wacz",
+      "sha256": "2f3225eed15efcaca8d596d8e2f04e42b0341ac56b0e0d8c0862e1635263adc2",
+      "size_bytes": 223717
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:15beda9cb5ae66385df7e8f77c5c8b50716b27947229326238186b54596a01d1",
+  "capture_id": "20260726T062337Z_li-token-com_ab14974c_7670d189d2f5",
+  "capture_started_utc": "2026-07-26T06:23:37Z",
+  "domain": "li-token.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 868,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 65,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8482,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 29068,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 45776,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2293,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9885,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 3102,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 23388,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 99454,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 3139358,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 233,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 155492,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 6809611,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 6722569,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "li-token-com_ab14974c",
+  "total_bytes": 17052472,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t062337z-li-token-com-ab14974c-7670d189d2f5/20260726t062337z-li-token-com-ab14974c-7670d189d2f5.wacz",
+      "sha256": "1e19e7e977181a82c034ad8451790818db57744fa3828c35d8f8b905d22f41d1",
+      "size_bytes": 6809611
+    }
+  ]
+}

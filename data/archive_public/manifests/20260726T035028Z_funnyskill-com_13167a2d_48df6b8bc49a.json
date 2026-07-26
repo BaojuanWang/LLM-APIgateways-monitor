@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:2cb9a6faf51683a6da1a87356eafdd3bba9c9da27c8b22f14b65deb66ae6a698",
+  "capture_id": "20260726T035028Z_funnyskill-com_13167a2d_48df6b8bc49a",
+  "capture_started_utc": "2026-07-26T03:50:28Z",
+  "domain": "funnyskill.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 1922,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 880,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 67,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8524,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 75838,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 66813,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2296,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9970,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 38214,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 10437,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 217966,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1257598,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 243,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1527803,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5042950,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4924430,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "funnyskill-com_13167a2d",
+  "total_bytes": 13188612,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t035028z-funnyskill-com-13167a2d-48df6b8bc49a/20260726t035028z-funnyskill-com-13167a2d-48df6b8bc49a.wacz",
+      "sha256": "93b7f8408b0a0f2910aa6fbca6aaa19a491320eeddd87eef5b6c14703bbe5a30",
+      "size_bytes": 5042950
+    }
+  ]
+}

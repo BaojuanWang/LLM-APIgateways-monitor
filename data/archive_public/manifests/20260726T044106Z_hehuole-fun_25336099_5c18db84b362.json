@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:9fb5a3c785dea60a875e6fbad2b69726f7c302dbf5c15263ce972496a1b6d440",
+  "capture_id": "20260726T044106Z_hehuole-fun_25336099_5c18db84b362",
+  "capture_started_utc": "2026-07-26T04:41:06Z",
+  "domain": "hehuole.fun",
+  "file_count": 34,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 537,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 853,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 64,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8153,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 34102,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 56162,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2291,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9994,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 17770,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 7392,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 206011,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1241205,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 219,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 241152,
+      "count": 2
+    },
+    "wacz": {
+      "bytes": 4820776,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4736833,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "hehuole-fun_25336099",
+  "total_bytes": 11386175,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t044106z-hehuole-fun-25336099-5c18db84b362/20260726t044106z-hehuole-fun-25336099-5c18db84b362.wacz",
+      "sha256": "c43ccaa76ad951f3bbb6c9860ed0215ea80ff4ba499caefa60f695e1d1ddcb85",
+      "size_bytes": 4820776
+    }
+  ]
+}

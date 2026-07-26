@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:361143a54d895601adeedb7cf9e3ba0e9320884b3be2beda3cee9b669836babd",
+  "capture_id": "20260726T032613Z_api-muskapi-cc_613104c7_b3f3569a9c01",
+  "capture_started_utc": "2026-07-26T03:26:13Z",
+  "domain": "api.muskapi.cc",
+  "file_count": 37,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 743,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 876,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 23745,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8375,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 87514,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 132587,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2297,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9774,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 55748,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 2326019,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 4146066,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 3364406,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 239,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 4399295,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 14488225,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 12002040,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "api-muskapi-cc_613104c7",
+  "total_bytes": 41050610,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t032613z-api-muskapi-cc-613104c7-b3f3569a9c01/20260726t032613z-api-muskapi-cc-613104c7-b3f3569a9c01.wacz",
+      "sha256": "3e15c3eda07af0f0b3ea665e8e6f7122d033dc8b65e5c86ae9ce0cf76c873d39",
+      "size_bytes": 14488225
+    }
+  ]
+}

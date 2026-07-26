@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:716d3d846bd02dd01bbf01f18829d8ab0cd6f66e325af7ab0bcdaba9aa5c0c02",
+  "capture_id": "20260726T055010Z_kelaiapi-cc_367a14b5_b61925c396d6",
+  "capture_started_utc": "2026-07-26T05:50:10Z",
+  "domain": "kelaiapi.cc",
+  "file_count": 33,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 537,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 853,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 64,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8002,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 58994,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 57178,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2290,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9994,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 24817,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 8691,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 116869,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1311798,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 219,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 428695,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 5815882,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5717178,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "kelaiapi-cc_367a14b5",
+  "total_bytes": 13564722,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t055010z-kelaiapi-cc-367a14b5-b61925c396d6/20260726t055010z-kelaiapi-cc-367a14b5-b61925c396d6.wacz",
+      "sha256": "d0988a4a22f01e185b1ba87b1a96fd5dc747fe1ca15998fa6586cd4762e199e6",
+      "size_bytes": 5815882
+    }
+  ]
+}

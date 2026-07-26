@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:fca5a15a27adb3a129ac62628100b4150045213122d904d6cce5ec0849a74aae",
+  "capture_id": "20260726T035153Z_furryforum-com_7f6ecb2c_bad48de31159",
+  "capture_started_utc": "2026-07-26T03:51:53Z",
+  "domain": "furryforum.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 880,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 67,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8360,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 49398,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 56264,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2297,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9997,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 25732,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 8063,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 218976,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1403553,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 243,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1211712,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5446313,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5353937,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "furryforum-com_7f6ecb2c",
+  "total_bytes": 13798762,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t035153z-furryforum-com-7f6ecb2c-bad48de31159/20260726t035153z-furryforum-com-7f6ecb2c-bad48de31159.wacz",
+      "sha256": "2259f09187fe3f14416af620ad09438703bde1a46f24e146a8b779cf7c600dce",
+      "size_bytes": 5446313
+    }
+  ]
+}

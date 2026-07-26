@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:74a65515a5afe5e99017ac4277db1e9ace371535f062440a3391df5c71e2422c",
+  "capture_id": "20260726T045610Z_holamexicali-com_429903fa_357120bcb863",
+  "capture_started_utc": "2026-07-26T04:56:10Z",
+  "domain": "holamexicali.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 309,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 898,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 69,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8413,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 67998,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 56613,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2301,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10000,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 24051,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 10626,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 396371,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1588032,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 259,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 760250,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 4985962,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4881365,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "holamexicali-com_429903fa",
+  "total_bytes": 12796178,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t045610z-holamexicali-com-429903fa-357120bcb863/20260726t045610z-holamexicali-com-429903fa-357120bcb863.wacz",
+      "sha256": "059421f753655b901bc94fa3b933eefc32677516359ef75e35f623644595b2c7",
+      "size_bytes": 4985962
+    }
+  ]
+}

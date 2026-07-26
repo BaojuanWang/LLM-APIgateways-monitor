@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:8f5e9daf88a9e1d079e6b3987fded4f4cdcaaf3f6b555aeab1c904043acb1d58",
+  "capture_id": "20260726T103236Z_openclawroot-com_5da91972_5f559e14e79c",
+  "capture_started_utc": "2026-07-26T10:32:36Z",
+  "domain": "openclawroot.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 735,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 898,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 69,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8458,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 72264,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 57980,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2301,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9999,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 22953,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 10270,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 179585,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1132429,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 259,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 7543783,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 5878693,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 5770952,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "openclawroot-com_5da91972",
+  "total_bytes": 20694289,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t103236z-openclawroot-com-5da91972-5f559e14e79c/20260726t103236z-openclawroot-com-5da91972-5f559e14e79c.wacz",
+      "sha256": "020d518e152dac09154ec119e9a2a6f23f763545d9b41ecb95449884ff860dc2",
+      "size_bytes": 5878693
+    }
+  ]
+}

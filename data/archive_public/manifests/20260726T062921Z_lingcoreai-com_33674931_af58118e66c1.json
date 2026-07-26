@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:006f234d03d05a96a8760341c482333f39f3ec6d5f25bfe5b2362586582d0347",
+  "capture_id": "20260726T062921Z_lingcoreai-com_33674931_af58118e66c1",
+  "capture_started_utc": "2026-07-26T06:29:21Z",
+  "domain": "lingcoreai.com",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 7921,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 771,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 76776,
+      "count": 2
+    },
+    "capture_metadata": {
+      "bytes": 8367,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 507364,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 49811,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2297,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9876,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 240788,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 20295,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 172033,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 3659388,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 184,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 928519,
+      "count": 3
+    },
+    "wacz": {
+      "bytes": 19309705,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 19158525,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "lingcoreai-com_33674931",
+  "total_bytes": 44155281,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t062921z-lingcoreai-com-33674931-af58118e66c1/20260726t062921z-lingcoreai-com-33674931-af58118e66c1.wacz",
+      "sha256": "b221655cc3a991c4994306e01134251b42d6dc87e7071b519ea6f1fb21bd7b17",
+      "size_bytes": 19309705
+    }
+  ]
+}

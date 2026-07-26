@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:63f320f78f3959501d66df0c5b683c8f2565a2fdb8c3d3d979f4c2093e5b6a04",
+  "capture_id": "20260726T090031Z_new-api-koyeb-app_cda76596_9894fda211db",
+  "capture_started_utc": "2026-07-26T09:00:31Z",
+  "domain": "new-api.koyeb.app",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 334,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 902,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 70,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8470,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 43536,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 60826,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2303,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9977,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 23713,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 4023,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 104551,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 413844,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 262,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 1233767,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 2282998,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 2193020,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "new-api-koyeb-app_cda76596",
+  "total_bytes": 6385257,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t090031z-new-api-koyeb-app-cda76596-9894fda211db/20260726t090031z-new-api-koyeb-app-cda76596-9894fda211db.wacz",
+      "sha256": "49745a76b21bab83705abed6a200f3e206c9a0d4e024d610e384417c7b8a69e6",
+      "size_bytes": 2282998
+    }
+  ]
+}

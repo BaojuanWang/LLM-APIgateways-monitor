@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:9cbadc46d8ba2f990192e8c90a4d46b7573395e8d0d7ad4f8dd04ed41b19cb1f",
+  "capture_id": "20260726T090146Z_new-api-latest-1-eu26-onrender-com_04de8be5_eb167222ba3f",
+  "capture_started_utc": "2026-07-26T09:01:46Z",
+  "domain": "new-api-latest-1-eu26.onrender.com",
+  "file_count": 33,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 537,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 1060,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 87,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8696,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 40950,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 61618,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2337,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10002,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 19149,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 7024,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 211359,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 1232448,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 403,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 315395,
+      "count": 1
+    },
+    "wacz": {
+      "bytes": 4348922,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 4256375,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "new-api-latest-1-eu26-onrender-com_04de8be5",
+  "total_bytes": 10519023,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t090146z-new-api-latest-1-eu26-onrender-com-04de8be5-eb167222ba3f/20260726t090146z-new-api-latest-1-eu26-onrender-com-04de8be5-eb167222ba3f.wacz",
+      "sha256": "19fca5334125abbd6bdf8dc4e0fbddfd791946015b655cfb494994c40aa10941",
+      "size_bytes": 4348922
+    }
+  ]
+}

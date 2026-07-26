@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:8b015049a6aed74fbcbc5f9eefb6f252e2ebef78a318c355963f556c2ea0226b",
+  "capture_id": "20260726T104835Z_oxandhorse-site_1f75802f_6c3f41d59c15",
+  "capture_started_utc": "2026-07-26T10:48:35Z",
+  "domain": "oxandhorse.site",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 167,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 889,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 68,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8409,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 36438,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 54618,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2299,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 9877,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 5892,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 10093,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 24880,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 2912140,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 251,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 24306,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 7203474,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 7117191,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "oxandhorse-site_1f75802f",
+  "total_bytes": 17413653,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t104835z-oxandhorse-site-1f75802f-6c3f41d59c15/20260726t104835z-oxandhorse-site-1f75802f-6c3f41d59c15.wacz",
+      "sha256": "e1fad6331f2b0f9dcd4f80168482778bebda14a7b6bb4e7b7c3bc1258a4a6980",
+      "size_bytes": 7203474
+    }
+  ]
+}

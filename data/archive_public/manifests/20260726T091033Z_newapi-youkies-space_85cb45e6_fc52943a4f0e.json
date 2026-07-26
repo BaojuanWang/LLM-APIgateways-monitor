@@ -1,0 +1,90 @@
+{
+  "algorithm": "sha256",
+  "capture_directory_digest": "sha256:3fd3665b2ba5ffde236eec9bd12e9a3051bbdaee665a3cc5c4ce190f6bc4b81c",
+  "capture_id": "20260726T091033Z_newapi-youkies-space_85cb45e6_fc52943a4f0e",
+  "capture_started_utc": "2026-07-26T09:10:33Z",
+  "domain": "newapi.youkies.space",
+  "file_count": 36,
+  "files_by_role": {
+    "browser_state_names": {
+      "bytes": 276,
+      "count": 1
+    },
+    "browsertrix_config": {
+      "bytes": 934,
+      "count": 1
+    },
+    "browsertrix_output": {
+      "bytes": 73,
+      "count": 1
+    },
+    "capture_metadata": {
+      "bytes": 8588,
+      "count": 1
+    },
+    "cdx_index": {
+      "bytes": 32708,
+      "count": 4
+    },
+    "crawl_log": {
+      "bytes": 54451,
+      "count": 1
+    },
+    "effective_config": {
+      "bytes": 2661,
+      "count": 1
+    },
+    "environment": {
+      "bytes": 2309,
+      "count": 1
+    },
+    "exit_status": {
+      "bytes": 10004,
+      "count": 1
+    },
+    "network_summary": {
+      "bytes": 12895,
+      "count": 1
+    },
+    "pages_jsonl": {
+      "bytes": 22299,
+      "count": 2
+    },
+    "rendered_dom": {
+      "bytes": 608668,
+      "count": 4
+    },
+    "screenshot": {
+      "bytes": 3892831,
+      "count": 8
+    },
+    "seeds": {
+      "bytes": 291,
+      "count": 1
+    },
+    "singlefile": {
+      "bytes": 5661417,
+      "count": 4
+    },
+    "wacz": {
+      "bytes": 6115162,
+      "count": 1
+    },
+    "warc": {
+      "bytes": 6018683,
+      "count": 3
+    }
+  },
+  "generated_at_utc": "2026-07-26T15:11:56Z",
+  "note": "Raw artifacts are NOT in this repository. Paths are relative to the capture directory inside the external corpus.",
+  "schema": "public_capture_manifest_summary",
+  "service_id": "newapi-youkies-space_85cb45e6",
+  "total_bytes": 22444250,
+  "wacz": [
+    {
+      "relative_path": "raw/browsertrix/collections/20260726t091033z-newapi-youkies-space-85cb45e6-fc52943a4f0e/20260726t091033z-newapi-youkies-space-85cb45e6-fc52943a4f0e.wacz",
+      "sha256": "6dc49e10e5ac45f4f5577c43e2621b2ea067f5bc3470a3b753de101252e04a98",
+      "size_bytes": 6115162
+    }
+  ]
+}
