@@ -108217,3 +108217,4 @@
 2026-07-26T03:23:55Z,bdshmmkj3.cn,aicost API,discovery,ONLINE,200,https://bdshmmkj3.cn/,New API,def9044f5870,https://bdshmmkj3.cn/,
 2026-07-26T03:28:12Z,yixintoken.com,,discovery,TIMEOUT,,,,,,"HTTPConnectionPool(host='yixintoken.com', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPConnection(host='yixintoken.com', port=80) at 0x7fc70886fe50>, 'Connection to y"
 2026-07-26T03:28:16Z,zhumengwangluo.top,筑梦工作台,discovery,TIMEOUT,,,,,,"HTTPConnectionPool(host='zhumengwangluo.top', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPConnection(host='zhumengwangluo.top', port=80) at 0x7fc708757b50>, 'Connect"
+2026-07-26T07:08:02Z,api.uglycat.cc,uglycat,stopped_recheck,CLOUDFLARE_OR_BLOCKED,403,https://api.uglycat.cc/,Just a moment...,02faac2ec4cb,https://api.uglycat.cc/,
