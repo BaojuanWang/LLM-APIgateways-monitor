@@ -759,3 +759,105 @@ Call log:
 Call log:
   - navigating to ""https://racetozero.org.cn/"", waiting until ""domcontentloaded""
 "
+2026-08-02T08:59:38Z,api.iamhc.cn,新疆幻城网安科技公益大模型api,https://api.hcnsec.cn/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://api.hcnsec.cn/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,api.lingyaai.cn,灵芽API,https://api.lingyaai.cn/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://api.lingyaai.cn/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,conv.wangmin.xyz,WM,https://conv.wangmin.xyz/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://conv.wangmin.xyz/
+Call log:
+  - navigating to ""https://conv.wangmin.xyz/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,daikuankm.cn,aicost API,https://daikuankm.cn/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://daikuankm.cn/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,fkclaude.xyz,FK Claude,https://fkclaude.xyz/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://fkclaude.xyz/
+Call log:
+  - navigating to ""https://fkclaude.xyz/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,racetozero.org.cn,aicost API,https://racetozero.org.cn/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://racetozero.org.cn/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,www.wushuangai.com,New API,https://www.wushuangai.com/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.wushuangai.com/
+Call log:
+  - navigating to ""https://www.wushuangai.com/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,d5wa.com,,https://www.d5wa.com/,"Page.goto: net::ERR_CERT_DATE_INVALID at https://www.d5wa.com/
+Call log:
+  - navigating to ""https://www.d5wa.com/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,zxj-2023.github.io,,https://zxj-2023.github.io/,"Page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+"
+2026-08-02T08:59:38Z,xunhupay.com,,https://www.xunhupay.com/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://www.xunhupay.com/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,4hidc.com,酷站AI · 你的全模型 API 中转站,https://4hidc.com/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://4hidc.com/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,5w5.wtf,55api,https://5w5.wtf/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://5w5.wtf/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,aigcly.top,GPT2IMAGE - AI Chat-to-Image Generation Platform | GPT2IMAGE,https://aigcly.top/en,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://aigcly.top/en
+Call log:
+  - navigating to ""https://aigcly.top/en"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,base-url.cn,接JieAPI,https://base-url.cn/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://base-url.cn/
+Call log:
+  - navigating to ""https://base-url.cn/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,clawskills.shop,,https://clawskills.shop/,"Page.goto: net::ERR_CERT_DATE_INVALID at https://clawskills.shop/
+Call log:
+  - navigating to ""https://clawskills.shop/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,zc-s.org.cn,aicost API,https://zc-s.org.cn/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://zc-s.org.cn/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,dealise.xyz,,https://dealise.xyz/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://dealise.xyz/
+Call log:
+  - navigating to ""https://dealise.xyz/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,ecovai.cn,Ecovai API,https://ecovai.cn/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://ecovai.cn/
+Call log:
+  - navigating to ""https://ecovai.cn/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,niudunbujige.cn,allall.ai-全球AI聚合平台,https://niudunbujige.cn/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://niudunbujige.cn/
+Call log:
+  - navigating to ""https://niudunbujige.cn/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,tenwayclaw.com,Tenway AI,https://tenwayclaw.com/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://tenwayclaw.com/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,token.mg,智模引擎,https://token.mg/sign-in,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://token.mg/sign-in
+Call log:
+  - navigating to ""https://token.mg/sign-in"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,youqi.ai,New API,https://youqi.ai/,"Page.goto: net::ERR_CERT_DATE_INVALID at https://youqi.ai/
+Call log:
+  - navigating to ""https://youqi.ai/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,yhapiplatform.com,YH API Platform,https://yhapiplatform.com/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://yhapiplatform.com/
+Call log:
+  - navigating to ""https://yhapiplatform.com/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,oogaming.cn,aicost API,https://oogaming.cn/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://oogaming.cn/"", waiting until ""domcontentloaded""
+"
+2026-08-02T08:59:38Z,bdshmmkj3.cn,aicost API,https://bdshmmkj3.cn/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://bdshmmkj3.cn/"", waiting until ""domcontentloaded""
+"
