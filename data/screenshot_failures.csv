@@ -1019,3 +1019,91 @@ Call log:
 Call log:
   - navigating to ""https://zc-s.org.cn/"", waiting until ""domcontentloaded""
 "
+2026-08-30T12:14:39Z,chongcodex.cn,HaHaHa-API,https://chongcodex.cn/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://chongcodex.cn/
+Call log:
+  - navigating to ""https://chongcodex.cn/"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,cn.luckyapi.chat,Lucky Code,https://cn.luckyapi.chat/luckyapi-stopped.html,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://cn.luckyapi.chat/luckyapi-stopped.html
+Call log:
+  - navigating to ""https://cn.luckyapi.chat/luckyapi-stopped.html"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,conv.wangmin.xyz,WM,https://conv.wangmin.xyz/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://conv.wangmin.xyz/
+Call log:
+  - navigating to ""https://conv.wangmin.xyz/"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,fkclaude.xyz,FK Claude,https://fkclaude.xyz/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://fkclaude.xyz/
+Call log:
+  - navigating to ""https://fkclaude.xyz/"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,jiuuij.de5.net,Joverna,https://jiuuij.de5.net/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://jiuuij.de5.net/
+Call log:
+  - navigating to ""https://jiuuij.de5.net/"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,oogaming.cn,aicost API,https://oogaming.cn/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://oogaming.cn/"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,us.ifopen.ai,钱多多 API,https://us.ifopen.ai/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://us.ifopen.ai/"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,www.wushuangai.com,New API,https://www.wushuangai.com/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.wushuangai.com/
+Call log:
+  - navigating to ""https://www.wushuangai.com/"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,zc-s.org.cn,aicost API,https://zc-s.org.cn/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://zc-s.org.cn/"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,d5wa.com,,https://www.d5wa.com/,"Page.goto: net::ERR_CERT_DATE_INVALID at https://www.d5wa.com/
+Call log:
+  - navigating to ""https://www.d5wa.com/"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,base-url.cn,接JieAPI,https://base-url.cn/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://base-url.cn/
+Call log:
+  - navigating to ""https://base-url.cn/"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,clawskills.shop,,https://clawskills.shop/,"Page.goto: net::ERR_CERT_DATE_INVALID at https://clawskills.shop/
+Call log:
+  - navigating to ""https://clawskills.shop/"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,dealise.xyz,,https://dealise.xyz/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://dealise.xyz/
+Call log:
+  - navigating to ""https://dealise.xyz/"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,ecovai.cn,Ecovai API,https://ecovai.cn/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://ecovai.cn/
+Call log:
+  - navigating to ""https://ecovai.cn/"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,haotokai.com,Haotokai,https://haotokai.com/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://haotokai.com/
+Call log:
+  - navigating to ""https://haotokai.com/"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,racetozero.org.cn,aicost API,https://racetozero.org.cn/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://racetozero.org.cn/"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,juesiapi.top,玦飔API,https://juesiapi.top/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://juesiapi.top/
+Call log:
+  - navigating to ""https://juesiapi.top/"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,niucode.fun,NiuCode,https://niucode.fun/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://niucode.fun/
+Call log:
+  - navigating to ""https://niucode.fun/"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,token.mg,智模引擎,https://token.mg/sign-in,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://token.mg/sign-in
+Call log:
+  - navigating to ""https://token.mg/sign-in"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,daikuankm.cn,aicost API,https://daikuankm.cn/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://daikuankm.cn/
+Call log:
+  - navigating to ""https://daikuankm.cn/"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,velahub.ai,,https://velahub.ai/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://velahub.ai/
+Call log:
+  - navigating to ""https://velahub.ai/"", waiting until ""domcontentloaded""
+"
+2026-08-30T12:14:39Z,yhapiplatform.com,YH API Platform,https://yhapiplatform.com/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://yhapiplatform.com/
+Call log:
+  - navigating to ""https://yhapiplatform.com/"", waiting until ""domcontentloaded""
+"
