@@ -1183,3 +1183,74 @@ Call log:
 Call log:
   - navigating to ""https://yhapiplatform.com/"", waiting until ""domcontentloaded""
 "
+2026-09-13T12:18:29Z,oogaming.cn,aicost API,https://oogaming.cn/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://oogaming.cn/"", waiting until ""domcontentloaded""
+"
+2026-09-13T12:18:29Z,wolfai.top,WolfAI - 全球AI聚合平台,https://wolfai.top/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://wolfai.top/"", waiting until ""domcontentloaded""
+"
+2026-09-13T12:18:29Z,www.wushuangai.com,New API,https://www.wushuangai.com/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.wushuangai.com/
+Call log:
+  - navigating to ""https://www.wushuangai.com/"", waiting until ""domcontentloaded""
+"
+2026-09-13T12:18:29Z,racetozero.org.cn,aicost API,https://racetozero.org.cn/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://racetozero.org.cn/
+Call log:
+  - navigating to ""https://racetozero.org.cn/"", waiting until ""domcontentloaded""
+"
+2026-09-13T12:18:29Z,cloud.fastgpt.cn,,https://cloud.fastgpt.cn/,"Page.evaluate: Execution context was destroyed, most likely because of a navigation"
+2026-09-13T12:18:29Z,d5wa.com,,https://www.d5wa.com/,"Page.goto: net::ERR_CERT_DATE_INVALID at https://www.d5wa.com/
+Call log:
+  - navigating to ""https://www.d5wa.com/"", waiting until ""domcontentloaded""
+"
+2026-09-13T12:18:29Z,zxj-2023.github.io,,https://zxj-2023.github.io/,"Page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+"
+2026-09-13T12:18:29Z,base-url.cn,接JieAPI,https://base-url.cn/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://base-url.cn/
+Call log:
+  - navigating to ""https://base-url.cn/"", waiting until ""domcontentloaded""
+"
+2026-09-13T12:18:29Z,clawskills.shop,,https://clawskills.shop/,"Page.goto: net::ERR_CERT_DATE_INVALID at https://clawskills.shop/
+Call log:
+  - navigating to ""https://clawskills.shop/"", waiting until ""domcontentloaded""
+"
+2026-09-13T12:18:29Z,creatraai.cn,CreatrA AI 中转站管理,https://creatraai.cn/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://creatraai.cn/
+Call log:
+  - navigating to ""https://creatraai.cn/"", waiting until ""domcontentloaded""
+"
+2026-09-13T12:18:29Z,dealise.xyz,,https://dealise.xyz/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://dealise.xyz/
+Call log:
+  - navigating to ""https://dealise.xyz/"", waiting until ""domcontentloaded""
+"
+2026-09-13T12:18:29Z,ecovai.cn,Ecovai API,https://ecovai.cn/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://ecovai.cn/
+Call log:
+  - navigating to ""https://ecovai.cn/"", waiting until ""domcontentloaded""
+"
+2026-09-13T12:18:29Z,juesiapi.top,玦飔API,https://juesiapi.top/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://juesiapi.top/
+Call log:
+  - navigating to ""https://juesiapi.top/"", waiting until ""domcontentloaded""
+"
+2026-09-13T12:18:29Z,niucode.fun,NiuCode,https://niucode.fun/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://niucode.fun/
+Call log:
+  - navigating to ""https://niucode.fun/"", waiting until ""domcontentloaded""
+"
+2026-09-13T12:18:29Z,token.mg,智模引擎,https://token.mg/sign-in,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://token.mg/sign-in
+Call log:
+  - navigating to ""https://token.mg/sign-in"", waiting until ""domcontentloaded""
+"
+2026-09-13T12:18:29Z,tokenzz.cc,Tokenzz,https://tokenzz.cc/,"Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://tokenzz.cc/
+Call log:
+  - navigating to ""https://tokenzz.cc/"", waiting until ""domcontentloaded""
+"
+2026-09-13T12:18:29Z,yhapiplatform.com,YH API Platform,https://yhapiplatform.com/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://yhapiplatform.com/
+Call log:
+  - navigating to ""https://yhapiplatform.com/"", waiting until ""domcontentloaded""
+"
+2026-09-13T12:18:29Z,zc-s.org.cn,aicost API,https://zc-s.org.cn/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://zc-s.org.cn/"", waiting until ""domcontentloaded""
+"
