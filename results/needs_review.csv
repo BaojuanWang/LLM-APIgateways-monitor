@@ -1,18 +1,18 @@
 ﻿domain,platform_name,综合判断,检测次数,各状态明细,最近状态,最近检测时间,最终URL,备注
-api.ant-ling.com,,UNCERTAIN,303,"HTTP_404×290, TIMEOUT×13",HTTP_404,2026-09-26T20:54:42Z,https://api.ant-ling.com/,请用国内网络手动验证
-api.apimart.ai,APIMart,UNCERTAIN,303,HTTP_404×303,HTTP_404,2026-09-26T20:52:13Z,https://api.apimart.ai/,请用国内网络手动验证
-api.cometapi.com,CometAPI,UNCERTAIN,303,HTTP_404×303,HTTP_404,2026-09-26T20:52:17Z,https://api.cometapi.com/,请用国内网络手动验证
-api.knox.chat,KnoxChat,UNCERTAIN,303,"HTTP_404×302, TIMEOUT×1",HTTP_404,2026-09-26T20:52:22Z,https://api.knox.chat/,请用国内网络手动验证
-apicn-platform.ope.ai,Platform Console,UNCERTAIN,303,"HTTP_404×302, TIMEOUT×1",HTTP_404,2026-09-26T20:52:34Z,https://apicn-platform.ope.ai/,请用国内网络手动验证
-boya.one,伯牙中转,UNCERTAIN,442,HTTP_ERROR×442,HTTP_ERROR,2026-09-26T20:51:20Z,,请用国内网络手动验证
-cloud.dataeyes.ai,dataeyes API,UNCERTAIN,303,HTTP_404×303,HTTP_404,2026-09-26T20:52:43Z,https://cloud.dataeyes.ai/,请用国内网络手动验证
-cn.crazyrouter.com,Crazyrouter,UNCERTAIN,303,HTTP_404×303,HTTP_404,2026-09-26T20:52:44Z,https://cn.crazyrouter.com/,请用国内网络手动验证
-corenode.best,源点算力API,UNCERTAIN,291,TIMEOUT×291,TIMEOUT,2026-09-26T20:55:43Z,,请用国内网络手动验证
-ctrl.maton.ai,,UNCERTAIN,303,"HTTP_404×302, TIMEOUT×1",HTTP_404,2026-09-26T20:54:43Z,https://ctrl.maton.ai/,请用国内网络手动验证
-deepseek-api.com.cn,TokenAPI - 全球AI模型聚合平台,UNCERTAIN,291,"HTTP_ERROR×231, TIMEOUT×60",HTTP_ERROR,2026-09-26T20:55:48Z,,请用国内网络手动验证
-gw.claudeapi.com,Claude Api,UNCERTAIN,303,"HTTP_404×302, TIMEOUT×1",HTTP_404,2026-09-26T20:52:57Z,https://gw.claudeapi.com/,请用国内网络手动验证
-hk-api.gptbest.vip,,UNCERTAIN,303,"HTTP_404×301, HTTP_ERROR×1, TIMEOUT×1",HTTP_404,2026-09-26T20:54:44Z,https://hk-api.gptbest.vip/,请用国内网络手动验证
-shisuanai.com,石蒜智算,UNCERTAIN,291,"DNS_FAIL×228, TIMEOUT×63",DNS_FAIL,2026-09-26T20:57:20Z,https://shisuanai.com/,请用国内网络手动验证
-shitang359.space,元气食堂API,UNCERTAIN,442,"HTTP_404×15, HTTP_ERROR×427",HTTP_ERROR,2026-09-26T20:51:37Z,,请用国内网络手动验证
-tokenhub-intl.tencentcloudmaas.com,,UNCERTAIN,303,"HTTP_404×301, TIMEOUT×2",HTTP_404,2026-09-26T20:54:45Z,https://tokenhub-intl.tencentcloudmaas.com/,请用国内网络手动验证
-tokenhub.tencentcloudmaas.com,,UNCERTAIN,303,"HTTP_404×301, TIMEOUT×2",HTTP_404,2026-09-26T20:54:45Z,https://tokenhub.tencentcloudmaas.com/,请用国内网络手动验证
+api.ant-ling.com,,UNCERTAIN,304,"HTTP_404×291, TIMEOUT×13",HTTP_404,2026-09-27T04:35:28Z,https://api.ant-ling.com/,请用国内网络手动验证
+api.apimart.ai,APIMart,UNCERTAIN,304,HTTP_404×304,HTTP_404,2026-09-27T04:33:06Z,https://api.apimart.ai/,请用国内网络手动验证
+api.cometapi.com,CometAPI,UNCERTAIN,304,HTTP_404×304,HTTP_404,2026-09-27T04:33:11Z,https://api.cometapi.com/,请用国内网络手动验证
+api.knox.chat,KnoxChat,UNCERTAIN,304,"HTTP_404×303, TIMEOUT×1",HTTP_404,2026-09-27T04:33:16Z,https://api.knox.chat/,请用国内网络手动验证
+apicn-platform.ope.ai,Platform Console,UNCERTAIN,304,"HTTP_404×303, TIMEOUT×1",HTTP_404,2026-09-27T04:33:27Z,https://apicn-platform.ope.ai/,请用国内网络手动验证
+boya.one,伯牙中转,UNCERTAIN,443,HTTP_ERROR×443,HTTP_ERROR,2026-09-27T04:32:09Z,,请用国内网络手动验证
+cloud.dataeyes.ai,dataeyes API,UNCERTAIN,304,HTTP_404×304,HTTP_404,2026-09-27T04:33:37Z,https://cloud.dataeyes.ai/,请用国内网络手动验证
+cn.crazyrouter.com,Crazyrouter,UNCERTAIN,304,HTTP_404×304,HTTP_404,2026-09-27T04:33:38Z,https://cn.crazyrouter.com/,请用国内网络手动验证
+corenode.best,源点算力API,UNCERTAIN,292,TIMEOUT×292,TIMEOUT,2026-09-27T04:36:45Z,,请用国内网络手动验证
+ctrl.maton.ai,,UNCERTAIN,304,"HTTP_404×303, TIMEOUT×1",HTTP_404,2026-09-27T04:35:29Z,https://ctrl.maton.ai/,请用国内网络手动验证
+deepseek-api.com.cn,TokenAPI - 全球AI模型聚合平台,UNCERTAIN,292,"HTTP_ERROR×232, TIMEOUT×60",HTTP_ERROR,2026-09-27T04:36:54Z,,请用国内网络手动验证
+gw.claudeapi.com,Claude Api,UNCERTAIN,304,"HTTP_404×303, TIMEOUT×1",HTTP_404,2026-09-27T04:33:52Z,https://gw.claudeapi.com/,请用国内网络手动验证
+hk-api.gptbest.vip,,UNCERTAIN,304,"HTTP_404×302, HTTP_ERROR×1, TIMEOUT×1",HTTP_404,2026-09-27T04:35:30Z,https://hk-api.gptbest.vip/,请用国内网络手动验证
+shisuanai.com,石蒜智算,UNCERTAIN,292,"DNS_FAIL×229, TIMEOUT×63",DNS_FAIL,2026-09-27T04:38:54Z,https://shisuanai.com/,请用国内网络手动验证
+shitang359.space,元气食堂API,UNCERTAIN,443,"HTTP_404×15, HTTP_ERROR×428",HTTP_ERROR,2026-09-27T04:32:32Z,,请用国内网络手动验证
+tokenhub-intl.tencentcloudmaas.com,,UNCERTAIN,304,"HTTP_404×302, TIMEOUT×2",HTTP_404,2026-09-27T04:35:31Z,https://tokenhub-intl.tencentcloudmaas.com/,请用国内网络手动验证
+tokenhub.tencentcloudmaas.com,,UNCERTAIN,304,"HTTP_404×302, TIMEOUT×2",HTTP_404,2026-09-27T04:35:32Z,https://tokenhub.tencentcloudmaas.com/,请用国内网络手动验证
