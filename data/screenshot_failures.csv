@@ -1376,3 +1376,69 @@ Call log:
 Call log:
   - navigating to ""https://yhapiplatform.com/"", waiting until ""domcontentloaded""
 "
+2026-10-04T12:52:32Z,ai.hepingan.top,,https://ai.hepingan.top/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://ai.hepingan.top/"", waiting until ""domcontentloaded""
+"
+2026-10-04T12:52:32Z,cloud.fastgpt.io,,https://cloud.fastgpt.io/,"Page.evaluate: Execution context was destroyed, most likely because of a navigation"
+2026-10-04T12:52:32Z,cloud.fastgpt.cn,,https://cloud.fastgpt.cn/,"Page.evaluate: Execution context was destroyed, most likely because of a navigation."
+2026-10-04T12:52:32Z,d5wa.com,,https://www.d5wa.com/,"Page.goto: net::ERR_CERT_DATE_INVALID at https://www.d5wa.com/
+Call log:
+  - navigating to ""https://www.d5wa.com/"", waiting until ""domcontentloaded""
+"
+2026-10-04T12:52:32Z,pptoken.org,,https://pptoken.org/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://pptoken.org/
+Call log:
+  - navigating to ""https://pptoken.org/"", waiting until ""domcontentloaded""
+"
+2026-10-04T12:52:32Z,73card.com,API 中转服务,https://73card.com/admin/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://73card.com/admin/
+Call log:
+  - navigating to ""https://73card.com/admin/"", waiting until ""domcontentloaded""
+"
+2026-10-04T12:52:32Z,aiito.top,风花AI,https://aiito.top/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://aiito.top/"", waiting until ""domcontentloaded""
+"
+2026-10-04T12:52:32Z,base-url.cn,接JieAPI,https://base-url.cn/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://base-url.cn/
+Call log:
+  - navigating to ""https://base-url.cn/"", waiting until ""domcontentloaded""
+"
+2026-10-04T12:52:32Z,baziapi.site,,https://baziapi.site/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://baziapi.site/
+Call log:
+  - navigating to ""https://baziapi.site/"", waiting until ""domcontentloaded""
+"
+2026-10-04T12:52:32Z,clawskills.shop,,https://clawskills.shop/,"Page.goto: net::ERR_CERT_DATE_INVALID at https://clawskills.shop/
+Call log:
+  - navigating to ""https://clawskills.shop/"", waiting until ""domcontentloaded""
+"
+2026-10-04T12:52:32Z,creatraai.cn,CreatrA AI 中转站管理,https://creatraai.cn/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://creatraai.cn/
+Call log:
+  - navigating to ""https://creatraai.cn/"", waiting until ""domcontentloaded""
+"
+2026-10-04T12:52:32Z,dealise.xyz,,https://dealise.xyz/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://dealise.xyz/
+Call log:
+  - navigating to ""https://dealise.xyz/"", waiting until ""domcontentloaded""
+"
+2026-10-04T12:52:32Z,ecovai.cn,Ecovai API,https://ecovai.cn/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://ecovai.cn/
+Call log:
+  - navigating to ""https://ecovai.cn/"", waiting until ""domcontentloaded""
+"
+2026-10-04T12:52:32Z,juesiapi.top,玦飔API,https://juesiapi.top/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://juesiapi.top/
+Call log:
+  - navigating to ""https://juesiapi.top/"", waiting until ""domcontentloaded""
+"
+2026-10-04T12:52:32Z,noc.cy,,https://noc.cy/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://noc.cy/"", waiting until ""domcontentloaded""
+"
+2026-10-04T12:52:32Z,token.mg,智模引擎,https://token.mg/sign-in,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://token.mg/sign-in
+Call log:
+  - navigating to ""https://token.mg/sign-in"", waiting until ""domcontentloaded""
+"
+2026-10-04T12:52:32Z,yhapiplatform.com,YH API Platform,https://yhapiplatform.com/,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://yhapiplatform.com/
+Call log:
+  - navigating to ""https://yhapiplatform.com/"", waiting until ""domcontentloaded""
+"
+2026-10-04T12:52:32Z,zc-s.org.cn,aicost API,https://zc-s.org.cn/,"Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to ""https://zc-s.org.cn/"", waiting until ""domcontentloaded""
+"
