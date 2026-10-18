@@ -485472,3 +485472,4 @@
 2026-10-18T03:55:27Z,zhumengwangluo.top,筑梦工作台,discovery,TIMEOUT,,,,,,"HTTPConnectionPool(host='zhumengwangluo.top', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPConnection(host='zhumengwangluo.top', port=80) at 0x7fe9e00f0110>, 'Connect"
 2026-10-18T03:55:22Z,yuai.space,悦云code,discovery,TIMEOUT,,,,,,"HTTPConnectionPool(host='yuai.space', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPConnection(host='yuai.space', port=80) at 0x7fe9e0291610>, 'Connection to yuai.spac"
 2026-10-18T03:50:22Z,racetozero.org.cn,aicost API,discovery,ONLINE,200,https://racetozero.org.cn/,New API,44dcae41b28d,https://racetozero.org.cn/,
+2026-10-18T08:57:03Z,api.uglycat.cc,uglycat,stopped_recheck,CLOUDFLARE_OR_BLOCKED,403,https://api.uglycat.cc/,Just a moment...,13241c216628,https://api.uglycat.cc/,
