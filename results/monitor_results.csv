@@ -518224,3 +518224,4 @@
 2026-10-25T03:57:36Z,bdshmmkj3.cn,aicost API,discovery,ONLINE,200,https://bdshmmkj3.cn/,New API,00aef3101cc1,https://bdshmmkj3.cn/,
 2026-10-25T03:58:48Z,oogaming.cn,aicost API,discovery,ONLINE,200,https://oogaming.cn/,New API,00aef3101cc1,https://oogaming.cn/,
 2026-10-25T04:03:29Z,yuai.space,悦云code,discovery,TIMEOUT,,,,,,"HTTPConnectionPool(host='yuai.space', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPConnection(host='yuai.space', port=80) at 0x7692088a4650>, 'Connection to yuai.spac"
+2026-10-25T09:15:21Z,api.uglycat.cc,uglycat,stopped_recheck,ONLINE,200,https://api.uglycat.cc/,New API,b42a47b20d93,https://api.uglycat.cc/,
