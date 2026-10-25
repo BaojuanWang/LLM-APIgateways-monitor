@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="760" viewBox="0 0 1100 760">
 <rect x="0" y="0" width="1100" height="760" rx="0" fill="#F8FAFC" stroke="none" />
 <text x="60" y="32" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">LLM Relay Monitor - Status Overview</text>
-<text x="60" y="62" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#475569">Generated: 2026-10-25 04:05 | Latest data: 2026-10-25T04:03:42Z</text>
+<text x="60" y="62" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#475569">Generated: 2026-10-25 11:11 | Latest data: 2026-10-25T11:09:10Z</text>
 <rect x="60" y="92" width="300" height="110" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
 <text x="82" y="125" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#16A34A">ALIVE</text>
 <text x="82" y="165" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#0F172A">1194</text>
@@ -26,10 +26,10 @@
 <text x="60" y="352" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">Latest check status distribution</text>
 <text x="70" y="400" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">ONLINE</text>
 <rect x="275" y="382" width="345" height="18" rx="4" fill="#16A34A" stroke="none" />
-<text x="630" y="397" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">976</text>
+<text x="630" y="397" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">975</text>
 <text x="70" y="430" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">DNS_FAIL</text>
 <rect x="275" y="412" width="27" height="18" rx="4" fill="#DC2626" stroke="none" />
-<text x="312" y="427" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">78</text>
+<text x="312" y="427" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">79</text>
 <text x="70" y="460" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">TIMEOUT</text>
 <rect x="275" y="442" width="21" height="18" rx="4" fill="#FBBF24" stroke="none" />
 <text x="306" y="457" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">62</text>
@@ -66,7 +66,7 @@
 <text x="812" y="640" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#64748B">UNCERTAIN: no confirmed good response yet.</text>
 <text x="812" y="660" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#64748B">DEAD: DNS fail, parked, or service stopped.</text>
 <text x="60" y="676" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">Recent status changes</text>
-<text x="70" y="706" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">maxapi.ai: ONLINE -&gt; ONLINE_LOGIN_REQUIRED</text>
-<text x="70" y="728" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">hook.rs: ONLINE -&gt; TIMEOUT</text>
-<text x="70" y="750" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">lyrid.cn: HTTP_404 -&gt; TIMEOUT</text>
+<text x="70" y="706" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">api.linkapi.ai: ONLINE_LOGIN_REQUIRED -&gt; ONLINE</text>
+<text x="70" y="728" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">linkapi.ai: ONLINE -&gt; ONLINE_LOGIN_REQUIRED</text>
+<text x="70" y="750" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">api.aisz.mom: ONLINE -&gt; DNS_FAIL</text>
 </svg>
