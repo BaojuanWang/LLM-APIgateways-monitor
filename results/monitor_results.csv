@@ -547337,3 +547337,4 @@
 2026-11-01T05:20:46Z,ziyeapi.com,One API,discovery,TIMEOUT,,,,,,"HTTPConnectionPool(host='ziyeapi.com', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPConnection(host='ziyeapi.com', port=80) at 0x769e08f2ac10>, 'Connection to ziyeapi"
 2026-11-01T05:16:12Z,zc-s.org.cn,aicost API,discovery,ONLINE,200,https://zc-s.org.cn/,New API,0c11104f7c63,https://zc-s.org.cn/,
 2026-11-01T05:20:31Z,yuai.space,悦云code,discovery,TIMEOUT,,,,,,"HTTPConnectionPool(host='yuai.space', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPConnection(host='yuai.space', port=80) at 0x769e08e35c50>, 'Connection to yuai.spac"
+2026-11-01T11:24:48Z,api.uglycat.cc,uglycat,stopped_recheck,ONLINE,200,https://api.uglycat.cc/,New API,f9ead3a5d861,https://api.uglycat.cc/,
