@@ -571598,3 +571598,4 @@
 2026-11-08T05:27:30Z,zhumengwangluo.top,筑梦工作台,discovery,TIMEOUT,,,,,,"HTTPConnectionPool(host='zhumengwangluo.top', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPConnection(host='zhumengwangluo.top', port=80) at 0x7d6520b8b310>, 'Connect"
 2026-11-08T05:27:40Z,ziyeapi.com,One API,discovery,TIMEOUT,,,,,,"HTTPConnectionPool(host='ziyeapi.com', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPConnection(host='ziyeapi.com', port=80) at 0x7d6520b044d0>, 'Connection to ziyeapi"
 2026-11-08T05:24:32Z,lkyujun.cn,想要照亮世界,discovery,TIMEOUT,,,,,,"HTTPConnectionPool(host='lkyujun.cn', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPConnection(host='lkyujun.cn', port=80) at 0x7d6520b665d0>, 'Connection to lkyujun.c"
+2026-11-08T11:24:01Z,api.uglycat.cc,uglycat,stopped_recheck,ONLINE,200,https://api.uglycat.cc/,New API,658a2395622a,https://api.uglycat.cc/,
