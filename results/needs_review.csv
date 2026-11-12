@@ -1,16 +1,16 @@
 ﻿domain,platform_name,综合判断,检测次数,各状态明细,最近状态,最近检测时间,最终URL,备注
-api.ant-ling.com,,UNCERTAIN,454,"HTTP_404×441, TIMEOUT×13",HTTP_404,2026-11-12T14:58:10Z,https://api.ant-ling.com/,请用国内网络手动验证
-api.apimart.ai,APIMart,UNCERTAIN,454,HTTP_404×454,HTTP_404,2026-11-12T14:55:03Z,https://api.apimart.ai/,请用国内网络手动验证
-api.cometapi.com,CometAPI,UNCERTAIN,454,"DNS_FAIL×1, HTTP_404×453",HTTP_404,2026-11-12T14:55:07Z,https://api.cometapi.com/,请用国内网络手动验证
-api.knox.chat,KnoxChat,UNCERTAIN,454,"HTTP_404×453, TIMEOUT×1",HTTP_404,2026-11-12T14:55:13Z,https://api.knox.chat/,请用国内网络手动验证
-apicn-platform.ope.ai,Platform Console,UNCERTAIN,454,"DNS_FAIL×1, HTTP_404×452, TIMEOUT×1",DNS_FAIL,2026-11-12T14:55:30Z,,请用国内网络手动验证
-boya.one,伯牙中转,UNCERTAIN,593,HTTP_ERROR×593,HTTP_ERROR,2026-11-12T14:53:51Z,,请用国内网络手动验证
-cloud.dataeyes.ai,dataeyes API,UNCERTAIN,454,HTTP_404×454,HTTP_404,2026-11-12T14:55:43Z,https://cloud.dataeyes.ai/,请用国内网络手动验证
-cn.crazyrouter.com,Crazyrouter,UNCERTAIN,454,HTTP_404×454,HTTP_404,2026-11-12T14:55:44Z,https://cn.crazyrouter.com/,请用国内网络手动验证
-corenode.best,源点算力API,UNCERTAIN,442,TIMEOUT×442,TIMEOUT,2026-11-12T14:59:34Z,,请用国内网络手动验证
-ctrl.maton.ai,,UNCERTAIN,454,"HTTP_404×453, TIMEOUT×1",HTTP_404,2026-11-12T14:58:11Z,https://ctrl.maton.ai/,请用国内网络手动验证
-deepseek-api.com.cn,TokenAPI - 全球AI模型聚合平台,UNCERTAIN,442,"HTTP_ERROR×382, TIMEOUT×60",HTTP_ERROR,2026-11-12T14:59:42Z,,请用国内网络手动验证
-gw.claudeapi.com,Claude Api,UNCERTAIN,454,"HTTP_404×453, TIMEOUT×1",HTTP_404,2026-11-12T14:56:13Z,https://gw.claudeapi.com/,请用国内网络手动验证
-shitang359.space,元气食堂API,UNCERTAIN,593,"HTTP_404×15, HTTP_ERROR×578",HTTP_ERROR,2026-11-12T14:54:15Z,,请用国内网络手动验证
-tokenhub-intl.tencentcloudmaas.com,,UNCERTAIN,454,"HTTP_404×452, TIMEOUT×2",HTTP_404,2026-11-12T14:58:14Z,https://tokenhub-intl.tencentcloudmaas.com/,请用国内网络手动验证
-tokenhub.tencentcloudmaas.com,,UNCERTAIN,454,"HTTP_404×452, TIMEOUT×2",HTTP_404,2026-11-12T14:58:14Z,https://tokenhub.tencentcloudmaas.com/,请用国内网络手动验证
+api.ant-ling.com,,UNCERTAIN,455,"HTTP_404×442, TIMEOUT×13",HTTP_404,2026-11-12T23:27:03Z,https://api.ant-ling.com/,请用国内网络手动验证
+api.apimart.ai,APIMart,UNCERTAIN,455,HTTP_404×455,HTTP_404,2026-11-12T23:23:57Z,https://api.apimart.ai/,请用国内网络手动验证
+api.cometapi.com,CometAPI,UNCERTAIN,455,"DNS_FAIL×1, HTTP_404×454",HTTP_404,2026-11-12T23:24:01Z,https://api.cometapi.com/,请用国内网络手动验证
+api.knox.chat,KnoxChat,UNCERTAIN,455,"HTTP_404×454, TIMEOUT×1",HTTP_404,2026-11-12T23:24:07Z,https://api.knox.chat/,请用国内网络手动验证
+apicn-platform.ope.ai,Platform Console,UNCERTAIN,455,"DNS_FAIL×2, HTTP_404×452, TIMEOUT×1",DNS_FAIL,2026-11-12T23:24:23Z,,请用国内网络手动验证
+boya.one,伯牙中转,UNCERTAIN,594,HTTP_ERROR×594,HTTP_ERROR,2026-11-12T23:22:52Z,,请用国内网络手动验证
+cloud.dataeyes.ai,dataeyes API,UNCERTAIN,455,HTTP_404×455,HTTP_404,2026-11-12T23:24:36Z,https://cloud.dataeyes.ai/,请用国内网络手动验证
+cn.crazyrouter.com,Crazyrouter,UNCERTAIN,455,HTTP_404×455,HTTP_404,2026-11-12T23:24:37Z,https://cn.crazyrouter.com/,请用国内网络手动验证
+corenode.best,源点算力API,UNCERTAIN,443,TIMEOUT×443,TIMEOUT,2026-11-12T23:28:26Z,,请用国内网络手动验证
+ctrl.maton.ai,,UNCERTAIN,455,"HTTP_404×454, TIMEOUT×1",HTTP_404,2026-11-12T23:27:04Z,https://ctrl.maton.ai/,请用国内网络手动验证
+deepseek-api.com.cn,TokenAPI - 全球AI模型聚合平台,UNCERTAIN,443,"HTTP_ERROR×383, TIMEOUT×60",HTTP_ERROR,2026-11-12T23:28:34Z,,请用国内网络手动验证
+gw.claudeapi.com,Claude Api,UNCERTAIN,455,"HTTP_404×454, TIMEOUT×1",HTTP_404,2026-11-12T23:25:08Z,https://gw.claudeapi.com/,请用国内网络手动验证
+shitang359.space,元气食堂API,UNCERTAIN,594,"HTTP_404×15, HTTP_ERROR×579",HTTP_ERROR,2026-11-12T23:23:13Z,,请用国内网络手动验证
+tokenhub-intl.tencentcloudmaas.com,,UNCERTAIN,455,"HTTP_404×453, TIMEOUT×2",HTTP_404,2026-11-12T23:27:07Z,https://tokenhub-intl.tencentcloudmaas.com/,请用国内网络手动验证
+tokenhub.tencentcloudmaas.com,,UNCERTAIN,455,"HTTP_404×453, TIMEOUT×2",HTTP_404,2026-11-12T23:27:08Z,https://tokenhub.tencentcloudmaas.com/,请用国内网络手动验证
