@@ -594646,3 +594646,4 @@
 2026-11-15T05:49:02Z,zhumengwangluo.top,筑梦工作台,discovery,TIMEOUT,,,,,,"HTTPConnectionPool(host='zhumengwangluo.top', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPConnection(host='zhumengwangluo.top', port=80) at 0x7c4154b8fc50>, 'Connect"
 2026-11-15T05:44:07Z,zc-s.org.cn,aicost API,discovery,ONLINE,200,https://zc-s.org.cn/,New API,b61f965ec33a,https://zc-s.org.cn/,
 2026-11-15T05:43:14Z,racetozero.org.cn,aicost API,discovery,ONLINE,200,https://racetozero.org.cn/,New API,b61f965ec33a,https://racetozero.org.cn/,
+2026-11-15T12:04:10Z,api.uglycat.cc,uglycat,stopped_recheck,ONLINE,200,https://api.uglycat.cc/,New API,5fa8c36499f0,https://api.uglycat.cc/,
