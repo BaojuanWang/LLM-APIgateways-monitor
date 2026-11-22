@@ -16,3 +16,4 @@
 2026-11-01T11:24:48Z,api.uglycat.cc,uglycat,stopped_recheck,ONLINE,200,https://api.uglycat.cc/,New API,f9ead3a5d861,https://api.uglycat.cc/,
 2026-11-08T11:24:01Z,api.uglycat.cc,uglycat,stopped_recheck,ONLINE,200,https://api.uglycat.cc/,New API,658a2395622a,https://api.uglycat.cc/,
 2026-11-15T12:04:10Z,api.uglycat.cc,uglycat,stopped_recheck,ONLINE,200,https://api.uglycat.cc/,New API,5fa8c36499f0,https://api.uglycat.cc/,
+2026-11-22T12:43:51Z,api.uglycat.cc,uglycat,stopped_recheck,DNS_FAIL,,,,,,"HTTPConnectionPool(host='api.uglycat.cc', port=80): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPConnection(host='api.uglycat.cc', port=80): Failed to resolve 'api.uglycat.cc' "

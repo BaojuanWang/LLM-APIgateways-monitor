@@ -611629,3 +611629,4 @@
 2026-11-21T06:29:09Z,yyc.lat,YYC API,discovery,TIMEOUT,,,,,,"HTTPSConnectionPool(host='yyc.lat', port=443): Read timed out. (read timeout=15)"
 2026-11-21T06:24:24Z,zc-s.org.cn,aicost API,discovery,ONLINE,200,https://zc-s.org.cn/,New API,147678165d77,https://zc-s.org.cn/,
 2026-11-21T06:29:12Z,zhumengwangluo.top,筑梦工作台,discovery,TIMEOUT,,,,,,"HTTPConnectionPool(host='zhumengwangluo.top', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPConnection(host='zhumengwangluo.top', port=80) at 0x78c654438d90>, 'Connect"
+2026-11-22T12:43:51Z,api.uglycat.cc,uglycat,stopped_recheck,DNS_FAIL,,,,,,"HTTPConnectionPool(host='api.uglycat.cc', port=80): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPConnection(host='api.uglycat.cc', port=80): Failed to resolve 'api.uglycat.cc' "
