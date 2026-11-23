@@ -1,7 +1,7 @@
 """
 存活状态汇总脚本
 运行位置: scripts/summarize.py
-读取 results/monitor_results.csv，输出每个平台的综合存活状态
+读取历史 results/monitor_results.csv 和 results/history/ 中的增量 CSV
 """
 
 import csv
@@ -15,6 +15,7 @@ from openpyxl.styles import Alignment, Font, PatternFill
 
 BASE_DIR = Path(__file__).parent.parent
 RESULTS_CSV = BASE_DIR / "results" / "monitor_results.csv"
+HISTORY_DIR = BASE_DIR / "results" / "history"
 OUTPUT_DIR = BASE_DIR / "results"
 REVIEW_CSV = OUTPUT_DIR / "needs_review.csv"
 STATUS_SVG = OUTPUT_DIR / "status_summary.svg"
@@ -54,10 +55,18 @@ def status_bucket(status):
     return "UNCERTAIN"
 
 
-def load_results():
-    if not RESULTS_CSV.exists():
-        raise FileNotFoundError(f"找不到 {RESULTS_CSV}")
+def iter_result_rows():
+    """Read all historical checks, including immutable legacy and new shards."""
+    files = [RESULTS_CSV] if RESULTS_CSV.is_file() else []
+    files.extend(sorted(HISTORY_DIR.glob("monitor_results_*.csv")))
+    if not files:
+        raise FileNotFoundError(f"找不到监控结果: {RESULTS_CSV} 或 {HISTORY_DIR}")
+    for path in files:
+        with open(path, encoding="utf-8-sig") as f:
+            yield from csv.DictReader(f)
 
+
+def load_results():
     platforms = defaultdict(lambda: {
         "platform_name": "",
         "source": "",
@@ -70,28 +79,27 @@ def load_results():
         "last_page_title": "",
     })
 
-    with open(RESULTS_CSV, encoding="utf-8-sig") as f:
-        for row in csv.DictReader(f):
-            domain = row.get("domain", "").strip()
-            if not domain:
-                continue
+    for row in iter_result_rows():
+        domain = row.get("domain", "").strip()
+        if not domain:
+            continue
 
-            p = platforms[domain]
-            p["platform_name"] = row.get("platform_name", "") or p["platform_name"]
-            source = row.get("source", "")
-            p["source"] = source
-            p["source_category"] = "manual" if source in ("Taobao", "Xiaohongshu", "manual_stopped") else "hvoy"
+        p = platforms[domain]
+        p["platform_name"] = row.get("platform_name", "") or p["platform_name"]
+        source = row.get("source", "")
+        p["source"] = source
+        p["source_category"] = "manual" if source in ("Taobao", "Xiaohongshu", "manual_stopped") else "hvoy"
 
-            status = row.get("online_status", "")
-            timestamp = row.get("timestamp", "")
-            p["status_counts"][status] += 1
-            p["checks"].append({"timestamp": timestamp, "status": status})
+        status = row.get("online_status", "")
+        timestamp = row.get("timestamp", "")
+        p["status_counts"][status] += 1
+        p["checks"].append({"timestamp": timestamp, "status": status})
 
-            if timestamp > p["last_timestamp"]:
-                p["last_timestamp"] = timestamp
-                p["last_status"] = status
-                p["last_final_url"] = row.get("final_url", "")
-                p["last_page_title"] = row.get("page_title", "")
+        if timestamp > p["last_timestamp"]:
+            p["last_timestamp"] = timestamp
+            p["last_status"] = status
+            p["last_final_url"] = row.get("final_url", "")
+            p["last_page_title"] = row.get("page_title", "")
 
     return platforms
 
@@ -228,7 +236,7 @@ def save_excel(platforms):
     ws_info = wb.create_sheet("说明")
     meta = [
         ("生成时间", datetime.now().strftime("%Y-%m-%d %H:%M")),
-        ("数据来源", str(RESULTS_CSV)),
+        ("数据来源", f"{RESULTS_CSV} + {HISTORY_DIR}/monitor_results_*.csv"),
         ("平台总数", total_platforms),
         ("ALIVE", f"{alive_count} 个（入口确认存活）"),
         ("UNCERTAIN", f"{uncertain_count} 个（需进一步确认）"),

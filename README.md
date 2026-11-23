@@ -82,7 +82,7 @@ touches the network.
 
 | Script | Purpose |
 |---|---|
-| `pipeline.py` | Liveness / status classification, appended to `results/monitor_results.csv`. |
+| `pipeline.py` | Liveness / status classification, appended to size-bounded monthly files in `results/history/` (legacy `results/monitor_results.csv` remains unchanged). |
 | `enrich.py` | WHOIS, TLS cert (issuer/SAN/fingerprint/`not_before`), IP/ASN/geo, server headers, favicon → `data/enrichment.csv`. |
 | `privacy.py` | Privacy-policy fetch + snapshot + rule-based coding → `data/privacy.csv`. |
 | `contacts.py` | Contact channels (Telegram/QQ/WeChat/Discord) + affiliate detection → `data/contacts.csv`. |

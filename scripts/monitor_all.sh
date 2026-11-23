@@ -7,7 +7,8 @@
 #   bash scripts/monitor_all.sh
 #
 # Outputs:
-#   results/monitor_results.csv   — per-site liveness/status this round
+#   results/history/monitor_results_YYYY-MM*.csv — new per-site status checks
+#   results/monitor_results.csv — immutable legacy history
 #   data/screenshots/*.png        — homepage evidence for new/changed sites
 #   results/summary*              — summary
 set -e

@@ -20,7 +20,8 @@ BASE_DIR       = Path(__file__).parent.parent
 DATA_DIR       = BASE_DIR / "data"
 RESULTS_DIR    = BASE_DIR / "results"
 SCREENSHOT_DIR = DATA_DIR / "screenshots"
-RESULTS_CSV    = RESULTS_DIR / "monitor_results.csv"
+RESULTS_CSV    = RESULTS_DIR / "monitor_results.csv"  # immutable legacy file
+HISTORY_DIR    = RESULTS_DIR / "history"
 FAILURES_CSV   = DATA_DIR / "screenshot_failures.csv"
 CONFIRMED_BLOCKED_CSV = DATA_DIR / "manual_confirmed_blocked.csv"
 MANUAL_CONFIRM_CSV = SCREENSHOT_DIR / "needs_manual_confirmation.csv"
@@ -77,6 +78,12 @@ def manual_confirmation_row(row, latest_ts):
         "page_title": row.get("page_title", ""),
         "note": "GitHub Actions 可能只能看到 Cloudflare/人机验证页；请本地手动打开并按需保存截图。",
     }
+
+
+def newest_results_csv():
+    """New checks live in size-bounded monthly shards; use legacy if none exist."""
+    shards = sorted(HISTORY_DIR.glob("monitor_results_*.csv"))
+    return shards[-1] if shards else RESULTS_CSV
 
 
 def load_latest_round(results_csv):
@@ -300,7 +307,7 @@ def main():
     print(f"开始截图  {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"{'='*50}")
 
-    sites, latest_ts, manual_confirmation, blocked_sites = load_latest_round(RESULTS_CSV)
+    sites, latest_ts, manual_confirmation, blocked_sites = load_latest_round(newest_results_csv())
     write_manual_confirmation(manual_confirmation, latest_ts, len(blocked_sites))
 
     last_hashes = load_last_hashes()

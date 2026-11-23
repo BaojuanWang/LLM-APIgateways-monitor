@@ -24,7 +24,9 @@ RESULTS_DIR = BASE_DIR / "results"
 HVOY_CSV    = DATA_DIR / "hvoy_latest.csv"
 MANUAL_CSV  = DATA_DIR / "manual_sites.csv"
 MASTER_SITES_CSV = DATA_DIR / "master_sites.csv"   # discovery-layer confirmed list
-RESULTS_CSV = RESULTS_DIR / "monitor_results.csv"
+RESULTS_CSV = RESULTS_DIR / "monitor_results.csv"  # immutable legacy history
+HISTORY_DIR = RESULTS_DIR / "history"
+MAX_HISTORY_BYTES = 50 * 1024 * 1024  # rotate well below GitHub's 100 MiB limit
 REVIEW_CSV  = RESULTS_DIR / "needs_review.csv"
 
 TIMEOUT     = 15
@@ -221,14 +223,30 @@ def check_one(p):
     return result
 
 
+def next_history_path():
+    """Choose a monthly CSV shard, rotating at 50 MiB to avoid GitHub's file limit."""
+    HISTORY_DIR.mkdir(parents=True, exist_ok=True)
+    stem = f"monitor_results_{datetime.now(timezone.utc):%Y-%m}"
+    path = HISTORY_DIR / f"{stem}.csv"
+    part = 1
+    while path.exists() and path.stat().st_size >= MAX_HISTORY_BYTES:
+        part += 1
+        path = HISTORY_DIR / f"{stem}_{part:04d}.csv"
+    return path
+
+
 def append_results(results):
-    RESULTS_DIR.mkdir(parents=True, exist_ok=True)
-    file_exists = RESULTS_CSV.exists()
-    with open(RESULTS_CSV, "a", newline="", encoding="utf-8-sig") as f:
+    """Append new checks without modifying the near-limit legacy history CSV."""
+    if not results:
+        return None
+    path = next_history_path()
+    nonempty = path.exists() and path.stat().st_size > 0
+    with open(path, "a", newline="", encoding="utf-8" if nonempty else "utf-8-sig") as f:
         writer = csv.DictWriter(f, fieldnames=RESULT_FIELDS)
-        if not file_exists:
+        if not nonempty:
             writer.writeheader()
         writer.writerows(results)
+    return path
 
 
 def append_needs_review(results):
@@ -288,11 +306,11 @@ def main():
             results.append(r)
             print(f"  [{done:3d}/{len(platforms)}] {r['domain']:<35} {r['online_status']}")
 
-    append_results(results)
+    history_path = append_results(results)
     review_count = append_needs_review(results)
     print_summary(results)
 
-    print(f"\n✅ 结果已追加到 {RESULTS_CSV}")
+    print(f"\n✅ 结果已追加到 {history_path}")
     if review_count:
         print(f"⚠️  {review_count} 个超时站点已追加到 {REVIEW_CSV}，请手动确认")
     else:

@@ -26,6 +26,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import glob
 import os
 import sys
 from datetime import datetime, timezone
@@ -69,18 +70,29 @@ def detect_domain_column(fieldnames):
     return None
 
 
+def iter_csv_rows(paths):
+    """Stream CSV rows across the legacy file and its incremental shards."""
+    for path in paths:
+        with open(path, encoding="utf-8-sig", newline="") as fh:
+            yield from csv.DictReader(fh)
+
+
 def read_source(spec, log):
     """Return {site_key: (raw_row_dict, observed_host)} for one source, deduped."""
     path = os.path.join(BASE_DIR, spec["path"])
-    if not os.path.exists(path):
+    paths = [path] if os.path.isfile(path) else []
+    if spec["name"] == "monitor":
+        paths.extend(sorted(glob.glob(os.path.join(
+            BASE_DIR, "results", "history", "monitor_results_*.csv"
+        ))))
+    if not paths:
         log.append((spec["name"], spec["path"], "MISSING", 0, 0))
         if not spec.get("optional"):
             print(f"  ! {spec['name']}: file missing ({spec['path']}) — skipped", file=sys.stderr)
         return {}, []
 
-    with open(path, encoding="utf-8-sig", newline="") as fh:
-        reader = csv.DictReader(fh)
-        fieldnames = reader.fieldnames or []
+    with open(paths[0], encoding="utf-8-sig", newline="") as fh:
+        fieldnames = csv.DictReader(fh).fieldnames or []
         dom_col = detect_domain_column(fieldnames)
         if not dom_col:
             log.append((spec["name"], spec["path"], "NO_DOMAIN_COL", 0, 0))
@@ -91,7 +103,7 @@ def read_source(spec, log):
         data_cols = [c for c in fieldnames if c != dom_col]
         picked = {}          # site_key -> (row, ts, observed_host)
         raw_rows = 0
-        for row in reader:
+        for row in iter_csv_rows(paths):
             raw_rows += 1
             raw_dom = row.get(dom_col, "")
             key = registrable_domain(raw_dom)
